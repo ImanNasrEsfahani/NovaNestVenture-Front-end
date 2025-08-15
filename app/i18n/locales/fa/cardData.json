@@ -1,0 +1,164 @@
+{
+  "cardData1": [
+    {
+      "titleEN": "هوش مصنوعی",
+      "image": "/static/images/Home/Priority/vr-glasses 2.png"
+    },
+    {
+      "title": "واقعیت مجازی",
+      "image": "/static/images/Home/Priority/system 2.png"
+    },
+    {
+      "title": "انرژی تجدیدپذیر",
+      "image": "/static/images/Home/Priority/online-shop 1.png"
+    },
+    {
+      "title": "محیط زیست",
+      "image": "/static/images/Home/Priority/planet-earth 1.png"
+    },
+    {
+      "title": "سرگرمی",
+      "image": "/static/images/Home/Priority/ai 2.png"
+    },
+    {
+      "title": "مهندسی پزشکی",
+      "image": "/static/images/Home/Priority/man 2.png"
+    },
+    {
+      "title": "خدمات برای نوجوانان",
+      "image": "/static/images/Home/Priority/process 2.png"
+    },
+    {
+      "title": "خدمات گردشگری",
+      "image": "/static/images/Home/Priority/world 2.png"
+    }
+  ],
+  "cardData2": [
+    {
+      "image": "/static/images/Home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
+      "title": "فواید درمان‌های اسپا",
+      "type": "شتابدهنده",
+      "date": "آوریل ۲۷"
+    },
+    {
+      "title": "مرکز تناسب اندام",
+      "image": "/static/images/Home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
+      "type": "سرمایه‌گذاری",
+      "date": "آوریل ۲۷"
+    },
+    {
+      "title": "فواید درمان‌های اسپا",
+      "image": "/static/images/Home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
+      "type": "سرمایه‌گذاری",
+      "date": "آوریل ۲۷"
+    }
+  ],
+  "LatestStartups": [
+    {
+      "image": "/static/images/Home/Startups/trip.png",
+      "title": "سفر لاندا",
+      "description": " لاندا تریپ استارت‌آپی نوآورانه است که با استفاده از یک تیم متخصص و هوش مصنوعی پلتفرمی را جهت شرکت در دوره‌های آموزشی مختلف در سراسر جهان برایتان مهیا می‌کند.",
+      "link": "https://landatrip.com/"
+    },
+    {
+      "image": "/static/images/Home/Startups/diaco.png",
+      "title": "دیاکو سنتر",
+      "description": "دیاکو سنتر پلتفرمی برپایه هوش مصنوعی است که نقش واسط میان جویندگان و ارائه‌دهندگان فناوری را ایفا کرده و با ایجاد پلی میان آنها، نیازهای موجود در صنعت را رفع می‌کند.",
+      "link": "https://irdiaco.ca/"
+    },
+    {
+      "image": "/static/images/Home/Startups/vision-raft.png",
+      "title": "ویژن رفت",
+      "description": "Vision Raft پلتفرمی است بر پایه واقعیت مجازی (VR) با تمرکز روی آموزش و سرگرمی نوجوانان جهت افزایش کیفیت یادگیری آنها.",
+      "link": "https://invigorated-drop-231359.framer.app"
+    }
+  ],
+  "ServicesInterface": [
+    {
+      "title": "تنظیم پیچ دک",
+      "image": "1.png"
+    },
+    {
+      "title": "منتورینگ",
+      "image": "2.png"
+    },
+    {
+      "title": "شبکه سازی با افراد مورد نیاز",
+      "image": "3.png"
+    },
+    {
+      "title": "تامین مالی اولیه",
+      "image": "4.png"
+    },
+    {
+      "title": "توسعه MVP",
+      "image": "5.png"
+    },
+    {
+      "title": "تحقیق و توسعه",
+      "image": "6.png"
+    },
+    {
+      "title": "طراحی وب سایت",
+      "image": "7.png"
+    },
+    {
+      "title": "تنظیم بیزینس پلن",
+      "image": "8.png"
+    },
+    {
+      "title": "همفکری و پرورش ایده",
+      "image": "9.png"
+    },
+    {
+      "title": "فضای کار اشتراکی",
+      "image": "10.png"
+    },
+    {
+      "title": "ثبت اختراع",
+      "image": "11.png"
+    },
+    {
+      "title": "برگزاری رویدادهای ارائه استارت آپ",
+      "image": "12.png"
+    }
+  ],
+  "cardData": [
+    {
+      "image": "/static/images/our-team/Personals/a1.webp",
+      "name": "رسول مرادی مهر",
+      "position": " موسس و مدیر عامل",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+        "whatsapp": "wa.me/+989134233863",
+        "email": "mailto:rasoulmoradimehr@gmail.com",
+        "website": "https://moradimehr.com/",
+        "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
+      }
+    },
+    {
+      "image": "/static/images/about/mjafari.jpg",
+      "name": "مرتضی جعفری",
+      "position": "مدیر ارتباطات بین الملل",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/morteza-jafari-5b40b63a",
+        "whatsapp": "https://api.whatsapp.com/send?phone=+14705199691",
+        "email": "mailto:morteza_jafari49@yahoo.com",
+        "website": "https://mortezajafari.ca/",
+        "instagram": "https://instagram.com/jafari.irimmigration.ca?igshid=MzRlODBiNWFlZA=="
+      }
+    },
+    {
+      "image": "/static/images/our-team/Personals/a2.webp",
+      "name": "هادی حسن پور",
+      "position": "رئیس هیئت مدیره",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hadi-hasanpour",
+        "whatsapp": "https://wa.me/+12892693933",
+        "email": "mailto:hadihasanpor@gmail.com",
+        "website": "https://www.hadihasanpour.ca/",
+        "instagram": "https://instagram.com/dr.hadihasanpour?igshid=MzRlODBiNWFlZA=="
+      }
+    }
+  ]
+}

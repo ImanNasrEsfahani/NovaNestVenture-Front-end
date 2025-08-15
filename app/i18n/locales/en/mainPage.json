@@ -1,0 +1,301 @@
+{
+  "lng": "en",
+  "Acceleration": "Entrepreneurship",
+  "AccelerationCenter": "ENTREPRENEURSHIP CENTER",
+  "Investment": "Investor",
+  "StartUp": "StartUp",
+  "HeroSubtitle": "Feel The Future",
+  "investment": "Investment",
+  "LandaHolding": "LANDA HOLDING",
+  "Home": "Home",
+  "AboutUs": "ABOUT US",
+  "ContactUs": "CONTACT US",
+  "OurTeam": "Our Team",
+  "ourTeamText": "Our team of experts is comprised of professionals who are passionate about their work, and have an extensive background in a wide variety of applications, and are willing to help at any time",
+  "Forms": "FORMS",
+  "InvestorCenter": "Investment",
+  "EntrepreneurCenter": "Entrepreneur",
+  "BusinessPartners": "BUSINESS PARTNERS",
+  "Startups Validation": "STARTUPS VALIDATION",
+  "SeeMore": "SEE MORE",
+  "ApplyJob": "APPLY JOB",
+  "Landa": "Landa",
+  "PartnersTitle": "Join Our Business Partners",
+  "PartnersDescription": "At Landa Holding, we welcome strategic affiliations with international firms and qualified influencers alike. As an approved affiliate, you will receive co-branded support and future representations that wield substantial influence within the business landscape. To become an affiliate, please complete our free questionnaire for our confidential review.",
+  "LatestStartups": "Latest Starups",
+  "Priorities": "Investment Priorities",
+  "businessTeamText": "What Our Cooperation Members Say",
+  "visit": "Visit Now",
+  "Register": "Register",
+
+  "cards": [
+    {
+      "smallTitle" : "Landa",
+      "title": "Investment",
+      "text": "At Landa  Investment Center, we mainly focus on investing in innovative, scalable startups with international market potentials and the valuation of $5 million or less. We are a group of angel investors who can help you build your own team, define your business model, and increase the value of your startup in global markets. With initial investment, capital raising, and access to a network of global investors, we will assist you in achieving success and increasing your business development.",
+      "reverse": false,
+      "show": true,
+      "index": 1,
+      "link": "/investment",
+      "addedClass": "",
+      "images": [
+        {
+          "src": "/static/images/Home main/2.webp",
+          "alt": ""
+        },
+        {
+          "src": "/static/images/Home main/1.webp",
+          "alt": ""
+        }
+      ],
+      "buttonText": "Vsit Now"
+    },
+    {
+      "smallTitle" : "Landa",
+      "title": "Entrepreneurship",
+      "text": "The Landa Entrepreneurship Center was founded to promote and cultivate entrepreneurial innovation. By embracing individuals who are constantly on the lookout for fresh ideas while acknowledging the inherent risks and uncertainties in every new business, the center empowers them to transform these ideas into new opportunities. This is made possible through the supportive facilities and skilled professionals available at the center.",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "link": "/acceleration",
+      "addedClass": "",
+      "images": [
+        {
+          "src": "/static/images/Home main/3.webp",
+          "alt": ""
+        },
+        {
+          "src": "/static/images/Home main/4.webp",
+          "alt": ""
+        }
+      ],
+      "buttonText": "Vsit Now"
+    },
+    {
+      "smallTitle" : "Landa",
+      "title": "StartUp",
+      "text": "The term \"Startup\" encompasses various meanings, but it commonly denotes a new company with a focus on technology and significant growth prospects. Landa International Holding aims to invest in innovative startups with global potential, particularly in areas such as artificial intelligence (AI), Genetic Testing, and education. The holding is looking to invest in startups with the potential to make a global impact.",
+      "reverse": false,
+      "show": false,
+      "index": 3,
+      "link": "/startup",
+      "addedClass": "",
+      "images": [
+        {
+          "src": "/static/images/Home main/5.webp",
+          "alt": ""
+        },
+        {
+          "src": "/static/images/Home main/6.webp",
+          "alt": ""
+        }
+      ],
+      "buttonText": "Vsit Now"
+    }
+  ],
+
+  "Academy": " Academy",
+  "Landaholding": "Landa Holding",
+  "LandaAcademyInfo": "At Landa  Academy, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, Landa Academy equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
+  "landaHoldingBlackFirst": [
+    "Global investment opportunities within your reach.",
+    "Access to a network of successful entrepreneurs and investors.",
+    "Exclusive insights and expert analysis for informed decisions.",
+    "Collaborative environment for joint ventures and partnerships.",
+    "Accelerated growth potential through diversified investments."
+  ],
+  "landaHoldingBlackSecond": [
+    "Global networking opportunities for collaboration and partnerships",
+    "Access to all videos of pitches, industry trend presentations and panel discussions.",
+    "Attending events of the entrepreneurs center",
+    "Meetings with top business leaders and entrepreneurs",
+    "Participation in seasonal meetings with other international entrepreneurs .",
+    "Online platform for connecting with other entrepreneurs"
+  ],
+  "partners": {
+    "title": "Our Business Affiliates",
+    "logos": [
+      {
+        "number": 102,
+        "title": "Islamic Azad University of Isfahan(Khorasgan)",
+        "description": "Since 1396, at the same time as Farazman was established, we have been working with Isfahan Azad University in the field of student investment and acceleration.",
+        "alt": "Islamic Azad University of Isfahan(Khorasgan)"
+      },
+      {
+        "number": 104,
+        "title": "Dr. Nekui Educational Holding",
+        "description":"We are proud to cooperate with the educational holding of Dr. Nekui Academy of Business and Investment in the field of youth startups and we are moving forward for a bright future of youth startups and ideas.",
+        "alt": "Dr. Nekui Educational Holding"
+      },
+      {
+        "number": 44,
+        "title": "University of Kashan",
+        "description": "Since 1399, we started cooperating with Kashan University in the field of acceleration center",
+        "alt": "University of Kashan"
+      },
+      {
+        "number": 101,
+        "title": "ASIAHITECH",
+        "description": "Since 1397, we are proud to cooperate with the advanced technologies of Asia in the field of investing in startups.",
+        "alt": "ASIAHITECH"
+      },
+      {
+        "number": 8,
+        "title": "Chamber of Commerce, Industries, Mines and Agriculture",
+        "description": "We have been cooperating with the Isfahan Chamber of Commerce for 4 months in the field of startup investment.",
+        "alt": "Chamber of Commerce, Industries, Mines and Agriculture"
+      },
+      {
+        "number": 98,
+        "title": "Islamic Azad University of Isfahan(Khorasgan)",
+        "description": "Since 1396, at the same time as Farazman was established, we have been working with Isfahan Azad University in the field of student investment and acceleration.",
+        "alt": "Islamic Azad University of Isfahan(Khorasgan)"
+      },
+      {
+        "number": 3,
+        "title": "Dr. Nekui Educational Holding",
+        "description":"We are honored to work with Dr. Nekui holding to ensure a bright future for startups and innovative ideas",
+        "alt": "Dr. Nekui Educational Holding"
+      },
+      {
+        "number": 44,
+        "title": "University of Kashan",
+        "description": "Since 1399, we started cooperating with Kashan University in the field of acceleration center",
+        "alt": "University of Kashan"
+      },
+      {
+        "number": 77,
+        "title": "ASIAHITECH",
+        "description": "Since 1397, we are proud to cooperate with the advanced technologies of Asia in the field of investing in startups.",
+        "alt": "ASIAHITECH"
+      },
+      {
+        "number": 8,
+        "title": "Chamber of Commerce, Industries, Mines and Agriculture",
+        "description": "We have been cooperating with the Isfahan Chamber of Commerce for 4 months in the field of startup investment.",
+        "alt": "Chamber of Commerce, Industries, Mines and Agriculture"
+      }
+    ]
+  },
+  "navbar": {},
+  "commentsData": [
+    {
+      "name": "Morteza Jafari",
+      "roleInCompany": "Founder of IRimmigration",
+      "role": "Investor",
+      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
+      "commentDescription": "The specialized and skilled staff at Landa Holding made short work on the issues that had been preventing me from advancing in my career.",
+      "linkedinLink": "https://www.linkedin.com/in/johndoe",
+      "personalWebsite": "https://www.johndoe.com",
+      "email": "john.doe@example.com"
+    },
+    {
+      "name": "Jane Doe",
+      "roleInCompany": "Product Manager",
+      "role": "Product Lead",
+      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
+      "commentDescription": "For me, my time spent working with Landa Holdings with this extremely competent staff was an experience that I will never forget.",
+      "linkedinLink": "https://www.linkedin.com/in/janedoe",
+      "personalWebsite": "https://www.janedoe.com",
+      "email": "jane.doe@example.com"
+    },
+    {
+      "name": "Bob Smith",
+      "roleInCompany": "UX Designer",
+      "role": "Design Lead",
+      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
+      "commentDescription": "Landa Holding is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
+      "linkedinLink": "https://www.linkedin.com/in/bobsmith",
+      "personalWebsite": "https://www.bobsmith.com",
+      "email": "bob.smith@example.com"
+    }
+  ],
+  "cardData1": [
+    {
+      "title": "Platform based on AI and VR",
+      "image": "/static/images/Home/Priority/vr-glasses 2.png"
+    },
+    {
+      "title": "Agriculture",
+      "image": "/static/images/Home/Priority/system 2.png"
+    },
+    {
+      "title": "Renewable Energy",
+      "image": "/static/images/Home/Priority/online-shop 1.png"
+    },
+    {
+      "title": "The Environment",
+      "image": "/static/images/Home/Priority/planet-earth 1.png"
+    },
+    {
+      "title": "Entertainment",
+      "image": "/static/images/Home/Priority/ai 2.png"
+    },
+    {
+      "title": "Biomedical Engineering",
+      "image": "/static/images/Home/Priority/man 2.png"
+    },
+    {
+      "title": "Services for Teenagers",
+      "image": "/static/images/Home/Priority/process 2.png"
+    },
+    {
+      "title": "Tourism Services",
+      "image": "/static/images/Home/Priority/world 2.png"
+    }
+  ],
+  "LatestStartupsList": [
+    {
+      "image": "/static/images/Home/Startups/trip.png",
+      "title": "LANDA TRIP",
+      "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
+      "link": "https://landatrip.ca"
+    },
+    {
+      "image": "/static/images/Home/Startups/diaco.png",
+      "title": "DIACO",
+      "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
+      "link": "https://diacocenter.com"
+    },
+    {
+      "image": "/static/images/Home/Startups/vision-raft.png",
+      "title": "VISION RAFT",
+      "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
+      "link": "https://invigorated-drop-231359.framer.app"
+    }
+  ],
+  "register": "Register",
+  "upcomingStartups": {
+    "landaHolding": "LANDA HOLDING",
+    "title": "Upcoming Startups",
+    "cards": [
+      {
+        "image": "/static/images/Home/upcomming-Sartup/handicraft.png",
+        "subTitle": "HANDI CRAFT",
+        "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build a safe communication bridge between makers and purchasers.",
+        "goto": "https://craft.landaholding.com/",
+        "buttonText" : "Register",
+        "gene": false
+      },
+      {
+        "image": "/static/images/Home/upcomming-Sartup/Autilab-logo.png",
+        "subTitle": "AUTILAB",
+        "text": "Otism is an art movement that highlights nature’s beauty and the human form through organic shapes, earthy tones, and fluid lines. Emerging in the 21st century, it evokes tranquility and connection, inviting viewers to reflect on their bond with the environment.",
+        "goto": "#",
+        "buttonText" : "Register",
+        "gene": true
+      },
+      {
+        "image": "/static/images/Home/upcomming-Sartup/2.png",
+        "subTitle": "PREVENTI GENE",
+        "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build asafe communication bridge between makers and purchasers.",
+        "goto": "http://preventigene.com/",
+        "buttonText" : "Register",
+        "gene": true
+      }
+    ]
+  },
+  "upcomingEvents": {
+    "title": "UPCOMING EVENTS"
+  }
+}

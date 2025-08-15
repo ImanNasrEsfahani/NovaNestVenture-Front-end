@@ -1,0 +1,65 @@
+{
+    "lng": "en",
+    "dir": "ltr",
+    "banner": "WHAT IS STARTUP",
+    "button": "Startup Launch Stages" ,
+
+    "differences-title" : "Key Differences Between Startups and Small Businesses",
+    "differences-detail" : "While all startups begin their journey as small businesses, their ultimate goals differ significantly. Their primary objective is to transcend their initial \"startup\" status and establish themselves as dominant players in their chosen markets. In contrast, many small businesses prioritize stability and profitability within a defined niche. They focus on organic growth, customer satisfaction, and sustainable operations. Their owners are often content with their current scale and may not actively seek aggressive expansion. Startups operate with a go big or go home\" mentality, while small businesses prioritize longevity and consistent returns",
+    "differences-list" :[
+        "Problem-solving ability",
+        "Scalability",
+        "Rapid growth potential",
+        "Creativity and innovation"
+    ],
+
+    "nature-title" : "The Nature of Startups",
+    "nature-detail" : "Having an innovative idea is essential for the development of a startup. These businesses often aim to solve problems or introduce new services by identifying gaps in existing products or services and offering creative solutions. Landa International Holding, equipped with professionals, consultants, and international experts, stands ready to support aspiring entrepreneurs in launching their businesses and navigating any challenges they may encounter along the way.",
+
+    "gateway-title" : "Landa International Holding: Your Gateway to Success in Canada",
+    "gateway-detail" : "Landa International Holding provides comprehensive services to help early-stage startups that have recently entered Canada through the Startup Visa Program expand and grow their businesses in the country. By utilizing the consulting services of our expert team, you can overcome the challenges of launching and developing an international startup in areas such as marketing, human resources, finance, and legal matters.",
+    
+    "service-title" : "Landa Holding Services",
+    "service-list" : [
+        {
+            "icon" : "MusicPlay",
+            "title" : "Mentorship and Consulting",
+            "description" : " One of the key advantages of Landa Holding's startup services is access to a team of international experts and consultants who specialize in startup registration and expansion on a global scale. "
+        },
+        {
+            "icon" : "PresentionChart",
+            "title" : "Market Analysis",
+            "description" : " Our international team, with its deep knowledge of the Canadian market and its potential, offers personalized guidance on how to grow and develop your business in this country."
+        },
+        {
+            "icon" : "Data",
+            "title" : "Networking",
+            "description" : " Through collaborations with international partners, Landa Holding assists you in building your brand and establishing effective business connections in Canada."
+        },
+        {
+            "icon" : "MoneyRecive",
+            "title" : "Investment",
+            "description" : " The growth and expansion of a business in a new market with unknown potential requires adequate investment. At Landa Holding, we facilitate the growth and success of startups through investment."
+        }
+    ],
+
+    "services-title": "Landa Holding Services for Startups Entering the Canadian Market",
+    "services-list" : [
+        "Qualified business plan draft",
+        "Delivering startup documentation to organizations",
+        "Assistance in developing a business concept",
+        "Identifying economic priorities in Canada",
+        "Evaluation of management experience and education",
+        "Review of financial documents",
+        "Obtaining a letter of support",
+        "Gearing up for interviews",
+        "Examination of documents and form completion",
+        "Document review and filling out forms",
+        "Funding a startup",
+        "Business incorporation and intellectual property",
+        "Valuation assessment",
+        "Business consulting",
+        "Invoice review"
+    ]
+
+}

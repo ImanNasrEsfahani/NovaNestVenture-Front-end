@@ -1,0 +1,209 @@
+{
+    "title":"Our Team",
+    "defaultRole": "All",
+    "persons": [
+        {
+          "image": "/static/images/our-team/Personals/a52.webp",
+          "position": "MOTB",
+          "name": "Morteza jafari ",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/hadi.webp",
+          "position": "CEO", 
+          "name": "Hadi Hasanpour",
+          "linkedIn": "https://www.linkedin.com/in/hadi-hasanpour?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/mahsa-s.webp",
+          "position": "Case Manager",
+          "name": "Mahsa Esmaeili",
+          "linkedIn": "https://www.linkedin.com/in/mahsa-esmaili",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/Mehrnoosh.webp",
+          "position": "Manager",
+          "name": "Mehrnoosh Heibati",
+          "linkedIn": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/zhaleh.webp",
+          "position": "Marketing Manager",
+          "name": "Zhaleh Kolahi",
+          "linkedIn": "https://www.linkedin.com/in/zhale",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/a4.webp",
+          "position": "Public Relations",
+          "name": "Kholoud Hariri",
+          "linkedIn": "linkedin.com/in/kholoud-hariri-b83b96222",
+          "category": "public relations officer"
+        },
+        {
+          "image": "/static/images/our-team/Personals/a33.webp",
+          "position": "Public Relations Officer",
+          "name": "Gelareh Bahrami",
+          "linkedIn": "https://www.linkedin.com/in/gelareh-bahrami-baba59185",
+          "category": "public relations officer"
+        },
+        {
+          "image": "/static/images/our-team/Personals/lida.webp",
+          "position": "Human Resource Specialis",
+          "name": "Lida Parvizi",
+          "linkedIn": "https://www.linkedin.com/in/lida-parvizi-ab7b8721a/",
+          "category": "Manager Assistant"
+        },
+        {
+          "image": "/static/images/our-team/Personals/saedi.webp",
+          "position": "CTO",
+          "name": "Mahdi Saedi",
+          "linkedIn": "",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/sajad.webp",
+          "position": "Product Manager",
+          "name": "Sajjad Momeni",
+          "linkedIn": "https://www.linkedin.com/in/sajjad-momeni-17ab4778/",
+          "category": "mentors"
+        },
+        {
+          "image": "/static/images/our-team/Personals/a21.webp",
+          "position": "Graphic Designer",
+          "name": "Hoda Mahdi",
+          "linkedIn": "https://www.linkedin.com/in/hoda-mahdi-896855269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "category": "designers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/arshia.webp",
+          "position": "Product Designer",
+          "name": "Arshia Nasiri",
+          "linkedIn": "https://www.linkedin.com/in/marshian03",
+          "category": "designers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/ehsan.webp",
+          "position": "Digital Marketer",
+          "name": "Ehsan Aliakbari",
+          "linkedIn": "https://www.linkedin.com/in/ehsan-aliakbari",
+          "category": "Digital Marketing"
+        },
+        {
+          "image": "/static/images/our-team/Personals/ali.webp",
+          "position": "Accountant",
+          "name": "Ali Soleimani",
+          "linkedIn": "https://www.linkedin.com/in/ali-soleymani-b761b6223/",
+          "category": "accountant"
+        },
+        {
+          "image": "/static/images/our-team/Personals/faezeh.webp",
+          "position": "Graphic Designer",
+          "name": "Faezeh Khani",
+          "linkedIn": "linkedin.com/in/faezeh-khani-4362b62a5",
+          "category": "designers"
+        },
+
+        {
+          "image": "/static/images/our-team/Personals/121.webp",
+          "position": "Front-end Developer",
+          "name": "Amir Mohammad Esfahanizade",
+          "linkedIn": "",
+          "category": "programmers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/milad.webp",
+          "position": "R&D Specialist",
+          "name": "Milad Fatemi",
+          "linkedIn": "https://www.linkedin.com/in/miladfatemi/",
+          "category": "R&D Department"
+        },
+        {
+          "image": "/static/images/our-team/Personals/sobhan.webp",
+          "position": "Immigration Manager",
+          "name": "Sobhan Mohammadi",
+          "linkedIn": "https://www.linkedin.com/in/sobhan-mohammadi-hfn/",
+          "category": "R&D Department"
+        },
+        {
+          "image": "/static/images/our-team/Personals/farnaz.webp",
+          "position": "Content Creator",
+          "name": "Farnaz Torki",
+          "linkedIn": "",
+          "category": "Content Creators"
+        },
+        {
+          "image": "/static/images/our-team/Personals/Alireza.webp",
+          "position": "Content Creator",
+          "name": "Alireza Zamani",
+          "linkedIn": "",
+          "category": "Content Creators"
+        },
+        {
+          "image": "/static/images/our-team/Personals/matin.webp",
+          "position": "Front-end Developer",
+          "name": "Matin Janghorbani",
+          "linkedIn": "",
+          "category": "programmers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/sadeq.webp",
+          "position": "Front-end Developer",
+          "name": "Sadegh Parvaresh",
+          "linkedIn": "",
+          "category": "programmers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/hossein.webp",
+          "position": "Application Developer",
+          "name": "Hossein Mohammadi",
+          "linkedIn": "",
+          "category": "programmers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/mohammad-reza.webp",
+          "position": "Front-end Developer",
+          "name": "Mohammadreza Hajian",
+          "linkedIn": "",
+          "category": "programmers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/narges.webp",
+          "position": "UI UX designer",
+          "name": "Narges Orouji",
+          "linkedIn": "",
+          "category": "designers"
+        },
+        {
+          "image": "/static/images/our-team/Personals/parastoo.webp",
+          "position": "R&D Specialist",
+          "name": "Parastoo Sanaifar",
+          "linkedIn": "",
+          "category":  "R&D Department"
+        }
+    ],
+  "roles": [
+    "All",
+    "Managers",
+    "Mentors",
+    "Programmers",
+    "Designers",
+    "Content Creators",
+    "Accountant",
+    "Public Relations",
+    "Digital Marketing",
+    "Manager Assistant",
+    "R&D Department"
+  ]
+}

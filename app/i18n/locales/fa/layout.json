@@ -1,0 +1,42 @@
+{
+  "menuItems": [
+    {
+      "label": "خانه",
+      "href": "/"
+    },
+    {
+      "label": "درباره ما",
+      "href": "/about"
+    },
+    {
+      "label": "تماس با ما",
+      "href": "/contact"
+    },
+    {
+      "label": "تیم ما",
+      "href": "/our-team"
+    }
+  ],
+  "submenuItems": [
+    {
+      "label": "مرکز سرمایه گذاران",
+      "href": "/en/investor-registration"
+    },
+    {
+      "label": "مرکز کارآفرینان",
+      "href": "/formEntrepreneurs"
+    },
+    {
+      "label": "شرکای تجاری",
+      "href": "/partner-membership"
+    },
+    {
+      "label": "فرم ارزیابی استارت آپ",
+      "href": "/StartupsForm"
+    },
+    {
+      "label": "همکاری با ما",
+      "href": "/job-form"
+    }
+  ]
+}
