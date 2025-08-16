@@ -20,7 +20,7 @@ export default function EventCard() {
   const [events, setEvents] = useState<Event[]>([]);
   useEffect(() => {
     // Fetch data from the API when the component mounts
-    fetch('https://academy-back.landaholding.com/course/list?format=json')
+    fetch('https://academy-back.NovaNestVenture.com/course/list?format=json')
       .then((response) => response.json())
       .then((data) => setEvents(data))
       .catch((error) => console.error('Error fetching data:', error));

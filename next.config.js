@@ -3,15 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   // output: "export",
   // distDir: 'out',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://landaholding.com' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://NovaNestVenture.com' : '',
   images: {
     domains: [
       'res.cloudinary.com',
-      'panel-back.landaholding.com',
-      'panel.landaholding.com',
-      'landaholding.com',
+      'panel-back.NovaNestVenture.com',
+      'panel.NovaNestVenture.com',
+      'NovaNestVenture.com',
       'localhost',
-      "landa-back.landaholding.com"
+      "landa-back.NovaNestVenture.com"
     ]
   }
 };
