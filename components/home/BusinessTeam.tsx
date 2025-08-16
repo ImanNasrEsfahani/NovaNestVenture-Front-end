@@ -16,7 +16,7 @@ export default function AerialViewBusinessTeam(
       "role": "Investor",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
       "commentDescription":
-        "The specialized and skilled staff at Landa Holding made short work on the issues that had been preventing me from advancing in my career.",
+        "The specialized and skilled staff at NovaNest Venture made short work on the issues that had been preventing me from advancing in my career.",
       "linkedinLink": "https://www.linkedin.com/in/johndoe",
       "personalWebsite": "https://www.johndoe.com",
       "email": "john.doe@example.com",
@@ -27,7 +27,7 @@ export default function AerialViewBusinessTeam(
       "role": "Product Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
       "commentDescription":
-        "For me, my time spent working with Landa Holdings with this extremely competent staff was an experience that I will never forget.",
+        "For me, my time spent working with NovaNest Venture with this extremely competent staff was an experience that I will never forget.",
       "linkedinLink": "https://www.linkedin.com/in/janedoe",
       "personalWebsite": "https://www.janedoe.com",
       "email": "jane.doe@example.com",
@@ -38,7 +38,7 @@ export default function AerialViewBusinessTeam(
       "role": "Design Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
       "commentDescription":
-        "Landa Holding is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
+        "NovaNest Venture is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
       "linkedinLink": "https://www.linkedin.com/in/bobsmith",
       "personalWebsite": "https://www.bobsmith.com",
       "email": "bob.smith@example.com",

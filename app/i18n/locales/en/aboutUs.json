@@ -1,17 +1,17 @@
 {
   "lng": "en",
   "banner": "About Us",
-  "LandaHolding": "Landa Holding",
+  "LandaHolding": "NovaNest Venture",
   "certificate": "Certificate of Incorporation",
   "buttonTitle": "Federal Canada Corporation Information",
-  "focusText": "Landa holding companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
+  "focusText": "NovaNest Venture companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
   "readMore": "Read More",
   "readLess": "Read Less",
 
   "aboutLandaHolding": [
     {
-      "title": "About Landa Holding",
-      "text": "Landa International Holding is comprised of ten subsidiaries spread across Canada and Iran, with offices strategically located in Toronto, Vancouver, Tehran, and Isfahan. The primary aim of Landa is to invest in and support innovative entrepreneurs throughout their entire prosper, from the initial idea phase to launching their businesses on a global scale. What sets Landa apart from its competitors is its broad international perspective, empowering entrepreneurs to access resources from investors worldwide to stimulate the expansion of their businesses.",
+      "title": "About NovaNest Venture",
+      "text": "NovaNest Venture is comprised of ten subsidiaries spread across Canada and Iran, with offices strategically located in Toronto, Vancouver, Tehran, and Isfahan. The primary aim of Landa is to invest in and support innovative entrepreneurs throughout their entire prosper, from the initial idea phase to launching their businesses on a global scale. What sets Landa apart from its competitors is its broad international perspective, empowering entrepreneurs to access resources from investors worldwide to stimulate the expansion of their businesses.",
       "reverse": true,
       "show": true,
       "index": 2,
@@ -20,7 +20,7 @@
   ],
   "subsids": [
     {
-      "title": "Subsidiary companies of Landa Holding",
+      "title": "Subsidiary companies of NovaNest Venture",
       "text": "Landa International Holding consists of 10 active companies operating in Canada and Iran, with offices in the cities of Toronto, Vancouver, Tehran, and Isfahan. Our mission is to invest in creative entrepreneurs, supporting them from the very beginning, starting with ideation, all the way to launching an international startup.",
       "reverse": true,
       "show": true,
@@ -31,7 +31,7 @@
   "TheStoryOfLanda": [
     {
       "title": "The story of Landa",
-      "text": "Landa International Holding started its activity in Canada in 2017 as a company in the field of investment in startup planning, business planning, and collecting resources to develop pioneering startup businesses. After years of success and many successful projects, in 2021, Landa Holding was identified as a federal company, certified and verified in both Canada and Iran. This aim has been pursued since then even more thoroughly and passionately than ever.",
+      "text": "Landa International Holding started its activity in Canada in 2017 as a company in the field of investment in startup planning, business planning, and collecting resources to develop pioneering startup businesses. After years of success and many successful projects, in 2021, NovaNest Venture was identified as a federal company, certified and verified in both Canada and Iran. This aim has been pursued since then even more thoroughly and passionately than ever.",
       "reverse": true,
       "show": true,
       "index": 2,
@@ -40,7 +40,7 @@
   ],
   "VisionOfTheLanaHolding": [
     {
-      "title": "VISION OF THE LANDA HOLDING",
+      "title": "VISION OF THE NovaNest Venture",
       "text": "Landa offers a diverse range of services, including support for entrepreneurs and innovative startups, as well as investments in scalable startups in global markets. The members of the Landa Investors Association consist of successful senior executives, business leaders, and serial entrepreneurs who come together to capitalize on the best investment opportunities in emerging companies from around the world.",
       "reverse": true,
       "show": true,
@@ -50,7 +50,7 @@
   ],
   "Our mission and purpose": [
     {
-      "title": "The Mission of Landa Holding",
+      "title": "The Mission of NovaNest Venture",
       "text": "Our goal is to strengthen the confidence of the investors who have trusted us by carefully evaluating and selecting the most innovative startup proposals. At Landa International Holding, we are committed to providing our clients with comprehensive resources and expertise to ensure all parties' success.",
       "reverse": true,
       "show": true,
@@ -108,8 +108,8 @@
     "Collaboration with Other Investment Centers: We welcome collaboration with other investment centers and investment communities. Entrepreneurs seeking capital from multiple investor groups benefit from this collaboration."
   ],
   "SubsidiaryCompanies" :{
-    "title":"Subsidiary companies of Landa Holding",
-    "text":"Landa International Holding consists of 10 active companies operating in Canada and Iran, with offices in the cities of Toronto, Vancouver, Tehran, and Isfahan. Our mission is to invest in creative entrepreneurs, supporting them from the very beginning, starting with ideation, all the way to launching international startups."
+    "title":"Subsidiary companies of NovaNest Venture",
+    "text":"NovaNest Venture consists of 10 active companies operating in Canada and Iran, with offices in the cities of Toronto, Vancouver, Tehran, and Isfahan. Our mission is to invest in creative entrepreneurs, supporting them from the very beginning, starting with ideation, all the way to launching international startups."
 
   },
   "VISIONMission" : { 

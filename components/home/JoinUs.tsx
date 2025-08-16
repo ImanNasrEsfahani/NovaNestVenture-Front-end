@@ -9,7 +9,7 @@ export default function ContactUs() {
     <div className="flex flex-col items-center justify-between bg-neutral-50 px-12 text-justify md:h-[644px] md:flex-row md:px-36">
       <div className="flex flex-col items-center justify-center px-1 py-10 md:h-[476px] md:w-[515px]">
         <p className=":text-justify text-black md:text-xl">
-          At Landa Holding, we welcome strategic affiliations with international
+          At NovaNest Venture, we welcome strategic affiliations with international
           firms and qualified influencers alike. As an approved affiliate, you
           will receive co-branded support and future representations that wield
           substantial influence within the business landscape. To become an

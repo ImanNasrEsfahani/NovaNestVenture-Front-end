@@ -6,7 +6,7 @@
   "StartUp": "StartUp",
   "HeroSubtitle": "Feel The Future",
   "investment": "Investment",
-  "LandaHolding": "LANDA HOLDING",
+  "LandaHolding": "NovaNest Venture",
   "Home": "Home",
   "AboutUs": "ABOUT US",
   "ContactUs": "CONTACT US",
@@ -21,7 +21,7 @@
   "ApplyJob": "APPLY JOB",
   "Landa": "Landa",
   "PartnersTitle": "Join Our Business Partners",
-  "PartnersDescription": "At Landa Holding, we welcome strategic affiliations with international firms and qualified influencers alike. As an approved affiliate, you will receive co-branded support and future representations that wield substantial influence within the business landscape. To become an affiliate, please complete our free questionnaire for our confidential review.",
+  "PartnersDescription": "At NovaNest Venture, we welcome strategic affiliations with international firms and qualified influencers alike. As an approved affiliate, you will receive co-branded support and future representations that wield substantial influence within the business landscape. To become an affiliate, please complete our free questionnaire for our confidential review.",
   "LatestStartups": "Latest Starups",
   "Priorities": "Investment Priorities",
   "businessTeamText": "What Our Cooperation Members Say",
@@ -95,7 +95,7 @@
   ],
 
   "Academy": " Academy",
-  "Landaholding": "Landa Holding",
+  "Landaholding": "NovaNest Venture",
   "LandaAcademyInfo": "At Landa  Academy, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, Landa Academy equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   "landaHoldingBlackFirst": [
     "Global investment opportunities within your reach.",
@@ -184,7 +184,7 @@
       "roleInCompany": "Founder of IRimmigration",
       "role": "Investor",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "The specialized and skilled staff at Landa Holding made short work on the issues that had been preventing me from advancing in my career.",
+      "commentDescription": "The specialized and skilled staff at NovaNest Venture made short work on the issues that had been preventing me from advancing in my career.",
       "linkedinLink": "https://www.linkedin.com/in/johndoe",
       "personalWebsite": "https://www.johndoe.com",
       "email": "john.doe@example.com"
@@ -194,7 +194,7 @@
       "roleInCompany": "Product Manager",
       "role": "Product Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "For me, my time spent working with Landa Holdings with this extremely competent staff was an experience that I will never forget.",
+      "commentDescription": "For me, my time spent working with NovaNest Venture with this extremely competent staff was an experience that I will never forget.",
       "linkedinLink": "https://www.linkedin.com/in/janedoe",
       "personalWebsite": "https://www.janedoe.com",
       "email": "jane.doe@example.com"
@@ -204,7 +204,7 @@
       "roleInCompany": "UX Designer",
       "role": "Design Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "Landa Holding is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
+      "commentDescription": "NovaNest Venture is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
       "linkedinLink": "https://www.linkedin.com/in/bobsmith",
       "personalWebsite": "https://www.bobsmith.com",
       "email": "bob.smith@example.com"
@@ -266,7 +266,7 @@
   ],
   "register": "Register",
   "upcomingStartups": {
-    "landaHolding": "LANDA HOLDING",
+    "landaHolding": "NovaNest Venture",
     "title": "Upcoming Startups",
     "cards": [
       {

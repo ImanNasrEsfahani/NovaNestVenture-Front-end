@@ -5,9 +5,9 @@ import { useTranslation } from 'app/i18n';
 import { LandaBgBig } from 'public/static/logos/LandaBgBig';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Startups',
+  title: 'NovaNest Venture | Startups',
   description:
-    'Explore the Landa Holding Startup Form and share your innovative ideas with us. We are interested in hearing from startups and entrepreneurs. Lets work together to bring your vision to life.'
+    'Explore the NovaNest Venture Startup Form and share your innovative ideas with us. We are interested in hearing from startups and entrepreneurs. Lets work together to bring your vision to life.'
 };
 
 export default async function StartupValidationPage({

@@ -6,7 +6,7 @@ export default function AboutUsCooperation() {
   return (
     <div className="h-full bg-neutral-800 py-10 text-center text-white">
       <div className="text-center">
-        <p className="tracking-widest">LANDA HOLDING</p>
+        <p className="tracking-widest">NovaNest Venture</p>
         {/* <p className="text-5xl not-italic leading-normal font-gilda">
           Cooperation
         </p> */}

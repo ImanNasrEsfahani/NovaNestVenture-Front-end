@@ -3,7 +3,7 @@
 //       "title": "About Us",
 //       "cards": [
 //         {
-//           "title": "Landa Holding",
+//           "title": "NovaNest Venture",
 //           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eu tincidunt feugiat, velit elit bibendum sapien, vel bibendum sapien elit euismod diam.",
 //           "link": "/StartupsForm"
 //         },

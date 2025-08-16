@@ -15,9 +15,9 @@ import HomeLandaAcademy from '@/components/home/HomeLandaAcademy';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding',
+  title: 'NovaNest Venture',
   description:
-    'Welcome to Landa Holding, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
+    'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
 export default async function Page({

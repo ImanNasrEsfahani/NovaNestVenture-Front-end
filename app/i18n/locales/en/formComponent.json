@@ -95,7 +95,7 @@
   "entrepreneurForm": {
     "lng": "en",
     "banner": "ENTREPRENEUR CENTER",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "formTitle": "Entrepreneur Center FORM",
     "formSubtitle": "Personal Information"
   },
@@ -103,7 +103,7 @@
   "jobForm": {
     "lng": "en",
     "dir": "ltr",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "banner": "WORK WITH US",
     "formTitle": "WORK WITH US",
     "formSubtitle": "Personal Information",
@@ -113,7 +113,7 @@
   "workWithUS": {
     "lng": "en",
     "dir": "ltr",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "banner": "APPLY JOB",
     "BannerTitle": "Work With Us",
     "formTitle": "Let’s Talk About How We Can Grow Together",
@@ -151,7 +151,7 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "INVESTOR CENTER",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "formTitle": "INVESTOR REGISTRATION FORM",
     "formSubtitle": "Personal Information",
     "interests": "Intrests",
@@ -163,7 +163,7 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "INVESTOR CENTER",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "formTitle": "Work With Us",
     "formSubtitle": "Let’s Talk About How We Can Grow Together",
     "positionRequired": "please select you position",
@@ -177,7 +177,7 @@
     "dir": "ltr",
     "YesButton": "Yes",
     "NoButton": "No",
-    "LandaHolding": "Landa Holding",
+    "LandaHolding": "NovaNest Venture",
     "banner": "STARTUPS VALIDATION FORM",
     "formTitle": "STARTUPS FORM",
     "formBanner": "STARTUPS VALIDATION",

@@ -5,9 +5,9 @@ import { useTranslation } from 'app/i18n';
 import '../../[lang]/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Our Team',
+  title: 'NovaNest Venture | Our Team',
   description:
-    'Meet the dedicated and talented individuals who make up the Landa Holding team. Learn about their expertise, passion, and commitment to excellence. Get to know the driving force behind our success.'
+    'Meet the dedicated and talented individuals who make up the NovaNest Venture team. Learn about their expertise, passion, and commitment to excellence. Get to know the driving force behind our success.'
 };
 
 export default async function TeamPage({

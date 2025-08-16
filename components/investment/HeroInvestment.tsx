@@ -36,7 +36,7 @@ export default function Hero({
               : 'tracking-normal'
           }`}
         >
-          {lang === 'en' ? 'Landa Holding' : 'هلدینگ لاندا'}
+          {lang === 'en' ? 'NovaNest Venture' : 'نوا نست ونچر'}
         </div>
         <div
           className={`text-center font-gilda text-4xl md:text-6xl ${

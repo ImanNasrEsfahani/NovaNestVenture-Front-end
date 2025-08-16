@@ -5,9 +5,9 @@ import { Metadata } from 'next';
 import { useTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Investors',
+  title: 'NovaNest Venture | Investors',
   description:
-    'Explore the Landa Holding Investor Center, your gateway to comprehensive financial information, reports, and updates. Stay informed about our financial performance and investment opportunities.',
+    'Explore the NovaNest Venture Investor Center, your gateway to comprehensive financial information, reports, and updates. Stay informed about our financial performance and investment opportunities.',
 };
 
 export default async function InvestorRegistrationPage({

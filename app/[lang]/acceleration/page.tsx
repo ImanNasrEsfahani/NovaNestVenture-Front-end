@@ -5,9 +5,9 @@ import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import Banner from '@/components/common/Banner';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Acceleration',
+  title: 'NovaNest Venture | Acceleration',
   description:
-    'Welcome to Landa Holding, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
+    'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 export default async function Page({
   params: { lang }

@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 import { useTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Jobs',
+  title: 'NovaNest Venture | Jobs',
   description:
-    'Explore the Landa Holding Apply Form and take the first step towards exciting opportunities. Share your qualifications and interests with us as you apply for roles within our organization. Join us in shaping a brighter future together.'
+    'Explore the NovaNest Venture Apply Form and take the first step towards exciting opportunities. Share your qualifications and interests with us as you apply for roles within our organization. Join us in shaping a brighter future together.'
 };
 
 export default async function ApplyFormPage({

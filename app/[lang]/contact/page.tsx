@@ -5,9 +5,9 @@ import ContactUsDescription from '@/components/common/ContactUsDescription';
 import './contact.css';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Contact',
+  title: 'NovaNest Venture | Contact',
   description:
-    'Contact Landa Holding to get in touch with our dedicated team. Whether you have questions, inquiries, or partnership opportunities, we are here to assist you. Reach out to us today.'
+    'Contact NovaNest Venture to get in touch with our dedicated team. Whether you have questions, inquiries, or partnership opportunities, we are here to assist you. Reach out to us today.'
 };
 
 export default async function ContactUsPage({

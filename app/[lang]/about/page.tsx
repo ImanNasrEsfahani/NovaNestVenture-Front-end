@@ -8,9 +8,9 @@ import KeyDifferentiating from '@/components/KeyDifferentiating';
 import { useTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | About',
+  title: 'NovaNest Venture | About',
   description:
-    'Learn about Landa Holding, a forward-thinking company dedicated to innovation and excellence. Discover our mission, values, and the team behind our success. Join us on our journey towards a brighter future.',
+    'Learn about NovaNest Venture, a forward-thinking company dedicated to innovation and excellence. Discover our mission, values, and the team behind our success. Join us on our journey towards a brighter future.',
 };
 
 export default async function Page({

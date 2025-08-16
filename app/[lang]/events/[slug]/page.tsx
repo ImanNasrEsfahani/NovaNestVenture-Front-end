@@ -11,9 +11,9 @@ import LocationIcon from '@/components/icons/LocationIcon';
 import TagIcon from '@/components/icons/TagIcon';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Event',
+  title: 'NovaNest Venture | Event',
   description:
-    'Welcome to Landa Holding, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
+    'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
 export default function Page({
@@ -38,7 +38,7 @@ export default function Page({
 
   const cardData = [
     {
-      title: 'Landa Holding | Event',
+      title: 'NovaNest Venture | Event',
       date: {
         start: '2021-09-01',
         end: '2021-09-01',

@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 import { useTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Partners',
+  title: 'NovaNest Venture | Partners',
   description:
-    'Explore the Landa Holding Business Partner Form and discover opportunities for collaboration and partnership. Join us in shaping the future of business together.'
+    'Explore the NovaNest Venture Business Partner Form and discover opportunities for collaboration and partnership. Join us in shaping the future of business together.'
 };
 
 export default async function AffiliateFormPage({

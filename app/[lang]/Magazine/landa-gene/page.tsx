@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { useTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
-  title: 'Landa Holding | Landa Gene',
+  title: 'NovaNest Venture | Landa Gene',
   description: ''
 };
 

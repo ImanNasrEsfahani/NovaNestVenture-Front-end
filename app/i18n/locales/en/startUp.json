@@ -16,15 +16,15 @@
     "nature-title" : "The Nature of Startups",
     "nature-detail" : "Having an innovative idea is essential for the development of a startup. These businesses often aim to solve problems or introduce new services by identifying gaps in existing products or services and offering creative solutions. Landa International Holding, equipped with professionals, consultants, and international experts, stands ready to support aspiring entrepreneurs in launching their businesses and navigating any challenges they may encounter along the way.",
 
-    "gateway-title" : "Landa International Holding: Your Gateway to Success in Canada",
-    "gateway-detail" : "Landa International Holding provides comprehensive services to help early-stage startups that have recently entered Canada through the Startup Visa Program expand and grow their businesses in the country. By utilizing the consulting services of our expert team, you can overcome the challenges of launching and developing an international startup in areas such as marketing, human resources, finance, and legal matters.",
+    "gateway-title" : "NovaNest Venture: Your Gateway to Success in Canada",
+    "gateway-detail" : "NovaNest Venture provides comprehensive services to help early-stage startups that have recently entered Canada through the Startup Visa Program expand and grow their businesses in the country. By utilizing the consulting services of our expert team, you can overcome the challenges of launching and developing an international startup in areas such as marketing, human resources, finance, and legal matters.",
     
-    "service-title" : "Landa Holding Services",
+    "service-title" : "NovaNest Venture Services",
     "service-list" : [
         {
             "icon" : "MusicPlay",
             "title" : "Mentorship and Consulting",
-            "description" : " One of the key advantages of Landa Holding's startup services is access to a team of international experts and consultants who specialize in startup registration and expansion on a global scale. "
+            "description" : " One of the key advantages of NovaNest Venture's startup services is access to a team of international experts and consultants who specialize in startup registration and expansion on a global scale. "
         },
         {
             "icon" : "PresentionChart",
@@ -34,16 +34,16 @@
         {
             "icon" : "Data",
             "title" : "Networking",
-            "description" : " Through collaborations with international partners, Landa Holding assists you in building your brand and establishing effective business connections in Canada."
+            "description" : " Through collaborations with international partners, NovaNest Venture assists you in building your brand and establishing effective business connections in Canada."
         },
         {
             "icon" : "MoneyRecive",
             "title" : "Investment",
-            "description" : " The growth and expansion of a business in a new market with unknown potential requires adequate investment. At Landa Holding, we facilitate the growth and success of startups through investment."
+            "description" : " The growth and expansion of a business in a new market with unknown potential requires adequate investment. At NovaNest Venture, we facilitate the growth and success of startups through investment."
         }
     ],
 
-    "services-title": "Landa Holding Services for Startups Entering the Canadian Market",
+    "services-title": "NovaNest Venture Services for Startups Entering the Canadian Market",
     "services-list" : [
         "Qualified business plan draft",
         "Delivering startup documentation to organizations",
