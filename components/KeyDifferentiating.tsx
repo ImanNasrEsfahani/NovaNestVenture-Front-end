@@ -51,7 +51,7 @@ export default function KeyDifferentiating() {
       <div className="hidden items-center w-[30%] md:flex md:justify-end">
         <Image
           src="/static/images/Home/KeyDifferentiating/Vector 58.png"
-          alt="Landa Key Differentiating"
+          alt="NovaNest Venture Key Differentiating"
           width={486}
           height={741}
           loading="lazy"

@@ -32,7 +32,7 @@ export default async function Footer(
             <Link
               aria-label="Instagram"
               href={
-                'https://instagram.com/landa_holding?igshid=YTQwZjQ0NmI0OA=='
+                'https://instagram.com/novanestventure'
               }
               className="hover:text-primary"
               target="_blank"
@@ -41,14 +41,14 @@ export default async function Footer(
             </Link>
             <Link
               aria-label="Email"
-              href={'mailto:info@landaholding.com'}
+              href={'mailto:info@NovaNestVenture.com'}
               className="hover:text-primary"
             >
               <Envelope />
             </Link>
             <Link
               aria-label="Whatsapp"
-              href={'https://wa.me/02126917419'}
+              href={'https://wa.me/+17789865432'}
               className="hover:text-primary"
               target="_blank"
             >
@@ -56,7 +56,7 @@ export default async function Footer(
             </Link>
             <Link
               aria-label="Linkedin"
-              href={'https://www.linkedin.com/company/landa-startup-inc'}
+              href={'https://www.linkedin.com/company/novanestventure/'}
               className="hover:text-primary"
               target="_blank"
             >
@@ -142,24 +142,12 @@ export default async function Footer(
           <div dir='ltr' className="text-justify text-base font-normal text-black">
             {t('contact', { returnObjects: true }).text.cNumber}
           </div>
-          <div className="border-t border-t-[#AA8453] pt-1 text-justify text-base font-normal text-black">
-            {t('contact', { returnObjects: true }).text.tehran}
-          </div>
-          <div dir='ltr' className="border-b border-b-[#AA8453] pb-1 text-justify text-base font-normal text-black">
-            {t('contact', { returnObjects: true }).text.tNumber}
-          </div>
-          <div className="text-base font-normal text-black">
-            {t('contact', { returnObjects: true }).text.isfahan}
-          </div>
-          <div dir='ltr' className="text-base font-normal text-black">
-            {t('contact', { returnObjects: true }).text.iNumber}
-          </div>
         </div>
       </div>
       <div className="self-stretch border-t border-[#DDCEBA] pt-4 text-center text-[#DDCEBA]" dir='ltr'>
         © Copyright {GetYear()} by{' '}
         <Link href={'/'} className="text-[#DDCEBA]">
-          LandaHolding
+          NovaNestVenture
         </Link>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function Logo({ route }: { route: 'holding' | 'academy' }) {
             className={`${route === 'academy' ? 'text-lime-400' : 'text-primary'
               } text-[12px] font-bold tracking-[0.375px] md:text-xl`}
           >
-            {route === 'academy' ? 'Academy' : 'Landa'}
+            {route === 'academy' ? 'Academy' : 'NovaNest'}
           </span>
         </div>
       </Link>

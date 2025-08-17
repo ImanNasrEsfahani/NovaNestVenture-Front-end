@@ -14,7 +14,7 @@ export default function MagazineModernPostBottomCard({
         <Image
           loading="lazy"
           src={image}
-          alt="Landa"
+          alt="NovaNest Venture"
           width={330}
           height={430}
         />

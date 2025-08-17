@@ -12,7 +12,7 @@ export default function LandaMagazine() {
       <div className="flex justify-center bg-neutral-800 py-5">
         <div className="flex flex-col">
           <div className="my-10 font-gilda text-3xl font-normal text-white md:ml-16 md:text-[64px]">
-            LANDA MAGAZINE
+            NovaNest Venture MAGAZINE
           </div>
           <div className="flex flex-row items-center justify-center">
             <button className="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white">

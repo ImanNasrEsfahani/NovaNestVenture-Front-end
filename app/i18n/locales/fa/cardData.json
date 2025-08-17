@@ -137,27 +137,15 @@
       }
     },
     {
-      "image": "/static/images/about/mjafari.jpg",
-      "name": "مرتضی جعفری",
-      "position": "مدیر ارتباطات بین الملل",
+      "image": "/static/images/our-team/Personals/a3.webp",
+      "name": "مهرنوش حبیبی",
+      "position": "مدیر ارشد اجرایی",
       "links": {
-        "linkedin": "https://www.linkedin.com/in/morteza-jafari-5b40b63a",
-        "whatsapp": "https://api.whatsapp.com/send?phone=+14705199691",
-        "email": "mailto:morteza_jafari49@yahoo.com",
-        "website": "https://mortezajafari.ca/",
-        "instagram": "https://instagram.com/jafari.irimmigration.ca?igshid=MzRlODBiNWFlZA=="
-      }
-    },
-    {
-      "image": "/static/images/our-team/Personals/a2.webp",
-      "name": "هادی حسن پور",
-      "position": "رئیس هیئت مدیره",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/hadi-hasanpour",
-        "whatsapp": "https://wa.me/+12892693933",
-        "email": "mailto:hadihasanpor@gmail.com",
-        "website": "https://www.hadihasanpour.ca/",
-        "instagram": "https://instagram.com/dr.hadihasanpour?igshid=MzRlODBiNWFlZA=="
+        "linkedin": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
+        "whatsapp": "wa.me/+989134233863",
+        "email": "mailto:rasoulmoradimehr@gmail.com",
+        "website": "https://moradimehr.com/",
+        "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
       }
     }
   ]

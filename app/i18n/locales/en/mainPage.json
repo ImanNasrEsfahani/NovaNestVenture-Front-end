@@ -6,7 +6,7 @@
   "StartUp": "StartUp",
   "HeroSubtitle": "Feel The Future",
   "investment": "Investment",
-  "LandaHolding": "NovaNest Venture",
+  "NovaNestVenture": "NovaNest Venture",
   "Home": "Home",
   "AboutUs": "ABOUT US",
   "ContactUs": "CONTACT US",
@@ -19,7 +19,7 @@
   "Startups Validation": "STARTUPS VALIDATION",
   "SeeMore": "SEE MORE",
   "ApplyJob": "APPLY JOB",
-  "Landa": "Landa",
+  "NovaNest": "NovaNest",
   "PartnersTitle": "Join Our Business Partners",
   "PartnersDescription": "At NovaNest Venture, we welcome strategic affiliations with international firms and qualified influencers alike. As an approved affiliate, you will receive co-branded support and future representations that wield substantial influence within the business landscape. To become an affiliate, please complete our free questionnaire for our confidential review.",
   "LatestStartups": "Latest Starups",
@@ -30,9 +30,9 @@
 
   "cards": [
     {
-      "smallTitle" : "Landa",
+      "smallTitle" : "NovaNest",
       "title": "Investment",
-      "text": "At Landa  Investment Center, we mainly focus on investing in innovative, scalable startups with international market potentials and the valuation of $5 million or less. We are a group of angel investors who can help you build your own team, define your business model, and increase the value of your startup in global markets. With initial investment, capital raising, and access to a network of global investors, we will assist you in achieving success and increasing your business development.",
+      "text": "At NovaNest Venture  Investment Center, we mainly focus on investing in innovative, scalable startups with international market potentials and the valuation of $5 million or less. We are a group of angel investors who can help you build your own team, define your business model, and increase the value of your startup in global markets. With initial investment, capital raising, and access to a network of global investors, we will assist you in achieving success and increasing your business development.",
       "reverse": false,
       "show": true,
       "index": 1,
@@ -40,20 +40,20 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/2.webp",
+          "src": "/static/images/Home/2.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/1.webp",
+          "src": "/static/images/Home/1.webp",
           "alt": ""
         }
       ],
       "buttonText": "Vsit Now"
     },
     {
-      "smallTitle" : "Landa",
+      "smallTitle" : "NovaNest",
       "title": "Entrepreneurship",
-      "text": "The Landa Entrepreneurship Center was founded to promote and cultivate entrepreneurial innovation. By embracing individuals who are constantly on the lookout for fresh ideas while acknowledging the inherent risks and uncertainties in every new business, the center empowers them to transform these ideas into new opportunities. This is made possible through the supportive facilities and skilled professionals available at the center.",
+      "text": "The NovaNest Entrepreneurship Center was founded to promote and cultivate entrepreneurial innovation. By embracing individuals who are constantly on the lookout for fresh ideas while acknowledging the inherent risks and uncertainties in every new business, the center empowers them to transform these ideas into new opportunities. This is made possible through the supportive facilities and skilled professionals available at the center.",
       "reverse": true,
       "show": true,
       "index": 2,
@@ -61,20 +61,20 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/3.webp",
+          "src": "/static/images/Home/3.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/4.webp",
+          "src": "/static/images/Home/4.webp",
           "alt": ""
         }
       ],
       "buttonText": "Vsit Now"
     },
     {
-      "smallTitle" : "Landa",
+      "smallTitle" : "NovaNestVenture",
       "title": "StartUp",
-      "text": "The term \"Startup\" encompasses various meanings, but it commonly denotes a new company with a focus on technology and significant growth prospects. Landa International Holding aims to invest in innovative startups with global potential, particularly in areas such as artificial intelligence (AI), Genetic Testing, and education. The holding is looking to invest in startups with the potential to make a global impact.",
+      "text": "The term \"Startup\" encompasses various meanings, but it commonly denotes a new company with a focus on technology and significant growth prospects. NovaNest Venture aims to invest in innovative startups with global potential, particularly in areas such as artificial intelligence (AI), Genetic Testing, and education. The holding is looking to invest in startups with the potential to make a global impact.",
       "reverse": false,
       "show": false,
       "index": 3,
@@ -82,11 +82,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/5.webp",
+          "src": "/static/images/Home/5.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/6.webp",
+          "src": "/static/images/Home/6.webp",
           "alt": ""
         }
       ],
@@ -95,8 +95,8 @@
   ],
 
   "Academy": " Academy",
-  "Landaholding": "NovaNest Venture",
-  "LandaAcademyInfo": "At Landa  Academy, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, Landa Academy equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
+  "NovaNestVenture": "NovaNest Venture",
+  "LandaAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   "landaHoldingBlackFirst": [
     "Global investment opportunities within your reach.",
     "Access to a network of successful entrepreneurs and investors.",
@@ -180,16 +180,6 @@
   "navbar": {},
   "commentsData": [
     {
-      "name": "Morteza Jafari",
-      "roleInCompany": "Founder of IRimmigration",
-      "role": "Investor",
-      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "The specialized and skilled staff at NovaNest Venture made short work on the issues that had been preventing me from advancing in my career.",
-      "linkedinLink": "https://www.linkedin.com/in/johndoe",
-      "personalWebsite": "https://www.johndoe.com",
-      "email": "john.doe@example.com"
-    },
-    {
       "name": "Jane Doe",
       "roleInCompany": "Product Manager",
       "role": "Product Lead",
@@ -266,7 +256,7 @@
   ],
   "register": "Register",
   "upcomingStartups": {
-    "landaHolding": "NovaNest Venture",
+    "NovaNestVenture": "NovaNest Venture",
     "title": "Upcoming Startups",
     "cards": [
       {

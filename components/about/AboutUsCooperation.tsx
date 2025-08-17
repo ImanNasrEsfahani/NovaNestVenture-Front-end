@@ -17,7 +17,7 @@ export default function AboutUsCooperation() {
             Investment Center
           </p>
           <p className="pt-2 font-light lg:max-xl:mb-1 xl:px-32 2xl:mb-2">
-            The Landa Investors Association is composed of a group of
+            The NovaNest Venture Investors Association is composed of a group of
             individuals active in the field of investment who collaborate with
             each other based on their investment priorities and invest in
             startups and new businesses.

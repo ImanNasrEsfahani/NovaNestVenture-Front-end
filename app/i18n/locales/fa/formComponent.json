@@ -105,7 +105,7 @@
   "jobForm": {
     "lng": "fa",
     "dir": "rtl",
-    "LandaHolding": "هلدینگ لاندا",
+    "NovaNestVenture": "نوانست ونچر",
     "banner": "درخواست همکاری",
     "formTitle": "فرم درخواست همکاری",
     "formSubtitle": "اطلاعات شخصی",
@@ -115,7 +115,7 @@
   "workWithUS": {
     "lng": "fa",
     "dir": "rtl",
-    "LandaHolding": "هلدینگ لاندا",
+    "NovaNestVenture": "نوانست ونچر",
     "banner": "درخواست کار",
     "BannerTitle": "همکار ی با ما",
     "formTitle": "شرکت فروغ روشن پاسارگاد و آفرینندگان آشکار هدف در راستای تکمیل کادر فنی هلدینگ لاندا پذیرای افراد با استعداد می‌باشد",
@@ -149,7 +149,7 @@
   "entrepreneurForm": {
     "lng": "fa",
     "banner": "مرکز کارآفرینان",
-    "LandaHolding": "هلدینگ لاندا",
+    "NovaNestVenture": "نوانست ونچر",
     "formTitle": "فرم مرکز کارآفرینان",
     "formSubTitle": "اطلاعات شخصی"
   },
@@ -157,7 +157,7 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "مرکز سرمایه گذار",
-    "LandaHolding": "هلدینگ لاندا",
+    "NovaNestVenture": "نوانست ونچر",
     "formTitle": "فرم مرکز سرمایه گذاران",
     "formSubtitle": "اطلاعات شخصی",
     "interests": "علاقه مندی ها",

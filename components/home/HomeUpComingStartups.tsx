@@ -37,7 +37,7 @@ export default function HomeUpComingStartups() {
       <div className="my-4 font-gilda flex flex-col justify-start gap-6 md:items-center md:py-16 md:pt-12">
         <div className="pt-10 w-full px-6">
           <p className="pt-12 pb-1 md:pb-3">
-            {t('upcomingStartups', { returnObjects: true }).landaHolding}
+            {t('upcomingStartups', { returnObjects: true }).NovaNestVenture}
           </p>
           <p className=" font-bold pb-0 md:pb-12 text-2xl text-black md:text-5xl ">
             {t('upcomingStartups', { returnObjects: true }).title}

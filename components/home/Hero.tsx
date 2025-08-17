@@ -68,7 +68,7 @@ export default function Hero({
         loading="lazy"
         className="absolute bottom-0 ml-24 mr-12 h-[365px] w-[300px] ltr:-right-32 rtl:-left-32 sm:h-[365px] sm:w-[500px] md:mx-0 md:h-[365px] md:w-[500px] ltr:md:right-0 md:rtl:left-0 md:rtl:right-auto xl:h-[560px] xl:w-[420px]"
         src="/static/images/Vector 58 (1).png"
-        alt="Landa"
+        alt="NovaNestVenture"
         width={500}
         height={500}
       />

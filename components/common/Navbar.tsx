@@ -74,7 +74,7 @@ export default function Navbar({
                   height={50}
                 />
                 <span className="font-condensed text-[12px] font-bold text-primary ltr:tracking-[0.25rem] md:text-xl">
-                  {lang == 'en' ? 'LANDA' : 'LANDA'}
+                  {lang == 'en' ? 'NovaNest' : 'نوانست'}
                 </span>
               </div>
             </Link>
@@ -129,7 +129,7 @@ export default function Navbar({
           <Image
             className="mx-auto mb-2"
             src="static/images/Logo.svg"
-            alt="Landa Key Differentiating"
+            alt="NovaNest Venture Key Differentiating"
             width={96}
             height={4}
             loading="lazy"
@@ -204,7 +204,7 @@ export default function Navbar({
                 </svg>
               </Link>
 
-              <Link href={'mailto:info@landaholding.com'}>
+              <Link href={'mailto:info@NovaNestVenture.com'}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

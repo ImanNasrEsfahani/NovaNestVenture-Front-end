@@ -41,7 +41,7 @@ export default function MagazineModernPostCard3() {
               loading="lazy"
               className=""
               src={'/static/images/Magazine/Rectangle 2881.png'}
-              alt="Landa"
+              alt="NovaNest Venture"
               width={800}
               height={300}
             />

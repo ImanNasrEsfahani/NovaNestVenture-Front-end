@@ -1,8 +1,8 @@
 {
   "lng": "fa",
   "banner": "درباره ما",
-  "LandaHolding": "هلدینگ لاندا",
-  "focusText": "اطلاعات موجود در گواهی ثبت شرکتها برای ارائه به عموم مردم تنظیم شده است. این گواهی، شامل اطلاعات آدرس دفتر Landa Startup Inc در کشور کانادا و اطلاعات مدیران شرکت می‌شود. اطلاعات شخصی مربوط به مدیران باید در اختیار عموم قرار گیرد؛ چرا که این عمل مسئولیت پذیری شرکت را نشان می دهد.",
+  "NovaNestVenture": "نوانست ونچر",
+  "focusText": "اطلاعات موجود در گواهی ثبت شرکتها برای ارائه به عموم مردم تنظیم شده است. این گواهی، شامل اطلاعات آدرس دفتر NovaNest Venture در کشور کانادا و اطلاعات مدیران شرکت می‌شود. اطلاعات شخصی مربوط به مدیران باید در اختیار عموم قرار گیرد؛ چرا که این عمل مسئولیت پذیری شرکت را نشان می دهد.",
   "certificate": "گواهی ثبت",
   "buttonTitle": "استعلام شرکت از وبسایت دولت کانادا",
   "readMore": "بیشتر بخوانید",
@@ -141,18 +141,6 @@
   "boardOfDirectors": "هیئت مدیره",
   "boardMemebers": [
     {
-      "image": "/static/images/our-team/Personals/a52.webp",
-      "name": "مرتضی جعفری",
-      "position": "رئیس هیئت مدیره",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/morteza-jafari-5b40b63a",
-        "whatsapp": "https://api.whatsapp.com/send?phone=+14705199691",
-        "email": "mailto:morteza_jafari49@yahoo.com",
-        "website": "https://mortezajafari.ca/",
-        "instagram": "https://instagram.com/jafari.irimmigration.ca?igshid=MzRlODBiNWFlZA=="
-      }
-    },
-    {
       "image": "/static/images/our-team/Personals/rasoul.webp",
       "name": "رسول مرادی مهر",
       "position": "عضو هیئت مدیره",
@@ -162,19 +150,6 @@
         "email": "mailto:rasoulmoradimehr@gmail.com",
         "website": "https://moradimehr.com/",
         "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
-      }
-    },
- 
-    {
-      "image": "/static/images/our-team/Personals/hadi.webp",
-      "name": "هادی حسن پور",
-      "position": "مدیرعامل",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/hadi-hasanpour",
-        "whatsapp": "https://wa.me/+12892693933",
-        "email": "mailto:hadihasanpor@gmail.com",
-        "website": "https://www.hadihasanpour.ca/",
-        "instagram": "https://instagram.com/dr.hadihasanpour?igshid=MzRlODBiNWFlZA=="
       }
     }
   ]

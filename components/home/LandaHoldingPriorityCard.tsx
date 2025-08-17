@@ -32,7 +32,7 @@ export default function LandaHoldingPriorityCard({
         loading="lazy"
         className="absolute left-2 top-2 h-8 w-8 md:h-[50px] md:w-[50px]"
         src={image}
-        alt="Landa Priority"
+        alt="NovaNest Venture Priority"
         width={500}
         height={500}
       />

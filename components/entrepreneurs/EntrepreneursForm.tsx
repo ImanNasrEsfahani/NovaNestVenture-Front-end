@@ -43,7 +43,7 @@ export default function EntrepreneursForm() {
   //   async function fetchCsrfToken() {
   //     const token = await GetCsrfToken(
   //       // TODO: avoid hardcoding the URL.
-  //       'https://landa-back.landaholding.com/get-csrf-token'
+  //       'https://landa-back.novanestventure.com/get-csrf-token'
   //     );
   //     handleTokenChange(token);
   //   }

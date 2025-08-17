@@ -1,6 +1,6 @@
 
 
-export default function Landa() {
+export default function NovaNest() {
   return (
     <svg
       className="absolute bottom-[600px] right-0 -z-10"

@@ -20,7 +20,7 @@ export default function ContactUsDescription() {
     <div className="h-full">
       <div className="mb-5 mt-10 flex flex-col items-center md:my-0 md:w-[494px] md:items-start">
         <h1 className="font-gilda text-4xl md:text-5xl text-black uppercase font-bold">
-          {t('LandaHolding')}
+          {t('NovaNestVenture')}
         </h1>
         <p className="my-5 text-justify font-normal">{t('text')}</p>
       </div>
@@ -33,7 +33,7 @@ export default function ContactUsDescription() {
         >
           <Image
             src="/static/images/Icons/instagram_second.png"
-            alt="Landa Key Differentiating"
+            alt="NovaNest Venture Key Differentiating"
             width={30}
             height={741}
             loading="lazy"
@@ -42,17 +42,17 @@ export default function ContactUsDescription() {
         <Link href={'https://wa.me/02126917419'} target="_blank">
         <Image
           src="/static/images/Icons/whatsapp_second.png"
-          alt="Landa Key Differentiating"
+          alt="NovaNest Venture Key Differentiating"
           width={30}
           height={741}
           loading="lazy"
         />
         </Link>
-        <Link href={'mailto:info@landaholding.com'}>
+        <Link href={'mailto:info@NovaNestVenture.com'}>
           <Image
             className=""
             src="/static/images/Icons/sms.png"
-            alt="Landa Key Differentiating"
+            alt="NovaNest Venture Key Differentiating"
             width={30}
             height={741}
             loading="lazy"
@@ -64,7 +64,7 @@ export default function ContactUsDescription() {
         >
           {/* <Image
           src="/static/images/icons/web.png"
-          alt="Landa Key Differentiating"
+          alt="NovaNest Venture Key Differentiating"
           width={26}
           height={741}
           loading="lazy"
@@ -116,9 +116,9 @@ export default function ContactUsDescription() {
             <li>
               <a
                 className="rtl-text-right text-[#AA8453] ltr:text-left"
-                href="mailto:info@landaholding.com"
+                href="mailto:info@NovaNestVenture.com"
               >
-                info@landaholding.com
+                info@NovaNestVenture.com
               </a>
             </li>
           </ul>

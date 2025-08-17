@@ -67,7 +67,7 @@ export default function StoryOfLanda() {
               <Image
                 className="h-[1200px] hidden md:block w-full object-cover rounded-xl"
                 src="/static/images/About/story/aboutus.webp"
-                alt="story of landa"
+                alt="story of NovaNest Venture"
                 layout="fill"
                 // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
@@ -94,7 +94,7 @@ export default function StoryOfLanda() {
           <Image
             className="hidden md:block object-cover w-full rounded-xl"
             src="/static/images/About/story/1.webp"
-            alt="story of landa"
+            alt="story of NovaNest Venture"
             layout="fill"
           />
         </div>
@@ -115,7 +115,7 @@ export default function StoryOfLanda() {
             <Image
               className="object-cover w-full rounded-xl"
               src="/static/images/About/story/1.png"
-              alt="story of landa"
+              alt="story of NovaNest Venture"
               layout="fill"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />

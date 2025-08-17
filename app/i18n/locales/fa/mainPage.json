@@ -6,7 +6,7 @@
   "AccelerationCenter": "شتابدهنده",
   "StartUp": "مرکز رشد",
   "HeroSubtitle": "آینده را احساس کن",
-  "LandaHolding": "هلدینگ بین‌المللی لاندا",
+  "NovaNestVenture": "نوانست ونچر",
   "Home": "خانه",
   "AboutUs": "درباره ما",
   "SeeMore": "بیشتر",
@@ -20,7 +20,7 @@
   "BusinessPartners": "شرکای تجاری",
   "StartupsValidation": "اعتبار سنجی استارت آپ ها",
   "ApplyJob": "درخواست شغل",
-  "Landa": "لاندا",
+  "NovaNest Venture": "نوانست ونچر",
   "PartnersTitle": "به شرکای تجاری ما ملحق شوید",
   "PartnersDescription": "در هلدینگ لاندا، ما از وابستگی استراتژیک با شرکت های بین المللی و تأثیرگذاران واجد شرایط به طور یکسان استقبال می کنیم. به عنوان یک شرکت وابسته تایید شده، پشتیبانی با نام تجاری مشترک و نمایندگی های آینده دریافت خواهید کرد که تأثیر قابل توجهی در چشم انداز کسب و کار دارند. برای تبدیل شدن به یک شرکت وابسته، لطفا پرسشنامه رایگان ما را برای بررسی محرمانه ما تکمیل کنید",
   "LatestStartups": "استارت آپ های اخیر",
@@ -40,11 +40,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/2.webp",
+          "src": "/static/images/Home/2.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/1.webp",
+          "src": "/static/images/Home/1.webp",
           "alt": ""
         }
       ],
@@ -61,11 +61,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/3.webp",
+          "src": "/static/images/Home/3.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/4.webp",
+          "src": "/static/images/Home/4.webp",
           "alt": ""
         }
       ],
@@ -82,11 +82,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home main/5.webp",
+          "src": "/static/images/Home/5.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home main/6.webp",
+          "src": "/static/images/Home/6.webp",
           "alt": ""
         }
       ],
@@ -95,7 +95,7 @@
   ],
   "Academy": "آکادمی",
   "LandaAcademy": "آکادمی لاندا",
-  "Landaholding": "لاندا هلدینگ",
+  "NovaNestVenture": "نوانست ونچر",
   "LandaAcademyInfo": "در آکادمی لاندا، ما یک مکان پرورشی برای افراد فراهم می کنیم تا علایق و مهارت های خود را به طور موثر کشف کرده و رشد دهند. آکادمی ما به عنوان مکانی پویا عمل می کند که پتانسیل افراد با استعداد، به ویژه جوانان را شناسایی و ارزیابی می کند و در توسعه و ایده های خلاقانه آنها سرمایه گذاری می کند. آکادمی لاندا با ارائه برنامه ها و منابع جامع و از طریق ترکیبی از مربیگری، کارگاه های مهارت آموزی و قرار گرفتن در معرض فرصت های مختلف، شرکت کنندگان را با ابزارها و دانش لازم برای پیشرفت و موفقیت در زمینه های انتخابی خود مجهز می کند.",
   "landaHoldingBlackFirst": [
     "ایجاد فرصت‌های سرمایه‌گذاری بین‌المللی",
@@ -180,16 +180,6 @@
   "navbar": {},
   "commentsData": [
     {
-      "name": "Morteza Jafari",
-      "roleInCompany": "بنیانگذار IRimmigration",
-      "role": "سرمایه گذار",
-      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "کارکنان متخصص و ماهر در NovaNest Venture به سرعت مسائل را حل کردند که مانع پیشرفت من در حرفه ام می شد.",
-      "linkedinLink": "https://www.linkedin.com/in/johndoe",
-      "personalWebsite": "https://www.johndoe.com",
-      "email": "john.doe@example.com"
-    },
-    {
       "name": "Jane Doe",
       "roleInCompany": "مدیر محصول",
       "role": "رهبر محصول",
@@ -266,7 +256,7 @@
   ],
   "register": "ثبت نام",
   "upcomingStartups": {
-    "landaHolding": "هلدینگ لاندا",
+    "NovaNestVenture": "نوانست ونچر",
     "title": "استارت آپ های پیش رو",
     "cards": [
       {

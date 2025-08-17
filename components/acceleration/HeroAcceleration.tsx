@@ -34,7 +34,7 @@ export default async function Hero({
           className={` ${showLanda ? 'block' : 'hidden'
             } text-center font-barlow text-2xl font-normal text-white md:text-4xl ltr:tracking-[7px] ltr:md:tracking-[12.6px]`}
         >
-          {t('LandaHolding')}
+          {t('NovaNestVenture')}
         </div>
         <div className="text-center font-gilda text-4xl text-[#F8F5F0] md:text-6xl ltr:tracking-[6.4px]">
           {t('AccelerationCenter')}
@@ -63,7 +63,7 @@ export default async function Hero({
           loading="lazy"
           className="absolute -right-16 bottom-0 mr-0  h-[420px] w-[365px] sm:h-[302px] sm:w-[305px] md:right-0 md:mr-0   md:h-[372px] md:w-[265px] xl:h-[560px] xl:w-[420px] "
           src={`/static/images/${leftImage}`}
-          alt="Landa"
+          alt="NovaNest Venture"
           width={500}
           height={500}
         />

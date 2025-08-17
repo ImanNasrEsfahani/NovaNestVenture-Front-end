@@ -22,7 +22,7 @@ export default function PostCard({
       <Image
         className="rounded-sm object-cover"
         src={image}
-        alt="Landa magazine post"
+        alt="NovaNest Venture magazine post"
         width={850}
         height={384}
       />

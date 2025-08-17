@@ -3,31 +3,10 @@
     "defaultRole": "All",
     "persons": [
         {
-          "image": "/static/images/our-team/Personals/a52.webp",
-          "position": "MOTB",
-          "name": "Morteza jafari ",
-          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
-          "category": "managers"
-        },
-        {
           "image": "/static/images/our-team/Personals/rasoul.webp",
           "position": "COTB",
           "name": "Rasoul Moradimehr",
           "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
-          "category": "managers"
-        },
-        {
-          "image": "/static/images/our-team/Personals/hadi.webp",
-          "position": "CEO", 
-          "name": "Hadi Hasanpour",
-          "linkedIn": "https://www.linkedin.com/in/hadi-hasanpour?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-          "category": "managers"
-        },
-        {
-          "image": "/static/images/our-team/Personals/mahsa-s.webp",
-          "position": "Case Manager",
-          "name": "Mahsa Esmaeili",
-          "linkedIn": "https://www.linkedin.com/in/mahsa-esmaili",
           "category": "managers"
         },
         {

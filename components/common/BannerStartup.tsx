@@ -38,7 +38,7 @@ export default function BannerStartUp({
             <p
               className={`font-condensed text-xl font-normal text-neutral-50 ltr:tracking-[5.60px]`}
             >
-              {t('LandaHolding')}
+              {t('NovaNestVenture')}
             </p>
             <p className="font-gilda text-[32px] font-normal text-neutral-50 md:text-[50px] lg:text-[50px] xl:text-[50px]">
               {title}

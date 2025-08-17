@@ -61,7 +61,7 @@ export default function Hero({
           loading="lazy"
           className="absolute -right-16 bottom-0 mr-0  h-[420px]  w-[385px] sm:h-[302px] sm:w-[305px] md:right-0 md:mr-0   md:h-[372px] md:w-[265px] xl:h-[560px] xl:w-[420px] "
           src={`${leftImage}`}
-          alt="Landa"
+          alt="NovaNest Venture"
           width={500}
           height={500}
         />

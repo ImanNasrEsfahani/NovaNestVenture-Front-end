@@ -2,7 +2,7 @@ import Banner from '@/components/common/Banner';
 import SearchInput from '@/components/magazine/SearchInput';
 import CategoriesContainer from '@/components/magazine/CategoriesContainer';
 import TagsContainer from '@/components/magazine/TagsContainer';
-import Landa from '@/components/icons/magazine/Landa';
+import NovaNest from '@/components/icons/magazine/NovaNest';
 import MagazineCardsContainer from '@/components/magazine/MagazineCardsContainer';
 import { Metadata } from 'next';
 // import { useTranslation } from 'react-i18next';
@@ -38,7 +38,7 @@ export default async function MagazinePage({
           <TagsContainer />
         </div>
       </div>
-      <Landa />
+      <NovaNest />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function PersonalTab({
       <Image
         className="object-cover"
         src={image}
-        alt="Landa People"
+        alt="NovaNest Venture People"
         layout="fill"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         quality={90}

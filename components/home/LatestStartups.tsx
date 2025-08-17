@@ -17,9 +17,9 @@ export default function LatestStartups() {
               <div
                 className={`ltr:tracking-0 md:tracking-0 ps-1 font-condensed text-xl font-normal text-neutral-800 md:text-base ltr:tracking-[3.5px]`}
               >
-                {/* {t('LandaHolding')} */}
+                {/* {t('NovaNestVenture')} */}
               </div>
-              <p className="font-gilda ">{t('LandaHolding')}</p>
+              <p className="font-gilda ">{t('NovaNestVenture')}</p>
               <div
                 className={`ltr:tracking-0 md:tracking-0 ltr:font-gilda rtl:font-EBGaramond text-4xl font-bold text-black md:mt-3 md:text-[44px] ltr:tracking-[3.5px]`}
               >

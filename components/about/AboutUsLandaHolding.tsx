@@ -46,7 +46,7 @@ export default function AboutUsLandaHolding() {
             loading="lazy"
             layout="fill"
             src="/static/images/About/team.webp"
-            alt="Landa Team"
+            alt="NovaNest Venture Team"
             objectFit="cover"
           />
         </div>
@@ -56,7 +56,7 @@ export default function AboutUsLandaHolding() {
           <Image
             className="object-cover w-full rounded-xl"
             src="/static/images/About/story/1.webp"
-            alt="story of landa"
+            alt="story of NovaNest Venture"
             layout="fill"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />

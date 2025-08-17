@@ -11,17 +11,6 @@ export default function AerialViewBusinessTeam(
 ) {
   const commentsData = [
     {
-      "name": "Morteza Jafari",
-      "roleInCompany": "Founder of IRimmigration",
-      "role": "Investor",
-      "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription":
-        "The specialized and skilled staff at NovaNest Venture made short work on the issues that had been preventing me from advancing in my career.",
-      "linkedinLink": "https://www.linkedin.com/in/johndoe",
-      "personalWebsite": "https://www.johndoe.com",
-      "email": "john.doe@example.com",
-    },
-    {
       "name": "Jane Doe",
       "roleInCompany": "Product Manager",
       "role": "Product Lead",
@@ -58,9 +47,9 @@ export default function AerialViewBusinessTeam(
   const translated = LangChangeHandle(lang);
 
   const title = translated.then((res) => {
-    const LandaHolding = res('LandaHolding')
+    const NovaNestVenture = res('NovaNestVenture')
 
-    return LandaHolding
+    return NovaNestVenture
   }).then((res) => {
     return res
   })

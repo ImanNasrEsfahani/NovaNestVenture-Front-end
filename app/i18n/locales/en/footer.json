@@ -1,10 +1,10 @@
 {
   "lng": "en",
   "dir": "ltr",
-  "LandaHolding": "NovaNest Venture",
+  "NovaNestVenture": "NovaNest Venture",
   "about": {
-    "title": "About Landa",
-    "text": "In Landa Academy, individuals will be trained based on their interests and capabilities. Necessary actions are taken at the Landa Acceleration Center to accelerate their unique abilities. Then, investment is made based on the investment priorities of developing the nurtured capabilities of individuals."
+    "title": "About NovaNest Venture",
+    "text": "In NovaNest Venture, individuals will be trained based on their interests and capabilities. Necessary actions are taken at the NovaNest Acceleration Center to accelerate their unique abilities. Then, investment is made based on the investment priorities of developing the nurtured capabilities of individuals."
   },
   "explore": {
     "title": "Explore",
@@ -26,12 +26,8 @@
   "contact": {
     "title": "Contact",
     "text": {
-      "canada": "No. 200, 7646 Yonge Street, Thornhill, Toronto, ON L4J 1V9, Canada",
-      "cNumber": "(+1) 289 269-3933",
-      "tehran": "Office 41, No. 27, Gholam Jafari Street, Tajrish Square, Tehran, Iran",
-      "tNumber": "021 2691 7419",
-      "isfahan": "5th Floor, Tala Complex, Sa'adat Abad Street, Isfahan, Iran",
-      "iNumber": "(+98) 313 1311914"
+      "canada": "3308-3833 EVERGREEN PL, BURNABY BC V3J 0M2 Canada",
+      "cNumber": "(+1) 778 986-5432"
     }
   }
 }

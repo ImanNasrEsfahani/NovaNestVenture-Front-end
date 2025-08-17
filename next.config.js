@@ -11,7 +11,7 @@ const nextConfig = {
       'panel.NovaNestVenture.com',
       'NovaNestVenture.com',
       'localhost',
-      "landa-back.NovaNestVenture.com"
+      "nova-back.NovaNestVenture.com"
     ]
   }
 };
