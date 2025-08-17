@@ -5,7 +5,7 @@ import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
-export default function LandaHoldingBlack() {
+export default function NovaNestBlack() {
   const lang = useLang().lang;
   const { t } = useTranslation(lang, 'mainPage');
 

@@ -3,7 +3,7 @@ import LandaHoldingPriorityCard from './LandaHoldingPriorityCard';
 import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
-export default function LandaHoldingPriority() {
+export default function NovaNestPriority() {
   const lang = useLang().lang;
   const { t } = useTranslation(lang, 'mainPage');
 

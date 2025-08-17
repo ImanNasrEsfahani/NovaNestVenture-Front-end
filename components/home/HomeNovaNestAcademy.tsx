@@ -5,7 +5,7 @@ import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 
-export default function HomeLandaAcademy() {
+export default function HomeNovaNestAcademy() {
     const lang = useLang().lang
     const { t } = useTranslation(lang, 'mainPage');
 
@@ -16,7 +16,7 @@ export default function HomeLandaAcademy() {
         <h1 className=" mb-2 font-gilda">{t('NovaNestVenture')}</h1>
         <h1 className="mb-8 font-gilda text-4xl font-bold">{t('Academy')}</h1>
         <p className="leading-8">
-            {t('LandaAcademyInfo')}
+            {t('NovaNestAcademyInfo')}
         </p>
         <div className="mt-6 h-auto w-[224px]">
           <ButtonRefactor
