@@ -32,10 +32,7 @@ export default async function Page({
       {/* TODO: read t inside hero components using zustend */}
       <Hero
         lang={lang}
-        showLanda
         titles={[t('StartUp'), t('investment'), t('Acceleration'), t('Academy')]}
-        title={t('NovaNestVenture')}
-        subTitle={t('HeroSubtitle')}
         backgroundImage="Hero.webp"
         // leftImage="Landa.svg"
         showButton={false}
