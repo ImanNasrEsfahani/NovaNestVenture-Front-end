@@ -33,7 +33,7 @@ export default async function Page({
       <Hero
         lang={lang}
         showLanda
-        titles={[t('Startup'), t('Investment'), t('Acceleration')]}
+        titles={[t('StartUp'), t('investment'), t('Acceleration'), t('Academy')]}
         title={t('NovaNestVenture')}
         subTitle={t('HeroSubtitle')}
         backgroundImage="Hero.webp"
