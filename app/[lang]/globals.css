@@ -138,8 +138,15 @@ img {
   padding-inline: 7rem;
 }
 .get-shadow{
-  text-shadow: 0 0 15px #000000;
+  /* text-shadow: 0 0 15px #000000; */
+  color: white;
+  text-shadow: 
+    1px 1px 2px black,
+    2px 2px 4px black,
+    0 0 5px black;
+  font-weight: bold;
 }
+
 .get-shadow-g{
   box-shadow: 0 0 15px #6e6e6e55;
 }

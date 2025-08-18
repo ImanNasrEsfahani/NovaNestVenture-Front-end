@@ -1,5 +1,4 @@
 import '../../app/[lang]/globals.css';
-import ButtonRefactor from '../common/ButtonRefactor';
 
 export default function Hero({
   titles,
@@ -56,7 +55,6 @@ export default function Hero({
           {subTitle ? subTitle : ''}
         </div>
       </div> */}
-      {showButton ? <ButtonRefactor text="Register Now" /> : <></>}
       {/* <Image
         loading="lazy"
         className="absolute bottom-0 ml-24 mr-12 h-[365px] w-[300px] ltr:-right-32 rtl:-left-32 sm:h-[365px] sm:w-[500px] md:mx-0 md:h-[365px] md:w-[500px] ltr:md:right-0 md:rtl:left-0 md:rtl:right-auto xl:h-[560px] xl:w-[420px]"
