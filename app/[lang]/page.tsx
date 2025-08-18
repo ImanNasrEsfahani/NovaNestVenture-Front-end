@@ -35,7 +35,6 @@ export default async function Page({
         titles={[t('StartUp'), t('investment'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
         // leftImage="Landa.svg"
-        showButton={false}
       />
 
       <section className='max-w-[1600px] mx-auto px-5 md:px-20'>

@@ -3,12 +3,10 @@ import '../../app/[lang]/globals.css';
 export default function Hero({
   titles,
   backgroundImage,
-  showButton,
 }: {
   titles: string[];
   subTitle?: string;
   backgroundImage: string;
-  showButton?: boolean;
   lang: string;
 }) {
   return (
