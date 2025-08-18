@@ -1,23 +1,16 @@
-import Image from 'next/image';
 import '../../app/[lang]/globals.css';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 export default function Hero({
-  showLanda,
   titles,
-  subTitle,
   backgroundImage,
   showButton,
-  title
 }: {
-  showLanda: boolean;
   titles: string[];
   subTitle?: string;
-  buttonBg?: string;
   backgroundImage: string;
   showButton?: boolean;
   lang: string;
-  title: string;
 }) {
   return (
     <div
