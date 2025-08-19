@@ -63,15 +63,15 @@ export default function Navbar({
               </svg>
             </label>
           </div>
-          <div className="m-2 flex h-full items-center justify-start px-2 text-left ">
+          <div className="flex h-full items-center justify-start px-2 text-left ">
             <Link href="/">
               <div className="flex flex-col items-center md:flex-row md:items-end">
                 <Image
-                  className="h-10 w-10 md:w-14 lg:w-48"
+                  className="h-full"
                   src="static/images/Logo.svg"
                   alt="Logo"
-                  width={50}
-                  height={50}
+                  width={100}
+                  height={100}
                 />
                 {/* <span className="font-condensed text-[12px] font-bold text-primary ltr:tracking-[0.25rem] md:text-xl">
                   {lang == 'en' ? 'NovaNest' : 'نوانست'}

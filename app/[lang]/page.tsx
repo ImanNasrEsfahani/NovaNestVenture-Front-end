@@ -28,16 +28,15 @@ export default async function Page({
   const { t } = await useTranslation(lang, 'mainPage');
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full mb-8">
       {/* TODO: read t inside hero components using zustend */}
       <Hero
         lang={lang}
         titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
-        // leftImage="Landa.svg"
       />
 
-      <section className='max-w-[1600px] mx-auto px-5 md:px-20'>
+      <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
         <HomeCardsContainer />
         <NovaNestBlack />
         <HomeUpComingStartups />

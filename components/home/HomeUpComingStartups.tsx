@@ -33,7 +33,7 @@ export default function HomeUpComingStartups() {
   };
 
   return (
-    <div className="mb-8 mt-10 min-h-[400px] md:mt-0">
+    <div className="mb-8 mt-10 min-h-[400px] md:mt-0 w-full overflow-hidden">
       <div className="my-4 font-gilda flex flex-col justify-start gap-6 md:items-center md:py-16 md:pt-12">
         <div className="pt-10 w-full px-6">
           <p className="pt-12 pb-1 md:pb-3">

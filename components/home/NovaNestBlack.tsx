@@ -10,21 +10,21 @@ export default function NovaNestBlack() {
   const { t } = useTranslation(lang, 'mainPage');
 
   return (
-    <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10 bg-[#ffffff]  md:pt-10 md:flex-row ">
+    <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10  md:pt-10 md:flex-row ">
       {/* <Lines /> */}
-      <div className="z-10 flex mb-10 px-16 h-[36rem] flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g md:w-[50%] max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
+      <div className="bg-[#ffffff] z-10 flex mb-10 p-6 xl:px-16 flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g xl:w-[50%] max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
         <div className="flex flex-col items-center">
             <span className='font-gilda mt-12'>
-              {t('NovaNestVenture')}
+              {t('TitleBlackFirst')}
             </span>
-            <span className="pb-3 font-gilda text-4xl font-bold pt-4 uppercase">
-              {t('InvestorCenter')}
+            <span className="pb-2 pt-4 text-center md:text-center font-gilda text-3xl font-bold text-black md:text-4xl md:pt-5">
+              {t('SubtitleBlackFirst')}
             </span>
         </div>
         <p>{t('TextBlackFirst', { returnObjects: true })}</p>
         <UlList
           list={t('landaHoldingBlackFirst', { returnObjects: true })}
-          style1=""
+          style1="pl-8"
           style2="space-y-2"
           style3="pt-1"
         />
@@ -39,21 +39,20 @@ export default function NovaNestBlack() {
         </div>
       </div>
  
-      <div className="z-10 flex h-[37rem] px-16 md:justify-start flex-col gap-5 rtl:mr-1 get-shadow-g  md:w-[50%] max-w-[40rem] md:h-auto rounded-xl">
+      <div className="bg-[#ffffff] z-10 flex mb-10 p-6 xl:px-16 flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g xl:w-[50%] max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
         <div className="flex flex-col items-center">
           <span className='font-gilda mt-12'>
-            {t('NovaNestVenture')}
+            {t('TitleBlackSecond')}
           </span>
           <span className="pb-2 pt-4 text-center md:text-center font-gilda text-3xl font-bold text-black md:text-4xl md:pt-5">
-            {t('EntrepreneurCenter')}
+            {t('SubtitleBlackSecond')}
           </span>
         </div>
         {/* TODO: Why pass 3 styles? */}
         <p>{t('TextBlackSecond', { returnObjects: true })}</p>
-
         <UlList
           list={t('landaHoldingBlackSecond', { returnObjects: true })}
-          style1={''}
+          style1={'pl-8'}
           style2="space-y-2"
           style3="pt-1"
         />
