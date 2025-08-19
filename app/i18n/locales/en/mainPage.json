@@ -95,12 +95,12 @@
     },
     {
       "smallTitle" : "NovaNest",
-      "title": "Statups",
+      "title": "Academy",
       "text": "Startups are typically young companies built on creativity and technology, with significant potential for growth and development. These emerging businesses can open new pathways in global markets by offering innovative solutions.",
       "reverse": true,
       "show": true,
       "index": 2,
-      "link": "/acceleration",
+      "link": "/academy",
       "addedClass": "",
       "images": [
         {
