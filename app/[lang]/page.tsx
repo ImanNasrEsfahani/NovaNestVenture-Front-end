@@ -32,7 +32,7 @@ export default async function Page({
       {/* TODO: read t inside hero components using zustend */}
       <Hero
         lang={lang}
-        titles={[t('StartUp'), t('investment'), t('Acceleration'), t('Academy')]}
+        titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
         // leftImage="Landa.svg"
       />
