@@ -21,7 +21,7 @@ export default function NovaNestBlack() {
               {t('InvestorCenter')}
             </span>
         </div>
-
+        <p>{t('TextBlackFirst', { returnObjects: true })}</p>
         <UlList
           list={t('landaHoldingBlackFirst', { returnObjects: true })}
           style1=""
@@ -49,6 +49,8 @@ export default function NovaNestBlack() {
           </span>
         </div>
         {/* TODO: Why pass 3 styles? */}
+        <p>{t('TextBlackSecond', { returnObjects: true })}</p>
+
         <UlList
           list={t('landaHoldingBlackSecond', { returnObjects: true })}
           style1={''}

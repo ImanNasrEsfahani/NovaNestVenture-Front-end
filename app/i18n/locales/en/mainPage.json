@@ -119,20 +119,24 @@
   "Academy": " Academy",
   "NovaNestVenture": "NovaNest Venture",
   "LandaAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
+  "TextBlackFirst" : "Become a NovaNest Mentor, Join our network of experienced mentors and help shape the future of innovative startups. Share your expertise, grow your professional network, and make a real impact—while enjoying financial rewards, career growth, and exclusive opportunities.",
   "landaHoldingBlackFirst": [
-    "Global investment opportunities within your reach.",
-    "Access to a network of successful entrepreneurs and investors.",
-    "Exclusive insights and expert analysis for informed decisions.",
-    "Collaborative environment for joint ventures and partnerships.",
-    "Accelerated growth potential through diversified investments."
+    "Financial rewards and incentives",
+    "Recognition and prestige",
+    "Professional growth and learning",
+    "Expanded networking opportunities",
+    "Personal brand development",
+    "Meaningful impact on startups and society",
+    "Exclusive access to events and resources"
   ],
+  "TextBlackSecond" : "Join the NovaNest Team, If you are talented, creative, and professional, join NovaNest and work alongside experienced mentors to help our innovative startups succeed. Share your skills, collaborate with expert teams, and make a real impact on the growth and development of emerging businesses.",
   "landaHoldingBlackSecond": [
-    "Global networking opportunities for collaboration and partnerships",
-    "Access to all videos of pitches, industry trend presentations and panel discussions.",
-    "Attending events of the entrepreneurs center",
-    "Meetings with top business leaders and entrepreneurs",
-    "Participation in seasonal meetings with other international entrepreneurs .",
-    "Online platform for connecting with other entrepreneurs"
+    "Hands-on experience with early-stage startups",
+    "Professional growth and learning from mentors and international teams",
+    "Expanded network with entrepreneurs, investors, and industry experts",
+    "Strengthening your personal brand and professional portfolio",
+    "Participation in innovative and socially impactful projects",
+    "Access to exclusive NovaNest events and resources"
   ],
   "partners": {
     "title": "Our Business Affiliates",
