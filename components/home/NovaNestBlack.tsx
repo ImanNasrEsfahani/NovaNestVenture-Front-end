@@ -14,9 +14,9 @@ export default function NovaNestBlack() {
       {/* <Lines /> */}
       <div className="bg-[#ffffff] z-10 flex mb-10 p-6 xl:px-16 flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g xl:w-[50%] max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
         <div className="flex flex-col items-center">
-            <span className='font-gilda mt-12'>
+            {/* <span className='font-gilda mt-12'>
               {t('TitleBlackFirst')}
-            </span>
+            </span> */}
             <span className="pb-2 pt-4 text-center md:text-center font-gilda text-3xl font-bold text-black md:text-4xl md:pt-5">
               {t('SubtitleBlackFirst')}
             </span>
@@ -41,9 +41,9 @@ export default function NovaNestBlack() {
  
       <div className="bg-[#ffffff] z-10 flex mb-10 p-6 xl:px-16 flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g xl:w-[50%] max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
         <div className="flex flex-col items-center">
-          <span className='font-gilda mt-12'>
+          {/* <span className='font-gilda mt-12'>
             {t('TitleBlackSecond')}
-          </span>
+          </span> */}
           <span className="pb-2 pt-4 text-center md:text-center font-gilda text-3xl font-bold text-black md:text-4xl md:pt-5">
             {t('SubtitleBlackSecond')}
           </span>
