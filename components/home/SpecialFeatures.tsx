@@ -3,6 +3,15 @@ import { useTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { motion } from 'framer-motion';
 
+interface Feature {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  icon?: string;
+  link: string;
+}
+
 export default async function SpecialFeatures() {
   const lang = useLang().lang;
   const { t } = await useTranslation(lang, 'mainPage');
@@ -17,7 +26,7 @@ export default async function SpecialFeatures() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          {t('specialFeatures.features', { returnObjects: true }).map((feature, index) => (
+          {t('specialFeatures.features', { returnObjects: true }).map((feature: Feature, index: number) => (
             <motion.div
               key={feature.id}
               initial={{ opacity: 0, y: 50 }}

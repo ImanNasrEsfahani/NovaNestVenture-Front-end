@@ -37,11 +37,10 @@ const initI18next = async (lng: any, ns: any) => {
   return i18nInstance;
 };
 
-let keyPrefix: string;
 export async function useTranslation(
   lng: any,
   ns: any,
-  options = { keyPrefix }
+  options: { keyPrefix?: string } = {}
 ) {
   const i18nextInstance = await initI18next(lng, ns);
   return {
