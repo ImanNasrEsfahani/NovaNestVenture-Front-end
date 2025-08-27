@@ -26,6 +26,8 @@
   "businessTeamText": "What Our Cooperation Members Say",
   "visit": "Visit Now",
   "Register": "Register",
+  
+  "aboutus": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level.",
 
   "cards": [
     {
@@ -44,27 +46,6 @@
         },
         {
           "src": "/static/images/Home/1.webp",
-          "alt": ""
-        }
-      ],
-      "buttonText": "Vsit Now"
-    },
-    {
-      "smallTitle" : "NovaNest",
-      "title": "Statups",
-      "text": "Startups are typically young companies built on creativity, innovation, and technology, with significant potential for growth, scalability, and global impact. These emerging businesses play a crucial role in shaping the future economy by introducing novel solutions, transforming industries, and addressing pressing challenges in the market. At NovaNest Venture, we believe that startups are the true driving force of tomorrow’s economy. Our mission is to identify, nurture, and support these innovative ideas and dynamic teams, providing them with the resources, guidance, and global network they need to succeed. By empowering startups, we help them create value, reach new markets, and leave a lasting impact on a global scale.",
-      "reverse": true,
-      "show": true,
-      "index": 2,
-      "link": "/acceleration",
-      "addedClass": "",
-      "images": [
-        {
-          "src": "/static/images/Home/3.webp",
-          "alt": ""
-        },
-        {
-          "src": "/static/images/Home/4.webp",
           "alt": ""
         }
       ],
@@ -90,32 +71,9 @@
         }
       ],
       "buttonText": "Vsit Now"
-    },
-    {
-      "smallTitle" : "NovaNest",
-      "title": "Academy",
-      "text": "Startups are typically young companies built on creativity and technology, with significant potential for growth and development. These emerging businesses can open new pathways in global markets by offering innovative solutions.",
-      "reverse": true,
-      "show": true,
-      "index": 2,
-      "link": "/academy",
-      "addedClass": "",
-      "images": [
-        {
-          "src": "/static/images/Home/3.webp",
-          "alt": ""
-        },
-        {
-          "src": "/static/images/Home/4.webp",
-          "alt": ""
-        }
-      ],
-      "buttonText": "Vsit Now"
     }
   ],
 
-  "Academy": " Academy",
-  "NovaNestVenture": "NovaNest Venture",
   "LandaAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   
   "TitleBlackFirst" : "Mentorship",

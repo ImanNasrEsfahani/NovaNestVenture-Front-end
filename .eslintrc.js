@@ -9,7 +9,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:tailwindcss/recommended',
-    'eslint-config-prettier'
+    'prettier'
+    // 'eslint-config-prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,7 +20,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'tailwindcss', 'no-loops', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'tailwindcss', 'no-loops'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
     'react/jsx-uses-react': 'off',

@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
-import Hero from '@/components/home/Hero';
+import Hero2 from '@/components/home/Hero2';
 import NovaNestPriority from '@/components/home/NovaNestPriority';
 import LatestStartups from '@/components/home/LatestStartups';
 import NovaNestBlack from '@/components/home/NovaNestBlack';
-import HomeCardsContainer from '@/components/home/HomeCardsContainer';
+import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
 import Partners from '@/components/home/Partners';
 // import UpcomingEvents from '@/components/home/UpcomingEvents';
 // import AerialViewBusinessTeam from '@/components/home/BusinessTeam';
@@ -11,6 +11,7 @@ import Partners from '@/components/home/Partners';
 import { useTranslation } from '../i18n';
 import HomeUpComingStartups from '@/components/home/HomeUpComingStartups';
 import HomeNovaNestAcademy from '@/components/home/HomeNovaNestAcademy';
+import AboutUs from '@/components/home/AboutUs';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
 
@@ -30,20 +31,22 @@ export default async function Page({
   return (
     <div className="relative w-full mb-8">
       {/* TODO: read t inside hero components using zustend */}
-      <Hero
+      {/* <Hero
         lang={lang}
         titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
-      />
+      /> */}
+      <Hero2 />
 
       <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
-        <HomeCardsContainer />
-        <NovaNestBlack />
+        <AboutUs />
+        <HomeCardsContainer2 />
+        {/* <NovaNestBlack />
         <HomeUpComingStartups />
         <HomeNovaNestAcademy />
         <LatestStartups />
         <NovaNestPriority />
-        <Partners />
+        <Partners /> */}
 
         {/* <HomeUpcomingEvents /> */}
         {/* <AerialViewBusinessTeam /> */}

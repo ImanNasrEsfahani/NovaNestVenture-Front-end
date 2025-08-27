@@ -18,7 +18,8 @@
     "prisma:studio": "npx dotenv -e .env.local -- prisma studio",
     "production:build": "npx prisma generate && npx prisma migrate deploy && next build",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -44,6 +45,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.2",
     "react-i18next": "^13.5.0",
+    "swiper": "^11.2.10",
     "tailwindcss-flip": "^1.0.0",
     "zustand": "^4.4.7"
   },
