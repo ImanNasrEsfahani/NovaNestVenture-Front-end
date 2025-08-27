@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Hero2 from '@/components/home/Hero2';
+import SpecialFeatures from '@/components/home/SpecialFeatures';
 import NovaNestPriority from '@/components/home/NovaNestPriority';
 import LatestStartups from '@/components/home/LatestStartups';
 import NovaNestBlack from '@/components/home/NovaNestBlack';
@@ -41,12 +42,13 @@ export default async function Page({
       <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
         <AboutUs />
         <HomeCardsContainer2 />
-        {/* <NovaNestBlack />
+        <SpecialFeatures />
+        <NovaNestBlack />
         <HomeUpComingStartups />
         <HomeNovaNestAcademy />
         <LatestStartups />
         <NovaNestPriority />
-        <Partners /> */}
+        {/* <Partners /> */}
 
         {/* <HomeUpcomingEvents /> */}
         {/* <AerialViewBusinessTeam /> */}

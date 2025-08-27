@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  safelist: process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : [],
   theme: {
     extend: {
       fontFamily: {

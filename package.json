@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NODE_ENV=development && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -30,6 +30,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.37.4",
     "formidable": "^3.5.0",
+    "framer-motion": "^12.23.12",
     "i18next": "^23.7.11",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-resources-to-backend": "^1.1.4",

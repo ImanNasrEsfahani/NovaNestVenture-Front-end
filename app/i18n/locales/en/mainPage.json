@@ -1,5 +1,75 @@
 {
   "lng": "en",
+  "specialFeatures": {
+    "title": "Special Features",
+    "learnMore": "Learn More",
+    "features": [
+      {
+        "id": "startup-suv",
+        "title": "Startup – SUV",
+        "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
+        "image": "/static/images/Home/Features/startup-visa.jpg",
+        "icon": "🚀"
+      },
+      {
+        "id": "entrepreneur",
+        "title": "Entrepreneur",
+        "description": "Provincial Nominee Programs (PNP) in various Canadian provinces offer a valuable opportunity for those who want to enter Canada by investing and starting their own business. Each province has its own unique conditions and path for attracting entrepreneurs, and with our experience and knowledge, we guide you in choosing the best program, preparing documents, and completing all steps. The result of this path will be establishing a successful business in Canada and obtaining permanent residence.",
+        "image": "/static/images/Home/Features/entrepreneur.jpg",
+        "icon": "💼"
+      }
+    ]
+  },
+  "heroSlides": [
+    {
+      "image": {
+        "src": "/static/images/Home/Hero/image1.jpg",
+        "alt": "Slide 1"
+      },
+      "content": [
+        {
+          "label": "Investment",
+          "href": "/investment"
+        },
+        {
+          "label": "Acceleration",
+          "href": "/acceleration"
+        }
+      ]
+    },
+    {
+      "image": {
+        "src": "/static/images/Home/Hero/image2.jpg",
+        "alt": "Slide 2"
+      },
+      "content": [
+        {
+          "label": "Startup",
+          "href": "/startup"
+        },
+        {
+          "label": "PNP",
+          "href": "/pnp"
+        }
+      ]
+    },
+    {
+      "image": {
+        "src": "/static/images/Home/Hero/image3.jpg",
+        "alt": "Slide 3"
+      },
+      "content": [
+        {
+          "label": "Programs",
+          "href": "/programs"
+        },
+        {
+          "label": "Mentorship",
+          "href": "/mentorship"
+        }
+      ]
+    }
+  ],
   "Acceleration": "Acceleration",
   "Academy" : " Academy",
   "AccelerationCenter": "ENTREPRENEURSHIP CENTER",
@@ -9,7 +79,6 @@
   "investment": "Investment",
   "NovaNestVenture": "NovaNest Venture",
   "Home": "Home",
-  "AboutUs": "ABOUT US",
   "ContactUs": "CONTACT US",
   "OurTeam": "Our Team",
   "ourTeamText": "Our team of experts is comprised of professionals who are passionate about their work, and have an extensive background in a wide variety of applications, and are willing to help at any time",
@@ -27,7 +96,8 @@
   "visit": "Visit Now",
   "Register": "Register",
   
-  "aboutus": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level.",
+  "AboutUs": "ABOUT US",
+  "AboutUsContent": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level.",
 
   "cards": [
     {
@@ -55,7 +125,7 @@
       "smallTitle" : "NovaNestVenture",
       "title": "Acceleration",
       "text": "At NovaNest, we empower innovative startups to grow from idea to global success. Our accelerator provides mentorship, training, networking, and access to investors, helping entrepreneurs develop products, enter new markets, and achieve rapid growth. We focus on sectors such as Artificial Intelligence, Tourism, and Education, supporting startups in creating lasting impact on a global scale.",
-      "reverse": false,
+      "reverse": true,
       "show": false,
       "index": 3,
       "link": "/startup",
@@ -189,36 +259,20 @@
   ],
   "cardData1": [
     {
-      "title": "Platform based on AI and VR",
-      "image": "/static/images/Home/Priority/vr-glasses 2.png"
+      "title": "Tourism Services",
+      "image": "/static/images/Home/Priority/tourism-services.png"
     },
     {
-      "title": "Agriculture",
-      "image": "/static/images/Home/Priority/system 2.png"
+      "title": "Education",
+      "image": "/static/images/Home/Priority/education.png"
     },
     {
-      "title": "Renewable Energy",
-      "image": "/static/images/Home/Priority/online-shop 1.png"
-    },
-    {
-      "title": "The Environment",
-      "image": "/static/images/Home/Priority/planet-earth 1.png"
-    },
-    {
-      "title": "Entertainment",
-      "image": "/static/images/Home/Priority/ai 2.png"
-    },
-    {
-      "title": "Biomedical Engineering",
-      "image": "/static/images/Home/Priority/man 2.png"
+      "title": "AI (Artificial Inteligent)",
+      "image": "/static/images/Home/Priority/ai.png"
     },
     {
       "title": "Services for Teenagers",
-      "image": "/static/images/Home/Priority/process 2.png"
-    },
-    {
-      "title": "Tourism Services",
-      "image": "/static/images/Home/Priority/world 2.png"
+      "image": "/static/images/Home/Priority/services-for-teenagers.png"
     }
   ],
   "LatestStartupsList": [

@@ -10,7 +10,7 @@ const HomeCardsContainer = () => {
 
   const renderHomeCards = (cardData: CompanySectionsInterface[]) => {
     return (
-      <div className="w-full h-auto flex flex-col gap-4 md:gap-20">
+      <div className="w-full h-auto flex flex-col gap-4 md:gap-20 mb-10">
         {cardData.map(
           ({
             smallTitle,

@@ -10,12 +10,14 @@ export default async function AboutUs(){
     const { t } = await useTranslation(lang, 'mainPage');
 
     return (
-        <section className="py-16 bg-white">
+        <section className="pt-20 pb-10 bg-gradient-to-b from-white to-gray-50">
             <div className="container mx-auto px-4">
-                <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-6">About Us</h2>
-                    <p className="text-gray-600 leading-relaxed">
-                        {t('aboutus')}
+                <div className="text-center max-w-4xl mx-auto">
+                    <h2 className="text-4xl font-bold mb-8 text-gray-800 relative">
+                        <span className="relative inline-block">{t('AboutUs')}</span>
+                    </h2>
+                    <p className="text-gray-700 text-lg leading-relaxed tracking-wide mb-8 px-6">
+                        {t('AboutUsContent')}
                     </p>
                 </div>
             </div>

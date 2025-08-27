@@ -26,41 +26,20 @@ export default async function Footer(
           <div className="mt-1 text-justify text-base  font-normal text-black pb-2">
             {t('about', { returnObjects: true }).text}
           </div>
-          <div className="mt-2 flex flex-row items-center justify-between text-black">
-            <Link
-              aria-label="Instagram"
-              href={
-                'https://instagram.com/novanestventure'
-              }
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <Instagram />
-            </Link>
-            <Link
-              aria-label="Email"
-              href={'mailto:info@NovaNestVenture.com'}
-              className="hover:text-primary"
-            >
-              <Envelope />
-            </Link>
-            <Link
-              aria-label="Whatsapp"
-              href={'https://wa.me/+17789865432'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <Whatsapp />
-            </Link>
-            <Link
-              aria-label="Linkedin"
-              href={'https://www.linkedin.com/company/novanestventure/'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <LinkedIn />
-            </Link>
-          </div>
+          <div className="mt-2 flex flex-row items-center text-black gap-4">
+                <Link aria-label="Instagram" href={'https://instagram.com/novanestventure'} className="hover:text-primary" target="_blank">
+                  <Instagram />
+                </Link>
+                <Link aria-label="Email" href={'mailto:info@NovaNestVenture.com'} className="hover:text-primary">
+                  <Envelope />
+                </Link>
+                <Link aria-label="Whatsapp" href={'https://wa.me/+17789865432'} className="hover:text-primary" target="_blank">
+                  <Whatsapp />
+                </Link>
+                <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
+                  <LinkedIn />
+                </Link>
+                </div>
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-[#AA8453] pb-2">
