@@ -126,7 +126,7 @@ export default function LandaGene() {
           <Image
             src="/static/images/gene2.png"
             alt="gene-1"
-            className="h-full w-full p-0"
+            className="size-full p-0"
             width={100}
             height={100}
           />
@@ -144,7 +144,7 @@ export default function LandaGene() {
           <Image
             src="/static/images/gen1.png"
             alt="gene-2"
-            className="h-full w-full p-0"
+            className="size-full p-0"
             width={100}
             height={100}
           />
@@ -156,7 +156,7 @@ export default function LandaGene() {
         </div>
       </div>
 
-      <div className="mx-auto flex h-auto w-10/12 bg-[#F8F5F0] px-[32px] py-[31px]">
+      <div className="mx-auto flex h-auto w-10/12 bg-whiteGold px-[32px] py-[31px]">
         <div className="flex h-auto w-full flex-col  justify-between p-0">
           <div className="flex w-full flex-col   p-0">
             <p

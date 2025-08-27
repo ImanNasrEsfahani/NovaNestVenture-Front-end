@@ -1,12 +1,10 @@
 import FeaturesCards from './FeaturesCards';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
-export default async function FeaturesCardsContainer() {
-
+export default function FeaturesCardsContainer() {
   const lang = useLang.getState().lang
-
-  const { t } = await useTranslation(lang, 'investment');
+  const { t } = useTranslation(lang, 'investment');
 
   return (
     <div className="flex gap-8 flex-wrap md:flex-nowrap mt-28 mb-12">

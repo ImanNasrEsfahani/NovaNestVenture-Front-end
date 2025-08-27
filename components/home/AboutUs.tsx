@@ -1,13 +1,13 @@
 "use client"
 
 import React from 'react';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
 
-export default async function AboutUs(){
-    const lang = useLang().lang
-    const { t } = await useTranslation(lang, 'mainPage');
+export default function AboutUs(){
+    const lang = useLang().lang;
+    const { t } = useTranslation(lang, 'mainPage');
 
     return (
         <section className="pt-20 pb-10 bg-gradient-to-b from-white to-gray-50">

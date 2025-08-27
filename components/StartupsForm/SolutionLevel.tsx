@@ -76,19 +76,19 @@ const SolutionLevel = (props: Props) => {
                     <div className='w-full h-auto flex flex-col gap-1 items-start px-2'>
                         {productLevels.map((item: string, index: number) => (
                             <div key={index} className='w-full flex flex-row gap-1 items-center'>
-                                <div className='w-auto h-auto flex flex-row items-center gap-2 cursor-pointer' onClick={() => {
+                                <div className='size-auto flex flex-row items-center gap-2 cursor-pointer' onClick={() => {
                                   handleSolutionsLevelChange(index)
                                 }}>
-                                    <div className='border-2 rounded-full border-primary p-[1px]'>
+                                    <div className='border-2 rounded-full border-primary p-px'>
                                         <div
-                                            className={`w-2 h-2 rounded-full transition-all ${
+                                            className={`size-2 rounded-full transition-all ${
                                               solutionsLevel == index ? "bg-primary" : "bg-white"
                                             }`}
                                         >
                                           <input 
                                             type='checkbox'
                                             value={item}
-                                            className='w-full h-full inset-0 opacity-0'
+                                            className='size-full inset-0 opacity-0'
                                             onChange={() => {
                                               setValue("productLevel", item)
                                             }}

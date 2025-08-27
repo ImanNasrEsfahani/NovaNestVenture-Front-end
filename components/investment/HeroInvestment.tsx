@@ -41,7 +41,7 @@ export default function Hero({
         <div
           className={`text-center font-gilda text-4xl md:text-6xl ${
             lang === 'en' && 'tracking-[6.4px]'
-          } text-[#F8F5F0]`}
+          } text-whiteGold`}
         >
           {lang === 'en' ? 'Investment Center' : 'مرکز سرمایه گذاری'}
         </div>

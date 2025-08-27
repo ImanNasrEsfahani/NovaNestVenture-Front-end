@@ -224,25 +224,8 @@
       "solutionsPositionRequired": "this fields is required",
       "solutionsPositionPlaceholder": "Description",
 
-      "businessModel": "Business model",
-      "businessMonetization": "Describe the method of monetization of your plan?*",
-      "businessMonetizationRequired": "This field is required",
-      "businessMonetizationPlaceholder": "Description",
-
-      "businessDelivery": "Please clearly mention the structure of your sales cycle from contact to delivery.*",
-      "businessDeliveryRequired": "This field is required",
-      "businessDeliveryPlaceholder": "Description",
-
       "businessFinancial": "If your plan has a financial model, please upload it.",
-      "choseFile": "chose file",
-
-      "businessAccelerators": "Have you previously cooperated with investors or accelerators?*",
-      "businessAcceleratorsRequired": "This field is required",
-      "businessAcceleratorsPlaceholder": "Description",
-
-      "businessKnowUs": "How did you get to know us?*",
-      "businessKnowUsRequired": "This field is required",
-      "businessKnowUsPlaceholder": "Description",
+      "choseFile": "Choose File",
 
       "targetMarket": "Target Market",
       "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?*",
@@ -316,13 +299,20 @@
     },
     "businessModel": {
       "title": "Business Model",
-      "monetizationOfYourPlan": "Describe the method of monetization of your plan? *",
-      "monetizationOfYourPlanPlaceholder": "Description",
-      "monetizationOfYourPlanRequired": "This field is required!",
-      "structureOfYourSales": "Please clearly mention the structure of your sales cycle from contact to delivery. *",
-      "structureOfYourSalesPlaceholder": "Description",
-      "structureOfYourSalesRequired": "This field is requried!",
-      "financialPlan": "If your plan has a financial model, please upload."
+      "monetization": "Describe the method of monetization of your plan? *",
+      "monetizationPlaceholder": "Description",
+      "monetizationRequired": "This field is required!",
+      "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. *",
+      "deliveryPlaceholder": "Description",
+      "deliveryRequired": "This field is required!",
+      "financialPlan": "If your plan has a financial model, please upload.",
+      "choseFile": "Choose File",
+      "accelerators": "Have you previously cooperated with investors or accelerators?*",
+      "acceleratorsPlaceholder": "Description",
+      "acceleratorsRequired": "This field is required!",
+      "knowUs": "How did you get to know us?*",
+      "knowUsPlaceholder": "Description",
+      "knowUsRequired": "This field is required!"
     },
     "financialFile": "Do you have Financial?",
     "financialFileRequired": "Please choose an option",

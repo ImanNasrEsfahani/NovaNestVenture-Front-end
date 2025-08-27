@@ -1,5 +1,5 @@
 'use client'
-import UploadFile from 'public/static/logos/UploadFile'
+import UploadFile from 'public/static/logos/FileUpload'
 import React, { useState } from 'react'
 import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
@@ -58,24 +58,24 @@ const StartUpMvpRefactore = (props: Props) => {
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
                           </div>
                           <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                        </div>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            !filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
@@ -87,17 +87,21 @@ const StartUpMvpRefactore = (props: Props) => {
                {filesCounter.pitch ? (
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='w-auto h-auto'>
+                       <div className='size-auto'>
                           <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                          <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
                                   onChange={handlePitchFileChange}
                             />
-                            <UploadFile />
+                            <UploadFile 
+                              name="pitchDeckFile"
+                              label="Upload your pitch deck"
+                              onChange={(file) => handlePitchFileChange(file)}
+                            />
                           </label>
                        </div>
                      </div>
@@ -114,7 +118,7 @@ const StartUpMvpRefactore = (props: Props) => {
                           patternValue={''} 
                           patternMessage={''} 
                           placeholder={t('startUp',{ returnObjects: true }).productNamePlaceholder} 
-                          className={'border-[1px] col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
+                          className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                        <Input 
                           register={register} 
@@ -125,7 +129,7 @@ const StartUpMvpRefactore = (props: Props) => {
                           patternValue={''} 
                           patternMessage={''} 
                           placeholder={t('startUp',{ returnObjects: true }).siteAddressPlaceholder} 
-                          className={'border-[1px] col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
+                          className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                      </div>
                  </div>
@@ -137,24 +141,24 @@ const StartUpMvpRefactore = (props: Props) => {
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            filesCounter.business ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
                           </div>
                           <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                        </div>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            !filesCounter.business ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
@@ -166,17 +170,21 @@ const StartUpMvpRefactore = (props: Props) => {
                {filesCounter.business ? (
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='w-auto h-auto'>
+                       <div className='size-auto'>
                           <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                          <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
                                   onChange={handleBusinessFileChange}
                             />
-                            <UploadFile />
+                            <UploadFile 
+                              name="businessPlanFile"
+                              label="Upload your business plan"
+                              onChange={(file) => handleBusinessFileChange(file)}
+                            />
                           </label>
                        </div>
                      </div>
@@ -257,17 +265,21 @@ const StartUpMvpRefactore = (props: Props) => {
                         <p className='text-black font-medium text-[15px] leading-[18px]'>If your plan has a financial model, please upload it.</p>
                     </div>
                     <div className='w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6'>
-                        <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                        <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
                                   name='financialModelFile'
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
                                   onChange={(e) => {
                                     handleFinancialModelFileChange(e.target.files ? e.target.files[0] : '')
                                   }}
                             />
                             <p className='text-black font-barlow font-medium text-[13px] leading-4'>{t('startUp',{ returnObjects: true }).trial.choseFile}</p>
-                            <UploadFile />
+                            <UploadFile 
+                              name="financialModelFile"
+                              label="Upload your financial model"
+                              onChange={(file) => handleFinancialModelFileChange(file)}
+                            />
                         </label>
                     </div>
                     <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>

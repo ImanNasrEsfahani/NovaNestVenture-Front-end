@@ -10,12 +10,17 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Startup Form and share your innovative ideas with us. We are interested in hearing from startups and entrepreneurs. Lets work together to bring your vision to life.'
 };
 
+async function usePageTranslations(lang: string) {
+  const { t } = await useTranslation(lang, 'formComponent');
+  return t;
+}
+
 export default async function StartupValidationPage({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'formComponent');
+  const t = await usePageTranslations(lang);
 
   return (
     <div dir={t('dir')} className="relative overflow-hidden">

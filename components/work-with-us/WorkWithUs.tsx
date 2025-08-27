@@ -165,7 +165,7 @@ export default function WorkWithUs() {
       handleTokenChange(token);
     }
     fetchCsrfToken();
-  }, []);
+  }, [handleTokenChange]);
 
   const onSubmit = async (formData: WorkWithUSFormData) => {
     // Set loading and sending states.
@@ -234,9 +234,9 @@ export default function WorkWithUs() {
 
   return (
     <>
-      <div className="container m-[-1rem] mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20 flex flex-col items-center">
+      <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20 flex flex-col items-center">
         <div className='flex flex-col md:flex-row gap-6'>
-          <div className='flex justify-center relative w-[200px] h-[200px] mt-6'>
+          <div className='flex justify-center relative size-[200px] mt-6'>
             <Image src="/static/images/Work-with-us/forough.png" alt="Work with us" layout='fill'className='object-cover' />
           </div>
           <div className='flex justify-center relative w-[200px] h-[210px]'>
@@ -249,7 +249,7 @@ export default function WorkWithUs() {
           </h3>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
-          <div className="grid grid-cols-1 gap-x-6 bg-[#F8F5F0] p-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
             <Select labelClass='' register={register} errors={errors} nameInput="your_position" label={   t('workWithUS', { returnObjects: true }).PositionPlaceholder } required="" className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" placeholder={   t('workWithUS', { returnObjects: true }).PositionPlaceholder } options={PositionsData} handleChange={handleItemChange} selected={selectPosition}
             />
 
@@ -265,12 +265,12 @@ export default function WorkWithUs() {
             />
           </div>
           {/* next line */}
-          <div className="border-b-2 border-black bg-[#F8F5F0]">
+          <div className="border-b-2 border-black bg-whiteGold">
             <p className="px-5 py-3 text-2xl md:text-3xl">
               {t('workWithUS', { returnObjects: true }).formSubtitleTop}
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-x-6 bg-[#F8F5F0] p-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
             <div className="col-span-1">
               <Input
                 register={register}
@@ -335,12 +335,12 @@ export default function WorkWithUs() {
             </div>
           </div>
           {/* next line */}
-          <div className="border-b-2 border-black bg-[#F8F5F0]">
+          <div className="border-b-2 border-black bg-whiteGold">
             <p className="px-5 py-3 text-2xl md:text-3xl">
               {t('workWithUS', { returnObjects: true }).formSubtitleBottom}
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-x-6 bg-[#F8F5F0] p-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
             <div className="col-span-1">
               <Input
                 register={register}

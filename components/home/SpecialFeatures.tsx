@@ -1,5 +1,5 @@
 'use client';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import { motion } from 'framer-motion';
 
@@ -12,9 +12,9 @@ interface Feature {
   link: string;
 }
 
-export default async function SpecialFeatures() {
+export default function SpecialFeatures() {
   const lang = useLang().lang;
-  const { t } = await useTranslation(lang, 'mainPage');
+  const { t } = useTranslation(lang, 'mainPage');
   
   return (
     <section className="py-20 bg-gray-50">
@@ -38,7 +38,7 @@ export default async function SpecialFeatures() {
               <div className={`flex flex-col h-full bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${lang === 'fa' ? 'rtl' : 'ltr'}`}>
                 <div className="w-full aspect-video relative overflow-hidden">
                   <div
-                    className="w-full h-full bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
+                    className="size-full bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
                     style={{ backgroundImage: `url(${feature.image})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

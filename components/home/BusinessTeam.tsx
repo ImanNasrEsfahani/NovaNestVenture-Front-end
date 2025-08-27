@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Chevron from '../common/Chevron';
 // import Link from 'next/link';
 import BusinessTeamCard from './BusinessTeamCard';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 
 export default function AerialViewBusinessTeam(
   { lang }: { lang: string }
@@ -34,33 +34,9 @@ export default function AerialViewBusinessTeam(
     },
   ];
 
-  // const { t } = await useTranslation(lang, "mainPage")
-
-  // 
-
-  const LangChangeHandle = async (lang: string) => {
-    const { t } = await useTranslation(lang, "mainPage")
-
-    return t;
-  }
-
-  const translated = LangChangeHandle(lang);
-
-  const title = translated.then((res) => {
-    const NovaNestVenture = res('NovaNestVenture')
-
-    return NovaNestVenture
-  }).then((res) => {
-    return res
-  })
-
-  const text = translated.then((res) => {
-    const text = res('businessTeamText')
-
-    return text
-  }).then((res) => {
-    return res
-  })
+  const { t } = useTranslation(lang, "mainPage");
+  const title = t('NovaNestVenture');
+  const text = t('businessTeamText');
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -113,16 +89,10 @@ export default function AerialViewBusinessTeam(
       <div className="pb-5 text-center font-condensed ltr:tracking-[3.75px] ltr:md:tracking-[7px]">
         <div className="flex flex-col space-y-2 md:mb-5 md:space-y-7">
           <span className="text-base font-normal text-white md:text-xl">
-            {/* {LandaHoldingText.then((res) => (
-              <>{res}</>
-            ))} */}
             {title}
             <br />
           </span>
           <span className="text-base font-normal text-white md:text-[30px]">
-            {/* {cooprationText.then((res) => (
-              <>{res}</>
-            ))} */}
             {text}
           </span>
         </div>

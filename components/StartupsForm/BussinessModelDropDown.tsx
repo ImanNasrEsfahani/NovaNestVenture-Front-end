@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextArea from '../common/TextArea';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
-import UploadFile from 'public/static/logos/UploadFile';
+// import FileUpload from 'public/static/logos/FileUpload'
 import ChevDown from 'public/static/logos/ChevDown';
 import { useLang } from 'stores/langStore';
 import { useTranslation } from 'app/i18n/client';
@@ -10,7 +10,6 @@ import { useTranslation } from 'app/i18n/client';
 type Props = {
   register: UseFormRegister<StartupsFormData>;
   errors: FieldErrors<StartupsFormData>;
-  handlePitchFileChange: (file: any) => void;
   handleFinancialModelFileChange: (file: any) => void;
 };
 
@@ -32,7 +31,7 @@ const BussinessModelDropDown = (props: Props) => {
       >
         <div className="w-full h-auto flex justify-center items-center gap-2">
           <p className="font-barlow text-white font-medium text-[24px] leading-[20px]">
-            {t('startUp', { returnObjects: true }).trial.businessModel}
+            {t('startUp.businessModel')}
           </p>
           <div
             className={`${businessOpen ? 'rotate-180' : 'rotate-0'} transition-all duration-300 ease-out mt-2`}
@@ -45,49 +44,39 @@ const BussinessModelDropDown = (props: Props) => {
         <>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={
-                t('startUp', { returnObjects: true }).trial.businessMonetization
-              }
+              title={t('startUp.businessMonetization')}
               register={register}
               errors={errors}
-              required={'this fiels is required'}
+              required={t('startUp.businessMonetizationRequired')}
               nameTextArea={'MonetizationOfYourPlan'}
               patternValue={''}
               patternMessage={''}
-              placeholder={
-                t('startUp', { returnObjects: true }).trial
-                  .businessMonetizationPlaceholder
-              }
+              placeholder={t('startUp.businessMonetizationPlaceholder')}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={
-                t('startUp', { returnObjects: true }).trial.businessDelivery
-              }
+              title={t('startUp.businessDelivery')}
               register={register}
               errors={errors}
-              required={'this fiels is required'}
+              required={t('startUp.businessDeliveryRequired')}
               nameTextArea={'structureOfYourSales'}
               patternValue={''}
               patternMessage={''}
-              placeholder={
-                t('startUp', { returnObjects: true }).trial
-                  .businessDeliveryPlaceholder
-              }
+              placeholder={t('startUp.businessDeliveryPlaceholder')}
             />
           </div>
           <div className="w-full h-auto flex justify-start items-center">
             <p className="text-black font-medium text-[15px] leading-[18px]">
-              If your plan has a financial model, please upload it.
+              {t('startUp.businessFinancial')}
             </p>
           </div>
           <div className="w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6">
-            <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+            <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
               <input
                 type="file"
                 name="financialModelFile"
-                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                className="absolute inset-0 size-full opacity-0 cursor-pointer"
                 onChange={(e) => {
                   handleFinancialModelFileChange(
                     e.target.files ? e.target.files[0] : ''
@@ -95,41 +84,32 @@ const BussinessModelDropDown = (props: Props) => {
                 }}
               />
               <p className="text-black font-barlow font-medium text-[13px] leading-4">
-                {t('startUp', { returnObjects: true }).trial.choseFile}
+                {t('startUp.choseFile')}
               </p>
-              <UploadFile />
             </label>
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={
-                t('startUp', { returnObjects: true }).trial.businessAccelerators
-              }
+              title={t('startUp.businessAccelerators')}
               register={register}
               errors={errors}
-              required={'this fiels is required'}
+              required={t('startUp.businessAcceleratorsRequired')}
               nameTextArea={'cooperatedWithInvestors'}
               patternValue={''}
               patternMessage={''}
-              placeholder={
-                t('startUp', { returnObjects: true }).trial
-                  .businessAcceleratorsPlaceholder
-              }
+              placeholder={t('startUp.businessAcceleratorsPlaceholder')}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={t('startUp', { returnObjects: true }).trial.businessKnowUs}
+              title={t('startUp.businessKnowUs')}
               register={register}
               errors={errors}
-              required={'this fiels is required'}
+              required={t('startUp.businessKnowUsRequired')}
               nameTextArea={'getToKnowUs'}
               patternValue={''}
               patternMessage={''}
-              placeholder={
-                t('startUp', { returnObjects: true }).trial
-                  .businessKnowUsPlaceholder
-              }
+              placeholder={t('startUp.businessKnowUsPlaceholder')}
             />
           </div>
         </>

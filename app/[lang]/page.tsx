@@ -5,7 +5,6 @@ import NovaNestPriority from '@/components/home/NovaNestPriority';
 import LatestStartups from '@/components/home/LatestStartups';
 import NovaNestBlack from '@/components/home/NovaNestBlack';
 import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
-import Partners from '@/components/home/Partners';
 // import UpcomingEvents from '@/components/home/UpcomingEvents';
 // import AerialViewBusinessTeam from '@/components/home/BusinessTeam';
 
@@ -27,7 +26,8 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'mainPage');
+  // Keep t for future use in Hero component
+  const { t: _t } = await useTranslation(lang, 'mainPage');
 
   return (
     <div className="relative w-full mb-8">

@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 //TODO: hero components
-export default async function Hero({
+export default function Hero({
   showLanda,
   leftImage,
   showButton,
@@ -18,7 +18,7 @@ export default async function Hero({
   lang: string;
   link?: string
 }) {
-  const { t } = await useTranslation(lang, 'mainPage');
+  const { t } = useTranslation(lang, 'mainPage');
 
   return (
     <div

@@ -97,7 +97,7 @@ export default function PartnerMembershipForm() {
   }));
 
   return (
-    <div className="container relative m-[-1rem] mx-auto gap-y-0 px-5 font-barlow lg:p-20">
+    <div className="container relative -m-4 mx-auto gap-y-0 px-5 font-barlow lg:p-20">
       <div className="hidden md:inline absolute right-0 bottom-4 -z-10">
         <LandaLogo />
       </div>

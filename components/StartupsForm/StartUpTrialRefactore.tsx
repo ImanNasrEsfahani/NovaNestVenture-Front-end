@@ -1,5 +1,5 @@
 'use client'
-import UploadFile from 'public/static/logos/UploadFile'
+import FileUpload from 'public/static/logos/FileUpload'
 import React, { useState } from 'react'
 import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
@@ -60,24 +60,24 @@ const StartUpTrialRefactore = (props: Props) => {
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
                           </div>
                           <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
                        </div>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            !filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
@@ -89,20 +89,26 @@ const StartUpTrialRefactore = (props: Props) => {
                {filesCounter.pitch ? (
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='w-auto h-auto'>
+                       <div className='size-auto'>
                           <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                          <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
                                   name='pitchDeckFile'
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-full opacity-0 cursor-pointer"
                                   onChange={(e) => {
                                     handlePitchFileChange(e.target.files ? e.target.files[0] : '')
                                   }}
                             />
-                            <UploadFile />
+                            {filesCounter.pitch && (
+                              <FileUpload
+                                name="pitchDeckFile"
+                                label="Upload your document"
+                                onChange={handlePitchFileChange}
+                              />
+                            )}
                           </label>
                        </div>
                      </div>
@@ -119,7 +125,7 @@ const StartUpTrialRefactore = (props: Props) => {
                           patternValue={''} 
                           patternMessage={''} 
                           placeholder={t('startUp',{ returnObjects: true }).productNamePlaceholder} 
-                          className={'border-[1px] col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
+                          className={'border rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                        <Input 
                           register={register} 
@@ -130,7 +136,7 @@ const StartUpTrialRefactore = (props: Props) => {
                           patternValue={''} 
                           patternMessage={''} 
                           placeholder={t('startUp',{ returnObjects: true }).siteAddressPlaceholder} 
-                          className={'border-[1px] col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
+                          className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                      </div>
                  </div>
@@ -142,24 +148,24 @@ const StartUpTrialRefactore = (props: Props) => {
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            filesCounter.business ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
                           </div>
                           <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
                        </div>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            !filesCounter.business ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
@@ -171,20 +177,26 @@ const StartUpTrialRefactore = (props: Props) => {
                {filesCounter.business ? (
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='w-auto h-auto'>
+                       <div className='size-auto'>
                           <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                          <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
                                   name='businessPlanFile'
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-full opacity-0 cursor-pointer"
                                   onChange={(e) => {
                                     handleBusinessFileChange(e.target.files ? e.target.files[0] : '')
                                   }}
                             />
-                            <UploadFile />
+                            {filesCounter.pitch && (
+                              <FileUpload
+                                name="pitchDeckFile"
+                                label="Upload your document"
+                                onChange={handlePitchFileChange}
+                              />
+                            )}
                           </label>
                        </div>
                      </div>
@@ -199,24 +211,24 @@ const StartUpTrialRefactore = (props: Props) => {
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("financial")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            filesCounter.financial ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
                           </div>
                           <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
                        </div>
-                       <div className='w-auto h-auto flex flex-row gap-2 items-center' onClick={() => {
+                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("financial")
                        }}>
                           <div className='border-2 rounded-full border-primary p-1'>
                                   <div
-                                         className={`w-3 h-3 rounded-full transition-all ${
+                                         className={`size-3 rounded-full transition-all ${
                                            !filesCounter.financial ? "bg-primary" : "bg-whiteGold"
                                          }`}
                                   />
@@ -228,20 +240,26 @@ const StartUpTrialRefactore = (props: Props) => {
                {filesCounter.financial ? (
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='w-auto h-auto'>
+                       <div className='size-auto'>
                           <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
+                          <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
                             <input
                                   type="file"
                                   name='financialFile'
-                                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                  className="absolute inset-0 size-full opacity-0 cursor-pointer"
                                   onChange={(e) => {
                                     handleFinancialFileChange(e.target.files ? e.target.files[0] : '')
                                   }}
                             />
-                            <UploadFile />
+                            {filesCounter.pitch && (
+                              <FileUpload
+                                name="pitchDeckFile"
+                                label="Upload your document"
+                                onChange={handlePitchFileChange}
+                              />
+                            )}
                           </label>
                        </div>
                      </div>
@@ -285,7 +303,7 @@ const StartUpTrialRefactore = (props: Props) => {
         <BussinessModelDropDown 
           register={register}
           errors={errors}
-          handlePitchFileChange={handlePitchFileChange}
+          // handlePitclearchFileChange={handlePitchFileChange}
           handleFinancialModelFileChange={handleFinancialModelFileChange}
         />
         <TargetMarketDropDown 

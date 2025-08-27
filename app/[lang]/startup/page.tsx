@@ -6,12 +6,17 @@ import Gateway from '@/components/startup/Gateway';
 import Services from '@/components/startup/Services';
 import LatestStartups from '@/components/home/LatestStartups';
 
+async function usePageTranslations(lang: string) {
+  const { t } = await useTranslation(lang, 'startUp');
+  return t;
+}
+
 export default async function StartUp({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'startUp');
+  const t = await usePageTranslations(lang);
 
   return (
     <div>

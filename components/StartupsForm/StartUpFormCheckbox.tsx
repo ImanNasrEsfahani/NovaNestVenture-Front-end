@@ -20,7 +20,7 @@ const StartUpFormCheckbox = (props: Props) => {
 
   useEffect(() => {
     setChecked(startupFormType == name)
-  },[startupFormType])
+  },[startupFormType, name])
 
     
   return (
@@ -28,13 +28,13 @@ const StartUpFormCheckbox = (props: Props) => {
         <div className='w-full h-auto flex flex-row items-center gap-2 cursor-pointer' onClick={() => setStartUpFormType(name)}>
             <div className='border-2 rounded-full border-primary p-1'>
                 <div
-                    className={`w-4 h-4 rounded-full transition-all ${
+                    className={`size-4 rounded-full transition-all ${
                       checked ? "bg-primary" : "bg-whiteGold"
                     }`}
                 >
                   <input 
                     type='radio'
-                    className='w-full h-full inset-0 opacity-0'
+                    className='size-full inset-0 opacity-0'
                     value={name}
                     {...register("type", {
                       required: true,

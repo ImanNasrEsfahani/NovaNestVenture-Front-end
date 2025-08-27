@@ -20,7 +20,7 @@ export default function Differences() {
             </ul>
         </div>
         <Image
-            className='w-full md:w-[25%] object-cover'
+            className='w-full md:w-1/4 object-cover'
             src={'/static/images/Startup/team.webp'}
             alt='team image'
             width={300}

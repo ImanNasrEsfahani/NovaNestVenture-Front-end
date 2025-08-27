@@ -140,7 +140,7 @@ export default function StartupFormForm() {
   }));
 
   return (
-    <div className="container m-[-1rem] mx-auto my-12 gap-y-0 font-barlow px-2 md:px-12 relative">
+    <div className="container -m-4 mx-auto my-12 gap-y-0 font-barlow px-2 md:px-12 relative">
       <div className='mb-12'>
         <FormTitle formName='startUp'/>
       </div>

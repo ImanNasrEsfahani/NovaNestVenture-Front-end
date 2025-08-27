@@ -4,13 +4,12 @@ import Instagram from '../icons/footer/Instagram';
 import Envelope from '../icons/footer/Envelope';
 import Whatsapp from '../icons/footer/Whatsapp';
 import LinkedIn from '../icons/footer/LinkedIn';
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 
-export default async function Footer(
+export default function Footer(
   { lang }: { lang: string }
 ) {
-
-  const { t } = await useTranslation(lang, "footer")
+  const { t } = useTranslation(lang, "footer")
 
   function GetYear() {
     const currentYear = new Date().getFullYear();

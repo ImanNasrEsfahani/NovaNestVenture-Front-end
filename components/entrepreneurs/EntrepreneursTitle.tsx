@@ -1,12 +1,8 @@
-// import { useTranslation } from 'app/i18n';
-
 import { useLang } from 'stores/langStore';
 import { useTranslation } from 'app/i18n/client';
 
-export default async function EntrepreneursTitle(
-){
+export default function EntrepreneursTitle() {
   const lang = useLang((s) => s.lang)
-
   const { t } = useTranslation(lang, "formComponent")
 
   return (

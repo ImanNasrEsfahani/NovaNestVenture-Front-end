@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { useTranslation } from 'app/i18n';
+import { useTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,9 +21,9 @@ interface Slide {
 }
 
 
-export default async function Hero2() {
+export default function Hero2() {
   const lang = useLang().lang;
-  const { t } = await useTranslation(lang, 'mainPage');
+  const { t } = useTranslation(lang, 'mainPage');
   const slides = t('heroSlides', { returnObjects: true }) as Slide[];
   return (
     <div className="w-full h-screen">

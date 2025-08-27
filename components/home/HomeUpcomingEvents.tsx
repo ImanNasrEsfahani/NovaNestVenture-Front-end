@@ -1,15 +1,13 @@
-import { useTranslation } from 'app/i18n'
+import { useTranslation } from 'app/i18n/client'
 import React from 'react'
 import { useLang } from 'stores/langStore'
 
-export default async function HomeUpcomingEvents() {
-
+export default function HomeUpcomingEvents() {
   const lang = useLang.getState().lang
-
-  const { t } =  await useTranslation(lang, "mainPage")  
+  const { t } = useTranslation(lang, "mainPage")
 
   return (
-    <div className='min-h-[400px] bg-[#F8F5F0]'>
+    <div className='min-h-[400px] g-whiteGold'>
         <div className='relative'>
             <div className='absolute left-20 p-2 md:left-[185px] md:top-[29px] md:text-4xl rtl:right-28 md:rtl:right-48 rtl:md:top-[24px]'>
                 <h3 className='font-gilda text-2xl font-normal text-neutral-800 md:text-4xl'>

@@ -47,7 +47,7 @@ export default function Profile({ slug }: { slug: string }) {
 
   return (
     <div className="max-w-[1600px] mx-auto flex h-screen justify-center w-full py-24 md:px-40">
-      <section className="flex flex-col items-center justify-between w-full px-4 md:w-[60%]">
+      <section className="flex flex-col items-center justify-between w-full px-4 md:w-3/5">
         {/* top */}
         <div className="flex flex-col items-center">
           <div className="px-3 flex items-center justify-center rounded-full">
@@ -78,7 +78,7 @@ export default function Profile({ slug }: { slug: string }) {
                 >
                   <li className="mt-3 flex justify-between items-center px-2 py-3 shadow-lg">
                     <div className="">
-                      <div className="h-10 w-10 flex justify-between items-center ">
+                      <div className="size-10 flex justify-between items-center ">
                         <Image
                           src={website.logo}
                           width={100}
@@ -108,7 +108,7 @@ export default function Profile({ slug }: { slug: string }) {
               className="hover:text-primary"
               target="_blank"
             >
-              <InstagramIconNew className="bi bi-instagram h-8 w-8" />
+              <InstagramIconNew className="bi bi-instagram size-8" />
             </Link>
             <Link
               aria-label="Email"
@@ -117,7 +117,7 @@ export default function Profile({ slug }: { slug: string }) {
               target="_blank"
             >
               <EnvelopeMediaIconNew
-                className="bi bi-envelope h-8 w-8"
+                className="bi bi-envelope size-8"
                 width="16"
                 height="16"
               />
@@ -131,7 +131,7 @@ export default function Profile({ slug }: { slug: string }) {
               <WhatsappIconNew
                 width="16"
                 height="16"
-                className="bi bi-whatsapp h-8 w-8"
+                className="bi bi-whatsapp size-8"
               />
             </Link>
             <Link
@@ -143,7 +143,7 @@ export default function Profile({ slug }: { slug: string }) {
               <LinkedinIconNew
                 width="16"
                 height="16"
-                className="bi bi-linkedin h-8 w-8"
+                className="bi bi-linkedin size-8"
               />
             </Link>
           </div>
