@@ -1,4 +1,5 @@
 
+'use client'
 import Link from 'next/link';
 import Instagram from '../icons/footer/Instagram';
 import Envelope from '../icons/footer/Envelope';
