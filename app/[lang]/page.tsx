@@ -43,9 +43,10 @@ export default async function Page({
         <AboutUs />
         <HomeCardsContainer2 />
         <SpecialFeatures />
-        <NovaNestBlack />
-        <HomeUpComingStartups />
+        
+        {/* <HomeUpComingStartups /> */}
         <HomeNovaNestAcademy />
+        <NovaNestBlack />
         <LatestStartups />
         <NovaNestPriority />
         {/* <Partners /> */}

@@ -7,6 +7,15 @@ import Whatsapp from '../icons/footer/Whatsapp';
 import LinkedIn from '../icons/footer/LinkedIn';
 import { useTranslation } from 'app/i18n/client';
 
+interface FooterItem {
+  text: string;
+  link: string;
+}
+
+interface FooterText {
+  [key: string]: FooterItem;
+}
+
 export default function Footer(
   { lang }: { lang: string }
 ) {
@@ -18,7 +27,7 @@ export default function Footer(
   }
   return (
     <div className="bg-[#F7F3EE] font-barlow">
-      <div className="max-w-[1600px] mx-auto p-4  flex flex-wrap justify-between space-y-5">
+      <div className="max-w-[1600px] mx-auto p-6  flex flex-wrap justify-between space-y-5">
         <div className="mt-5 flex flex-col w-full xl:w-2/5 gap-2">
           <div className="text-justify text-xl font-medium text-[#AA8453] pb-2">
             {t('about', { returnObjects: true }).title}
@@ -72,47 +81,29 @@ export default function Footer(
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-[#AA8453] pb-2">{t('forms', { returnObjects: true }).title}</div>
-          <Link
-            href={'/StartupsForm'}
-            className="pt-1 hover:text-primary"
-          >
-            {t('forms', { returnObjects: true }).text.startUp}
-          </Link>
-          <Link
-            href={'/investor-registration'}
-            className="pt-1 hover:text-primary"
-          >
-            {t('forms', { returnObjects: true }).text.investor}
-          </Link>
-          <Link
-            href={'/entrepreneurs'}
-            className="pt-1 hover:text-primary"
-          >
-            {t('forms', { returnObjects: true }).text.entrepreneur}
-          </Link>
-          <Link
-            href={'/prtners'}
-            className="pt-1 hover:text-primary"
-          >
-            {t('forms', { returnObjects: true }).text.prtners}
-          </Link>
-          <Link
-            href={'/partner-membership'}
-            className="pt-1 hover:text-primary"
-          >
-            {t('forms', { returnObjects: true }).text.partners}
-          </Link>
+          {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
+            <Link
+              key={key}
+              href={value.link}
+              className="pt-1 hover:text-primary"
+            >
+              {value.text}
+            </Link>
+          ))}
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-[#AA8453] pb-2">
             {t('contact', { returnObjects: true }).title}
           </div>
           <div className="pt-1 text-black">
-            {t('contact', { returnObjects: true }).text.canada}
+            {t('contact', { returnObjects: true }).text.addressLineOne}
+          </div>
+          <div className="text-black">
+            {t('contact', { returnObjects: true }).text.addressLineTwo}
           </div>
           <Link
             href="tel:0017789865432"
-            className="pt-1 hover:text-primary"
+            className="pt-2 hover:text-primary"
           >
             {t('contact', { returnObjects: true }).text.cNumber}
           </Link>

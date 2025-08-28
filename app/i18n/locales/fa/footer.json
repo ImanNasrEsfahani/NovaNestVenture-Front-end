@@ -18,15 +18,33 @@
   "forms": {
     "title": "فرم ها",
     "text": {
-      "startUp": "اعتبارسنجی استارت آپ ها",
-      "investor": "مرکز سرمایه گذاری",
-      "entrepreneur": "مرکز کارآفرینی"
+      "startUp": {
+        "text": "ارزیابی استارت آپ",
+        "link": "/StartupsForm"
+      },
+      "investor": {
+        "text": "مرکز سرمایه گذاری",
+        "link": "/investor-registration"
+      },
+      "Join our team": {
+        "text": "عضویت به عنوان تیم",
+        "link": "/job-form"
+      },
+      "mentorship": {
+        "text": "عضویت به عنوان پارتنر",
+        "link": "/partner-membership"
+      },
+      "mentor": {
+        "text": "عضویت به عنوان منتور",
+        "link": "/join-as-mentor"
+      }
     }
   },
   "contact": {
     "title": "ارتباط با ما",
     "text": {
-      "canada": " کانادا، بریتیش کلمبیا، برنابی، خیابان نورث، ساختمان های EVERGREEN PL",
+      "addressLineOne": "کانادا، بریتیش کلمبیا، برنابی،",
+      "addressLineTwo": "خیابان نورث، ساختمان های EVERGREEN PL",
       "cNumber": "+1 (778) 986-5432"
     }
   }

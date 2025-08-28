@@ -18,15 +18,33 @@
   "forms": {
     "title": "Forms",
     "text": {
-      "startUp": "Startup validation",
-      "investor": "Investor Center",
-      "entrepreneur": "Entrepreneur Center"
+      "startUp": {
+        "text": "Startup validation",
+        "link": "/StartupsForm"
+      },
+      "investor": {
+        "text": "Investor Center",
+        "link": "/investor-registration"
+      },
+      "Join our team": {
+        "text": "Join our team",
+        "link": "/job-form"
+      },
+      "mentorship": {
+        "text": "Join as partnership",
+        "link": "/partner-membership"
+      },
+      "mentor": {
+        "text": "Join as mentor",
+        "link": "/join-as-mentor"
+      }
     }
   },
   "contact": {
     "title": "Contact",
     "text": {
-      "canada": "3308-3833 EVERGREEN PL, BURNABY BC V3J 0M2 Canada",
+      "addressLineOne": "3308-3833 EVERGREEN PL,",
+      "addressLineTwo": "BURNABY BC V3J 0M2 Canada",
       "cNumber": "(+1) 778 986-5432"
     }
   }

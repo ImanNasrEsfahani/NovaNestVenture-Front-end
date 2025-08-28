@@ -8,15 +8,13 @@
         "id": "startup-suv",
         "title": "Startup – SUV",
         "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
-        "image": "/static/images/Home/Features/startup-visa.jpg",
-        "icon": "🚀"
+        "image": "/static/images/Home/Features/startup-visa.jpg"
       },
       {
         "id": "entrepreneur",
         "title": "Entrepreneur",
         "description": "Provincial Nominee Programs (PNP) in various Canadian provinces offer a valuable opportunity for those who want to enter Canada by investing and starting their own business. Each province has its own unique conditions and path for attracting entrepreneurs, and with our experience and knowledge, we guide you in choosing the best program, preparing documents, and completing all steps. The result of this path will be establishing a successful business in Canada and obtaining permanent residence.",
-        "image": "/static/images/Home/Features/entrepreneur.jpg",
-        "icon": "💼"
+        "image": "/static/images/Home/Features/entrepreneur.jpg"
       }
     ]
   },
@@ -144,7 +142,8 @@
     }
   ],
 
-  "LandaAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
+  "NovaNestAcademy": "NovaNest Academy",
+  "NovaNestAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   
   "TitleBlackFirst" : "Mentorship",
   "SubtitleBlackFirst" : "Become a NovaNest Mentor",

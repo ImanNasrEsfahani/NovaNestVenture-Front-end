@@ -16,7 +16,7 @@ export default function AboutUs(){
                     <h2 className="text-4xl font-bold mb-8 text-gray-800 relative">
                         <span className="relative inline-block">{t('AboutUs')}</span>
                     </h2>
-                    <p className="text-gray-700 text-lg leading-relaxed tracking-wide mb-8 px-6">
+                    <p className="text-gray-700 text-xl leading-relaxed tracking-wide mb-8 px-6">
                         {t('AboutUsContent')}
                     </p>
                 </div>

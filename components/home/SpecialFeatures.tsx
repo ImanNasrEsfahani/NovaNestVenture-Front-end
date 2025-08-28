@@ -46,11 +46,6 @@ export default function SpecialFeatures() {
                 
                 <div className="flex flex-col flex-grow p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    {feature.icon && (
-                      <span className="text-4xl bg-blue-50 p-3 rounded-full">
-                        {feature.icon}
-                      </span>
-                    )}
                     <h3 className="text-2xl font-bold text-gray-800">
                       {feature.title}
                     </h3>
