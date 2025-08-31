@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function AboutUsCooperation() {
+export default function AboutUsCooperation({ lang }: { lang: string }) {
   return (
     <div className="h-full bg-neutral-800 py-10 text-center text-white">
       <div className="text-center">
@@ -28,7 +28,7 @@ export default function AboutUsCooperation() {
           </p>
           <div className="pt-10">
             <span className="mr-3">More</span>
-            <Link href="/investor-registration">
+            <Link href={`/${lang}/investor-registration`}>
               <Image
                 loading="lazy"
                 width={40}
@@ -55,7 +55,7 @@ export default function AboutUsCooperation() {
           </p>
           <div className="pt-10 md:pt-16">
             <span className="mr-3">More</span>
-            <Link href="/partner-membership">
+            <Link href={`/${lang}/partner-membership`}>
               <Image
                 loading="lazy"
                 width={40}

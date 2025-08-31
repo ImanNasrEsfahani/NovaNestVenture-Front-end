@@ -191,7 +191,7 @@ const cards: CardsList[] = [
     text: 'We assist startups by providing their investments to help them grow and transition their businesses into the business markets to expand them internationally. We collaborate with a group of international investors who invest in various projects and businesses based on their investment priorities. At NovaNest Investment Center, all the required investments for starting and developing your business will be provided, allowing you to prosper and achieve profitability as soon as possible.',
     image: '/static/images/About/card1.png',
     reverse: true,
-    link: '/investor-registration'
+    link: '/en/investor-registration'
   },
   {
     title: 'Acceleration Center',
