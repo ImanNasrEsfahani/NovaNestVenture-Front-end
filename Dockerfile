@@ -1,5 +1,6 @@
 # Use the latest Node.js LTS Alpine image as the base image
-FROM node:lts-alpine
+FROM node:18-alpine
+
 
 # Install pnpm
 RUN npm install -g pnpm
