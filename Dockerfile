@@ -7,8 +7,10 @@ RUN npm install -g pnpm
 # Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json files
+# Copy package.json and package-lock.json and prisma files
+RUN apk add --no-cache openssl
 COPY package*.json ./
+COPY prisma ./prisma
 
 # Install dependencies
 RUN pnpm install
