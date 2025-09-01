@@ -4,8 +4,9 @@ async function submitInvestorRegistrationForm(
   sendFormData: FormData,
 ) {
   try {
+    // Make sure this endpoint matches your backend
     const response = await apiClient.post(
-      'investor-registration',
+      '/investor-registration', // Note the leading slash
       sendFormData,
       {
         headers: {
@@ -14,13 +15,13 @@ async function submitInvestorRegistrationForm(
       }
     );
 
-
+    console.log('Response:', response);
     return response;
   } catch (error) {
     console.error('Error sending form data:', error);
+    throw error; // Re-throw to handle in the component
   }
 }
-
 
 export {
   submitInvestorRegistrationForm
