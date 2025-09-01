@@ -11,6 +11,8 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_DJANGO_HOST_URL=https://back.novanestventure.com
+      - MAIN_APP_URL=https://www.NovaNestVenture.com
+      - DATABASE_URL=postgresql://postgres:12345@localhost:5432/landa?schema=public
     volumes:
       - .:/app
       - /app/node_modules
