@@ -14,7 +14,7 @@ export default function NavbarLogo () {
           <div className="flex flex-col items-center md:flex-row md:items-end">
             <Image
               className="h-10 w-10 md:h-14 md:w-12"
-              src="static/images/Logo.svg"
+              src="/static/images/Logo.svg"
               alt="Logo"
               width={50}
               height={50}

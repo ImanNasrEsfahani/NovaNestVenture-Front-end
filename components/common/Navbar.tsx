@@ -68,7 +68,7 @@ export default function Navbar({
               <div className="flex flex-col items-center md:flex-row md:items-end">
                 <Image
                   className="h-full"
-                  src="static/images/Logo.svg"
+                  src="/static/images/Logo.svg"
                   alt="Logo"
                   width={100}
                   height={100}
@@ -128,7 +128,7 @@ export default function Navbar({
 
           <Image
             className="mx-auto mb-2"
-            src="static/images/Logo.svg"
+            src="/static/images/Logo.svg"
             alt="NovaNest Venture Key Differentiating"
             width={96}
             height={4}
