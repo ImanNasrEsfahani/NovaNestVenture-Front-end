@@ -5,11 +5,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: nextjs-app
+    container_name: NovaNest-front
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_DJANGO_HOST_URL=https://back.novanestventure.com
     volumes:
       - .:/app
       - /app/node_modules
