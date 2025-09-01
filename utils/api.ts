@@ -12,7 +12,8 @@ console.log("API Base URL:", baseURL);
 // Add request interceptor for debugging
 apiClient.interceptors.request.use(
   (config) => {
-    console.log('Making request to:', config.baseURL + config.url);
+    const fullUrl = (config.baseURL || '') + (config.url || '');
+    console.log('Making request to:', fullUrl);
     return config;
   },
   (error) => {
