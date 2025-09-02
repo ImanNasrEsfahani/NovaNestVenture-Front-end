@@ -1,28 +1,29 @@
 # Use the latest Node.js LTS Alpine image as the base image
 FROM node:18-alpine
 
+# Install pnpm
+RUN npm install -g pnpm
 
 # Set the working directory
 WORKDIR /app
 
-# Install dependencies
-RUN apk add --no-cache libc6-compat
-
-# Copy package files first
-COPY package.json pnpm-lock.yaml* ./
-
-# Install dependencies
-RUN corepack enable pnpm && pnpm install
+# Copy package.json and package-lock.json and prisma files
+RUN apk add --no-cache openssl
+COPY package*.json ./
+COPY prisma ./prisma
+COPY .env.production ./.env.production
 
 # Copy source code
 COPY . .
 
-# Set environment variables
-ENV NODE_ENV=development
-ENV NEXT_PUBLIC_DJANGO_HOST_URL=https://back.novanestventure.com
+# Install dependencies
+RUN pnpm install
+
+# Build the app
+RUN pnpm build
 
 # Expose port 3000 for the Next.js app
 EXPOSE 3000 
 
 # Set the command to start the Next.js app
-CMD ["pnpm", "dev"]
+CMD ["pnpm", "start"]
