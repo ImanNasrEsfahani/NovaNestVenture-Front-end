@@ -11,9 +11,16 @@ const apiClient = axios.create({
     'Accept': 'application/json',
   },
   withCredentials: false, // Set to true if you need to send cookies
+  maxRedirects: 3,
 });
 
 console.log("API Base URL:", baseURL);
+
+// Add this line for debugging
+console.log('🐳 Docker Environment Check:', {
+  NEXT_PUBLIC_DJANGO_HOST_URL: process.env.NEXT_PUBLIC_DJANGO_HOST_URL,
+  NODE_ENV: process.env.NODE_ENV
+});
 
 // Add request interceptor for debugging
 apiClient.interceptors.request.use(
