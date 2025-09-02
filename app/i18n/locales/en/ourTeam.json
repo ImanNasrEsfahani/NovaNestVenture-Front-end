@@ -27,7 +27,7 @@
           "image": "/static/images/our-team/Personals/a4.webp",
           "position": "Public Relations",
           "name": "Kholoud Hariri",
-          "linkedIn": "linkedin.com/in/kholoud-hariri-b83b96222",
+          "linkedIn": "https://www.linkedin.com/in/kholoud-hariri-b83b96222",
           "category": "public relations officer"
         },
         {
@@ -90,7 +90,7 @@
           "image": "/static/images/our-team/Personals/faezeh.webp",
           "position": "Graphic Designer",
           "name": "Faezeh Khani",
-          "linkedIn": "linkedin.com/in/faezeh-khani-4362b62a5",
+          "linkedIn": "https://www.linkedin.com/in/faezeh-khani-4362b62a5",
           "category": "designers"
         },
 

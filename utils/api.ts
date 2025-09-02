@@ -10,7 +10,7 @@ const apiClient = axios.create({
     'Content-Type': 'application/json',
     'Accept': 'application/json',
   },
-  withCredentials: false, // Set to true if you need to send cookies
+  withCredentials: false,
   maxRedirects: 3,
 });
 

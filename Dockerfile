@@ -26,4 +26,4 @@ RUN pnpm build
 EXPOSE 3000 
 
 # Set the command to start the Next.js app
-CMD ["pnpm", "start"]
+CMD ["pnpm", "dev"]
