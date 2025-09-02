@@ -2,25 +2,24 @@
 FROM node:18-alpine
 
 
-# Install pnpm
-RUN npm install -g pnpm
-
 # Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json and prisma files
-RUN apk add --no-cache openssl
-COPY package*.json ./
-COPY prisma ./prisma
+# Install dependencies
+RUN apk add --no-cache libc6-compat
+
+# Copy package files first
+COPY package.json pnpm-lock.yaml* ./
 
 # Install dependencies
-RUN pnpm install
+RUN corepack enable pnpm && pnpm install
 
-# Copy app source code
+# Copy source code
 COPY . .
 
-# Build the app
-RUN pnpm build
+# Set environment variables
+ENV NODE_ENV=development
+ENV NEXT_PUBLIC_DJANGO_HOST_URL=https://back.novanestventure.com
 
 # Expose port 3000 for the Next.js app
 EXPOSE 3000 
