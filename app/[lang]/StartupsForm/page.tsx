@@ -24,7 +24,7 @@ export default async function StartupValidationPage({
 
   return (
     <div dir={t('dir')} className="relative overflow-hidden">
-      <div className="hidden lg:block rotate-[1.3deg] w-auto h-auto absolute right-0 top-1/2">
+      <div className="hidden lg:block rotate-[1.3deg] size-auto absolute right-0 top-1/2">
         <LandaBgBig />
       </div>
       <Banner

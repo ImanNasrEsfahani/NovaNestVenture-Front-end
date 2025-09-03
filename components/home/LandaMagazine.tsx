@@ -15,10 +15,10 @@ export default function LandaMagazine() {
             NovaNest Venture MAGAZINE
           </div>
           <div className="flex flex-row items-center justify-center">
-            <button className="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white">
+            <button className="mr-3 flex size-12 items-center justify-center rounded-full border border-white">
               {/* TODO:  create component for svg*/}
               <svg
-                className="h-6 w-6 text-white"
+                className="size-6 text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
@@ -41,10 +41,10 @@ export default function LandaMagazine() {
                 />
               ))}
             </div>
-            <button className="ml-3 flex h-12 w-12 items-center justify-center rounded-full border border-white">
+            <button className="ml-3 flex size-12 items-center justify-center rounded-full border border-white">
               {/* Right Arrow */}
               <svg
-                className="h-6 w-6 text-white"
+                className="size-6 text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"

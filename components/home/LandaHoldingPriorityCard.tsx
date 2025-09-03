@@ -13,7 +13,7 @@ export default function LandaHoldingPriorityCard({
       {/* Background Image */}
       <Image
         loading="lazy"
-        className="absolute bottom-2 -right-2 h-12 w-12 opacity-10 md:bottom-1 md:right-1 md:h-[145px] md:w-[145px]"
+        className="absolute bottom-2 -right-2 size-12 opacity-10 md:bottom-1 md:right-1 md:size-[145px]"
         src={image}
         alt=""
         width={500}
@@ -30,7 +30,7 @@ export default function LandaHoldingPriorityCard({
       {/* Small Image Overlay */}
       <Image
         loading="lazy"
-        className="absolute left-2 top-2 h-8 w-8 md:h-[50px] md:w-[50px]"
+        className="absolute left-2 top-2 size-8 md:size-[50px]"
         src={image}
         alt="NovaNest Venture Priority"
         width={500}

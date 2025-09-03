@@ -57,7 +57,7 @@ export default function AboutusPersonalTabs({
           </Link>
         </div>
       </div>
-      <div className="absolute -bottom-[4.4rem] mt-64 flex w-full flex-col items-center bg-whiteGold py-7  ">
+      <div className="absolute bottom-[-4.4rem] mt-64 flex w-full flex-col items-center bg-whiteGold py-7  ">
         <span className="font-gilda text-3xl font-normal text-black">
           {name}
         </span>

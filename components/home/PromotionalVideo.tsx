@@ -22,7 +22,7 @@ export default function PromotionalVideo() {
               Promotional Video
             </div>
             <div className="h-w-24 font-futura b4 relative w-24 rounded-full border-2 border-primary p-6 text-center font-light text-white opacity-100">
-              <div className="circle absolute left-1/2 top-1/2 z-[-10] h-1 w-1 rounded-full  bg-white"></div>
+              <div className="circle absolute left-1/2 top-1/2 -z-10 size-1 rounded-full  bg-white"></div>
               <Play />
             </div>
           </div>

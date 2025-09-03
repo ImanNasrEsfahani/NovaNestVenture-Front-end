@@ -51,7 +51,7 @@ export default function Partners() {
     const intervalId = setInterval(scrollAutomatically, 40); // Adjust the interval as needed.
 
     return () => clearInterval(intervalId);
-  }, [isScrolling]);
+  }, [isScrolling, lang]);
 
   // TODO: move js functions to a separate file
   const handleMouseEnter = () => {

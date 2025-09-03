@@ -32,7 +32,7 @@ export default function HomeNovaNestAcademy() {
       
       <div className="tooltip-success relative flex w-full justify-end gap-3 md:w-[47%]">
         <div
-          className={`relative h-72 w-full max-w-xs md:h-[100%]`}
+          className={`relative h-72 w-full max-w-xs md:h-full`}
         >
           <Image
             loading="lazy"

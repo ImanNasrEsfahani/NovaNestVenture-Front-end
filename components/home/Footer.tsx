@@ -29,7 +29,7 @@ export default function Footer(
     <div className="bg-[#F7F3EE] font-barlow">
       <div className="max-w-[1600px] mx-auto p-6  flex flex-wrap justify-between space-y-5">
         <div className="mt-5 flex flex-col w-full xl:w-2/5 gap-2">
-          <div className="text-justify text-xl font-medium text-[#AA8453] pb-2">
+          <div className="text-justify text-xl font-medium text-primary pb-2">
             {t('about', { returnObjects: true }).title}
           </div>
           <div className="mt-1 text-justify text-base  font-normal text-black pb-2">
@@ -51,7 +51,7 @@ export default function Footer(
                 </div>
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
-          <div className="text-xl font-medium text-[#AA8453] pb-2">
+          <div className="text-xl font-medium text-primary pb-2">
             {t('explore', { returnObjects: true }).title}
           </div>
           <Link
@@ -80,7 +80,7 @@ export default function Footer(
           </Link>
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
-          <div className="text-xl font-medium text-[#AA8453] pb-2">{t('forms', { returnObjects: true }).title}</div>
+          <div className="text-xl font-medium text-primary pb-2">{t('forms', { returnObjects: true }).title}</div>
           {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
             <Link
               key={key}
@@ -92,7 +92,7 @@ export default function Footer(
           ))}
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
-          <div className="text-xl font-medium text-[#AA8453] pb-2">
+          <div className="text-xl font-medium text-primary pb-2">
             {t('contact', { returnObjects: true }).title}
           </div>
           <div className="pt-1 text-black">
@@ -109,9 +109,9 @@ export default function Footer(
           </Link>
         </div>
       </div>
-      <div className="max-w-[1600px] p-4 border-t border-[#DDCEBA] pt-4 text-center text-[#DDCEBA]">
+      <div className="max-w-[1600px] p-4 border-t border-tableHeader text-center text-tableHeader">
         © Copyright {GetYear()} by{' '}
-        <Link href={'/'} className="text-[#DDCEBA]">
+        <Link href={'/'} className="text-tableHeader">
           NovaNestVenture
         </Link>
       </div>

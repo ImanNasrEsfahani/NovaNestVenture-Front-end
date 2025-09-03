@@ -11,10 +11,10 @@ export default function PartnersDiamond({
 }) {
   return (
     <Link
-      className="group relative flex h-[120px] w-[120px] shrink-0 rotate-45 items-center justify-center overflow-hidden rounded-lg bg-whiteGold"
+      className="group relative flex size-[120px] shrink-0 rotate-45 items-center justify-center overflow-hidden rounded-lg bg-whiteGold"
       href={'/'}
     >
-      <div className="h-[100px] w-[100px]">
+      <div className="size-[100px]">
         <div className="-rotate-45">
           <Image
             className="object-contain"

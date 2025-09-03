@@ -12,8 +12,8 @@ export default function CompaniesCard({
 }) {
   return (
     <Link href={link} target="_blank">
-      <div className=" relative flex h-[160px] w-[150px] mb-5 md:mb-0 flex-col items-center group justify-center bg-[#F7F3EE] md:h-[322px] md:w-[322px] rounded-xl">
-        <div className="relative h-[120px] md:h-[138px] w-[120px] md:w-[138px]">
+      <div className=" relative flex h-[160px] w-[150px] mb-5 md:mb-0 flex-col items-center group justify-center bg-[#F7F3EE] md:size-[322px] rounded-xl">
+        <div className="relative size-[120px] md:size-[138px]">
           <Image
             className=" object-contain"
             src={`/static/images/About/companies/${logo}`}

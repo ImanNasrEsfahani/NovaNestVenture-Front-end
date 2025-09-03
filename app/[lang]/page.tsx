@@ -8,7 +8,6 @@ import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
 // import UpcomingEvents from '@/components/home/UpcomingEvents';
 // import AerialViewBusinessTeam from '@/components/home/BusinessTeam';
 
-import { getServerTranslation } from '../i18n';
 // import HomeUpComingStartups from '@/components/home/HomeUpComingStartups';
 import HomeNovaNestAcademy from '@/components/home/HomeNovaNestAcademy';
 import AboutUs from '@/components/home/AboutUs';
@@ -21,13 +20,7 @@ export const metadata: Metadata = {
     'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
-export default async function Page({
-  params: { lang }
-}: {
-  params: { lang: string };
-}) {
-  // Keep t for future use in Hero component
-  // const { t: _t } = await getServerTranslation(lang, 'mainPage');
+export default async function Page() {
 
   return (
     <div className="relative w-full mb-8">

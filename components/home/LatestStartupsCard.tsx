@@ -17,13 +17,13 @@ export default function LatestStartupsCard({
 }) {
   return (
     <Link href={link} target={link} >
-      <div className="group relative w-full h-full col-span-1 border transition-all border-black hover:shadow-lg rounded-lg">
+      <div className="group relative size-full col-span-1 border transition-all border-black hover:shadow-lg rounded-lg">
         {/* Image Container */}
         <div className="w-full " />
 
           {/* Image */}
           <Image
-            className="w-[50%] h-44 mx-auto object-contain transition-all group-hover:scale-110 my-6 "
+            className="w-1/2 h-44 mx-auto object-contain transition-all group-hover:scale-110 my-6 "
             loading="lazy"
             alt={image}
             src={image}

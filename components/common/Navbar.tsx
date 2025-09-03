@@ -98,7 +98,7 @@ export default function Navbar({
                   </h2>
 
                   {/* Desktop Forms */}
-                  <ul className="absolute -left-[80px] top-14 mt-2 w-64 space-y-0 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
+                  <ul className="absolute left-[-80px] top-14 mt-2 w-64 space-y-0 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
                     {submenuItems.map(({ label, href }: any) => (
                       <li className="max-h-fit text-xl" key={label}>
                         <Link

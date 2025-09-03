@@ -48,7 +48,7 @@ export default function HandicraftForm() {
     }
 
     fetchCsrfToken();
-  }, []);
+  }, [handleTokenChange]);
 
   const onSubmit = async (formData: HandicraftFormType) => {
     // Set loading and sending states.
