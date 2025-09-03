@@ -10,7 +10,7 @@ export default function Logo({ route }: { route: 'holding' | 'academy' }) {
         <div className="flex flex-col items-end md:flex-row">
           <Image
             loading="lazy"
-            className="h-10 w-10 md:h-14 md:w-12"
+            className="size-10 md:h-14 md:w-12"
             src={
               route === 'holding'
                 ? '/static/images/Logo.svg'

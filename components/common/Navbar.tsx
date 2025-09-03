@@ -51,7 +51,7 @@ export default function Navbar({
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block h-8 w-8 stroke-current text-white"
+                className="inline-block size-8 stroke-current text-white"
               >
                 <path
                   strokeLinecap="round"

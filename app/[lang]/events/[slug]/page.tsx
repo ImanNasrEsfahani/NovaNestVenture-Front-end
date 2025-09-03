@@ -95,7 +95,7 @@ export default function Page({
                     {card.people.map((person, index) => {
                       return (
                         <div key={index} className="flex gap-2">
-                          <div className="relative h-8 w-8">
+                          <div className="relative size-8">
                             <Image
                               className="rounded-full object-cover"
                               src={person.image}
@@ -194,7 +194,7 @@ export default function Page({
                     Add To Calender
                   </button>
                 </div>
-                <div className="mt-10 rounded-sm bg-[#F8F5F0] p-6 font-gilda">
+                <div className="mt-10 rounded-sm bg-whiteGold p-6 font-gilda">
                   <span className="text-xl">Event sharing</span>
                   <div className="my-6 flex gap-5">
                     <Instagram />

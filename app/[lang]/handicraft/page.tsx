@@ -35,7 +35,7 @@ export default async function Page({
       </div>
       <div className="my-14 flex flex-col justify-center gap-8 md:mx-24">
         <div className="relative flex flex-col md:flex-row items-center justify-between my-16">
-          <div className=" relative w-[50%] mb-6 md:mb-0 md:w-[20%]">
+          <div className=" relative w-1/2 mb-6 md:mb-0 md:w-1/5">
             <Image
               className="hidden md:block rtl:md:w-[300px]"
               src="/static/images/landacraft1.png"
@@ -91,7 +91,7 @@ export default async function Page({
           </p>
         </div>
         <div className="flex w-full flex-col items-center gap-11 rounded-sm bg-[#F7F3EE] px-8 py-5 my-20">
-          <p className="font-gilda text-sm md:text-base  text-[#AA8453]">
+          <p className="font-gilda text-sm md:text-base  text-primary">
             {t('formTitle')}
           </p>
           <HandicraftForm />

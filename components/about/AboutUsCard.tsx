@@ -32,7 +32,7 @@ const AboutUsCard = ({
                 goto={''}
               /> */}
               <ButtonRefactor text="Visit Now" />
-              {/* <button className=" justify-items-center mx-auto bg-[#AA8453] text-white md:mt-24 mt-8  flex px-10 py-2 font-barlow">
+              {/* <button className=" justify-items-center mx-auto bg-primary text-white md:mt-24 mt-8  flex px-10 py-2 font-barlow">
                 Visit Now
               </button> */}
             </Link>{' '}
@@ -77,7 +77,7 @@ const AboutUsCard = ({
             </p>
             <p className="text-normal mt-5">{text}</p>
             <Link href={link}>
-              <button className=" mx-auto mt-8 flex justify-items-center bg-[#AA8453] px-10  py-2 font-barlow text-white md:mt-24">
+              <button className=" mx-auto mt-8 flex justify-items-center bg-primary px-10  py-2 font-barlow text-white md:mt-24">
                 Visit Now
               </button>
             </Link>

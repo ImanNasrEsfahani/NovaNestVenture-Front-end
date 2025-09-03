@@ -116,7 +116,7 @@ export default function AerialViewBusinessTeam(
               <button
                 key={index}
                 aria-label={`Comments Navigation ${index + 1}`}
-                className={`h-[10px] w-[10px] rounded-full md:h-[15px] md:w-[15px] ${currentIndex === index
+                className={`size-[10px] rounded-full md:size-[15px] ${currentIndex === index
                     ? 'bg-primary transition-all duration-300'
                     : 'border border-white transition-all duration-300'
                   }`}

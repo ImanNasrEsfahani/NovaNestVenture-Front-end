@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect } from 'react';
 import { PersonalInfoInput } from './PersonalInfoInput';
 import GetCsrfToken from '@/utils/get-csrf-token';

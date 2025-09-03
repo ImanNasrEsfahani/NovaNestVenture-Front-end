@@ -33,7 +33,7 @@ export default function AccelerationCard({
     <>
       <div className={`relative flex items-center ${addedClass} px-10 md:mx-20 gap-20`}>
 
-      <div className='relative w-[25%] hidden md:inline'>
+      <div className='relative w-1/4 hidden md:inline'>
         <Image
           className="w-full"
           src={secondImageSrc}
@@ -45,7 +45,7 @@ export default function AccelerationCard({
       </div>
 
 
-      <div className='w-full md:w-[75%]'>
+      <div className='w-full md:w-3/4'>
         <div className='flex items-center justify-between md:flex-row'>
           <div className="flex flex-col md:flex-row">
 

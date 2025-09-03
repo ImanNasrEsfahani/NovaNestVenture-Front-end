@@ -1,12 +1,13 @@
 import UploadIcon from '../icons/UploadIcon';
+import { UseFormRegister, FieldErrors } from 'react-hook-form';
 
 interface UploadInputProps {
   title: string;
-  register: any; // TODO: Add proper type from react-hook-form
-  errors: any; // TODO: Add proper type from react-hook-form
+  register: UseFormRegister<any>;
+  errors: FieldErrors<any>;
   nameInput: string;
   handleChange: (file: File) => void;
-  required?: string;
+  required?: boolean | string;
 }
 
 export default function UploadInput({
@@ -16,14 +17,7 @@ export default function UploadInput({
   nameInput,
   handleChange,
   required
-}: {
-  title: string;
-  register: any;
-  errors: any;
-  nameInput: string;
-  handleChange: any;
-  required?:string;
-}) {
+}: UploadInputProps) {
   return (
     <div className="inline-flex max-w-full flex-col justify-center gap-3">
       {/* Label for the upload input */}
@@ -38,18 +32,15 @@ export default function UploadInput({
         <input
           className={`h-7 text-[13px] font-normal capitalize text-neutral-800 ${errors[nameInput] ? ' border-red-500' : ''}`}
           type="file"
-          {...register(nameInput,{required:required})}
+          {...register(nameInput, { required })}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-            // setFileState({nameInput: e.target.files});
-
-            if (e.target.files) {
-              handleChange(e.target.files[0]);
-            }
+            const file = e.target.files?.[0];
+            if (file) handleChange(file);
           }}
         />
         {errors[nameInput] && (
           <span className="mt-4 text-sm text-red-500">
-            {errors[nameInput].message}
+            {String(errors[nameInput]?.message || 'Required')}
           </span>
         )}
       </div>

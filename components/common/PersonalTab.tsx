@@ -43,7 +43,7 @@ export default function PersonalTab({
       {/* Text Content */}
       <div className="z-10 flex flex-col items-center px-3 pb-4 text-white">
         <span className=" font-barlow text-lg font-normal">{name}</span>
-        <div className="flex w-[65%] items-center justify-center border-t-[2px] font-light">
+        <div className="flex w-[65%] items-center justify-center border-t-2 font-light">
           <span className="border-t-3 font-barlow font-light">{position}</span>
         </div>
       </div>

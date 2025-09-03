@@ -41,7 +41,7 @@ const ScrollUpButton = () => {
       onClick={scrollToTop}
       className={`scroll-up-btn ${
         showButton ? 'show' : 'hidden'
-      } fixed bottom-4 right-10 flex h-12 w-12 items-center justify-center rounded-full border bg-white border-primary text-primary`}
+      } fixed bottom-4 right-10 flex size-12 items-center justify-center rounded-full border bg-white border-primary text-primary`}
       style={{
         background: showButton
           ? `conic-gradient(from 90deg, #f5e9da 0% ${scrollProgress}%, transparent ${scrollProgress}% 100%)`

@@ -14,9 +14,9 @@ export default function AboutUsProfileCard({
   links: Record<string, string>;
 }) {
   return (
-    <div className="container mx-auto mb-6 h-fit w-fit border bg-whiteGold shadow-lg">
+    <div className="container mx-auto mb-6 size-fit w-fit border bg-whiteGold shadow-lg">
       <Link href="#">
-        <div className="relative h-[350px] w-[350px] md:h-[400px] md:w-[400px]">
+        <div className="relative size-[350px] md:size-[400px]">
           <Image
             loading="lazy"
             alt={`${title} Image`}

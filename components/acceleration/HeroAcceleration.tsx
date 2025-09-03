@@ -36,7 +36,7 @@ export default function Hero({
         >
           {t('NovaNestVenture')}
         </div>
-        <div className="text-center font-gilda text-4xl text-[#F8F5F0] md:text-6xl ltr:tracking-[6.4px]">
+        <div className="text-center font-gilda text-4xl text-whiteGold md:text-6xl ltr:tracking-[6.4px]">
           {t('AccelerationCenter')}
         </div>
 

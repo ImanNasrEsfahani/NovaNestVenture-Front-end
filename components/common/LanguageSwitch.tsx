@@ -28,7 +28,7 @@ export default function LanguageSwitch() {
 
   return (
     <div
-      className="mx-auto flex h-10 w-[10rem] flex-shrink-0 cursor-pointer select-none items-center rounded-xl bg-white bg-opacity-50 p-1 backdrop-blur-md md:w-[7rem]"
+      className="mx-auto flex h-10 w-40 flex-shrink-0 cursor-pointer select-none items-center rounded-xl bg-white bg-opacity-50 p-1 backdrop-blur-md md:w-28"
       onClick={handleClick}
     >
       <div
