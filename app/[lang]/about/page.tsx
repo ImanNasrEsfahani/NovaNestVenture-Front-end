@@ -1,3 +1,5 @@
+'use client';
+
 import { Metadata } from 'next';
 import AboutUsLandaHolding from '@/components/about/AboutUsLandaHolding';
 import AboutUsProfile from '@/components/about/AboutUsProfile';

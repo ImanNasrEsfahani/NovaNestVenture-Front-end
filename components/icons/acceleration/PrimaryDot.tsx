@@ -1,9 +1,7 @@
-
-
 export default function PrimaryDot({ addedClass }: { addedClass?: string }) {
   return (
     <svg
-      className={`h-4 w-4 ${addedClass}`}
+      className={`size-4 ${addedClass}`}
       xmlns="http://www.w3.org/2000/svg"
       width="33"
       height="32"

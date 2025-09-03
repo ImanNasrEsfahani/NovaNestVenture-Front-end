@@ -1,3 +1,5 @@
+'use client';
+
 import Banner from '@/components/common/Banner';
 import LandaGene from '@/components/landa-gene/LandaGene';
 import { Metadata } from 'next';
