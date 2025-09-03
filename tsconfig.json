@@ -26,7 +26,8 @@
       "@/i18n/*": ["app/i18n/*"],
       "app/i18n/*": ["app/i18n/*"],
       "stores/*": ["stores/*"],
-      "public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "public/*": ["./public/*"]
     },
     "plugins": [
       {
