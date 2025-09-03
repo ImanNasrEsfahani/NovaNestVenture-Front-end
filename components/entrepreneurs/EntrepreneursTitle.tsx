@@ -1,5 +1,5 @@
 import { useLang } from 'stores/langStore';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 
 export default function EntrepreneursTitle() {
   const lang = useLang((s) => s.lang)

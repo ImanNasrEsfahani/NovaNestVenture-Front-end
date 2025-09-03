@@ -5,7 +5,7 @@ import Instagram from '../icons/footer/Instagram';
 import Envelope from '../icons/footer/Envelope';
 import Whatsapp from '../icons/footer/Whatsapp';
 import LinkedIn from '../icons/footer/LinkedIn';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 
 interface FooterItem {
   text: string;

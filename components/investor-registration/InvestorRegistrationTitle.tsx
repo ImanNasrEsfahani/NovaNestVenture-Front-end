@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
 export default function InvestorRegistrationTitle(

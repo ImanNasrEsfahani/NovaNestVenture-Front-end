@@ -9,7 +9,7 @@ import { submitContactForm } from '../../../pages/api/contact-us';
 import { PersonalInfoInput } from './PersonalInfoInput';
 import Input from './Input';
 import TextArea from '../TextArea';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../ButtonRefactor';

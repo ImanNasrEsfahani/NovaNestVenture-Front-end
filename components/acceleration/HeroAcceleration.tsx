@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 //TODO: hero components

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Chevron from '../common/Chevron';
 // import Link from 'next/link';
 import BusinessTeamCard from './BusinessTeamCard';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 
 export default function AerialViewBusinessTeam(
   { lang }: { lang: string }

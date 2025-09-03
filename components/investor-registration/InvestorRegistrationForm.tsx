@@ -7,7 +7,7 @@ import TextArea from '../common/TextArea';
 import { initialInvestorRegistrationFormData } from '../../initials/initObjects';
 import { submitInvestorRegistrationForm } from '../../pages/api/investor-registration';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../common/ButtonRefactor';

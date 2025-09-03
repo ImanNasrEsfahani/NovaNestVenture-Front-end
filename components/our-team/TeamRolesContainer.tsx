@@ -1,5 +1,5 @@
 'use client';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import React, { useEffect, useState } from 'react';
 import { useLang } from 'stores/langStore';
 // import { useSubmit } from 'stores/submitStore';

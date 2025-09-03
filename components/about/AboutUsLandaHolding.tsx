@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 // import { getInitialProps } from 'react-i18next';
 

@@ -1,5 +1,5 @@
 "use client"
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import Image from 'next/image';
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';

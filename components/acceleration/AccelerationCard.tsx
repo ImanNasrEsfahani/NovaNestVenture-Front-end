@@ -1,7 +1,7 @@
 'use client'
 // import PrimaryDot from '../icons/acceleration/PrimaryDot';
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
 // TODO: define props in types file and import it

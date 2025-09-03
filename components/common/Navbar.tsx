@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useRef } from 'react';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { setCookie } from 'cookies-next';
 import LanguageSwitch from './LanguageSwitch';
 

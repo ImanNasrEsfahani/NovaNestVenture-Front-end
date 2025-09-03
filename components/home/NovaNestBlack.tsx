@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import UlList from '@/components/List/UlList';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 

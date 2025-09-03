@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import "swiper/css";
 import "swiper/css/pagination";

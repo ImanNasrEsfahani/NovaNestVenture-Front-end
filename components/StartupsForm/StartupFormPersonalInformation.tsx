@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Input from '../common/form/Input';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import CountryInput from '../common/form/CountryInput';
 

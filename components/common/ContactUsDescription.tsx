@@ -5,7 +5,7 @@
 import Link from 'next/link';
 //import IconLinkedinB from '../icons/IconLinkedinB';
 //import IconEmailB from '../icons/IconEmailB';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 //import InstagramIconNew from '../icons/socialMediaIcons/InstagramIconNew';
 //import WhatsappIconNew from '../icons/socialMediaIcons/WhatsappIconNew';

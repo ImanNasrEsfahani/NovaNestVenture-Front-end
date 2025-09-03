@@ -1,6 +1,6 @@
 'use client'
 import AboutusPersonalTabs from './AboutusPersonalTabs';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 // import Certificate from '@/components/investment/Certificate';
 // import Link from '@/components/icons/Link';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextArea from '../common/TextArea';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
 

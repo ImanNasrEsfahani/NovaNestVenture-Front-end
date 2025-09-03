@@ -12,7 +12,7 @@ import { LandaGeneInput } from '@/components/landa-gene/LandageneInput';
 // import ButtonRefactor from '../common/ButtonRefactor';
 import Button from '../common/Button';
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import * as process from 'process';
