@@ -5,7 +5,9 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package files
+RUN apk add --no-cache openssl
 COPY package*.json ./
+COPY prisma ./prisma
 RUN npm ci --only=production
 
 # Copy source code
