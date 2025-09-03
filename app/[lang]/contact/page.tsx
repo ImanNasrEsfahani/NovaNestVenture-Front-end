@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import { useTranslation } from 'app/i18n';
 import ContactUsForm from '@/components/common/form/ContactUsForm';

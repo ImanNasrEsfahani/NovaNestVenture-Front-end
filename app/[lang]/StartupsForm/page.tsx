@@ -1,5 +1,3 @@
-'use client';
-
 import Banner from '../../../components/common/Banner';
 import StartupFormForm from '../../../components/StartupsForm/StartupFormForm';
 import { Metadata } from 'next';
