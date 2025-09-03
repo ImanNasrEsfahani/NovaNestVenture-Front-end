@@ -8,12 +8,12 @@ WORKDIR /app
 RUN apk add --no-cache openssl
 COPY package*.json ./
 COPY prisma ./prisma
-RUN npm ci --omit=dev --ignore-scripts
-
-# Copy source code
 COPY . .
 
+RUN npm ci --omit=dev --ignore-scripts
+
 # Build the application - THIS IS CRUCIAL
+RUN npx prisma generate
 RUN npm run build
 
 # Expose port 3000 for the Next.js app
