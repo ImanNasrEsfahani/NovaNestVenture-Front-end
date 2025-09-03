@@ -25,7 +25,7 @@ export default function StartupFormSaleDevelopment({
   handleFinancialFileChange: any;
 }) {
   const { lang } = useLang((s) => s)
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
 

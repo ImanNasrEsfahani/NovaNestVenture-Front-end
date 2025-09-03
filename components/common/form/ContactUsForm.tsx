@@ -13,7 +13,6 @@ import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../ButtonRefactor';
-// import { Trans } from 'react-i18next';
 
 export default function ContactUsForm() {
   const {
@@ -37,7 +36,7 @@ export default function ContactUsForm() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const { send } = useSubmit();
 

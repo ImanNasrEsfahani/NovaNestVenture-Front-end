@@ -23,7 +23,7 @@ import StartUpSaleDevelopRefactore from './StartUpSaleDevelopRefactore';
 
 export default function StartupFormForm() {
   const lang = useLang((s) => s.lang)
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const {
     register,

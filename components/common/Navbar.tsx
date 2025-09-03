@@ -13,7 +13,7 @@ export default function Navbar({
   children: React.ReactNode;
   lang: string;
 }) {
-  const { t } = useTranslation(lang, 'layout');
+  const { t } = getServerTranslation(lang, 'layout');
 
   const menuItems = t('menuItems', { returnObjects: true });
   const submenuItems = t('submenuItems', { returnObjects: true });

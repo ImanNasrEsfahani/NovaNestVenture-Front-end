@@ -13,7 +13,7 @@ export default function StartupFormPersonalInformation({
   errors: any;
 }) {
   const { lang } = useLang((s) => s);
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   return (
     <>
       <div className="mb-12 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">

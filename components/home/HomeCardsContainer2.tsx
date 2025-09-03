@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 
 const HomeCardsContainer = () => {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   const renderHomeCards = (cardData: CompanySectionsInterface[]) => {
     return (

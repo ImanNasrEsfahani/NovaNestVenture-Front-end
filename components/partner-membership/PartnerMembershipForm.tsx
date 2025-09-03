@@ -38,7 +38,7 @@ export default function PartnerMembershipForm() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
   //   async function fetchCsrfToken() {

@@ -19,7 +19,7 @@ interface FooterText {
 export default function Footer(
   { lang }: { lang: string }
 ) {
-  const { t } = useTranslation(lang, "footer")
+  const { t } = getServerTranslation(lang, "footer")
 
   function GetYear() {
     const currentYear = new Date().getFullYear();

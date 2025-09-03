@@ -7,7 +7,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 
 export default function NovaNestBlack() {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10  md:pt-10 md:flex-row ">

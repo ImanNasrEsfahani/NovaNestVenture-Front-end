@@ -7,7 +7,7 @@ import { useLang } from 'stores/langStore';
 
 export default function AboutUs(){
     const lang = useLang().lang;
-    const { t } = useTranslation(lang, 'mainPage');
+    const { t } = getServerTranslation(lang, 'mainPage');
 
     return (
         <section className="pt-20 pb-10 bg-gradient-to-b from-white to-gray-50">

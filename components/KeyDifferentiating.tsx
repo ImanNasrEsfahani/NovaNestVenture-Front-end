@@ -16,7 +16,7 @@ export default function KeyDifferentiating() {
 
   const lang = useLang().lang;
   
-  const { t } = useTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     // TODO: don't use [0], [1] for translations

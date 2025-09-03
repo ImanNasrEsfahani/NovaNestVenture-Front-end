@@ -5,7 +5,6 @@ import TagsContainer from '@/components/magazine/TagsContainer';
 import NovaNest from '@/components/icons/magazine/NovaNest';
 import MagazineCardsContainer from '@/components/magazine/MagazineCardsContainer';
 import { Metadata } from 'next';
-// import { useTranslation } from 'react-i18next';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Magazine',
@@ -19,7 +18,7 @@ export default async function MagazinePage({
   params: { lang: string };
 }) {
 
-  // const { t } = await useTranslation(lang, "aboutUs")
+  // const { t } = await getServerTranslation(lang, "aboutUs")
 
   console.log();
   

@@ -5,7 +5,7 @@ import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { useLang } from './../../stores/langStore'
-import { useTranslation } from './../../app/i18n/client'
+import { getServerTranslation } from './../../app/i18n/client'
 import ChevDown from 'public/static/logos/ChevDown'
 import TextArea from '../common/TextArea'
 import SolutionLevel from './SolutionLevel'
@@ -43,7 +43,7 @@ const StartUpMvpRefactore = (props: Props) => {
   } = props;  
 
   const lang = useLang((s) => s.lang)
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);

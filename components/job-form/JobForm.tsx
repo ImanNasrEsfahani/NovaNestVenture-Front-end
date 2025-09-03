@@ -40,7 +40,7 @@ export default function JobForm() {
 
   const lang = useLang().lang;
 
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   useEffect(() => {
     async function fetchCsrfToken() {

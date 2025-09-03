@@ -24,7 +24,7 @@ export default function StartupFormTrialProduct({
 
   const lang = useLang((s) => s.lang)
 
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
 

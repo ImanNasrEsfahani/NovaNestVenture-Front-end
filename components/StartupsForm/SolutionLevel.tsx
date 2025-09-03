@@ -3,7 +3,7 @@ import TextArea from '../common/TextArea'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import ChevDown from 'public/static/logos/ChevDown'
-import { useTranslation } from './../../app/i18n/client'
+import { getServerTranslation } from './../../app/i18n/client'
 import { useLang } from './../../stores/langStore'
 
 const productLevels: Array<string> = [
@@ -37,7 +37,7 @@ const SolutionLevel = (props: Props) => {
   } = props;     
 
   const lang = useLang((s) => s.lang);
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [solutionsOpen, setSolutionsOpen] = useState<boolean>(false);
 

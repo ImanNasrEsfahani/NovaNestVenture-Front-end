@@ -9,7 +9,7 @@ export default function Partners() {
 
   const lang = useLang().lang
 
-  const { t } = useTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const [isScrolling, setIsScrolling] = useState(true);

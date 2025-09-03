@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 export default function SubsidiaryCompanies() {
   const lang = useLang().lang;
 
-  const { t } = useTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className=" md:py-10">

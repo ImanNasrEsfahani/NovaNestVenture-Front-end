@@ -7,7 +7,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 
 export default function HomeNovaNestAcademy() {
     const lang = useLang().lang
-    const { t } = useTranslation(lang, 'mainPage');
+    const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="flex flex-col justify-between gap-10 py-10 md:flex-row md:py-20 ">

@@ -1,12 +1,8 @@
 'use client';
 
-// import { useTranslation } from "react-i18next";
-
-
-
 export default async function MagazineCardsContainer() {
 
-  // const { t } = await useTranslation(lang, 'magazine');
+  // const { t } = await getServerTranslation(lang, 'magazine');
 
   return (
     <div className="col-span-2 flex flex-col gap-16">

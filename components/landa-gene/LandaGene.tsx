@@ -39,7 +39,7 @@ export default function LandaGene() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = useTranslation(lang, 'landaGene');
+  const { t } = getServerTranslation(lang, 'landaGene');
 
   useEffect(() => {
     async function fetchCsrfToken() {

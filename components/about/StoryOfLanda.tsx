@@ -7,7 +7,7 @@ import { useLang } from 'stores/langStore';
 export default function StoryOfLanda() {
   const lang = useLang().lang;
 
-  const { t } = useTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="flex flex-col  grid-cols-2 gap-12 pb-10 pt-24">

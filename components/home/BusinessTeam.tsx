@@ -34,7 +34,7 @@ export default function AerialViewBusinessTeam(
     },
   ];
 
-  const { t } = useTranslation(lang, "mainPage");
+  const { t } = getServerTranslation(lang, "mainPage");
   const title = t('NovaNestVenture');
   const text = t('businessTeamText');
 

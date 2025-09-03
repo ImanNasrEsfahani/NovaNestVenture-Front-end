@@ -25,7 +25,7 @@ export default function StartupFormFirstSale({
 }) {
   const { lang } = useLang((s) => s)
   
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
 

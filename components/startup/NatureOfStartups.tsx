@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 
 export default function NatureOfStartups() {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'startUp');
+  const { t } = getServerTranslation(lang, 'startUp');
  
   return (
     <section className='flex justify-between flex-col md:flex-row gap-10 items-stretch my-20 md:my-28'>

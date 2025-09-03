@@ -18,7 +18,7 @@ export default function Hero({
   lang: string;
   link?: string
 }) {
-  const { t } = useTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div

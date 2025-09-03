@@ -18,7 +18,7 @@ interface item {
 
 export default function TeamPersons() {
   const { lang } = useLang();
-  const { t } = useTranslation(lang, 'ourTeam');
+  const { t } = getServerTranslation(lang, 'ourTeam');
 
   // const [selectedRole, setSelectedRole] = useState<string | null>(null);
   const [filteredPersons, setFilteredPersons] = useState(Array<item>);

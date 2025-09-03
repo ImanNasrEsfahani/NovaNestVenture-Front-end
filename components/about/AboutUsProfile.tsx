@@ -9,7 +9,7 @@ import { useLang } from 'stores/langStore';
 
 export default function AboutUsProfile() {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="mb-32 flex w-full flex-col justify-center">

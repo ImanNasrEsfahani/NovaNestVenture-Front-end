@@ -11,7 +11,7 @@ export default function StartupFormProblem({
   errors:any;
 }) {
   const { lang } = useLang((s) => s)
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <>

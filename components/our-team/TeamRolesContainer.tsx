@@ -15,7 +15,7 @@ export default function TeamRolesContainer({
 
   const { lang } = useLang();
 
-  const { t } = useTranslation(lang, "ourTeam");
+  const { t } = getServerTranslation(lang, "ourTeam");
 
   const [selectedRole, setSelectedRole] = useState("")
 

@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 
 export default function Gateway() {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'startUp');
+  const { t } = getServerTranslation(lang, 'startUp');
 
   return (
     <section className="flex flex-col-reverse md:flex-row justify-between gap-10 items-stretch font-EBGaramond my-14">

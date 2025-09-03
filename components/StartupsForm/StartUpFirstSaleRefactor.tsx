@@ -11,7 +11,7 @@ import TargetMarketDropDown from './TargetMarketDropDown'
 import BussinessModelDropDown from './BussinessModelDropDown'
 import SolutionLevel from './SolutionLevel'
 import { useLang } from './../../stores/langStore'
-import { useTranslation } from './../../app/i18n/client'
+import { getServerTranslation } from './../../app/i18n/client'
 
 type Props = {
     handleFileCounterChange: (name: string) => void
@@ -48,7 +48,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
       } = props; 
       
         const lang = useLang((s) => s.lang)
-        const { t } = useTranslation(lang, 'formComponent');
+        const { t } = getServerTranslation(lang, 'formComponent');
 
         const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 

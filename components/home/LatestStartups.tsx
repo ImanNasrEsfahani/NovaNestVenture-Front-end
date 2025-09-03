@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 export default function LatestStartups() {
   const lang = useLang().lang;
 
-  const { t } = useTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div>

@@ -23,7 +23,7 @@ interface ServiceItem {
 
 export default function Services() {
   const lang = useLang().lang;
-  const { t } = useTranslation(lang, 'startUp');
+  const { t } = getServerTranslation(lang, 'startUp');
 
   return (
     <div className='md:mb-20 mt-16 md:mt-40 '>

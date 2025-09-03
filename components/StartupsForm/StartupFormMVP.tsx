@@ -25,7 +25,7 @@ export default function StartupFormMVP({
   const { lang } = useLang((s) => s)
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
   const [selectedRadioBusiness, setSelectedRadioBusiness] = useState('');
-  const { t } = useTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <>
