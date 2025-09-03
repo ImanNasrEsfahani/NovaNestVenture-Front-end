@@ -8,7 +8,7 @@ import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
 // import UpcomingEvents from '@/components/home/UpcomingEvents';
 // import AerialViewBusinessTeam from '@/components/home/BusinessTeam';
 
-import { useTranslation } from '../i18n';
+import { getServerTranslation } from '../i18n';
 import HomeUpComingStartups from '@/components/home/HomeUpComingStartups';
 import HomeNovaNestAcademy from '@/components/home/HomeNovaNestAcademy';
 import AboutUs from '@/components/home/AboutUs';
@@ -27,7 +27,7 @@ export default async function Page({
   params: { lang: string };
 }) {
   // Keep t for future use in Hero component
-  const { t: _t } = await useTranslation(lang, 'mainPage');
+  const { t: _t } = await getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="relative w-full mb-8">

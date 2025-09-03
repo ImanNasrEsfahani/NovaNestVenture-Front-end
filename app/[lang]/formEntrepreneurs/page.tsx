@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import EntrepreneursForm from '@/components/entrepreneurs/EntrepreneursForm';
 
@@ -14,7 +14,7 @@ export default async function EntrepreneursPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'entrepreneur');
+  const { t } = await getServerTranslation(lang, 'entrepreneur');
 
   return (
     <div>

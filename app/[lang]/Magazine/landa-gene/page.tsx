@@ -13,7 +13,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'landaGene');
+  const { t } = await getServerTranslation(lang, 'landaGene');
 
   return (
     <div>
