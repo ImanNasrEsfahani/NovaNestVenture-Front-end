@@ -37,7 +37,7 @@ const initI18next = async (lng: any, ns: any) => {
   return i18nInstance;
 };
 
-export async function useTranslation(
+export async function getServerTranslation(
   lng: any,
   ns: any,
   options: { keyPrefix?: string } = {}

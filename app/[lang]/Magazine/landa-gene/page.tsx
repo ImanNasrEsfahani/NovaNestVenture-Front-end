@@ -1,7 +1,7 @@
 import Banner from '@/components/common/Banner';
 import LandaGene from '@/components/landa-gene/LandaGene';
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Landa Gene',

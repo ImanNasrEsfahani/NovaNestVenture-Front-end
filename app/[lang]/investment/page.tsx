@@ -4,7 +4,7 @@ import Image from 'next/image';
 //import Certificate from '@/components/investment/Certificate';
 import { Metadata } from 'next';
 import FeaturesCardsContainer from '@/components/investment/FeaturesCardsContainer';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 //import ButtonRefactor from '@/components/common/ButtonRefactor';
 
@@ -19,7 +19,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'investment');
+  const { t } = await getServerTranslation(lang, 'investment');
 
   return (
     <div dir={lang === 'en' ? 'ltr' : 'rtl'} className="mb-20">

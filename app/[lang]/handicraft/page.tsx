@@ -1,6 +1,6 @@
 import Banner from '@/components/common/Banner';
 import HandicraftForm from '@/components/common/form/HandicraftForm';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -15,7 +15,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'handicraft');
+  const { t } = await getServerTranslation(lang, 'handicraft');
 
   return (
     <div>

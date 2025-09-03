@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 // import { SubmitProvider } from '../../../providers/StateProvider';
 
 
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Entrepreneurs',
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Entrepreneurs Form and connect with us to share your entrepreneurial ideas and projects. We are interested in hearing from creative minds and visionaries. Lets collaborate to turn your entrepreneurial dreams into reality.'
 };
 
-async function usePageTranslations(lang: string) {
-  const { t } = await useTranslation(lang, 'entrepreneur');
+async function getPageTranslations(lang: string) {
+  const { t } = await getServerTranslation(lang, 'entrepreneur');
   return t;
 }
 
@@ -22,7 +22,7 @@ export default async function EntrepreneursPage({
 }: {
   params: { lang: string };
 }) {
-  const t = await usePageTranslations(lang);
+  const t = await getPageTranslations(lang);
 
   return (
     <div>

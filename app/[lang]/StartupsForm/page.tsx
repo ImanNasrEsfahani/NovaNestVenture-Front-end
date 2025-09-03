@@ -1,7 +1,7 @@
 import Banner from '../../../components/common/Banner';
 import StartupFormForm from '../../../components/StartupsForm/StartupFormForm';
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import { LandaBgBig } from 'public/static/logos/LandaBgBig';
 
 export const metadata: Metadata = {
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Startup Form and share your innovative ideas with us. We are interested in hearing from startups and entrepreneurs. Lets work together to bring your vision to life.'
 };
 
-async function usePageTranslations(lang: string) {
-  const { t } = await useTranslation(lang, 'formComponent');
+async function getPageTranslations(lang: string) {
+  const { t } = await getServerTranslation(lang, 'formComponent');
   return t;
 }
 
@@ -20,7 +20,7 @@ export default async function StartupValidationPage({
 }: {
   params: { lang: string };
 }) {
-  const t = await usePageTranslations(lang);
+  const t = await getPageTranslations(lang);
 
   return (
     <div dir={t('dir')} className="relative overflow-hidden">

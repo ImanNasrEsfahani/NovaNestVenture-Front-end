@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import ContactUsForm from '@/components/common/form/ContactUsForm';
 import ContactUsDescription from '@/components/common/ContactUsDescription';
 import './contact.css';
@@ -15,7 +15,7 @@ export default async function ContactUsPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'contact');
+  const { t } = await getServerTranslation(lang, 'contact');
   // Renamed the component for better naming
   return (
     <div>

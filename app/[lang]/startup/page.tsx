@@ -1,13 +1,13 @@
 import Banner from '../../../components/common/Banner';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import Differences from '@/components/startup/Differences';
 import NatureOfStartups from '@/components/startup/NatureOfStartups';
 import Gateway from '@/components/startup/Gateway';
 import Services from '@/components/startup/Services';
 import LatestStartups from '@/components/home/LatestStartups';
 
-async function usePageTranslations(lang: string) {
-  const { t } = await useTranslation(lang, 'startUp');
+async function getPageTranslations(lang: string) {
+  const { t } = await getServerTranslation(lang, 'startUp');
   return t;
 }
 
@@ -16,7 +16,7 @@ export default async function StartUp({
 }: {
   params: { lang: string };
 }) {
-  const t = await usePageTranslations(lang);
+  const t = await getPageTranslations(lang);
 
   return (
     <div>

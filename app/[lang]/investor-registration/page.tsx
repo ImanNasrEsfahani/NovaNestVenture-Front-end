@@ -2,7 +2,7 @@
 import Banner from '../../../components/common/Banner';
 import InvestorRegistrationForm from '../../../components/investor-registration/InvestorRegistrationForm';
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Investors',
@@ -16,7 +16,7 @@ export default async function InvestorRegistrationPage({
   params: { lang: string };
 }) {
 
-  const { t } = await useTranslation(lang, "investorForm")
+  const { t } = await getServerTranslation(lang, "investorForm")
 
   return (
     <div>

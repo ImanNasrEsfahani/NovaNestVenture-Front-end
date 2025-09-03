@@ -1,7 +1,7 @@
 import Banner from '../../../components/common/Banner';
 import PartnerMembershipForm from '../../../components/partner-membership/PartnerMembershipForm';
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Partners',
@@ -14,7 +14,7 @@ export default async function AffiliateFormPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <div>

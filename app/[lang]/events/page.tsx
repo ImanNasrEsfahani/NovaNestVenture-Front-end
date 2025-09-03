@@ -1,6 +1,6 @@
 import EventCardsContainer from '@/components/EventCardsContainer';
 import Banner from '@/components/common/Banner';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'events');
+  const { t } = await getServerTranslation(lang, 'events');
 
   return (
     <div>

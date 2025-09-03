@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import Banner from '@/components/common/Banner';
 
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
-async function usePageTranslations(lang: string) {
-  const { t } = await useTranslation(lang, 'acceleration');
+async function getPageTranslations(lang: string) {
+  const { t } = await getServerTranslation(lang, 'acceleration');
   return t;
 }
 
@@ -20,7 +20,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
-  const t = await usePageTranslations(lang);
+  const t = await getPageTranslations(lang);
 
   return (
     <div>

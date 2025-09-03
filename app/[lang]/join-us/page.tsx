@@ -1,6 +1,6 @@
 import Banner from '../../../components/common/Banner';
 import { Metadata } from 'next';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import WorkWithUs from './../../../components/work-with-us/WorkWithUs';
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default async function ApplyFormPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <div dir={t('dir')}>

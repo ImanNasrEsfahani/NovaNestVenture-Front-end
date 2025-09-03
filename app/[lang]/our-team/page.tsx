@@ -1,7 +1,7 @@
 import Banner from '@/components/common/Banner';
 import { Metadata } from 'next';
 import TeamPersons from '@/components/our-team/TeamPersons';
-import { useTranslation } from 'app/i18n';
+import { getServerTranslation } from 'app/i18n';
 import '../../[lang]/globals.css';
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default async function TeamPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, 'ourTeam');
+  const { t } = await getServerTranslation(lang, 'ourTeam');
 
   return (
     <div>
