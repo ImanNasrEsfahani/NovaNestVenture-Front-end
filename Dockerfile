@@ -1,29 +1,21 @@
 # Use the latest Node.js LTS Alpine image as the base image
 FROM node:18-alpine
 
-# Install pnpm
-RUN npm install -g pnpm
-
 # Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json and prisma files
-RUN apk add --no-cache openssl
+# Copy package files
 COPY package*.json ./
-COPY prisma ./prisma
-COPY .env.production ./.env.production
+RUN npm ci --only=production
 
 # Copy source code
 COPY . .
 
-# Install dependencies
-RUN pnpm install
-
-# Build the app
-RUN pnpm build
+# Build the application - THIS IS CRUCIAL
+RUN npm run build
 
 # Expose port 3000 for the Next.js app
 EXPOSE 3000 
 
-# Set the command to start the Next.js app
-CMD ["pnpm", "start"]
+# Start the application
+CMD ["npm", "start"]
