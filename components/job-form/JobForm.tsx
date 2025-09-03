@@ -109,6 +109,11 @@ export default function JobForm() {
     value: value
   }));
 
+  // Adapter: UploadInput expects (file: File) => void but store wants { cvFile: File | "" }
+  const onCvFileChange = (file: File) => {
+    handleCvFileChange({ cvFile: file });
+  };
+
   return (
     <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20">
       <>
@@ -148,8 +153,9 @@ export default function JobForm() {
               title={t('jobForm', { returnObjects: true }).resumeFile}
               register={register}
               errors={errors}
-              handleChange={handleCvFileChange}
+              handleChange={onCvFileChange}
               nameInput="cvFile"
+              required
             />
           </div>
         </div>
