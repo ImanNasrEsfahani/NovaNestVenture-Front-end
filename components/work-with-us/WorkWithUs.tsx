@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { WorkWithUSFormData } from '../../types/global';
@@ -37,6 +38,11 @@ export default function WorkWithUs() {
   }
 
   const { cvFileState, handleCvFileChange } = useFile((s) => s);
+
+  // Adapter: UploadInput expects (file: File) => void
+  const onCvFileChange = (file: File) => {
+    handleCvFileChange({ cvFile: file });
+  };
 
   const PositionsItem = [Positions.Professor, Positions.Student];
 
@@ -388,7 +394,7 @@ export default function WorkWithUs() {
                 required={cvFileRequired}
                 errors={errors}
                 nameInput="cvFile"
-                handleChange={handleCvFileChange}
+                handleChange={onCvFileChange}
               />
             </div>
 
