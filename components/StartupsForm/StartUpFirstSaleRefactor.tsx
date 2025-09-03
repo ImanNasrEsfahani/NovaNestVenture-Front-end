@@ -1,17 +1,17 @@
 'use client'
-import FileUpload from 'public/static/logos/FileUpload'
+import FileUpload from './../../public/static/logos/FileUpload'
 import React, { useState } from 'react'
 import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
-import ChevDown from 'public/static/logos/ChevDown'
+import ChevDown from './../../public/static/logos/ChevDown'
 import TextArea from '../common/TextArea'
 import PropertyDropDown from './PropertyDropDown'
 import TargetMarketDropDown from './TargetMarketDropDown'
 import BussinessModelDropDown from './BussinessModelDropDown'
 import SolutionLevel from './SolutionLevel'
-import { useLang } from 'stores/langStore'
-import { useTranslation } from 'app/i18n/client'
+import { useLang } from './../../stores/langStore'
+import { useTranslation } from './../../app/i18n/client'
 
 type Props = {
     handleFileCounterChange: (name: string) => void

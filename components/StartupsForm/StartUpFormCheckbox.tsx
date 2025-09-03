@@ -1,7 +1,7 @@
 import { StartupsFormData } from '@/types/global';
 import React, { useEffect, useState } from 'react'
 import { UseFormRegister } from 'react-hook-form';
-import { useSubmit } from 'stores/dataStore';
+import { useSubmit } from './../../stores/dataStore';
 
 type Props = {
     name: string
