@@ -3,9 +3,9 @@ import TextArea from '../common/TextArea';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 // import FileUpload from '@/public/static/logos/FileUpload'
-import ChevDown from '@/public/static/logos/ChevDown';
-import { useLang } from 'stores/langStore';
-import { useTranslation } from 'app/i18n/client';
+import ChevDown from './../../public/static/logos/ChevDown';
+import { useLang } from './../../stores/langStore';
+import { useTranslation } from './../../app/i18n/client';
 
 type Props = {
   register: UseFormRegister<StartupsFormData>;
