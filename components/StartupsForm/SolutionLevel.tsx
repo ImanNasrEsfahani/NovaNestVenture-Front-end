@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TextArea from '../common/TextArea'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
-import ChevDown from './../../public/static/logos/ChevDown'
+import ChevDown from 'public/static/logos/ChevDown'
 import { useTranslation } from './../../app/i18n/client'
 import { useLang } from './../../stores/langStore'
 

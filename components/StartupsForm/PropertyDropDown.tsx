@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TextArea from '../common/TextArea';
-import ChevDown from './../../public/static/logos/ChevDown';
+import ChevDown from 'public/static/logos/ChevDown';
 import { StartupsFormData } from '@/types/global';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { useLang } from './../../stores/langStore';
