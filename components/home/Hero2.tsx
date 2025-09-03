@@ -34,16 +34,16 @@ export default function Hero2() {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         loop={true}
-        className="w-full h-full"
+        className="size-full"
       >
 
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full">
+            <div className="relative size-full">
               <img 
                 src={slide.image.src} 
                 alt={slide.image.alt} 
-                className="w-full h-full object-cover"
+                className="size-full object-cover"
               />
               <div className="absolute bottom-1/3 left-0 w-full grid md:grid-cols-2 gap-8 lg:gap-24 xl:gap-32">
                 {slide.content.map((item, idx) => (

@@ -2,7 +2,7 @@
 
 export default function IconRoundedInstagram() {
   return (
-    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white opacity-70">
+    <div className="flex size-11 items-center justify-center rounded-full bg-black text-white opacity-70">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"

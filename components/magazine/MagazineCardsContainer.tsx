@@ -1,8 +1,5 @@
-'use client';
 
-export default async function MagazineCardsContainer() {
-
-  // const { t } = await getServerTranslation(lang, 'magazine');
+export default function MagazineCardsContainer() {
 
   return (
     <div className="col-span-2 flex flex-col gap-16">

@@ -38,7 +38,7 @@ export default function HomeCardsSection({
         </div>
       </div>
       <div
-        className={`${reverse ? 'md:justify-start' : 'md:justify-end'} space-x-4 rtl:space-x-reverse flex w-full h-full md:w-1/2 md:pb-0`}
+        className={`${reverse ? 'md:justify-start' : 'md:justify-end'} space-x-4 rtl:space-x-reverse flex size-full md:w-1/2 md:pb-0`}
       >
         {images.map((image, index) => (
           <div

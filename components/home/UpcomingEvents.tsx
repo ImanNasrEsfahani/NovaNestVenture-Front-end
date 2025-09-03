@@ -79,9 +79,9 @@ export default function UpcomingEvents() {
         <div className="absolute left-0 top-[305px] h-0 w-14 border border-neutral-800 bg-neutral-800"></div>
         <div className="absolute left-0 top-0 h-0 w-14 border border-neutral-800 bg-neutral-800"></div>
         <div className="absolute left-0 top-[198.51px] h-0 w-14 border border-neutral-800 bg-neutral-800"></div>
-        <div className="absolute left-14 top-[97px] h-3 w-3 rounded-full border border-neutral-800 bg-neutral-800" />
-        <div className="absolute left-14 top-[194px] h-3 w-3 rounded-full border border-neutral-800 bg-neutral-800" />
-        <div className="absolute left-14 top-[300px] h-3 w-3 rounded-full border border-neutral-800 bg-neutral-800" />
+        <div className="absolute left-14 top-[97px] size-3 rounded-full border border-neutral-800 bg-neutral-800" />
+        <div className="absolute left-14 top-[194px] size-3 rounded-full border border-neutral-800 bg-neutral-800" />
+        <div className="absolute left-14 top-[300px] size-3 rounded-full border border-neutral-800 bg-neutral-800" />
       </div>
       </div>
     </div>

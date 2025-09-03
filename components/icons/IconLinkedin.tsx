@@ -2,7 +2,7 @@
 
 export default function IconLinkedin() {
   return (
-    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-black text-white opacity-50">
+    <div className="flex size-7 items-center justify-center rounded-full bg-black text-white opacity-50">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

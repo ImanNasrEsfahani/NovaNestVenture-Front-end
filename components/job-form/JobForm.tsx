@@ -43,14 +43,20 @@ export default function JobForm() {
   const { t } = getServerTranslation(lang, 'formComponent');
 
   useEffect(() => {
+    let cancelled = false;
     async function fetchCsrfToken() {
       const token = await GetCsrfToken(
         `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`
       );
-      handleTokenChange(token);
+      if (!cancelled) {
+        handleTokenChange(token);
+      }
     }
     fetchCsrfToken();
-  }, []);
+    return () => {
+      cancelled = true;
+    };
+  }, [handleTokenChange]);
 
   const onSubmit = async (formData: JobFormData) => {
     // Set loading and sending states.
