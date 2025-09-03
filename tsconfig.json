@@ -23,7 +23,8 @@
       "@/types/*": ["types/*"],
       "@/services/*": ["services/*"],
       "@/router/*": ["router/*"],
-      "@/i18n/*": ["app/18n/*"]
+      "@/i18n/*": ["app/18n/*"],
+      "public/*": ["./public/*"],
     },
     "plugins": [
       {
