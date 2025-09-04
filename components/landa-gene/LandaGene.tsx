@@ -56,7 +56,7 @@ export default function LandaGene() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [handleTokenChange]);
 
   const onSubmit = async (formData: LandaGeneFormData) => {
     // Set loading and sending states.

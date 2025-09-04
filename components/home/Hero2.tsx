@@ -6,6 +6,7 @@ import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from 'next/image';
 
 interface SlideContent {
   label: string;
@@ -40,10 +41,11 @@ export default function Hero2() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative size-full">
-              <img 
-                src={slide.image.src} 
-                alt={slide.image.alt} 
-                className="size-full object-cover"
+              <Image
+                src={slide.image.src}
+                alt={slide.image.alt}
+                fill
+                className="object-cover size-full"
               />
               <div className="absolute bottom-1/3 left-0 w-full grid md:grid-cols-2 gap-8 lg:gap-24 xl:gap-32">
                 {slide.content.map((item, idx) => (

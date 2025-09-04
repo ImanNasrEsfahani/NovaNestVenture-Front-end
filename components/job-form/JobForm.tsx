@@ -56,7 +56,7 @@ export default function JobForm() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [handleTokenChange]);
 
   const onSubmit = async (formData: JobFormData) => {
     // Set loading and sending states.
