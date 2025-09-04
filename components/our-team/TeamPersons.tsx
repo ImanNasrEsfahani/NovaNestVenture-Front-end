@@ -29,7 +29,7 @@ export default function TeamPersons() {
 
   useEffect(() => {
     setFilteredPersons(t('persons', { returnObjects: true }));
-  }, []);
+  }, [t]);
 
   function handleRoleSelect(role: string) {
     // // setSelectedRole(role);

@@ -21,7 +21,7 @@ export default function TeamRolesContainer({
 
   useEffect(() => {
     setSelectedRole(t("defaultRole"));
-  },[])
+  },[t])
 
   function handleRoleClick(role: string) {
     onRoleSelect(role);
