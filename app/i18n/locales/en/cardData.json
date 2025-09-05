@@ -1,83 +1,79 @@
 {
-    "cardData1":[
-      {
-        "titleEN": "Platform based on AI and VR",
-        "image": "/static/images/Home/Priority/vr-glasses 2.png"
-      },
-      {
-        "title": "Agriculture",
-        "image": "/static/images/Home/Priority/system 2.png"
-      },
-      {
-        "title": "Renewable Energy",
-        "image": "/static/images/Home/Priority/online-shop 1.png"
-      },
-      {
-        "title": "The Environment",
-        "image": "/static/images/Home/Priority/planet-earth 1.png"
-      },
-      {
-        "title": "Entertainment",
-        "image": "/static/images/Home/Priority/ai 2.png"
-      },
-      {
-        "title": "Biomedical Engineering",
-        "image": "/static/images/Home/Priority/man 2.png"
-      },
-      {
-        "title": "Services for Teenagers",
-        "image": "/static/images/Home/Priority/process 2.png"
-      },
-      {
-        "title": "Tourism Services",
-        "image": "/static/images/Home/Priority/world 2.png"
-      }
-      ],
-    
-      "cardData2": [
-        {
-          "image": "/static/images/Home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
-          "title": "Benefits of Spa Treatments",
-          "type": "Acceleration",
-          "date": "apr 27"
-        },
-        {
-          "title": "Fitness Center",
-          "image": "/static/images/Home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
-          "type": "Investment",
-          "date": "apr 27"
-        },
-        {
-          "title": "Benefits of Spa Treatments",
-          "image": "/static/images/Home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
-          "type": "Investment",
-          "date": "apr 27"
-        }
-      ],
-    
-      "LatestStartups": [
-        {
-          "image": "/static/images/Home/Startups/trip.png",
-          "title": "LANDA TRIP",
-          "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
-          "link": "https://landatrip.com/"
-        },
-        {
-        "image": "/static/images/Home/Startups/diaco.png",
-        "title": "DIACO",
-        "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
-        "link": "https://irdiaco.ca/"
-        },
-        {
-          "image": "/static/images/Home/Startups/vision-raft.png",
-        "title": "VISION RAFT",
-        "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
-        "link": "https://invigorated-drop-231359.framer.app"
-        }
-      ],
-    
-    "services":[
-    
+  "cardData1":[
+    {
+      "titleEN": "Platform based on AI and VR",
+      "image": "/static/images/Home/Priority/vr-glasses 2.png"
+    },
+    {
+      "title": "Agriculture",
+      "image": "/static/images/Home/Priority/system 2.png"
+    },
+    {
+      "title": "Renewable Energy",
+      "image": "/static/images/Home/Priority/online-shop 1.png"
+    },
+    {
+      "title": "The Environment",
+      "image": "/static/images/Home/Priority/planet-earth 1.png"
+    },
+    {
+      "title": "Entertainment",
+      "image": "/static/images/Home/Priority/ai 2.png"
+    },
+    {
+      "title": "Biomedical Engineering",
+      "image": "/static/images/Home/Priority/man 2.png"
+    },
+    {
+      "title": "Services for Teenagers",
+      "image": "/static/images/Home/Priority/process 2.png"
+    },
+    {
+      "title": "Tourism Services",
+      "image": "/static/images/Home/Priority/world 2.png"
+    }
+  ],
+  "cardData2": [
+    {
+      "image": "/static/images/Home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
+      "title": "Benefits of Spa Treatments",
+      "type": "Acceleration",
+      "date": "apr 27"
+    },
+    {
+      "title": "Fitness Center",
+      "image": "/static/images/Home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
+      "type": "Investment",
+      "date": "apr 27"
+    },
+    {
+      "title": "Benefits of Spa Treatments",
+      "image": "/static/images/Home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
+      "type": "Investment",
+      "date": "apr 27"
+    }
+  ],
+  "LatestStartups": [
+    {
+      "image": "/static/images/Home/Startups/trip.png",
+      "title": "LANDA TRIP",
+      "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
+      "link": "https://landatrip.com/"
+    },
+    {
+    "image": "/static/images/Home/Startups/diaco.png",
+    "title": "DIACO",
+    "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
+    "link": "https://irdiaco.ca/"
+    },
+    {
+    "image": "/static/images/Home/Startups/vision-raft.png",
+    "title": "VISION RAFT",
+    "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
+    "link": "https://invigorated-drop-231359.framer.app"
+    }
+  ],
+  "services":[
     {
       "title": "Pitch deck preparation",
       "image": "1.png"
@@ -126,21 +122,31 @@
       "title": "Organizing startup presentation events",
       "image": "12.png"
     }
-    ],
-    
-    "cardsData":
-    [
-      {
-        "image": "/static/images/our-team/Personals/a1.webp",
-        "name": "Rasoul Moradimehr",
-        "position": "Founder and CEO",
-        "links": {
-          "linkedin": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
-          "whatsapp": "wa.me/+989134233863",
-          "email": "mailto:rasoulmoradimehr@gmail.com",
-          "website": "https://moradimehr.com/",
-          "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
-        }
+  ],
+  "cardsData": [
+    {
+      "image": "/static/images/our-team/Personals/a1.webp",
+      "name": "Rasoul Moradimehr",
+      "position": "Founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+        "whatsapp": "wa.me/+989134233863",
+        "email": "mailto:rasoulmoradimehr@gmail.com",
+        "website": "https://moradimehr.com/",
+        "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
       }
-    ]
+    },
+    {
+      "image": "/static/images/our-team/Personals/a3.webp",
+      "name": "Mehrnoosh Heibati",
+      "position": "Chief Operating Officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
+        "whatsapp": "wa.me/+989134233863",
+        "email": "mailto:rasoulmoradimehr@gmail.com",
+        "website": "https://moradimehr.com/",
+        "instagram": "https://instagram.com/dr.moradimehr.rasoul?igshid=MzRlODBiNWFlZA=="
+      }
     }
+  ]
+}

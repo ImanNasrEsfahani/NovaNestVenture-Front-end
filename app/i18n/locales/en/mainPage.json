@@ -13,7 +13,7 @@
       {
         "id": "entrepreneur",
         "title": "Entrepreneur",
-        "description": "Provincial Nominee Programs (PNP) in various Canadian provinces offer a valuable opportunity for those who want to enter Canada by investing and starting their own business. Each province has its own unique conditions and path for attracting entrepreneurs, and with our experience and knowledge, we guide you in choosing the best program, preparing documents, and completing all steps. The result of this path will be establishing a successful business in Canada and obtaining permanent residence.",
+        "description": "PNPs in Canada offer a great path for entrepreneurs to invest and start a business. Each province has unique criteria, and with our expertise, we help you choose the right program, prepare documents, and complete the process—leading to a successful business and permanent residency.",
         "image": "/static/images/Home/Features/entrepreneur.jpg"
       }
     ]
@@ -71,10 +71,9 @@
   "Acceleration": "Acceleration",
   "Academy" : " Academy",
   "AccelerationCenter": "ENTREPRENEURSHIP CENTER",
-  "Investment": "Investor",
+  "investment": "Investment",
   "StartUp": "StartUp",
   "HeroSubtitle": "Feel The Future",
-  "investment": "Investment",
   "NovaNestVenture": "NovaNest Venture",
   "Home": "Home",
   "ContactUs": "CONTACT US",
@@ -126,7 +125,7 @@
       "reverse": true,
       "show": false,
       "index": 3,
-      "link": "/startup",
+      "link": "/acceleration",
       "addedClass": "",
       "images": [
         {
@@ -191,36 +190,6 @@
       },
       {
         "number": 101,
-        "title": "ASIAHITECH",
-        "description": "Since 1397, we are proud to cooperate with the advanced technologies of Asia in the field of investing in startups.",
-        "alt": "ASIAHITECH"
-      },
-      {
-        "number": 8,
-        "title": "Chamber of Commerce, Industries, Mines and Agriculture",
-        "description": "We have been cooperating with the Isfahan Chamber of Commerce for 4 months in the field of startup investment.",
-        "alt": "Chamber of Commerce, Industries, Mines and Agriculture"
-      },
-      {
-        "number": 98,
-        "title": "Islamic Azad University of Isfahan(Khorasgan)",
-        "description": "Since 1396, at the same time as Farazman was established, we have been working with Isfahan Azad University in the field of student investment and acceleration.",
-        "alt": "Islamic Azad University of Isfahan(Khorasgan)"
-      },
-      {
-        "number": 3,
-        "title": "Dr. Nekui Educational Holding",
-        "description":"We are honored to work with Dr. Nekui holding to ensure a bright future for startups and innovative ideas",
-        "alt": "Dr. Nekui Educational Holding"
-      },
-      {
-        "number": 44,
-        "title": "University of Kashan",
-        "description": "Since 1399, we started cooperating with Kashan University in the field of acceleration center",
-        "alt": "University of Kashan"
-      },
-      {
-        "number": 77,
         "title": "ASIAHITECH",
         "description": "Since 1397, we are proud to cooperate with the advanced technologies of Asia in the field of investing in startups.",
         "alt": "ASIAHITECH"

@@ -2,21 +2,23 @@
   "yes": "بله",
   "no": "خیر",
 
-  "firstName": "نام",
+  "firstName": "نام کوچک",
   "firstNameRequired": "نام اجباری است.",
   "firstNamePlaceholder": "لطفا نام خود را وارد کنید.",
+  
   "lastName": "نام خانوادگی",
   "lastNameRequired": "نام خانوادگی اجباری است.",
   "lastNamePlaceholder": "لطفا نام خانوادگی خود را وارد کنید.",
+  
   "email": "ایمیل",
   "emailRequired": "ایمیل اجباری است.",
   "emailErrorMessage": "لطفا آدرس ایمیل را به درستی وارد کنید.",
   "EmailPlaceholder": "لطفا ایمیل خود را وارد کنید.",
+  
   "phoneNumber": "شماره تماس",
   "phoneNumberRequired": "شماره تماس الزامی است.",
   "phoneNumberErrorMessage": "شماره تماس را به درستی وارد کنید.",
   "phoneNumberPlaceholder": "لطفا شماره تماس خود را وارد کنید.",
-
 
   "jobPosition": "نوع همکاری",
   "jobPositionRequired": "نوع همکاری واجب است",
@@ -28,7 +30,6 @@
   "applicationErrorMassage":"زمینه فعالیت را وارد کنید",
   "applicationPlaceholder":"زمینه فعالیت را انتخاب کنید",
 
-
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",
@@ -37,6 +38,7 @@
   "sendButton": "ارسال",
   "sendingButton": "درحال ارسال ....",
   "visitButton": "مشاهده کنید",
+  
   "successMessage": "اطلاعات با موفقیت ارسال شد.",
   "failedMessage": "در ارسال اطلاعات مشکلی به وجود آمده! لطفا با پشتیبانی تماس بگیرید.",
 
@@ -44,13 +46,13 @@
   "companyNameRequired": "نام شرکت الزامی است.",
   "companyNamePlaceholder": "لطفا نام شرکت را وارد کنید.",
 
-  "preferredAreas": "مناطق مورد علاقه برای سرمایه‌گذاری*",
-  "preferredAreasRequired": "پر کردن این قسمت الزامی است",
-  "preferredAreasPlaceholder": "مناطق",
-
   "maximumInvestment": "حداکثر سرمایه‌گذاری *",
   "maximumInvestmentRequired": "حداکثر سرمایه‌گذاری الزامی است",
   "maximumInvestmentPlaceholder": "مثال: 100,000$",
+
+  "preferredAreas": "مناطق مورد علاقه برای سرمایه‌گذاری*",
+  "preferredAreasRequired": "پر کردن این قسمت الزامی است",
+  "preferredAreasPlaceholder": "مناطق",
 
   "howDidYouKnowUs": "نحوه آشنایی با ما *",
   "howDidYouKnowUsPlaceholder": "مثلاً شبکه‌های اجتماعی و ...",
@@ -72,19 +74,14 @@
   "investmentCeilingRequired": "این بخش الزامی است.",
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
 
-
   "INTERN" : "کارآموز",
   "EMPLOYEE" : "استخدام",
-
-
-
   "Developer":"برنامه نویسی",
   "Marketing":"مارکتینگ",
   "Graphist":"گرافیست",
   "Immigration":"مهاجرت",
   "Accountant":"حسابدار",
   "administrative":"اداری",
-
 
   "contactForm": {
     "title": "با ما تماس بگیرید",
@@ -95,6 +92,7 @@
     "messageRequired": "پیام شما الزامی است",
     "messagePlaceholder": "پیام شما"
   },
+
   "partnerForm": {
     "lng": "fa",
     "dir": "rtl",
@@ -102,6 +100,7 @@
     "formTitle": "فرم شریک تجاری",
     "formSubtitle": "اطلااعات شخصی"
   },
+
   "jobForm": {
     "lng": "fa",
     "dir": "rtl",
@@ -133,9 +132,11 @@
     "StudySubFieldRequired": "زیر رشته الزامی است",
     "PositionPlaceholder": "سمت",
     "contractPlaceholder": "نوع همکاری ",
+
     "email": "ایمیل",
     "emailRequired": "ایمیل اجباری است.",
     "emailPlaceholder": "لطفا ایمیل خود را وارد کنید.",
+    
     "cvFile": "فایل رزومه",
     "cvFileRequired": "رزومه اجباری است.",
     "cvFilePlaceholder": "لطفا رزومه خود را آپلود کنید.",
@@ -146,6 +147,7 @@
     "Internship": "کارآموزی",
     "UniversityInternship": "طرح پویش"
   },
+
   "entrepreneurForm": {
     "lng": "fa",
     "banner": "مرکز کارآفرینان",
@@ -153,6 +155,7 @@
     "formTitle": "فرم مرکز کارآفرینان",
     "formSubTitle": "اطلاعات شخصی"
   },
+
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
@@ -183,6 +186,7 @@
     "dir": "rtl",
     "YesButton": "بله",
     "NoButton": "خیر",
+    "NovaNestVenture": "نوانست ونچر",
     "banner": "اعتبارسنجی استارت آپ ها",
     "formTitle": "فرم استارت آپ ها",
     "formBanner": "اعتبارسنجی استارت‌آپ ها",
@@ -193,106 +197,107 @@
     "statusSelectRequired": "وضعیت شما الزامی است",
     "statusSelectPlaceholder": "وضعیت خود را انتخاب کنید: ",
     "idea": {
-      "ideaExplanation": "ایده خود را در ۵ خط توضیح دهید؟ *",
-      "ideaExplanationPlaceholder": "توضیحات",
-      "ideaExplanationRequired": "پر کردن این قسمت الزامی است."
+ "ideaExplanation": "ایده خود را در ۵ خط توضیح دهید؟ *",
+ "ideaExplanationPlaceholder": "توضیحات",
+ "ideaExplanationRequired": "پر کردن این قسمت الزامی است."
     },
-"trial": {
-  "pitchDeck": "آیا دارای Pitch Deck هستید؟*",
-  "businessPlan": "آیا دارای طرح کسب‌وکار هستید؟*",
-  "financial": "آیا دارای اطلاعات مالی هستید؟*",
-  "problems": "مشکلات",
+    "trial": {
+ "pitchDeck": "آیا دارای Pitch Deck هستید؟*",
+ "businessPlan": "آیا دارای طرح کسب‌وکار هستید؟*",
+ "financial": "آیا دارای اطلاعات مالی هستید؟*",
+ "problems": "مشکلات",
 
-  "problemsLabel": "مشکلی که قصد دارید با محصول یا خدمت خود حل کنید را توضیح دهید.*",
-  "problemsPlaceholder": "توضیحات",
-  "problemsRequired": "این فیلد الزامی است",
+ "problemsLabel": "مشکلی که قصد دارید با محصول یا خدمت خود حل کنید را توضیح دهید.*",
+ "problemsPlaceholder": "توضیحات",
+ "problemsRequired": "این فیلد الزامی است",
 
-  "solutions": "راه‌حل‌ها",
-  "solutionsUniqueValue": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
-  "solutionsUniqueValueRequired": "این فیلد الزامی است",
-  "solutionsUniqueValuePlaceholder": "توضیحات",
+ "solutions": "راه‌حل‌ها",
+ "solutionsUniqueValue": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
+ "solutionsUniqueValueRequired": "این فیلد الزامی است",
+ "solutionsUniqueValuePlaceholder": "توضیحات",
 
-  "solutionsLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
-  "solutionsLevelList": [
-    "اصل اساسی مشاهده شده است.",
-    "مفهوم فناوری تدوین شده است.",
-    "اثبات تجربی مفهوم.",
-    "فناوری در آزمایشگاه تأیید شده است.",
-    "فناوری در شرایط محیطی تأیید شده است.",
-    "فناوری در شرایط محیطی ارائه شده است.",
-    "نمونه اولیه سیستم در محیط عملیاتی MVP نمایش داده شده است.",
-    "سیستم واقعی در محیط عملیاتی اثبات شده است.",
-    "سیستم کامل و تأیید شده است."
-  ],
+ "solutionsLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
+ "solutionsLevelList": [
+   "اصل اساسی مشاهده شده است.",
+   "مفهوم فناوری تدوین شده است.",
+   "اثبات تجربی مفهوم.",
+   "فناوری در آزمایشگاه تأیید شده است.",
+   "فناوری در شرایط محیطی تأیید شده است.",
+   "فناوری در شرایط محیطی ارائه شده است.",
+   "نمونه اولیه سیستم در محیط عملیاتی MVP نمایش داده شده است.",
+   "سیستم واقعی در محیط عملیاتی اثبات شده است.",
+   "سیستم کامل و تأیید شده است."
+ ],
 
-  "solutionsPosition": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
-  "solutionsPositionRequired": "این فیلد الزامی است",
-  "solutionsPositionPlaceholder": "توضیحات",
+ "solutionsPosition": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
+ "solutionsPositionRequired": "این فیلد الزامی است",
+ "solutionsPositionPlaceholder": "توضیحات",
 
-  "businessModel": "مدل کسب‌وکار",
-  "businessMonetization": "روش درآمدزایی برنامه خود را توضیح دهید؟*",
-  "businessMonetizationRequired": "این فیلد الزامی است",
-  "businessMonetizationPlaceholder": "توضیحات",
+ "businessModel": "مدل کسب‌وکار",
+ "businessMonetization": "روش درآمدزایی برنامه خود را توضیح دهید؟*",
+ "businessMonetizationRequired": "این فیلد الزامی است",
+ "businessMonetizationPlaceholder": "توضیحات",
 
-  "businessDelivery": "ساختار چرخه فروش خود را از ارتباط تا تحویل به وضوح ذکر کنید.*",
-  "businessDeliveryRequired": "این فیلد الزامی است",
-  "businessDeliveryPlaceholder": "توضیحات",
+ "businessDelivery": "ساختار چرخه فروش خود را از ارتباط تا تحویل به وضوح ذکر کنید.*",
+ "businessDeliveryRequired": "این فیلد الزامی است",
+ "businessDeliveryPlaceholder": "توضیحات",
 
-  "businessFinancial": "اگر برنامه شما دارای مدل مالی است، لطفاً آن را بارگذاری کنید.",
-  "choseFile": "انتخاب فایل",
+ "businessFinancial": "اگر برنامه شما دارای مدل مالی است، لطفاً آن را بارگذاری کنید.",
+ "choseFile": "انتخاب فایل",
 
-  "businessAccelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟*",
-  "businessAcceleratorsRequired": "این فیلد الزامی است",
-  "businessAcceleratorsPlaceholder": "توضیحات",
+ "businessAccelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟*",
+ "businessAcceleratorsRequired": "این فیلد الزامی است",
+ "businessAcceleratorsPlaceholder": "توضیحات",
 
-  "businessKnowUs": "چگونه با ما آشنا شدید؟*",
-  "businessKnowUsRequired": "این فیلد الزامی است",
-  "businessKnowUsPlaceholder": "توضیحات",
+ "businessKnowUs": "چگونه با ما آشنا شدید؟*",
+ "businessKnowUsRequired": "این فیلد الزامی است",
+ "businessKnowUsPlaceholder": "توضیحات",
 
-  "targetMarket": "بازار هدف",
-  "targetCharacteristics": "بر اساس چه ویژگی‌هایی تصمیم می‌گیرید که مشتریان شما چه کسانی هستند و چه کسانی نیستند؟*",
-  "targetCharacteristicsRequired": "این فیلد الزامی است",
-  "targetCharacteristicsPlaceholder": "توضیحات",
+ "targetMarket": "بازار هدف",
+ "targetCharacteristics": "بر اساس چه ویژگی‌هایی تصمیم می‌گیرید که مشتریان شما چه کسانی هستند و چه کسانی نیستند؟*",
+ "targetCharacteristicsRequired": "این فیلد الزامی است",
+ "targetCharacteristicsPlaceholder": "توضیحات",
 
-  "targetCustomers": "مشتریان فعلی شما چه کسانی هستند؟ تاکنون چند مشتری داشته‌اید؟*",
-  "targetCustomersRequired": "این فیلد الزامی است",
-  "targetCustomersPlaceholder": "توضیحات",
+ "targetCustomers": "مشتریان فعلی شما چه کسانی هستند؟ تاکنون چند مشتری داشته‌اید؟*",
+ "targetCustomersRequired": "این فیلد الزامی است",
+ "targetCustomersPlaceholder": "توضیحات",
 
-  "targetEstimated": "چگونه اندازه بازار را تخمین زده‌اید؟*",
-  "targetEstimatedRequired": "این فیلد الزامی است",
-  "targetEstimatedPlaceholder": "توضیحات",
+ "targetEstimated": "چگونه اندازه بازار را تخمین زده‌اید؟*",
+ "targetEstimatedRequired": "این فیلد الزامی است",
+ "targetEstimatedPlaceholder": "توضیحات",
 
-  "property": "دارایی",
-  "propertyRevenue": "استارتاپ شما از زمان آغاز تاکنون چقدر درآمد داشته است؟*",
-  "propertyRevenueRequired": "این فیلد الزامی است",
-  "propertyRevenuePlaceholder": "توضیحات",
+ "property": "دارایی",
+ "propertyRevenue": "استارتاپ شما از زمان آغاز تاکنون چقدر درآمد داشته است؟*",
+ "propertyRevenueRequired": "این فیلد الزامی است",
+ "propertyRevenuePlaceholder": "توضیحات",
 
-  "propertyMonthly": "درآمد ماهانه شما چقدر است؟*",
-  "propertyMonthlyRequired": "این فیلد الزامی است",
-  "propertyMonthlyPlaceholder": "توضیحات",
+ "propertyMonthly": "درآمد ماهانه شما چقدر است؟*",
+ "propertyMonthlyRequired": "این فیلد الزامی است",
+ "propertyMonthlyPlaceholder": "توضیحات",
 
-  "propertyRate": "نرخ سود فعلی شما چقدر است؟*",
-  "propertyRateRequired": "این فیلد الزامی است",
-  "propertyRatePlaceholder": "توضیحات",
+ "propertyRate": "نرخ سود فعلی شما چقدر است؟*",
+ "propertyRateRequired": "این فیلد الزامی است",
+ "propertyRatePlaceholder": "توضیحات",
 
-  "propertyBusiness": "قبل از شروع کسب‌وکار خود چه میزان تأمین مالی داشته‌اید؟*",
-  "propertyBusinessRequired": "این فیلد الزامی است",
-  "propertyBusinessPlaceholder": "توضیحات",
+ "propertyBusiness": "قبل از شروع کسب‌وکار خود چه میزان تأمین مالی داشته‌اید؟*",
+ "propertyBusinessRequired": "این فیلد الزامی است",
+ "propertyBusinessPlaceholder": "توضیحات",
 
-  "propertyCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟*",
-  "propertyCapitalRequired": "این فیلد الزامی است",
-  "propertyCapitalPlaceholder": "توضیحات"
-},
-
-
+ "propertyCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟*",
+ "propertyCapitalRequired": "این فیلد الزامی است",
+ "propertyCapitalPlaceholder": "توضیحات"
+    },
 
     "pitchDeck": "آیا پیچ دک تهیه کرده‌اید؟",
     "pitchDeckRequired": "لطفا یکی از گزینه های زیر را انتخاب کنید.",
+    
     "businessPlan": "آیا بیزینس پلن آماده کرده‌اید؟",
     "businessPlanRequired": "لطفا یکی از گزینه های زیر را انتخاب کنید.",
+    
     "productName": "نام محصول *",
     "productNameRequired": "نام محصول الزامی است.",
     "productNamePlaceholder": "لطفا نام محصول خود را وارد کنید.",
+    
     "siteAddress": "آدرس وب سایت *",
     "siteAddressRequired": "آدرس وب سایت الزامی است.",
     "siteAddressPlaceholder": "لطفا آدرس وب سایت خود را وارد کنید.",
@@ -302,116 +307,141 @@
     "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
 
     "problems": {
-      "title": "مشکلات",
-      "customerProblem": "توضیح دهید که محصول شما چه مشکلی از کاربر را برطرف میکند؟ *",
-      "customerProblemRequired": "این قسمت الزامی است.",
-      "customerProblemPlaceholder": "توضیحات"
+ "title": "مشکلات",
+ "customerProblem": "توضیح دهید که محصول شما چه مشکلی از کاربر را برطرف میکند؟ *",
+ "customerProblemRequired": "این قسمت الزامی است.",
+ "customerProblemPlaceholder": "توضیحات"
     },
     "cooperatedWithInvestors": "آیا قبلا با سرمایه گذاران یا شتاب دهنده ها کار کرده اید؟",
     "cooperatedWithInvestorsPlaceholder": "توضیحات",
 
     "solutions": {
-      "title": "راه حل ها",
-      "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟ *",
-      "solutionPlaceholder": "توضیحات",
-      "solutionRequired": "این قسمت الزامی است!",
-      "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
-      "productLevelRequired": "آمار آماده سازی مورد نیاز است",
-      "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد *",
-      "scalablePlaceholder": "توضیحات",
-      "scalableRequired": "این قسمت الزامی است!"
+ "title": "راه حل ها",
+ "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟ *",
+ "solutionPlaceholder": "توضیحات",
+ "solutionRequired": "این قسمت الزامی است!",
+ "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
+ "productLevelRequired": "آمار آماده سازی مورد نیاز است",
+ "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد *",
+ "scalablePlaceholder": "توضیحات",
+ "scalableRequired": "این قسمت الزامی است!"
     },
     "businessModel": {
-      "title": "طرح کسب و کار",
-      "monetizationOfYourPlan": "روش کسب درآمد از طرح خود را توضیح دهید؟*",
-      "monetizationOfYourPlanPlaceholder": "توضیحات",
-      "monetizationOfYourPlanRequired": "این قسمت الزامی است!",
-      "structureOfYourSales": "لطفا ساختار فروش خود را از ابتدا توضیح دهید *",
-      "structureOfYourSalesPlaceholder": "توضیحات",
-      "structureOfYourSalesRequired": "این قسمت الزامی است!",
-      "financialPlan": "اگر طرح شما مدل مالی دارد، لطفا آپلود کنید."
+ "title": "طرح کسب و کار",
+ "monetization": "روش کسب درآمد از طرح خود را توضیح دهید؟*",
+ "monetizationOfYourPlan": "روش کسب درآمد از طرح خود را توضیح دهید؟*",
+ "monetizationOfYourPlanRequired": "این قسمت الزامی است!",
+ "monetizationOfYourPlanPlaceholder": "توضیحات",
+ "monetizationPlaceholder": "توضیحات",
+ "monetizationRequired": "این قسمت الزامی است!",
+ 
+ "delivery": "لطفا ساختار فروش خود را از ابتدا توضیح دهید *",
+ "deliveryPlaceholder": "توضیحات",
+ "deliveryRequired": "این قسمت الزامی است!",
+ 
+ "financialPlan": "اگر طرح شما مدل مالی دارد، لطفا آپلود کنید.",
+ "choseFile": "انتخاب فایل",
+ 
+ "accelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟*",
+ "acceleratorsPlaceholder": "توضیحات",
+ "acceleratorsRequired": "این فیلد الزامی است!",
+ 
+ "knowUs": "چگونه با ما آشنا شدید؟*",
+ "knowUsPlaceholder": "توضیحات",
+ "knowUsRequired": "این فیلد الزامی است!",
+ 
+ "structureOfYourSales": "لطفا ساختار فروش خود را از ابتدا توضیح دهید *",
+ "structureOfYourSalesPlaceholder": "توضیحات",
+ "structureOfYourSalesRequired": "این قسمت الزامی است!"
     },
     "financialFile": "آیا شما تمکن مالی دارید؟",
     "financialFileRequired": "لطفا یکی از گزینه ها را انتخاب کنید:",
+
     "property": {
-      "title": "دارایی",
-      "startupRevenue": "استارت آپ شما از زمان شروعش چقدر درآمد داشته است؟ *",
-      "startupRevenuePlaceholder": "توضیحات",
-      "startupRevenueRequired": "این قسمت الزامی است!",
-      "monthlyIncome": "درآمد ماهانه شما چقدر است؟ *",
-      "monthlyIncomePlaceholder": "توضیحات",
-      "monthlyIncomeRequired": "این قسمت الزامی است!",
-      "currentRaisedFunding": "قبل از شروع کسب و کارتان چقدر بودجه جاری جمع آوری کردید؟ *",
-      "currentRaisedFundingPlaceholder": "توضیحات",
-      "currentRaisedFundingRequired": "این قسمت الزامی است!",
-      "neededCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟ *",
-      "neededCapitalPlaceholder": "توضیحات",
-      "neededCapitalRequired": "این قسمت الزامی است!"
+ "title": "دارایی",
+ "startupRevenue": "استارت آپ شما از زمان شروعش چقدر درآمد داشته است؟ *",
+ "startupRevenuePlaceholder": "توضیحات",
+ "startupRevenueRequired": "این قسمت الزامی است!",
+ "monthlyIncome": "درآمد ماهانه شما چقدر است؟ *",
+ "monthlyIncomePlaceholder": "توضیحات",
+ "monthlyIncomeRequired": "این قسمت الزامی است!",
+ "currentRaisedFunding": "قبل از شروع کسب و کارتان چقدر بودجه جاری جمع آوری کردید؟ *",
+ "currentRaisedFundingPlaceholder": "توضیحات",
+ "currentRaisedFundingRequired": "این قسمت الزامی است!",
+ "neededCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟ *",
+ "neededCapitalPlaceholder": "توضیحات",
+ "neededCapitalRequired": "این قسمت الزامی است!"
     },
     "targetMarket": {
-      "title": "بازار هدف",
-      "customerCharacteristic": "مشتریان خود را بر اساس چه معیاری انتخاب می‌کنید؟ *",
-      "customerCharacteristicPlaceholder": "توضیحات",
-      "customerCharacteristicRequired": "این قسمت الزامی است!",
-      "currentCustomers": "مشتریان فعلی شما چه کسانی هستند؟ چه تعداد مشتری تا امروز داشته‌اید؟ *",
-      "currentCustomersPlaceholder": "توضیحات",
-      "currentCustomersRequired": "این قسمت الزامی است!",
-      "estimatedMarketSize": "چگونه مقیاس و انداره بازار هدف خود را محاسبه می‌کنید؟ *",
-      "estimatedMarketSizePlaceholder": "توضیحات",
-      "estimatedMarketSizeRequired": "این قسمت الزامی است!"
+ "title": "بازار هدف",
+ "customerCharacteristic": "مشتریان خود را بر اساس چه معیاری انتخاب می‌کنید؟ *",
+ "customerCharacteristicPlaceholder": "توضیحات",
+ "customerCharacteristicRequired": "این قسمت الزامی است!",
+ "currentCustomers": "مشتریان فعلی شما چه کسانی هستند؟ چه تعداد مشتری تا امروز داشته‌اید؟ *",
+ "currentCustomersPlaceholder": "توضیحات",
+ "currentCustomersRequired": "این قسمت الزامی است!",
+ "estimatedMarketSize": "چگونه مقیاس و انداره بازار هدف خود را محاسبه می‌کنید؟ *",
+ "estimatedMarketSizePlaceholder": "توضیحات",
+ "estimatedMarketSizeRequired": "این قسمت الزامی است!"
     },
 
     "radioButtonGroup": [
-      { "value": "basicPrinciple", "label": "اصول اولیه مشخص شده است" },
-      {
-        "value": "technologyConcept",
-        "label": "ایده اولیه تکنولوژی شکل گرفته است"
-      },
-      { "value": "exprimentalProof", "label": "ایده اولیه آزمایش شده است" },
-      {
-        "value": "confirmedTechnologyLab",
-        "label": "تاییدیه فنی در محیط آزمایشگاهی گرفته شده است"
-      },
-      {
-        "value": "confirmedTechnologyEnv",
-        "label": "تاییدیه فنی در شرایط محیطی گرفته شده است"
-      },
-      {
-        "value": "presentedTechnologyEnv",
-        "label": "فناوری و تکنولوژی در شرایط محیطی ارائه شده است"
-      },
-      {
-        "value": "systemPrototypeInMvp",
-        "label": "نمونه اولیه در محیط عملیاتی نشان داده شده است"
-      },
-      {
-        "value": "realisticSystem",
-        "label": "سیستم واقعی در محیط عملیاتی ارائه شده است"
-      },
-      {
-        "value": "qualifiedSystem",
-        "label": "به‌عنوان یک سیستم کامل و واجد شرایط آماده شده است"
-      }
+ { 
+   "value": "basicPrinciple",
+   "label": "اصول اولیه مشخص شده است"
+ },
+ {
+   "value": "technologyConcept",
+   "label": "ایده اولیه تکنولوژی شکل گرفته است"
+ },
+ { 
+   "value": "exprimentalProof",
+   "label": "ایده اولیه آزمایش شده است"
+ },
+ {
+   "value": "confirmedTechnologyLab",
+   "label": "تاییدیه فنی در محیط آزمایشگاهی گرفته شده است"
+ },
+ {
+   "value": "confirmedTechnologyEnv",
+   "label": "تاییدیه فنی در شرایط محیطی گرفته شده است"
+ },
+ {
+   "value": "presentedTechnologyEnv",
+   "label": "فناوری و تکنولوژی در شرایط محیطی ارائه شده است"
+ },
+ {
+   "value": "systemPrototypeInMvp",
+   "label": "نمونه اولیه در محیط عملیاتی نشان داده شده است"
+ },
+ {
+   "value": "realisticSystem",
+   "label": "سیستم واقعی در محیط عملیاتی ارائه شده است"
+ },
+ {
+   "value": "qualifiedSystem",
+   "label": "به‌عنوان یک سیستم کامل و واجد شرایط آماده شده است"
+ }
     ]
   },
 
   "universities": {
     "placeholder": "نام دانشگاه",
     "unis": {
-      "azadNjaf": "دانشگاه آزاد اسلامی واحد نجف آباد",
-      "azadIsf": "دانشگاه آزاد اسلامی استان اصفهان",
-      "dolati": "دانشگاه های دولتی",
-      "etc": "سایر"
+ "azadNjaf": "دانشگاه آزاد اسلامی واحد نجف آباد",
+ "azadIsf": "دانشگاه آزاد اسلامی استان اصفهان",
+ "dolati": "دانشگاه های دولتی",
+ "etc": "سایر"
     }
   },
 
   "langLevel": {
     "placeholder": "میزان مهارت در زبان انگلیسی",
     "levels": {
-      "base": "پایه",
-      "elementary": "متوسط",
-      "good": "حوب",
-      "expert": "عالی"
+ "base": "پایه",
+ "elementary": "متوسط",
+ "good": "حوب",
+ "expert": "عالی"
     }
   },
 
@@ -459,23 +489,13 @@
     { "value": "Benin", "label": "بنین" },
     { "value": "Bermuda", "label": "برمودا" },
     { "value": "Bhutan", "label": "بوتان" },
-    {
-      "value": "Bolivia (Plurinational State of)",
-      "label": "بولیوی (کشور چندملیتی)"
-    },
-    {
-      "value": "Bonaire, Sint Eustatius and Saba",
-      "label": "بونیر، سنت یوستاتیوس و صبا"
-    },
+    { "value": "Bolivia (Plurinational State of)", "label": "بولیوی (کشور چندملیتی)" },
+    { "value": "Bonaire, Sint Eustatius and Saba", "label": "بونیر، سنت یوستاتیوس و صبا" },
     { "value": "Bosnia and Herzegovina", "label": "بوسنی و هرزگوین" },
-
     { "value": "Botswana", "label": "بوتسوانا" },
     { "value": "Bouvet Island", "label": "جزیره بووه" },
     { "value": "Brazil", "label": "برزیل" },
-    {
-      "value": "British Indian Ocean Territory (the)",
-      "label": "قلمرو بریتانیایی اقیانوس هند"
-    },
+    { "value": "British Indian Ocean Territory (the)", "label": "قلمرو بریتانیایی اقیانوس هند" },
     { "value": "Brunei Darussalam", "label": "برونئی دارالسلام" },
     { "value": "Bulgaria", "label": "بلغارستان" },
     { "value": "Burkina Faso", "label": "بورکینافاسو" },
@@ -485,24 +505,15 @@
     { "value": "Cameroon", "label": "کامرون" },
     { "value": "Canada", "label": "کانادا" },
     { "value": "Cayman Islands (the)", "label": "جزایر کیمن" },
-    {
-      "value": "Central African Republic (the)",
-      "label": "جمهوری آفریقای مرکزی"
-    },
+    { "value": "Central African Republic (the)", "label": "جمهوری آفریقای مرکزی" },
     { "value": "Chad", "label": "چاد" },
     { "value": "Chile", "label": "شیلی" },
     { "value": "China", "label": "چین" },
     { "value": "Christmas Island", "label": "جزیره کریسمس" },
-    {
-      "value": "Cocos (Keeling) Islands (the)",
-      "label": "جزایر کوکوس (کیلینگ)"
-    },
+    { "value": "Cocos (Keeling) Islands (the)", "label": "جزایر کوکوس (کیلینگ)" },
     { "value": "Colombia", "label": "کلمبیا" },
     { "value": "Comoros (the)", "label": "کومور" },
-    {
-      "value": "Congo (the Democratic Republic of the)",
-      "label": "جمهوری دموکراتیک کنگو"
-    },
+    { "value": "Congo (the Democratic Republic of the)", "label": "جمهوری دموکراتیک کنگو"},
     { "value": "Congo (the)", "label": "کنگو" },
     { "value": "Cook Islands (the)", "label": "جزایر کوک" },
     { "value": "Costa Rica", "label": "کاستاریکا" },
@@ -518,27 +529,20 @@
     { "value": "Dominican Republic (the)", "label": "جمهوری دومینیکن" },
     { "value": "Ecuador", "label": "اکوادور" },
     { "value": "Egypt", "label": "مصر" },
-
     { "value": "El Salvador", "label": "السالوادور" },
     { "value": "Equatorial Guinea", "label": "گینه استوایی" },
     { "value": "Eritrea", "label": "اریتره" },
     { "value": "Estonia", "label": "استونی" },
     { "value": "Eswatini", "label": "اسواتینی" },
     { "value": "Ethiopia", "label": "اتیوپی" },
-    {
-      "value": "Falkland Islands (the) [Malvinas]",
-      "label": "جزایر فالکلند (مالویناس)"
-    },
+    { "value": "Falkland Islands (the) [Malvinas]", "label": "جزایر فالکلند (مالویناس)"},
     { "value": "Faroe Islands (the)", "label": "جزایر فارو" },
     { "value": "Fiji", "label": "فیجی" },
     { "value": "Finland", "label": "فنلاند" },
     { "value": "France", "label": "فرانسه" },
     { "value": "French Guiana", "label": "گویان فرانسه" },
     { "value": "French Polynesia", "label": "پلی‌نزی فرانسه" },
-    {
-      "value": "French Southern Territories (the)",
-      "label": "سرزمین‌های جنوبی فرانسه"
-    },
+    { "value": "French Southern Territories (the)", "label": "سرزمین‌های جنوبی فرانسه"},
     { "value": "Gabon", "label": "گابن" },
     { "value": "Gambia (the)", "label": "گامبیا" },
     { "value": "Georgia", "label": "گرجستان" },
@@ -556,10 +560,7 @@
     { "value": "Guinea-Bissau", "label": "گینه بیسائو" },
     { "value": "Guyana", "label": "گویان" },
     { "value": "Haiti", "label": "هائیتی" },
-    {
-      "value": "Heard Island and McDonald Islands",
-      "label": "جزیره هرد و جزایر مک‌دونالد"
-    },
+    { "value": "Heard Island and McDonald Islands", "label": "جزیره هرد و جزایر مک‌دونالد" },
     { "value": "Holy See (the)", "label": "واتیکان" },
     { "value": "Honduras", "label": "هندوراس" },
     { "value": "Hong Kong", "label": "هنگ‌کنگ" },
@@ -580,10 +581,7 @@
     { "value": "Kazakhstan", "label": "قزاقستان" },
     { "value": "Kenya", "label": "کنیا" },
     { "value": "Kiribati", "label": "کیریباتی" },
-    {
-      "value": "Korea (the Democratic People's Republic of)",
-      "label": "کره شمالی"
-    },
+    { "value": "Korea (the Democratic People's Republic of)", "label": "کره شمالی"},
     { "value": "Korea (the Republic of)", "label": "کره جنوبی" },
     { "value": "Kuwait", "label": "کویت" },
     { "value": "Kyrgyzstan", "label": "قرقیزستان" },
@@ -609,10 +607,7 @@
     { "value": "Mauritius", "label": "موریس" },
     { "value": "Mayotte", "label": "مایوت" },
     { "value": "Mexico", "label": "مکزیک" },
-    {
-      "value": "Micronesia (Federated States of)",
-      "label": "میکرونزی (ایالات فدرال)"
-    },
+    { "value": "Micronesia (Federated States of)", "label": "میکرونزی (ایالات فدرال)" },
     { "value": "Moldova (the Republic of)", "label": "مولداوی" },
     { "value": "Monaco", "label": "موناکو" },
     { "value": "Mongolia", "label": "مغولستان" },
@@ -632,10 +627,7 @@
     { "value": "Nigeria", "label": "نیجریه" },
     { "value": "Niue", "label": "نیوئه" },
     { "value": "Norfolk Island", "label": "جزیره نورفک" },
-    {
-      "value": "Northern Mariana Islands (the)",
-      "label": "جزایر ماریانای شمالی"
-    },
+    { "value": "Northern Mariana Islands (the)", "label": "جزایر ماریانای شمالی" },
     { "value": "Norway", "label": "نروژ" },
     { "value": "Oman", "label": "عمان" },
     { "value": "Pakistan", "label": "پاکستان" },
@@ -657,21 +649,12 @@
     { "value": "Rwanda", "label": "رواندا" },
     { "value": "Réunion", "label": "رئونیون" },
     { "value": "Saint Barthélemy", "label": "سن بارتلمی" },
-    {
-      "value": "Saint Helena, Ascension and Tristan da Cunha",
-      "label": "سنت هلنا، اسنشن و تریستان دا کونیا"
-    },
+    { "value": "Saint Helena, Ascension and Tristan da Cunha", "label": "سنت هلنا، اسنشن و تریستان دا کونیا" },
     { "value": "Saint Kitts and Nevis", "label": "سنت کیتس و نویس" },
     { "value": "Saint Lucia", "label": "سنت لوسیا" },
-    {
-      "value": "Saint Martin (French part)",
-      "label": "سنت مارتن (بخش فرانسوی)"
-    },
+    { "value": "Saint Martin (French part)", "label": "سنت مارتن (بخش فرانسوی)" },
     { "value": "Saint Pierre and Miquelon", "label": "سن پی‌یر و میکلن" },
-    {
-      "value": "Saint Vincent and the Grenadines",
-      "label": "سنت وینسنت و گرنادین‌ها"
-    },
+    { "value": "Saint Vincent and the Grenadines", "label": "سنت وینسنت و گرنادین‌ها" },
     { "value": "Samoa", "label": "ساموآ" },
     { "value": "San Marino", "label": "سن مارینو" },
     { "value": "Sao Tome and Principe", "label": "سائوتومه و پرنسیپ" },
@@ -679,7 +662,6 @@
     { "value": "Senegal", "label": "سنگال" },
     { "value": "Serbia", "label": "صربستان" },
     { "value": "Seychelles", "label": "سیشل" },
-
     { "value": "Sierra Leone", "label": "سیرالئون" },
     { "value": "Singapore", "label": "سنگاپور" },
     { "value": "Sint Maarten (Dutch part)", "label": "سینت مارتن (بخش هلندی)" },
@@ -688,10 +670,7 @@
     { "value": "Solomon Islands", "label": "جزایر سلیمان" },
     { "value": "Somalia", "label": "سومالی" },
     { "value": "South Africa", "label": "آفریقای جنوبی" },
-    {
-      "value": "South Georgia and the South Sandwich Islands",
-      "label": "جورجیا جنوبی و جزایر ساندویچ جنوبی"
-    },
+    { "value": "South Georgia and the South Sandwich Islands", "label": "جورجیا جنوبی و جزایر ساندویچ جنوبی" },
     { "value": "South Sudan", "label": "سودان جنوبی" },
     { "value": "Spain", "label": "اسپانیا" },
     { "value": "Sri Lanka", "label": "سریلانکا" },
@@ -703,10 +682,7 @@
     { "value": "Syrian Arab Republic", "label": "جمهوری عربی سوریه" },
     { "value": "Taiwan", "label": "تایوان" },
     { "value": "Tajikistan", "label": "تاجیکستان" },
-    {
-      "value": "Tanzania, United Republic of",
-      "label": "تانزانیا، جمهوری متحد"
-    },
+    { "value": "Tanzania, United Republic of", "label": "تانزانیا، جمهوری متحد" },
     { "value": "Thailand", "label": "تایلند" },
     { "value": "Timor-Leste", "label": "تیمور شرقی" },
     { "value": "Togo", "label": "توگو" },
@@ -716,39 +692,21 @@
     { "value": "Tunisia", "label": "تونس" },
     { "value": "Turkey", "label": "ترکیه" },
     { "value": "Turkmenistan", "label": "ترکمنستان" },
-    {
-      "value": "Turks and Caicos Islands (the)",
-      "label": "جزایر ترک و کایکوس"
-    },
+    { "value": "Turks and Caicos Islands (the)", "label": "جزایر ترک و کایکوس" },
     { "value": "Tuvalu", "label": "توالو" },
     { "value": "Uganda", "label": "اوگاندا" },
     { "value": "Ukraine", "label": "اوکراین" },
     { "value": "United Arab Emirates (the)", "label": "امارات متحده عربی" },
-    {
-      "value": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "label": "پادشاهی متحده بریتانیای بزرگ و ایرلند شمالی"
-    },
-    {
-      "value": "United States Minor Outlying Islands (the)",
-      "label": "جزایر دورافتاده کوچک ایالات متحده"
-    },
-    {
-      "value": "United States of America (the)",
-      "label": "ایالات متحده آمریکا"
-    },
+    { "value": "United Kingdom of Great Britain and Northern Ireland (the)", "label": "پادشاهی متحده بریتانیای بزرگ و ایرلند شمالی" },
+    { "value": "United States Minor Outlying Islands (the)", "label": "جزایر دورافتاده کوچک ایالات متحده"},
+    { "value": "United States of America (the)", "label": "ایالات متحده آمریکا"},
     { "value": "Uruguay", "label": "اوروگوئه" },
     { "value": "Uzbekistan", "label": "ازبکستان" },
     { "value": "Vanuatu", "label": "وانواتو" },
-    {
-      "value": "Venezuela (Bolivarian Republic of)",
-      "label": "ونزوئلا (جمهوری بولیواری)"
-    },
+    { "value": "Venezuela (Bolivarian Republic of)", "label": "ونزوئلا (جمهوری بولیواری)" },
     { "value": "Viet Nam", "label": "ویتنام" },
     { "value": "Virgin Islands (British)", "label": "جزایر ویرجین (بریتانیا)" },
-    {
-      "value": "Virgin Islands (U.S.)",
-      "label": "جزایر ویرجین (ایالات متحده)"
-    },
+    { "value": "Virgin Islands (U.S.)", "label": "جزایر ویرجین (ایالات متحده)" },
     { "value": "Wallis and Futuna", "label": "والیس و فوتونا" },
     { "value": "Western Sahara", "label": "صحرای غربی" },
     { "value": "Yemen", "label": "یمن" },
@@ -756,5 +714,4 @@
     { "value": "Zimbabwe", "label": "زیمبابوه" },
     { "value": "Åland Islands", "label": "جزایر آلند" }
   ]
-  
 }

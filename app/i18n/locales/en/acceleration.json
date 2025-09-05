@@ -1,124 +1,124 @@
 {
   "banner": "ENTREPRENEURSHIP",
-    "lng": "en",
-    "text": "If you have an innovative idea or are exploring entrepreneurial opportunities, please reach out to us.",
-    "LandaAccelerator": [
-      {
-        "title": "NovaNest Entrepreneurship",
-        "subTitle": "Opportunity to Generate New Ideas",
-        "text": "NovaNest's Entrepreneurship division, dedicated to nurturing businesses on a global scale, has established an acceleration department aimed at guiding individuals with innovative ideas from inception to triumph. This part of NovaNest Entrepreneurship endeavors to foster exceptional entrepreneurs and expedite the rapid growth and expansion of businesses. We are seeking individuals and teams with the necessary skills and creativity to overcome challenges along this journey.",
-        "reverse": true,
-        "show": true,
-        "index": 2,
-        "addedClass": ""
-      }
-    ],
-    "FORUGHACCELERATOR": [
-      {
-        "title": "Forough Consulting and Entrepreneurship Center :",
-        "subTitle": "Igniting Ideas and Startups",
-        "textUp": "Forough Roshan Pasargad Company is an Iran-based consultancy and entrepreneurship center specializing in meticulously evaluating business concepts. Forough's mission is to support emerging businesses in their development and help them gain recognition on the global stage.",
-        "textDown" : "Startups collaborating with us receive support from their early stages to their transformation into large companies. We provide you with opportunities to grow, achieve remarkable accomplishments, and enter global markets.",
-        "reverse": true,
-        "show": true,
-        "index": 2,
-        "addedClass": "",
-        "items": [
-            "1. Discover the appropriate opportunity",
-            "2. Ideation",
-            "3. Implementing the idea",
-            "4. Developing ideas"
-        ]
-      }
-    ],
-    "CharacteristicsOfEntrepreneurship": {
-      "title": "Characteristics of Entrepreneurship:"
-    },
-    "itemsCharecter" : {
-      "item1":"Entrepreneurship is a vibrant and economically impactful endeavor",
-      "item2":"Entrepreneurship is intimately tied to innovation",
-      "item3":"Entrepreneurship involves embracing risk"
-    },
-    "AcceleratorProcess": [
-      {
-        "title": "Accelerator Process :",
-        "text": "1. Idea generation for innovative business creation  2. Idea nurturing  3. Creating a pitch deck  4. Financial modelling  5. Mentorship programs  6. Networking  7. Cooperative workspace  8. Digital marketing  9. Consultation for necessary permits  10. Seed investment  11. Market share expansion 12. Marketing and sales strategy  13. Business development  14. Preparation and valuation of business plans",
-        "reverse": true,
-        "show": true,
-        "index": 2,
-        "addedClass": ""
-      }
-    ],
-    "FARAZAMANACCELERATOR": [
-      {
-        "title": "FARAZAMAN ACCELERATOR :",
-        "subTitle": "Supporting the Youth",
-        "textUp": "As part of the higher education community, we, under the name of Farazman, are committed to supporting and nurturing students and youth in university-affiliated incubators and accelerators. We believe that the future of careers lies in the hands of young individuals, and we enable them to benefit from our resources and experiences. By offering financial resources, technical infrastructure, and access to global networks, we help students and youth turn their ideas into reality and acquire the skills needed for today's business world. Additionally, we emphasize the importance of effective networking and skill enhancement for students and startups through education and mentorship. Our team consists of experienced mentors, both domestic and international, to provide necessary guidance and support to help you achieve the best results.",
-        "reverse": true,
-        "show": true,
-        "index": 2,
-        "addedClass": ""
-      }
-    ],
-    "LandaAcceleratorServices":[
-      {
-        "title":"NovaNest Entrepreneurship Services",
-        "text":"",
-        "reverse": true,
-        "show": true,
-        "index": 2,
-        "addedClass": "",
-        "items":[
-            {
-              "title": "Pitch deck preparation",
-              "image": "1.png"
-            },
-            {
-              "title": "Mentoring",
-              "image": "2.png"
-            },
-            {
-              "title": "Networking with suitable individuals",
-              "image": "3.png"
-            },
-            {
-              "title": "Initial financing",
-              "image": "4.png"
-            },
-            {
-              "title": "MVP development",
-              "image": "5.png"
-            },
-            {
-              "title": "Research and development",
-              "image": "6.png"
-            },
-            {
-              "title": "Website design",
-              "image": "7.png"
-            },
-            {
-              "title": "Business plan creation",
-              "image": "8.png"
-            },
-            {
-              "title": "Idea brainstorming and development",
-              "image": "9.png"
-            },
-            {
-              "title": "Cooperative workspace",
-              "image": "10.png"
-            },
-            {
-              "title": "Patent registration",
-              "image": "11.png"
-            },
-            {
-              "title": "Organizing startup presentation events",
-              "image": "12.png"
-            }
-        ]
-      }
-    ],
-    "Register": "Register"
-  }
+  "lng": "en",
+  "text": "If you have an innovative idea or are exploring entrepreneurial opportunities, please reach out to us.",
+  "LandaAccelerator": [
+    {
+      "title": "NovaNest Entrepreneurship",
+      "subTitle": "Opportunity to Generate New Ideas",
+      "text": "NovaNest's Entrepreneurship division, dedicated to nurturing businesses on a global scale, has established an acceleration department aimed at guiding individuals with innovative ideas from inception to triumph. This part of NovaNest Entrepreneurship endeavors to foster exceptional entrepreneurs and expedite the rapid growth and expansion of businesses. We are seeking individuals and teams with the necessary skills and creativity to overcome challenges along this journey.",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": ""
+    }
+  ],
+  "FORUGHACCELERATOR": [
+    {
+      "title": "Forough Consulting and Entrepreneurship Center :",
+      "subTitle": "Igniting Ideas and Startups",
+      "textUp": "Forough Roshan Pasargad Company is an Iran-based consultancy and entrepreneurship center specializing in meticulously evaluating business concepts. Forough's mission is to support emerging businesses in their development and help them gain recognition on the global stage.",
+      "textDown" : "Startups collaborating with us receive support from their early stages to their transformation into large companies. We provide you with opportunities to grow, achieve remarkable accomplishments, and enter global markets.",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": "",
+      "items": [
+          "1. Discover the appropriate opportunity",
+          "2. Ideation",
+          "3. Implementing the idea",
+          "4. Developing ideas"
+      ]
+    }
+  ],
+  "CharacteristicsOfEntrepreneurship": {
+    "title": "Characteristics of Entrepreneurship:"
+  },
+  "itemsCharecter" : {
+    "item1":"Entrepreneurship is a vibrant and economically impactful endeavor",
+    "item2":"Entrepreneurship is intimately tied to innovation",
+    "item3":"Entrepreneurship involves embracing risk"
+  },
+  "AcceleratorProcess": [
+    {
+      "title": "Accelerator Process :",
+      "text": "1. Idea generation for innovative business creation  2. Idea nurturing  3. Creating a pitch deck  4. Financial modelling  5. Mentorship programs  6. Networking  7. Cooperative workspace  8. Digital marketing  9. Consultation for necessary permits  10. Seed investment  11. Market share expansion 12. Marketing and sales strategy  13. Business development  14. Preparation and valuation of business plans",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": ""
+    }
+  ],
+  "FARAZAMANACCELERATOR": [
+    {
+      "title": "FARAZAMAN ACCELERATOR :",
+      "subTitle": "Supporting the Youth",
+      "textUp": "As part of the higher education community, we, under the name of Farazman, are committed to supporting and nurturing students and youth in university-affiliated incubators and accelerators. We believe that the future of careers lies in the hands of young individuals, and we enable them to benefit from our resources and experiences. By offering financial resources, technical infrastructure, and access to global networks, we help students and youth turn their ideas into reality and acquire the skills needed for today's business world. Additionally, we emphasize the importance of effective networking and skill enhancement for students and startups through education and mentorship. Our team consists of experienced mentors, both domestic and international, to provide necessary guidance and support to help you achieve the best results.",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": ""
+    }
+  ],
+  "LandaAcceleratorServices":[
+    {
+      "title":"NovaNest Entrepreneurship Services",
+      "text":"",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": "",
+      "items":[
+          {
+            "title": "Pitch deck preparation",
+            "image": "1.png"
+          },
+          {
+            "title": "Mentoring",
+            "image": "2.png"
+          },
+          {
+            "title": "Networking with suitable individuals",
+            "image": "3.png"
+          },
+          {
+            "title": "Initial financing",
+            "image": "4.png"
+          },
+          {
+            "title": "MVP development",
+            "image": "5.png"
+          },
+          {
+            "title": "Research and development",
+            "image": "6.png"
+          },
+          {
+            "title": "Website design",
+            "image": "7.png"
+          },
+          {
+            "title": "Business plan creation",
+            "image": "8.png"
+          },
+          {
+            "title": "Idea brainstorming and development",
+            "image": "9.png"
+          },
+          {
+            "title": "Cooperative workspace",
+            "image": "10.png"
+          },
+          {
+            "title": "Patent registration",
+            "image": "11.png"
+          },
+          {
+            "title": "Organizing startup presentation events",
+            "image": "12.png"
+          }
+      ]
+    }
+  ],
+  "Register": "Register"
+}

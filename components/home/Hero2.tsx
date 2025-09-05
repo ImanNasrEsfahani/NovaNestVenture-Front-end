@@ -21,6 +21,7 @@ interface Slide {
   content: SlideContent[];
 }
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Hero2() {
   const lang = useLang().lang;
@@ -52,7 +53,7 @@ export default function Hero2() {
                   <div className="flex justify-center items-center w-full" key={idx}>
                     {item ? (
                       <Link 
-                        href={item.href} 
+                        href={`${base}/${item.href}`}
                         className="px-8 py-4 md:px-8 md:py-4 bg-white/90 text-black no-underline rounded font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 md:text-base text-sm"
                       >
                         {item.label}
