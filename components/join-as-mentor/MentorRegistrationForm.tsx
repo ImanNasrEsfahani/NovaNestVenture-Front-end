@@ -106,12 +106,12 @@ export default function InvestorRegistrationForm() {
               <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
                 <div className="w-full h-auto flex flex-row justify-center">
                   <p className="text-black font-gilda font-medium text-xl md:text-[64px] md:leading-[75px]">
-                    {t('investorForm', { returnObjects: true }).formTitle}
+                    {t('joinUsForm', { returnObjects: true }).formTitle}
                   </p>
                 </div>
                 <div className="w-full border-b-[1.5px] py-5 border-black h-auto flex flex-row justify-start">
                   <p className="text-black font-barlow font-medium text-[30px] leading-[42px]">
-                    {t('investorForm', { returnObjects: true }).formSubtitle}
+                    {t('joinUsForm', { returnObjects: true }).formSubtitle}
                   </p>
                 </div>
               </div>

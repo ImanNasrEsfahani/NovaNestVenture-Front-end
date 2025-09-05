@@ -164,6 +164,20 @@
     "interestsRequired": "علاقه مندی ها الزامی است",
     "interestsPlaceholder": "علاقه مندی های خود را وارد کنید"
   },
+
+  "joinUsForm": {
+    "lng": "fa",
+    "dir": "rtl",
+    "banner": "مرکز منتور",
+    "NovaNestVenture": "نوانست ونچر",
+    "formTitle": "همکاری با ما",
+    "formSubtitle": "بیایید در مورد چگونگی رشد مشترک صحبت کنیم",
+    "positionRequired": "لطفاً سمت خود را انتخاب کنید",
+    "positionPlaceholder": "سمت خود را انتخاب کنید",
+    "contractType": "نوع قرارداد",
+    "contractTypePlaceholder": "نوع قرارداد خود را انتخاب کنید"
+  },
+
   "startUp": {
     "lng": "fa",
     "dir": "rtl",
