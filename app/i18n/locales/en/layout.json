@@ -18,10 +18,28 @@
     }
   ],
   "submenuItems": [
-    { "label": "INVESTOR CENTER", "href": "/en/investor-registration" },
-    { "label": "ENTREPRENEUR CENTER", "href": "/en/formEntrepreneurs" },
-    { "label": "BUSINESS PARTNERS", "href": "/en/partner-membership" },
-    { "label": "STARTUPS VALIDATION", "href": "/en/startups-form" },
-    { "label": "WORK WITH US", "href": "/en/job-form" }
+    { 
+      "label": "INVESTOR CENTER", 
+      "href": "/en/investor-registration" },
+    { 
+      "label": "ENTREPRENEUR CENTER", 
+      "href": "/en/formEntrepreneurs"
+    },
+    {
+      "label": "MENTORSHIP CENTER",
+      "href": "/en/join-as-mentor"
+    },
+    { 
+      "label": "BUSINESS PARTNERS", 
+      "href": "/en/partner-membership"
+    },
+    { 
+      "label": "STARTUPS VALIDATION", 
+      "href": "/en/startups-form" 
+    },
+    { 
+      "label": "WORK WITH US", 
+      "href": "/en/job-form" 
+    }
   ]
 }

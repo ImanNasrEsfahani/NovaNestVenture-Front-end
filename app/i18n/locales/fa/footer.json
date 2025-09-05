@@ -22,6 +22,10 @@
         "text": "ارزیابی استارت آپ",
         "link": "/startups-form"
       },
+      "entrepreneur": {
+        "text": "ثبت نام کارآفرینان",
+        "link": "/formEntrepreneurs"
+      },
       "investor": {
         "text": "مرکز سرمایه گذاری",
         "link": "/investor-registration"
