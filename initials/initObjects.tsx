@@ -1,15 +1,16 @@
 import {
   HandicraftForm as HandicraftFormDataType,
   StartupsFormData,
-  WorkWithUSFormData
+  WorkWithUSFormData,
+  PartnerMembershipFormData,
+  JobFormData,
+  InvestorRegistrationFormData,
+  MentorRegistrationFormData,
+  Entrepreuneur,
+  ContactUSFormData,
+  FormData,
+  LandaGeneFormData
 } from '../types/global';
-import { PartnerMembershipFormData } from '../types/global';
-import { JobFormData } from '../types/global';
-import { InvestorRegistrationFormData } from '../types/global';
-import { Entrepreuneur } from '../types/global';
-import { ContactUSFormData } from '../types/global';
-import { FormData } from '@/types/global';
-import { LandaGeneFormData } from '../types/global';
 
 enum Type {
   IDEA = 'IDEA',
@@ -92,6 +93,17 @@ const initialInvestorRegistrationFormData: InvestorRegistrationFormData = {
   investmentCeiling: ''
 };
 
+const initialMentorRegistrationFormData: MentorRegistrationFormData = {
+  firstName: '',
+  lastName: '',
+  birthDate: new Date(),
+  email: '',
+  countryOfResidence: '',
+  provinceOfResidence: '',
+  preferredAreas: '',
+  howDidYouKnowUs: '',
+};
+
 const initialWorkWithUSFormData: WorkWithUSFormData = {
   firstName: '',
   lastName: '',
@@ -145,6 +157,7 @@ export {
   initialPartnerMembershipFormData,
   initialJobFormData,
   initialInvestorRegistrationFormData,
+  initialMentorRegistrationFormData,
   initialFormData,
   ContactFormData,
   RegisterationFormData,

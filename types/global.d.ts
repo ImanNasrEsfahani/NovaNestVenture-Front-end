@@ -55,6 +55,18 @@ interface InvestorRegistrationFormData {
   howDidYouKnowUs: string;
 }
 
+// Define an interface for mentor registration form data
+interface MentorRegistrationFormData {
+  firstName: string;
+  lastName: string;
+  birthDate: Date;
+  email: string;
+  countryOfResidence: string;
+  provinceOfResidence: string;
+  preferredAreas: string;
+  howDidYouKnowUs: string;
+}
+
 interface WorkWithUSFormData {
   firstName: string;
   lastName: string;
@@ -375,6 +387,7 @@ export {
   StartupsFormData,
   PartnerMembershipFormData,
   InvestorRegistrationFormData,
+  MentorRegistrationFormData,
   JobFormData,
   Entrepreuneur,
   LoginFormData,
