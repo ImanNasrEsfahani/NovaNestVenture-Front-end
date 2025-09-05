@@ -4,7 +4,7 @@
 
   "firstName": "First Name *",
   "firstNameRequired": "First Name is Required.",
-  "firstNamePlaceholder": "Yuor Name *",
+  "firstNamePlaceholder": "Your Name *",
 
   "lastName": "Last Name *",
   "lastNameRequired": "Last Name is Required.",
@@ -18,7 +18,7 @@
   "phoneNumber": "Phone Number *",
   "phoneNumberRequired": "Phone Number is Required.",
   "phoneNumberErrorMessage": "Enter a Valid Phone Number",
-  "phoneNumberPlaceholder": "Yuor Number *",
+  "phoneNumberPlaceholder": "Your Number *",
 
   "jobPosition": "Type of Collaboration *",
   "jobPositionRequired": "Type of Collaboration is Required",
