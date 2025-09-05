@@ -22,7 +22,7 @@ export default function HomeNovaNestAcademy() {
           <ButtonRefactor
             text={t('visit')}
             type="link"
-            href={`${process.env.MAIN_APP_URL}/academy`}
+            href={`${process.env.NEXT_PUBLIC_BASE_URL}/academy`}
             bgColor="black"
           />
         </div>

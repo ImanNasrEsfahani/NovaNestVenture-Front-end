@@ -10,8 +10,8 @@ import PropertyDropDown from './PropertyDropDown'
 import TargetMarketDropDown from './TargetMarketDropDown'
 import BussinessModelDropDown from './BussinessModelDropDown'
 import SolutionLevel from './SolutionLevel'
-import { useLang } from './../../stores/langStore'
-import { getServerTranslation } from './../../app/i18n/client'
+import { useLang } from '../../stores/langStore'
+import { getServerTranslation } from '../../app/i18n/client'
 
 type Props = {
     handleFileCounterChange: (name: string) => void

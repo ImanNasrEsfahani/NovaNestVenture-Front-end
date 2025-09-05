@@ -198,7 +198,7 @@ const cards: CardsList[] = [
     text: 'After completing the mentioned stages, the NovaNest Acceleration Center comes into action. This center has been established with the aim of accelerating your startup. The purpose of founding this center is to undertake all necessary actions for the growth and acceleration of your business until reaching ultimate success. One of the initial steps of the NovaNest Acceleration Center is analyzing and checking competitors. One of our initiatives at NovaNest Venture is creating a co-working space for both internal and external startups. Our co-working space is designed to foster teamwork, allowing startups to collaborate directly with existing startups and also hold brainstorming sessions together for projects.',
     image: '/static/images/About/card2.png',
     reverse: false,
-    link: '/StartupsForm'
+    link: '/startups-form'
   },
   {
     title: 'Academy',

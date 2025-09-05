@@ -44,7 +44,7 @@ export default function Hero({
           // <Button
           //   text={t('lng') === "en" ? "Register Now" : "همین الان ثبت نام کنید"}
           //   size="notVisit"
-          //   goto="/StartupsForm"
+          //   goto="/startups-form"
           //   bgColor="Primary"
           //   lang={lang}
           // />

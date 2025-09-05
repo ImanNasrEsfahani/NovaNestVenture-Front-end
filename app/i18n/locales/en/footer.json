@@ -20,7 +20,7 @@
     "text": {
       "startUp": {
         "text": "Startup validation",
-        "link": "/StartupsForm"
+        "link": "/startups-form"
       },
       "investor": {
         "text": "Investor Center",

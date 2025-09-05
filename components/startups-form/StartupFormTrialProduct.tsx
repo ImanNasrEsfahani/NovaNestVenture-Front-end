@@ -4,7 +4,7 @@ import YesRadioButton from '../common/YesRadioButton';
 import StartupFormProblem from './StartupFormProblems';
 import StartupFormSolutions from './StartupFormSolutions';
 import StartupFormBusinessModel from './StartupFormBusinessModel';
-import { handleRadioChange } from '../..//utils/functions';
+import { handleRadioChange } from '../../utils/functions';
 import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 

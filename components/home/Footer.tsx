@@ -16,6 +16,8 @@ interface FooterText {
   [key: string]: FooterItem;
 }
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function Footer(
   { lang }: { lang: string }
 ) {
@@ -55,25 +57,25 @@ export default function Footer(
             {t('explore', { returnObjects: true }).title}
           </div>
           <Link
-            href={'/'}
+            href={`${base}`}
             className="pt-1 hover:text-primary"
           >
             {t('explore', { returnObjects: true }).text.home}
           </Link>
           <Link
-            href={'/about'}
+            href={`${base}'/about'`}
             className="pt-1 hover:text-primary"
           >
             {t('explore', { returnObjects: true }).text.about}
           </Link>
           <Link
-            href={'/contact'}
+            href={`${base}'/contact'`}
             className="pt-1 hover:text-primary"
           >
             {t('explore', { returnObjects: true }).text.contact}
           </Link>
           <Link
-            href={'/our-team'}
+            href={`${base}'/our-team'`}
             className="pt-1 hover:text-primary"
           >
             {t('explore', { returnObjects: true }).text.ourTeam}
@@ -84,7 +86,7 @@ export default function Footer(
           {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
             <Link
               key={key}
-              href={value.link}
+              href={`${base}${value.link}`}
               className="pt-1 hover:text-primary"
             >
               {value.text}
@@ -111,7 +113,7 @@ export default function Footer(
       </div>
       <div className="max-w-[1600px] p-4 border-t border-tableHeader text-center text-tableHeader">
         © Copyright {GetYear()} by{' '}
-        <Link href={'/'} className="text-tableHeader">
+        <Link href={`${base}`} className="text-tableHeader">
           NovaNestVenture
         </Link>
       </div>

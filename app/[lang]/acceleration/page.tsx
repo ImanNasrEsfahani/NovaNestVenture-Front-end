@@ -107,13 +107,13 @@ export default async function Page({
           {t('text')}
         </div>
         <Button
-          goto="/StartupsForm"
+          goto="/startups-form"
           size="visit"
           text={t('Register')}
           bgColor="Primary"
           lang={lang}
         /> */}
-      {/* <ButtonRefactor text={t('Register')} href="/StartupsForm" /> */}
+      {/* <ButtonRefactor text={t('Register')} href="/startups-form" /> */}
     </div>
   );
 }

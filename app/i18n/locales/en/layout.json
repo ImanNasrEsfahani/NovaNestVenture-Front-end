@@ -21,7 +21,7 @@
     { "label": "INVESTOR CENTER", "href": "/en/investor-registration" },
     { "label": "ENTREPRENEUR CENTER", "href": "/en/formEntrepreneurs" },
     { "label": "BUSINESS PARTNERS", "href": "/en/partner-membership" },
-    { "label": "STARTUPS VALIDATION", "href": "/en/StartupsForm" },
+    { "label": "STARTUPS VALIDATION", "href": "/en/startups-form" },
     { "label": "WORK WITH US", "href": "/en/job-form" }
   ]
 }
