@@ -16,7 +16,7 @@ export default async function JoinAsMentorPage({
   params: { lang: string };
 }) {
 
-  const { t } = await getServerTranslation(lang, "investorForm")
+  const { t } = await getServerTranslation(lang, "MentorForm");
 
   return (
     <div>
