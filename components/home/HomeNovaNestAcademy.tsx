@@ -36,7 +36,7 @@ export default function HomeNovaNestAcademy() {
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
-            src={"/static/images/home/Academy/academy2.webp"}
+            src={"/static/images/home/academy/academy2.webp"}
             alt={"Academy"}
             fill
             sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"

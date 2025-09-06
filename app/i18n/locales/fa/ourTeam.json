@@ -3,14 +3,14 @@
     "defaultRole": "همه",
     "persons": [
         {
-            "image": "/static/images/our-team/Personals/rasoul.webp",
+            "image": "/static/images/our-team/personnel/rasoul.webp",
             "position": "رییس هیئت مدیره",
             "name": "رسول مرادی مهر",
             "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
             "category": "مدیران"
         },
         {
-            "image": "/static/images/our-team/Personals/Mehrnoosh.webp",
+            "image": "/static/images/our-team/personnel/mehrnoosh.webp",
             "position": "مدیر",
             "name": "مهرنوش هیبتی",
             "linkedIn": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
@@ -19,15 +19,6 @@
     ],
     "roles": [
         "همه",
-        "مدیران",
-        "مربیان",
-        "برنامه نویسان",
-        "طراحان",
-        "تولید کنندگان محتوا",
-        "حسابدار",
-        "روابط عمومی",
-        "بازاریاب دیجیتال",
-        "دستیار مدیر",
-        "تحقیق و توسعه"
+        "مدیران"
     ]
 }

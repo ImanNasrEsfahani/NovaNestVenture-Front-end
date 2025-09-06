@@ -3,14 +3,14 @@
     "defaultRole": "All",
     "persons": [
         {
-          "image": "/static/images/our-team/Personals/rasoul.webp",
+          "image": "/static/images/our-team/personnel/rasoul.webp",
           "position": "COTB",
           "name": "Rasoul Moradimehr",
           "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
           "category": "managers"
         },
         {
-          "image": "/static/images/our-team/Personals/Mehrnoosh.webp",
+          "image": "/static/images/our-team/personnel/mehrnoosh.webp",
           "position": "Manager",
           "name": "Mehrnoosh Heibati",
           "linkedIn": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
@@ -19,15 +19,6 @@
     ],
   "roles": [
     "All",
-    "Managers",
-    "Mentors",
-    "Programmers",
-    "Designers",
-    "Content Creators",
-    "Accountant",
-    "Public Relations",
-    "Digital Marketing",
-    "Manager Assistant",
-    "R&D Department"
+    "Managers"
   ]
 }

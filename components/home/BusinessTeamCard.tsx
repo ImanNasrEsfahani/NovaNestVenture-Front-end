@@ -27,7 +27,7 @@ export default function BusinessTeamCard({
         <Image
           loading="lazy"
           className="size-14 border md:h-[104px] md:w-[108px]"
-          src={`/static/images/home/Cooperation-members/${profileImage}`}
+          src={`/static/images/home/cooperation-members/${profileImage}`}
           width={500}
           height={500}
           alt="Avatar"
@@ -49,7 +49,7 @@ export default function BusinessTeamCard({
               <Image
                 loading="lazy"
                 className="size-4"
-                src={'/static/images/76bfd12d298c711fcd5a6fb9f633c967.png'}
+                src={'/static/images/linkedin-logo.png'}
                 alt="Linkedin"
                 width={50}
                 height={50}
@@ -59,7 +59,7 @@ export default function BusinessTeamCard({
               <Image
                 loading="lazy"
                 className="size-4"
-                src={'/static/images/59f5308a62b217b056f54ef59eeb58e2.png'}
+                src={'/static/images/website.png'}
                 alt="Website"
                 width={50}
                 height={50}
@@ -69,7 +69,7 @@ export default function BusinessTeamCard({
               <Image
                 loading="lazy"
                 className="size-4"
-                src={'/static/images/e0058a18e539cf27599b846c81814c35.png'}
+                src={'/static/images/email.png'}
                 alt="Email"
                 width={50}
                 height={50}
@@ -87,7 +87,7 @@ export default function BusinessTeamCard({
             <Image
               loading="lazy"
               className="h-w-7 w-7"
-              src={'/static/images/76bfd12d298c711fcd5a6fb9f633c967.png'}
+              src={'/static/images/linkedin-logo.png'}
               alt="Linkedin"
               width={50}
               height={50}
@@ -97,7 +97,7 @@ export default function BusinessTeamCard({
             <Image
               loading="lazy"
               className="h-w-7 w-7"
-              src={'/static/images/59f5308a62b217b056f54ef59eeb58e2.png'}
+              src={'/static/images/website.png'}
               alt="Website"
               width={50}
               height={50}

@@ -40,7 +40,7 @@ export default function MagazineModernPostCard3() {
             <Image
               loading="lazy"
               className=""
-              src={'/static/images/Magazine/Rectangle 2881.png'}
+              src={'/static/images/magazine/Rectangle 2881.png'}
               alt="NovaNest Venture"
               width={800}
               height={300}

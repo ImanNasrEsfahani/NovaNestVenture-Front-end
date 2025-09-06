@@ -243,10 +243,10 @@ export default function WorkWithUs() {
       <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20 flex flex-col items-center">
         <div className='flex flex-col md:flex-row gap-6'>
           <div className='flex justify-center relative size-[200px] mt-6'>
-            <Image src="/static/images/work-with-us/forough.png" alt="Work with us" layout='fill'className='object-cover' />
+            <Image src="/static/images/work-with-us/forough-logo.png" alt="Work with us" layout='fill'className='object-cover' />
           </div>
           <div className='flex justify-center relative w-[200px] h-[210px]'>
-            <Image src="/static/images/work-with-us/FARA.png" alt="Work with us" layout='fill'className='object-cover' />
+            <Image src="/static/images/work-with-us/farazaman-logo.png" alt="Work with us" layout='fill'className='object-cover' />
           </div>
         </div>
         <div className="py-10">

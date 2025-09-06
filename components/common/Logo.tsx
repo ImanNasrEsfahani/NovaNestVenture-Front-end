@@ -13,8 +13,8 @@ export default function Logo({ route }: { route: 'holding' | 'academy' }) {
             className="size-10 md:h-14 md:w-12"
             src={
               route === 'holding'
-                ? '/static/images/Logo.svg'
-                : '/static/images/Academy.logo.svg'
+                ? '/static/images/nova-nest-venture-logo.svg'
+                : '/static/images/academy/logo.svg'
             }
             alt="Logo"
             width={125}

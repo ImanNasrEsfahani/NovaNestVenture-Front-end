@@ -80,7 +80,7 @@ export default function AerialViewBusinessTeam(
     <div
       style={{
         backgroundImage:
-          "url('/static/images/home/Cooperation-members/Office.webp')",
+          "url('/static/images/home/cooperation-members/Office.webp')",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}

@@ -9,21 +9,21 @@ const cardData2: SportsInterface[] = [
   {
     title: 'Benefits of Spa Treatments',
     image:
-      '/static/images/home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp',
+      '/static/images/home/magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp',
     type: 'Acceleration',
     date: 'apr 27'
   },
   {
     title: 'Fitness Center',
     image:
-      '/static/images/home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp',
+      '/static/images/home/magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp',
     type: 'Investment',
     date: 'apr 27'
   },
   {
     title: 'Benefits of Spa Treatments',
     image:
-      '/static/images/home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp',
+      '/static/images/home/magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp',
     type: 'Investment',
     date: 'apr 27'
   }
@@ -100,88 +100,88 @@ const partners3: LogosInterface[] = [
 
 const images: ImagesInterface[] = [
   {
-    src: '/static/images/Academy/gallery/all/1.jpg'
+    src: '/static/images/academy/gallery/all/1.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/2.jpg'
+    src: '/static/images/academy/gallery/all/2.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/3.jpg'
+    src: '/static/images/academy/gallery/all/3.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/4.jpg'
+    src: '/static/images/academy/gallery/all/4.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/5.jpg'
+    src: '/static/images/academy/gallery/all/5.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/6.jpg'
+    src: '/static/images/academy/gallery/all/6.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/7.jpg'
+    src: '/static/images/academy/gallery/all/7.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/8.jpg'
+    src: '/static/images/academy/gallery/all/8.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/9.jpg'
+    src: '/static/images/academy/gallery/all/9.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/10.jpg'
+    src: '/static/images/academy/gallery/all/10.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/11.jpg'
+    src: '/static/images/academy/gallery/all/11.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/12.jpg'
+    src: '/static/images/academy/gallery/all/12.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/13.png'
+    src: '/static/images/academy/gallery/all/13.png'
   },
   {
-    src: '/static/images/Academy/gallery/all/14.jpg'
+    src: '/static/images/academy/gallery/all/14.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/15.jpg'
+    src: '/static/images/academy/gallery/all/15.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/16.jpg'
+    src: '/static/images/academy/gallery/all/16.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/17.jpg'
+    src: '/static/images/academy/gallery/all/17.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/18.jpg'
+    src: '/static/images/academy/gallery/all/18.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/19.jpg'
+    src: '/static/images/academy/gallery/all/19.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/20.jpg'
+    src: '/static/images/academy/gallery/all/20.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/21.jpg'
+    src: '/static/images/academy/gallery/all/21.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/22.jpg'
+    src: '/static/images/academy/gallery/all/22.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/23.jpg'
+    src: '/static/images/academy/gallery/all/23.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/24.jpg'
+    src: '/static/images/academy/gallery/all/24.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/25.jpg'
+    src: '/static/images/academy/gallery/all/25.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/26.png'
+    src: '/static/images/academy/gallery/all/26.png'
   },
   {
-    src: '/static/images/Academy/gallery/all/27.jpg'
+    src: '/static/images/academy/gallery/all/27.jpg'
   },
   {
-    src: '/static/images/Academy/gallery/all/28.jpg'
+    src: '/static/images/academy/gallery/all/28.jpg'
   }
 ];
 

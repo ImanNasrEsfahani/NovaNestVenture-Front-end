@@ -1,73 +1,73 @@
 {
   "cardData1":[
     {
-      "titleEN": "Platform based on AI and VR",
-      "image": "/static/images/home/Priority/vr-glasses 2.png"
-    },
-    {
-      "title": "Agriculture",
-      "image": "/static/images/home/Priority/system 2.png"
-    },
-    {
       "title": "Renewable Energy",
-      "image": "/static/images/home/Priority/online-shop 1.png"
+      "image": "/static/images/home/priority/renewable-energy.png"
+    },
+    {
+      "title": "Education Systems",
+      "image": "/static/images/home/priority/education-systems.png"
+    },
+    {
+      "title": "Artificial Intelligence (AI)",
+      "image": "/static/images/home/priority/artificial-intelligence.png"
     },
     {
       "title": "The Environment",
-      "image": "/static/images/home/Priority/planet-earth 1.png"
+      "image": "/static/images/home/priority/the-environment.png"
     },
     {
       "title": "Entertainment",
-      "image": "/static/images/home/Priority/ai 2.png"
+      "image": "/static/images/home/priority/entertainment.png"
     },
     {
       "title": "Biomedical Engineering",
-      "image": "/static/images/home/Priority/man 2.png"
+      "image": "/static/images/home/priority/biomedical-engineering.png"
     },
     {
       "title": "Services for Teenagers",
-      "image": "/static/images/home/Priority/process 2.png"
+      "image": "/static/images/home/priority/services-for-teenagers.png"
     },
     {
       "title": "Tourism Services",
-      "image": "/static/images/home/Priority/world 2.png"
+      "image": "/static/images/home/priority/tourism-services.png"
     }
   ],
   "cardData2": [
     {
-      "image": "/static/images/home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
+      "image": "/static/images/home/magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
       "title": "Benefits of Spa Treatments",
       "type": "Acceleration",
       "date": "apr 27"
     },
     {
       "title": "Fitness Center",
-      "image": "/static/images/home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
+      "image": "/static/images/home/magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
       "type": "Investment",
       "date": "apr 27"
     },
     {
       "title": "Benefits of Spa Treatments",
-      "image": "/static/images/home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
+      "image": "/static/images/home/magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
       "type": "Investment",
       "date": "apr 27"
     }
   ],
   "LatestStartups": [
     {
-      "image": "/static/images/home/Startups/trip.png",
+      "image": "/static/images/home/startups/landa-trip.png",
       "title": "LANDA TRIP",
       "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
       "link": "https://landatrip.com/"
     },
     {
-    "image": "/static/images/home/Startups/diaco.png",
+    "image": "/static/images/home/startups/diaco-center.png",
     "title": "DIACO",
     "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
     "link": "https://irdiaco.ca/"
     },
     {
-    "image": "/static/images/home/Startups/vision-raft.png",
+    "image": "/static/images/home/startups/vision-raft.png",
     "title": "VISION RAFT",
     "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
     "link": "https://invigorated-drop-231359.framer.app"
@@ -125,7 +125,7 @@
   ],
   "cardsData": [
     {
-      "image": "/static/images/our-team/Personals/a1.webp",
+      "image": "/static/images/our-team/personnel/a1.webp",
       "name": "Rasoul Moradimehr",
       "position": "Founder and CEO",
       "links": {
@@ -137,7 +137,7 @@
       }
     },
     {
-      "image": "/static/images/our-team/Personals/a3.webp",
+      "image": "/static/images/our-team/personnel/a3.webp",
       "name": "Mehrnoosh Heibati",
       "position": "Chief Operating Officer",
       "links": {

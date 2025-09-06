@@ -32,8 +32,8 @@ export default function AboutUsProfileCard({
         <Link href={links.whatsapp}>
           <Image
             loading="lazy"
-            alt="Icon 1"
-            src="/static/images/03bc78eaab3dcbbdddec7554e9d34351.png"
+            alt="instagram"
+            src="/static/images/instagram-logo.png"
             width={25}
             height={25}
           />
@@ -41,8 +41,8 @@ export default function AboutUsProfileCard({
         <Link href={links.linkedin}>
           <Image
             loading="lazy"
-            alt="Icon 2"
-            src="/static/images/6fd49ad10f9b1a9ab4224d4d900d8355.png"
+            alt="twitter"
+            src="/static/images/twitter-logo.png"
             width={25}
             height={25}
           />
@@ -50,8 +50,8 @@ export default function AboutUsProfileCard({
         <Link href={links.email}>
           <Image
             loading="lazy"
-            alt="Icon 3"
-            src="/static/images/aeb307f84efb8c124b331799a6f734e6.png"
+            alt="telegram"
+            src="/static/images/telegram-logo.png"
             width={25}
             height={25}
           />
@@ -59,8 +59,8 @@ export default function AboutUsProfileCard({
         <Link href={links.website}>
           <Image
             loading="lazy"
-            alt="Icon 4"
-            src="/static/images/c897906edf05703723098f4a66032d9b.png"
+            alt="facebook"
+            src="/static/images/face-book-logo.png"
             width={25}
             height={25}
           />

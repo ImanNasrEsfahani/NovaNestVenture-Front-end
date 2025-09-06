@@ -1,73 +1,73 @@
 {
   "cardData1": [
     {
-      "titleEN": "هوش مصنوعی",
-      "image": "/static/images/home/Priority/vr-glasses 2.png"
-    },
-    {
-      "title": "واقعیت مجازی",
-      "image": "/static/images/home/Priority/system 2.png"
-    },
-    {
       "title": "انرژی تجدیدپذیر",
-      "image": "/static/images/home/Priority/online-shop 1.png"
+      "image": "/static/images/home/priority/renewable-energy.png"
+    },
+    {
+      "title": "آموزش",
+      "image": "/static/images/home/priority/education-systems.png"
+    },
+    {
+      "titleEN": "هوش مصنوعی",
+      "image": "/static/images/home/priority/artificial-intelligence.png"
     },
     {
       "title": "محیط زیست",
-      "image": "/static/images/home/Priority/planet-earth 1.png"
+      "image": "/static/images/home/priority/the-environment.png"
     },
     {
       "title": "سرگرمی",
-      "image": "/static/images/home/Priority/ai 2.png"
+      "image": "/static/images/home/priority/entertainment.png"
     },
     {
       "title": "مهندسی پزشکی",
-      "image": "/static/images/home/Priority/man 2.png"
+      "image": "/static/images/home/priority/biomedical-engineering.png"
     },
     {
       "title": "خدمات برای نوجوانان",
-      "image": "/static/images/home/Priority/process 2.png"
+      "image": "/static/images/home/priority/services-for-teenagers.png"
     },
     {
       "title": "خدمات گردشگری",
-      "image": "/static/images/home/Priority/world 2.png"
+      "image": "/static/images/home/priority/tourism-services.png"
     }
   ],
   "cardData2": [
     {
-      "image": "/static/images/home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
+      "image": "/static/images/home/magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
       "title": "فواید درمان‌های اسپا",
       "type": "شتابدهنده",
       "date": "آوریل ۲۷"
     },
     {
       "title": "مرکز تناسب اندام",
-      "image": "/static/images/home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
+      "image": "/static/images/home/magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
       "type": "سرمایه‌گذاری",
       "date": "آوریل ۲۷"
     },
     {
       "title": "فواید درمان‌های اسپا",
-      "image": "/static/images/home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
+      "image": "/static/images/home/magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
       "type": "سرمایه‌گذاری",
       "date": "آوریل ۲۷"
     }
   ],
   "LatestStartups": [
     {
-      "image": "/static/images/home/Startups/trip.png",
+      "image": "/static/images/home/startups/landa-trip.png",
       "title": "سفر لاندا",
       "description": " لاندا تریپ استارت‌آپی نوآورانه است که با استفاده از یک تیم متخصص و هوش مصنوعی پلتفرمی را جهت شرکت در دوره‌های آموزشی مختلف در سراسر جهان برایتان مهیا می‌کند.",
       "link": "https://landatrip.com/"
     },
     {
-      "image": "/static/images/home/Startups/diaco.png",
+      "image": "/static/images/home/startups/diaco-center.png",
       "title": "دیاکو سنتر",
       "description": "دیاکو سنتر پلتفرمی برپایه هوش مصنوعی است که نقش واسط میان جویندگان و ارائه‌دهندگان فناوری را ایفا کرده و با ایجاد پلی میان آنها، نیازهای موجود در صنعت را رفع می‌کند.",
       "link": "https://irdiaco.ca/"
     },
     {
-      "image": "/static/images/home/Startups/vision-raft.png",
+      "image": "/static/images/home/startups/vision-raft.png",
       "title": "ویژن رفت",
       "description": "Vision Raft پلتفرمی است بر پایه واقعیت مجازی (VR) با تمرکز روی آموزش و سرگرمی نوجوانان جهت افزایش کیفیت یادگیری آنها.",
       "link": "https://invigorated-drop-231359.framer.app"
@@ -125,7 +125,7 @@
   ],
   "cardData": [
     {
-      "image": "/static/images/our-team/Personals/a1.webp",
+      "image": "/static/images/our-team/personnel/a1.webp",
       "name": "رسول مرادی مهر",
       "position": " موسس و مدیر عامل",
       "links": {
@@ -137,7 +137,7 @@
       }
     },
     {
-      "image": "/static/images/our-team/Personals/a3.webp",
+      "image": "/static/images/our-team/personnel/a3.webp",
       "name": "مهرنوش حبیبی",
       "position": "مدیر ارشد اجرایی",
       "links": {

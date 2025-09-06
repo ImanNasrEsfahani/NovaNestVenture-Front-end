@@ -21,14 +21,14 @@ export default async function TeamPage({
     <div>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/our-team/Header.webp"
+          image="/static/images/our-team/header.webp"
           title={t('title')}
           lang={lang}
         />
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/our-team/Header-mobile.webp"
+          image="/static/images/our-team/header-mobile.webp"
           title={t('title')}
           lang={lang}
         />
