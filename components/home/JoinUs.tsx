@@ -29,7 +29,7 @@ export default function ContactUs() {
           <div className="spin-image">
             <Image
               className=""
-              src="/static/images/Home/universities/1.png"
+              src="/static/images/home/universities/1.png"
               alt="t"
               width={100}
               height={100}
@@ -38,7 +38,7 @@ export default function ContactUs() {
           <div className="spin-image">
             <Image
               className=""
-              src="/static/images/Home/universities/22.png"
+              src="/static/images/home/universities/22.png"
               alt="t"
               width={100}
               height={100}
@@ -47,7 +47,7 @@ export default function ContactUs() {
           <div className="spin-image">
             <Image
               className=""
-              src="/static/images/Home/universities/3.png"
+              src="/static/images/home/universities/3.png"
               alt="t"
               width={100}
               height={100}
@@ -56,7 +56,7 @@ export default function ContactUs() {
           <div className="spin-image">
             <Image
               className=""
-              src="/static/images/Home/universities/4.png"
+              src="/static/images/home/universities/4.png"
               alt="t"
               width={100}
               height={100}
@@ -67,7 +67,7 @@ export default function ContactUs() {
           <div className="spin-image-top">
             <Image
               className=""
-              src="/static/images/Home/universities/5.png"
+              src="/static/images/home/universities/5.png"
               alt="t"
               width={100}
               height={100}
@@ -76,7 +76,7 @@ export default function ContactUs() {
           <div className="spin-image-top">
             <Image
               className=""
-              src="/static/images/Home/universities/6.png"
+              src="/static/images/home/universities/6.png"
               alt="t"
               width={100}
               height={100}
@@ -85,7 +85,7 @@ export default function ContactUs() {
           <div className="spin-image-top">
             <Image
               className=""
-              src="/static/images/Home/universities/77.png"
+              src="/static/images/home/universities/77.png"
               alt="t"
               width={100}
               height={100}
@@ -94,7 +94,7 @@ export default function ContactUs() {
           <div className="spin-image-top">
             <Image
               className=""
-              src="/static/images/Home/universities/88.png"
+              src="/static/images/home/universities/88.png"
               alt="t"
               width={100}
               height={100}
@@ -105,7 +105,7 @@ export default function ContactUs() {
           <div className="spin-image">
             <Image
               className=""
-              src="/static/images/Home/universities/9.png"
+              src="/static/images/home/universities/9.png"
               alt="t"
               width={100}
               height={100}

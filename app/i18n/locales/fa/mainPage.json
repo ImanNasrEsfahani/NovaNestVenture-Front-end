@@ -8,20 +8,20 @@
         "id": "startup-suv",
         "title": "Startup – SUV",
         "description": "برنامه استارتاپ ویزای کانادا فرصتی منحصربه‌فرد برای کارآفرینان خلاق از سراسر دنیاست تا ایده‌های نوآورانه خود را در یکی از پیشرفته‌ترین بازارهای جهانی راه‌اندازی کنند. در کنار شما خواهیم بود تا از دریافت حمایت‌های لازم تا راه‌اندازی و گسترش کسب‌وکار در کانادا همراهی‌تان کنیم؛ مسیری که در نهایت به دریافت اقامت دائم کانادا منتهی خواهد شد.",
-        "image": "/static/images/Home/Features/startup-visa.jpg"
+        "image": "/static/images/home/Features/startup-visa.jpg"
       },
       {
         "id": "entrepreneur",
         "title": "Entrepreneur",
         "description": "برنامه‌های نامزدی استانی (PNP) در کانادا مسیر مناسبی برای کارآفرینان جهت سرمایه‌گذاری و راه‌اندازی کسب‌وکار هستند. هر استان شرایط خاص خود را دارد و ما با تخصص خود، در انتخاب برنامه مناسب، آماده‌سازی مدارک و طی مراحل، شما را همراهی می‌کنیم تا به کسب‌وکار موفق و اقامت دائم برسید.",
-        "image": "/static/images/Home/Features/entrepreneur.jpg"
+        "image": "/static/images/home/Features/entrepreneur.jpg"
       }
     ]
   },
   "heroSlides": [
     {
       "image": {
-        "src": "/static/images/Home/Hero/image1.jpg",
+        "src": "/static/images/home/Hero/image1.jpg",
         "alt": "اسلاید ۱"
       },
       "content": [
@@ -37,7 +37,7 @@
     },
     {
       "image": {
-        "src": "/static/images/Home/Hero/image2.jpg",
+        "src": "/static/images/home/Hero/image2.jpg",
         "alt": "اسلاید ۲"
       },
       "content": [
@@ -53,7 +53,7 @@
     },
     {
       "image": {
-        "src": "/static/images/Home/Hero/image3.jpg",
+        "src": "/static/images/home/Hero/image3.jpg",
         "alt": "اسلاید ۳"
       },
       "content": [
@@ -108,11 +108,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home/2.webp",
+          "src": "/static/images/home/2.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home/1.webp",
+          "src": "/static/images/home/1.webp",
           "alt": ""
         }
       ],
@@ -129,11 +129,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home/5.webp",
+          "src": "/static/images/home/5.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home/6.webp",
+          "src": "/static/images/home/6.webp",
           "alt": ""
         }
       ],
@@ -228,36 +228,36 @@
   "cardData1": [
     {
       "title": "گردشگری",
-      "image": "/static/images/Home/Priority/tourism-services.png"
+      "image": "/static/images/home/Priority/tourism-services.png"
     },
     {
       "title": "آموزش",
-      "image": "/static/images/Home/Priority/education.png"
+      "image": "/static/images/home/Priority/education.png"
     },
     {
       "title": "هوش مصنوعی",
-      "image": "/static/images/Home/Priority/ai.png"
+      "image": "/static/images/home/Priority/ai.png"
     },
     {
       "title": "کودک و نوجوان",
-      "image": "/static/images/Home/Priority/services-for-teenagers.png"
+      "image": "/static/images/home/Priority/services-for-teenagers.png"
     }
   ],
   "LatestStartupsList": [
     {
-      "image": "/static/images/Home/Startups/trip.png",
+      "image": "/static/images/home/Startups/trip.png",
       "title": "لاندا تریپ",
       "description": "لاندا تریپ استارت‌آپی نوآورانه است که با استفاده از یک تیم متخصص و هوش مصنوعی پلتفرمی را جهت شرکت در دوره‌های آموزشی مختلف در سراسر جهان برایتان مهیا می‌کند.",
       "link": "https://landatrip.ca"
     },
     {
-      "image": "/static/images/Home/Startups/diaco.png",
+      "image": "/static/images/home/Startups/diaco.png",
       "title": "دیاکو سنتر",
       "description": "دیاکو سنتر پلتفرمی برپایه هوش مصنوعی است که نقش واسط میان جویندگان و ارائه‌دهندگان فناوری را ایفا کرده و با ایجاد پلی میان آنها، نیازهای موجود در صنعت را رفع می‌کند.",
       "link": "https://diacocenter.com"
     },
     {
-      "image": "/static/images/Home/Startups/vision-raft.png",
+      "image": "/static/images/home/Startups/vision-raft.png",
       "title": "ویژن رفت",
       "description": "Vision Raft پلتفرمی است بر پایه واقعیت مجازی (VR) با تمرکز روی آموزش و سرگرمی نوجوانان جهت افزایش کیفیت یادگیری آنها.",
       "link": "https://invigorated-drop-231359.framer.app"
@@ -269,7 +269,7 @@
     "title": "استارت آپ های پیش رو",
     "cards": [
       {
-        "image": "/static/images/Home/upcomming-Sartup/handicraft.png",
+        "image": "/static/images/home/upcomming-Sartup/handicraft.png",
         "subTitle": "هندی کرفت",
         "text": "لاندا کرفت با استفاده از هوش مصنوعی و تکنولوژی‌های واقعیت افزوده و NFT، در کنار بهره‌گیری از متخصصان باتجربه، قصد دارد یک پل ارتباطی امن برای خریداران و دوست‌داران صنایع دستی ایجاد کند. با پیوستن به تیم این استارت‌آپ درکنار بهره‌مندی از مزایای آن، ۱۰ درصد لانداکرفت را نیز دریافت خواهید کرد.",
         "goto": "https://craft.landaholding.com/",
@@ -277,7 +277,7 @@
         "gene": false
       },
       {
-        "image": "/static/images/Home/upcomming-Sartup/Autilab-logo.png",
+        "image": "/static/images/home/upcomming-Sartup/Autilab-logo.png",
         "subTitle": "اوتی‌لب",
         "text": "اوتیسم یک جنبش هنری است که زیبایی طبیعت و فرم انسانی را از طریق اشکال ارگانیک، رنگ‌های زمینی و خطوط روان به نمایش می‌گذارد. این جنبش که در قرن بیست و یکم پدید آمده، احساس آرامش و ارتباط را القا می‌کند و بینندگان را دعوت می‌کند تا درباره پیوندشان با محیط زیست تأمل کنند.",
         "goto": "#",
@@ -285,7 +285,7 @@
         "gene": true
       },
       {
-        "image": "/static/images/Home/upcomming-Sartup/2.png",
+        "image": "/static/images/home/upcomming-Sartup/2.png",
         "subTitle": "پریونتی ژن",
         "text": "لاندا ژن به کمک برجسته‌ترین متخصصان حوزه ژنتیک و البته هوش مصنوعی با انجام آزمایش ژنتیک به بررسی دقیق رفتار ژن‌ها و ارائه برنامه سلامتی شخصی می‌پردازد. هدف لاندا ژن پیشگیری از بیماری‌های احتمالی مثل سرطان در افراد جامعه است. با پیوستن به تیم این استارت‌آپ درکنار بهره‌مندی از مزایای آن، ۱۰ درصد سهام لاندا ژان را نیز دریافت خواهید کرد.",
         "goto": "http://preventigene.com/",

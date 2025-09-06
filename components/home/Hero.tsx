@@ -12,11 +12,11 @@ export default function Hero({
   return (
     <div
       style={{
-        backgroundImage: `url('/static/images/Home/Hero/${backgroundImage}')`,
+        backgroundImage: `url('/static/images/home/Hero/${backgroundImage}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
-      data-bgset={`/static/images/Home/Hero/${backgroundImage} [(max-width: 640px)] | /static/images/Home/Hero/${backgroundImage}`}
+      data-bgset={`/static/images/home/Hero/${backgroundImage} [(max-width: 640px)] | /static/images/home/Hero/${backgroundImage}`}
       className="relative h-[calc(100vh)] overflow-hidden"
     >
       <div

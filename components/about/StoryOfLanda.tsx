@@ -66,7 +66,7 @@ export default function StoryOfLanda() {
             <div className='h-[200px]'>            
               <Image
                 className="h-[1200px] hidden md:block w-full object-cover rounded-xl"
-                src="/static/images/About/story/aboutus.webp"
+                src="/static/images/about/story/aboutus.webp"
                 alt="story of NovaNest Venture"
                 layout="fill"
                 // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -93,7 +93,7 @@ export default function StoryOfLanda() {
         <div className='relative hidden md:block h-[310px] w-screen md:h-[310px] md:w-[48%]'>
           <Image
             className="hidden md:block object-cover w-full rounded-xl"
-            src="/static/images/About/story/1.webp"
+            src="/static/images/about/story/1.webp"
             alt="story of NovaNest Venture"
             layout="fill"
           />
@@ -114,7 +114,7 @@ export default function StoryOfLanda() {
    <div className="relative h-[310px] w-screen md:h-[319px] md:w-[661px]"> 
             <Image
               className="object-cover w-full rounded-xl"
-              src="/static/images/About/story/1.png"
+              src="/static/images/about/story/1.png"
               alt="story of NovaNest Venture"
               layout="fill"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -23,7 +23,7 @@ export default async function ContactUsPage({
         {/* Background Image with Blur and Overlay */}
         <div
           style={{
-            backgroundImage: `url(/static/images/Contact/contactbanner.webp)`,
+            backgroundImage: `url(/static/images/contact/contactbanner.webp)`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'
           }}
@@ -32,7 +32,7 @@ export default async function ContactUsPage({
 
         <div
           style={{
-            backgroundImage: `url(/static/images/Contact/mobile-baner.webp)`,
+            backgroundImage: `url(/static/images/contact/mobile-baner.webp)`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'
           }}

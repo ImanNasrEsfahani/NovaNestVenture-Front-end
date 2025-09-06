@@ -16,7 +16,7 @@ export default function Gateway() {
       </div>
       <Image
         className="w-full md:w-[30%] object-cover"
-        src={'/static/images/Startup/gateway.webp'}
+        src={'/static/images/startup/gateway.webp'}
         alt="team image"
         width={300}
         height={500}

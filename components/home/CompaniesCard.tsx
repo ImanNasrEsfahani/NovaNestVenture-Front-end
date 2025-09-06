@@ -16,7 +16,7 @@ export default function CompaniesCard({
         <div className="relative size-[120px] md:size-[138px]">
           <Image
             className=" object-contain"
-            src={`/static/images/About/companies/${logo}`}
+            src={`/static/images/about/companies/${logo}`}
             alt="NovaNest Venture Companies"
             layout="fill"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

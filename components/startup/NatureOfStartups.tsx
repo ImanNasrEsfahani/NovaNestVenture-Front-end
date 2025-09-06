@@ -12,7 +12,7 @@ export default function NatureOfStartups() {
     <section className='flex justify-between flex-col md:flex-row gap-10 items-stretch my-20 md:my-28'>
       <Image
           className='w-full md:w-[30%] object-cover'
-          src={'/static/images/Startup/nature-of-startups.webp'}
+          src={'/static/images/startup/nature-of-startups.webp'}
           alt='team image'
           width={300}
           height={300}

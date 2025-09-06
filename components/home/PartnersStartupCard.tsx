@@ -14,7 +14,7 @@ export default function PartnersStartupCard({
       <div className='size-20 relative mx-auto'>
         <Image
           className="object-contain"
-          src={`/static/images/Home/contact/${logo}.png`}
+          src={`/static/images/home/contact/${logo}.png`}
           alt="r"
           layout='fill'
           sizes='50vw, 33vw'

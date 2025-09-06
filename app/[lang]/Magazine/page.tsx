@@ -25,7 +25,7 @@ export default async function MagazinePage({
   return (
     <div className="relative">
       <Banner
-        image="/static/images/Home/Magazine/magazine-hero.webp"
+        image="/static/images/home/Magazine/magazine-hero.webp"
         title={`${lang == 'en' ? "MAGAZINE" : "مجله" }`}
         lang={lang}
       />

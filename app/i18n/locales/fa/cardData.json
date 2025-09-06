@@ -2,72 +2,72 @@
   "cardData1": [
     {
       "titleEN": "هوش مصنوعی",
-      "image": "/static/images/Home/Priority/vr-glasses 2.png"
+      "image": "/static/images/home/Priority/vr-glasses 2.png"
     },
     {
       "title": "واقعیت مجازی",
-      "image": "/static/images/Home/Priority/system 2.png"
+      "image": "/static/images/home/Priority/system 2.png"
     },
     {
       "title": "انرژی تجدیدپذیر",
-      "image": "/static/images/Home/Priority/online-shop 1.png"
+      "image": "/static/images/home/Priority/online-shop 1.png"
     },
     {
       "title": "محیط زیست",
-      "image": "/static/images/Home/Priority/planet-earth 1.png"
+      "image": "/static/images/home/Priority/planet-earth 1.png"
     },
     {
       "title": "سرگرمی",
-      "image": "/static/images/Home/Priority/ai 2.png"
+      "image": "/static/images/home/Priority/ai 2.png"
     },
     {
       "title": "مهندسی پزشکی",
-      "image": "/static/images/Home/Priority/man 2.png"
+      "image": "/static/images/home/Priority/man 2.png"
     },
     {
       "title": "خدمات برای نوجوانان",
-      "image": "/static/images/Home/Priority/process 2.png"
+      "image": "/static/images/home/Priority/process 2.png"
     },
     {
       "title": "خدمات گردشگری",
-      "image": "/static/images/Home/Priority/world 2.png"
+      "image": "/static/images/home/Priority/world 2.png"
     }
   ],
   "cardData2": [
     {
-      "image": "/static/images/Home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
+      "image": "/static/images/home/Magazine/annie-spratt-hWJsOnaWTqs-unsplash 1.webp",
       "title": "فواید درمان‌های اسپا",
       "type": "شتابدهنده",
       "date": "آوریل ۲۷"
     },
     {
       "title": "مرکز تناسب اندام",
-      "image": "/static/images/Home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
+      "image": "/static/images/home/Magazine/remy_loz-3S0INpfREQc-unsplash (1) 1.webp",
       "type": "سرمایه‌گذاری",
       "date": "آوریل ۲۷"
     },
     {
       "title": "فواید درمان‌های اسپا",
-      "image": "/static/images/Home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
+      "image": "/static/images/home/Magazine/emile-perron-xrVDYZRGdw4-unsplash 1.webp",
       "type": "سرمایه‌گذاری",
       "date": "آوریل ۲۷"
     }
   ],
   "LatestStartups": [
     {
-      "image": "/static/images/Home/Startups/trip.png",
+      "image": "/static/images/home/Startups/trip.png",
       "title": "سفر لاندا",
       "description": " لاندا تریپ استارت‌آپی نوآورانه است که با استفاده از یک تیم متخصص و هوش مصنوعی پلتفرمی را جهت شرکت در دوره‌های آموزشی مختلف در سراسر جهان برایتان مهیا می‌کند.",
       "link": "https://landatrip.com/"
     },
     {
-      "image": "/static/images/Home/Startups/diaco.png",
+      "image": "/static/images/home/Startups/diaco.png",
       "title": "دیاکو سنتر",
       "description": "دیاکو سنتر پلتفرمی برپایه هوش مصنوعی است که نقش واسط میان جویندگان و ارائه‌دهندگان فناوری را ایفا کرده و با ایجاد پلی میان آنها، نیازهای موجود در صنعت را رفع می‌کند.",
       "link": "https://irdiaco.ca/"
     },
     {
-      "image": "/static/images/Home/Startups/vision-raft.png",
+      "image": "/static/images/home/Startups/vision-raft.png",
       "title": "ویژن رفت",
       "description": "Vision Raft پلتفرمی است بر پایه واقعیت مجازی (VR) با تمرکز روی آموزش و سرگرمی نوجوانان جهت افزایش کیفیت یادگیری آنها.",
       "link": "https://invigorated-drop-231359.framer.app"

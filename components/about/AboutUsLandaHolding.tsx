@@ -22,7 +22,7 @@ export default function AboutUsLandaHolding() {
     // <Image
     //   className="brightness-95 contrast-[1.15] drop-shadow-md"
     //   loading="lazy"
-    //   src="/static/images/About/team.jpg"
+    //   src="/static/images/about/team.jpg"
     //   width={661}
     //   height={404}
     //   quality={100}
@@ -45,7 +45,7 @@ export default function AboutUsLandaHolding() {
             className="rounded-xl"
             loading="lazy"
             layout="fill"
-            src="/static/images/About/team.webp"
+            src="/static/images/about/team.webp"
             alt="NovaNest Venture Team"
             objectFit="cover"
           />
@@ -55,7 +55,7 @@ export default function AboutUsLandaHolding() {
         <div className="relative h-48 w-full md:h-[340px] md:w-[46%] mb-6 md:mb-0">
           <Image
             className="object-cover w-full rounded-xl"
-            src="/static/images/About/story/1.webp"
+            src="/static/images/about/story/1.webp"
             alt="story of NovaNest Venture"
             layout="fill"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -27,7 +27,7 @@ export default function BusinessTeamCard({
         <Image
           loading="lazy"
           className="size-14 border md:h-[104px] md:w-[108px]"
-          src={`/static/images/Home/Cooperation-members/${profileImage}`}
+          src={`/static/images/home/Cooperation-members/${profileImage}`}
           width={500}
           height={500}
           alt="Avatar"

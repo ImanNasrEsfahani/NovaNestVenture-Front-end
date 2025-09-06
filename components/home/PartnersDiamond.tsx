@@ -18,7 +18,7 @@ export default function PartnersDiamond({
         <div className="-rotate-45">
           <Image
             className="object-contain"
-            src={`/static/images/Home/contact/${backgroundImage}.png`}
+            src={`/static/images/home/contact/${backgroundImage}.png`}
             alt="r"
             width={100}
             height={100}

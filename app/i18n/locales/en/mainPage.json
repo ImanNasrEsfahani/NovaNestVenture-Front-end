@@ -8,20 +8,20 @@
         "id": "startup-suv",
         "title": "Startup – SUV",
         "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
-        "image": "/static/images/Home/Features/startup-visa.jpg"
+        "image": "/static/images/home/Features/startup-visa.jpg"
       },
       {
         "id": "entrepreneur",
         "title": "Entrepreneur",
         "description": "PNPs in Canada offer a great path for entrepreneurs to invest and start a business. Each province has unique criteria, and with our expertise, we help you choose the right program, prepare documents, and complete the process—leading to a successful business and permanent residency.",
-        "image": "/static/images/Home/Features/entrepreneur.jpg"
+        "image": "/static/images/home/Features/entrepreneur.jpg"
       }
     ]
   },
   "heroSlides": [
     {
       "image": {
-        "src": "/static/images/Home/Hero/image1.jpg",
+        "src": "/static/images/home/Hero/image1.jpg",
         "alt": "Slide 1"
       },
       "content": [
@@ -37,7 +37,7 @@
     },
     {
       "image": {
-        "src": "/static/images/Home/Hero/image2.jpg",
+        "src": "/static/images/home/Hero/image2.jpg",
         "alt": "Slide 2"
       },
       "content": [
@@ -53,7 +53,7 @@
     },
     {
       "image": {
-        "src": "/static/images/Home/Hero/image3.jpg",
+        "src": "/static/images/home/Hero/image3.jpg",
         "alt": "Slide 3"
       },
       "content": [
@@ -108,11 +108,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home/2.webp",
+          "src": "/static/images/home/2.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home/1.webp",
+          "src": "/static/images/home/1.webp",
           "alt": ""
         }
       ],
@@ -129,11 +129,11 @@
       "addedClass": "",
       "images": [
         {
-          "src": "/static/images/Home/5.webp",
+          "src": "/static/images/home/5.webp",
           "alt": ""
         },
         {
-          "src": "/static/images/Home/6.webp",
+          "src": "/static/images/home/6.webp",
           "alt": ""
         }
       ],
@@ -228,36 +228,36 @@
   "cardData1": [
     {
       "title": "Tourism Services",
-      "image": "/static/images/Home/Priority/tourism-services.png"
+      "image": "/static/images/home/Priority/tourism-services.png"
     },
     {
       "title": "Education",
-      "image": "/static/images/Home/Priority/education.png"
+      "image": "/static/images/home/Priority/education.png"
     },
     {
       "title": "AI (Artificial Inteligent)",
-      "image": "/static/images/Home/Priority/ai.png"
+      "image": "/static/images/home/Priority/ai.png"
     },
     {
       "title": "Services for Teenagers",
-      "image": "/static/images/Home/Priority/services-for-teenagers.png"
+      "image": "/static/images/home/Priority/services-for-teenagers.png"
     }
   ],
   "LatestStartupsList": [
     {
-      "image": "/static/images/Home/Startups/trip.png",
+      "image": "/static/images/home/Startups/trip.png",
       "title": "LANDA TRIP",
       "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
       "link": "https://landatrip.ca"
     },
     {
-      "image": "/static/images/Home/Startups/diaco.png",
+      "image": "/static/images/home/Startups/diaco.png",
       "title": "DIACO",
       "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
       "link": "https://diacocenter.com"
     },
     {
-      "image": "/static/images/Home/Startups/vision-raft.png",
+      "image": "/static/images/home/Startups/vision-raft.png",
       "title": "VISION RAFT",
       "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
       "link": "https://invigorated-drop-231359.framer.app"
@@ -269,7 +269,7 @@
     "title": "Upcoming Startups",
     "cards": [
       {
-        "image": "/static/images/Home/upcomming-Sartup/handicraft.png",
+        "image": "/static/images/home/upcomming-Sartup/handicraft.png",
         "subTitle": "HANDI CRAFT",
         "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build a safe communication bridge between makers and purchasers.",
         "goto": "https://craft.landaholding.com/",
@@ -277,7 +277,7 @@
         "gene": false
       },
       {
-        "image": "/static/images/Home/upcomming-Sartup/Autilab-logo.png",
+        "image": "/static/images/home/upcomming-Sartup/Autilab-logo.png",
         "subTitle": "AUTILAB",
         "text": "Otism is an art movement that highlights nature’s beauty and the human form through organic shapes, earthy tones, and fluid lines. Emerging in the 21st century, it evokes tranquility and connection, inviting viewers to reflect on their bond with the environment.",
         "goto": "#",
@@ -285,7 +285,7 @@
         "gene": true
       },
       {
-        "image": "/static/images/Home/upcomming-Sartup/2.png",
+        "image": "/static/images/home/upcomming-Sartup/2.png",
         "subTitle": "PREVENTI GENE",
         "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build asafe communication bridge between makers and purchasers.",
         "goto": "http://preventigene.com/",
