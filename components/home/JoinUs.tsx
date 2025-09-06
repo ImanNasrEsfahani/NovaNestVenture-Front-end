@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function ContactUs() {
   // TODO: use daisyUI for styling
   return (
@@ -16,7 +18,7 @@ export default function ContactUs() {
           affiliate, please complete our free questionnaire for our confidential
           review.
         </p>
-        <Link href={'/partner-membership'}>
+        <Link href={`${base}/partner-membership`}>
           <ButtonRefactor text="Join Us" />
         </Link>
       </div>

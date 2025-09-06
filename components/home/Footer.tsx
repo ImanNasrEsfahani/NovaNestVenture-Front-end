@@ -1,5 +1,5 @@
-
 'use client'
+
 import Link from 'next/link';
 import Instagram from '../icons/footer/Instagram';
 import Envelope from '../icons/footer/Envelope';
@@ -32,10 +32,10 @@ export default function Footer(
       <div className="max-w-[1600px] mx-auto p-6  flex flex-wrap justify-between space-y-5">
         <div className="mt-5 flex flex-col w-full xl:w-2/5 gap-2">
           <div className="text-justify text-xl font-medium text-primary pb-2">
-            {t('about', { returnObjects: true }).title}
+            {t('about.title')}
           </div>
           <div className="mt-1 text-justify text-base  font-normal text-black pb-2">
-            {t('about', { returnObjects: true }).text}
+            {t('about.text')}
           </div>
           <div className="mt-2 flex flex-row items-center text-black gap-4">
                 <Link aria-label="Instagram" href={'https://instagram.com/novanestventure'} className="hover:text-primary" target="_blank">
@@ -54,31 +54,31 @@ export default function Footer(
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">
-            {t('explore', { returnObjects: true }).title}
+            {t('explore.title')}
           </div>
           <Link
             href={`${base}`}
             className="pt-1 hover:text-primary"
           >
-            {t('explore', { returnObjects: true }).text.home}
+            {t('explore.text.home')}
           </Link>
           <Link
-            href={`${base}'/about'`}
+            href={`${base}/about`}
             className="pt-1 hover:text-primary"
           >
-            {t('explore', { returnObjects: true }).text.about}
+            {t('explore.text.about')}
           </Link>
           <Link
-            href={`${base}'/contact'`}
+            href={`${base}/contact`}
             className="pt-1 hover:text-primary"
           >
-            {t('explore', { returnObjects: true }).text.contact}
+            {t('explore.text.contact')}
           </Link>
           <Link
-            href={`${base}'/our-team'`}
+            href={`${base}/our-team`}
             className="pt-1 hover:text-primary"
           >
-            {t('explore', { returnObjects: true }).text.ourTeam}
+            {t('explore.text.ourTeam')}
           </Link>
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
@@ -86,7 +86,7 @@ export default function Footer(
           {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
             <Link
               key={key}
-              href={`${base}${value.link}`}
+              href={`${base}/${value.link}`}
               className="pt-1 hover:text-primary"
             >
               {value.text}

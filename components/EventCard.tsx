@@ -16,6 +16,8 @@ interface Event {
   slug: string;
 }
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function EventCard() {
   const [events, setEvents] = useState<Event[]>([]);
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function EventCard() {
       {events.map((event, index) => (
         <Link
           key={index}
-          href={'events/' + event.slug}
+          href={`${base}'/events/' + ${event.slug}`}
           className="relative flex flex-col gap-10 rounded-sm border-t border-black/10 p-6 shadow-lg md:flex-row"
         >
           <Image

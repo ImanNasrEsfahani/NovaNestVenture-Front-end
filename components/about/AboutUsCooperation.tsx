@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function AboutUsCooperation({ lang }: { lang: string }) {
   return (
     <div className="h-full bg-neutral-800 py-10 text-center text-white">
@@ -28,7 +30,7 @@ export default function AboutUsCooperation({ lang }: { lang: string }) {
           </p>
           <div className="pt-10">
             <span className="mr-3">More</span>
-            <Link href={`/${lang}/investor-registration`}>
+            <Link href={`${base}/investor-registration`}>
               <Image
                 loading="lazy"
                 width={40}
@@ -55,7 +57,7 @@ export default function AboutUsCooperation({ lang }: { lang: string }) {
           </p>
           <div className="pt-10 md:pt-16">
             <span className="mr-3">More</span>
-            <Link href={`/${lang}/partner-membership`}>
+            <Link href={`${base}/partner-membership`}>
               <Image
                 loading="lazy"
                 width={40}

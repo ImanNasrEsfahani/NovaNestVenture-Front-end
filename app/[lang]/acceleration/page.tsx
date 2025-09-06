@@ -113,7 +113,7 @@ export default async function Page({
           bgColor="Primary"
           lang={lang}
         /> */}
-      {/* <ButtonRefactor text={t('Register')} href="/startups-form" /> */}
+      {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
     </div>
   );
 }

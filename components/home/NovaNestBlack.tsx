@@ -5,6 +5,8 @@ import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function NovaNestBlack() {
   const lang = useLang().lang;
   const { t } = getServerTranslation(lang, 'mainPage');
@@ -33,7 +35,7 @@ export default function NovaNestBlack() {
           <ButtonRefactor
             text={t('Register')}
             type="link"
-            href={`/${lang}/investor-registration`}
+            href={`${base}/investor-registration`}
             bgColor="black"
           />
         </div>
@@ -61,7 +63,7 @@ export default function NovaNestBlack() {
           <ButtonRefactor
             text={t('Register')}
             type="link"
-            href="/formEntrepreneurs"
+            href={`${base}/formEntrepreneurs`}
             bgColor="black"
           />
         </div>

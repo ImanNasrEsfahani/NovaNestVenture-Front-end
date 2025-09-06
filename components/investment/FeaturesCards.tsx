@@ -3,6 +3,8 @@ import './investment.css'
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function FeaturesCards({
   title,
   description,
@@ -26,7 +28,7 @@ export default function FeaturesCards({
         <p className="text-[12px] md:text-[13px] ">{description}</p>
       </div>
       <div className='mx-auto w-4/5 font-barlow text-md md:text-2xl mt-6'>
-        <ButtonRefactor text={lang === "en" ? "Register" : "ثبت نام"} type="link" href={link} />
+        <ButtonRefactor text={lang === "en" ? "Register" : "ثبت نام"} type="link" href={`${base}/${link}`} />
       </div>
       {/* <ButtonRefactor text={lang === 'en' ? 'Register' : 'ثبت نام'} /> */}
     </div>

@@ -2,6 +2,8 @@
 import { HomeCardsLeftProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function HomeCardsLeft({
   text,
   addedClass,
@@ -21,7 +23,7 @@ export default function HomeCardsLeft({
           {text}
         </p>
         <div className='w-1/2 md:w-1/3'>
-          <ButtonRefactor text={buttonText} type="link" href={link} />
+          <ButtonRefactor text={buttonText} type="link" href={`${base}/${link}`} />
         </div>
       </div>
     </div>

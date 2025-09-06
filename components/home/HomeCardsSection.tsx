@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function HomeCardsSection({
   smallTitle,
   text,
@@ -34,7 +36,7 @@ export default function HomeCardsSection({
           {text}
         </p>
         <div className="w-[45%] md:w-[35%]">
-          <ButtonRefactor text={buttonText} type="link" href={link} />
+          <ButtonRefactor text={buttonText} type="link" href={`${base}/${link}`} />
         </div>
       </div>
       <div

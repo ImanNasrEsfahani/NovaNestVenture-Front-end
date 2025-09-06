@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function Hero({
   showLanda,
   backgroundImage,
@@ -49,7 +51,7 @@ export default function Hero({
           {showButton ? (
             <ButtonRefactor
               text={lang === 'en' ? 'Register Now' : 'همین حالا ثبت نام کنید'}
-              href={`/${lang}/investor-registration`}
+              href={`${base}/investor-registration`}
               type="link"
             />
           ) : (

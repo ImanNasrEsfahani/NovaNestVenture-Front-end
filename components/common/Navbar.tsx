@@ -6,6 +6,8 @@ import { getServerTranslation } from 'app/i18n/client';
 import { setCookie } from 'cookies-next';
 import LanguageSwitch from './LanguageSwitch';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function Navbar({
   children,
   lang
@@ -85,7 +87,7 @@ export default function Navbar({
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
                   <li className="h-9 text-2xl mt-2" key={label}>
-                    <Link href={href} className="text-white hover:bg-white">
+                    <Link href={`${base}/${href}`} className="text-white hover:bg-white">
                       {label}
                     </Link>
                   </li>
@@ -102,7 +104,7 @@ export default function Navbar({
                     {submenuItems.map(({ label, href }: any) => (
                       <li className="max-h-fit text-xl" key={label}>
                         <Link
-                          href={href}
+                          href={`${base}/${href}`}
                           className="block border p-5 font-bold text-black hover:bg-base-200 hover:text-primary"
                         >
                           {label}
@@ -140,7 +142,7 @@ export default function Navbar({
               key={label}
               onClick={() => handleLinkClick()}
             >
-              <Link href={href} className="">
+              <Link href={`${base}/${href}`} className="">
                 {label}
               </Link>
             </li>
@@ -158,7 +160,7 @@ export default function Navbar({
                   {submenuItems.map(
                     ({ label, href }: { label: string; href: string }) => (
                       <li key={label} onClick={() => handleLinkClick()}>
-                        <Link href={href} className="font-condensed">
+                        <Link href={`${base}/${href}`} className="font-condensed">
                           {label}
                         </Link>
                       </li>

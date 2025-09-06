@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n/client';
 import ButtonRefactor from '../common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 //TODO: hero components
 export default function Hero({
   showLanda,
@@ -51,7 +53,7 @@ export default function Hero({
           <div className='w-64'>
             <ButtonRefactor
               text={t('lng') === 'en' ? 'Register Now' : 'همین الان ثبت نام کنید'}
-              href={link}
+              href={`${base}/${link}`}
               type='link'
             />
           </div>

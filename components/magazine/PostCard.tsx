@@ -4,6 +4,8 @@ import Link from 'next/link';
 import ButtonRefactor from '../common/ButtonRefactor';
 import Button from '../common/Button';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function PostCard({
   slug,
   image,
@@ -31,7 +33,7 @@ export default function PostCard({
         {date}
       </span>
       <Link
-        href={`/magazine/${slug}`}
+        href={`${base}/magazine/${slug}`}
         className="font-gilda text-xl tracking-[2.8px] hover:text-primary"
       >
         {title}
