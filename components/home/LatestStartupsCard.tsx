@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import StartupsArrowLeft from '../icons/home/StartupsArrowLeft';
+import StartupsArrowLeft from './../icons/home/StartupsArrowLeft';
 
 export default function LatestStartupsCard({
   image,
