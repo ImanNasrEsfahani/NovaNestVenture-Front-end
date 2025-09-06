@@ -13,7 +13,6 @@ export default function NovaNestBlack() {
 
   return (
     <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10  md:pt-10 md:flex-row ">
-      {/* <Lines /> */}
       <div className="bg-[#ffffff] z-10 flex mb-10 p-6 xl:px-16 flex-col md:justify-start gap-5 rtl:mr-1 get-shadow-g xl:w-1/2 max-w-[40rem] md:h-auto md:mb-0 rounded-xl">
         <div className="flex flex-col items-center">
             {/* <span className='font-gilda mt-12'>
