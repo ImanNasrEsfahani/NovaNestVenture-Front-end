@@ -83,7 +83,7 @@ export default function Navbar({
             <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl md:mb-3 ">
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
-                  <li className="h-9 text-2xl mt-2" key={label}>
+                  <li className="h-9 text-xl mt-2" key={label}>
                     <Link href={`${base}/${href}`} className="text-white hover:bg-white">
                       {label}
                     </Link>
@@ -92,7 +92,7 @@ export default function Navbar({
               )}
               <li className="h-9">
                 <div className="relative group">
-                  <h2 className="text-2xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
+                  <h2 className="text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
                     {lang === 'en' ? 'FORMS' : 'فرم ها'}
                   </h2>
 

@@ -89,7 +89,7 @@ const AboutUsCard = ({
               </button>
             </Link>
           </div>
-          <p className="font-Gilda Display ml-[110px] text-sm	font-normal	leading-normal  text-black">
+          <p className="Display ml-[110px] text-sm	font-normal	leading-normal  text-black">
             {description}
           </p>
         </div>
