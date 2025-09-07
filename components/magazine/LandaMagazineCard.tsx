@@ -1,22 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { useLang } from 'stores/langStore';
 
 export default function LandaMagazineCard({
-  params,
   title,
   image,
   type,
   date,
 }: {
-  params: { lang: string };
   title: string;
   image: string;
   type: string;
   date: string;
 }) {
 
-  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <Link href={'/'}>
