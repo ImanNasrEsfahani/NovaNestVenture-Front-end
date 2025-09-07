@@ -2,13 +2,15 @@
 import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';
+import { useLang } from 'stores/langStore';
 
-export default function CategoriesContainer({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
+export default function CategoriesContainer() {
   
   const {categories} = useSubmit();
 
   useFetchBlog("categories");
-  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div className="rounded-sm bg-whiteGold px-4 py-8">

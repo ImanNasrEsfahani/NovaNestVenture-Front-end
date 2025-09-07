@@ -2,10 +2,12 @@
 import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';
+import { useLang } from 'stores/langStore';
 
-export default function TagsContainer({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
+export default function TagsContainer() {
   const {tags} = useSubmit();
-  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   useFetchBlog("tags");
 
