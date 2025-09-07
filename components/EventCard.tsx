@@ -31,7 +31,6 @@ export default function EventCard() {
   }, []); // The empty dependency array ensures this effect runs once when the component mounts
 
   const lang = useLang((state) => state.lang);
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div>
@@ -49,7 +48,7 @@ export default function EventCard() {
             height={356}
           />
           <div className="flex flex-col gap-4">
-            <span className={`${headingFont} text-3xl`}>Lorem Ipsum</span>
+            <span className="font-header text-3xl">Lorem Ipsum</span>
             <p className="font-barlow">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
@@ -62,7 +61,7 @@ export default function EventCard() {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <div className={`flex flex-col gap-4 ${headingFont}`}>
+            <div className="flex flex-col gap-4 font-header">
               <div className="flex items-center gap-2">
                 <Calender />
                 <span className="text-primary">05/23/2024 Saturday</span>

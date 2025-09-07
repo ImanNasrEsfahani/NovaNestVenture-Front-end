@@ -8,8 +8,6 @@ export default async function Banner({
   lang: string;
 }) {
 
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="relative h-screen md:h-[550px]">
       {/* Background Image with Blur and Overlay */}
@@ -23,10 +21,10 @@ export default async function Banner({
       >
         <div className="h-auto w-full">
           <div className="h-auto w-full flex flex-col items-start gap-4">
-            <p className={`text-white font-medium ${headingFont} text-[16px]`}>
+            <p className="text-white font-medium font-header text-[16px]">
               {lang == 'en' ? 'NovaNest Venture' : 'نووا نست ونچر'}
             </p>
-            <p className={`text-white ${headingFont} font-medium text-3xl md:text-[64px]`}>
+            <p className="text-white font-header font-medium text-3xl md:text-[64px]">
               {title}
             </p>
           </div>

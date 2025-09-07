@@ -83,11 +83,9 @@ export default function Partners() {
     setDragging(false);
   };
 
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="my-14 flex flex-col items-center ">
-      <span className={`text-3xl text-primary ${headingFont} md:text-4xl mb-12`}>
+      <span className="text-3xl text-primary font-header md:text-4xl mb-12">
         {t('partners', { returnObjects: true }).title}
       </span>
       <div

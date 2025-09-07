@@ -10,9 +10,6 @@ export default function LandaHoldingPriorityCard({
   image: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="relative flex h-24 w-[47%] justify-center overflow-hidden border border-primary md:h-40 md:w-[23%] rounded-lg">
       {/* Background Image */}
@@ -27,7 +24,7 @@ export default function LandaHoldingPriorityCard({
 
       {/* Title Container */}
       <div className="inline-flex items-center justify-center gap-2.5">
-        <div className={`flex w-10 items-center justify-center text-center ${headingFont} text-base font-normal text-black md:w-52 md:text-2xl`}>
+        <div className="flex w-10 items-center justify-center text-center font-header text-base font-normal text-black md:w-52 md:text-2xl">
           {title}
         </div>
       </div>

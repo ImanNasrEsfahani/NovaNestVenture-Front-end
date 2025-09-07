@@ -6,15 +6,13 @@ import ButtonRefactor from '../common/ButtonRefactor';
 
 
 export default function HomeNovaNestAcademy() {
-    const lang = useLang().lang
-    const { t } = getServerTranslation(lang, 'mainPage');
-    const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="flex flex-col justify-between gap-10 py-10 md:flex-row md:py-20 ">
       <div className="w-full font-barlow md:w-[47%]  ">
-        <h1 className={` mb-2 ${headingFont}`}>{t('NovaNestVenture')}</h1>
-        <h1 className={`mb-8 ${headingFont} text-4xl font-bold`}>{t('Academy')}</h1>
+        <h1 className="mb-2 font-header">{t('NovaNestVenture')}</h1>
+        <h1 className="mb-8 font-header text-4xl font-bold">{t('Academy')}</h1>
         <p className="leading-8">
             {t('NovaNestAcademyInfo')}
         </p>

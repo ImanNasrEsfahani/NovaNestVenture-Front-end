@@ -21,7 +21,6 @@ export default function Hero({
   link?: string
 }) {
   const { t } = getServerTranslation(lang, 'mainPage');
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div
@@ -39,7 +38,7 @@ export default function Hero({
         >
           {t('NovaNestVenture')}
         </div>
-        <div className="text-center ${headingFont} text-4xl text-whiteGold md:text-6xl ltr:tracking-[6.4px]">
+        <div className="text-center font-header text-4xl text-whiteGold md:text-6xl ltr:tracking-[6.4px]">
           {t('AccelerationCenter')}
         </div>
 

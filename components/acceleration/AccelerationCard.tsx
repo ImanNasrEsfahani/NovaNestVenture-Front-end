@@ -25,8 +25,6 @@ export default function AccelerationCard({
   secondImageSrc,
   itemsList
 }: Props) {
-  const lang = useLang().lang;
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   const { t } = getServerTranslation(lang, 'acceleration');
 
@@ -51,10 +49,10 @@ export default function AccelerationCard({
           <div className="flex flex-col md:flex-row">
 
               <div>
-                <span className={`font-bold ${headingFont} text-md md:text-3xl block`}>
+                <span className="font-bold font-header text-md md:text-3xl block">
                   {title}
                 </span>
-                <span className={`font-bold ${headingFont} text-md md:text-3xl block`}>
+                <span className="font-bold font-header text-md md:text-3xl block">
                   {slogan}
                 </span>
               </div>
@@ -74,7 +72,7 @@ export default function AccelerationCard({
               <div className="flex justify-start ">
                 {itemsList && (
                   <span
-                    className={`${headingFont} text-lg ltr:text-right xl:text-2xl`}
+                    className="font-header text-lg ltr:text-right xl:text-2xl"
                   >
                     {t('AcceleratorProcess', { returnObjects: true })[0].title}
                   </span>
@@ -90,7 +88,7 @@ export default function AccelerationCard({
               ))}
             </div>
 
-            <div className={`text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 ${headingFont}`}>
+            <div className="text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 font-header">
               {t('CharacteristicsOfEntrepreneurship', { returnObjects: true }).title}
               <ul role="list" className="w-full list-disc md:text-lg text-sm  md:pb-0 rtl:text-right">
               <li>{t('itemsCharecter', { returnObjects: true }).item1}</li>

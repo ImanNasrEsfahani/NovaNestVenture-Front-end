@@ -23,9 +23,6 @@ export default function BusinessTeamCard({
   email: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="flex md:w-full md:flex-col md:items-center">
       <div className="relative flex w-1/3 flex-col items-center justify-start gap-3 md:ml-10 md:flex-row md:self-start">
@@ -46,7 +43,7 @@ export default function BusinessTeamCard({
           <div className="font-barlow text-xs font-normal text-white md:text-base ">
             {roleInCompany}
           </div>
-          <div className={` mt-1 ${headingFont} text-xs font-normal text-white md:text-[15px]`}>
+          <div className="mt-1 font-header text-xs font-normal text-white md:text-[15px]">
             {role}
           </div>
           <div className="mt-2 inline-flex gap-3 md:hidden">

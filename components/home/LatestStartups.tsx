@@ -5,9 +5,7 @@ import { useLang } from 'stores/langStore';
 
 export default function LatestStartups() {
   const lang = useLang().lang;
-
   const { t } = getServerTranslation(lang, 'mainPage');
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div>
@@ -20,9 +18,9 @@ export default function LatestStartups() {
               >
                 {/* {t('NovaNestVenture')} */}
               </div>
-              <p className={`${headingFont} `}>{t('NovaNestVenture')}</p>
+              <p className="font-header">{t('NovaNestVenture')}</p>
               <div
-                className={`ltr:tracking-0 md:tracking-0 ${headingFont} text-4xl font-bold text-black md:mt-3 md:text-[44px] ltr:tracking-[3.5px]`}
+                className="ltr:tracking-0 md:tracking-0 font-header text-4xl font-bold text-black md:mt-3 md:text-[44px] ltr:tracking-[3.5px]"
               >
                 {t('LatestStartups')}
               </div>

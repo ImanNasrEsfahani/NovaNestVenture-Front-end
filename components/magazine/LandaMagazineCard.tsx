@@ -14,9 +14,6 @@ export default function LandaMagazineCard({
   date: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <Link href={'/'}>
       <div className="group relative h-[476px] w-[391px]">
@@ -31,10 +28,10 @@ export default function LandaMagazineCard({
 
         {/* Date Container */}
         <div className="absolute left-8 top-8 inline-flex h-[84px] w-[46px] flex-col items-center justify-start gap-[15px] border border-white px-1 py-2.5">
-          <div className={`h-[17px] w-[31px] ${headingFont} text-[15px] font-normal text-white`}>
+          <div className="h-[17px] w-[31px] font-header text-[15px] font-normal text-white">
             {date.substr(0, 3).toLowerCase()}
           </div>
-          <div className={`h-8 w-[38px] ${headingFont} text-[32px] font-normal text-white`}>
+          <div className="h-8 w-[38px] font-header text-[32px] font-normal text-white">
             {date.substr(4)}
           </div>
         </div>
@@ -47,7 +44,7 @@ export default function LandaMagazineCard({
           </div>
 
           {/* Title */}
-          <div className={`w-[218px] ${headingFont} text-[32px] font-normal text-black`}>
+          <div className="w-[218px] font-header text-[32px] font-normal text-black">
             {title}
           </div>
         </div>

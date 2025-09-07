@@ -11,9 +11,6 @@ export default function PartnersStartupCard({
   description: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="h-[300px] w-[275px] select-none items-center gap-4 overflow-x-auto rounded-md bg-whiteGold p-3 shadow-lg">
       <div className='size-20 relative mx-auto'>
@@ -26,7 +23,7 @@ export default function PartnersStartupCard({
         />
       </div>
       <div className="flex flex-col gap-8 mt-5">
-        <span className={`${headingFont} font-bold text-center text-md`}>{title}</span>
+        <span className="font-header font-bold text-center text-md">{title}</span>
         <p className="font-barlow leading-4 text-xs">
           {description}
         </p>

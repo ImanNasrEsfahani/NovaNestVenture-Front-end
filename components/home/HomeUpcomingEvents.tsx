@@ -4,7 +4,6 @@ import { useLang } from 'stores/langStore'
 
 export default function UpcomingEvents() {
   const lang = useLang.getState().lang;
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   const { t } = getServerTranslation(lang, "mainPage")
 
@@ -12,7 +11,7 @@ export default function UpcomingEvents() {
     <div className='min-h-[400px] g-whiteGold'>
         <div className='relative'>
             <div className='absolute left-20 p-2 md:left-[185px] md:top-[29px] md:text-4xl rtl:right-28 md:rtl:right-48 rtl:md:top-[24px]'>
-                <h3 className={`${headingFont} text-2xl font-normal text-neutral-800 md:text-4xl`}>
+                <h3 className="font-header text-2xl font-normal text-neutral-800 md:text-4xl">
                     {t('upcomingEvents', {returnObjects: true}).title}
                 </h3>
             </div>

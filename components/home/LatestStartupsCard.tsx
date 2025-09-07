@@ -16,9 +16,6 @@ export default function LatestStartupsCard({
   lang: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <Link href={link} target={link} >
       <div className="group relative size-full col-span-1 border transition-all border-black hover:shadow-lg rounded-lg">
@@ -37,8 +34,8 @@ export default function LatestStartupsCard({
 
         {/* Title */}
 
-        <div className={`p-3 ${headingFont} text-2xl font-normal text-neutral-800 `}>
-        {/* <div className={`absolute ${headingFont} text-2xl font-normal text-neutral-800 ${lang === "en" ? "left-4 top-[130px] md:top-[250px]" : "right-5 top-[125px] md:top-[255px]"}`}> */}
+        <div className="p-3 font-header text-2xl font-normal text-neutral-800">
+        {/* <div className={`absolute font-header text-2xl font-normal text-neutral-800 ${lang === "en" ? "left-4 top-[130px] md:top-[250px]" : "right-5 top-[125px] md:top-[255px]"}`}> */}
           {title}
         </div>
 

@@ -35,7 +35,6 @@ export default function ContactUsForm() {
   } = useSubmit((s) => s);
 
   const lang = useLang((s) => s.lang);
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   const { t } = getServerTranslation(lang, 'formComponent');
 
@@ -99,7 +98,7 @@ export default function ContactUsForm() {
 
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <h2 className={`flex w-full justify-center ${headingFont} text-4xl mb-10 ltr:tracking-[.em]`}>
+      <h2 className="flex w-full justify-center font-header text-4xl mb-10 ltr:tracking-[.em]">
         {t('contactForm', { returnObjects: true }).title}
       </h2>
       <form onSubmit={handleSubmit(onSubmit)}>

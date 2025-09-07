@@ -36,7 +36,6 @@ export default function EntrepreneursForm() {
   } = useSubmit((s) => s);
 
   const lang = useLang((s) => s.lang);
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   const { t } = getServerTranslation(lang, 'formComponent');
 
@@ -107,12 +106,12 @@ export default function EntrepreneursForm() {
             <div className="w-full h-auto pt-8 ">
               <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
                 <div className="w-full h-auto flex flex-row justify-center">
-                  <p className={`text-black ${headingFont} font-medium text-xl md:text-[64px] md:leading-[75px]`}>
+                  <p className="text-black font-header font-medium text-xl md:text-[64px] md:leading-[75px]">
                     {t('entrepreneurForm', { returnObjects: true }).formTitle}
                   </p>
                 </div>
                 <div className="w-full border-b-[1.5px] py-5 border-black h-auto flex flex-row justify-start">
-                  <p className={`text-black ${headingFont} font-medium text-[30px] leading-[42px]`}>
+                  <p className="text-black font-header font-medium text-[30px] leading-[42px]">
                     {
                       t('entrepreneurForm', { returnObjects: true })
                         .formSubtitle

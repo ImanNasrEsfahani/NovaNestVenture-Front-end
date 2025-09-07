@@ -9,12 +9,10 @@ export default function CategoriesContainer() {
   const {categories} = useSubmit();
 
   useFetchBlog("categories");
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div className="rounded-sm bg-whiteGold px-4 py-8">
-      <span className={`block border-b-2 border-[#AA84534D] pb-4 ${headingFont} text-xl tracking-[4px]`}>
+      <span className="block border-b-2 border-[#AA84534D] pb-4 font-header text-xl tracking-[4px]">
         Categories
       </span>
       <ul className="mt-7 space-y-4 font-condensed text-xl text-[#6B6B6B]">

@@ -14,9 +14,6 @@ type Props = {
 
 export default function UpcomingStartupsCard({ image, subTitle, text, goto, buttonText }: Props) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
       <div className='w-full md:w-[30%] mb-16 md:mb-0'>
         <div className='flex h-full flex-col justify-start rounded-xl px-5 md:pt-5 get-shadow-g shadow-2xl md:gap-x-8'>
@@ -30,7 +27,7 @@ export default function UpcomingStartupsCard({ image, subTitle, text, goto, butt
               height={500}
             />
           </div>
-          <div className={`self-center p-2 ${headingFont} text-bold text-[24px] font-normal leading-normal`}>
+          <div className="self-center p-2 font-header text-bold text-[24px] font-normal leading-normal">
             {subTitle}
           </div>
           <div className='flex h-full flex-col gap-4 my-8'>

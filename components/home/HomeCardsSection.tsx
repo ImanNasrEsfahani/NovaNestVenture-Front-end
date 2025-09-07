@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import ButtonRefactor from '../common/ButtonRefactor';
-import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -23,17 +22,14 @@ export default function HomeCardsSection({
   buttonText: string;
 }) {
 
-  const { lang } = useLang();
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div
       className={`flex flex-col-reverse ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-x-10 items-center justify-between last:border-none`}
     >
       <div className="flex flex-col h-full items-start justify-between gap-12 rtl:gap-16 md:w-1/2">
         <div className="flex flex-col items-start gap-4">
-          <span className={`font-header text-1xl md:text-1xl`}>{smallTitle}</span>
-          <span className={`lrt:tracking-[6.5px] font-header font-bold text-4xl md:text-5xl`}>
+          <span className="font-header text-1xl md:text-1xl">{smallTitle}</span>
+          <span className="lrt:tracking-[6.5px] font-header font-bold text-4xl md:text-5xl">
             {titles}
           </span>
         </div>

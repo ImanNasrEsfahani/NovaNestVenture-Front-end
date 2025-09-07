@@ -24,9 +24,6 @@ export default function AboutusPersonalTabs({
   instagram: string;
 }) {
 
-  const lang = useLang().lang
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
-
   return (
     <div className="relative flex h-[380px] w-full md:h-[450px] flex-col rounded-sm md:w-[400px]">
       <Image
@@ -63,7 +60,7 @@ export default function AboutusPersonalTabs({
         </div>
       </div>
       <div className="absolute bottom-[-4.4rem] mt-64 flex w-full flex-col items-center bg-whiteGold py-7  ">
-        <span className={`${headingFont} text-3xl font-normal text-black`}>
+        <span className="font-header text-3xl font-normal text-black">
           {name}
         </span>
         <div className="flex w-full items-center justify-center font-light  ">

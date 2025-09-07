@@ -20,7 +20,6 @@ export default async function Page({
   params: { lang: string };
 }) {
   const { t } = await getServerTranslation(lang, 'investment');
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div dir={lang === 'en' ? 'ltr' : 'rtl'} className="mb-20">
@@ -41,7 +40,7 @@ export default async function Page({
       </div>
 
 
-      <div className={`max-w-[1600px] mx-auto flex justify-between my-28 gap-5 ${headingFont}`}>
+      <div className="max-w-[1600px] mx-auto flex justify-between my-28 gap-5 font-header">
         <div className="w-full md:w-[45%]">
           <div className="flex flex-col">
             <span className="text-2xl md:text-4xl mb-8 font-bold">
@@ -63,7 +62,7 @@ export default async function Page({
       </div>
       {/* <div className="grid grid-cols-1 items-center gap-6 px-8 py-10 md:grid-cols-2 md:gap-24 md:px-28 md:py-16">
         <div className="flex flex-col gap-6">
-          <span className={`${headingFont} text-2xl text-primary md:text-4xl`}>
+          <span className="font-header text-2xl text-primary md:text-4xl">
             {t('certificate')}
           </span>
           <div className="flex items-end">
@@ -85,7 +84,7 @@ export default async function Page({
       {/* <ButtonRefactor text={t('buttonTitle')} />
         </div>
       </div> */}
-      <div className={`max-w-[1600px] mx-auto py-10 ${headingFont}`}>
+      <div className="max-w-[1600px] mx-auto py-10 font-header">
         <div className='flex justify-between items-center gap-6'>
           <div className="relative w-[27rem] h-[26rem] rtl:h-[22rem] hidden md:inline">
             <Image

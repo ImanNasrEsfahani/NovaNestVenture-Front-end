@@ -15,7 +15,6 @@ import { useLang } from 'stores/langStore';
 export default function KeyDifferentiating() {
 
   const lang = useLang().lang;
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   const { t } = getServerTranslation(lang, 'aboutUs');
 
@@ -23,10 +22,10 @@ export default function KeyDifferentiating() {
     // TODO: don't use [0], [1] for translations
     <div className="flex justify-between ">
       <div className=" my-20 flex flex-col gap-5 w-full md:w-[62%]">
-        <span className={`${headingFont} font-bold md:pb-8 text-2xl leading-8 md:text-4xl`}>
+        <span className="font-header font-bold md:pb-8 text-2xl leading-8 md:text-4xl">
           {t('KeyDifferentiatingFactors', { returnObjects: true })[0].title}
         </span>
-        <div className={`${headingFont} text-justify`}>
+        <div className="font-header text-justify">
           {t('KeyDifferentiatingFactors', { returnObjects: true })[0].titleText}
           <div className='text-primary'>
             {t('KeyDifferentiatingFactors', { returnObjects: true })[0].title2}

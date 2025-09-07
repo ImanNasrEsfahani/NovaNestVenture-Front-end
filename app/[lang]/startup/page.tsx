@@ -17,7 +17,6 @@ export default async function StartUp({
   params: { lang: string };
 }) {
   const t = await getPageTranslations(lang);
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div>
@@ -35,7 +34,7 @@ export default async function StartUp({
           lang={lang}
         />
       </div>
-      <div className={`max-w-[1600px] mx-auto px-8 md:px-24 ${headingFont}`}>
+      <div className="max-w-[1600px] mx-auto px-8 md:px-24 font-header">
         <Differences />
         <NatureOfStartups />
         <Gateway />

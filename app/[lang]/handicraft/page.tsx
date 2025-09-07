@@ -16,7 +16,6 @@ export default async function Page({
   params: { lang: string };
 }) {
   const { t } = await getServerTranslation(lang, 'handicraft');
-  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div>
@@ -92,7 +91,7 @@ export default async function Page({
           </p>
         </div>
         <div className="flex w-full flex-col items-center gap-11 rounded-sm bg-[#F7F3EE] px-8 py-5 my-20">
-          <p className={`${headingFont} text-sm md:text-base  text-primary`}>
+          <p className="font-header text-sm md:text-base  text-primary">
             {t('formTitle')}
           </p>
           <HandicraftForm />
