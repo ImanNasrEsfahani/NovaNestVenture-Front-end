@@ -1,10 +1,13 @@
 
 import ButtonRefactor from '../common/ButtonRefactor';
 
-export default function UpcomingEvents() {
+export default function UpcomingEvents({ params }: { params: { lang: string } }) {
+
+  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div className="relative h-[480px] bg-[#FAFAFA]">
-      <div className="absolute left-20 top-10 font-gilda text-2xl font-normal text-neutral-800 md:left-[185px] md:top-[29px] md:text-4xl">
+      <div className={`absolute left-20 top-10 ${headingFont} text-2xl font-normal text-neutral-800 md:left-[185px] md:top-[29px] md:text-4xl`}>
         UPCOMING EVENT
       </div>
       <div className="absolute left-[20px] top-[118px] inline-flex flex-col items-start justify-center gap-[18px] md:left-[174px] md:pr-[40px]">

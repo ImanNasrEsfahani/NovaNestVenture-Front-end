@@ -3,15 +3,16 @@ import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';
 
-export default function CategoriesContainer() {
+export default function CategoriesContainer({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
   
   const {categories} = useSubmit();
 
   useFetchBlog("categories");
+  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div className="rounded-sm bg-whiteGold px-4 py-8">
-      <span className="block border-b-2 border-[#AA84534D] pb-4 font-gilda text-xl tracking-[4px]">
+      <span className={`block border-b-2 border-[#AA84534D] pb-4 ${headingFont} text-xl tracking-[4px]`}>
         Categories
       </span>
       <ul className="mt-7 space-y-4 font-condensed text-xl text-[#6B6B6B]">

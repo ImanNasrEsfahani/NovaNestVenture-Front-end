@@ -3,14 +3,15 @@ import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';
 
-export default function TagsContainer() {
+export default function TagsContainer({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
   const {tags} = useSubmit();
+  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   useFetchBlog("tags");
 
   return (
     <div className="rounded-sm bg-whiteGold px-4 py-8">
-      <span className="block border-b-2 border-[#AA84534D] pb-4 font-gilda text-xl tracking-[4px]">
+      <span className={`block border-b-2 border-[#AA84534D] pb-4 ${headingFont} text-xl tracking-[4px]`}>
         Tags
       </span>
       <div className={`grid-cols- mt-7 grid${tags.length} gap-2`}>

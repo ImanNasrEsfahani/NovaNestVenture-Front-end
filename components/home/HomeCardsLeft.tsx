@@ -1,6 +1,7 @@
 'use client'
 import { HomeCardsLeftProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
+import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -11,12 +12,16 @@ export default function HomeCardsLeft({
   link,
   buttonText
 }: HomeCardsLeftProps) {
+
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div
       className={`order-2 first:self-end md:order-1 md:mb-0 md:py-20 lg:mb-0 ${addedClass}`}
     >
       <div className="flex flex-col items-start justify-center ">
-      <span className="lrt:tracking-[6.5px] ltr:font-gilda rtl:font-EBGaramond text-4xl md:text-6xl md:pb-8">
+      <span className={`lrt:tracking-[6.5px] ${headingFont} text-4xl md:text-6xl md:pb-8`}>
             {titles}
           </span>
         <p className="pb-20 text-justify font-normal text-base leading-[30px] first:mb-0 md:w-[721px] md:text-md">

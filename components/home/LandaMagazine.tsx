@@ -4,14 +4,17 @@ import LandaMagazineCard from '../magazine/LandaMagazineCard';
 import { cardData2 } from '../../app/[lang]/statics';
 import ButtonRefactor from '../common/ButtonRefactor';
 
-export default function LandaMagazine() {
+export default function LandaMagazine({ params }: { params: { lang: string } }) {
+
+  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     // TODO: create commponent for show repeated parts. because codes are almost same and just written few times
     <div className="hidden md:block">
       {/* hide component on mobile */}
       <div className="flex justify-center bg-neutral-800 py-5">
         <div className="flex flex-col">
-          <div className="my-10 font-gilda text-3xl font-normal text-white md:ml-16 md:text-[64px]">
+          <div className={`my-10 ${headingFont} text-3xl font-normal text-white md:ml-16 md:text-[64px]`}>
             NovaNest Venture MAGAZINE
           </div>
           <div className="flex flex-row items-center justify-center">

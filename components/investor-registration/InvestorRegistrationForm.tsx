@@ -92,6 +92,7 @@ export default function InvestorRegistrationForm() {
     name: name,
     value: value
   }));
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <>
@@ -104,7 +105,7 @@ export default function InvestorRegistrationForm() {
             <div className="w-full h-auto pt-8 ">
               <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
                 <div className="w-full h-auto flex flex-row justify-center">
-                  <p className="text-black font-gilda font-medium text-xl md:text-[64px] md:leading-[75px]">
+                  <p className={`text-black ${headingFont} font-medium text-xl md:text-[64px] md:leading-[75px]`}>
                     {t('investorForm', { returnObjects: true }).formTitle}
                   </p>
                 </div>

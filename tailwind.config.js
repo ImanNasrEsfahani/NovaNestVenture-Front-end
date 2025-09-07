@@ -8,8 +8,8 @@ module.exports = {
         gilda: ['Gilda Display'],
         barlow: ['Barlow', 'IranYekan'],
         condensed: ['Markazi'],
-        markazi: ['Markazi'],
-        yekan: ['IranYekan', 'Markazi', 'system-ui', 'sans-serif'], // add
+        markazi: ['Markazi', 'IranYekan', 'arial', 'sans-serif'],
+        yekan: ['IranYekan', 'Markazi', 'arial', 'sans-serif'],
       },
       colors: {
         primary: '#AA8453',

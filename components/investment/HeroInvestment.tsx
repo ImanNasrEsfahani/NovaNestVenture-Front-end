@@ -18,6 +18,9 @@ export default function Hero({
   showButton?: boolean;
   lang: string;
 }) {
+
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div
       style={{
@@ -41,7 +44,7 @@ export default function Hero({
           {lang === 'en' ? 'NovaNest Venture' : 'نوا نست ونچر'}
         </div>
         <div
-          className={`text-center font-gilda text-4xl md:text-6xl ${
+          className={`text-center ${headingFont} text-4xl md:text-6xl ${
             lang === 'en' && 'tracking-[6.4px]'
           } text-whiteGold`}
         >

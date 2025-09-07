@@ -39,6 +39,7 @@ export default function PartnerMembershipForm() {
   const lang = useLang((s) => s.lang);
 
   const { t } = getServerTranslation(lang, 'formComponent');
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   // useEffect(() => {
   //   async function fetchCsrfToken() {
@@ -106,7 +107,7 @@ export default function PartnerMembershipForm() {
           <div className="w-full h-auto pt-8 ">
             <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
               <div className="w-full h-auto flex flex-row justify-center">
-                <p className="text-black font-gilda font-medium text-xl md:text-[64px] md:leading-[75px]">
+                <p className={`text-black ${headingFont} font-medium text-xl md:text-[64px] md:leading-[75px]`}>
                   {t('partnerForm', { returnObjects: true }).formTitle}
                 </p>
               </div>

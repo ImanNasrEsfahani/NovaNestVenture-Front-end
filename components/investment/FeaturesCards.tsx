@@ -15,6 +15,8 @@ export default function FeaturesCards({
   link: string;
 }) {
   const lang = useLang((s) => s.lang);
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   // const router = useRouter();
 
   // const handleOnClick = () => {
@@ -22,7 +24,7 @@ export default function FeaturesCards({
   // }
 
   return (
-    <div  className="flex flex-col justify-between p-3 md:w-[580px] font-gilda shadow-xl rounded-lg  ">
+    <div  className={`flex flex-col justify-between p-3 md:w-[580px] ${headingFont} shadow-xl rounded-lg  `}>
       <div className='flex flex-col'>
         <span className=" text-lg mx-auto p-2 font-bold ">{title}</span>
         <p className="text-[12px] md:text-[13px] ">{description}</p>

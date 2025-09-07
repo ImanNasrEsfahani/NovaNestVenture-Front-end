@@ -1,5 +1,8 @@
 import Play from '../icons/PlayButton/Play';
-export default function PromotionalVideo() {
+export default function PromotionalVideo({ params }: { params: { lang: string } }) {
+
+  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div className="relative">
       <div className="absolute inset-0 -z-10">
@@ -18,7 +21,7 @@ export default function PromotionalVideo() {
             <div className="w-155 h-23 font-condensed text-xs font-normal leading-[2.5px] tracking-[2.5px] text-white md:text-base">
               NovaNest Venture
             </div>
-            <div className="w-373 my-4 h-12 font-gilda text-4xl font-normal tracking-[1.6px] text-white">
+            <div className={`w-373 my-4 h-12 ${headingFont} text-4xl font-normal tracking-[1.6px] text-white`}>
               Promotional Video
             </div>
             <div className="h-w-24 font-futura b4 relative w-24 rounded-full border-2 border-primary p-6 text-center font-light text-white opacity-100">
