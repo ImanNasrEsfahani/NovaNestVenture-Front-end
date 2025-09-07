@@ -7,21 +7,18 @@ import Button from '../common/Button';
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function PostCard({
-  params,
   slug,
   image,
   date,
   title,
   description,
 }: {
-  params: { lang: string };
   slug: string;
   image: string;
   date: string;
   title: string;
   description: string | TrustedHTML;
 }) {
-  const headingFont = params.lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div className="flex flex-col gap-4">
@@ -36,10 +33,7 @@ export default function PostCard({
       <span className="font-condensed tracking-[2.4px] text-primary">
         {date}
       </span>
-      <Link
-        href={`${base}/magazine/${slug}`}
-        className={`${headingFont} text-xl tracking-[2.8px] hover:text-primary`}
-      >
+      <Link href={`${base}/magazine/${slug}`} className="font-header text-xl tracking-[2.8px] hover:text-primary">
         {title}
       </Link>
       <div className='text-justify font-barlow text-[#6B6B6B]' dangerouslySetInnerHTML={{ __html: description }} />

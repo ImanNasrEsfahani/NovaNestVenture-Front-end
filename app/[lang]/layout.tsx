@@ -7,31 +7,18 @@ import './globals.css';
 // import { useLang } from 'stores/langStore';
 // import { EB_Garamond } from 'next/font/google'
 
-
 export async function generateStaticParams() {
   return languages.map((lang) => ({ lang }));
 }
 
 export default function RootLayout({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
 
-  // const i18next = require("i18next");
-
-  // i18next.loadLanguages(["en", "fa"]);
-
-  // useLang.setState({
-  //   lang: lang
-  // })
-
-  
-  const isFa = params.lang === 'fa';
-  // const { rendered } = useLang.getState();
-
   return (
-    <html lang={params.lang} dir={isFa ? 'rtl' : 'ltr'}>
+    <html lang={params.lang} dir={params.lang ? 'rtl' : 'ltr'}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={isFa ? 'font-yekan' : 'font-barlow'}>
+      <body className="font-text" >
         <Navbar lang={params.lang} >
           <main className='mx-auto'>
             {children}

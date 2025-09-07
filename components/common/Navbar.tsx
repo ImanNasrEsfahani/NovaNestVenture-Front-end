@@ -80,7 +80,7 @@ export default function Navbar({
           </div>
 
           <div className="hidden justify-center ltr:mr-12 xl:flex xl:flex-1">
-            <ul className="menu menu-horizontal flex justify-center space-x-10 font-gilda text-xl md:mb-3 ">
+            <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl md:mb-3 ">
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
                   <li className="h-9 text-2xl mt-2" key={label}>
