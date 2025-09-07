@@ -21,6 +21,7 @@ export default async function Page({
   params: { lang: string };
 }) {
   const t = await getPageTranslations(lang);
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div>
@@ -40,7 +41,7 @@ export default async function Page({
       </div>
 
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
-      <div className="max-w-[1600px] mx-auto mt-28 flex justify-between gap-8 px-10 font-gilda md:px-28 md:py-16">
+      <div className={`max-w-[1600px] mx-auto mt-28 flex justify-between gap-8 px-10 ${headingFont} md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
           <span className={` text-3xl font-bold leading-tight md:text-5xl`}>
             {t('LandaAccelerator', { returnObjects: true })[0].title}
@@ -93,7 +94,7 @@ export default async function Page({
       </div>
 
       {/* <div className={`flex flex-col ${t('lng') === 'fa' && 'items-center'}`}>
-          <span className="mt-12 font-gilda text-3xl text-primary">
+          <span className="mt-12 ${headingFont} text-3xl text-primary">
             {t('LandaAcceleratorServices', { returnObjects: true })[0].title}
           </span>
           <AccelerationServices

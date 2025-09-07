@@ -16,6 +16,8 @@ export default async function ContactUsPage({
   params: { lang: string };
 }) {
   const { t } = await getServerTranslation(lang, 'contact');
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   // Renamed the component for better naming
   return (
     <div>
@@ -38,7 +40,7 @@ export default async function ContactUsPage({
           }}
           className="absolute inset-0 h-full md:h-[520px]  "
         >
-          <span className="get-shadow absolute z-10 top-[40rem] md:top-96 left-[10%] text-4xl text-white md:text-8xl font-gilda  ">
+          <span className={`get-shadow absolute z-10 top-[40rem] md:top-96 left-[10%] text-4xl text-white md:text-8xl ${headingFont}`}>
             {t('banner')}
           </span>
         </div>

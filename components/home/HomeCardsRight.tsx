@@ -17,7 +17,7 @@ export default function HomeCardsRight({
     <div className="flex flex-col self-start md:self-center">
       <div className="mt-9 flex flex-col items-start space-y-2 md:mt-0 md:items-center">
         <div className="flex flex-col gap-2 rtl:flex-row-reverse">
-          {/* <span className="lrt:tracking-[6.5px] font-gilda text-4xl md:text-6xl">
+          {/* <span className="lrt:tracking-[6.5px] ${headingFont} text-4xl md:text-6xl">
             {titles}
           </span> */}
         </div>
