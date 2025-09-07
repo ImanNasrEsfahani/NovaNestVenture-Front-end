@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLang } from 'stores/langStore';
 
 export default function AboutUsProfileCard({
   image,
@@ -13,6 +14,10 @@ export default function AboutUsProfileCard({
   description: string;
   links: Record<string, string>;
 }) {
+
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div className="container mx-auto mb-6 size-fit w-fit border bg-whiteGold shadow-lg">
       <Link href="#">
@@ -68,7 +73,7 @@ export default function AboutUsProfileCard({
       </div>
 
       <div>
-        <div className="text-center font-gilda">
+        <div className={`text-center ${headingFont}`}>
           <p className="font-Barlow mt-2 text-xl font-medium text-black">
             {title}
           </p>

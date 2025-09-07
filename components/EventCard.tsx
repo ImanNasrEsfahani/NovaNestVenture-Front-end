@@ -6,6 +6,7 @@ import Pin from './icons/Panel/Pin';
 import Tag from './icons/Panel/Tag';
 import Link from 'next/link';
 import ButtonRefactor from './common/ButtonRefactor';
+import { useLang } from 'stores/langStore';
 
 interface Event {
   title: string;
@@ -28,6 +29,10 @@ export default function EventCard() {
       .catch((error) => console.error('Error fetching data:', error));
 
   }, []); // The empty dependency array ensures this effect runs once when the component mounts
+
+  const lang = useLang((state) => state.lang);
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div>
       {events.map((event, index) => (
@@ -44,7 +49,7 @@ export default function EventCard() {
             height={356}
           />
           <div className="flex flex-col gap-4">
-            <span className="font-gilda text-3xl">Lorem Ipsum</span>
+            <span className={`${headingFont} text-3xl`}>Lorem Ipsum</span>
             <p className="font-barlow">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
@@ -57,7 +62,7 @@ export default function EventCard() {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <div className="flex flex-col gap-4 font-gilda">
+            <div className={`flex flex-col gap-4 ${headingFont}`}>
               <div className="flex items-center gap-2">
                 <Calender />
                 <span className="text-primary">05/23/2024 Saturday</span>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import { AboutUsCardProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
+import { lang } from 'moment';
+import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -14,12 +16,16 @@ const AboutUsCard = ({
   description,
   link
 }: AboutUsCardProps) => {
+
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <>
       {reverse && (
         <div className="flex flex-col-reverse justify-items-center leading-6 md:grid-cols-2 lg:grid">
           <div className="px-[30px] pb-5 leading-6 text-black md:ml-8 md:px-0">
-            <p className="mt-3 text-center font-gilda text-3xl md:pr-8">
+            <p className={`mt-3 text-center ${headingFont} text-3xl md:pr-8`}>
               {title}
             </p>
             <p className="text-normal  justify-left mt-5 font-barlow leading-6 ">
@@ -74,7 +80,7 @@ const AboutUsCard = ({
             </div>
           </div>
           <div className="col-span-1 mt-1 px-[30px] font-barlow leading-6	text-black">
-            <p className="mt-3 text-center font-gilda text-3xl font-normal text-black">
+            <p className={`mt-3 text-center ${headingFont} text-3xl font-normal text-black`}>
               {title}
             </p>
             <p className="text-normal mt-5">{text}</p>

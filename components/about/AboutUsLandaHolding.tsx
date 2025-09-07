@@ -6,13 +6,14 @@ import { useLang } from 'stores/langStore';
 
 export default function AboutUsLandaHolding() {
   const lang = useLang().lang;
-
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+  
   const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     // <div className="flex flex-col items-center justify-between bg-[#FAFAFA] pt-5 md:pr-[6.5rem] lg:flex-col xl:flex-row">
     // <div className="space-y-2 md:ml-20 px-6 py-2 text-black md:px-0 md:max-w-[200px]">
-    //   <p className="font-gilda text-3xl font-semibold">
+    //   <p className="${headingFont} text-3xl font-semibold">
     //     {t('aboutLandaHolding', { returnObjects: true })[0].title}
     //   </p>
     //   <p className="mb-20  ml-0 mt-4 text-justify font-barlow font-normal tracking-wide rtl:text-base  md:mt-8 lg:w-[687px]">
@@ -32,7 +33,7 @@ export default function AboutUsLandaHolding() {
     // </div>
     <div className="flex-col w-full mt-24 mb-20">
       <div className="flex flex-col-reverse items-stretch justify-between md:flex-row md:gap-8 mb-10 md:mb-0">
-        <div className=" flex flex-col justify-between font-gilda text-black md:px-0 md:w-1/2">
+        <div className={`flex flex-col justify-between ${headingFont} text-black md:px-0 md:w-1/2`}>
           <p className=" text-2xl md:text-4xl font-bold text-black mb-2 md:mb-0">
             {t('aboutLandaHolding', { returnObjects: true })[0].title}
           </p>
@@ -61,7 +62,7 @@ export default function AboutUsLandaHolding() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <div className="flex flex-col justify-between font-gilda md:px-0 md:rtl:pr-12 md:order-last md:w-1/2 md:pt-0">
+        <div className={`flex flex-col justify-between ${headingFont} md:px-0 md:rtl:pr-12 md:order-last md:w-1/2 md:pt-0`}>
           <span className=" text-2xl md:text-4xl font-bold mb-2 md:mb-0">
             {t('TheStoryOfLanda', { returnObjects: true })[0].title}
           </span>

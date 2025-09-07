@@ -19,7 +19,7 @@ export default function AboutUsProfile() {
           <h2 className="tracking-0 font-condensed text-xl font-normal uppercase leading-normal md:text-2xl ltr:tracking-widest">
             {t('professionals')}
           </h2>
-          <h1 className="rtl:tracking-0 font-gilda text-3xl  font-normal uppercase leading-normal md:text-4xl my-2">
+          <h1 className="rtl:tracking-0 ${headingFont} text-3xl  font-normal uppercase leading-normal md:text-4xl my-2">
             {t('boardOfDirectors')}
           </h1>
         </div> */}
@@ -63,7 +63,7 @@ export default function AboutUsProfile() {
       </div>
       {/* <div className="grid grid-cols-1 mt-10 items-center gap-6 px-12  py-10 md:grid-cols-2 md:gap-24 md:px-32  md:py-6 md:pt-20 bg-[#FAFAFA]">
         <div className="flex flex-col gap-6">
-          <span className="ltr:font-gilda rtl:font-EBGaramond text-bold text-2xl w-[300px] md:w-[500px] text-primary md:text-4xl flex justify-center">
+          <span className="ltr:${headingFont} rtl:font-EBGaramond text-bold text-2xl w-[300px] md:w-[500px] text-primary md:text-4xl flex justify-center">
             {t('certificate')}
           </span>
           <div className="flex size-full ltr:pr-8 md:pl-10 md:mt-4 md:ml-0 md:mr-0 rtl:pl-8">

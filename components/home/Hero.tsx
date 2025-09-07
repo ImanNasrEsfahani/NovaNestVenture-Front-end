@@ -1,4 +1,5 @@
 import '../../app/[lang]/globals.css';
+import { useLang } from 'stores/langStore';
 
 export default function Hero({
   titles,
@@ -9,6 +10,10 @@ export default function Hero({
   backgroundImage: string;
   lang: string;
 }) {
+
+  const lang = useLang().lang
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   return (
     <div
       style={{
@@ -25,7 +30,7 @@ export default function Hero({
       ></div>
 
       <div className="relative z-10 mt-64 flex w-fit flex-col justify-center gap-8 md:mx-24 md:justify-start md:ltr:ml-10 ">
-        <ul className="mt-40 mx-12 flex list-disc flex-col gap-4 font-gilda text-xl tracking-wider text-[#FAFAFA] rtl:tracking-normal md:pt-24 md:text-4xl md:tracking-[3.6px]">
+        <ul className={`mt-40 mx-12 flex list-disc flex-col gap-4 ${headingFont} text-xl tracking-wider text-[#FAFAFA] rtl:tracking-normal md:pt-24 md:text-4xl md:tracking-[3.6px]`}>
           {titles.map((title: string, index: number) => (
             <li
               key={index}

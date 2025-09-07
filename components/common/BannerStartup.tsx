@@ -14,6 +14,7 @@ export default function BannerStartUp({
   lang: string;
 }) {
   const { t } = getServerTranslation(lang, 'aboutUs');
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
     <div className="relative md:h-[520px]">
@@ -40,7 +41,7 @@ export default function BannerStartUp({
             >
               {t('NovaNestVenture')}
             </p>
-            <p className="font-gilda text-[32px] font-normal text-neutral-50 md:text-[50px] lg:text-[50px] xl:text-[50px]">
+            <p className={`${headingFont} text-[32px] font-normal text-neutral-50 md:text-[50px] lg:text-[50px] xl:text-[50px]`}>
               {title}
             </p>
             <Image src={logo} alt={title} width={230} height={230} />

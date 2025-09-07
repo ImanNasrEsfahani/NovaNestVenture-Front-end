@@ -36,6 +36,8 @@ export default function Page({
   //   fetchTags();
   // }, [slug]);
 
+  const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
+
   const cardData = [
     {
       title: 'NovaNest Venture | Event',
@@ -91,7 +93,7 @@ export default function Page({
                 <div key={index} className='flex flex-col gap-4'>
                   <p className="font-barlow">{card.description1}</p>
                   <p className="font-barlow">{card.description2}</p>
-                  <div className="mb-12 mt-5 grid grid-cols-2 justify-around gap-10 font-gilda md:grid-cols-4">
+                  <div className={`mb-12 mt-5 grid grid-cols-2 justify-around gap-10 ${headingFont} md:grid-cols-4`}>
                     {card.people.map((person, index) => {
                       return (
                         <div key={index} className="flex gap-2">
@@ -162,7 +164,7 @@ export default function Page({
                   height={320}
                 />
                 <div className="mt-6 flex flex-col gap-4 text-primary">
-                  <div className="flex items-center gap-2 font-gilda">
+                  <div className={`flex items-center gap-2 ${headingFont}`}>
                     <LocationIcon />
                     <span>{card.location}</span>
                   </div>
@@ -172,7 +174,7 @@ export default function Page({
                       return (
                         <div
                           key={index}
-                          className="flex items-center gap-2 font-gilda"
+                          className={`flex items-center gap-2 ${headingFont}`}
                         >
                           <TagIcon />
                           <span key={index}>{tag}</span>
@@ -180,12 +182,12 @@ export default function Page({
                       );
                     })}
                   </div>
-                  <div className="flex gap-2 font-gilda">
+                  <div className={`flex gap-2 ${headingFont}`}>
                     <Calender />
                     <span>{card.date.startTime}</span>
                     <span>{card.date.start}</span>
                   </div>
-                  <div className="flex gap-2 font-gilda">
+                  <div className={`flex gap-2 ${headingFont}`}>
                     <Calender />
                     <span>{card.date.endTime}</span>
                     <span>{card.date.end}</span>
@@ -194,7 +196,7 @@ export default function Page({
                     Add To Calender
                   </button>
                 </div>
-                <div className="mt-10 rounded-sm bg-whiteGold p-6 font-gilda">
+                <div className={`mt-10 rounded-sm bg-whiteGold p-6 ${headingFont}`}>
                   <span className="text-xl">Event sharing</span>
                   <div className="my-6 flex gap-5">
                     <Instagram />
