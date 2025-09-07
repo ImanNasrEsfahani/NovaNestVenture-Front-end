@@ -32,8 +32,8 @@ export default function HomeCardsSection({
     >
       <div className="flex flex-col h-full items-start justify-between gap-12 rtl:gap-16 md:w-1/2">
         <div className="flex flex-col items-start gap-4">
-          <span className={`${headingFont} text-1xl md:text-1xl`}>{smallTitle}</span>
-          <span className={`lrt:tracking-[6.5px] ${headingFont} font-bold text-4xl md:text-5xl`}>
+          <span className={`font-header text-1xl md:text-1xl`}>{smallTitle}</span>
+          <span className={`lrt:tracking-[6.5px] font-header font-bold text-4xl md:text-5xl`}>
             {titles}
           </span>
         </div>
