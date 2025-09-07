@@ -75,15 +75,12 @@ export default function Navbar({
                   width={100}
                   height={100}
                 />
-                {/* <span className="font-condensed text-[12px] font-bold text-primary ltr:tracking-[0.25rem] md:text-xl">
-                  {lang == 'en' ? 'NovaNest' : 'نوانست'}
-                </span> */}
               </div>
             </Link>
           </div>
 
           <div className="hidden justify-center ltr:mr-12 xl:flex xl:flex-1">
-            <ul className="menu menu-horizontal flex justify-center space-x-10 font-condensed text-xl font-bold rtl:space-x-reverse md:mb-3 ">
+            <ul className="menu menu-horizontal flex justify-center space-x-10 font-gilda text-xl md:mb-3 ">
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
                   <li className="h-9 text-2xl mt-2" key={label}>

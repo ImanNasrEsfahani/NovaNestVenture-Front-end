@@ -23,7 +23,7 @@ export default function HomeCardsSection({
   buttonText: string;
 }) {
 
-  const lang = useLang().lang
+  const { lang } = useLang();
   const headingFont = lang === 'fa' ? 'font-markazi' : 'font-gilda';
 
   return (
