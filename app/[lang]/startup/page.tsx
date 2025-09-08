@@ -5,7 +5,6 @@ import NatureOfStartups from '@/components/startup/NatureOfStartups';
 import Gateway from '@/components/startup/Gateway';
 import Services from '@/components/startup/Services';
 import LatestStartups from '@/components/home/LatestStartups';
-import { useLang } from 'stores/langStore';
 
 export default async function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -17,12 +16,14 @@ export default async function StartUp({ params: { lang } }: { params: { lang: st
         <Banner
           image="/static/images/startup/startup-banner.webp"
           title={t('banner')}
+          lang={lang}
         />
       </div>
       <div className='inline md:hidden'>
         <Banner
           image="/static/images/startup/startup-banner.webp"
           title={t('banner')}
+          lang={lang}
         />
       </div>
       <div className="max-w-[1600px] mx-auto px-8 md:px-24 font-header">
