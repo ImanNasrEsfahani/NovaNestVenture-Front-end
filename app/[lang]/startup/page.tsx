@@ -8,7 +8,7 @@ import LatestStartups from '@/components/home/LatestStartups';
 
 export default async function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
-  const t = await getServerTranslation(lang, 'startUp');
+  const { t } = await getServerTranslation(lang, 'startUp');
 
   return (
     <div>
