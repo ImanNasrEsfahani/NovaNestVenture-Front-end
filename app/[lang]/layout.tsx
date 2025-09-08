@@ -16,6 +16,7 @@ export default function RootLayout({
   }: {
     children: React.ReactNode
   }) {
+    
   const lang = useLang().lang;
 
   return (
@@ -24,12 +25,13 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="font-text" >
-        <Navbar />
-        <main className='mx-auto'>
-          {children}
-        </main>
-        <Footer/>
-        <ScrollUpButton />
+        <Navbar>
+          <main className='mx-auto'>
+            {children}
+          </main>
+          <Footer />
+          <ScrollUpButton />
+        </Navbar>
       </body>
     </html>
   );

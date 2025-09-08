@@ -9,8 +9,12 @@ import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Navbar() {
-  
+export default function Navbar({
+    children
+  }: {
+    children: React.ReactNode;
+  }) {
+
   const lang = useLang().lang;
   const { t } = getServerTranslation(lang, 'layout');
 
