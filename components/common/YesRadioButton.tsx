@@ -23,7 +23,7 @@ export default function YesRadioButton({
   handleFileChange: any;
   fileName: string;
 }) {
-  const { lang } = useLang();
+  const lang = useLang().lang
   const {t}=getServerTranslation(lang, "formComponent");
   let uploadInputTitle = ""
 

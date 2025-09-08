@@ -13,7 +13,7 @@ export default function TeamRolesContainer({
 }) {
   // const {selectedRole, updateRole} = useSubmit();
 
-  const { lang } = useLang();
+  const lang = useLang().lang
 
   const { t } = getServerTranslation(lang, "ourTeam");
 

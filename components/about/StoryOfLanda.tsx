@@ -6,6 +6,7 @@ import { useLang } from 'stores/langStore';
 
 export default function StoryOfLanda() {
 
+  const lang = useLang().lang
   const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (

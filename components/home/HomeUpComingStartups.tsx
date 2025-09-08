@@ -5,7 +5,7 @@ import { getServerTranslation } from 'app/i18n/client';
 import { useLang } from 'stores/langStore';
 
 export default function HomeUpComingStartups() {
-  const { lang } = useLang();
+  const lang = useLang().lang
 
   const { t } = getServerTranslation(lang, 'mainPage');
 
