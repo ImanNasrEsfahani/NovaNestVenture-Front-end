@@ -38,15 +38,17 @@ const initI18next = async (lng: any, ns: any) => {
 };
 
 export async function getServerTranslation(
-  lng: any,
-  ns: any,
+  lng: string | undefined,
+  ns: string | string[],
   options: { keyPrefix?: string } = {}
 ) {
-  const i18nextInstance = await initI18next(lng, ns);
+  const safeLang = lng ?? 'en'; // fallback if undefined
+  const i18nextInstance = await initI18next(safeLang, ns);
+  const primaryNs = (Array.isArray(ns) ? ns[0] : ns) as any; // cast to Namespace
   return {
     t: i18nextInstance.getFixedT(
-      lng,
-      Array.isArray(ns) ? ns[0] : ns,
+      safeLang,
+      primaryNs,
       options.keyPrefix
     ),
     i18n: i18nextInstance
