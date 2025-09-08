@@ -16,7 +16,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 import LandaLogo from '../icons/common/LandaLogo';
 import CountryInput from '../common/form/CountryInput';
 
-export default function PartnerMembershipForm() {
+export default async function PartnerMembershipForm() {
   const {
     register,
     handleSubmit,
