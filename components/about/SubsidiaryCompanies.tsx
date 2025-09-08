@@ -1,9 +1,10 @@
 'use client';
 import CompaniesContainer from '../home/CompaniesContainer';
 import { getServerTranslation } from 'app/i18n/client';
+import { useLang } from 'stores/langStore';
 
 export default function SubsidiaryCompanies() {
-
+  const lang = useLang().lang
   const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
