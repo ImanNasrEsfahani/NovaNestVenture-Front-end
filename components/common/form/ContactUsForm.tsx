@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { ContactUSFormData } from '../../../types/global';
@@ -14,7 +15,7 @@ import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../ButtonRefactor';
 
-export default function ContactUsForm() {
+export default async function ContactUsForm() {
   const {
     register,
     handleSubmit,
@@ -35,7 +36,6 @@ export default function ContactUsForm() {
   } = useSubmit((s) => s);
 
   const lang = useLang((s) => s.lang);
-
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   const { send } = useSubmit();
