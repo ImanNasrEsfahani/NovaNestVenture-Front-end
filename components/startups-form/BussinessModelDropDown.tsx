@@ -4,21 +4,19 @@ import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 // import FileUpload from '@/public/static/logos/FileUpload'
 import ChevDown from 'public/static/logos/ChevDown';
-import { useLang } from 'stores/langStore';
 import { getServerTranslation } from 'app/i18n';
 
 type Props = {
   register: UseFormRegister<StartupsFormData>;
   errors: FieldErrors<StartupsFormData>;
   handleFinancialModelFileChange: (file: any) => void;
+  lang: string;
 };
 
-const BussinessModelDropDown = (props: Props) => {
-  const { register, errors, handleFinancialModelFileChange } = props;
+const BussinessModelDropDown = async (props: Props) => {
+  const { register, errors, handleFinancialModelFileChange, lang } = props;
 
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);
-
-  const lang = useLang((s) => s.lang);
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
