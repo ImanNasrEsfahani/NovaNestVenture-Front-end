@@ -1,8 +1,7 @@
-'use client'
 import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 
-export default function BannerStartUp({
+export default async function BannerStartUp({
   image,
   title,
   logo,

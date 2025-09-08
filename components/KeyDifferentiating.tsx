@@ -1,9 +1,6 @@
-'use client'
 import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 // import React, { useState } from 'react'; 
-
-import { useLang } from 'stores/langStore';
 
 // const paragraphStyles: React.CSSProperties = {
 //   WebkitLineClamp: 10,
@@ -12,9 +9,7 @@ import { useLang } from 'stores/langStore';
 //   display: '-webkit-box'
 // };
 
-export default async function KeyDifferentiating() {
-
-  const lang = useLang().lang;
+export default async function KeyDifferentiating({lang}: {lang?: string}) {
 
   const { t } = await getServerTranslation(lang, 'aboutUs');
 

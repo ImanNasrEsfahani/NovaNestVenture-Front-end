@@ -1,14 +1,11 @@
-'use client'
 import AboutusPersonalTabs from './AboutusPersonalTabs';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 // import Certificate from '@/components/investment/Certificate';
 // import Link from '@/components/icons/Link';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
 //import FeaturesCardsContainer from '../investment/FeaturesCardsContainer';
 
-export default async function AboutUsProfile() {
-  const lang = useLang().lang;
+export default async function AboutUsProfile({lang}: {lang?: string}) {
   const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (

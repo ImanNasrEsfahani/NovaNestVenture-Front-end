@@ -1,11 +1,7 @@
-'use client'
 import CompaniesCard from './CompaniesCard';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function CompaniesContainer() {
-  const lang = useLang().lang
-
+export default async function CompaniesContainer({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (

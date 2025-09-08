@@ -1,5 +1,3 @@
-'use client';
-
 export default function Select({
   register,
   errors,

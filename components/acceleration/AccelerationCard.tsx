@@ -1,7 +1,6 @@
 // import PrimaryDot from '../icons/acceleration/PrimaryDot';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 // TODO: define props in types file and import it
 type Props = {

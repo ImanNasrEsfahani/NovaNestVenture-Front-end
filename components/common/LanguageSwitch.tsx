@@ -1,4 +1,3 @@
-// 'use client';
 import { useLang } from 'stores/langStore';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';

@@ -1,12 +1,10 @@
-'use client';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 // import { getInitialProps } from 'react-i18next';
 
-export default async function AboutUsLandaHolding() {
-  const lang = useLang().lang;
-  
+export default async function AboutUsLandaHolding({lang}: {lang?: string}) {
+
   const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (

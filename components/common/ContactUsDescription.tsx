@@ -1,4 +1,3 @@
-'use client';
 // import Phone from '../icons/IconPhone';
 // import Email from '../icons/IconEmail';
 // import Location from '../icons/IconLocation';
@@ -6,14 +5,11 @@ import Link from 'next/link';
 //import IconLinkedinB from '../icons/IconLinkedinB';
 //import IconEmailB from '../icons/IconEmailB';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 //import InstagramIconNew from '../icons/socialMediaIcons/InstagramIconNew';
 //import WhatsappIconNew from '../icons/socialMediaIcons/WhatsappIconNew';
 import Image from 'next/image';
 
-export default function ContactUsDescription() {
-  const lang = useLang().lang;
-
+export default async function ContactUsDescription({lang}: {lang?: string}) {
   const { t } = await getServerTranslation(lang, 'contact');
 
   return (
