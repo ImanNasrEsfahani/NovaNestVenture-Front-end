@@ -4,7 +4,7 @@ import UpcomingStartupsCard from './UpcomingStartupsCard';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
-export default function HomeUpComingStartups() {
+export default async function HomeUpComingStartups() {
   const lang = useLang().lang
 
   const { t } = await getServerTranslation(lang, 'mainPage');

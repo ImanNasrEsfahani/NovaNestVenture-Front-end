@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import TeamRolesContainer from './TeamRolesContainer';
 import PersonalTab from '../common/PersonalTab';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 // TODO: read from i18n instead of statics
 // import { personsEN, personsFA } from '../../app/[lang]/statics';
 // import { rolesEN, rolesFA } from '../../app/[lang]/statics';
@@ -16,8 +15,7 @@ interface item {
   category: string;
 }
 
-export default function TeamPersons() {
-  const lang = useLang().lang
+export default async function TeamPersons({lang}: {lang?: string}) {
   const { t } = await getServerTranslation(lang, 'ourTeam');
 
   // const [selectedRole, setSelectedRole] = useState<string | null>(null);
@@ -51,6 +49,7 @@ export default function TeamPersons() {
     <div>
       <div className="flex w-full justify-center">
         <TeamRolesContainer
+          lang={lang || 'en'}
           onRoleSelect={handleRoleSelect}
           roles={t('roles', { returnObjects: true })}
         />

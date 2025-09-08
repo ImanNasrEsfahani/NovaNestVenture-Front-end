@@ -16,7 +16,7 @@ import { MentorRegistrationFormData } from '../../types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
 
-export default function InvestorRegistrationForm() {
+export default async function InvestorRegistrationForm() {
   const {
     register,
     handleSubmit,

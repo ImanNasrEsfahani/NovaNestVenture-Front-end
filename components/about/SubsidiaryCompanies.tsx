@@ -13,7 +13,7 @@ export default async function SubsidiaryCompanies({lang}: {lang?: string}) {
       <p className=" text-justify font-barlow text-[16px] md:text-xl mb-10 md:leading-8 md:pt-12">
         {t('SubsidiaryCompanies', { returnObjects: true }).text}
       </p>
-      <CompaniesContainer />
+      <CompaniesContainer lang={lang} />
     </div>
   );
 }

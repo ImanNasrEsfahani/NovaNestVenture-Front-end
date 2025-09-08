@@ -4,7 +4,7 @@ import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
 import { useLang } from 'stores/langStore';
 
-export default function NotificationSendForm() {
+export default async function NotificationSendForm() {
 
   const {
     isSubmitting,

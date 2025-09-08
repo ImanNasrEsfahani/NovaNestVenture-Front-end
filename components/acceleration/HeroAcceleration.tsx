@@ -5,7 +5,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 //TODO: hero components
-export default function Hero({
+export default async function Hero({
   showLanda,
   leftImage,
   showButton,

@@ -2,7 +2,7 @@ import React from 'react';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
-export default function InvestorRegistrationTitle(
+export default async function InvestorRegistrationTitle(
   {formName} : {formName: string}
 ) {
 

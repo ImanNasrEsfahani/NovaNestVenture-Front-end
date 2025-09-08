@@ -17,7 +17,7 @@ import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import * as process from 'process';
 
-export default function LandaGene() {
+export default async function LandaGene() {
   const {
     register,
     handleSubmit,

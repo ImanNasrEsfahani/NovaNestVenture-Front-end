@@ -13,7 +13,7 @@ type Props = {
   noLabel?: boolean;
 };
 
-const LandaGeneInput = ({
+const LandaGeneInput = async ({
   register,
   errors,
   nameInputs,

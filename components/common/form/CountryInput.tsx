@@ -11,7 +11,7 @@ type Props = {
   nameInput: string;
 }
 
-export default function CountryInput({
+export default async function CountryInput({
   register,
   errors,
   nameInput,

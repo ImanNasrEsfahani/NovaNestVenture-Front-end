@@ -18,15 +18,13 @@ type Props = {
   noLabel?: boolean;
 };
 
-const PersonalInfoInput = ({
+const PersonalInfoInput = async ({
   register,
   errors,
   nameInputs,
   noLabel
 }: Props) => {
   const { lang } = useLang((s) => s);
-
-  // const { t } = await getServerTranslation(lang, 'formComponent');
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 
