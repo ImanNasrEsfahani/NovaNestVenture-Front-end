@@ -8,7 +8,7 @@ import StartupFormIdea from './StartupFormIdea';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 // import GetCsrfToken from '../../utils/get-csrf-token';
 import { submitStartupsForm } from '../../pages/api/startups-form';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';

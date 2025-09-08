@@ -1,8 +1,8 @@
 import React from 'react';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 
-export default function AboutUs({ lang }: { lang: string }) {
-    const { t } = getServerTranslation(lang, 'mainPage');
+export default async function AboutUs({ lang }: { lang: string }) {
+    const { t } = await getServerTranslation(lang, 'mainPage');
 
     return (
         <section className="pt-20 pb-10 bg-gradient-to-b from-white to-gray-50">

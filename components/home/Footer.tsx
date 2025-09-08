@@ -3,7 +3,7 @@ import Instagram from '../icons/footer/Instagram';
 import Envelope from '../icons/footer/Envelope';
 import Whatsapp from '../icons/footer/Whatsapp';
 import LinkedIn from '../icons/footer/LinkedIn';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 
 interface FooterItem {
   text: string;
@@ -16,13 +16,13 @@ interface FooterText {
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Footer({
+export default async function Footer({
     lang
   }: {
     lang: string;
   }) {
 
-  const { t } = getServerTranslation(lang, "footer")
+  const { t } = await getServerTranslation(lang, "footer")
 
   function GetYear() {
     const currentYear = new Date().getFullYear();

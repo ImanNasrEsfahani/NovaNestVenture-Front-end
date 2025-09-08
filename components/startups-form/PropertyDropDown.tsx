@@ -4,7 +4,7 @@ import ChevDown from 'public/static/logos/ChevDown';
 import { StartupsFormData } from '@/types/global';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { useLang } from '../../stores/langStore';
-import { getServerTranslation } from '../../app/i18n/client';
+import { getServerTranslation } from '../../';
 
 type Props = {
     register: UseFormRegister<StartupsFormData>

@@ -5,7 +5,7 @@ import { StartupsFormData } from '@/types/global';
 // import FileUpload from '@/public/static/logos/FileUpload'
 import ChevDown from 'public/static/logos/ChevDown';
 import { useLang } from 'stores/langStore';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 
 type Props = {
   register: UseFormRegister<StartupsFormData>;

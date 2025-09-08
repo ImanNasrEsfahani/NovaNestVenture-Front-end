@@ -6,7 +6,7 @@ import StartupFormProblem from './StartupFormProblems';
 import StartupFormSolutions from './StartupFormSolutions';
 import StartupFormBusinessModel from './StartupFormBusinessModel';
 import { handleRadioChange } from '../../utils/functions';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 export default function StartupFormMVP({

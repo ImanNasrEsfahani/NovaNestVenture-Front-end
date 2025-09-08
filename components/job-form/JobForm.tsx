@@ -8,7 +8,7 @@ import GetCsrfToken from '../..//utils/get-csrf-token';
 import { initialJobFormData } from '../../initials/initObjects';
 import { submitApplyJobForm } from '../../pages/api/jobs';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '../common/ButtonRefactor';
 import Button from '../common/Button';
 import { useLang } from 'stores/langStore';

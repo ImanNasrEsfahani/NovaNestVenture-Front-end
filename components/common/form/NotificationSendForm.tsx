@@ -1,6 +1,6 @@
 
 import Check from '../../../components/icons/common/Check';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
 import { useLang } from 'stores/langStore';
 

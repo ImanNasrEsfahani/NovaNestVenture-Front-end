@@ -1,13 +1,13 @@
 'use client';
 import Image from 'next/image';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 // import { getInitialProps } from 'react-i18next';
 
-export default function AboutUsLandaHolding() {
+export default async function AboutUsLandaHolding() {
   const lang = useLang().lang;
   
-  const { t } = getServerTranslation(lang, 'aboutUs');
+  const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (
     // <div className="flex flex-col items-center justify-between bg-[#FAFAFA] pt-5 md:pr-[6.5rem] lg:flex-col xl:flex-row">

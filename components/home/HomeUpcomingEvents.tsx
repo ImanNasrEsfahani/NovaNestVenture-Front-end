@@ -1,11 +1,11 @@
-import { getServerTranslation } from 'app/i18n/client'
-import React from 'react'
-import { useLang } from 'stores/langStore'
+import { getServerTranslation } from 'app/i18n';
+import React from 'react';
+import { useLang } from 'stores/langStore';
 
-export default function UpcomingEvents() {
+export default async function UpcomingEvents() {
   const lang = useLang.getState().lang;
 
-  const { t } = getServerTranslation(lang, "mainPage")
+  const { t } = await getServerTranslation(lang, "mainPage")
 
   return (
     <div className='min-h-[400px] g-whiteGold'>

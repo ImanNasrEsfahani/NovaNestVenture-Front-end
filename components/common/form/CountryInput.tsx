@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Select from '../../common/form/Select';
 import Input from '../../common/form/Input';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 type Props = {

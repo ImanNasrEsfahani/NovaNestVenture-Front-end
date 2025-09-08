@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";

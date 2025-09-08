@@ -8,7 +8,7 @@ import StartupFormBusinessModel from './StartupFormBusinessModel';
 import StartupFormTargetMarket from './StartupFormTargetMarket';
 import StartupFormProperty from './StartupFormProperty';
 import { handleRadioChange } from '../../utils/functions';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 export default function StartupFormSaleDevelopment({

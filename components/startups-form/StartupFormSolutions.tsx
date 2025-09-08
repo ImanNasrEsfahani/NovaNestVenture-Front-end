@@ -1,6 +1,6 @@
 import TextArea from '../common/TextArea';
 import RadioButtonGroup from '../common/RadioButtonGroup';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 export default function StartupFormSolutions({

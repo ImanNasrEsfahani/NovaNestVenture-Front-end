@@ -8,7 +8,7 @@ import GetCsrfToken from '../../utils/get-csrf-token';
 import Input from '../common/form/Input';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import Button from '../common/Button';

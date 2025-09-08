@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { getServerTranslation } from 'app/i18n/client'; // switched to server variant
+import { getServerTranslation } from 'app/i18n'; // switched to server variant
 // import { setCookie } from 'cookies-next'; // removed (client-side)
 // import LanguageSwitch from './LanguageSwitch';
 

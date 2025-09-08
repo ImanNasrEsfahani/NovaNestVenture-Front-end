@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import TextArea from '../common/TextArea';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../common/ButtonRefactor';

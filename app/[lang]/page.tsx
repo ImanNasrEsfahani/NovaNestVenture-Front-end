@@ -41,7 +41,7 @@ export default function Page({ params }: { params: { lang: string } }) {
         {/* <HomeUpComingStartups /> */}
         <HomeNovaNestAcademy lang={lang} />
         <NovaNestBlack />
-        <LatestStartups />
+        <LatestStartups lang={lang} />
         <NovaNestPriority />
         {/* <Partners /> */}
 

@@ -1,6 +1,6 @@
 'use client';
 import HomeCards from './HomeCards';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { CompanySectionsInterface } from '@/types/global';
 import { useLang } from 'stores/langStore';
 

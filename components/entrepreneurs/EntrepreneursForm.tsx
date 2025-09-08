@@ -7,7 +7,7 @@ import NotificationSendForm from '../common/form/NotificationSendForm';
 import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import TextArea from '../common/TextArea';

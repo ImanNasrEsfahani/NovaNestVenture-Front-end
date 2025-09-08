@@ -1,7 +1,7 @@
 import * as React from 'react';
 import UploadInput from '../common/UploadInput';
 import TextArea from '../common/TextArea';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 export default function StartupFormBusinessModel({

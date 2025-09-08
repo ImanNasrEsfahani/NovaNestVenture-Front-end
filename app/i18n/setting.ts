@@ -3,14 +3,15 @@ export const languages = [fallbackLng, 'fa']
 export const defaultNS = 'translation'
 export const cookieName = 'i18next'
 
-export function getOptions (lng = fallbackLng, ns = defaultNS) {
+import type { InitOptions } from 'i18next';
+
+export function getOptions(lng: string, ns?: string | string[]): InitOptions {
   return {
-    // debug: true,
-    supportedLngs: languages,
-    fallbackLng,
     lng,
-    fallbackNS: defaultNS,
-    defaultNS,
-    ns
-  }
+    fallbackLng: 'en',
+    // i18next allows string | string[]
+    ns,
+    defaultNS: Array.isArray(ns) ? ns[0] : ns || 'common',
+    supportedLngs: ['en', 'fa']
+  };
 }

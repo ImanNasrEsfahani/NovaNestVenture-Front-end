@@ -4,14 +4,14 @@ import { FieldErrors, UseFormRegister } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import ChevDown from 'public/static/logos/ChevDown'
 import { useLang } from 'stores/langStore'
-import { getServerTranslation } from 'app/i18n/client'
+import { getServerTranslation } from 'app/i18n'
 
 type Props = {
     register: UseFormRegister<StartupsFormData>
     errors: FieldErrors<StartupsFormData>
 }
 
-const TargetMarketDropDown = (props: Props) => {
+const TargetMarketDropDown = async (props: Props) => {
 
   const {
     register,
@@ -20,7 +20,7 @@ const TargetMarketDropDown = (props: Props) => {
 
   const [targetMarketOpen, setTargetMarketOpen] = useState<boolean>(false);  
   const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent')
+  const { t } = await getServerTranslation(lang, 'formComponent')
 
   return (
     <div>

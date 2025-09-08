@@ -5,7 +5,7 @@ import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { useLang } from 'stores/langStore'
-import { getServerTranslation } from 'app/i18n/client'
+import { getServerTranslation } from 'app/i18n'
 import ChevDown from 'public/static/logos/ChevDown'
 import TextArea from '../common/TextArea'
 import PropertyDropDown from './PropertyDropDown'
@@ -31,7 +31,7 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpTrialRefactore = (props: Props) => {
+const StartUpTrialRefactore = async (props: Props) => {
   const {
     handleFileCounterChange,
     handlePitchFileChange,
@@ -47,7 +47,7 @@ const StartUpTrialRefactore = (props: Props) => {
   } = props;  
 
   const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 

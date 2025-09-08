@@ -1,10 +1,10 @@
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 
-export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
-  const { t } = getServerTranslation(lang, 'mainPage');
+export default async function HomeNovaNestAcademy({ lang }: { lang: string }) {
+  const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="flex flex-col justify-between gap-10 py-10 md:flex-row md:py-20 ">

@@ -1,6 +1,6 @@
 import React from 'react'
 import Input from '@/components/common/form/Input';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
 type Props = {

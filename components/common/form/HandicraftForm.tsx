@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import { HandicraftFormData } from 'initials/initObjects';
 import { HandicraftForm as HandicraftFormType } from '../../../types/global';
 import NotificationSendForm from './NotificationSendForm';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '../ButtonRefactor';
 import { useLang } from 'stores/langStore';
 import { submitHandiCraftApplicationForm } from 'pages/api/handiCrafts';

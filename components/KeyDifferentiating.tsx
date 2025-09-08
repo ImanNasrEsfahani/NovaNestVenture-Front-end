@@ -1,5 +1,5 @@
 'use client'
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 // import React, { useState } from 'react'; 
 

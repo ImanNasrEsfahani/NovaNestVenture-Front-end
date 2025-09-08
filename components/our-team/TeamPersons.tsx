@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import TeamRolesContainer from './TeamRolesContainer';
 import PersonalTab from '../common/PersonalTab';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 // TODO: read from i18n instead of statics
 // import { personsEN, personsFA } from '../../app/[lang]/statics';

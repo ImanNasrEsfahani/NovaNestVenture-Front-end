@@ -1,5 +1,5 @@
 import React from 'react';
-import { getServerTranslation } from 'app/i18n/client';
+import { getServerTranslation } from 'app/i18n';
 import Data from '../icons/startup/Data';
 import MoneyRecive from '../icons/startup/MoneyRecive';
 import MusicPlay from '../icons/startup/MusicPlay';

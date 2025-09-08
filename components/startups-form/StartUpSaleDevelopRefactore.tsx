@@ -9,7 +9,7 @@ import SolutionLevel from './SolutionLevel'
 import TargetMarketDropDown from './TargetMarketDropDown'
 import { StartupsFormData } from '@/types/global'
 import { UseFormRegister, FieldErrors, UseFormSetValue } from 'react-hook-form'
-import { getServerTranslation } from 'app/i18n/client'
+import { getServerTranslation } from 'app/i18n'
 import { useLang } from 'stores/langStore'
 
 type Props = {
