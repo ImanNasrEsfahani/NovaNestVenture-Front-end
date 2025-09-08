@@ -1,12 +1,9 @@
-'use client'
 import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';
-import { useLang } from 'stores/langStore';
 
 export default function TagsContainer() {
   const {tags} = useSubmit();
-
   useFetchBlog("tags");
 
   return (

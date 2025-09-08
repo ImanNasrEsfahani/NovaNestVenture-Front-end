@@ -1,5 +1,3 @@
-// Certificate.js
-'use client';
 import React, { useState } from 'react';
 import ImageModal from '../common/ImageModal';
 import Image from 'next/image';

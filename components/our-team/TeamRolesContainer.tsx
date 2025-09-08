@@ -1,19 +1,17 @@
-'use client';
 import { getServerTranslation } from 'app/i18n';
 import React, { useEffect, useState } from 'react';
-import { useLang } from 'stores/langStore';
 // import { useSubmit } from 'stores/submitStore';
 
-export default function TeamRolesContainer({
+export default async function TeamRolesContainer({
+  lang,
   roles,
   onRoleSelect
 }: {
+  lang: string;
   roles: string[];
   onRoleSelect: (role: string) => void;
 }) {
   // const {selectedRole, updateRole} = useSubmit();
-
-  const lang = useLang().lang
 
   const { t } = await getServerTranslation(lang, "ourTeam");
 

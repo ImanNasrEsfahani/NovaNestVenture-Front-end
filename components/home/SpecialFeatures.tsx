@@ -1,4 +1,3 @@
-'use client';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { motion } from 'framer-motion';
@@ -12,8 +11,7 @@ interface Feature {
   link: string;
 }
 
-export default function SpecialFeatures() {
-  const lang = useLang().lang;
+export default async function SpecialFeatures({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'mainPage');
   
   return (
