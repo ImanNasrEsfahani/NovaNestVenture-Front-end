@@ -1,42 +1,42 @@
-'use client';
 import { MagazineData } from '@/types/global';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
-const preData: MagazineData = {
-  title: "",
-  description: "",
-  thumbnail: "",
-  slug: "",
-  date: "",
-  file: "",
+interface PageProps {
+  params: { lang: string; slug: string };
 }
 
-export default function Page() {
-  const pathname = usePathname();
-  const slug = pathname?.replace('/magazine/', '');
+// (Optional) implement if you still need static generation
+// export async function generateStaticParams() {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}blog/list/?format=json`);
+//   const list: { slug: string }[] = await res.json();
+//   return list.map(item => ({ slug: item.slug, lang: 'en' })); // adjust languages
+// }
 
-  const [cardData, setCardData] = useState<MagazineData>(preData);
-  useEffect(() => {
-    async function fetchTags() {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}blog/details/${slug}/?format=json`
-      );
-      const data = await response.json();
+export default async function Page({ params }: PageProps) {
+  const { slug } = params;
 
-      setCardData(data);
-    }
-    fetchTags();
-  }, [slug]);
+  const host = process.env.NEXT_PUBLIC_DJANGO_HOST_URL;
+  if (!host) {
+    return <div className="text-red-600">Missing NEXT_PUBLIC_DJANGO_HOST_URL</div>;
+  }
+
+  const res = await fetch(
+    `${host}blog/details/${encodeURIComponent(slug)}/?format=json`,
+    { cache: 'no-store' } // or { next: { revalidate: 300 } }
+  );
+
+  if (!res.ok) {
+    return <div className="text-red-600">Failed to load article (status {res.status})</div>;
+  }
+
+  const cardData: MagazineData = await res.json();
 
   return (
     <div>
-      {/* <Image src={cardData?.thumbnail} alt='thumbnail'/> */}
       <h1>{cardData?.title}</h1>
       <p>{cardData?.date}</p>
       <div
         className="text-justify font-barlow text-[#6B6B6B]"
-        dangerouslySetInnerHTML={{ __html: cardData?.description ?? "" }}
+        dangerouslySetInnerHTML={{ __html: cardData?.description ?? '' }}
       />
     </div>
   );
