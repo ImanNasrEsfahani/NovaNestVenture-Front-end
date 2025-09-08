@@ -5,7 +5,7 @@ import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import CountryInput from '../common/form/CountryInput';
 
-export default function StartupFormPersonalInformation({
+export default async function StartupFormPersonalInformation({
   register,
   errors
 }: {
