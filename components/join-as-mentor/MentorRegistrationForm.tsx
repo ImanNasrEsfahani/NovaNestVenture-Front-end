@@ -37,7 +37,6 @@ export default async function InvestorRegistrationForm() {
   } = useSubmit((s) => s);
 
   const lang = useLang((s) => s.lang);
-
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
