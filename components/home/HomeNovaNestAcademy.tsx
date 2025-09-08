@@ -6,6 +6,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 
 
 export default function HomeNovaNestAcademy() {
+  const lang = useLang().lang
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
@@ -25,8 +26,6 @@ export default function HomeNovaNestAcademy() {
           />
         </div>
       </div>
-
-
       
       <div className="tooltip-success relative flex w-full justify-end gap-3 md:w-[47%]">
         <div
