@@ -12,11 +12,11 @@ import { useLang } from 'stores/langStore';
 //   display: '-webkit-box'
 // };
 
-export default function KeyDifferentiating() {
+export default async function KeyDifferentiating() {
 
   const lang = useLang().lang;
 
-  const { t } = getServerTranslation(lang, 'aboutUs');
+  const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (
     // TODO: don't use [0], [1] for translations
