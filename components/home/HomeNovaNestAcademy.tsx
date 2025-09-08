@@ -1,12 +1,9 @@
-"use client"
 import { getServerTranslation } from 'app/i18n/client';
 import Image from 'next/image';
-import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 
-export default function HomeNovaNestAcademy() {
-  const lang = useLang().lang
+export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (

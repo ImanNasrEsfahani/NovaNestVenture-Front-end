@@ -1,12 +1,7 @@
-"use client"
-
 import React from 'react';
 import { getServerTranslation } from 'app/i18n/client';
-import { useLang } from 'stores/langStore';
 
-
-export default function AboutUs(){
-    const lang = useLang().lang;
+export default function AboutUs({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'mainPage');
 
     return (
