@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import EnvelopeMediaIconNew from '@/components/icons/socialMediaIcons/EnvelopeMediaIconNew';
 import InstagramIconNew from '@/components/icons/socialMediaIcons/InstagramIconNew';
