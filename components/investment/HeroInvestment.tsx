@@ -52,7 +52,7 @@ export default function Hero({
           {showButton ? (
             <ButtonRefactor
               text={lang === 'en' ? 'Register Now' : 'همین حالا ثبت نام کنید'}
-              href={`${base}/investor-registration`}
+              href={`${base}investor-registration`}
               type="link"
             />
           ) : (

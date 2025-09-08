@@ -63,19 +63,19 @@ export default function Footer(
             {t('explore.text.home')}
           </Link>
           <Link
-            href={`${base}/about`}
+            href={`${base}about`}
             className="pt-1 hover:text-primary"
           >
             {t('explore.text.about')}
           </Link>
           <Link
-            href={`${base}/contact`}
+            href={`${base}contact`}
             className="pt-1 hover:text-primary"
           >
             {t('explore.text.contact')}
           </Link>
           <Link
-            href={`${base}/our-team`}
+            href={`${base}our-team`}
             className="pt-1 hover:text-primary"
           >
             {t('explore.text.ourTeam')}
@@ -86,7 +86,7 @@ export default function Footer(
           {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
             <Link
               key={key}
-              href={`${base}/${value.link}`}
+              href={`${base}${value.link}`}
               className="pt-1 hover:text-primary"
             >
               {value.text}

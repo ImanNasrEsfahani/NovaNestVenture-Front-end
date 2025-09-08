@@ -18,7 +18,7 @@ export default function ContactUs() {
           affiliate, please complete our free questionnaire for our confidential
           review.
         </p>
-        <Link href={`${base}/partner-membership`}>
+        <Link href={`${base}partner-membership`}>
           <ButtonRefactor text="Join Us" />
         </Link>
       </div>

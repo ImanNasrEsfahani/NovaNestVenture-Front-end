@@ -37,7 +37,7 @@ export default function HomeCardsSection({
           {text}
         </p>
         <div className="w-[45%] md:w-[35%]">
-          <ButtonRefactor text={buttonText} type="link" href={`${base}/${link}`} />
+          <ButtonRefactor text={buttonText} type="link" href={`${base}${link}`} />
         </div>
       </div>
       <div

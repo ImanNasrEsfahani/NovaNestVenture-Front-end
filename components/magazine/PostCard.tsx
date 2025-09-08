@@ -33,7 +33,7 @@ export default function PostCard({
       <span className="font-condensed tracking-[2.4px] text-primary">
         {date}
       </span>
-      <Link href={`${base}/magazine/${slug}`} className="font-header text-xl tracking-[2.8px] hover:text-primary">
+      <Link href={`${base}magazine/${slug}`} className="font-header text-xl tracking-[2.8px] hover:text-primary">
         {title}
       </Link>
       <div className='text-justify font-barlow text-[#6B6B6B]' dangerouslySetInnerHTML={{ __html: description }} />

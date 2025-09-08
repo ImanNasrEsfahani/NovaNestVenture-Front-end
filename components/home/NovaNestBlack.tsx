@@ -34,7 +34,7 @@ export default function NovaNestBlack() {
           <ButtonRefactor
             text={t('Register')}
             type="link"
-            href={`${base}/investor-registration`}
+            href={`${base}investor-registration`}
             bgColor="black"
           />
         </div>
@@ -62,7 +62,7 @@ export default function NovaNestBlack() {
           <ButtonRefactor
             text={t('Register')}
             type="link"
-            href={`${base}/formEntrepreneurs`}
+            href={`${base}formEntrepreneurs`}
             bgColor="black"
           />
         </div>

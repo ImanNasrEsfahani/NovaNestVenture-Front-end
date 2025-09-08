@@ -84,7 +84,7 @@ export default function Navbar({
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
                   <li className="h-9 text-xl mt-2" key={label}>
-                    <Link href={`${base}/${href}`} className="text-white hover:bg-white">
+                    <Link href={`${base}${href}`} className="text-white hover:bg-white">
                       {label}
                     </Link>
                   </li>
@@ -101,7 +101,7 @@ export default function Navbar({
                     {submenuItems.map(({ label, href }: any) => (
                       <li className="max-h-fit text-xl" key={label}>
                         <Link
-                          href={`${base}/${href}`}
+                          href={`${base}${href}`}
                           className="block border p-5 font-bold text-black hover:bg-base-200 hover:text-primary"
                         >
                           {label}
@@ -139,7 +139,7 @@ export default function Navbar({
               key={label}
               onClick={() => handleLinkClick()}
             >
-              <Link href={`${base}/${href}`} className="">
+              <Link href={`${base}${href}`} className="">
                 {label}
               </Link>
             </li>
@@ -157,7 +157,7 @@ export default function Navbar({
                   {submenuItems.map(
                     ({ label, href }: { label: string; href: string }) => (
                       <li key={label} onClick={() => handleLinkClick()}>
-                        <Link href={`${base}/${href}`} className="font-condensed">
+                        <Link href={`${base}${href}`} className="font-condensed">
                           {label}
                         </Link>
                       </li>

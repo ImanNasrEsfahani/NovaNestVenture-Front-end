@@ -53,7 +53,7 @@ export default function Hero({
           <div className='w-64'>
             <ButtonRefactor
               text={t('lng') === 'en' ? 'Register Now' : 'همین الان ثبت نام کنید'}
-              href={`${base}/${link}`}
+              href={`${base}${link}`}
               type='link'
             />
           </div>

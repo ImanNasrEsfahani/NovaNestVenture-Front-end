@@ -25,7 +25,7 @@ export default function HomeCardsLeft({
           {text}
         </p>
         <div className='w-1/2 md:w-1/3'>
-          <ButtonRefactor text={buttonText} type="link" href={`${base}/${link}`} />
+          <ButtonRefactor text={buttonText} type="link" href={`${base}${link}`} />
         </div>
       </div>
     </div>

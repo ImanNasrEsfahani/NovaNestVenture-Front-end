@@ -30,7 +30,7 @@ const AboutUsCard = ({
             <p className="text-normal  justify-left mt-5 font-barlow leading-6 ">
               {text}
             </p>
-            <Link href={`${base}/${link}`}>
+            <Link href={`${base}${link}`}>
               {/* <Button 
                 text='Visit Now' 
                 size={''} 
@@ -83,7 +83,7 @@ const AboutUsCard = ({
               {title}
             </p>
             <p className="text-normal mt-5">{text}</p>
-            <Link href={`${base}/${link}`}>
+            <Link href={`${base}${link}`}>
               <button className=" mx-auto mt-8 flex justify-items-center bg-primary px-10  py-2 font-barlow text-white md:mt-24">
                 Visit Now
               </button>

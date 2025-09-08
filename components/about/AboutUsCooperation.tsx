@@ -30,7 +30,7 @@ export default function AboutUsCooperation({ lang }: { lang: string }) {
           </p>
           <div className="pt-10">
             <span className="mr-3">More</span>
-            <Link href={`${base}/investor-registration`}>
+            <Link href={`${base}investor-registration`}>
               <Image
                 loading="lazy"
                 width={40}
@@ -57,7 +57,7 @@ export default function AboutUsCooperation({ lang }: { lang: string }) {
           </p>
           <div className="pt-10 md:pt-16">
             <span className="mr-3">More</span>
-            <Link href={`${base}/partner-membership`}>
+            <Link href={`${base}partner-membership`}>
               <Image
                 loading="lazy"
                 width={40}
