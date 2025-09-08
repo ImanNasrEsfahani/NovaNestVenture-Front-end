@@ -20,6 +20,7 @@ export default function FeaturesCards({
   // const handleOnClick = () => {
   //   router.push(link);
   // }
+  const lang = useLang().lang
 
   return (
     <div  className="flex flex-col justify-between p-3 md:w-[580px] font-header shadow-xl rounded-lg">
