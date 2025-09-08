@@ -1,25 +1,18 @@
-'use client';
-
 import React from 'react';
 import EnvelopeMediaIconNew from '@/components/icons/socialMediaIcons/EnvelopeMediaIconNew';
 import InstagramIconNew from '@/components/icons/socialMediaIcons/InstagramIconNew';
 import LinkedinIconNew from '@/components/icons/socialMediaIcons/LinkedinIconNew';
 import WhatsappIconNew from '@/components/icons/socialMediaIcons/WhatsappIconNew';
 import Image from 'next/image';
-// import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-
 import { ProfileData } from '@/types/global';
 
-
-export default function Page({
-  params: { slug },
+export default async function Page({
+  params: { lang, slug }
 }: {
-  params: { slug: string };
+  params: { lang: string; slug: string };
 }) {
-  
-  const ProfileDataObject: ProfileData = {
+  const empty: ProfileData = {
     first_name: '',
     last_name: '',
     websites: [],
@@ -31,26 +24,22 @@ export default function Page({
     thumbnail: ''
   };
 
-  // const pathname = usePathname();
-  // const slug = pathname?.replace('/en/profile/', '');
+  let data: ProfileData = empty;
 
-  const [data, setData] = useState<ProfileData>(ProfileDataObject);
-
-  console.log(data);
-
-  useEffect(() => {
-    async function fetchTags() {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}user/profile/${slug}?format=json`,
-        {}
+  try {
+    const host = process.env.NEXT_PUBLIC_DJANGO_HOST_URL;
+    if (host) {
+      const res = await fetch(
+        `${host}user/profile/${encodeURIComponent(slug)}?format=json`,
+        { cache: 'no-store' } // or: next: { revalidate: 300 }
       );
-      // console.log(`${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}user/profile/${slug}?format=json`)
-      setData(await response.json());
+      if (res.ok) {
+        data = await res.json();
+      }
     }
-    fetchTags();
-  }, [slug]);
-
-  console.log(data);
+  } catch (e) {
+    // swallow error (minimal change)
+  }
 
   return (
     <div className="max-w-[1600px] mx-auto flex h-screen justify-center w-full py-24 md:px-40">
@@ -59,49 +48,46 @@ export default function Page({
         <div className="flex flex-col items-center">
           <div className="px-3 flex items-center justify-center rounded-full">
             <Image
-              src={data.thumbnail}
-              className=""
+              src={data.thumbnail || '/static/images/our-team/header.webp'}
               width={200}
               height={200}
               alt="thumbnail"
             />
           </div>
           <p className="my-3 text-xl">
-            {data?.first_name} {data?.last_name}
+            {data.first_name} {data.last_name}
           </p>
-          <p className="text-gray-500">{data?.job_title}</p>
+          <p className="text-gray-500">{data.job_title}</p>
         </div>
         {/* top */}
         {/* middle */}
         <div className="w-full">
           <ul className="w-full">
-            {data?.websites?.map((website: any, index: number) => {
-              return (
-                <Link
-                  key={index}
-                  href={'https://landaholding.com'}
-                  className="hover:text-primary"
-                  target="_blank"
-                >
-                  <li className="mt-3 flex justify-between items-center px-2 py-3 shadow-lg">
-                    <div className="">
-                      <div className="size-10 flex justify-between items-center ">
-                        <Image
-                          src={website.logo}
-                          width={100}
-                          height={100}
-                          alt="logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex">
-                      <p className="m-auto text-lg">{website.title}</p>
-                    </div>
-                    <div className="w-10"></div>
-                  </li>
-                </Link>
-              );
-            })}
+            {data.websites?.map((website: any, index: number) => (
+              <Link
+                key={index}
+                href={website.url || 'https://landaholding.com'}
+                className="hover:text-primary"
+                target="_blank"
+              >
+                <li className="mt-3 flex justify-between items-center px-2 py-3 shadow-lg">
+                  <div className="size-10 flex items-center justify-center">
+                    {website.logo && (
+                      <Image
+                        src={website.logo}
+                        width={100}
+                        height={100}
+                        alt="logo"
+                      />
+                    )}
+                  </div>
+                  <div className="flex">
+                    <p className="m-auto text-lg">{website.title}</p>
+                  </div>
+                  <div className="w-10" />
+                </li>
+              </Link>
+            ))}
           </ul>
         </div>
         {/* middle */}
@@ -111,7 +97,7 @@ export default function Page({
           <div className="mt-2 flex h-[22px] w-[200px] flex-row items-center justify-between">
             <Link
               aria-label="Instagram"
-              href={data?.instagram || 'https://landaholding.com'}
+              href={data.instagram || 'https://instagram.com'}
               className="hover:text-primary"
               target="_blank"
             >
@@ -119,7 +105,7 @@ export default function Page({
             </Link>
             <Link
               aria-label="Email"
-              href={`mailto:${data?.email}`}
+              href={data.email ? `mailto:${data.email}` : '#'}
               className="hover:text-primary"
               target="_blank"
             >
@@ -131,7 +117,7 @@ export default function Page({
             </Link>
             <Link
               aria-label="Whatsapp"
-              href={data?.whatsapp || 'https://landaholding.com'}
+              href={data.whatsapp || 'https://whatsapp.com'}
               className="hover:text-primary"
               target="_blank"
             >
@@ -143,7 +129,7 @@ export default function Page({
             </Link>
             <Link
               aria-label="Linkedin"
-              href={data?.linkedin || 'https://landaholding.com'}
+              href={data.linkedin || 'https://linkedin.com'}
               className="hover:text-primary"
               target="_blank"
             >
