@@ -1,38 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState, useRef } from 'react';
-import { getServerTranslation } from 'app/i18n/client';
-import { setCookie } from 'cookies-next';
+import React from 'react';
+import { getServerTranslation } from 'app/i18n/client'; // switched to server variant
+// import { setCookie } from 'cookies-next'; // removed (client-side)
 // import LanguageSwitch from './LanguageSwitch';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Navbar({
-    children,
-    lang
-  }: {
-    children: React.ReactNode;
-    lang: string;
-  }) {
+export default async function Navbar({
+  children,
+  lang
+}: {
+  children: React.ReactNode;
+  lang: string;
+}) {
+  // Server-side translation
+  const { t } = await getServerTranslation(lang, 'layout');
 
-  const { t } = getServerTranslation(lang, 'layout');
+  const menuItems = t('menuItems', { returnObjects: true }) || [];
+  const submenuItems = t('submenuItems', { returnObjects: true }) || [];
 
-  const menuItems = t('menuItems', { returnObjects: true });
-  const submenuItems = t('submenuItems', { returnObjects: true });
+  // setCookie('i18next', lang); // cannot set cookie in a plain server component
 
-  setCookie('i18next', lang);
-
-  const drawerRef = useRef<HTMLInputElement>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleLinkClick = () => {
-    console.log(isMenuOpen);
-    setIsMenuOpen(false);
-    if (!drawerRef.current) {
-      return;
-    }
-    drawerRef.current.click();
-  };
   return (
     <div className="drawer top-0 ">
       <input
@@ -40,7 +29,6 @@ export default function Navbar({
         type="checkbox"
         className="drawer-toggle"
         aria-label="Menu Toggle"
-        ref={drawerRef}
       />
       <div className="drawer-content relative flex flex-col">
         <div className="navbar fixed flex w-full flex-row items-center justify-between bg-neutral-800 bg-opacity-80 p-0 text-white ltr:flex-row-reverse md:px-12 md:ltr:flex-row ">
