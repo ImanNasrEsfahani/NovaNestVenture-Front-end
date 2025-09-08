@@ -21,7 +21,7 @@ import StartUpFirstSaleRefactor from './StartUpFirstSaleRefactor';
 import StartUpSaleDevelopRefactore from './StartUpSaleDevelopRefactore';
 
 
-export default function StartupFormForm() {
+export default async function StartupFormForm() {
   const lang = useLang((s) => s.lang)
   const { t } = await getServerTranslation(lang, 'formComponent');
 
