@@ -1,14 +1,14 @@
-import { useLang } from 'stores/langStore';
+"use client";
 
 export default async function Banner({
   image,
   title,
+  lang
 }: {
   image: string;
   title: string;
+  lang: string;
 }) {
-
-  const lang = useLang().lang;
   
   return (
     <div className="relative h-screen md:h-[550px]">

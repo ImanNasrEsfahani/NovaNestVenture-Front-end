@@ -1,21 +1,20 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useRef } from 'react';
 import { getServerTranslation } from 'app/i18n/client';
 import { setCookie } from 'cookies-next';
-import LanguageSwitch from './LanguageSwitch';
-import { useLang } from 'stores/langStore';
+// import LanguageSwitch from './LanguageSwitch';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Navbar({
-    children
+    children,
+    lang
   }: {
     children: React.ReactNode;
+    lang: string;
   }) {
 
-  const lang = useLang().lang;
   const { t } = getServerTranslation(lang, 'layout');
 
   const menuItems = t('menuItems', { returnObjects: true });
@@ -115,7 +114,8 @@ export default function Navbar({
             </ul>
           </div>
           <div className="hidden md:block">
-            <LanguageSwitch />
+            {/* LanguageSwitch was client-store based; keep only if it can run server-side or refactor */}
+            {/* <LanguageSwitch /> */}
           </div>
         </div>
         <div className="children">{children}</div>
@@ -138,7 +138,6 @@ export default function Navbar({
             <li
               className="font-Barlow flex items-center font-condensed pb-1"
               key={label}
-              onClick={() => handleLinkClick()}
             >
               <Link href={`${base}${href}`} className="">
                 {label}
@@ -146,18 +145,15 @@ export default function Navbar({
             </li>
           ))}
           <li>
-            {/* new// */}
-
-            <details className="">
+            <details>
               <summary className="font-Barlow btn m-1 pt-2 font-condensed text-xl">
                 {lang === 'en' ? 'FORMS' : 'فرم ها'}
               </summary>
               <ul className="px-2">
-                {/* mobile forms */}
-                <ul className="">
+                <ul>
                   {submenuItems.map(
                     ({ label, href }: { label: string; href: string }) => (
-                      <li key={label} onClick={() => handleLinkClick()}>
+                      <li key={label}>
                         <Link href={`${base}${href}`} className="font-condensed">
                           {label}
                         </Link>
