@@ -15,7 +15,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 import LandaLogo from '../icons/common/LandaLogo';
 import CountryInput from '../common/form/CountryInput';
 
-export default function EntrepreneursForm() {
+export default async function EntrepreneursForm() {
   const {
     register,
     handleSubmit,
@@ -36,7 +36,6 @@ export default function EntrepreneursForm() {
   } = useSubmit((s) => s);
 
   const lang = useLang((s) => s.lang);
-
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
