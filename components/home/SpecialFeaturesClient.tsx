@@ -18,7 +18,7 @@ export default function SpecialFeaturesClient({
   lang: string;
   features: Feature[];
   learnMoreLabel: string;
-}) {
+})
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
       {features.map((feature, index) => (
