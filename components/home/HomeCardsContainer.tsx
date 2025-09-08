@@ -1,11 +1,8 @@
-'use client';
 import HomeCards from './HomeCards';
 import { getServerTranslation } from 'app/i18n';
 import { CompanySectionsInterface } from '@/types/global';
-import { useLang } from 'stores/langStore';
 
-const HomeCardsContainer = () => {
-  const lang = useLang().lang;
+const HomeCardsContainer = async ({lang}: {lang: string}) => {
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   const renderHomeCards = (cardData: CompanySectionsInterface[]) => {

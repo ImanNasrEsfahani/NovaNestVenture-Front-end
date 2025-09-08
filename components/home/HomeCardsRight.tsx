@@ -1,17 +1,14 @@
-'use client'
 import Image from 'next/image';
-import { useLang } from 'stores/langStore';
 
 export default function HomeCardsRight({
   images,
+  lang,
 }: {
   titles: string;
   images: Array<{ src: string; alt: string }>;
   link: string;
+  lang: string;
 }) {
-  const lang = useLang().lang;
-
-  console.log('lang => ', lang);
 
   return (
     <div className="flex flex-col self-start md:self-center">

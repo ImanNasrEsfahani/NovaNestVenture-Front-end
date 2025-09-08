@@ -5,10 +5,9 @@ import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
-export default function Partners() {
+export default async function Partners() {
 
   const lang = useLang().lang
-
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);

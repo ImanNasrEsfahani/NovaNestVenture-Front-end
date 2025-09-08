@@ -1,10 +1,7 @@
-'use client';
 import LandaHoldingPriorityCard from './LandaHoldingPriorityCard';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function NovaNestPriority() {
-  const lang = useLang().lang;
+export default async function NovaNestPriority({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (

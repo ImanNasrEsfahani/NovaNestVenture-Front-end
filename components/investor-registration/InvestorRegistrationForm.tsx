@@ -15,7 +15,7 @@ import Input from '../common/form/Input';
 import LandaLogo from '../icons/common/LandaLogo';
 import CountryInput from '../common/form/CountryInput';
 
-export default function InvestorRegistrationForm() {
+export default async function InvestorRegistrationForm() {
   const {
     register,
     handleSubmit,

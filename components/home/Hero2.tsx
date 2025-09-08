@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from 'next/image';
@@ -23,8 +22,7 @@ interface Slide {
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Hero2() {
-  const lang = useLang().lang;
+export default async function Hero2({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'mainPage');
   const slides = t('heroSlides', { returnObjects: true }) as Slide[];
   return (
