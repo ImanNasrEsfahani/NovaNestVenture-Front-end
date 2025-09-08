@@ -1,18 +1,20 @@
 import * as React from 'react';
 import TextArea from '../common/TextArea';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 
-export default function StartupFormIdea({
+export default async function StartupFormIdea({
   register,
-  errors
+  errors,
+  lang
 }: {
   register: any;
   errors: any;
+  lang: string;
 }) {
-  const { lang } = useLang((s) => s);
+
   const { t } = await getServerTranslation(lang, 'formComponent');
+  
   return (
     <>
       <div className="my-6 mb-12 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
