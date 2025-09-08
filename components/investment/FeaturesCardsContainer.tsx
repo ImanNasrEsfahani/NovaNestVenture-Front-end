@@ -1,10 +1,7 @@
-'use client'
 import FeaturesCards from './FeaturesCards';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function FeaturesCardsContainer() {
-  const lang = useLang.getState().lang
+export default async function FeaturesCardsContainer({lang}: {lang?: string}) {
   const { t } = await getServerTranslation(lang, 'investment');
 
   return (
