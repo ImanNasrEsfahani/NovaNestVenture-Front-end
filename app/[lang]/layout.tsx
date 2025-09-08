@@ -1,3 +1,5 @@
+"use client"
+
 import Footer from '../../components/home/Footer';
 import Navbar from '../../components/common/Navbar';
 import ScrollUpButton from '../../components/common/ScrollUpButton';
@@ -16,7 +18,7 @@ export default function RootLayout({
   }: {
     children: React.ReactNode
   }) {
-    
+
   const lang = useLang().lang;
 
   return (
