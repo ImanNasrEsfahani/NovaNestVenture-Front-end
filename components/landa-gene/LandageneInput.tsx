@@ -21,7 +21,7 @@ const LandaGeneInput = ({
 }: Props) =>{
   const { lang } = useLang((s) => s)
 
-  const { t } = getServerTranslation(lang, 'landaGene');
+  const { t } = await getServerTranslation(lang, 'landaGene');
   return (
     <>
       {nameInputs?.full_name && (

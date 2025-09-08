@@ -2,8 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
 
-export default function Gateway({lang}: {lang: string}) {
-  const { t } = getServerTranslation(lang, 'startUp');
+export default async function Gateway({lang}: {lang: string}) {
+  const { t } = await getServerTranslation(lang, 'startUp');
 
   return (
     <section className="flex flex-col-reverse md:flex-row justify-between gap-10 items-stretch font-EBGaramond my-14">

@@ -7,7 +7,7 @@ import { useLang } from 'stores/langStore';
 export default function HomeUpComingStartups() {
   const lang = useLang().lang
 
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
 
   const renderCards = (
     cardData: Array<{

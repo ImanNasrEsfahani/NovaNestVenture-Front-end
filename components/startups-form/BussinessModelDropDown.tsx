@@ -19,7 +19,7 @@ const BussinessModelDropDown = (props: Props) => {
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);
 
   const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <div>

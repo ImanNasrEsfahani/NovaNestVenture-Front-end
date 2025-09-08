@@ -38,7 +38,7 @@ export default function InvestorRegistrationForm() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
   //   async function fetchCsrfToken() {

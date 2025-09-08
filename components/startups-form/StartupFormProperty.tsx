@@ -10,7 +10,7 @@ export default function StartupFormProperty({
   errors: any;
 }) {
   const { lang } = useLang((s) => s)
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <>

@@ -8,7 +8,7 @@ export default function InvestorRegistrationTitle(
 
   const lang = useLang((s) => s.lang)
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <>

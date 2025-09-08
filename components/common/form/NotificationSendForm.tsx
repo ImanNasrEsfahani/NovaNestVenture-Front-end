@@ -21,7 +21,7 @@ export default function NotificationSendForm() {
   // const showNotification = useLang((s) => s.showNotification)
   // const lang = useLang((s) => s.lang)
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <div className="mx-auto mt-5 w-64 lg:w-96">

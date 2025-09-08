@@ -9,7 +9,7 @@ const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function NovaNestBlack() {
   const lang = useLang().lang;
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10  md:pt-10 md:flex-row ">

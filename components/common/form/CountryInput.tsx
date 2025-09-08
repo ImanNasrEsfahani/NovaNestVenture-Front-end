@@ -19,7 +19,7 @@ export default function CountryInput({
 
   const lang = useLang((s) => s.lang)
 
-  const { t } = getServerTranslation(lang, 'countryInput');
+  const { t } = await getServerTranslation(lang, 'countryInput');
   const countriesData = t('countries',{ returnObjects: true }).map((country: string) => ({
     value: country,
     label: country,

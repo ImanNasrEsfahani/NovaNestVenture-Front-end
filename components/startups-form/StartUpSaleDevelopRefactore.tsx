@@ -47,7 +47,7 @@ const StartUpSaleDevelopRefactore = (props: Props) => {
     } = props; 
       
     const lang = useLang((s) => s.lang)
-    const { t } = getServerTranslation(lang, 'formComponent');
+    const { t } = await getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 

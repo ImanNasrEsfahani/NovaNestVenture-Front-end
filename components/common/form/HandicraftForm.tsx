@@ -27,7 +27,7 @@ export default function HandicraftForm() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = getServerTranslation(lang, 'handicraft');
+  const { t } = await getServerTranslation(lang, 'handicraft');
 
   const {
     register,

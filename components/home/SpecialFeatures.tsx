@@ -14,7 +14,7 @@ interface Feature {
 
 export default function SpecialFeatures() {
   const lang = useLang().lang;
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
   
   return (
     <section className="py-20 bg-gray-50">

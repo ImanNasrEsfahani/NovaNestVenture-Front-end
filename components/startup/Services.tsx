@@ -19,8 +19,8 @@ interface ServiceItem {
   description: string;
 }
 
-export default function Services({lang}: {lang: string}) {
-  const { t } = getServerTranslation(lang, 'startUp');
+export default async function Services({lang}: {lang: string}) {
+  const { t } = await getServerTranslation(lang, 'startUp');
 
   return (
     <div className='md:mb-20 mt-16 md:mt-40 '>

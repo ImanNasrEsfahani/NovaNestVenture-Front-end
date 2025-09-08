@@ -5,7 +5,7 @@ import { useLang } from 'stores/langStore';
 
 export default function NovaNestPriority() {
   const lang = useLang().lang;
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="relative w-full flex-col items-center justify-start gap-9 bg-white pt-16 pb-0 md:pb-16">

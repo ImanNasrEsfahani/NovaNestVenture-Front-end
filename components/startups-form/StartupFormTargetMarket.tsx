@@ -10,7 +10,7 @@ export default function StartupFormTargetMarket({
   errors:any;
 }) {
   const { lang } = useLang((s) => s)
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
   return (
     <>
      <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">

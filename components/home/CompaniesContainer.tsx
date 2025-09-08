@@ -6,7 +6,7 @@ import { useLang } from 'stores/langStore';
 export default function CompaniesContainer() {
   const lang = useLang().lang
 
-  const { t } = getServerTranslation(lang, 'aboutUs');
+  const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="flex justify-between flex-wrap">

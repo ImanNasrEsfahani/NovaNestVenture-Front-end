@@ -20,7 +20,7 @@ export default function Hero({
   lang: string;
   link?: string
 }) {
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (
     <div

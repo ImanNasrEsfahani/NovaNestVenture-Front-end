@@ -25,7 +25,7 @@ const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Hero2() {
   const lang = useLang().lang;
-  const { t } = getServerTranslation(lang, 'mainPage');
+  const { t } = await getServerTranslation(lang, 'mainPage');
   const slides = t('heroSlides', { returnObjects: true }) as Slide[];
   return (
     <div className="w-full h-screen">

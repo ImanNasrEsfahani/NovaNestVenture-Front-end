@@ -14,7 +14,7 @@ export default function StartupFormBusinessModel({
   handleFinancialFileChange: any;
 }) {
   const { lang } = useLang((s) => s )
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <>

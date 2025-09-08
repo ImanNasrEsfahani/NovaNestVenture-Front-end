@@ -3,7 +3,7 @@ import { getServerTranslation } from 'app/i18n';
 
 export default function EntrepreneursTitle() {
   const lang = useLang((s) => s.lang)
-  const { t } = getServerTranslation(lang, "formComponent")
+  const { t } = await getServerTranslation(lang, "formComponent")
 
   return (
     <>

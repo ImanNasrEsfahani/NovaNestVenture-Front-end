@@ -40,7 +40,7 @@ export default function JobForm() {
 
   const lang = useLang().lang;
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   useEffect(() => {
     let cancelled = false;

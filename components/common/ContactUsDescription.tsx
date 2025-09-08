@@ -14,7 +14,7 @@ import Image from 'next/image';
 export default function ContactUsDescription() {
   const lang = useLang().lang;
 
-  const { t } = getServerTranslation(lang, 'contact');
+  const { t } = await getServerTranslation(lang, 'contact');
 
   return (
     <div className="h-full">

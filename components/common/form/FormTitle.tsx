@@ -8,7 +8,7 @@ export default function FormTitle(
 
   const lang = useLang((s) => s.lang)
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
     <div className='w-full h-[200px] md:h-[300px] bg-black'>

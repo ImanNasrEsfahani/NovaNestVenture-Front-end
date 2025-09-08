@@ -1,16 +1,15 @@
-'use client'
 import UploadFile from 'public/static/logos/FileUpload'
 import React, { useState } from 'react'
 import Input from '../common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
-import { useLang } from '../../stores/langStore'
 import { getServerTranslation } from '../../app/i18n'
 import ChevDown from 'public/static/logos/ChevDown'
 import TextArea from '../common/TextArea'
 import SolutionLevel from './SolutionLevel'
 
 type Props = {
+    lang: string;
     handleFileCounterChange: (name: string) => void
     handlePitchFileChange: (file: any) => void
     handleBusinessFileChange: (file: any) => void
@@ -27,9 +26,10 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpMvpRefactore = (props: Props) => {
+const StartUpMvpRefactore = async (props: Props) => {
 
   const {
+    lang,
     handleFileCounterChange,
     handlePitchFileChange,
     handleBusinessFileChange,
@@ -42,8 +42,7 @@ const StartUpMvpRefactore = (props: Props) => {
     handleFinancialModelFileChange
   } = props;  
 
-  const lang = useLang((s) => s.lang)
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);

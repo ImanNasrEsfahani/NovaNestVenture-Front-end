@@ -5,7 +5,7 @@ import { useLang } from 'stores/langStore';
 
 export default function FeaturesCardsContainer() {
   const lang = useLang.getState().lang
-  const { t } = getServerTranslation(lang, 'investment');
+  const { t } = await getServerTranslation(lang, 'investment');
 
   return (
     <div className="flex gap-8 flex-wrap md:flex-nowrap mt-28 mb-12">

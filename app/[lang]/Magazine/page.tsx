@@ -17,10 +17,6 @@ export default async function MagazinePage({
 }: {
   params: { lang: string };
 }) {
-
-  // const { t } = await getServerTranslation(lang, "aboutUs")
-
-  console.log();
   
   return (
     <div className="relative">

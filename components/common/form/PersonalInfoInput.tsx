@@ -26,9 +26,9 @@ const PersonalInfoInput = ({
 }: Props) => {
   const { lang } = useLang((s) => s);
 
-  // const { t } = getServerTranslation(lang, 'formComponent');
+  // const { t } = await getServerTranslation(lang, 'formComponent');
 
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t } = await getServerTranslation(lang, 'formComponent');
 
   enum Type {
     INTERN = t('INTERN'),

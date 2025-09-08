@@ -13,7 +13,7 @@ export default function BannerStartUp({
   logo: string;
   lang: string;
 }) {
-  const { t } = getServerTranslation(lang, 'aboutUs');
+  const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="relative md:h-[520px]">

@@ -39,7 +39,7 @@ export default function LandaGene() {
 
   const lang = useLang((s) => s.lang);
 
-  const { t } = getServerTranslation(lang, 'landaGene');
+  const { t } = await getServerTranslation(lang, 'landaGene');
 
   useEffect(() => {
     let cancelled = false;
