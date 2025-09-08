@@ -165,7 +165,7 @@ export default async function StartupFormForm() {
               <StartUpFormCheckbox register={register} name={t("IDEA")} />
               {((): any => {
                 if (startupFormType == t("IDEA")) {
-                  return <StartupFormIdea register={register} errors={errors} />
+                  return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
                 }
               })()}
               <StartUpFormCheckbox register={register} name={t("TRIAL")} />
@@ -203,6 +203,7 @@ export default async function StartupFormForm() {
                       handleSolutionsLevelChange={handleSolutionsLevelChange} 
                       solutionsLevel={solutionsLevel}      
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
+                      lang={lang || 'en'}
                     />
                   )
                 }
@@ -242,7 +243,8 @@ export default async function StartupFormForm() {
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange} 
-                      handleFinancialFileChange={handleFinancialFileChange}                   
+                      handleFinancialFileChange={handleFinancialFileChange} 
+                      lang={lang || 'en'}
                     />
                   )
                 }
