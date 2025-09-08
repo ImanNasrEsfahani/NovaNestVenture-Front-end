@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import UploadInput from '../common/UploadInput';
@@ -16,7 +15,7 @@ import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '../common/form/FormTitle';
 
-export default function JobForm() {
+export default async function JobForm() {
   const {
     register,
     handleSubmit,
