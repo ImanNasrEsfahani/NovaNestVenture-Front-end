@@ -5,16 +5,13 @@ import React, { useState, useRef } from 'react';
 import { getServerTranslation } from 'app/i18n/client';
 import { setCookie } from 'cookies-next';
 import LanguageSwitch from './LanguageSwitch';
+import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Navbar({
-  children,
-  lang
-}: {
-  children: React.ReactNode;
-  lang: string;
-}) {
+export default function Navbar() {
+  
+  const lang = useLang().lang;
   const { t } = getServerTranslation(lang, 'layout');
 
   const menuItems = t('menuItems', { returnObjects: true });

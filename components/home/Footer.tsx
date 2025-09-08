@@ -6,6 +6,7 @@ import Envelope from '../icons/footer/Envelope';
 import Whatsapp from '../icons/footer/Whatsapp';
 import LinkedIn from '../icons/footer/LinkedIn';
 import { getServerTranslation } from 'app/i18n/client';
+import { useLang } from 'stores/langStore';
 
 interface FooterItem {
   text: string;
@@ -18,9 +19,9 @@ interface FooterText {
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function Footer(
-  { lang }: { lang: string }
-) {
+export default function Footer() {
+
+  const lang = useLang().lang;
   const { t } = getServerTranslation(lang, "footer")
 
   function GetYear() {
