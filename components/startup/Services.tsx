@@ -1,7 +1,5 @@
-'use client';
 import React from 'react';
 import { getServerTranslation } from 'app/i18n/client';
-import { useLang } from 'stores/langStore';
 import Data from '../icons/startup/Data';
 import MoneyRecive from '../icons/startup/MoneyRecive';
 import MusicPlay from '../icons/startup/MusicPlay';
@@ -21,8 +19,7 @@ interface ServiceItem {
   description: string;
 }
 
-export default function Services() {
-  const lang = useLang().lang;
+export default function Services({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'startUp');
 
   return (

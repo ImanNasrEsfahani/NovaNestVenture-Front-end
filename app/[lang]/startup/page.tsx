@@ -27,11 +27,11 @@ export default async function StartUp({ params: { lang } }: { params: { lang: st
         />
       </div>
       <div className="max-w-[1600px] mx-auto px-8 md:px-24 font-header">
-        <Differences />
-        <NatureOfStartups />
-        <Gateway />
-        <Services />
-        <LatestStartups/>
+        <Differences lang={lang} />
+        <NatureOfStartups lang={lang} />
+        <Gateway lang={lang} />
+        <Services lang={lang} />
+        <LatestStartups lang={lang} />
       </div>
     </div>
   )

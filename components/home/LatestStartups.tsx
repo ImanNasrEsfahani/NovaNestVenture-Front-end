@@ -1,10 +1,7 @@
-'use client';
 import LatestStartupsCard from './LatestStartupsCard';
 import { getServerTranslation } from 'app/i18n/client';
-import { useLang } from 'stores/langStore';
 
-export default function LatestStartups() {
-  const lang = useLang().lang;
+export default function LatestStartups({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (

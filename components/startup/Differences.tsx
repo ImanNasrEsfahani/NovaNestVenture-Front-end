@@ -1,11 +1,8 @@
-'use client'
 import Image from 'next/image'
 import React from 'react'
 import { getServerTranslation } from 'app/i18n/client';
-import { useLang } from 'stores/langStore';
 
-export default function Differences() {
-  const lang = useLang().lang;
+export default function Differences({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'startUp');
  
   return (
