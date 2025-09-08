@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
-export default async function Page({lang}: { lang: string }) {
+export default function Page({ params }: { params: { lang: string } }) {
+  const { lang } = params;
 
   return (
     <div className="relative w-full mb-8">
