@@ -15,7 +15,7 @@ import { useSubmit } from 'stores/dataStore';
 import ArrowRight from '@/components/icons/common/ArrowRight';
 
 // import { HandicraftForm, HandicraftForm } from '@/types/global';
-export default function HandicraftForm() {
+export default async function HandicraftForm() {
   const {
     csrfToken,
     handleTokenChange,
