@@ -10,9 +10,9 @@ import TargetMarketDropDown from './TargetMarketDropDown'
 import { StartupsFormData } from '@/types/global'
 import { UseFormRegister, FieldErrors, UseFormSetValue } from 'react-hook-form'
 import { getServerTranslation } from 'app/i18n'
-import { useLang } from 'stores/langStore'
 
 type Props = {
+    lang: string;
     handleFileCounterChange: (name: string) => void
     handlePitchFileChange: (file: any) => void
     handleBusinessFileChange: (file: any) => void
@@ -33,6 +33,7 @@ type Props = {
 const StartUpSaleDevelopRefactore = (props: Props) => {
 
     const {
+        lang,
         handleFileCounterChange,
         handlePitchFileChange,
         handleBusinessFileChange,
@@ -46,7 +47,6 @@ const StartUpSaleDevelopRefactore = (props: Props) => {
         handleFinancialModelFileChange
     } = props; 
       
-    const lang = useLang((s) => s.lang)
     const { t } = await getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);

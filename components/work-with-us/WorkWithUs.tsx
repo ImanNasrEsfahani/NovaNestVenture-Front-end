@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { WorkWithUSFormData } from '../../types/global';
@@ -9,7 +7,6 @@ import Input from '../common/form/Input';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import Button from '../common/Button';
 import Select from '../common/form/Select';
@@ -17,7 +14,7 @@ import { useFile } from 'stores/fileStore';
 import UploadInput from '../common/UploadInput';
 import Image from 'next/image';
 
-export default function WorkWithUs() {
+export default async function WorkWithUs({ lang }: { lang: string }) {
   const {
     register,
     handleSubmit,
@@ -27,8 +24,6 @@ export default function WorkWithUs() {
     mode: 'onBlur',
     defaultValues: initialWorkWithUSFormData
   });
-
-  const lang = useLang((s) => s.lang);
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 
