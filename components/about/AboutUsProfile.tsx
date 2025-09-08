@@ -7,9 +7,9 @@ import { useLang } from 'stores/langStore';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
 //import FeaturesCardsContainer from '../investment/FeaturesCardsContainer';
 
-export default function AboutUsProfile() {
+export default async function AboutUsProfile() {
   const lang = useLang().lang;
-  const { t } = getServerTranslation(lang, 'aboutUs');
+  const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="mb-32 flex w-full flex-col justify-center">
