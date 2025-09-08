@@ -2,13 +2,11 @@
 import React from 'react';
 import UlList from '@/components/List/UlList';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function NovaNestBlack() {
-  const lang = useLang().lang;
+export default async function NovaNestBlack({lang}: {lang?: string}) {
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (
