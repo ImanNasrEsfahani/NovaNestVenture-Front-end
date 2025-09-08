@@ -30,7 +30,7 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpSaleDevelopRefactore = (props: Props) => {
+const StartUpSaleDevelopRefactore = async (props: Props) => {
 
     const {
         lang,
