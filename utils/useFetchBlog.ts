@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from "react";
 import { useSubmit } from "stores/dataStore";
 import { FetchBlogData } from "./fetchBlogData";
