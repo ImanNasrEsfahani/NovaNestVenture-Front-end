@@ -30,7 +30,6 @@ export default async function SpecialFeatures({lang}: {lang: string}) {
           features={features}
           learnMoreLabel={learnMoreLabel}
         />
-        </div>
       </div>
     </section>
   );
