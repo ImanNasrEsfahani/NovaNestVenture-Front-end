@@ -26,6 +26,7 @@ export default function AccelerationCard({
   itemsList
 }: Props) {
 
+  const lang = useLang().lang
   const { t } = getServerTranslation(lang, 'acceleration');
 
   return (
