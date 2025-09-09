@@ -13,6 +13,7 @@ export default async function Page({
 }: {
   params: { lang: string };
 }) {
+
   const { t } = await getServerTranslation(lang, 'landaGene');
 
   return (
@@ -23,7 +24,7 @@ export default async function Page({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <LandaGene />
+        <LandaGene lang={lang} t={t} />
       </div>
     </div>
   );

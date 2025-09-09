@@ -12,12 +12,10 @@ import { LandaGeneInput } from '@/components/landa-gene/LandageneInput';
 // import ButtonRefactor from '../common/ButtonRefactor';
 import Button from '../common/Button';
 import Image from 'next/image';
-import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import * as process from 'process';
 
-export default async function LandaGene() {
+export default async function LandaGene({lang, t}: {lang: string, t: (key: string) => string}) {
   const {
     register,
     handleSubmit,
@@ -37,9 +35,6 @@ export default async function LandaGene() {
     handleSuccessChange
   } = useSubmit((s) => s);
 
-  const lang = useLang((s) => s.lang);
-
-  const { t } = await getServerTranslation(lang, 'landaGene');
 
   useEffect(() => {
     let cancelled = false;
