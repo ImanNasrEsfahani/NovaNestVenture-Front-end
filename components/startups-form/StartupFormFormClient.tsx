@@ -175,13 +175,13 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
           </div>
           <div className='w-full h-auto px-4'>
             <div className='h-auto w-full flex flex-col gap-2'>
-              <StartUpFormCheckbox register={register} name={t("IDEA")} />
+              <StartUpFormCheckbox register={register} name={translations.IDEA} />
               {((): any => {
-                if (startupFormType == t("IDEA")) {
+                if (startupFormType == translations.IDEA) {
                   return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
                 }
               })()}
-              <StartUpFormCheckbox register={register} name={t("TRIAL")} />
+              <StartUpFormCheckbox register={register} name={translations.TRIAL} />
            {((): any => {
                 if (startupFormType == translations.IDEA) {
                   return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
