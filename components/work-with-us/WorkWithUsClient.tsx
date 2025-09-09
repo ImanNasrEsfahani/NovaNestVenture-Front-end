@@ -4,66 +4,15 @@ import { useForm } from 'react-hook-form';
 import { WorkWithUSFormData } from '../../types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import GetCsrfToken from '../../utils/get-csrf-token';
-import Input from '../common/form/Input';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { useSubmit } from 'stores/dataStore';
 import Button from '../common/Button';
-import Select from '../common/form/Select';
 import { useFile } from 'stores/fileStore';
-import UploadInput from '../common/UploadInput';
 import Image from 'next/image';
-
-interface Translations {
-  workWithUS: {
-    Professor: string;
-    student: string;
-    hiring: string;
-    Internship: string;
-    UniversityInternship: string;
-    professionalConsultation: string;
-    formTitle: string;
-    PositionPlaceholder: string;
-    contractPlaceholder: string;
-    cvFileRequired: string;
-    formSubtitleTop: string;
-    formSubtitleBottom: string;
-    email: string;
-    emailRequired: string;
-    emailPlaceholder: string;
-    StudyField: string;
-    StudyFieldRequired: string;
-    StudyFieldPlaceholder: string;
-    StudySubField: string;
-    StudySubFieldRequired: string;
-    StudySubFieldPlaceholder: string;
-    cvFile: string;
-  };
-  universities: {
-    unis: Record<string, string>;
-    placeholder: string;
-  };
-  langLevel: {
-    levels: Record<string, string>;
-    placeholder: string;
-  };
-  firstName: string;
-  firstNameRequired: string;
-  firstNamePlaceholder: string;
-  lastName: string;
-  lastNameRequired: string;
-  lastNamePlaceholder: string;
-  phoneNumber: string;
-  phoneNumberRequired: string;
-  phoneNumberPlaceholder: string;
-  phoneNumberErrorMessage: string;
-  sendButton: string;
-}
-
-interface WorkWithUsClientProps {
-  translations: Translations;
-  lang: string;
-}
+import { WorkWithUsClientProps } from '@/types/global';
+import PersonalInfoSection from '@/components/work-with-us/sections/PersonalInfoSection';
+import AcademicInfoSection from '@/components/work-with-us/sections/AcademicInfoSection';
 
 export default function WorkWithUsClient({ translations }: WorkWithUsClientProps) {
   const {
@@ -210,9 +159,6 @@ export default function WorkWithUsClient({ translations }: WorkWithUsClientProps
     handleSubmitingChange(true);
     handleSendChange(true);
 
-    console.log(formData);
-    console.log('ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh');
-
     // Create a FormData object for form data.
     const sendFormData = new FormData();
 
@@ -274,141 +220,41 @@ export default function WorkWithUsClient({ translations }: WorkWithUsClientProps
           </h3>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
-          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
-            <Select labelClass='' register={register} errors={errors} nameInput="your_position" label={workWithUS.PositionPlaceholder} required="" className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" placeholder={workWithUS.PositionPlaceholder} options={PositionsData} handleChange={handleItemChange} selected={selectPosition}
-            />
-
-            {selectPosition !== workWithUS.Professor ? (
-              <Select labelClass='' register={register} errors={errors} nameInput="type_of_contract" label={workWithUS.contractPlaceholder} required="" className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" placeholder={workWithUS.contractPlaceholder} options={TypeOfContractWithStudentData} handleChange={handleContractWithStudentItemChange} selected={selectStudentContract}
-              />
-            ) : (
-              <Select labelClass='' register={register} errors={errors} nameInput="type_of_contract" label={workWithUS.contractPlaceholder} required="" className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" placeholder={workWithUS.contractPlaceholder} options={TypeOfContractWithProfessorData} handleChange={handleContractWithProfessorItemChange} selected={selectProfessorContract}
-              />
-            )}
-
-            <Select labelClass='' register={register} errors={errors} nameInput="uni" label={unis.placeholder} required="" className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" placeholder={unis.placeholder} options={TypeOfUnis} handleChange={handleUniChange} selected={selectUni}
-            />
-          </div>
-          {/* next line */}
-          <div className="border-b-2 border-black bg-whiteGold">
-            <p className="px-5 py-3 text-2xl md:text-3xl">
-              {workWithUS.formSubtitleTop}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="your_first_name"
-                type="text"
-                label={translations.firstName}
-                required={translations.firstNameRequired}
-                placeholder={translations.firstNamePlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full"
-                labelClass=" dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div>
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="your_last_name"
-                type="text"
-                label={translations.lastName}
-                required={translations.lastNameRequired}
-                placeholder={translations.lastNamePlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full"
-                labelClass=" dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div>
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="email"
-                type="text"
-                label={workWithUS.email}
-                required={workWithUS.emailRequired}
-                patternValue=""
-                patternMessage=""
-                placeholder={workWithUS.emailPlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md dark:placeholder-[#9CA3AF]"
-              />
-            </div>
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="phone_number"
-                type="text"
-                label={translations.phoneNumber}
-                required={translations.phoneNumberRequired}
-                patternValue="^[0-9]{11}$"
-                patternMessage={translations.phoneNumberErrorMessage}
-                placeholder={translations.phoneNumberPlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md dark:placeholder-[#9CA3AF]"
-              />
-            </div>
-          </div>
+            <PersonalInfoSection
+              register={register}
+              errors={errors}
+              workWithUS={workWithUS}
+              translations={translations}
+              unis={unis}
+              PositionsData={PositionsData}
+              TypeOfContractWithStudentData={TypeOfContractWithStudentData}
+              TypeOfContractWithProfessorData={TypeOfContractWithProfessorData}
+              TypeOfUnis={TypeOfUnis}
+              selectPosition={selectPosition}
+              selectStudentContract={selectStudentContract}
+              selectProfessorContract={selectProfessorContract}
+              selectUni={selectUni}
+              handleItemChange={handleItemChange}
+              handleContractWithStudentItemChange={handleContractWithStudentItemChange}
+              handleContractWithProfessorItemChange={handleContractWithProfessorItemChange}
+              handleUniChange={handleUniChange}
+          />
           {/* next line */}
           <div className="border-b-2 border-black bg-whiteGold">
             <p className="px-5 py-3 text-2xl md:text-3xl">
               {workWithUS.formSubtitleBottom}
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="your_field_of_study"
-                type="text"
-                label={workWithUS.StudyField}
-                required={workWithUS.StudyFieldRequired}
-                placeholder={workWithUS.StudyFieldPlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full"
-                labelClass=" dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div>
-
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="your_subfield"
-                type="text"
-                label={workWithUS.StudySubField}
-                required={workWithUS.StudySubFieldRequired}
-                placeholder={workWithUS.StudySubFieldPlaceholder}
-                className="input  col-span-1 mb-1 mt-3 w-full"
-                labelClass=" dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div>
-            <div className="col-span-1 mt-2">
-              <UploadInput
-                title={workWithUS.cvFile}
-                register={register}
-                required={cvFileRequired}
-                errors={errors}
-                nameInput="cvFile"
-                handleChange={onCvFileChange}
-              />
-            </div>
-
-            <div className='col-span-1'>
-              <Select labelClass='' register={register} errors={errors} nameInput="langLevel" label={langLevelData.placeholder} required="" className="select select-bordered mt-4 w-full px-8 shadow-sm dark:text-current" placeholder={langLevelData.placeholder} options={TypeOfSkillLevels} handleChange={handleUniChange} selected={langLevelData.placeholder}
-              />
-            </div>
-          </div>
+          <AcademicInfoSection
+            register={register}
+            errors={errors}
+            workWithUS={workWithUS}
+            langLevelData={langLevelData}
+            TypeOfSkillLevels={TypeOfSkillLevels}
+            cvFileRequired={cvFileRequired}
+            onCvFileChange={onCvFileChange}
+            handleUniChange={handleUniChange}
+          />
           <div className="mx-auto w-full pb-4 md:w-auto">
             <Button type="submit" bgColor="Primary" />
           </div>
