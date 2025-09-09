@@ -98,8 +98,8 @@ export default async function StartupFormFirstSale({
                   />
                 </div>
               </div>
-              <StartupFormProblem register={register} errors={errors} />
-              <StartupFormSolutions register={register} errors={errors} />
+              <StartupFormProblem lang={lang} register={register} errors={errors} />
+              <StartupFormSolutions lang={lang} register={register} errors={errors} />
               <StartupFormBusinessModel lang={lang} register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange} />
             </div>
           );

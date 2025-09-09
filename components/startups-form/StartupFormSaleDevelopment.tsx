@@ -97,9 +97,9 @@ export default async function StartupFormSaleDevelopment({
                 </div>
               </div>
 
-              <StartupFormProblem register={register} errors={errors} />
-              <StartupFormSolutions register={register} errors={errors} />
-              <StartupFormBusinessModel register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange} />
+              <StartupFormProblem lang={lang || 'en'} register={register} errors={errors} />
+              <StartupFormSolutions lang={lang || 'en'} register={register} errors={errors} />
+              <StartupFormBusinessModel lang={lang || 'en'} register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange} />
             </div>
           );
         }

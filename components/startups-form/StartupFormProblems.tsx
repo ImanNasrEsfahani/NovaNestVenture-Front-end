@@ -1,16 +1,16 @@
 import * as React from 'react';
 import TextArea from '../common/TextArea';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function StartupFormProblem({
+export default async function StartupFormProblem({
+  lang,
   register,
   errors
 }:{
+  lang:string;
   register:any;
   errors:any;
 }) {
-  const { lang } = useLang((s) => s)
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
