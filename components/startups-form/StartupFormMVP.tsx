@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import Input from '../common/form/Input';
 import TextArea from '../common/TextArea';
@@ -9,7 +10,7 @@ import { handleRadioChange } from '../../utils/functions';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
-export default function StartupFormMVP({
+export default async function StartupFormMVP({
   register,
   errors,
   handlePitchFileChange,
