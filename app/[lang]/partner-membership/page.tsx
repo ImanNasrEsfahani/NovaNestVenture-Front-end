@@ -24,7 +24,7 @@ export default async function AffiliateFormPage({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <PartnerMembershipForm />
+        <PartnerMembershipForm lang={lang}/>
       </div>
     </div>
   );
