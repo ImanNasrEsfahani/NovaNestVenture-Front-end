@@ -14,7 +14,7 @@ import { WorkWithUsClientProps } from '@/types/global';
 import PersonalInfoSection from '@/components/work-with-us/sections/PersonalInfoSection';
 import AcademicInfoSection from '@/components/work-with-us/sections/AcademicInfoSection';
 
-export default function WorkWithUsClient({ translations }: WorkWithUsClientProps) {
+export default function WorkWithUsClient({ translations, lang }: WorkWithUsClientProps) {
   const {
     register,
     handleSubmit,
@@ -259,7 +259,7 @@ export default function WorkWithUsClient({ translations }: WorkWithUsClientProps
             <Button type="submit" bgColor="Primary" />
           </div>
         </form>
-        <NotificationSendForm />
+        <NotificationSendForm lang={lang} />
       </div>
     </>
   );

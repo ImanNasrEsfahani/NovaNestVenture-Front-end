@@ -9,13 +9,12 @@ import { HandicraftForm as HandicraftFormType } from '../../../types/global';
 import NotificationSendForm from './NotificationSendForm';
 import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '../ButtonRefactor';
-import { useLang } from 'stores/langStore';
 import { submitHandiCraftApplicationForm } from 'pages/api/handiCrafts';
 import { useSubmit } from 'stores/dataStore';
 import ArrowRight from '@/components/icons/common/ArrowRight';
 
 // import { HandicraftForm, HandicraftForm } from '@/types/global';
-export default async function HandicraftForm() {
+export default async function HandicraftForm({lang }: {lang: string}) {
   const {
     csrfToken,
     handleTokenChange,
@@ -24,8 +23,6 @@ export default async function HandicraftForm() {
     handleNotifChange,
     handleSuccessChange
   } = useSubmit((s) => s);
-
-  const lang = useLang((s) => s.lang);
 
   const { t } = await getServerTranslation(lang, 'handicraft');
 
@@ -124,7 +121,7 @@ export default async function HandicraftForm() {
           </button>
           {/* <ButtonRefactor type="submit" text="Submit" /> */}
         </div>
-        <NotificationSendForm />
+        <NotificationSendForm lang={lang} />
       </div>
     </form>
   );

@@ -1,10 +1,10 @@
 
+'use client';
 import Check from '../../../components/icons/common/Check';
 import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
-import { useLang } from 'stores/langStore';
 
-export default async function NotificationSendForm() {
+export default async function NotificationSendForm({lang}: {lang: string}) {
 
   const {
     isSubmitting,
@@ -13,7 +13,6 @@ export default async function NotificationSendForm() {
     showNotification,
   } = useSubmit((s) => s)
 
-  const lang = useLang((s) => s.lang);
 
   // const isSubmitting = useLang((s) => s.isSubmitting)
   // const isSuccess = useLang((s) => s.isSuccess)

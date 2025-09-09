@@ -11,12 +11,11 @@ import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '../common/ButtonRefactor';
 import Button from '../common/Button';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '../common/form/FormTitle';
 
-export default async function JobForm() {
+export default async function JobForm({lang }: {lang: string}) {
   const {
     register,
     handleSubmit,
@@ -37,8 +36,6 @@ export default async function JobForm() {
   } = useSubmit();
 
   const { cvFileState, handleCvFileChange } = useFile();
-
-  const lang = useLang().lang;
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 
@@ -174,7 +171,7 @@ export default async function JobForm() {
           />
         </div>
       </form>
-      <NotificationSendForm />
+      <NotificationSendForm lang={lang} />
     </div>
   );
 }

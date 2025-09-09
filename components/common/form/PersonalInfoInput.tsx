@@ -1,11 +1,12 @@
+'use client';
 // import React, { useState } from 'react'
 import Input from '../../common/form/Input';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 // import { Type } from '@prisma/client';
 import Select from './Select';
 
 type Props = {
+  lang?: string;
   register: any;
   errors: any;
   nameInputs?: {
@@ -19,12 +20,12 @@ type Props = {
 };
 
 const PersonalInfoInput = async ({
+  lang,
   register,
   errors,
   nameInputs,
   noLabel
 }: Props) => {
-  const { lang } = useLang((s) => s);
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 

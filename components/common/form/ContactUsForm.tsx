@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { ContactUSFormData } from '../../../types/global';
@@ -11,11 +10,10 @@ import { PersonalInfoInput } from './PersonalInfoInput';
 import Input from './Input';
 import TextArea from '../TextArea';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../ButtonRefactor';
 
-export default async function ContactUsForm() {
+export default async function ContactUsForm({lang}: {lang: string}) {
   const {
     register,
     handleSubmit,
@@ -35,9 +33,7 @@ export default async function ContactUsForm() {
     handleSuccessChange
   } = useSubmit((s) => s);
 
-  const lang = useLang((s) => s.lang);
   const { t } = await getServerTranslation(lang, 'formComponent');
-
   const { send } = useSubmit();
 
   // useEffect(() => {
@@ -104,6 +100,7 @@ export default async function ContactUsForm() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:w-[524px]">
           <PersonalInfoInput
+            lang={lang}
             register={register}
             errors={errors}
             nameInputs={{
@@ -166,7 +163,7 @@ export default async function ContactUsForm() {
         </div>
       </form>
 
-      <NotificationSendForm />
+      <NotificationSendForm lang={lang} />
     </div>
   );
 }

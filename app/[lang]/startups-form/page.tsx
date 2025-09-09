@@ -33,7 +33,7 @@ export default async function StartupValidationPage({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <StartupFormForm />
+        <StartupFormForm lang={lang} />
       </div>
     </div>
   );

@@ -8,14 +8,13 @@ import { initialInvestorRegistrationFormData } from '../../initials/initObjects'
 import { submitInvestorRegistrationForm } from '../../pages/api/investor-registration';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 import Input from '../common/form/Input';
 import LandaLogo from '../icons/common/LandaLogo';
 import CountryInput from '../common/form/CountryInput';
 
-export default async function InvestorRegistrationForm() {
+export default async function InvestorRegistrationForm({lang }: {lang: string}) {
   const {
     register,
     handleSubmit,
@@ -34,8 +33,6 @@ export default async function InvestorRegistrationForm() {
     handleNotifChange,
     handleSuccessChange
   } = useSubmit((s) => s);
-
-  const lang = useLang((s) => s.lang);
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 
@@ -214,7 +211,7 @@ export default async function InvestorRegistrationForm() {
             />
           </div>
         </form>
-        <NotificationSendForm />
+        <NotificationSendForm lang={lang} />
       </div>
     </>
   );

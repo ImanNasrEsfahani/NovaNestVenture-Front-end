@@ -10,13 +10,12 @@ import { initialPartnerMembershipFormData } from '../../initials/initObjects';
 import { submitPartnerMembershipForm } from '../../pages/api/partner-membership';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 import LandaLogo from '../icons/common/LandaLogo';
 import CountryInput from '../common/form/CountryInput';
 
-export default async function PartnerMembershipForm() {
+export default async function PartnerMembershipForm({lang }: {lang: string}) {
   const {
     register,
     handleSubmit,
@@ -36,7 +35,6 @@ export default async function PartnerMembershipForm() {
     handleSuccessChange
   } = useSubmit((s) => s);
 
-  const lang = useLang((s) => s.lang);
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
@@ -203,7 +201,7 @@ export default async function PartnerMembershipForm() {
           />
         </div>
       </form>
-      <NotificationSendForm />
+      <NotificationSendForm lang={lang} />
     </div>
   );
 }

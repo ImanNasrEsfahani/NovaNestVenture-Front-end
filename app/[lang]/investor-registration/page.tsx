@@ -27,7 +27,7 @@ export default async function InvestorRegistrationPage({
       />
       <div className='max-w-[1600px] mx-auto'>
 
-      <InvestorRegistrationForm />
+      <InvestorRegistrationForm lang={lang}/>
       </div>
     </div>
   );

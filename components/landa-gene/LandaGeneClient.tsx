@@ -244,7 +244,7 @@ export default function LandaGeneClient({ translations, lang }: LandaGeneClientP
               {/*<ButtonRefactor type="submit" text="Submit" /> */}
             </div>
           </form>
-          <NotificationSendForm />
+          <NotificationSendForm lang={lang} />
         </div>
       </div>
     </div>

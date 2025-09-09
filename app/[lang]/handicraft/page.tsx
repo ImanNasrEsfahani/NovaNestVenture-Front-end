@@ -94,7 +94,7 @@ export default async function Page({
           <p className="font-header text-sm md:text-base  text-primary">
             {t('formTitle')}
           </p>
-          <HandicraftForm />
+          <HandicraftForm lang={lang}/>
         </div>
       </div>
     </div>

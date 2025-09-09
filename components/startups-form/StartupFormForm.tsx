@@ -9,7 +9,6 @@ import NotificationSendForm from '../common/form/NotificationSendForm';
 // import GetCsrfToken from '../../utils/get-csrf-token';
 import { submitStartupsForm } from '../../pages/api/startups-form';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '../common/form/FormTitle';
@@ -20,9 +19,7 @@ import StartUpMvpRefactore from './StartUpMvpRefactore';
 import StartUpFirstSaleRefactor from './StartUpFirstSaleRefactor';
 import StartUpSaleDevelopRefactore from './StartUpSaleDevelopRefactore';
 
-
-export default async function StartupFormForm() {
-  const lang = useLang((s) => s.lang)
+export default async function StartupFormForm({lang }: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   const {
@@ -255,7 +252,7 @@ export default async function StartupFormForm() {
           <div className="flex justify-center w-1/3 md:w-1/4 lg:w-1/6 mx-auto mt-6">
             <ButtonRefactor type="submit" text={t('sendButton')} disabled={errorsList[0] ? true : false}/>
           </div>
-          <NotificationSendForm />
+          <NotificationSendForm lang={lang} />
         </form>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default async function ApplyFormPage({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <JobForm />
+        <JobForm lang={lang} />
       </div>
     </div>
   );

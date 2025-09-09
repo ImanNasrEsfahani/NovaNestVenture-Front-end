@@ -5,7 +5,6 @@ import NotificationSendForm from '../common/form/NotificationSendForm';
 import TextArea from '../common/TextArea';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 import Input from '../common/form/Input';
@@ -16,7 +15,7 @@ import { MentorRegistrationFormData } from '../../types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
 
-export default async function InvestorRegistrationForm() {
+export default async function InvestorRegistrationForm({lang }: {lang: string}) {
   const {
     register,
     handleSubmit,
@@ -36,7 +35,6 @@ export default async function InvestorRegistrationForm() {
     handleSuccessChange
   } = useSubmit((s) => s);
 
-  const lang = useLang((s) => s.lang);
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   // useEffect(() => {
@@ -182,7 +180,7 @@ export default async function InvestorRegistrationForm() {
             />
           </div>
         </form>
-        <NotificationSendForm />
+        <NotificationSendForm lang={lang} />
       </div>
     </>
   );

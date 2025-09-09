@@ -24,7 +24,7 @@ export default async function EntrepreneursPage({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <EntrepreneursForm />
+        <EntrepreneursForm lang={lang} />
       </div>
     </div>
   );
