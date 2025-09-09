@@ -134,7 +134,7 @@ export default async function JobForm({lang }: {lang: string}) {
                 <hr className="mb-5 border-[#000000] dark:border-[#ffffff]" />
               </div> */}
       </>
-      <FormTitle formName="jobForm" />
+      <FormTitle lang={lang} formName="jobForm" />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
         
         <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">
