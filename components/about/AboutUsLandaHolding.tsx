@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 // import { getInitialProps } from 'react-i18next';
 
-export default async function AboutUsLandaHolding({lang}: {lang?: string}) {
+export default async function AboutUsLandaHolding({lang}: {lang: string}) {
 
   const { t } = await getServerTranslation(lang, 'aboutUs');
 

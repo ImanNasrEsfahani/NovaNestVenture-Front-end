@@ -15,7 +15,7 @@ interface item {
   category: string;
 }
 
-export default async function TeamPersons({lang}: {lang?: string}) {
+export default async function TeamPersons({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'ourTeam');
 
   // const [selectedRole, setSelectedRole] = useState<string | null>(null);

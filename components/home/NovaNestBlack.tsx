@@ -6,7 +6,7 @@ import ButtonRefactor from '../common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default async function NovaNestBlack({lang}: {lang?: string}) {
+export default async function NovaNestBlack({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   return (

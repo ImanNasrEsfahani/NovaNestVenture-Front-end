@@ -68,6 +68,7 @@ export default async function Page({
       <div className="max-w-[1600px] mx-auto">
         {/* TODO: make better names like ForughAccelerator */}
         <AccelerationCard
+          lang={lang}
           addedClass="py-28"
           title={t('FORUGHACCELERATOR', { returnObjects: true })[0].title}
           slogan={t('FORUGHACCELERATOR', { returnObjects: true })[0].subTitle}
@@ -78,6 +79,7 @@ export default async function Page({
           itemsList={t('FORUGHACCELERATOR', { returnObjects: true })[0].items}
         />
         <AccelerationCard
+          lang={lang}
           addedClass=" pb-28"
           title={t('FARAZAMANACCELERATOR', { returnObjects: true })[0].title}
           slogan={

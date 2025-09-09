@@ -9,7 +9,7 @@ import Image from 'next/image';
 //   display: '-webkit-box'
 // };
 
-export default async function KeyDifferentiating({lang}: {lang?: string}) {
+export default async function KeyDifferentiating({lang}: {lang: string}) {
 
   const { t } = await getServerTranslation(lang, 'aboutUs');
 

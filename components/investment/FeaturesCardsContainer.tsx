@@ -1,7 +1,7 @@
 import FeaturesCards from './FeaturesCards';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function FeaturesCardsContainer({lang}: {lang?: string}) {
+export default async function FeaturesCardsContainer({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'investment');
 
   return (

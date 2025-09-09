@@ -6,7 +6,7 @@ import { getServerTranslation } from 'app/i18n';
 import Select from './Select';
 
 type Props = {
-  lang?: string;
+  lang: string;
   register: any;
   errors: any;
   nameInputs?: {

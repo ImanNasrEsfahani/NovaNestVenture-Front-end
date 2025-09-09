@@ -43,11 +43,11 @@ export default async function Page({
       </div>
       
       <div className='px-8 md:px-24 max-w-[1600px] mx-auto'>
-        <AboutUsLandaHolding   />
-        <SubsidiaryCompanies />
+        <AboutUsLandaHolding lang={lang} />
+        <SubsidiaryCompanies lang={lang}/>
         <StoryOfLanda lang={lang}/>
-        <KeyDifferentiating />
-        <AboutUsProfile />
+        <KeyDifferentiating lang={lang} />
+        <AboutUsProfile lang={lang} />
       </div>
     </div>
   );

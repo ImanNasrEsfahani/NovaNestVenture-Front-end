@@ -9,7 +9,7 @@ import { getServerTranslation } from 'app/i18n';
 //import WhatsappIconNew from '../icons/socialMediaIcons/WhatsappIconNew';
 import Image from 'next/image';
 
-export default async function ContactUsDescription({lang}: {lang?: string}) {
+export default async function ContactUsDescription({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'contact');
 
   return (

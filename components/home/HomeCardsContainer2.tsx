@@ -2,7 +2,7 @@ import HomeCards from './HomeCards';
 import { getServerTranslation } from 'app/i18n';
 import { CompanySectionsInterface } from '@/types/global';
 
-const HomeCardsContainer = async ({lang}: {lang?: string}) => {
+const HomeCardsContainer = async ({lang}: {lang: string}) => {
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   const renderHomeCards = (cardData: CompanySectionsInterface[]) => {

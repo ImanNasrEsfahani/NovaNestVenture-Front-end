@@ -103,7 +103,7 @@ export default async function Page({
             <p className=" leading-[25px] mt-6">{t('objectiveText1')}</p>
           </div>
         </div>
-        <FeaturesCardsContainer />
+        <FeaturesCardsContainer lang={lang} />
       </div>
       {/* <UpcomingEvents /> */}
     </div>

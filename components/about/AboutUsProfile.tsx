@@ -5,7 +5,7 @@ import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
 //import FeaturesCardsContainer from '../investment/FeaturesCardsContainer';
 
-export default async function AboutUsProfile({lang}: {lang?: string}) {
+export default async function AboutUsProfile({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'aboutUs');
 
   return (

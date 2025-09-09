@@ -115,6 +115,7 @@ export default async function InvestorRegistrationForm({lang }: {lang: string}) 
             </div>
             <div className="w-10/12 mx-auto mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 lg:grid-cols-3">
               <PersonalInfoInput
+                lang={lang}
                 register={register}
                 errors={errors}
                 nameInputs={{

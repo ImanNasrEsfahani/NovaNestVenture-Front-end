@@ -4,7 +4,7 @@ import { getServerTranslation } from 'app/i18n';
 
 // TODO: define props in types file and import it
 type Props = {
-  lang?: string;
+  lang: string;
   addedClass: string;
   title: string;
   slogan: string;

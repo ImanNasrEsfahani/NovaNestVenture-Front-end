@@ -18,6 +18,7 @@ export default async function StartupFormPersonalInformation({
     <>
       <div className="mb-12 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">
         <PersonalInfoInput
+          lang={lang}
           register={register}
           errors={errors}
           nameInputs={{

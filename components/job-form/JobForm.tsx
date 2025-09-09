@@ -139,6 +139,7 @@ export default async function JobForm({lang }: {lang: string}) {
         
         <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">
           <PersonalInfoInput
+            lang={lang}
             register={register}
             errors={errors}
             nameInputs={{

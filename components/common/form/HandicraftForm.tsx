@@ -100,6 +100,7 @@ export default async function HandicraftForm({lang }: {lang: string}) {
       <div className="my-4 grid w-full grid-cols-1 md:flex md:w-2/5 md:flex-col md:items-center lg:w-2/5">
         <div className="grid w-full grid-cols-1 gap-x-3 md:grid-cols-2">
           <PersonalInfoInput
+            lang={lang}
             register={register}
             errors={errors}
             nameInputs={{

@@ -34,7 +34,7 @@ export default async function TeamPage({
         />
       </div>
       <div className="max-w-[1600px] mx-auto">
-        <TeamPersons />
+        <TeamPersons lang={lang}/>
       </div>
     </div>
   );
