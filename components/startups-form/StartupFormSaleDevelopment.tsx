@@ -37,6 +37,7 @@ export default async function StartupFormSaleDevelopment({
     <>
       <div className="my-6 mb-12 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
       <YesRadioButton
+          lang={lang}
           title={t('startUp',{ returnObjects: true }).pitchDeck}
           register={register}
           errors={errors}
@@ -48,6 +49,7 @@ export default async function StartupFormSaleDevelopment({
           handleFileChange={handlePitchFileChange}
         />
         <YesRadioButton
+          lang={lang}
           title={t('startUp',{ returnObjects: true }).businessPlan}
           register={register}
           errors={errors}
@@ -110,6 +112,7 @@ export default async function StartupFormSaleDevelopment({
       <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
         <div>
         <YesRadioButton
+          lang={lang}
           title={t('startUp',{ returnObjects: true }).financialFile}
           register={register}
           errors={errors}

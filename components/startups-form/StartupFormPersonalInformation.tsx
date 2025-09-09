@@ -46,6 +46,7 @@ export default async function StartupFormPersonalInformation({
         />
 
         <CountryInput
+          lang={lang}
           errors={errors}
           nameInput='countryOfResidence'
           register={register}
