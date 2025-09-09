@@ -1,5 +1,4 @@
 import '../../app/[lang]/globals.css';
-import { useLang } from 'stores/langStore';
 
 export default function Hero({
   titles,

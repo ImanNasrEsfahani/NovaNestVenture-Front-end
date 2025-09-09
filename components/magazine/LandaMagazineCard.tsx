@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLang } from 'stores/langStore';
 
 export default function LandaMagazineCard({
   title,

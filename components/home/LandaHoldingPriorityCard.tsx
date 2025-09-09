@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { useLang } from 'stores/langStore';
-
 
 export default function LandaHoldingPriorityCard({
   title,

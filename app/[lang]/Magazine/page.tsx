@@ -13,11 +13,12 @@ export const metadata: Metadata = {
 };
 
 export default async function MagazinePage({
-  params: { lang },
+  params,
 }: {
   params: { lang: string };
 }) {
-  
+  const { lang } = params;
+
   return (
     <div className="relative">
       <Banner

@@ -1,5 +1,5 @@
-import Play from '../icons/PlayButton/Play';
-export default function PromotionalVideo({ params }: { params: { lang: string } }) {
+import Play from '@/components/icons/PlayButton/Play';
+export default function PromotionalVideo() {
 
   return (
     <div className="relative">

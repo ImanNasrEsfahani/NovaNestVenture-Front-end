@@ -1,7 +1,6 @@
 'use client'
 import { HomeCardsLeftProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
-import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
