@@ -12,5 +12,11 @@ export default async function TeamPersons({lang}: {lang: string}) {
 
   };
 
-  return <TeamPersonsClient lang={lang} translations={translations} />;
+  return <TeamPersonsClient 
+    lang={lang} 
+    persons={translations.persons} 
+    roles={translations.roles} 
+    defaultRole={translations.defaultRole}
+    onRoleSelect={(role: string) => {}} 
+  />;
 }

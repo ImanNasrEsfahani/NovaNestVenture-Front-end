@@ -1,4 +1,3 @@
-import { getServerTranslation } from 'app/i18n';
 import TeamRolesContainerClient from './TeamRolesContainerClient';
 
 export default async function TeamRolesContainer({
