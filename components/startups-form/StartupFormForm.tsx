@@ -139,7 +139,7 @@ export default async function StartupFormForm({lang }: {lang: string}) {
   return (
     <div className="container -m-4 mx-auto my-12 gap-y-0 font-barlow px-2 md:px-12 relative">
       <div className='mb-12'>
-        <FormTitle formName='startUp'/>
+        <FormTitle lang={lang} formName='startUp'/>
       </div>
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
