@@ -15,7 +15,24 @@ import Image from 'next/image';
 import { useSubmit } from 'stores/dataStore';
 import * as process from 'process';
 
-export default async function LandaGene({lang, t}: {lang: string, t: (key: string) => string}) {
+interface Translations {
+  textUp: string;
+  textMid: string;
+  textDown: string;
+  formText: string;
+  emailRequired: string;
+  emailErrorMessage: string;
+  emailPlaceholder: string;
+  companyNamePlaceholder: string;
+  banner: string;
+}
+
+interface LandaGeneClientProps {
+  translations: Translations;
+  lang: string;
+}
+
+export default function LandaGeneClient({ translations, lang }: LandaGeneClientProps) {
   const {
     register,
     handleSubmit,
@@ -34,7 +51,6 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
     handleNotifChange,
     handleSuccessChange
   } = useSubmit((s) => s);
-
 
   useEffect(() => {
     let cancelled = false;
@@ -117,7 +133,7 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
         </div>
         <div className="basis-3/4 ">
           <p className="font-barlow text-base font-normal leading-[48px] md:pt-12 px-2 text-justify">
-            {t('textUp')}
+            {translations.textUp}
           </p>
         </div>
       </div>
@@ -135,7 +151,7 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
 
         <div className="basis-4/5">
           <p className="font-barlow text-base font-normal leading-[48px] md:pt-12 px-10 text-justify">
-            {t('textMid')}
+            {translations.textMid}
           </p>
         </div>
       </div>
@@ -152,7 +168,7 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
         </div>
         <div className="basis-3/5 md:pt-12">
           <p className="font-barlow text-base font-normal leading-[48px] md:pt-12 px-10 text-justify">
-            {t('textDown')}
+            {translations.textDown}
           </p>
         </div>
       </div>
@@ -165,7 +181,7 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
                 lang === 'en' ? 'md:tracking-[2px]' : ''
               }`}
             >
-              {t('formText')}
+              {translations.formText}
             </p>
           </div>
 
@@ -192,10 +208,10 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
                   errors={errors}
                   nameInput="email"
                   type="text"
-                  required={t('emailRequired')}
+                  required={translations.emailRequired}
                   patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                  patternMessage={t('emailErrorMessage')}
-                  placeholder={t('emailPlaceholder')}
+                  patternMessage={translations.emailErrorMessage}
+                  placeholder={translations.emailPlaceholder}
                   className="input  col-span-1 mb-1 mt-3 w-full"
                   containerClass="w-full"
                   labelClass=""
@@ -211,7 +227,7 @@ export default async function LandaGene({lang, t}: {lang: string, t: (key: strin
                   required=""
                   patternValue=""
                   patternMessage=""
-                  placeholder={t('companyNamePlaceholder')}
+                  placeholder={translations.companyNamePlaceholder}
                   className="input  col-span-1 mb-1 mt-3 w-full"
                   containerClass="w-full"
                   labelClass=""
