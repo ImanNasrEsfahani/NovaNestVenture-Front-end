@@ -4,7 +4,8 @@ import EntrepreneursFormClient from '@/components/entrepreneurs/EntrepreneursFor
 export default async function EntrepreneursForm({lang}: {lang: string}) {
 
   const { t } = await getServerTranslation(lang, 'formComponent');
-  
+  const { t: tCommon } = await getServerTranslation(lang, 'common');
+
   // Pass translations as props to client component
   const translations = {
     formTitle: t('entrepreneurForm', { returnObjects: true }).formTitle,
@@ -24,7 +25,10 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
     howDidYouKnowUs: t('howDidYouKnowUs'),
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
-    sendButton: t('sendButton')
+    sendButton: t('sendButton'),
+
+    successMessage: tCommon('successMessage'),
+    failedMessage: tCommon('failedMessage'),
   };
 
   return <EntrepreneursFormClient lang={lang} translations={translations} />;

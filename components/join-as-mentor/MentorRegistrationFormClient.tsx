@@ -27,6 +27,8 @@ interface Translations {
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
   sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface MentorRegistrationFormClientProps {
@@ -200,7 +202,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
             />
           </div>
         </form>
-        <NotificationSendForm lang={lang} />
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

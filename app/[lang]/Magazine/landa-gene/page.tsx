@@ -15,6 +15,7 @@ export default async function Page({
 }) {
 
   const { t } = await getServerTranslation(lang, 'landaGene');
+  const { t: tCommon } = await getServerTranslation(lang, 'common');
 
   // Prepare all translations that the client component needs
   const translations = {
@@ -31,7 +32,10 @@ export default async function Page({
     companyNamePlaceholder: t('companyNamePlaceholder'),
     
     // Banner translation
-    banner: t('banner')
+    banner: t('banner'),
+
+    successMessage: tCommon('successMessage'),
+    failedMessage: tCommon('failedMessage'),
   };
 
   return (

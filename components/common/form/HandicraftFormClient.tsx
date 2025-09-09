@@ -15,6 +15,8 @@ import ArrowRight from '@/components/icons/common/ArrowRight';
 
 interface Translations {
   button: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface HandicraftFormClientProps {
@@ -128,7 +130,7 @@ export default function HandicraftFormClient({ lang, translations }: HandicraftF
           </button>
           {/* <ButtonRefactor type="submit" text="Submit" /> */}
         </div>
-        <NotificationSendForm lang={lang} />
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </form>
   );

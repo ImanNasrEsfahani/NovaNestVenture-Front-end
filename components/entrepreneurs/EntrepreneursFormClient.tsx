@@ -7,7 +7,6 @@ import NotificationSendForm from '@/components/common/form/NotificationSendForm'
 import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';
 import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
-import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
 import TextArea from '@/components/common/TextArea';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
@@ -33,6 +32,8 @@ interface Translations {
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
   sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface EntrepreneursFormClientProps {
@@ -240,7 +241,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
             />
           </div>
         </form>
-        <NotificationSendForm lang={lang} />
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

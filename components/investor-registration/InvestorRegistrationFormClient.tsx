@@ -32,6 +32,8 @@ interface Translations {
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
   sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface InvestorRegistrationFormClientProps {
@@ -237,7 +239,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
             />
           </div>
         </form>
-        <NotificationSendForm lang={lang} />
+      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

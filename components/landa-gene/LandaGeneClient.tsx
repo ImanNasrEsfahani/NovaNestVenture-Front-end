@@ -25,6 +25,8 @@ interface Translations {
   emailPlaceholder: string;
   companyNamePlaceholder: string;
   banner: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface LandaGeneClientProps {
@@ -245,7 +247,7 @@ export default function LandaGeneClient({ translations, lang }: LandaGeneClientP
               {/*<ButtonRefactor type="submit" text="Submit" /> */}
             </div>
           </form>
-          <NotificationSendForm lang={lang} />
+            <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
         </div>
       </div>
     </div>

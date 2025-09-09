@@ -1,10 +1,15 @@
 
 'use client';
 import Check from '@/components/icons/common/Check';
-import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
 
-export default async function NotificationSendForm({lang}: {lang: string}) {
+interface NotificationSendFormProps {
+  lang: string;
+  successMessage: string;
+  failedMessage: string;
+}
+
+export default async function NotificationSendForm({lang, successMessage, failedMessage }: NotificationSendFormProps) {
 
   const {
     isSubmitting,
@@ -20,14 +25,12 @@ export default async function NotificationSendForm({lang}: {lang: string}) {
   // const showNotification = useLang((s) => s.showNotification)
   // const lang = useLang((s) => s.lang)
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
-
   return (
     <div className="mx-auto mt-5 w-64 lg:w-96">
       {isSuccess && isSubmitting && !send && showNotification && (
         <div className="alert alert-success">
           <Check />
-          <span>{t('successMessage')}</span>
+          <span>{successMessage}</span>
         </div>
       )}
 
@@ -46,7 +49,7 @@ export default async function NotificationSendForm({lang}: {lang: string}) {
               d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <span>{t('failedMessage')}</span>
+          <span>{failedMessage}</span>
         </div>
       )}
     </div>

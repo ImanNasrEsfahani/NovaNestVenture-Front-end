@@ -259,7 +259,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
             <Button type="submit" bgColor="Primary" />
           </div>
         </form>
-        <NotificationSendForm lang={lang} />
+      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

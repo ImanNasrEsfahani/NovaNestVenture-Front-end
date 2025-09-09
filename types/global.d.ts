@@ -407,6 +407,8 @@ interface Translations {
   phoneNumberPlaceholder: string;
   phoneNumberErrorMessage: string;
   sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface WorkWithUsClientProps {
@@ -451,5 +453,5 @@ export {
   translationCard,
   HandicraftForm,
   ProfileData,
-  WorkWithUSFormData
+  WorkWithUSFormData,
 };

@@ -20,6 +20,8 @@ interface Translations {
   messagePlaceholder: string;
   sendingButton: string;
   sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 }
 
 interface ContactUsFormClientProps {
@@ -166,7 +168,7 @@ export default function ContactUsFormClient({ lang, translations }: ContactUsFor
         </div>
       </form>
 
-      <NotificationSendForm lang={lang} />
+      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
     </div>
   );
 }
