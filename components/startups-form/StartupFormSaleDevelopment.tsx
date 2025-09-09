@@ -126,8 +126,8 @@ export default async function StartupFormSaleDevelopment({
             if (Boolean(selectedRadioFinancial) === false) {
               return (
                 <div>
-                  <StartupFormTargetMarket register={register} errors={errors} />
-                  <StartupFormProperty register={register} errors={errors} />
+                  <StartupFormTargetMarket lang={lang || 'en'} register={register} errors={errors} />
+                  <StartupFormProperty lang={lang || 'en'} register={register} errors={errors} />
                 </div>
               );
             }else{

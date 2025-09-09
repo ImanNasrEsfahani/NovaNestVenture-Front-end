@@ -126,8 +126,8 @@ export default async function StartupFormFirstSale({
         if (Boolean(selectedRadioFinancial) === false) {
           return (
             <div>
-              <StartupFormTargetMarket register={register} errors={errors} />
-              <StartupFormProperty register={register} errors={errors} />
+              <StartupFormTargetMarket lang={lang || 'en'} register={register} errors={errors} />
+              <StartupFormProperty lang={lang || 'en'} register={register} errors={errors} />
               {/* <StartupFormTargetMarket register={register} errors={errors} lang={lang}/>
               <StartupFormProperty register={register} errors={errors} lang={lang}/> */}
             </div>
