@@ -54,22 +54,20 @@ const initI18next = async (lng: string, ns: string | string[]) => {
 //   return i18nInstance;
 // };
 
-export function getServerTranslation(
+export async function getServerTranslation(
   lng: string | undefined,
   ns: string | string[],
   options: { keyPrefix?: string } = {}
 ) {
   const safeLang = lng ?? 'en'; // fallback if undefined
-  
-  return initI18next(safeLang, ns).then(i18nextInstance => {
-    const primaryNs = (Array.isArray(ns) ? ns[0] : ns) as any;
-    return {
-      t: i18nextInstance.getFixedT(
-        safeLang,
-        primaryNs,
-        options.keyPrefix
-      ),
-      i18n: i18nextInstance
-    };
-  });
+  const i18nextInstance = await initI18next(safeLang, ns);
+  const primaryNs = (Array.isArray(ns) ? ns[0] : ns) as any; // cast to Namespace
+  return {
+    t: i18nextInstance.getFixedT(
+      safeLang,
+      primaryNs,
+      options.keyPrefix
+    ),
+    i18n: i18nextInstance
+  };
 }
