@@ -2,18 +2,18 @@ import * as React from 'react';
 import UploadInput from '../common/UploadInput';
 import TextArea from '../common/TextArea';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function StartupFormBusinessModel({
+export default async function StartupFormBusinessModel({
+  lang,
   register,
   errors,
   handleFinancialFileChange
 }: {
+  lang: string;
   register: any;
   errors: any;
   handleFinancialFileChange: any;
 }) {
-  const { lang } = useLang((s) => s )
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   return (
