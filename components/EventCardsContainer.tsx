@@ -1,4 +1,3 @@
-
 import EventCard from './EventCard';
 
 export default function EventCardsContainer() {

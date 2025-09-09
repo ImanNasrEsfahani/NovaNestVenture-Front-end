@@ -2,17 +2,18 @@ import * as React from 'react';
 import Input from '../common/form/Input';
 import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import CountryInput from '../common/form/CountryInput';
 
 export default async function StartupFormPersonalInformation({
+  lang,
   register,
   errors
 }: {
+  lang: string;
   register: any;
   errors: any;
 }) {
-  const { lang } = useLang((s) => s);
+
   const { t } = await getServerTranslation(lang, 'formComponent');
   return (
     <>

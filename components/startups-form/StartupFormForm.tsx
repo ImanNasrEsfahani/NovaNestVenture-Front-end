@@ -144,6 +144,7 @@ export default async function StartupFormForm({lang }: {lang: string}) {
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
           <StartupFormPersonalInformation
+            lang={lang}
             register={register}
             errors={errors}
           />
