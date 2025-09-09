@@ -6,23 +6,22 @@ import StartupFormSolutions from './StartupFormSolutions';
 import StartupFormBusinessModel from './StartupFormBusinessModel';
 import { handleRadioChange } from '../../utils/functions';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default function StartupFormTrialProduct({
+export default async function StartupFormTrialProduct({
+  lang,
   register,
   errors,
   handlePitchDeckFileChange,
   handleBusinessPlanFileChange,
   handleFinancialFileChange,
 }: {
+  lang: string;
   register: any;
   errors: any;
   handlePitchDeckFileChange:any;
   handleBusinessPlanFileChange:any;
   handleFinancialFileChange:any;
 }) {
-
-  const lang = useLang((s) => s.lang)
 
   const { t } = await getServerTranslation(lang, 'formComponent');
 
