@@ -3,5 +3,6 @@
         "locales",
         "app/i18n",
         "app/i18n/locales"
-    ]
+    ],
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

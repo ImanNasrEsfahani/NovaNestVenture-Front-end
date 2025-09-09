@@ -10,7 +10,7 @@ import { handleRadioChange } from '../../utils/functions';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 
-export default function StartupFormFirstSale({
+export default async function StartupFormFirstSale({
   register,
   errors,
   handlePitchFileChange,
