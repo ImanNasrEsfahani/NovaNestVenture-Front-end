@@ -27,7 +27,7 @@ export default async function JoinAsMentorPage({
       />
       <div className='max-w-[1600px] mx-auto'>
 
-      <MentorRegistrationForm />
+      <MentorRegistrationForm lang={lang}/>
       </div>
     </div>
   );
