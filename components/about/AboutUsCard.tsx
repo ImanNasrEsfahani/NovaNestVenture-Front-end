@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import { AboutUsCardProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
-import { lang } from 'moment';
 import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";

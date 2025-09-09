@@ -8,9 +8,9 @@ import Link from 'next/link';
 import { ProfileData } from '@/types/global';
 
 export default async function Page({
-  params: { lang, slug }
+  params: { slug }
 }: {
-  params: { lang: string; slug: string };
+  params: { slug: string };
 }) {
   const empty: ProfileData = {
     first_name: '',

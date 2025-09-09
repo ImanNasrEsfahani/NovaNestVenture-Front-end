@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 // import { getInitialProps } from 'react-i18next';
 
 export default async function AboutUsLandaHolding({lang}: {lang?: string}) {
