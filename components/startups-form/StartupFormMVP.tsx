@@ -96,10 +96,7 @@ export default async function StartupFormMVP({
               </div>
               <StartupFormProblem register={register} errors={errors}/>
               <StartupFormSolutions register={register} errors={errors}/>
-              <StartupFormBusinessModel
-                register={register}
-                errors={errors}
-                handleFinancialFileChange={handleFinancialFileChange}
+              <StartupFormBusinessModel lang={lang || 'en'} register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange}
               />
             </div>
           );
