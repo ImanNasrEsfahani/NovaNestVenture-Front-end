@@ -31,18 +31,18 @@ export default function Page({ params }: { params: { lang: string } }) {
         titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
       /> */}
-      <Hero2 />
+      <Hero2 lang={lang} />
 
       <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
         <AboutUs lang={lang} />
-        <HomeCardsContainer2 />
-        <SpecialFeatures />
+        <HomeCardsContainer2 lang={lang} />
+        <SpecialFeatures lang={lang} />
         
         {/* <HomeUpComingStartups /> */}
         <HomeNovaNestAcademy lang={lang} />
-        <NovaNestBlack />
+        <NovaNestBlack lang={lang} />
         <LatestStartups lang={lang} />
-        <NovaNestPriority />
+        <NovaNestPriority lang={lang} />
         {/* <Partners /> */}
 
         {/* <HomeUpcomingEvents /> */}
