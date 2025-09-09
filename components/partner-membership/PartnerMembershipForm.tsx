@@ -142,6 +142,7 @@ export default async function PartnerMembershipForm({lang }: {lang: string}) {
             />
 
             <CountryInput
+              lang={lang}
               errors={errors}
               nameInput="countryOfResidence"
               register={register}
