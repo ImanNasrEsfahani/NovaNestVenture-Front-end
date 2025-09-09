@@ -8,23 +8,22 @@ import StartupFormTargetMarket from './StartupFormTargetMarket';
 import StartupFormProperty from './StartupFormProperty';
 import { handleRadioChange } from '../../utils/functions';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 export default async function StartupFormFirstSale({
+  lang,
   register,
   errors,
   handlePitchFileChange,
   handleBusinessFileChange,
   handleFinancialFileChange
 }: {
+  lang: string;
   register: any;
   errors: any;
   handlePitchFileChange: any;
   handleBusinessFileChange: any;
   handleFinancialFileChange: any;
 }) {
-  const { lang } = useLang((s) => s)
-  
   const { t } = await getServerTranslation(lang, 'formComponent');
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
@@ -101,7 +100,7 @@ export default async function StartupFormFirstSale({
               </div>
               <StartupFormProblem register={register} errors={errors} />
               <StartupFormSolutions register={register} errors={errors} />
-              <StartupFormBusinessModel register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange} />
+              <StartupFormBusinessModel lang={lang} register={register} errors={errors} handleFinancialFileChange={handleFinancialFileChange} />
             </div>
           );
         } else {
