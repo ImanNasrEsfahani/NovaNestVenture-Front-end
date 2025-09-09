@@ -45,7 +45,7 @@ export default async function Page({
       <div className='px-8 md:px-24 max-w-[1600px] mx-auto'>
         <AboutUsLandaHolding   />
         <SubsidiaryCompanies />
-        <StoryOfLanda />
+        <StoryOfLanda lang={lang}/>
         <KeyDifferentiating />
         <AboutUsProfile />
       </div>
