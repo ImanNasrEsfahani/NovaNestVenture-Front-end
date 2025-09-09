@@ -24,7 +24,7 @@ export default async function Page({
         lang={lang}
       />
       <div className="max-w-[1600px] mx-auto">
-        <LandaGene lang={lang} t={t} />
+        <LandaGene lang={lang} trans={t} />
       </div>
     </div>
   );
