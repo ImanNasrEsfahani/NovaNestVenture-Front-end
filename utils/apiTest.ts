@@ -1,5 +1,5 @@
 // Test API connectivity
-import apiClient from '../utils/api';
+import apiClient from '@/utils/api';
 
 export async function testApiConnection() {
   try {

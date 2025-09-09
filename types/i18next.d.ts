@@ -1,5 +1,5 @@
-import enAboutUs from '../app/i18n/locales/en/aboutUs.json'
-import enInvestment from '../app/i18n/locales/en/investment.json'
+import enAboutUs from '@/app/i18n/locales/en/aboutUs.json'
+import enInvestment from '@/app/i18n/locales/en/investment.json'
 declare module 'i18next' {
     interface CustomTypeOptions {
       defaultNS: 'mainPage';

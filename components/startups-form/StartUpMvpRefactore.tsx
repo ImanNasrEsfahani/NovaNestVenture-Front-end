@@ -1,12 +1,12 @@
 import UploadFile from 'public/static/logos/FileUpload'
 import React, { useState } from 'react'
-import Input from '../common/form/Input'
+import Input from '@/components/common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { getServerTranslation } from '../../app/i18n'
 import ChevDown from 'public/static/logos/ChevDown'
-import TextArea from '../common/TextArea'
-import SolutionLevel from './SolutionLevel'
+import TextArea from '@/components/common/TextArea'
+import SolutionLevel from '@/components/startups-form/SolutionLevel'
 
 type Props = {
     lang: string;
