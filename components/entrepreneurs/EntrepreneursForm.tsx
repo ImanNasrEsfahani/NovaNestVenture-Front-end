@@ -8,7 +8,6 @@ import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';
 import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
 import TextArea from '@/components/common/TextArea';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
