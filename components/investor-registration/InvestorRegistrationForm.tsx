@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { InvestorRegistrationFormData } from '../../types/global';
+import { InvestorRegistrationFormData } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import TextArea from '../common/TextArea';
 import { initialInvestorRegistrationFormData } from '../../initials/initObjects';

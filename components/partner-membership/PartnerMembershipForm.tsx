@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../common/form/Input';
-import { PartnerMembershipFormData } from '../../types/global';
+import { PartnerMembershipFormData } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import TextArea from '../common/TextArea';
 // import GetCsrfToken from '../../utils/get-csrf-token';

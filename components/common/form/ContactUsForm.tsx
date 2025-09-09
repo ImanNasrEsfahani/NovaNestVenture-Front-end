@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { ContactUSFormData } from '../../../types/global';
+import { ContactUSFormData } from '../@/types/global';
 // import GetCsrfToken from '../../../utils/get-csrf-token';
 import NotificationSendForm from './NotificationSendForm';
 import { ContactFormData } from '../../../initials/initObjects';

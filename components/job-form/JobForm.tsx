@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import UploadInput from '../common/UploadInput';
-import { JobFormData } from '../../types/global';
+import { JobFormData } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import GetCsrfToken from '../..//utils/get-csrf-token';
 import { initialJobFormData } from '../../initials/initObjects';

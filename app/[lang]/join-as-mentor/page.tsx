@@ -1,6 +1,6 @@
 
-import Banner from '../../../components/common/Banner';
-import MentorRegistrationForm from '../../../components/join-as-mentor/MentorRegistrationForm';
+import Banner from '../@/components/common/Banner';
+import MentorRegistrationForm from '../@/components/join-as-mentor/MentorRegistrationForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 

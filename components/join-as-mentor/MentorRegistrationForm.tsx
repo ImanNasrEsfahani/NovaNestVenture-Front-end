@@ -11,7 +11,7 @@ import Input from '../common/form/Input';
 import CountryInput from '../common/form/CountryInput';
 
 import LandaLogo from '../icons/common/LandaLogo';
-import { MentorRegistrationFormData } from '../../types/global';
+import { MentorRegistrationFormData } from '@/types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
 

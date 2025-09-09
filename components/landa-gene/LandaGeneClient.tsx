@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../common/form/Input';
 import { initialApplicationFormData } from '../../initials/initObjects';
-import { LandaGeneFormData } from '../../types/global';
+import { LandaGeneFormData } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { submitLandaApplicationForm } from 'pages/api/landa-gene';

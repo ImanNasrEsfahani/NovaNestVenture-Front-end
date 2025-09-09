@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { WorkWithUSFormData } from '../../types/global';
+import { WorkWithUSFormData } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import GetCsrfToken from '../../utils/get-csrf-token';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';

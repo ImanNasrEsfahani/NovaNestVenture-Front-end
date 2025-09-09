@@ -1,5 +1,5 @@
 'use client'
-import { HomeCardsLeftProps } from '../../types/global';
+import { HomeCardsLeftProps } from '@/types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";

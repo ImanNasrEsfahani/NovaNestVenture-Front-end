@@ -1,6 +1,6 @@
-import Footer from '../../components/home/Footer';
-import Navbar from '../../components/common/Navbar';
-import ScrollUpButton from '../../components/common/ScrollUpButton';
+import Footer from '@/components/home/Footer';
+import Navbar from '@/components/common/Navbar';
+import ScrollUpButton from '@/components/common/ScrollUpButton';
 import { dir } from 'i18next'
 import { languages } from 'app/i18n/setting'
 import './globals.css';

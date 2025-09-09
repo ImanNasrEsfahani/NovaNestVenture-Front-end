@@ -5,7 +5,7 @@ import { PersonalInfoInput } from './PersonalInfoInput';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { useForm } from 'react-hook-form';
 import { HandicraftFormData } from 'initials/initObjects';
-import { HandicraftForm as HandicraftFormType } from '../../../types/global';
+import { HandicraftForm as HandicraftFormType } from '../@/types/global';
 import NotificationSendForm from './NotificationSendForm';
 import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '../ButtonRefactor';

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ServicesInterface } from '../../types/global';
+import { ServicesInterface } from '@/types/global';
 
 export default function AccelerationServices({
   services

@@ -1,6 +1,6 @@
 
 'use client';
-import Check from '../../../components/icons/common/Check';
+import Check from '../@/components/icons/common/Check';
 import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
 

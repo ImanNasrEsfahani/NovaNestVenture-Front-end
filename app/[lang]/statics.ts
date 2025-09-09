@@ -3,7 +3,7 @@ import {
   LogosInterface,
   ImagesInterface,
   CardsList
-} from '../../types/global';
+} from '@/types/global';
 
 const cardData2: SportsInterface[] = [
   {

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../common/form/Input';
-import { Entrepreuneur } from '../../types/global';
+import { Entrepreuneur } from '@/types/global';
 import NotificationSendForm from '../common/form/NotificationSendForm';
 import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';

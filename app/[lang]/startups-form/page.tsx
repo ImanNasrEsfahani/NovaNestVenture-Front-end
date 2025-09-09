@@ -1,5 +1,5 @@
-import Banner from '../../../components/common/Banner';
-import StartupFormForm from '../../../components/startups-form/StartupFormForm';
+import Banner from '../@/components/common/Banner';
+import StartupFormForm from '../@/components/startups-form/StartupFormForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import { LandaBgBig } from 'public/static/logos/LandaBgBig';

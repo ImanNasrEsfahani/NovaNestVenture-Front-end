@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { StartupsFormData } from '../../types/global';
+import { StartupsFormData } from '@/types/global';
 import { initialStartupsFormData } from '../../initials/initObjects';
 import StartupFormPersonalInformation from './StartupFormPersonalInformation';
 import StartupFormIdea from './StartupFormIdea';
