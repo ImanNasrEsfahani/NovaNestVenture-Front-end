@@ -8,7 +8,8 @@ export default async function TeamPersons({lang}: {lang: string}) {
   const translations = {
     persons: t('persons', { returnObjects: true }),
     roles: t('roles', { returnObjects: true }),
-    defaultRole: t('defaultRole')
+    defaultRole: t('defaultRole'),
+
   };
 
   return <TeamPersonsClient lang={lang} translations={translations} />;
