@@ -1,3 +1,4 @@
+'use client';
 import useFetchBlog from '@/utils/useFetchBlog';
 import React from 'react';
 import { useSubmit } from 'stores/dataStore';

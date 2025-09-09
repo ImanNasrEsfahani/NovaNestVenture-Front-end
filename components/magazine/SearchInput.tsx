@@ -1,3 +1,4 @@
+'use client';
 import Magnifier from '../icons/common/Magnifier';
 
 export default function SearchInput() {
