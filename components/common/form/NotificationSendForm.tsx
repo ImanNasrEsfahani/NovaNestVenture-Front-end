@@ -9,7 +9,7 @@ interface NotificationSendFormProps {
   failedMessage: string;
 }
 
-export default async function NotificationSendForm({lang, successMessage, failedMessage }: NotificationSendFormProps) {
+export default function NotificationSendForm({lang, successMessage, failedMessage }: NotificationSendFormProps) {
 
   const {
     isSubmitting,
