@@ -1,10 +1,7 @@
 import { getServerTranslation } from 'app/i18n';
 import React from 'react';
-import { useLang } from 'stores/langStore';
 
-export default async function UpcomingEvents() {
-  const lang = useLang.getState().lang;
-
+export default async function UpcomingEvents({ lang }: { lang: string }) {
   const { t } = await getServerTranslation(lang, "mainPage")
 
   return (

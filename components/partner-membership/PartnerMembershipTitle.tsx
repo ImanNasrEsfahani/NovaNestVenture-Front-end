@@ -1,9 +1,5 @@
 
-import { useLang } from 'stores/langStore';
-
-export default function PartnerMembershipTitle() {
-
-  const lang = useLang((s) => s.lang)
+export default function PartnerMembershipTitle({lang}: {lang: string}) {
 
   return (
     <>

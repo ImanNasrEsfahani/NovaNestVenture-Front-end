@@ -2,12 +2,10 @@
 import { useEffect, useRef, useState } from 'react';
 import PartnersStartupCard from './PartnersStartupCard';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-export default async function Partners() {
+export default async function Partners({ lang }: { lang: string }) {
 
-  const lang = useLang().lang
   const { t } = await getServerTranslation(lang, 'mainPage');
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);

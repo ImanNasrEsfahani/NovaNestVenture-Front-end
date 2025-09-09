@@ -1,15 +1,16 @@
 'use client';
-import './investment.css'
-import { useLang } from 'stores/langStore';
+import '@/components/investment/investment.css'
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function FeaturesCards({
+  lang,
   title,
   description,
   link
 }: {
+  lang: string;
   title: string;
   description: string;
   link: string;
@@ -20,7 +21,6 @@ export default function FeaturesCards({
   // const handleOnClick = () => {
   //   router.push(link);
   // }
-  const lang = useLang().lang
 
   return (
     <div  className="flex flex-col justify-between p-3 md:w-[580px] font-header shadow-xl rounded-lg">

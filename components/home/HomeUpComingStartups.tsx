@@ -1,11 +1,8 @@
-'use client';
 import React from 'react';
 import UpcomingStartupsCard from './UpcomingStartupsCard';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
-export default async function HomeUpComingStartups() {
-  const lang = useLang().lang
+export default async function HomeUpComingStartups({ lang }: { lang: string }) {
 
   const { t } = await getServerTranslation(lang, 'mainPage');
 

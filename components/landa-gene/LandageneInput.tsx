@@ -1,9 +1,9 @@
 import React from 'react'
 import Input from '@/components/common/form/Input';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 type Props = {
+  lang: string;
   register: any;
   errors: any;
   nameInputs?: {
@@ -14,12 +14,12 @@ type Props = {
 };
 
 const LandaGeneInput = async ({
+  lang,
   register,
   errors,
   nameInputs,
   noLabel
 }: Props) =>{
-  const { lang } = useLang((s) => s)
 
   const { t } = await getServerTranslation(lang, 'landaGene');
   return (

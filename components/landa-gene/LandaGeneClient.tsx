@@ -192,6 +192,7 @@ export default function LandaGeneClient({ translations, lang }: LandaGeneClientP
             <div className="my-4 grid w-full grid-cols-1 gap-y-2 md:flex md:w-3/5 md:flex-col md:lg:w-[35%]">
               <div className="flex w-full flex-col gap-x-4 md:flex-row">
                 <LandaGeneInput
+                  lang={lang}
                   register={register}
                   errors={errors}
                   nameInputs={{

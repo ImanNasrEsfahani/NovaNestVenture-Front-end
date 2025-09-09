@@ -19,6 +19,7 @@ export default async function FeaturesCardsContainer({lang}: {lang: string}) {
           index: number;
         }) => (
           <FeaturesCards
+            lang={lang}
             link={link}
             title={title}
             description={description}

@@ -1,9 +1,9 @@
 'use client';
 import UploadInput from './UploadInput';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 export default async function YesRadioButton({
+  lang,
   title,
   register,
   errors,
@@ -14,6 +14,7 @@ export default async function YesRadioButton({
   handleFileChange,
   fileName,
 }: {
+  lang: string;
   title: string;
   register: any;
   errors: any;
@@ -24,7 +25,7 @@ export default async function YesRadioButton({
   handleFileChange: any;
   fileName: string;
 }) {
-  const lang = useLang().lang
+
   const {t} = await getServerTranslation(lang, "formComponent");
   let uploadInputTitle = ""
 

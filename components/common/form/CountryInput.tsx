@@ -3,21 +3,20 @@ import { useState } from 'react';
 import Select from '@/components/common/form/Select';
 import Input from '@/components/common/form/Input';
 import { getServerTranslation } from 'app/i18n';
-import { useLang } from 'stores/langStore';
 
 type Props = {
+  lang: string;
   register: any;
   errors: any;
   nameInput: string;
 }
 
 export default async function CountryInput({
+  lang,
   register,
   errors,
   nameInput,
 }: Props) {
-
-  const lang = useLang((s) => s.lang)
 
   const { t } = await getServerTranslation(lang, 'countryInput');
   const countriesData = t('countries',{ returnObjects: true }).map((country: string) => ({

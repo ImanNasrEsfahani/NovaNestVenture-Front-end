@@ -4,7 +4,6 @@ import IconRoundedEmail from '@/components/icons/IconRoundedEmail';
 import IconRoundedInstagram from '@/components/icons/IconInstagramRounded';
 import IconWeb from '@/components/icons/IconWeb';
 import Image from 'next/image';
-import { useLang } from 'stores/langStore';
 
 export default function AboutusPersonalTabs({
   image,
