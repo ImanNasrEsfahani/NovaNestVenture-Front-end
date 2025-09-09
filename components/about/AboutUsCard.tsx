@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import { AboutUsCardProps } from '../../types/global';
 import ButtonRefactor from '../common/ButtonRefactor';
-import { useLang } from 'stores/langStore';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -16,7 +15,6 @@ const AboutUsCard = ({
   link
 }: AboutUsCardProps) => {
 
-  const lang = useLang().lang
 
   return (
     <>

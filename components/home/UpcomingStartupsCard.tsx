@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import { useLang } from 'stores/langStore';
 import ButtonRefactor from '../common/ButtonRefactor';
 
 type Props = {

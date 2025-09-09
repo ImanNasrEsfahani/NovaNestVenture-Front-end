@@ -1,7 +1,7 @@
 
 import ButtonRefactor from '../common/ButtonRefactor';
 
-export default function UpcomingEvents({ params }: { params: { lang: string } }) {
+export default function UpcomingEvents() {
 
   return (
     <div className="relative h-[480px] bg-[#FAFAFA]">

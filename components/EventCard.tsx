@@ -6,7 +6,6 @@ import Pin from './icons/Panel/Pin';
 import Tag from './icons/Panel/Tag';
 import Link from 'next/link';
 import ButtonRefactor from './common/ButtonRefactor';
-import { useLang } from 'stores/langStore';
 
 interface Event {
   title: string;
@@ -30,7 +29,6 @@ export default function EventCard() {
 
   }, []); // The empty dependency array ensures this effect runs once when the component mounts
 
-  const lang = useLang((state) => state.lang);
 
   return (
     <div>

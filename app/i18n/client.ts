@@ -4,15 +4,13 @@
 import i18next from 'i18next';
 import {
   initReactI18next,
-  useTranslation as useTranslationOrg
 } from 'react-i18next';
 // import { useCookies } from 'react-cookie';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { getOptions, languages, cookieName } from './setting';
+import { getOptions } from './setting';
 // import { useLang } from 'stores/langStore';
 
-const runsOnServerSide = typeof window === 'undefined';
 let initialized = false;
 
 export async function initClientI18n(lng: string, ns: string | string[]) {
