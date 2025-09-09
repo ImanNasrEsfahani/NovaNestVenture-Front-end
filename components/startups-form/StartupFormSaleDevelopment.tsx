@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react';
-import Input from '../common/form/Input';
-import YesRadioButton from '../common/YesRadioButton';
+import Input from '@/components/common/form/Input';
+import YesRadioButton from '@/components/common/YesRadioButton';
 import StartupFormProblem from './StartupFormProblems';
 import StartupFormSolutions from './StartupFormSolutions';
 import StartupFormBusinessModel from './StartupFormBusinessModel';

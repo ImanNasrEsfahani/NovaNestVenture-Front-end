@@ -1,19 +1,19 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '../common/form/Input';
+import Input from '@/components/common/form/Input';
 import { Entrepreuneur } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
 import { useSubmit } from 'stores/dataStore';
-import TextArea from '../common/TextArea';
-import ButtonRefactor from '../common/ButtonRefactor';
-import LandaLogo from '../icons/common/LandaLogo';
-import CountryInput from '../common/form/CountryInput';
+import TextArea from '@/components/common/TextArea';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import LandaLogo from '@/components/icons/common/LandaLogo';
+import CountryInput from '@/components/common/form/CountryInput';
 
 export default async function EntrepreneursForm({lang }: {lang: string}) {
   const {

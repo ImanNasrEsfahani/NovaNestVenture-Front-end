@@ -1,7 +1,7 @@
 'use client';
 import './investment.css'
 import { useLang } from 'stores/langStore';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 

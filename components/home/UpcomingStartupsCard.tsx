@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 type Props = {
   image: string;

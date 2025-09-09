@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { ContactUSFormData } from '../@/types/global';
-// import GetCsrfToken from '../../../utils/get-csrf-token';
-import NotificationSendForm from './NotificationSendForm';
+import { ContactUSFormData } from '@/types/global';
+// import GetCsrfToken from '@/utils/get-csrf-token';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import { ContactFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
-import { PersonalInfoInput } from './PersonalInfoInput';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import Input from './Input';
 import TextArea from '../TextArea';
 import { getServerTranslation } from 'app/i18n';

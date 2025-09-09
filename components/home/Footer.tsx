@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Instagram from '../icons/footer/Instagram';
-import Envelope from '../icons/footer/Envelope';
-import Whatsapp from '../icons/footer/Whatsapp';
-import LinkedIn from '../icons/footer/LinkedIn';
+import Instagram from '@/components/icons/footer/Instagram';
+import Envelope from '@/components/icons/footer/Envelope';
+import Whatsapp from '@/components/icons/footer/Whatsapp';
+import LinkedIn from '@/components/icons/footer/LinkedIn';
 import { getServerTranslation } from 'app/i18n';
 
 interface FooterItem {

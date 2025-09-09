@@ -1,19 +1,19 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '../common/form/Input';
+import Input from '@/components/common/form/Input';
 import { PartnerMembershipFormData } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
-import TextArea from '../common/TextArea';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
+import TextArea from '@/components/common/TextArea';
 // import GetCsrfToken from '../../utils/get-csrf-token';
 import { initialPartnerMembershipFormData } from '../../initials/initObjects';
 import { submitPartnerMembershipForm } from '../../pages/api/partner-membership';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
-import ButtonRefactor from '../common/ButtonRefactor';
-import LandaLogo from '../icons/common/LandaLogo';
-import CountryInput from '../common/form/CountryInput';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import LandaLogo from '@/components/icons/common/LandaLogo';
+import CountryInput from '@/components/common/form/CountryInput';
 
 export default async function PartnerMembershipForm({lang }: {lang: string}) {
   const {

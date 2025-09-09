@@ -2,17 +2,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { InvestorRegistrationFormData } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
-import TextArea from '../common/TextArea';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
+import TextArea from '@/components/common/TextArea';
 import { initialInvestorRegistrationFormData } from '../../initials/initObjects';
 import { submitInvestorRegistrationForm } from '../../pages/api/investor-registration';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
-import ButtonRefactor from '../common/ButtonRefactor';
-import Input from '../common/form/Input';
-import LandaLogo from '../icons/common/LandaLogo';
-import CountryInput from '../common/form/CountryInput';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import Input from '@/components/common/form/Input';
+import LandaLogo from '@/components/icons/common/LandaLogo';
+import CountryInput from '@/components/common/form/CountryInput';
 
 export default async function InvestorRegistrationForm({lang }: {lang: string}) {
   const {

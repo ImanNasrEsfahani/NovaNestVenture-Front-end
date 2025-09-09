@@ -1,16 +1,16 @@
 'use client';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '../common/form/Input';
+import Input from '@/components/common/form/Input';
 import { initialApplicationFormData } from '../../initials/initObjects';
 import { LandaGeneFormData } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { submitLandaApplicationForm } from 'pages/api/landa-gene';
 
 import { LandaGeneInput } from '@/components/landa-gene/LandageneInput';
-// import ButtonRefactor from '../common/ButtonRefactor';
-import Button from '../common/Button';
+// import ButtonRefactor from '@/components/common/ButtonRefactor';
+import Button from '@/components/common/Button';
 import Image from 'next/image';
 import { useSubmit } from 'stores/dataStore';
 import * as process from 'process';

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Input from '../common/form/Input';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import Input from '@/components/common/form/Input';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-import CountryInput from '../common/form/CountryInput';
+import CountryInput from '@/components/common/form/CountryInput';
 
 export default async function StartupFormPersonalInformation({
   lang,

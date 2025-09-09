@@ -1,4 +1,4 @@
-// import PrimaryDot from '../icons/acceleration/PrimaryDot';
+// import PrimaryDot from '@/components/icons/acceleration/PrimaryDot';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 

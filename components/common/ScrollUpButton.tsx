@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import FeatherArrowUp from '../icons/common/FeatherArrowUp';
+import FeatherArrowUp from '@/components/icons/common/FeatherArrowUp';
 
 const ScrollUpButton = () => {
   const [showButton, setShowButton] = useState(false);

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import PartnersStartupCard from './PartnersStartupCard';
 import { getServerTranslation } from 'app/i18n';
 import { useLang } from 'stores/langStore';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 export default async function Partners() {
 

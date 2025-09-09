@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { AboutUsCardProps } from '@/types/global';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 

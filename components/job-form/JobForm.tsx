@@ -1,19 +1,19 @@
 'use client';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import UploadInput from '../common/UploadInput';
+import UploadInput from '@/components/common/UploadInput';
 import { JobFormData } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '../..//utils/get-csrf-token';
 import { initialJobFormData } from '../../initials/initObjects';
 import { submitApplyJobForm } from '../../pages/api/jobs';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
-// import ButtonRefactor from '../common/ButtonRefactor';
-import Button from '../common/Button';
+// import ButtonRefactor from '@/components/common/ButtonRefactor';
+import Button from '@/components/common/Button';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
-import FormTitle from '../common/form/FormTitle';
+import FormTitle from '@/components/common/form/FormTitle';
 
 export default async function JobForm({lang }: {lang: string}) {
   const {

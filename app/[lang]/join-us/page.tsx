@@ -1,7 +1,7 @@
-import Banner from '../@/components/common/Banner';
+import Banner from '@/components/common/Banner';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import WorkWithUs from './../@/components/work-with-us/WorkWithUs';
+import WorkWithUs from '@/components/work-with-us/WorkWithUs';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Work With Us',

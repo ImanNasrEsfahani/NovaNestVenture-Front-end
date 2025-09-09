@@ -1,5 +1,5 @@
-import TextArea from '../common/TextArea';
-import RadioButtonGroup from '../common/RadioButtonGroup';
+import TextArea from '@/components/common/TextArea';
+import RadioButtonGroup from '@/components/common/RadioButtonGroup';
 import { getServerTranslation } from 'app/i18n';
 
 export default async function StartupFormSolutions({

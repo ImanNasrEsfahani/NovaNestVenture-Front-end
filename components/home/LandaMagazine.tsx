@@ -2,7 +2,7 @@
 import LandaMagazineCard from '../magazine/LandaMagazineCard';
 // TODO: import from i18n instead of statics
 import { cardData2 } from '../../app/[lang]/statics';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 export default function LandaMagazine({ params }: { params: { lang: string } }) {
 

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import TextArea from '../common/TextArea';
+import TextArea from '@/components/common/TextArea';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 // import FileUpload from '@/public/static/logos/FileUpload'

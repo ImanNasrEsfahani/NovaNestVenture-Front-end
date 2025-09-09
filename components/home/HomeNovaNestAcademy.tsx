@@ -1,6 +1,6 @@
 import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 
 export default async function HomeNovaNestAcademy({ lang }: { lang: string }) {

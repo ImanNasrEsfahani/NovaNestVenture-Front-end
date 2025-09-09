@@ -1,5 +1,5 @@
 
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 export default function UpcomingEvents() {
 

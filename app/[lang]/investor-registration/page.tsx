@@ -1,6 +1,6 @@
 
-import Banner from '../@/components/common/Banner';
-import InvestorRegistrationForm from '../@/components/investor-registration/InvestorRegistrationForm';
+import Banner from '@/components/common/Banner';
+import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 

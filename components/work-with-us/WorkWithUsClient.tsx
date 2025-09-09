@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { WorkWithUSFormData } from '@/types/global';
-import NotificationSendForm from '../common/form/NotificationSendForm';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '../../utils/get-csrf-token';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { useSubmit } from 'stores/dataStore';
-import Button from '../common/Button';
+import Button from '@/components/common/Button';
 import { useFile } from 'stores/fileStore';
 import Image from 'next/image';
 import { WorkWithUsClientProps } from '@/types/global';

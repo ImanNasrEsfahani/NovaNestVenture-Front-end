@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageModal from '../common/ImageModal';
+import ImageModal from '@/components/common/ImageModal';
 import Image from 'next/image';
 import Link from 'next/link';
 

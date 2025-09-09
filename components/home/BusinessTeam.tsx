@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 import React, { useState } from 'react';
-import Chevron from '../common/Chevron';
+import Chevron from '@/components/common/Chevron';
 // import Link from 'next/link';
 import BusinessTeamCard from './BusinessTeamCard';
 import { getServerTranslation } from 'app/i18n';

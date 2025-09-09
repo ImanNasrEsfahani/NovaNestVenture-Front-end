@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 import Link from 'next/link';
-import ButtonRefactor from '../common/ButtonRefactor';
-import Button from '../common/Button';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import Button from '@/components/common/Button';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 

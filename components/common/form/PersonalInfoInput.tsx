@@ -1,6 +1,6 @@
 'use client';
 // import React, { useState } from 'react'
-import Input from '../../common/form/Input';
+import Input from '@/components/common/form/Input';
 import { getServerTranslation } from 'app/i18n';
 // import { Type } from '@prisma/client';
 import Select from './Select';

@@ -1,5 +1,5 @@
-import Banner from '../@/components/common/Banner';
-import PartnerMembershipForm from '../@/components/partner-membership/PartnerMembershipForm';
+import Banner from '@/components/common/Banner';
+import PartnerMembershipForm from '@/components/partner-membership/PartnerMembershipForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 

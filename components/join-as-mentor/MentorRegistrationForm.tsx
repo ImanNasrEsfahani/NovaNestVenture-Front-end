@@ -1,16 +1,16 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import NotificationSendForm from '../common/form/NotificationSendForm';
-import TextArea from '../common/TextArea';
-import { PersonalInfoInput } from '../common/form/PersonalInfoInput';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
+import TextArea from '@/components/common/TextArea';
+import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import { useSubmit } from 'stores/dataStore';
-import ButtonRefactor from '../common/ButtonRefactor';
-import Input from '../common/form/Input';
-import CountryInput from '../common/form/CountryInput';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import Input from '@/components/common/form/Input';
+import CountryInput from '@/components/common/form/CountryInput';
 
-import LandaLogo from '../icons/common/LandaLogo';
+import LandaLogo from '@/components/icons/common/LandaLogo';
 import { MentorRegistrationFormData } from '@/types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';

@@ -1,6 +1,6 @@
 
-import ArrowLeftShort from '../icons/common/ArrowLeftShort';
-import ArrowRightShort from '../icons/common/ArrowRightShort';
+import ArrowLeftShort from '@/components/icons/common/ArrowLeftShort';
+import ArrowRightShort from '@/components/icons/common/ArrowRightShort';
 
 export default function Pagination() {
   return (

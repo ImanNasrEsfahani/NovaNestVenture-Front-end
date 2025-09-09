@@ -1,4 +1,4 @@
-import TextArea from '../common/TextArea';
+import TextArea from '@/components/common/TextArea';
 import { getServerTranslation } from 'app/i18n';
 
 export default async function StartupFormProperty({

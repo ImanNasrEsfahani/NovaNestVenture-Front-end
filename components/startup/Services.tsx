@@ -1,10 +1,10 @@
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
-import Data from '../icons/startup/Data';
-import MoneyRecive from '../icons/startup/MoneyRecive';
-import MusicPlay from '../icons/startup/MusicPlay';
-import PresentionChart from '../icons/startup/PresentionChart';
-import ArrowRight from '../icons/common/ArrowRight';
+import Data from '@/components/icons/startup/Data';
+import MoneyRecive from '@/components/icons/startup/MoneyRecive';
+import MusicPlay from '@/components/icons/startup/MusicPlay';
+import PresentionChart from '@/components/icons/startup/PresentionChart';
+import ArrowRight from '@/components/icons/common/ArrowRight';
 
 const iconComponents = {
   Data: Data,

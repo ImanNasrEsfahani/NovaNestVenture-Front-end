@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Input from '../common/form/Input';
-import TextArea from '../common/TextArea';
-import YesRadioButton from '../common/YesRadioButton';
+import Input from '@/components/common/form/Input';
+import TextArea from '@/components/common/TextArea';
+import YesRadioButton from '@/components/common/YesRadioButton';
 import StartupFormProblem from './StartupFormProblems';
 import StartupFormSolutions from './StartupFormSolutions';
 import StartupFormBusinessModel from './StartupFormBusinessModel';

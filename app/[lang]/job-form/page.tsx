@@ -1,5 +1,5 @@
-import Banner from '../@/components/common/Banner';
-import JobForm from '../@/components/job-form/JobForm';
+import Banner from '@/components/common/Banner';
+import JobForm from '@/components/job-form/JobForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 

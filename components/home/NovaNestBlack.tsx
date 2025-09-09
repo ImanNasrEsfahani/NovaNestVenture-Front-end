@@ -2,7 +2,7 @@
 import React from 'react';
 import UlList from '@/components/List/UlList';
 import { getServerTranslation } from 'app/i18n';
-import ButtonRefactor from '../common/ButtonRefactor';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
