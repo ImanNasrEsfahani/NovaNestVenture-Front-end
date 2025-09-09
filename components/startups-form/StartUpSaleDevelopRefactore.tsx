@@ -301,7 +301,8 @@ const StartUpSaleDevelopRefactore = async (props: Props) => {
       errors={errors}
       setValue={setValue}
     />
-    <BussinessModelDropDown 
+    <BussinessModelDropDown
+      lang={lang}
       register={register}
       errors={errors}
       // handlePitchFileChange={handlePitchFileChange}
