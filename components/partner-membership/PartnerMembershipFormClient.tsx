@@ -32,6 +32,7 @@ interface Translations {
   sendButton: string;
   successMessage: string;
   failedMessage: string;
+  countriesData: any;
 }
 
 interface PartnerMembershipFormClientProps {
@@ -164,6 +165,13 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
             />
 
             <CountryInput
+              countries={translations.countriesData.countries}
+              countryName={translations.countriesData.countryName}
+              countryNameRequired={translations.countriesData.countryNameRequired}
+              countryNamePlaceholder={translations.countriesData.countryNamePlaceholder}
+              provinceOfResidence={translations.countriesData.provinceOfResidence}
+              provinceOfResidenceRequired={translations.countriesData.provinceOfResidenceRequired}
+              provinceOfResidencePlaceholder={translations.countriesData.provinceOfResidencePlaceholder}
               lang={lang}
               errors={errors}
               nameInput="countryOfResidence"

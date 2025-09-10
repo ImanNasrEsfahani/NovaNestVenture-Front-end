@@ -4,6 +4,7 @@ import InvestorRegistrationFormClient from '@/components/investor-registration/I
 export default async function InvestorRegistrationForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCountry } = await getServerTranslation(lang, 'country');
 
   // Pass translations as props to client component
   const translations = {
@@ -27,6 +28,8 @@ export default async function InvestorRegistrationForm({lang}: {lang: string}) {
     sendButton: t('sendButton'),
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
+
+    countriesData: tCountry('countries',{ returnObjects: true })
   };
 
   return <InvestorRegistrationFormClient lang={lang} translations={translations} />;

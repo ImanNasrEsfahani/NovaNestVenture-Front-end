@@ -3,13 +3,20 @@ import React from 'react'
 import { useState } from 'react';
 import Select from '@/components/common/form/Select';
 import Input from '@/components/common/form/Input';
-import { getServerTranslation } from 'app/i18n';
 
 type Props = {
   lang: string;
   register: any;
   errors: any;
   nameInput: string;
+
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string; 
 }
 
 export default async function CountryInput({
@@ -17,10 +24,17 @@ export default async function CountryInput({
   register,
   errors,
   nameInput,
+
+  countries,
+  countryName,
+  countryNameRequired,
+  countryNamePlaceholder,
+  provinceOfResidence,
+  provinceOfResidenceRequired,
+  provinceOfResidencePlaceholder
 }: Props) {
 
-  const { t } = await getServerTranslation(lang, 'countryInput');
-  const countriesData = t('countries',{ returnObjects: true }).map((country: string) => ({
+  const countriesData = countries.map((country: string) => ({
     value: country,
     label: country,
   }))
@@ -38,11 +52,11 @@ export default async function CountryInput({
         register={register}
         errors={errors}
         nameInput={nameInput}
-        label={t('countryName')}
-        required={t('countryNameRequired')}
+        label={countryName}
+        required={countryNameRequired}
         className='input w-full'
         labelClass='text-[#6b6b6b] dark:text-current'
-        placeholder={t('countryNamePlaceholder')}
+        placeholder={countryNamePlaceholder}
         options={countriesData}
         handleChange={handleCountryChange}
         selected={selectedCountry}
@@ -54,11 +68,11 @@ export default async function CountryInput({
           errors={errors}
           nameInput="provinceOfResidence"
           type="text"
-          label={t('provinceOfResidence')}
-          required={t('provinceOfResidenceRequired')}
+          label={provinceOfResidence}
+          required={provinceOfResidenceRequired}
           patternValue=""
           patternMessage=""
-          placeholder={t('provinceOfResidencePlaceholder')}
+          placeholder={provinceOfResidencePlaceholder}
           className="input col-span-1 mb-1 mt-2 w-full "
           labelClass="text-[#6b6b6b] dark:text-current"
         />

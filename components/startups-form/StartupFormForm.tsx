@@ -4,6 +4,7 @@ import StartupFormFormClient from './StartupFormFormClient';
 export default async function StartupFormForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCountry } = await getServerTranslation(lang, 'country');
   
   // Pass translations as props to client component
   const translations = {
@@ -15,7 +16,8 @@ export default async function StartupFormForm({lang}: {lang: string}) {
     SaleDevelopment: t('SaleDevelopment'),
     sendButton: t('sendButton'),
     successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage')
+    failedMessage: tCommon('failedMessage'),
+    countriesData: tCountry('countries',{ returnObjects: true })
   };
 
   return <StartupFormFormClient lang={lang} translations={translations} />;

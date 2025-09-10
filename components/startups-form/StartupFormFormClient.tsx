@@ -28,6 +28,7 @@ interface Translations {
   sendButton: string;
   successMessage: string;
   failedMessage: string;
+  countriesData: any;
 }
 
 interface StartupFormFormClientProps {
@@ -159,6 +160,7 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
           <StartupFormPersonalInformation
+            countriesData={translations.countriesData}
             lang={lang}
             register={register}
             errors={errors}

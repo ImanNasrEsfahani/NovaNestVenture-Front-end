@@ -4,7 +4,8 @@ import MentorRegistrationFormClient from '@/components/join-as-mentor/MentorRegi
 export default async function MentorRegistrationForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = await getServerTranslation(lang, 'common');
-
+  const { t: tCountry } = await getServerTranslation(lang, 'country');
+  
   // Pass translations as props to client component
   const translations = {
     formTitle: t('joinUsForm', { returnObjects: true }).formTitle,
@@ -22,6 +23,8 @@ export default async function MentorRegistrationForm({lang}: {lang: string}) {
 
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
+
+    countriesData: tCountry('countries',{ returnObjects: true })
   };
 
   return <MentorRegistrationFormClient lang={lang} translations={translations} />;

@@ -4,6 +4,7 @@ import PartnerMembershipFormClient from '@/components/partner-membership/Partner
 export default async function PartnerMembershipForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCountry } = await getServerTranslation(lang, 'country');
   
   // Pass translations as props to client component
   const translations = {
@@ -23,7 +24,8 @@ export default async function PartnerMembershipForm({lang}: {lang: string}) {
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
     sendButton: t('sendButton'),
     successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage')
+    failedMessage: tCommon('failedMessage'),
+    countriesData: tCountry('countries',{ returnObjects: true })
   };
 
   return <PartnerMembershipFormClient lang={lang} translations={translations} />;

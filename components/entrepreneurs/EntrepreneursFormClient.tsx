@@ -32,8 +32,11 @@ interface Translations {
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
   sendButton: string;
+
   successMessage: string;
   failedMessage: string;
+
+  countriesData: any;
 }
 
 interface EntrepreneursFormClientProps {
@@ -167,6 +170,13 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
               />
 
               <CountryInput
+                countries={translations.countriesData.countries}
+                countryName={translations.countriesData.countryName}
+                countryNameRequired={translations.countriesData.countryNameRequired}
+                countryNamePlaceholder={translations.countriesData.countryNamePlaceholder}
+                provinceOfResidence={translations.countriesData.provinceOfResidence}
+                provinceOfResidenceRequired={translations.countriesData.provinceOfResidenceRequired}
+                provinceOfResidencePlaceholder={translations.countriesData.provinceOfResidencePlaceholder}
                 lang={lang}
                 errors={errors}
                 nameInput="countryOfResidence"

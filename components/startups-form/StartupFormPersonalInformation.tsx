@@ -7,11 +7,13 @@ import CountryInput from '@/components/common/form/CountryInput';
 export default async function StartupFormPersonalInformation({
   lang,
   register,
-  errors
+  errors,
+  countriesData
 }: {
   lang: string;
   register: any;
   errors: any;
+  countriesData: any;
 }) {
 
   const { t } = await getServerTranslation(lang, 'formComponent');
@@ -46,6 +48,13 @@ export default async function StartupFormPersonalInformation({
         />
 
         <CountryInput
+          countries={countriesData.countries}
+          countryName={countriesData.countryName}
+          countryNameRequired={countriesData.countryNameRequired}
+          countryNamePlaceholder={countriesData.countryNamePlaceholder}
+          provinceOfResidence={countriesData.provinceOfResidence}
+          provinceOfResidenceRequired={countriesData.provinceOfResidenceRequired}
+          provinceOfResidencePlaceholder={countriesData.provinceOfResidencePlaceholder}
           lang={lang}
           errors={errors}
           nameInput='countryOfResidence'
