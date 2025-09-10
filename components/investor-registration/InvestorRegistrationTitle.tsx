@@ -1,11 +1,11 @@
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function InvestorRegistrationTitle(
+export default function InvestorRegistrationTitle(
   {formName, lang} : {formName: string, lang: string}
 ) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <>

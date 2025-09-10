@@ -1,8 +1,8 @@
 import { getServerTranslation } from 'app/i18n';
 import JobFormClient from '@/components/job-form/JobFormClient';
 
-export default async function JobForm({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+export default function JobForm({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component

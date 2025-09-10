@@ -1,11 +1,11 @@
 import { getServerTranslation } from 'app/i18n';
 import EntrepreneursFormClient from '@/components/entrepreneurs/EntrepreneursFormClient';
 
-export default async function EntrepreneursForm({lang}: {lang: string}) {
+export default function EntrepreneursForm({lang}: {lang: string}) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
-  const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
   // Add logging
   console.log('Countries data type:', typeof tCountry('countries', { returnObjects: true }));

@@ -14,11 +14,11 @@ type Props = {
   lang: string;
 };
 
-const BussinessModelDropDown = async (props: Props) => {
+const BussinessModelDropDown = (props: Props) => {
   const { register, errors, handleFinancialModelFileChange, lang } = props;
 
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div>

@@ -1,8 +1,8 @@
 import { getServerTranslation } from 'app/i18n';
 import WorkWithUsClient from 'components/work-with-us/WorkWithUsClient';
 
-export default async function WorkWithUs({ lang }: { lang: string }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+export default function WorkWithUs({ lang }: { lang: string }) {
+  const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Prepare all translations that the client component needs

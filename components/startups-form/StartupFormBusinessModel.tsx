@@ -3,7 +3,7 @@ import UploadInput from '@/components/common/UploadInput';
 import TextArea from '@/components/common/TextArea';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function StartupFormBusinessModel({
+export default function StartupFormBusinessModel({
   lang,
   register,
   errors,
@@ -14,7 +14,7 @@ export default async function StartupFormBusinessModel({
   errors: any;
   handleFinancialFileChange: any;
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <>

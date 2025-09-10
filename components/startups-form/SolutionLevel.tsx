@@ -26,7 +26,7 @@ type Props = {
     setValue: UseFormSetValue<StartupsFormData>
 }
 
-const SolutionLevel = async (props: Props) => {
+const SolutionLevel = (props: Props) => {
 
   const {
     register,
@@ -37,7 +37,7 @@ const SolutionLevel = async (props: Props) => {
   } = props;     
 
   const lang = useLang((s) => s.lang);
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [solutionsOpen, setSolutionsOpen] = useState<boolean>(false);
 

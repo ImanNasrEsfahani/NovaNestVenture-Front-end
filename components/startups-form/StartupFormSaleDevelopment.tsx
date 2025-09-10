@@ -10,7 +10,7 @@ import StartupFormProperty from '@/components/startups-form/StartupFormProperty'
 import { handleRadioChange } from '@/utils/functions';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function StartupFormSaleDevelopment({
+export default function StartupFormSaleDevelopment({
   register,
   errors,
   handlePitchFileChange,
@@ -25,7 +25,7 @@ export default async function StartupFormSaleDevelopment({
   handleFinancialFileChange: any;
   lang: string;
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
 

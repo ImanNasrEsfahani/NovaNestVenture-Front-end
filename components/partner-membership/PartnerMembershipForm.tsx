@@ -1,10 +1,10 @@
 import { getServerTranslation } from 'app/i18n';
 import PartnerMembershipFormClient from '@/components/partner-membership/PartnerMembershipFormClient';
 
-export default async function PartnerMembershipForm({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+export default function PartnerMembershipForm({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
-  const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
   
   // Pass translations as props to client component
   const translations = {

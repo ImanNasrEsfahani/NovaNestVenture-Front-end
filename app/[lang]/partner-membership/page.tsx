@@ -14,7 +14,7 @@ export default async function AffiliateFormPage({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div>

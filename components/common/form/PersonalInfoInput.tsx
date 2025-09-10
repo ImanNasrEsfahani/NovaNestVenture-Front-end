@@ -19,7 +19,7 @@ type Props = {
   noLabel?: boolean;
 };
 
-const PersonalInfoInput = async ({
+const PersonalInfoInput = ({
   lang,
   register,
   errors,
@@ -27,7 +27,7 @@ const PersonalInfoInput = async ({
   noLabel
 }: Props) => {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   enum Type {
     INTERN = t('INTERN'),

@@ -1,7 +1,7 @@
 import { getServerTranslation } from 'app/i18n';
 import StartupFormFirstSaleClient from '@/components/startups-form/StartupFormFirstSaleClient';
 
-export default async function StartupFormFirstSale({
+export default function StartupFormFirstSale({
   lang,
   register,
   errors,
@@ -16,7 +16,7 @@ export default async function StartupFormFirstSale({
   handleBusinessFileChange: any;
   handleFinancialFileChange: any;
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   
   // Pass translations as props to client component
   const translations = {

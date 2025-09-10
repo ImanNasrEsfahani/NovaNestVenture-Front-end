@@ -1,7 +1,7 @@
 import TextArea from '@/components/common/TextArea';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function StartupFormTargetMarket({
+export default function StartupFormTargetMarket({
   lang,
   register,
   errors
@@ -11,7 +11,7 @@ export default async function StartupFormTargetMarket({
   errors:any;
 }) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <>

@@ -1,7 +1,7 @@
 import { getServerTranslation } from 'app/i18n';
 import StartupFormMVPClient from '@/components/startups-form/StartupFormMVPClient';
 
-export default async function StartupFormMVP({
+export default function StartupFormMVP({
   lang,
   register,
   errors,
@@ -16,7 +16,7 @@ export default async function StartupFormMVP({
   handleBusinessFileChange: any;
   handleFinancialFileChange: any;
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   
   // Pass translations as props to client component
   const translations = {

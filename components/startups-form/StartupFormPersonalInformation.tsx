@@ -4,7 +4,7 @@ import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import CountryInput from '@/components/common/form/CountryInput';
 
-export default async function StartupFormPersonalInformation({
+export default function StartupFormPersonalInformation({
   lang,
   register,
   errors,
@@ -30,7 +30,7 @@ export default async function StartupFormPersonalInformation({
   provinceOfResidencePlaceholder: string;
 }) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   return (
     <>
       <div className="mb-12 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">

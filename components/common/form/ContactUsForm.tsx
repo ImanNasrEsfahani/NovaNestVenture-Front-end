@@ -1,8 +1,8 @@
 import { getServerTranslation } from 'app/i18n';
 import ContactUsFormClient from '@/components/common/form/ContactUsFormClient';
 
-export default async function ContactUsFormWrapper({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+export default function ContactUsFormWrapper({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component

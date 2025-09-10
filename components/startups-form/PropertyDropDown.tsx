@@ -11,7 +11,7 @@ type Props = {
     errors: FieldErrors<StartupsFormData>
 }
 
-const PropertyDropDown = async (props: Props) => {
+const PropertyDropDown = (props: Props) => {
 
   const {
     register,
@@ -20,7 +20,7 @@ const PropertyDropDown = async (props: Props) => {
 
   const [propertyOpen, setPropertyOpen] = useState<boolean>(false);  
   const lang = useLang((s) => s.lang);
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div>

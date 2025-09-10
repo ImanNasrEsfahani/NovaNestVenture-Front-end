@@ -3,7 +3,7 @@ import TextArea from '@/components/common/TextArea';
 import { getServerTranslation } from 'app/i18n';
 
 
-export default async function StartupFormIdea({
+export default function StartupFormIdea({
   register,
   errors,
   lang
@@ -13,7 +13,7 @@ export default async function StartupFormIdea({
   lang: string;
 }) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   
   return (
     <>

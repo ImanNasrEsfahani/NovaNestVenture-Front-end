@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Apply Form and take the first step towards exciting opportunities. Share your qualifications and interests with us as you apply for roles within our organization. Join us in shaping a brighter future together.'
 };
 
-export default async function ApplyFormPage({
+export default function ApplyFormPage({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div dir={t('dir')}>

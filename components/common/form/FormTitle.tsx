@@ -1,11 +1,11 @@
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function FormTitle(
+export default function FormTitle(
   {formName, lang} : {formName: string, lang: string}
 ) {
 
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div className='w-full h-[200px] md:h-[300px] bg-black'>

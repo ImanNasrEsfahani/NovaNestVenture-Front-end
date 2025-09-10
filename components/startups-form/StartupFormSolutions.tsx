@@ -2,7 +2,7 @@ import TextArea from '@/components/common/TextArea';
 import RadioButtonGroup from '@/components/common/RadioButtonGroup';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function StartupFormSolutions({
+export default function StartupFormSolutions({
   lang,
   register,
   errors
@@ -11,7 +11,7 @@ export default async function StartupFormSolutions({
   register:any;
   errors:any;
 }){
-  const { t } = await getServerTranslation(lang, 'formComponent');
+  const { t } = getServerTranslation(lang, 'formComponent');
   return (
     <>
       <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">

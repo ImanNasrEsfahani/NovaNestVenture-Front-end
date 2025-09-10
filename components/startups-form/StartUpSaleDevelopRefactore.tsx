@@ -30,7 +30,7 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpSaleDevelopRefactore = async (props: Props) => {
+const StartUpSaleDevelopRefactore = (props: Props) => {
 
     const {
         lang,
@@ -47,7 +47,7 @@ const StartUpSaleDevelopRefactore = async (props: Props) => {
         handleFinancialModelFileChange
     } = props; 
       
-    const { t } = await getServerTranslation(lang, 'formComponent');
+    const { t } = getServerTranslation(lang, 'formComponent');
 
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 
