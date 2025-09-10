@@ -3,20 +3,20 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 import { initialStartupsFormData } from '../../initials/initObjects';
-import StartupFormPersonalInformation from './StartupFormPersonalInformation';
-import StartupFormIdea from './StartupFormIdea';
+import StartupFormPersonalInformation from '@/components/startups-form/StartupFormPersonalInformation';
+import StartupFormIdea from '@/components/startups-form/StartupFormIdea';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-// import GetCsrfToken from '../../utils/get-csrf-token';
+// import GetCsrfToken from '@/utils/get-csrf-token';
 import { submitStartupsForm } from '../../pages/api/startups-form';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
-import StartUpFormCheckbox from './StartUpFormCheckbox';
-import StartUpTrialRefactore from './StartUpTrialRefactore';
-import StartUpMvpRefactore from './StartUpMvpRefactore';
-import StartUpFirstSaleRefactor from './StartUpFirstSaleRefactor';
-import StartUpSaleDevelopRefactore from './StartUpSaleDevelopRefactore';
+import StartUpFormCheckbox from '@/components/startups-form/StartUpFormCheckbox';
+import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
+import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
+import StartUpFirstSaleRefactor from '@/components/startups-form/StartUpFirstSaleRefactor';
+import StartUpSaleDevelopRefactore from '@/components/startups-form/StartUpSaleDevelopRefactore';
 
 interface Translations {
   secondTitle: string;

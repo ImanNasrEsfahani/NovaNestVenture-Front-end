@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import UploadInput from '@/components/common/UploadInput';
 import { JobFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import GetCsrfToken from '../../utils/get-csrf-token';
+import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialJobFormData } from '../../initials/initObjects';
 import { submitApplyJobForm } from '../../pages/api/jobs';
 import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';

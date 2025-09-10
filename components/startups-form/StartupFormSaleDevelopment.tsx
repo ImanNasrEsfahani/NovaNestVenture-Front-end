@@ -2,12 +2,12 @@
 import React,{useState} from 'react';
 import Input from '@/components/common/form/Input';
 import YesRadioButton from '@/components/common/YesRadioButton';
-import StartupFormProblem from './StartupFormProblems';
-import StartupFormSolutions from './StartupFormSolutions';
-import StartupFormBusinessModel from './StartupFormBusinessModel';
-import StartupFormTargetMarket from './StartupFormTargetMarket';
-import StartupFormProperty from './StartupFormProperty';
-import { handleRadioChange } from '../../utils/functions';
+import StartupFormProblem from '@/components/startups-form/StartupFormProblems';
+import StartupFormSolutions from '@/components/startups-form/StartupFormSolutions';
+import StartupFormBusinessModel from '@/components/startups-form/StartupFormBusinessModel';
+import StartupFormTargetMarket from '@/components/startups-form/StartupFormTargetMarket';
+import StartupFormProperty from '@/components/startups-form/StartupFormProperty';
+import { handleRadioChange } from '@/utils/functions';
 import { getServerTranslation } from 'app/i18n';
 
 export default async function StartupFormSaleDevelopment({

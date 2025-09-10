@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import Input from '@/components/common/form/Input';
 import TextArea from '@/components/common/TextArea';
 import YesRadioButton from '@/components/common/YesRadioButton';
-import StartupFormProblem from './StartupFormProblems';
-import StartupFormSolutions from './StartupFormSolutions';
-import StartupFormBusinessModel from './StartupFormBusinessModel';
-import { handleRadioChange } from '../../utils/functions';
+import StartupFormProblem from '@/components/startups-form/StartupFormProblems';
+import StartupFormSolutions from '@/components/startups-form/StartupFormSolutions';
+import StartupFormBusinessModel from '@/components/startups-form/StartupFormBusinessModel';
+import { handleRadioChange } from '@/utils/functions';
 
 interface Translations {
   pitchDeck: string;

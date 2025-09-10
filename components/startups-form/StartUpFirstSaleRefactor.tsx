@@ -6,12 +6,12 @@ import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import ChevDown from 'public/static/logos/ChevDown'
 import TextArea from '@/components/common/TextArea'
-import PropertyDropDown from './PropertyDropDown'
-import TargetMarketDropDown from './TargetMarketDropDown'
-import BussinessModelDropDown from './BussinessModelDropDown'
-import SolutionLevel from './SolutionLevel'
+import PropertyDropDown from '@/components/startups-form/PropertyDropDown'
+import TargetMarketDropDown from '@/components/startups-form/TargetMarketDropDown'
+import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown'
+import SolutionLevel from '@/components/startups-form/SolutionLevel'
 import { useLang } from '../../stores/langStore'
-import { getServerTranslation } from '../../app/i18n'
+import { getServerTranslation } from 'app/i18n'
 
 type Props = {
     handleFileCounterChange: (name: string) => void

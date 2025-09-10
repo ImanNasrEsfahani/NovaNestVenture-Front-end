@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-// import useFetchBlog from '../../utils/useFetchBlog';
+// import useFetchBlog from '@/utils/useFetchBlog';
 import { useSubmit } from 'stores/dataStore';
 export default function MagazineCardContainer(
   // { url }: { url: string }

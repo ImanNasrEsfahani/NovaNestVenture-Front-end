@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useSubmit } from "stores/dataStore";
-import { FetchBlogData } from "./fetchBlogData";
+import { FetchBlogData } from "@/utils/fetchBlogData";
 
 const {setCardsData, setCategories, setTags} = useSubmit.getState();
 

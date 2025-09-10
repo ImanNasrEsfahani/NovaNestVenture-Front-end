@@ -2,7 +2,7 @@ import jwtDecode from 'jwt-decode';
 import { setCookie, destroyCookie, parseCookies } from 'nookies';
 import { DecodedToken } from '@/types/global';
 
-// import { refreshToken } from './authService';
+// import { refreshToken } from '@/services/authService';
 
 const TOKEN_EXPIRATION_TIME = 30 * 60 * 1000; // 30 minutes
 

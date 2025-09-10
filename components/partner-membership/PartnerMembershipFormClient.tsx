@@ -5,7 +5,7 @@ import Input from '@/components/common/form/Input';
 import { PartnerMembershipFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
-// import GetCsrfToken from '../../utils/get-csrf-token';
+// import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialPartnerMembershipFormData } from '../../initials/initObjects';
 import { submitPartnerMembershipForm } from '../../pages/api/partner-membership';
 import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';

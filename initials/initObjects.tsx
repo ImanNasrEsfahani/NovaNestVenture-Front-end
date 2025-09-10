@@ -10,7 +10,7 @@ import {
   ContactUSFormData,
   FormData,
   LandaGeneFormData
-} from '../types/global';
+} from '@/types/global';
 
 enum Type {
   IDEA = 'IDEA',

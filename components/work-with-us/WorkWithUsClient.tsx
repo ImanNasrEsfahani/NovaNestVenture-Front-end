@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { WorkWithUSFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import GetCsrfToken from '../../utils/get-csrf-token';
+import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { useSubmit } from 'stores/dataStore';

@@ -1,5 +1,5 @@
 import { getServerTranslation } from 'app/i18n';
-import StartupFormFormClient from './StartupFormFormClient';
+import StartupFormFormClient from '@/components/startups-form/StartupFormFormClient';
 
 export default async function StartupFormForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
