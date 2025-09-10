@@ -3,8 +3,8 @@ import InvestorRegistrationFormClient from '@/components/investor-registration/I
 
 export default function InvestorRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'common');
-  const { t: tCountry } = getServerTranslation(lang, 'country');
+  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
   // Pass translations as props to client component
   const translations = {
