@@ -10,6 +10,7 @@ export default async function TeamPersons({lang}: {lang: string}) {
     roles: t('roles', { returnObjects: true }),
     defaultRole: t('defaultRole'),
 
+    
   };
 
   return <TeamPersonsClient 

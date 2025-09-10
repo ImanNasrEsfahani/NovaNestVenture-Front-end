@@ -29,7 +29,14 @@ interface Translations {
   sendButton: string;
   successMessage: string;
   failedMessage: string;
-  countriesData: any;
+
+  // countriesData: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 }
 
 interface MentorRegistrationFormClientProps {
@@ -162,13 +169,13 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
               />
 
               <CountryInput
-                countries={translations.countriesData.countries}
-                countryName={translations.countriesData.countryName}
-                countryNameRequired={translations.countriesData.countryNameRequired}
-                countryNamePlaceholder={translations.countriesData.countryNamePlaceholder}
-                provinceOfResidence={translations.countriesData.provinceOfResidence}
-                provinceOfResidenceRequired={translations.countriesData.provinceOfResidenceRequired}
-                provinceOfResidencePlaceholder={translations.countriesData.provinceOfResidencePlaceholder}
+                // countries={translations.countriesData.countries}
+                countryName={translations.countryName}
+                countryNameRequired={translations.countryNameRequired}
+                countryNamePlaceholder={translations.countryNamePlaceholder}
+                provinceOfResidence={translations.provinceOfResidence}
+                provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+                provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
                 lang={lang}
                 errors={errors}
                 nameInput="countryOfResidence"

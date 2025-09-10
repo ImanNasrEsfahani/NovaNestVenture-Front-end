@@ -35,7 +35,8 @@ export default async function InvestorRegistrationForm({lang}: {lang: string}) {
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),
     provinceOfResidence: tCountry('provinceOfResidence'),
     provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
-    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder')  };
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder')
+  };
 
   return <InvestorRegistrationFormClient lang={lang} translations={translations} />;
 }
