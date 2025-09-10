@@ -7,6 +7,11 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
   const { t: tCommon } = await getServerTranslation(lang, 'common');
   const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
 
+  // Add logging
+  console.log('Countries data type:', typeof tCountry('countries'));
+  console.log('Countries data:', tCountry('countries'));
+  console.log('Is array:', Array.isArray(tCountry('countries')));
+
   // Pass translations as props to client component
   const translations = {
     formTitle: t('entrepreneurForm', { returnObjects: true }).formTitle,

@@ -34,10 +34,12 @@ export default async function CountryInput({
   provinceOfResidencePlaceholder
 }: Props) {
 
-  const countriesData = countries.map((country: string) => ({
+  // Fix: Ensure countries is always an array
+  const safeCountries = Array.isArray(countries) ? countries : [];
+  const countriesData = safeCountries.map((country: string) => ({
     value: country,
     label: country,
-  }))
+  }));
   // const countriesData = [ { value: "iran", label: "Iran" }, { value: "Canada", label: "Canada" } ];
   const [selectedCountry, setSelectedCountry] = useState('');
 
