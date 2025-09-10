@@ -36,7 +36,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  // countriesData: string[];
+  countriesData: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -176,7 +176,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
               />
 
               <CountryInput
-                // countries={translations.countriesData}
+                countries={translations.countriesData}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}

@@ -33,7 +33,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
   
-  // countriesData: string[];
+  countriesData: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -172,7 +172,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
             />
 
             <CountryInput
-              // countries={translations.countries}
+              countries={translations.countriesData}
               countryName={translations.countryName}
               countryNameRequired={translations.countryNameRequired}
               countryNamePlaceholder={translations.countryNamePlaceholder}

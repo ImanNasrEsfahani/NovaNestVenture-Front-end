@@ -8,7 +8,8 @@ export default async function StartupFormPersonalInformation({
   lang,
   register,
   errors,
-  // countriesData,
+  
+  countriesData,
   countryName,
   countryNameRequired,
   countryNamePlaceholder,
@@ -19,7 +20,8 @@ export default async function StartupFormPersonalInformation({
   lang: string;
   register: any;
   errors: any;
-  // countriesData: any;
+
+  countriesData: any;
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -60,7 +62,7 @@ export default async function StartupFormPersonalInformation({
         />
 
         <CountryInput
-          // countries={countriesData.countries}
+          countries={countriesData.countries}
           countryName={countryName}
           countryNameRequired={countryNameRequired}
           countryNamePlaceholder={countryNamePlaceholder}

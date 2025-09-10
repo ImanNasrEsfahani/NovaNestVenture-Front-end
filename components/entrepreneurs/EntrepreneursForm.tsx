@@ -31,7 +31,7 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
 
-    // countriesData: tCountry('countries'),
+    countriesData: tCountry('countries'),
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),

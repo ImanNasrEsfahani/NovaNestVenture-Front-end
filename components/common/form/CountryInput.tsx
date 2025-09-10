@@ -10,7 +10,7 @@ type Props = {
   errors: any;
   nameInput: string;
 
-  // countries: string[];
+  countries: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -25,7 +25,7 @@ export default async function CountryInput({
   errors,
   nameInput,
 
-  // countries,
+  countries,
   countryName,
   countryNameRequired,
   countryNamePlaceholder,
@@ -34,11 +34,11 @@ export default async function CountryInput({
   provinceOfResidencePlaceholder
 }: Props) {
 
-  // const countriesData = countries.map((country: string) => ({
-  //   value: country,
-  //   label: country,
-  // }))
-  const countriesData = [ { value: "iran", label: "Iran" }, { value: "Canada", label: "Canada" } ];
+  const countriesData = countries.map((country: string) => ({
+    value: country,
+    label: country,
+  }))
+  // const countriesData = [ { value: "iran", label: "Iran" }, { value: "Canada", label: "Canada" } ];
   const [selectedCountry, setSelectedCountry] = useState('');
 
   const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {

@@ -35,7 +35,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
   
-  // countriesData: string[];
+  countriesData: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -174,7 +174,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
               />
 
               <CountryInput
-                // countries={translations.countries}
+                countries={translations.countries}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}
