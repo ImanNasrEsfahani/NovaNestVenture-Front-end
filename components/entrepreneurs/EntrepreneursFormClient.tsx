@@ -176,7 +176,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
               />
 
               <CountryInput
-                countries={translations.countriesData.countries}
+                countries={translations.countriesData}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}
