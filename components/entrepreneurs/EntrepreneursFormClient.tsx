@@ -36,7 +36,15 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  countriesData: any;
+  countriesData: {
+    countries: string[];
+    countryName: string;
+    countryNameRequired: string;
+    countryNamePlaceholder: string;
+    provinceOfResidence: string;
+    provinceOfResidenceRequired: string;
+    provinceOfResidencePlaceholder: string;
+  };
 }
 
 interface EntrepreneursFormClientProps {
