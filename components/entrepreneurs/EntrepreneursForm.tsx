@@ -4,7 +4,7 @@ import EntrepreneursFormClient from '@/components/entrepreneurs/EntrepreneursFor
 export default async function EntrepreneursForm({lang}: {lang: string}) {
 
   const { t } = await getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
 
   // Add logging

@@ -3,7 +3,7 @@ import HandicraftFormClient from '@/components/common/form/HandicraftFormClient'
 
 export default async function HandicraftForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'handicraft');
-  const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component
   const translations = {

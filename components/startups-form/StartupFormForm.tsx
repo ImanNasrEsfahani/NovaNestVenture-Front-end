@@ -3,8 +3,8 @@ import StartupFormFormClient from '@/components/startups-form/StartupFormFormCli
 
 export default async function StartupFormForm({lang}: {lang: string}) {
   const { t } = await getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = await getServerTranslation(lang, 'common');
-  const { t: tCountry } = await getServerTranslation(lang, 'country');
+  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
+  const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
   
   // Pass translations as props to client component
   const translations = {

@@ -15,7 +15,7 @@ export default async function Page({
 }) {
 
   const { t } = await getServerTranslation(lang, 'landaGene');
-  const { t: tCommon } = await getServerTranslation(lang, 'common');
+  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Prepare all translations that the client component needs
   const translations = {
