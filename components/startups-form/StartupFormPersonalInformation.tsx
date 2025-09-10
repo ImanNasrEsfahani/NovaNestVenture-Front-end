@@ -8,12 +8,24 @@ export default async function StartupFormPersonalInformation({
   lang,
   register,
   errors,
-  countriesData
+  // countriesData,
+  countryName,
+  countryNameRequired,
+  countryNamePlaceholder,
+  provinceOfResidence,
+  provinceOfResidenceRequired,
+  provinceOfResidencePlaceholder
 }: {
   lang: string;
   register: any;
   errors: any;
-  countriesData: any;
+  // countriesData: any;
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 }) {
 
   const { t } = await getServerTranslation(lang, 'formComponent');
@@ -48,13 +60,13 @@ export default async function StartupFormPersonalInformation({
         />
 
         <CountryInput
-          countries={countriesData.countries}
-          countryName={countriesData.countryName}
-          countryNameRequired={countriesData.countryNameRequired}
-          countryNamePlaceholder={countriesData.countryNamePlaceholder}
-          provinceOfResidence={countriesData.provinceOfResidence}
-          provinceOfResidenceRequired={countriesData.provinceOfResidenceRequired}
-          provinceOfResidencePlaceholder={countriesData.provinceOfResidencePlaceholder}
+          // countries={countriesData.countries}
+          countryName={countryName}
+          countryNameRequired={countryNameRequired}
+          countryNamePlaceholder={countryNamePlaceholder}
+          provinceOfResidence={provinceOfResidence}
+          provinceOfResidenceRequired={provinceOfResidenceRequired}
+          provinceOfResidencePlaceholder={provinceOfResidencePlaceholder}
           lang={lang}
           errors={errors}
           nameInput='countryOfResidence'

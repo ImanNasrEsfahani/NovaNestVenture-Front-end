@@ -17,7 +17,14 @@ export default async function StartupFormForm({lang}: {lang: string}) {
     sendButton: t('sendButton'),
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
-    countriesData: tCountry('countries',{ returnObjects: true })
+    
+    // countriesData: tCountry('countries'),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder')
   };
 
   return <StartupFormFormClient lang={lang} translations={translations} />;

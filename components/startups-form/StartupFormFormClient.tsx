@@ -28,7 +28,14 @@ interface Translations {
   sendButton: string;
   successMessage: string;
   failedMessage: string;
-  countriesData: any;
+
+  // countriesData: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 }
 
 interface StartupFormFormClientProps {
@@ -160,7 +167,13 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
           <StartupFormPersonalInformation
-            countriesData={translations.countriesData}
+            // countriesData={translations.countriesData}
+            countryName={translations.countryName}
+            countryNameRequired={translations.countryNameRequired}
+            countryNamePlaceholder={translations.countryNamePlaceholder}
+            provinceOfResidence={translations.provinceOfResidence}
+            provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+            provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
             lang={lang}
             register={register}
             errors={errors}
