@@ -31,7 +31,7 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
 
-    countriesData: tCountry('countries',{ returnObjects: true })
+    countriesData: tCountry('countries')
   };
 
   return <EntrepreneursFormClient lang={lang} translations={translations} />;
