@@ -1,24 +1,45 @@
 import { createInstance } from 'i18next';
-import resourcesToBackend from 'i18next-resources-to-backend';
+// import resourcesToBackend from 'i18next-resources-to-backend';
 import { initReactI18next } from 'react-i18next/initReactI18next';
 import { getOptions } from './setting';
 // import i18nextBrowserLanguagedetector from 'i18next-browser-languagedetector';
 // import i18next from 'i18next';
 
 
-const initI18next = async (lng: string, ns: string | string[]) => {
+const initI18next = (lng: string, ns: string | string[]) => {
   const i18nInstance = createInstance();
-  await i18nInstance
+  
+  // Create a synchronous resource loader using require
+  const syncResourceLoader = (language: string, namespace: string) => {
+    try {
+      return require(`./locales/${language}/${namespace}.json`);
+    } catch (error) {
+      console.error(`Failed to load translation: ${language}/${namespace}`, error);
+      return {};
+    }
+  };
+
+  // Build resources synchronously
+  const namespaces = Array.isArray(ns) ? ns : [ns];
+  const resources: any = {};
+  
+  if (!resources[lng]) {
+    resources[lng] = {};
+  }
+  
+  namespaces.forEach(namespace => {
+    resources[lng][namespace] = syncResourceLoader(lng, namespace);
+  });
+
+  i18nInstance
     .use(initReactI18next)
-    .use(
-      resourcesToBackend(
-        (language: string, namespace: string) =>
-          import(`./locales/${language}/${namespace}.json`)
-      )
-    )
     .init({
-      ...getOptions(lng, ns)
+      ...getOptions(lng, ns),
+      resources,
+      // Disable any async loading
+      initImmediate: false,
     });
+  
   return i18nInstance;
 };
 
@@ -54,14 +75,15 @@ const initI18next = async (lng: string, ns: string | string[]) => {
 //   return i18nInstance;
 // };
 
-export async function getServerTranslation(
+export function getServerTranslation(
   lng: string | undefined,
   ns: string | string[],
   options: { keyPrefix?: string } = {}
 ) {
   const safeLang = lng ?? 'en'; // fallback if undefined
-  const i18nextInstance = await initI18next(safeLang, ns);
+  const i18nextInstance = initI18next(safeLang, ns);
   const primaryNs = (Array.isArray(ns) ? ns[0] : ns) as any; // cast to Namespace
+  
   return {
     t: i18nextInstance.getFixedT(
       safeLang,

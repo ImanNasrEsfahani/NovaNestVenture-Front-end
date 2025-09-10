@@ -1,10 +1,10 @@
 import { getServerTranslation } from 'app/i18n';
 import InvestorRegistrationFormClient from '@/components/investor-registration/InvestorRegistrationFormClient';
 
-export default async function InvestorRegistrationForm({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = await getServerTranslation(lang, 'common');
-  const { t: tCountry } = await getServerTranslation(lang, 'country');
+export default function InvestorRegistrationForm({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'formComponent');
+  const { t: tCommon } = getServerTranslation(lang, 'common');
+  const { t: tCountry } = getServerTranslation(lang, 'country');
 
   // Pass translations as props to client component
   const translations = {
