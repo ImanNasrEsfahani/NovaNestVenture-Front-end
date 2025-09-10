@@ -16,13 +16,13 @@ interface FooterText {
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default async function Footer({
+export default function Footer({
     lang
   }: {
     lang: string;
   }) {
 
-  const { t } = await getServerTranslation(lang, "footer")
+  const { t } = getServerTranslation(lang, "footer")
 
   function GetYear() {
     const currentYear = new Date().getFullYear();

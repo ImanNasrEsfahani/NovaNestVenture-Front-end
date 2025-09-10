@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 // import { getInitialProps } from 'react-i18next';
 
-export default async function AboutUsLandaHolding({lang}: {lang: string}) {
+export default function AboutUsLandaHolding({lang}: {lang: string}) {
 
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     // <div className="flex flex-col items-center justify-between bg-[#FAFAFA] pt-5 md:pr-[6.5rem] lg:flex-col xl:flex-row">

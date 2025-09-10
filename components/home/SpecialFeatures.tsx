@@ -10,8 +10,8 @@ interface Feature {
   link: string;
 }
 
-export default async function SpecialFeatures({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'mainPage');
+export default function SpecialFeatures({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'mainPage');
   
   const title = t('specialFeatures.title');
   const features = t('specialFeatures.features', { returnObjects: true }) as Feature[];

@@ -9,9 +9,9 @@ import Image from 'next/image';
 //   display: '-webkit-box'
 // };
 
-export default async function KeyDifferentiating({lang}: {lang: string}) {
+export default function KeyDifferentiating({lang}: {lang: string}) {
 
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     // TODO: don't use [0], [1] for translations

@@ -4,9 +4,9 @@ import PartnersStartupCard from './PartnersStartupCard';
 import { getServerTranslation } from 'app/i18n';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-export default async function Partners({ lang }: { lang: string }) {
+export default function Partners({ lang }: { lang: string }) {
 
-  const { t } = await getServerTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const [isScrolling, setIsScrolling] = useState(true);

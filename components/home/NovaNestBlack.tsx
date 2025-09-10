@@ -6,8 +6,8 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default async function NovaNestBlack({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'mainPage');
+export default function NovaNestBlack({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div className="relative flex flex-col items-stretch justify-evenly  md:gap-10  md:pt-10 md:flex-row ">

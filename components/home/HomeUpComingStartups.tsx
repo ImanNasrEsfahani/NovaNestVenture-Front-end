@@ -2,9 +2,9 @@ import React from 'react';
 import UpcomingStartupsCard from './UpcomingStartupsCard';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function HomeUpComingStartups({ lang }: { lang: string }) {
+export default function HomeUpComingStartups({ lang }: { lang: string }) {
 
-  const { t } = await getServerTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   const renderCards = (
     cardData: Array<{

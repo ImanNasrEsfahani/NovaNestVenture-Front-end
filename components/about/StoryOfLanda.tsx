@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function StoryOfLanda({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+export default function StoryOfLanda({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="flex flex-col  grid-cols-2 gap-12 pb-10 pt-24">

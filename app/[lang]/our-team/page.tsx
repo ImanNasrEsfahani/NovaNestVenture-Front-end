@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     'Meet the dedicated and talented individuals who make up the NovaNest Venture team. Learn about their expertise, passion, and commitment to excellence. Get to know the driving force behind our success.'
 };
 
-export default async function TeamPage({
+export default function TeamPage({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'ourTeam');
+  const { t } = getServerTranslation(lang, 'ourTeam');
 
   return (
     <div>

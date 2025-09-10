@@ -5,7 +5,7 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 //TODO: hero components
-export default async function Hero({
+export default function Hero({
   showLanda,
   leftImage,
   showButton,
@@ -20,7 +20,7 @@ export default async function Hero({
   lang: string;
   link?: string
 }) {
-  const { t } = await getServerTranslation(lang, 'mainPage');
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div

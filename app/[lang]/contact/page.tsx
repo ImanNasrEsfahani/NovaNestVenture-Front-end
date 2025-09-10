@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     'Contact NovaNest Venture to get in touch with our dedicated team. Whether you have questions, inquiries, or partnership opportunities, we are here to assist you. Reach out to us today.'
 };
 
-export default async function ContactUsPage({
+export default function ContactUsPage({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'contact');
+  const { t } = getServerTranslation(lang, 'contact');
 
   // Renamed the component for better naming
   return (

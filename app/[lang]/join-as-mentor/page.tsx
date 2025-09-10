@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Join as Mentor Form and take the first step towards exciting opportunities. Share your qualifications and interests with us as you apply for roles within our organization. Join us in shaping a brighter future together.',
 };
 
-export default async function JoinAsMentorPage({
+export default function JoinAsMentorPage({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
 
-  const { t } = await getServerTranslation(lang, "MentorForm");
+  const { t } = getServerTranslation(lang, "MentorForm");
 
   return (
     <div>

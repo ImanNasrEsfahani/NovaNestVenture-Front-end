@@ -1,8 +1,8 @@
 import CompaniesCard from './CompaniesCard';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function CompaniesContainer({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+export default function CompaniesContainer({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="flex justify-between flex-wrap">

@@ -1,8 +1,8 @@
 import LatestStartupsCard from './LatestStartupsCard';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function LatestStartups({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'mainPage');
+export default function LatestStartups({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
     <div>

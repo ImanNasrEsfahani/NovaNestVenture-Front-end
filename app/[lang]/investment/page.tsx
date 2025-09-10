@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
-export default async function Page({
+export default function Page({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'investment');
+  const { t } = getServerTranslation(lang, 'investment');
 
   return (
     <div dir={lang === 'en' ? 'ltr' : 'rtl'} className="mb-20">

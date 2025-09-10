@@ -5,7 +5,7 @@ import Chevron from '@/components/common/Chevron';
 import BusinessTeamCard from './BusinessTeamCard';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function AerialViewBusinessTeam(
+export default function AerialViewBusinessTeam(
   { lang }: { lang: string }
 ) {
   const commentsData = [
@@ -33,7 +33,7 @@ export default async function AerialViewBusinessTeam(
     },
   ];
 
-  const { t } = await getServerTranslation(lang, "mainPage");
+  const { t } = getServerTranslation(lang, "mainPage");
   const title = t('NovaNestVenture');
   const text = t('businessTeamText');
 

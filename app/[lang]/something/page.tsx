@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Entrepreneurs Form and connect with us to share your entrepreneurial ideas and projects. We are interested in hearing from creative minds and visionaries. Lets collaborate to turn your entrepreneurial dreams into reality.'
 };
 
-async function getPageTranslations(lang: string) {
-  const { t } = await getServerTranslation(lang, 'entrepreneur');
+function getPageTranslations(lang: string) {
+  const { t } = getServerTranslation(lang, 'entrepreneur');
   return t;
 }
 

@@ -5,8 +5,8 @@ import { getServerTranslation } from 'app/i18n';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
 //import FeaturesCardsContainer from '../investment/FeaturesCardsContainer';
 
-export default async function AboutUsProfile({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+export default function AboutUsProfile({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className="mb-32 flex w-full flex-col justify-center">

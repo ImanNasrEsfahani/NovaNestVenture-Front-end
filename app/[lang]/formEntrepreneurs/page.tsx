@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Entrepreneurs Form and connect with us to share your entrepreneurial ideas and projects. We are interested in hearing from creative minds and visionaries. Lets collaborate to turn your entrepreneurial dreams into reality.'
 };
 
-export default async function EntrepreneursPage({
+export default function EntrepreneursPage({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'entrepreneur');
+  const { t } = getServerTranslation(lang, 'entrepreneur');
 
   return (
     <div>

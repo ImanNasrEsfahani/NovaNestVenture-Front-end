@@ -1,8 +1,8 @@
 import CompaniesContainer from '../home/CompaniesContainer';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function SubsidiaryCompanies({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'aboutUs');
+export default function SubsidiaryCompanies({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
     <div className=" md:py-10">

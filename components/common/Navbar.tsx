@@ -7,7 +7,7 @@ import { getServerTranslation } from 'app/i18n'; // switched to server variant
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default async function Navbar({
+export default function Navbar({
   children,
   lang
 }: {
@@ -15,7 +15,7 @@ export default async function Navbar({
   lang: string;
 }) {
   // Server-side translation
-  const { t } = await getServerTranslation(lang, 'layout');
+  const { t } = getServerTranslation(lang, 'layout');
 
   const menuItems = t('menuItems', { returnObjects: true }) || [];
   const submenuItems = t('submenuItems', { returnObjects: true }) || [];

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
-export default async function Page({
+export default function Page({
   params: { lang }
 }: {
   params: { lang: string };
 }) {
-  const { t } = await getServerTranslation(lang, 'handicraft');
+  const { t } = getServerTranslation(lang, 'handicraft');
 
   return (
     <div>

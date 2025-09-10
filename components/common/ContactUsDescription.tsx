@@ -9,8 +9,8 @@ import { getServerTranslation } from 'app/i18n';
 //import WhatsappIconNew from '@/components/icons/socialMediaIcons/WhatsappIconNew';
 import Image from 'next/image';
 
-export default async function ContactUsDescription({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'contact');
+export default function ContactUsDescription({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'contact');
 
   return (
     <div className="h-full">

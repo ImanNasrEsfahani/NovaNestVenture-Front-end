@@ -2,7 +2,7 @@
 import UploadInput from './UploadInput';
 import { getServerTranslation } from 'app/i18n';
 
-export default async function YesRadioButton({
+export default function YesRadioButton({
   lang,
   title,
   register,
@@ -26,7 +26,7 @@ export default async function YesRadioButton({
   fileName: string;
 }) {
 
-  const {t} = await getServerTranslation(lang, "formComponent");
+  const {t} = getServerTranslation(lang, "formComponent");
   let uploadInputTitle = ""
 
   switch (title) {

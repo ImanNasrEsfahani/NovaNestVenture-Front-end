@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     'Explore the NovaNest Venture Investor Center, your gateway to comprehensive financial information, reports, and updates. Stay informed about our financial performance and investment opportunities.',
 };
 
-export default async function InvestorRegistrationPage({
+export default function InvestorRegistrationPage({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
 
-  const { t } = await getServerTranslation(lang, "investorForm")
+  const { t } = getServerTranslation(lang, "investorForm")
 
   return (
     <div>

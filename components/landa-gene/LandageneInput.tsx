@@ -13,7 +13,7 @@ type Props = {
   noLabel?: boolean;
 };
 
-const LandaGeneInput = async ({
+const LandaGeneInput = ({
   lang,
   register,
   errors,
@@ -21,7 +21,7 @@ const LandaGeneInput = async ({
   noLabel
 }: Props) =>{
 
-  const { t } = await getServerTranslation(lang, 'landaGene');
+  const { t } = getServerTranslation(lang, 'landaGene');
   return (
     <>
       {nameInputs?.full_name && (

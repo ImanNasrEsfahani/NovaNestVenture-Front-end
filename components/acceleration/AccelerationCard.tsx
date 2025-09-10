@@ -15,7 +15,7 @@ type Props = {
   itemsList?: Array<string>;
 };
 
-export default async function AccelerationCard({
+export default function AccelerationCard({
   lang,
   addedClass,
   title,
@@ -26,7 +26,7 @@ export default async function AccelerationCard({
   itemsList
 }: Props) {
 
-  const { t } = await getServerTranslation(lang, 'acceleration');
+  const { t } = getServerTranslation(lang, 'acceleration');
 
   return (
     <>

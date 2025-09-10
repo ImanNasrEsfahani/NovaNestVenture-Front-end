@@ -6,9 +6,9 @@ import Gateway from '@/components/startup/Gateway';
 import Services from '@/components/startup/Services';
 import LatestStartups from '@/components/home/LatestStartups';
 
-export default async function StartUp({ params: { lang } }: { params: { lang: string } }) {
+export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
-  const { t } = await getServerTranslation(lang, 'startUp');
+  const { t } = getServerTranslation(lang, 'startUp');
 
   return (
     <div>

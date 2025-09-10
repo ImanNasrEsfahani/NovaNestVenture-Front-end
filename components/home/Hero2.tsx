@@ -22,8 +22,8 @@ interface Slide {
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default async function Hero2({lang}: {lang: string}) {
-  const { t } = await getServerTranslation(lang, 'mainPage');
+export default function Hero2({lang}: {lang: string}) {
+  const { t } = getServerTranslation(lang, 'mainPage');
   const slides = t('heroSlides', { returnObjects: true }) as Slide[];
   return (
     <div className="w-full h-screen">
