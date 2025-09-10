@@ -4,7 +4,7 @@ import LandaMagazineCard from '../magazine/LandaMagazineCard';
 import { cardData2 } from '../../app/[lang]/statics';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-export default function LandaMagazine({ params }: { params: { lang: string } }) {
+export default function LandaMagazine() {
 
   return (
     // TODO: create commponent for show repeated parts. because codes are almost same and just written few times

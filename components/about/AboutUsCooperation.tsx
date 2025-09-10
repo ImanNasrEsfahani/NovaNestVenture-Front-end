@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function AboutUsCooperation({ lang }: { lang: string }) {
+export default function AboutUsCooperation() {
   return (
     <div className="h-full bg-neutral-800 py-10 text-center text-white">
       <div className="text-center">

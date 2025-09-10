@@ -2,7 +2,6 @@ import TeamRolesContainerClient from './TeamRolesContainerClient';
 
 export default async function TeamRolesContainer({
   lang,
-  persons,
   defaultRole,
   roles,
   // onRoleSelect

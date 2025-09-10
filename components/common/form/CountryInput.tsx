@@ -19,8 +19,7 @@ type Props = {
   provinceOfResidencePlaceholder: string; 
 }
 
-export default async function CountryInput({
-  lang,
+export default function CountryInput({
   register,
   errors,
   nameInput,
