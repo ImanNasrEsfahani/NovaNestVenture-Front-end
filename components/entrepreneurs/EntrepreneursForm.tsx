@@ -8,9 +8,9 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
   const { t: tCountry } = await getServerTranslation(lang, 'countryInput');
 
   // Add logging
-  console.log('Countries data type:', typeof tCountry('countries'));
-  console.log('Countries data:', tCountry('countries'));
-  console.log('Is array:', Array.isArray(tCountry('countries')));
+  console.log('Countries data type:', typeof tCountry('countries', { returnObjects: true }));
+  console.log('Countries data:', tCountry('countries', { returnObjects: true }));
+  console.log('Is array:', Array.isArray(tCountry('countries', { returnObjects: true })));
 
   // Pass translations as props to client component
   const translations = {
@@ -36,7 +36,7 @@ export default async function EntrepreneursForm({lang}: {lang: string}) {
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
 
-    countriesData: tCountry('countries'),
+    countriesData: tCountry('countries', { returnObjects: true }),
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),
