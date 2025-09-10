@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next/initReactI18next';
 import { getOptions } from './setting';
 // import i18nextBrowserLanguagedetector from 'i18next-browser-languagedetector';
 // import i18next from 'i18next';
+import path from 'path';
 
 
 const initI18next = (lng: string, ns: string | string[]) => {
@@ -12,7 +13,11 @@ const initI18next = (lng: string, ns: string | string[]) => {
   // Create a synchronous resource loader using require
   const syncResourceLoader = (language: string, namespace: string) => {
     try {
-      return require(`./locales/${language}/${namespace}.json`);
+      // Use absolute path from the project root
+      const translationPath = path.join(process.cwd(), 'app', 'i18n', 'locales', language, `${namespace}.json`);
+      const fs = require('fs');
+      const fileContent = fs.readFileSync(translationPath, 'utf8');
+      return JSON.parse(fileContent);
     } catch (error) {
       console.error(`Failed to load translation: ${language}/${namespace}`, error);
       return {};
