@@ -20,27 +20,27 @@
     "text": {
       "startUp": {
         "text": "Startup validation",
-        "link": "/startups-form"
+        "link": "startups-form"
       },
       "entrepreneur": {
         "text": "Entrepreneurs registration",
-        "link": "/formEntrepreneurs"
+        "link": "formEntrepreneurs"
       },
       "investor": {
         "text": "Investor Center",
-        "link": "/investor-registration"
+        "link": "investor-registration"
       },
       "Join our team": {
         "text": "Join our team",
-        "link": "/job-form"
+        "link": "job-form"
       },
       "mentorship": {
         "text": "Join as partnership",
-        "link": "/partner-membership"
+        "link": "partner-membership"
       },
       "mentor": {
         "text": "Join as mentor",
-        "link": "/join-as-mentor"
+        "link": "join-as-mentor"
       }
     }
   },
