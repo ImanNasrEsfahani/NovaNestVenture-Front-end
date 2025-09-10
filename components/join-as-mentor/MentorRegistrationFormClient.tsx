@@ -169,7 +169,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
               />
 
               <CountryInput
-                countries={translations.countriesData.countries}
+                countries={translations.countriesData}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}

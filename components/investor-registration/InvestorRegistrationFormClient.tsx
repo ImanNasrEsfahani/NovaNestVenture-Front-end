@@ -174,7 +174,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
               />
 
               <CountryInput
-                countries={translations.countries}
+                countries={translations.countriesData}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}
