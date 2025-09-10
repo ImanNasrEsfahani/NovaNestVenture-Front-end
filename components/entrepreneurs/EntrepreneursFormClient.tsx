@@ -36,15 +36,13 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  countriesData: {
-    countries: string[];
-    countryName: string;
-    countryNameRequired: string;
-    countryNamePlaceholder: string;
-    provinceOfResidence: string;
-    provinceOfResidenceRequired: string;
-    provinceOfResidencePlaceholder: string;
-  };
+  countriesData: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 }
 
 interface EntrepreneursFormClientProps {
@@ -179,12 +177,12 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
 
               <CountryInput
                 countries={translations.countriesData.countries}
-                countryName={translations.countriesData.countryName}
-                countryNameRequired={translations.countriesData.countryNameRequired}
-                countryNamePlaceholder={translations.countriesData.countryNamePlaceholder}
-                provinceOfResidence={translations.countriesData.provinceOfResidence}
-                provinceOfResidenceRequired={translations.countriesData.provinceOfResidenceRequired}
-                provinceOfResidencePlaceholder={translations.countriesData.provinceOfResidencePlaceholder}
+                countryName={translations.countryName}
+                countryNameRequired={translations.countryNameRequired}
+                countryNamePlaceholder={translations.countryNamePlaceholder}
+                provinceOfResidence={translations.provinceOfResidence}
+                provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+                provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
                 lang={lang}
                 errors={errors}
                 nameInput="countryOfResidence"
