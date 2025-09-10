@@ -5,21 +5,21 @@ export default async function TeamRolesContainer({
   persons,
   defaultRole,
   roles,
-  onRoleSelect
+  // onRoleSelect
 }: {
   lang: string;
   persons: string[];
   defaultRole: string;
   roles: string[];
-  onRoleSelect: (role: string) => void;
+  // onRoleSelect: (role: string) => void;
 }) {
 
   return (
     <TeamRolesContainerClient 
       lang={lang}
       roles={roles}
-      onRoleSelect={onRoleSelect}
       defaultRole={defaultRole}
+      // onRoleSelect={onRoleSelect}
     />
   );
 }

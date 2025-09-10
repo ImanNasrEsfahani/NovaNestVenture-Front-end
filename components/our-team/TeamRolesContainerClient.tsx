@@ -9,15 +9,15 @@ interface Translations {
 interface TeamRolesContainerClientProps {
   lang: string;
   roles: string[];
-  onRoleSelect: (role: string) => void;
   defaultRole: string;
+  // onRoleSelect: (role: string) => void;
 }
 
 export default function TeamRolesContainerClient({
   lang,
   roles,
-  onRoleSelect,
   defaultRole
+  // onRoleSelect,
 }: TeamRolesContainerClientProps) {
   // const {selectedRole, updateRole} = useSubmit();
 
@@ -28,7 +28,7 @@ export default function TeamRolesContainerClient({
   }, [defaultRole]);
 
   function handleRoleClick(role: string) {
-    onRoleSelect(role);
+    // onRoleSelect(role);
     setSelectedRole(role);
   }
   return (

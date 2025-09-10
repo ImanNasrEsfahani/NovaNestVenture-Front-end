@@ -18,6 +18,6 @@ export default async function TeamPersons({lang}: {lang: string}) {
     persons={translations.persons} 
     roles={translations.roles} 
     defaultRole={translations.defaultRole}
-    onRoleSelect={(role: string) => {}} 
+    // onRoleSelect={(role: string) => {}} 
   />;
 }
