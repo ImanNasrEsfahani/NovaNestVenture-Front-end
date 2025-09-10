@@ -62,7 +62,7 @@ export default async function StartupFormPersonalInformation({
         />
 
         <CountryInput
-          countries={countriesData.countries}
+          countries={countriesData}
           countryName={countryName}
           countryNameRequired={countryNameRequired}
           countryNamePlaceholder={countryNamePlaceholder}
