@@ -30,7 +30,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  countriesData: string[];
+  countries: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -169,7 +169,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
               />
 
               <CountryInput
-                countries={translations.countriesData}
+                countries={translations.countries}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}

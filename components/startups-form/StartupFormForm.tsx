@@ -18,7 +18,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
     successMessage: tCommon('successMessage'),
     failedMessage: tCommon('failedMessage'),
     
-    countriesData: tCountry('countries'),
+    countries: tCountry('countries', { returnObjects: true }),
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),

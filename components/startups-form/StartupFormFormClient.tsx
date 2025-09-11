@@ -29,7 +29,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  countriesData: string[];
+  countries: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -167,7 +167,7 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
           <StartupFormPersonalInformation
-            countriesData={translations.countriesData}
+            countries={translations.countries}
             countryName={translations.countryName}
             countryNameRequired={translations.countryNameRequired}
             countryNamePlaceholder={translations.countryNamePlaceholder}

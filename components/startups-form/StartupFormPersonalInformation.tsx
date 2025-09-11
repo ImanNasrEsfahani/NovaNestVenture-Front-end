@@ -9,7 +9,7 @@ export default function StartupFormPersonalInformation({
   register,
   errors,
   
-  countriesData,
+  countries,
   countryName,
   countryNameRequired,
   countryNamePlaceholder,
@@ -21,7 +21,7 @@ export default function StartupFormPersonalInformation({
   register: any;
   errors: any;
 
-  countriesData: any;
+  countries: any;
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -62,7 +62,7 @@ export default function StartupFormPersonalInformation({
         />
 
         <CountryInput
-          countries={countriesData}
+          countries={countries}
           countryName={countryName}
           countryNameRequired={countryNameRequired}
           countryNamePlaceholder={countryNamePlaceholder}
