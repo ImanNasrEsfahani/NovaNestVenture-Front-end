@@ -61,6 +61,11 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
     defaultValues: initialFormData
   });
 
+  // Add logging
+  console.log('Countries data type in EntrepreneursFormClient.tsx.tsx:', typeof translations.countriesData);
+  console.log('Countries data in EntrepreneursFormClient.tsx:', translations.countriesData);
+  console.log('Is array in EntrepreneursFormClient.tsx:', Array.isArray(translations.countriesData));
+
   const {
     // csrfToken,
     // handleTokenChange,

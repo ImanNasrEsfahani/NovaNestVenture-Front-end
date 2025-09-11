@@ -7,6 +7,11 @@ export default function EntrepreneursForm({lang}: {lang: string}) {
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
+  // Add logging
+  console.log('Countries data type in EntrepreneursForm.tsx:', typeof tCountry('countries', { returnObjects: true }));
+  console.log('Countries data in EntrepreneursForm.tsx:', tCountry('countries', { returnObjects: true }));
+  console.log('Is array in EntrepreneursForm.tsx:', Array.isArray(tCountry('countries', { returnObjects: true })));
+
   // Pass translations as props to client component
   const translations = {
     formTitle: t('entrepreneurForm', { returnObjects: true }).formTitle,

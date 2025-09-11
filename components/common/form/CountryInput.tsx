@@ -33,6 +33,12 @@ export default function CountryInput({
   provinceOfResidencePlaceholder
 }: Props) {
 
+  
+  // Add logging
+  console.log('Countries data type in CountryInput.tsx:', typeof countries);
+  console.log('Countries data in CountryInput.tsx:', countries);
+  console.log('Is array in CountryInput.tsx:', Array.isArray(countries));
+
   // Fix: Ensure countries is always an array
   const safeCountries = Array.isArray(countries) ? countries : [];
   const countriesData = safeCountries.map((country: string) => ({
