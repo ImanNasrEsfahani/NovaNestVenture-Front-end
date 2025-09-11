@@ -36,7 +36,7 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
-  countriesData: string[];
+  countries: string[];
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
@@ -62,9 +62,9 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
   });
 
   // Add logging
-  console.log('Countries data type in EntrepreneursFormClient.tsx.tsx:', typeof translations.countriesData);
-  console.log('Countries data in EntrepreneursFormClient.tsx:', translations.countriesData);
-  console.log('Is array in EntrepreneursFormClient.tsx:', Array.isArray(translations.countriesData));
+  console.log('Countries data type in EntrepreneursFormClient.tsx.tsx:', typeof translations.countries);
+  console.log('Countries data in EntrepreneursFormClient.tsx:', translations.countries);
+  console.log('Is array in EntrepreneursFormClient.tsx:', Array.isArray(translations.countries));
 
   const {
     // csrfToken,
@@ -181,7 +181,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
               />
 
               <CountryInput
-                countries={translations.countriesData}
+                countries={translations.countries}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}
