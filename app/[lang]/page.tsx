@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import Hero2 from '@/components/home/Hero2';
+import Hero from '@/components/home/Hero';
+// import Hero2 from '@/components/home/Hero2';
 import SpecialFeatures from '@/components/home/SpecialFeatures';
 import NovaNestPriority from '@/components/home/NovaNestPriority';
 import LatestStartups from '@/components/home/LatestStartups';
@@ -11,6 +12,7 @@ import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
 // import HomeUpComingStartups from '@/components/home/HomeUpComingStartups';
 import HomeNovaNestAcademy from '@/components/home/HomeNovaNestAcademy';
 import AboutUs from '@/components/home/AboutUs';
+import { getServerTranslation } from 'app/i18n';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
 
@@ -21,28 +23,28 @@ export const metadata: Metadata = {
 };
 
 export default function Page({ params }: { params: { lang: string } }) {
-  const { lang } = params;
+  const { t } = getServerTranslation(params.lang, 'mainPage');
 
   return (
     <div className="relative w-full mb-8">
       {/* TODO: read t inside hero components using zustend */}
-      {/* <Hero
-        lang={lang}
+      <Hero
+        lang={params.lang}
         titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
         backgroundImage="Hero.webp"
-      /> */}
-      <Hero2 lang={lang} />
+      />
+      {/* <Hero2 lang={lang} /> */}
 
       <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
-        <AboutUs lang={lang} />
-        <HomeCardsContainer2 lang={lang} />
-        <SpecialFeatures lang={lang} />
+        <AboutUs lang={params.lang} />
+        <HomeCardsContainer2 lang={params.lang} />
+        <SpecialFeatures lang={params.lang} />
         
         {/* <HomeUpComingStartups /> */}
-        <HomeNovaNestAcademy lang={lang} />
-        <NovaNestBlack lang={lang} />
-        <LatestStartups lang={lang} />
-        <NovaNestPriority lang={lang} />
+        <HomeNovaNestAcademy lang={params.lang} />
+        <NovaNestBlack lang={params.lang} />
+        <LatestStartups lang={params.lang} />
+        <NovaNestPriority lang={params.lang} />
         {/* <Partners /> */}
 
         {/* <HomeUpcomingEvents /> */}
