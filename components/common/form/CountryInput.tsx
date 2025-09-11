@@ -40,6 +40,16 @@ export default function CountryInput({
   console.log('Is array in CountryInput.tsx:', Array.isArray(countries));
 
   // Fix: Ensure countries is always an array
+  // Add error logging when countries is not an array
+  if (!Array.isArray(countries)) {
+      console.error('CountryInput Error: Expected countries to be an array, but received:', {
+        type: typeof countries,
+        value: countries,
+        isArray: Array.isArray(countries)
+      });
+      console.error('CountryInput: Using empty array as fallback. Please check the parent component.');
+      console.error('Called from:', new Error().stack);
+  }
   const safeCountries = Array.isArray(countries) ? countries : [];
   const countriesData = safeCountries.map((country: string) => ({
     value: country,
