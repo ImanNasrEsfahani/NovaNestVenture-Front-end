@@ -7,7 +7,7 @@ module.exports = {
       fontFamily: {
         barlow: ['Barlow', 'IranYekan'],
         condensed: ['Markazi'],
-        text: ['IranYekan', 'Barlow'],
+        sans: ['IranYekan', 'Barlow'],
         header: ['Gilda Display', 'Markazi']
       },
       colors: {
