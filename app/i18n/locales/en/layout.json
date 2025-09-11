@@ -2,44 +2,44 @@
   "menuItems": [
     {
       "label": "HOME",
-      "href": "/en"
+      "href": "en"
     },
     {
       "label": "ABOUT US",
-      "href": "/en/about"
+      "href": "en/about"
     },
     {
       "label": "CONTACT US",
-      "href": "/en/contact"
+      "href": "en/contact"
     },
     {
       "label": "OUR TEAM",
-      "href": "/en/our-team"
+      "href": "en/our-team"
     }
   ],
   "submenuItems": [
     { 
       "label": "INVESTOR CENTER", 
-      "href": "/en/investor-registration" },
+      "href": "en/investor-registration" },
     { 
       "label": "ENTREPRENEUR CENTER", 
-      "href": "/en/formEntrepreneurs"
+      "href": "en/formEntrepreneurs"
     },
     {
       "label": "MENTORSHIP CENTER",
-      "href": "/en/join-as-mentor"
+      "href": "en/join-as-mentor"
     },
     { 
       "label": "BUSINESS PARTNERS", 
-      "href": "/en/partner-membership"
+      "href": "en/partner-membership"
     },
     { 
       "label": "STARTUPS VALIDATION", 
-      "href": "/en/startups-form" 
+      "href": "en/startups-form" 
     },
     { 
       "label": "WORK WITH US", 
-      "href": "/en/job-form" 
+      "href": "en/job-form" 
     }
   ]
 }

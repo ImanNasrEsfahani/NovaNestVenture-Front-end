@@ -2,45 +2,45 @@
   "menuItems": [
     {
       "label": "خانه",
-      "href": "/fa"
+      "href": "fa"
     },
     {
       "label": "درباره ما",
-      "href": "/fa/about"
+      "href": "fa/about"
     },
     {
       "label": "تماس با ما",
-      "href": "/fa/contact"
+      "href": "fa/contact"
     },
     {
       "label": "تیم ما",
-      "href": "/fa/our-team"
+      "href": "fa/our-team"
     }
   ],
   "submenuItems": [
     {
       "label": "مرکز سرمایه گذاران",
-      "href": "/fa/investor-registration"
+      "href": "fa/investor-registration"
     },
     {
       "label": "مرکز کارآفرینان",
-      "href": "/fa/formEntrepreneurs"
+      "href": "fa/formEntrepreneurs"
     },
     {
       "label": "جذب منتور",
-      "href": "/fa/join-as-mentor"
+      "href": "fa/join-as-mentor"
     },
     {
       "label": "شرکای تجاری",
-      "href": "/fa/partner-membership"
+      "href": "fa/partner-membership"
     },
     {
       "label": "فرم ارزیابی استارت آپ",
-      "href": "/fa/startups-form"
+      "href": "fa/startups-form"
     },
     {
       "label": "همکاری با ما",
-      "href": "/fa/job-form"
+      "href": "fa/job-form"
     }
   ]
 }
