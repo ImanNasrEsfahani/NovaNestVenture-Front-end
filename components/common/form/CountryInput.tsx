@@ -38,6 +38,8 @@ export default function CountryInput({
   console.log('Countries data type in CountryInput.tsx:', typeof countries);
   console.log('Countries data in CountryInput.tsx:', countries);
   console.log('Is array in CountryInput.tsx:', Array.isArray(countries));
+  console.warn('Countries stringified:', JSON.stringify(countries));
+  console.warn('Is array in stringified countries CountryInput.tsx:', Array.isArray(countries));
 
   // Fix: Ensure countries is always an array
   // Add error logging when countries is not an array
