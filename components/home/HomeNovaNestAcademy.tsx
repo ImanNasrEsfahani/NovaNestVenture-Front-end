@@ -24,31 +24,31 @@ export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
         </div>
       </div>
       
-      <div className="tooltip-success relative flex w-full justify-end gap-3 md:w-[47%]">
+      <div className="tooltip-success relative flex w-full justify-end md:w-[47%]">
         <div
-          className={`relative h-72 w-full max-w-xs md:h-full`}
+          className={`relative h-72 w-full md:h-full`}
         >
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
-            src={"/static/images/home/academy/academy2.webp"}
+            src={"/static/images/home/academy/nova-nest-venture-academy.webp"}
             alt={"Academy"}
             fill
             sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
           />
         </div>
-        <div
+        {/* <div
           className={`relative  h-72 w-full max-w-xs md:h-full`}
         >
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
-            src={"/static/images/home/6.webp"}
+            src={"/static/images/home/academy/6.webp"}
             alt={"Academy"}
             fill
             sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
