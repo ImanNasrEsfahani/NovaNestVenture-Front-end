@@ -44,9 +44,9 @@ export default function Page({
       {/* Centered Text Section */}
       <div className="flex justify-center items-center py-16">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
             Startup Investment & Entrepreneurial Growth at NovaNest Venture
-          </h2>
+            </h2>
           <h3 className="text-xl md:text-2xl font-semibold mb-8 text-gray-600">
             Empowering Scalable Startups. Supporting Founders. Building the Future.
           </h3>
@@ -79,7 +79,7 @@ export default function Page({
             <div className="text-center">
               <a
                 href="https://www.novanestventure.com/investor-registration"
-                className="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
+                className="btn btn-primary btn-lg"
               >
                 Investor Registration
               </a>
@@ -105,7 +105,7 @@ export default function Page({
             <div className="text-center">
               <a
                 href="https://www.novanestventure.com/startups-form"
-                className="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors duration-300 transform hover:scale-105"
+                className="btn btn-success btn-lg"
               >
                 Startup Application
               </a>
@@ -168,7 +168,7 @@ export default function Page({
         </div>
       </div>
 
-      
+
 
       <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
         <div className="w-full">
