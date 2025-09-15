@@ -69,15 +69,6 @@ export default function Navbar({
 
           <div className="hidden justify-center ltr:mr-12 xl:flex xl:flex-1">
             <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl md:mb-3 ">
-              {menuItems.map(
-                ({ label, href }: { label: string; href: string }) => (
-                  <li className="h-9 text-xl mt-2" key={label}>
-                    <Link href={`${base}${href}`} className="text-white hover:bg-white">
-                      {label}
-                    </Link>
-                  </li>
-                )
-              )}
               <li className="h-9">
                 <div className="relative group">
                   <h2 className="text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
@@ -99,6 +90,15 @@ export default function Navbar({
                   </ul>
                 </div>
               </li>
+              {menuItems.map(
+                ({ label, href }: { label: string; href: string }) => (
+                  <li className="h-9 text-xl mt-2" key={label}>
+                    <Link href={`${base}${href}`} className="text-white hover:bg-white">
+                      {label}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
           <div className="hidden md:block">
@@ -122,16 +122,6 @@ export default function Navbar({
             height={4}
             loading="lazy"
           />
-          {menuItems.map(({ label, href }: { label: string; href: string }) => (
-            <li
-              className="font-Barlow flex items-center font-condensed pb-1"
-              key={label}
-            >
-              <Link href={`${base}${href}`} className="">
-                {label}
-              </Link>
-            </li>
-          ))}
           <li>
             <details>
               <summary className="font-Barlow btn m-1 pt-2 font-condensed text-xl">
@@ -151,19 +141,18 @@ export default function Navbar({
                 </ul>
               </ul>
             </details>
-
-            {/* //item */}
-
-            {/* new// */}
-
-            {/* 
-            <div className="mx-auto pl-8">
-              <Link className="font-condensed font-bold" href={'#'}>
-                {lang === 'en' ? 'FORMS' : 'فرم ها'}
-              </Link>
-              <IconDown/>
-            </div> */}
           </li>
+          {menuItems.map(({ label, href }: { label: string; href: string }) => (
+            <li
+              className="font-Barlow flex items-center font-condensed pb-1"
+              key={label}
+            >
+              <Link href={`${base}${href}`} className="">
+                {label}
+              </Link>
+            </li>
+          ))}
+
           {/* <div className="absolute bottom-5 mx-auto w-72 rounded px-12">
             <div className=" mx-auto rounded-lg bg-[#DCDCDC] py-2">
               <LanguageSwitch />
