@@ -18,7 +18,7 @@ interface Translations {
   formDescriptionStart: string;
   formList: string[];
   formDescriptionEnd: string;
-  
+
   formSubtitle: string;
   birthDate: string;
   birthDateErrorMessage: string;
@@ -138,18 +138,18 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
           <div className="flex flex-col bg-[#F8F5F0B2] pb-32">
             <div className="w-full h-auto pt-8 ">
               <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
-                <div className="w-full h-auto flex flex-row justify-center">
-                  <p className="text-black font-header font-medium text-xl md:text-[64px] md:leading-[75px]">
+                <div className="w-full h-auto flex flex-col justify-center">
+                  <p className="font-header text-xl md:text-[64px]">
                     {translations.formTitle}
                   </p>
                   <p>{translations.formDescriptionStart}</p>
-                  <div className="list-disc list-inside">
+                  <ul className="list-disc list-inside my-4 pl-4">
                     {translations.formList.map((item, index) => (
                       <li key={index} className="text-justify" >
                         {item}
                       </li>
                     ))}
-                  </div>
+                  </ul>
                   <p>{translations.formDescriptionEnd}</p>
                 </div>
                 <div className="w-full border-b-[1.5px] py-5 border-black h-auto flex flex-row justify-start">
