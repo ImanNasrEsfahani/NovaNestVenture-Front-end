@@ -81,7 +81,7 @@ export default function Navbar({
               <li className="h-9">
                 <div className="relative group">
                   <h2 className="text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
-                    {lang === 'en' ? 'FORMS' : 'فرم ها'}
+                  {lang === 'en' ? 'Services' : 'خدمات'}
                   </h2>
 
                   {/* Desktop Forms */}

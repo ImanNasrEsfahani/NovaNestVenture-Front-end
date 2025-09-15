@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 import AccelerationCard from '@/components/acceleration/AccelerationCard';
+import EntrepreneursForm from '@/components/entrepreneurs/EntrepreneursForm';
 import Banner from '@/components/common/Banner';
 
 export const metadata: Metadata = {
@@ -37,10 +38,10 @@ export default function Page({
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
       <div className={`max-w-[1600px] mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
-          <span className={` text-3xl font-bold leading-tight md:text-5xl`}>
+          <span className={`text-3xl font-bold leading-tight md:text-5xl mb-6`}>
             {t('LandaAccelerator', { returnObjects: true })[0].title}
           </span>
-          <span className={`block text-xl leading-tight md:text-3xl`}>
+          <span className={`block text-xl leading-tight md:text-2xl`}>
             {t('LandaAccelerator', { returnObjects: true })[0].subTitle}
           </span>
           <p
@@ -111,6 +112,9 @@ export default function Page({
           lang={lang}
         /> */}
       {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
+      <div className="max-w-[1600px] mx-auto">
+        <EntrepreneursForm lang={lang} />
+      </div>
     </div>
   );
 }

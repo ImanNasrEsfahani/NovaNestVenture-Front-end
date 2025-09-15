@@ -25,8 +25,8 @@ export default function FeaturesCards({
   return (
     <div  className="flex flex-col justify-between p-3 md:w-[580px] font-header shadow-xl rounded-lg">
       <div className='flex flex-col'>
-        <span className=" text-lg mx-auto p-2 font-bold ">{title}</span>
-        <p className="text-[12px] md:text-[13px] ">{description}</p>
+        <span className="text-lg mx-auto p-2 font-bold ">{title}</span>
+        <p className="">{description}</p>
       </div>
       <div className='mx-auto w-4/5 font-barlow text-md md:text-2xl mt-6'>
         <ButtonRefactor text={lang === "en" ? "Register" : "ثبت نام"} type="link" href={`${base}${link}`} />
