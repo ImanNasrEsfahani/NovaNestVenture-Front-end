@@ -46,18 +46,18 @@ export default function SpecialFeaturesClient({
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed text-base mb-6">
+              <p className="text-gray-600 mb-6">
                 {feature.description}
               </p>
-              <div className="mt-auto">
-                <button
-                  onClick={() => window.location.href = feature.link}
-                  className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center gap-2 text-white text-sm font-medium"
+              <div className="mt-auto text-right">
+                <a
+                  href={feature.link}
+                  className=""
                   aria-label={learnMoreLabel}
                 >
                   {learnMoreLabel}
-                  <span className={`transform ${lang === 'fa' ? 'rotate-180' : ''}`}>→</span>
-                </button>
+                  <span className={`transform ${lang === 'fa' ? 'rotate-180' : ''}`}> →</span>
+                </a>
               </div>
             </div>
           </div>
