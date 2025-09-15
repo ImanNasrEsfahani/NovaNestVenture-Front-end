@@ -41,6 +41,23 @@ export default function Page({
         />
       </div>
 
+      {/* Centered Text Section */}
+      <div className="flex justify-center items-center py-16">
+        <div className="max-w-4xl mx-auto text-center px-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">
+            Startup Investment & Entrepreneurial Growth at NovaNest Venture
+          </h2>
+          <h3 className="text-xl md:text-2xl font-semibold mb-8 text-gray-600">
+            Empowering Scalable Startups. Supporting Founders. Building the Future.
+          </h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            At NovaNest Venture, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you're an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner.
+          </p>
+        </div>
+      </div>
+
+
+      
 
       <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
         <div className="w-full">
