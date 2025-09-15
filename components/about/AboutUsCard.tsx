@@ -19,12 +19,12 @@ const AboutUsCard = ({
   return (
     <>
       {reverse && (
-        <div className="flex flex-col-reverse justify-items-center leading-6 md:grid-cols-2 lg:grid">
-          <div className="px-[30px] pb-5 leading-6 text-black md:ml-8 md:px-0">
+        <div className="flex flex-col-reverse justify-items-center md:grid-cols-2 lg:grid">
+          <div className="px-[30px] pb-5 text-black md:ml-8 md:px-0">
             <p className="mt-3 text-center font-header text-3xl md:pr-8">
               {title}
             </p>
-            <p className="text-normal  justify-left mt-5 font-barlow leading-6 ">
+            <p className="text-normal  justify-left mt-5 font-barlow ">
               {text}
             </p>
             <Link href={`${base}${link}`}>
@@ -75,7 +75,7 @@ const AboutUsCard = ({
               />
             </div>
           </div>
-          <div className="col-span-1 mt-1 px-[30px] font-barlow leading-6	text-black">
+          <div className="col-span-1 mt-1 px-[30px] font-barlow text-black">
             <p className="mt-3 text-center font-header text-3xl font-normal text-black">
               {title}
             </p>
@@ -86,7 +86,7 @@ const AboutUsCard = ({
               </button>
             </Link>
           </div>
-          <p className="Display ml-[110px] text-sm	font-normal	leading-normal  text-black">
+          <p className="Display ml-[110px] text-sm	font-normal	text-black">
             {description}
           </p>
         </div>

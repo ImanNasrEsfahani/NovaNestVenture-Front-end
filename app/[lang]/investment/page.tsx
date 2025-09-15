@@ -98,11 +98,11 @@ export default function Page({
             />
           </div>
 
-          <div className="text-justify w-full md:w-[65%]">
-            <span className=" text-lg md:text-4xl font-bold">
+          <div className="text-justify w-full">
+            <span className="text-lg font-bold">
               {t('investmentstrategy')}
             </span>
-            <p className=" leading-[25px] mt-6">{t('objectiveText1')}</p>
+            <p className="mt-6">{t('objectiveText1')}</p>
           </div>
         </div>
         <FeaturesCardsContainer lang={lang} />

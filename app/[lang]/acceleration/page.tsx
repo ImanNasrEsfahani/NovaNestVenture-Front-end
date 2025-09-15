@@ -38,10 +38,10 @@ export default function Page({
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
       <div className={`max-w-responsive mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
-          <span className={`text-3xl font-bold leading-tight md:text-5xl`}>
+          <span className={`text-3xl font-bold md:text-5xl`}>
             {t('LandaAccelerator', { returnObjects: true })[0].title}
           </span>
-          <span className={`block text-xl leading-tight md:text-2xl mt-6`}>
+          <span className={`block text-xl md:text-2xl mt-6`}>
             {t('LandaAccelerator', { returnObjects: true })[0].subTitle}
           </span>
           <p
@@ -100,7 +100,7 @@ export default function Page({
             }
           />
         </div>
-        <div className="my-11 flex gap-2 text-center font-barlow text-xl leading-9 text-[#55422A] md:ml-[11.5rem] md:mr-[8.5rem] md:text-left ltr:tracking-[2px] rtl:md:text-right">
+        <div className="my-11 flex gap-2 text-center font-barlow text-xl text-[#55422A] md:ml-[11.5rem] md:mr-[8.5rem] md:text-left ltr:tracking-[2px] rtl:md:text-right">
           <Circle />
           {t('text')}
         </div>

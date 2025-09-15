@@ -50,12 +50,12 @@ export default function Page({
             alt="handicraft"
             layout="fill"
           /> */}
-          <p className="z-10 mx-8 text-justify font-barlow text-base font-normal leading-[48px] text-black md:mr-10 md:mt-20 md:pl-20">
+          <p className="z-10 mx-8 text-justify font-barlow text-base font-normal text-black md:mr-10 md:mt-20 md:pl-20">
             {t('paragraph1')}
           </p>
         </div>
         <div className="relative flex flex-col-reverse justify-between gap-5 overflow-hidden md:flex-row">
-          <p className="mt-7 mx-8 md:pt-20 text-justify font-barlow text-base font-normal leading-[45px] text-black md:mt-0 md:h-[480px] md:w-[652px] rtl:pr-5 ltr:pl-5">
+          <p className="mt-7 mx-8 md:pt-20 text-justify font-barlow text-base font-normal text-black md:mt-0 md:h-[480px] md:w-[652px] rtl:pr-5 ltr:pl-5">
             {t('paragraph2')}
             <br />
             {/* {t('paragraph3')} */}
@@ -86,7 +86,7 @@ export default function Page({
               height={100}
             />
           </div>
-          <p className="z-10 mx-8 text-justify font-barlow text-base font-normal leading-[48px] text-black md:mr-10 md:mt-6 md:pl-20 rtl:md:w-[2800px] md:rtl:pt-12">
+          <p className="z-10 mx-8 text-justify font-barlow text-base font-normal text-black md:mr-10 md:mt-6 md:pl-20 rtl:md:w-[2800px] md:rtl:pt-12">
             {t('paragraph3')}
           </p>
         </div>
