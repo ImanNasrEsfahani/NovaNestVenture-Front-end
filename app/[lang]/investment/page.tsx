@@ -43,7 +43,7 @@ export default function Page({
 
       {/* Centered Text Section */}
       <div className="flex justify-center items-center py-16">
-        <div className="max-w-responsive mx-auto text-center px-6">
+        <div className="max-w-[75%] mx-auto text-center px-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
             Startup Investment & Entrepreneurial Growth at NovaNest Venture
             </h2>
@@ -61,9 +61,9 @@ export default function Page({
       <div className="max-w-responsive mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* For Startup Investors Card */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+          <div className="flex flex-col bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="flex flex-col items-center mb-6">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -87,8 +87,8 @@ export default function Page({
           </div>
 
           {/* For Entrepreneurs & Startup Founders Card */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center mb-6">
+          <div className="flex flex-col bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="flex flex-col items-center mb-6">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
