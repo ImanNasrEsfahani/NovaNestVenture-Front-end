@@ -1,10 +1,7 @@
 'use client';
+
 import React, { useEffect, useState } from 'react';
 // import { useSubmit } from 'stores/submitStore';
-
-interface Translations {
-  defaultRole: string;
-}
 
 interface TeamRolesContainerClientProps {
   lang: string;
@@ -14,7 +11,6 @@ interface TeamRolesContainerClientProps {
 }
 
 export default function TeamRolesContainerClient({
-  lang,
   roles,
   defaultRole
   // onRoleSelect,

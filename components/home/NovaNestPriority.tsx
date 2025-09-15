@@ -13,7 +13,7 @@ export default function NovaNestPriority({lang}: {lang: string}) {
           </span>
         </div>
         <div className="w-full px-4">
-          <div className="flex justify-center flex-wrap gap-5 max-w-[1400px] mx-auto">
+          <div className="flex justify-center flex-wrap gap-5 max-w-responsive mx-auto">
             {t('cardData1', { returnObjects: true }).map(
               (
                 { title, image }: { title: string; image: string },

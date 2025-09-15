@@ -51,7 +51,7 @@ export default function Page({
             Empowering Scalable Startups. Supporting Founders. Building the Future.
           </h3>
           <p className="text-lg leading-relaxed text-gray-700">
-            At NovaNest Venture, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you're an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner.
+            At NovaNest Venture, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you&apos;re an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner.
           </p>
         </div>
       </div>
