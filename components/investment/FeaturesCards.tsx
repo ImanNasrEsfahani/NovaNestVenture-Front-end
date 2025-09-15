@@ -31,7 +31,6 @@ export default function FeaturesCards({
       <div className='mx-auto w-4/5 font-barlow text-md md:text-2xl mt-6'>
         <ButtonRefactor text={lang === "en" ? "Register" : "ثبت نام"} type="link" href={`${base}${link}`} />
       </div>
-      {/* <ButtonRefactor text={lang === 'en' ? 'Register' : 'ثبت نام'} /> */}
     </div>
   );
 }

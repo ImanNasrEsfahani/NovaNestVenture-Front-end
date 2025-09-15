@@ -135,7 +135,7 @@ export default function Navbar({
           <li>
             <details>
               <summary className="font-Barlow btn m-1 pt-2 font-condensed text-xl">
-                {lang === 'en' ? 'FORMS' : 'فرم ها'}
+                {lang === 'en' ? 'Services' : 'خدمات'}
               </summary>
               <ul className="px-2">
                 <ul>

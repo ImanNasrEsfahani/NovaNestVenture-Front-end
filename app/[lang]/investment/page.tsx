@@ -4,6 +4,8 @@ import Image from 'next/image';
 //import Certificate from '@/components/investment/Certificate';
 import { Metadata } from 'next';
 import FeaturesCardsContainer from '@/components/investment/FeaturesCardsContainer';
+import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
+
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 //import ButtonRefactor from '@/components/common/ButtonRefactor';
@@ -89,7 +91,7 @@ export default function Page({
           <div className="relative w-[27rem] h-[26rem] rtl:h-[22rem] hidden md:inline">
             <Image
               className="object-contain rounded-lg"
-              src="/static/images/investment/landa-vector.png"
+              src="/static/images/investment/nova-nest-venture-acceleration-features-cards-02.png"
               alt="flawer"
               layout="fill"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -106,6 +108,9 @@ export default function Page({
         <FeaturesCardsContainer lang={lang} />
       </div>
       {/* <UpcomingEvents /> */}
+
+      {/* Investment Form */}
+      <InvestorRegistrationForm lang={lang}/>
     </div>
   );
 }

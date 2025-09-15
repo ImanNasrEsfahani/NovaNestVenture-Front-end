@@ -5,7 +5,7 @@ export default function FeaturesCardsContainer({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'investment');
 
   return (
-    <div className="flex gap-8 flex-wrap md:flex-nowrap mt-28 mb-12">
+    <div className="flex gap-8 flex-wrap xl:flex-nowrap mt-28 mb-12">
       {t('featureCards', { returnObjects: true }).map(
         ({
           link,
