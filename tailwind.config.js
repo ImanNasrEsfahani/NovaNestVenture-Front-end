@@ -19,6 +19,12 @@ module.exports = {
         grayLabel: "#636260",
         grayDark: "#222222B2"
       },
+      fontSize: {
+        'base': '17px',
+        'sm': '15px',
+        'lg': '19px',
+        'xl': '21px'
+      }
     },
   },
   plugins: [require('daisyui')],
