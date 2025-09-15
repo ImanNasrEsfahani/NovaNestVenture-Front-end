@@ -8,7 +8,16 @@ module.exports = {
         'base': '1.1875rem', // 19px
         'sm': '1.125rem',    // 18px
         'lg': '1.3125rem',  // 21px
-        'xl': '1.4375rem'   // 23px
+        'xl': '1.4375rem',   // 23px
+
+        '2xl': ['1.5rem', '1.25'],
+        '3xl': ['1.875rem', '1.25'],
+        '4xl': ['2.25rem', '1.25'],
+        '5xl': ['3rem', '1.25'],
+        '6xl': ['3.75rem', '1.25'],
+        '7xl': ['4.5rem', '1.25'],
+        '8xl': ['6rem', '1.25'],
+        '9xl': ['8rem', '1.25'],
       },
       fontFamily: {
         barlow: ['Barlow', 'IranYekan'],
