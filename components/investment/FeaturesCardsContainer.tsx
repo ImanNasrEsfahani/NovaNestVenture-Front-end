@@ -5,7 +5,7 @@ export default function FeaturesCardsContainer({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'investment');
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-28 mb-12">
+    <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 mt-28 mb-12">
       {t('featureCards', { returnObjects: true }).map(
         ({
           link,
