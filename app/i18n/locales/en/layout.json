@@ -19,22 +19,22 @@
   ],
   "submenuItems": [
     { 
-      "label": "INVESTOR CENTER", 
+      "label": "Investor Center",
       "href": "en/investment" },
     { 
-      "label": "ENTREPRENEUR CENTER", 
-      "href": "en/formEntrepreneurs"
+      "label": "Entrepreneur Center", 
+      "href": "en/acceleration"
     },
     {
-      "label": "MENTORSHIP CENTER",
+      "label": "Mentorship Center",
       "href": "en/join-as-mentor"
     },
     { 
-      "label": "BUSINESS PARTNERS", 
+      "label": "Business Partners", 
       "href": "en/partner-membership"
     },
     { 
-      "label": "STARTUPS VALIDATION", 
+      "label": "Startups Validation", 
       "href": "en/startups-form" 
     },
     { 

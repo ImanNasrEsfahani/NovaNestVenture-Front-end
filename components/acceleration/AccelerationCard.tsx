@@ -78,22 +78,32 @@ export default function AccelerationCard({
                   </span>
                 )}
               </div>
+              <ul>
+                {itemsList?.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`ltr:text-normal rtl:text-right lg:text-lg`}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
               {itemsList?.map((item, index) => (
-                <span
+                <li
                   key={index}
                   className={`ltr:text-normal rtl:text-right lg:text-lg`}
                 >
                   {item}
-                </span>
+                </li>
               ))}
             </div>
 
             <div className="text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 font-header">
               {t('CharacteristicsOfEntrepreneurship', { returnObjects: true }).title}
               <ul role="list" className="w-full list-disc md:text-lg text-sm  md:pb-0 rtl:text-right">
-              <li>{t('itemsCharecter', { returnObjects: true }).item1}</li>
-              <li>{t('itemsCharecter', { returnObjects: true }).item2}</li>
-              <li>{t('itemsCharecter', { returnObjects: true }).item3}</li>
+                <li>{t('itemsCharecter', { returnObjects: true }).item1}</li>
+                <li>{t('itemsCharecter', { returnObjects: true }).item2}</li>
+                <li>{t('itemsCharecter', { returnObjects: true }).item3}</li>
               </ul>
             </div>
           </div>
