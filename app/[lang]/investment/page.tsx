@@ -76,7 +76,7 @@ export default function Page({
             <p className="text-gray-600 leading-relaxed">
               Join NovaNest Venture&apos;s investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.
             </p>
-            <div className="text-center">
+            <div className="text-center mt-6">
               <a
                 href="https://www.novanestventure.com/investor-registration"
                 className="btn btn-primary btn-lg"
@@ -102,7 +102,7 @@ export default function Page({
             <p className="text-gray-600 leading-relaxed">
               We prioritize founder-led innovation and scalable startup models—your vision, combined with our resources, can create global impact.
             </p>
-            <div className="text-center">
+            <div className="text-center mt-6">
               <a
                 href="https://www.novanestventure.com/startups-form"
                 className="btn btn-success btn-lg"
