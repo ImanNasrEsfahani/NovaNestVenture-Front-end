@@ -26,13 +26,13 @@ module.exports = {
         'xl': '23px'
       },
       maxWidth: {
-        'responsive': 'clamp(320px, 90vw, 1600px)',
-        'container-xs': '448px',   // phones (was 384px)
-        'container-sm': '512px',   // large phones (was 768px)  
-        'container-md': '576px',   // tablets (was 1024px)
-        'container-lg': '672px',   // laptops (was 1280px)
-        'container-xl': '896px',   // desktops (was 1600px)
-        'container-2xl': '1152px', // large screens/TV
+        'responsive': 'clamp(448px, 95vw, 1800px)',
+        'container-xs': '512px',   // phones (was 448px) +64px
+        'container-sm': '672px',   // large phones (was 512px) +160px  
+        'container-md': '768px',   // tablets (was 576px) +192px
+        'container-lg': '896px',   // laptops (was 672px) +224px
+        'container-xl': '1152px',  // desktops (was 896px) +256px
+        'container-2xl': '1400px', // large screens/TV (was 1152px) +248px
       }
     },
   },
