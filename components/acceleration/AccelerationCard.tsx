@@ -88,14 +88,16 @@ export default function AccelerationCard({
                   </li>
                 ))}
               </ul>
-              {itemsList?.map((item, index) => (
-                <li
-                  key={index}
-                  className={`ltr:text-normal rtl:text-right lg:text-lg`}
-                >
-                  {item}
-                </li>
-              ))}
+              <ul>
+                {itemsList?.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`ltr:text-normal rtl:text-right lg:text-lg`}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 font-header">

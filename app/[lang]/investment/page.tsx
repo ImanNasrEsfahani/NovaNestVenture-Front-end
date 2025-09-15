@@ -43,7 +43,7 @@ export default function Page({
 
 
       <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
-        <div className="w-full md:w-[45%]">
+        <div className="w-full">
           <div className="flex flex-col">
             <span className="text-2xl md:text-4xl mb-8 font-bold">
               {t('startUpInvestingTitle')}
