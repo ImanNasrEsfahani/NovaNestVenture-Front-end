@@ -38,10 +38,10 @@ export default function Page({
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
       <div className={`max-w-[1600px] mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
-          <span className={`text-3xl font-bold leading-tight md:text-5xl mb-6`}>
+          <span className={`text-3xl font-bold leading-tight md:text-5xl`}>
             {t('LandaAccelerator', { returnObjects: true })[0].title}
           </span>
-          <span className={`block text-xl leading-tight md:text-2xl`}>
+          <span className={`block text-xl leading-tight md:text-2xl mt-6`}>
             {t('LandaAccelerator', { returnObjects: true })[0].subTitle}
           </span>
           <p
