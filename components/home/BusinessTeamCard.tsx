@@ -79,7 +79,7 @@ export default function BusinessTeamCard({
         </div>
       </div>
       <div className="ml-3 inline-flex w-2/3 items-center justify-center gap-3 p-2.5 pt-4 md:w-full md:ps-12">
-        <div className="font-barlow text-xs font-medium leading-[20px] tracking-wider text-stone-100 md:mt-3 md:w-[700px] md:text-xl md:leading-[28px]">
+        <div className="font-barlow text-xs font-medium tracking-wider text-stone-100 md:mt-3 md:w-[700px] md:text-xl md:leading-[28px]">
           {commentDescription}
         </div>
         <div className="ml-5 mt-2 hidden flex-col gap-3 md:flex">

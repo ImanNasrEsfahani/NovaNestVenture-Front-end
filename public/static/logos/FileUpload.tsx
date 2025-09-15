@@ -10,7 +10,7 @@ const FileUpload = ({ name, label, onChange }: FileUploadProps) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <div>
-        <p className="text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]">
+        <p className="text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px]">
           {label}
         </p>
       </div>

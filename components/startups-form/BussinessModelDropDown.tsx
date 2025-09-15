@@ -29,7 +29,7 @@ const BussinessModelDropDown = (props: Props) => {
         }}
       >
         <div className="w-full h-auto flex justify-center items-center gap-2">
-          <p className="font-barlow text-white font-medium text-[24px] leading-[20px]">
+          <p className="font-barlow text-white font-medium text-[24px]">
             {t('startUp.businessModel')}
           </p>
           <div

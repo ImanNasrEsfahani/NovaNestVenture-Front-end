@@ -274,7 +274,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
       setProblemsOpen(!problemsOpen)
     }}>
     <div className='w-full h-auto flex justify-center items-center gap-2'>
-         <p className='font-barlow text-white font-semibold text-[24px] leading-[20px]'>Problems</p>
+         <p className='font-barlow text-white font-semibold text-[24px]'>Problems</p>
          <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
            <ChevDown />
          </div>
