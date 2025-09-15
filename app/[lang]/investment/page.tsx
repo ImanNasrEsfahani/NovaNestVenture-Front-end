@@ -43,7 +43,7 @@ export default function Page({
 
       {/* Centered Text Section */}
       <div className="flex justify-center items-center py-16">
-        <div className="max-w-4xl mx-auto text-center px-6">
+        <div className="max-w-responsive mx-auto text-center px-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
             Startup Investment & Entrepreneurial Growth at NovaNest Venture
             </h2>
@@ -58,7 +58,7 @@ export default function Page({
 
 
       {/* Two Cards Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-responsive mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* For Startup Investors Card */}
           <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
@@ -116,7 +116,7 @@ export default function Page({
 
 
             {/* Why Choose NovaNest Venture Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-responsive mx-auto px-6 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           Why Choose NovaNest Venture?
         </h2>

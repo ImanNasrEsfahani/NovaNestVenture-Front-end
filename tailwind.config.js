@@ -4,6 +4,12 @@ module.exports = {
   safelist: process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : [],
   theme: {
     extend: {
+      fontSize: {
+        'base': '1.1875rem', // 19px
+        'sm': '1.125rem',    // 18px
+        'lg': '1.3125rem',  // 21px
+        'xl': '1.4375rem'   // 23px
+      },
       fontFamily: {
         barlow: ['Barlow', 'IranYekan'],
         condensed: ['Markazi'],
