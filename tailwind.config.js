@@ -20,10 +20,10 @@ module.exports = {
         grayDark: "#222222B2"
       },
       fontSize: {
-        'base': '17px',
-        'sm': '15px',
-        'lg': '19px',
-        'xl': '21px'
+        'base': '19px',
+        'sm': '17px',
+        'lg': '21px',
+        'xl': '23px'
       }
     },
   },
