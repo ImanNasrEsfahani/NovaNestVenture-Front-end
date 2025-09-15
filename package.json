@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "set NODE_ENV=development && next dev",
-    "dev:host": "next dev -H 0.0.0.0",
+    "dev:host": "set NODE_ENV=development && next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

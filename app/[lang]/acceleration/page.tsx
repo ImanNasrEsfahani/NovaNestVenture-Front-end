@@ -35,6 +35,9 @@ export default function Page({
         />
       </div>
 
+
+      
+
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
       <div className={`max-w-responsive mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
