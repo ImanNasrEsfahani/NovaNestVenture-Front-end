@@ -42,7 +42,7 @@ export default function Page({
       </div>
 
 
-      <div className="max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl mx-auto flex justify-between my-28 gap-5 font-header">
+      <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
         <div className="w-full md:w-[45%]">
           <div className="flex flex-col">
             <span className="text-2xl md:text-4xl mb-8 font-bold">
@@ -86,7 +86,7 @@ export default function Page({
       {/* <ButtonRefactor text={t('buttonTitle')} />
         </div>
       </div> */}
-      <div className="max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl mx-auto py-10 font-header">
+      <div className="max-w-responsive mx-auto py-10 font-header">
         <div className='flex justify-between items-center gap-6'>
           <div className="relative w-[27rem] h-[26rem] rtl:h-[22rem] hidden md:inline">
             <Image

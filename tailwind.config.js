@@ -24,6 +24,15 @@ module.exports = {
         'sm': '17px',
         'lg': '21px',
         'xl': '23px'
+      },
+      maxWidth: {
+        'responsive': 'clamp(320px, 90vw, 1600px)',
+        'container-xs': '448px',   // phones (was 384px)
+        'container-sm': '512px',   // large phones (was 768px)  
+        'container-md': '576px',   // tablets (was 1024px)
+        'container-lg': '672px',   // laptops (was 1280px)
+        'container-xl': '896px',   // desktops (was 1600px)
+        'container-2xl': '1152px', // large screens/TV
       }
     },
   },
