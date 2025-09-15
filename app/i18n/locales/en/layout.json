@@ -15,27 +15,24 @@
   ],
   "submenuItems": [
     { 
-      "label": "Investor Center",
-      "href": "en/investment" },
+      "label": "Investment",
+      "href": "en/investment"
+    },
     { 
-      "label": "Entrepreneur Center", 
+      "label": "Accelerator", 
       "href": "en/acceleration"
     },
     {
-      "label": "Mentorship Center",
-      "href": "en/join-as-mentor"
+      "label": "Startup Visa",
+      "href": "en/startup"
     },
     { 
-      "label": "Business Partners", 
-      "href": "en/partner-membership"
+      "label": "Entrepreneurship Programs", 
+      "href": "en/#"
     },
     { 
-      "label": "Startups Validation", 
-      "href": "en/startups-form" 
-    },
-    { 
-      "label": "WORK WITH US", 
-      "href": "en/job-form" 
+      "label": "Business Academy", 
+      "href": "en/academy" 
     }
   ]
 }

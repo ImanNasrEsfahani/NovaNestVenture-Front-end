@@ -15,28 +15,24 @@
   ],
   "submenuItems": [
     {
-      "label": "مرکز سرمایه گذاران",
+      "label": "سرمایه گذاران",
       "href": "fa/investment"
     },
     {
-      "label": "مرکز کارآفرینان",
+      "label": "کارآفرینان",
       "href": "fa/acceleration"
     },
     {
-      "label": "جذب منتور",
-      "href": "fa/join-as-mentor"
+      "label": "ویزای استارت آپ",
+      "href": "fa/startup"
     },
     {
-      "label": "شرکای تجاری",
-      "href": "fa/partner-membership"
+      "label": "برنامه های کارآفرینی",
+      "href": "fa/#"
     },
     {
-      "label": "فرم ارزیابی استارت آپ",
-      "href": "fa/startups-form"
-    },
-    {
-      "label": "همکاری با ما",
-      "href": "fa/job-form"
+      "label": "آکادمی کسب و کار",
+      "href": "fa/academy"
     }
   ]
 }
