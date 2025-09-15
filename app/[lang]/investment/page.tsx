@@ -49,7 +49,7 @@ export default function Page({
               {t('startUpInvestingTitle')}
             </span>
           </div>
-          <p className="text-justify leading-8">{t('startUpInvestingText')}</p>
+          <p className="text-justify">{t('startUpInvestingText')}</p>
         </div>
 
         <div className="relative h-[300px] w-[330px] md:h-[168p] md:w-[561px] hidden md:inline">
@@ -73,7 +73,7 @@ export default function Page({
           </div>
         </div>
         <div className="flex flex-col items-center justify-center space-y-5 rtl:space-y-reverse">
-          <p className="text-justify font-barlow tracking-[1px] ltr:leading-8 rtl:text-lg rtl:leading-10">
+          <p className="text-justify font-barlow tracking-[1px]">
             {t('focusText')}
           </p> */}
       {/* <Button
@@ -98,7 +98,7 @@ export default function Page({
             />
           </div>
 
-          <div className="text-justify leading-8 w-full md:w-[65%]">
+          <div className="text-justify w-full md:w-[65%]">
             <span className=" text-lg md:text-4xl font-bold">
               {t('investmentstrategy')}
             </span>

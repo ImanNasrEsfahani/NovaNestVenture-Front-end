@@ -37,7 +37,7 @@ export default function Page({
         />
       </div>
       
-      <div className='px-8 md:px-24 max-w-[1600px] mx-auto'>
+      <div className='px-8 md:px-24 max-w-responsive mx-auto'>
         <AboutUsLandaHolding lang={lang} />
         <SubsidiaryCompanies lang={lang}/>
         <StoryOfLanda lang={lang}/>

@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { lang: string } }) {
       />
       {/* <Hero2 lang={lang} /> */}
 
-      <section className='max-w-[1600px] px-4 mx-auto w-100 lg:px-16'>
+      <section className='max-w-responsive px-4 mx-auto w-100 lg:px-16'>
         <AboutUs lang={params.lang} />
         <HomeCardsContainer2 lang={params.lang} />
         <SpecialFeatures lang={params.lang} />

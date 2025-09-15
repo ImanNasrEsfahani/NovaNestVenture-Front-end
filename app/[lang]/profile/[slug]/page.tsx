@@ -42,7 +42,7 @@ export default async function Page({
   }
 
   return (
-    <div className="max-w-[1600px] mx-auto flex h-screen justify-center w-full py-24 md:px-40">
+    <div className="max-w-responsive mx-auto flex h-screen justify-center w-full py-24 md:px-40">
       <section className="flex flex-col items-center justify-between w-full px-4 md:w-3/5">
         {/* top */}
         <div className="flex flex-col items-center">

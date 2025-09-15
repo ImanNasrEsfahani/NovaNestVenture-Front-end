@@ -27,7 +27,7 @@ export default function StartupValidationPage({
         title={t('startUp', { returnObjects: true }).banner}
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         <StartupFormForm lang={lang} />
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
       <div className="w-full font-barlow md:w-[47%]  ">
         <h1 className="mb-2 font-header">{t('NovaNestVenture')}</h1>
         <h1 className="mb-8 font-header text-4xl font-bold">{t('Academy')}</h1>
-        <p className="leading-8">
+        <p className="">
             {t('NovaNestAcademyInfo')}
         </p>
         <div className="mt-6 h-auto w-[224px]">

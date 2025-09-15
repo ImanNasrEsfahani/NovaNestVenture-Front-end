@@ -30,7 +30,7 @@ export default function Footer({
   }
   return (
     <div className="bg-[#F7F3EE] font-barlow">
-      <div className="max-w-[1600px] mx-auto p-6  flex flex-wrap justify-between space-y-5">
+      <div className="max-w-responsive mx-auto p-6  flex flex-wrap justify-between space-y-5">
         <div className="mt-5 flex flex-col w-full xl:w-2/5 gap-2">
           <div className="text-justify text-xl font-medium text-primary pb-2">
             {t('about.title')}
@@ -112,7 +112,7 @@ export default function Footer({
           </Link>
         </div>
       </div>
-      <div className="max-w-[1600px] p-4 border-t border-tableHeader text-center text-tableHeader">
+      <div className="max-w-responsive p-4 border-t border-tableHeader text-center text-tableHeader">
         © Copyright {GetYear()} by{' '}
         <Link href={`${base}`} className="text-tableHeader">
           NovaNestVenture

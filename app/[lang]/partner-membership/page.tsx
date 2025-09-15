@@ -23,7 +23,7 @@ export default async function AffiliateFormPage({
         title={t('partnerForm', { returnObjects: true }).banner}
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         <PartnerMembershipForm lang={lang}/>
       </div>
     </div>

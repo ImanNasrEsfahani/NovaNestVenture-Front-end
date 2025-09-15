@@ -23,7 +23,7 @@ export default function EntrepreneursPage({
         title={t('banner')}
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         <EntrepreneursForm lang={lang} />
       </div>
     </div>

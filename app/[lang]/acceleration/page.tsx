@@ -36,7 +36,7 @@ export default function Page({
       </div>
 
       {/* TODO: Is it better to use i18n in components instead of pass it as props? */}
-      <div className={`max-w-[1600px] mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
+      <div className={`max-w-responsive mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-16`}>
         <div className=" w-full  md:w-[47%]">
           <span className={`text-3xl font-bold leading-tight md:text-5xl`}>
             {t('LandaAccelerator', { returnObjects: true })[0].title}
@@ -45,7 +45,7 @@ export default function Page({
             {t('LandaAccelerator', { returnObjects: true })[0].subTitle}
           </span>
           <p
-            className={`pt-8 text-justify font-barlow leading-8 ltr:text-lg rtl:text-base`}
+            className={`pt-8 text-justify font-barlow ltr:text-lg rtl:text-base`}
           >
             {t('LandaAccelerator', { returnObjects: true })[0].text}
           </p>
@@ -61,7 +61,7 @@ export default function Page({
         </div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         {/* TODO: make better names like ForughAccelerator */}
         <AccelerationCard
           lang={lang}
@@ -112,7 +112,7 @@ export default function Page({
           lang={lang}
         /> */}
       {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         <EntrepreneursForm lang={lang} />
       </div>
     </div>

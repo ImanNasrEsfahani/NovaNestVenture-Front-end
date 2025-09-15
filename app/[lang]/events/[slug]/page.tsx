@@ -83,7 +83,7 @@ export default function Page({
         title="UPCOMING EVENTS"
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto my-16 rounded-sm border p-6 shadow-md">
+      <div className="max-w-responsive mx-auto my-16 rounded-sm border p-6 shadow-md">
         <div className="flex justify-between gap-20">
           <div className="flex w-2/3 flex-col gap-4">
             {cardData.map((card, index) => {

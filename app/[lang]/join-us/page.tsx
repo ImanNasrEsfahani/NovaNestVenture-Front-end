@@ -23,7 +23,7 @@ export default function ApplyFormPage({
         title={t('workWithUS', { returnObjects: true })['BannerTitle']}
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-responsive mx-auto">
         <WorkWithUs lang={lang} />
       </div>
     </div>

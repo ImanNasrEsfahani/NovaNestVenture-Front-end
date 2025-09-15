@@ -10,7 +10,7 @@ export default function SubsidiaryCompanies({lang}: {lang: string}) {
       <span className="font-header font-bold text-2xl md:leading-10 md:text-4xl">
         {t('SubsidiaryCompanies', { returnObjects: true }).title}
       </span>
-      <p className=" text-justify font-barlow text-[16px] md:text-xl mb-10 md:leading-8 md:pt-12">
+      <p className=" text-justify font-barlow text-[16px] lg:text-xl mb-10 md:pt-12">
         {t('SubsidiaryCompanies', { returnObjects: true }).text}
       </p>
       <CompaniesContainer lang={lang || 'en'} />

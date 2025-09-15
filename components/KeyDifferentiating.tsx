@@ -17,7 +17,7 @@ export default function KeyDifferentiating({lang}: {lang: string}) {
     // TODO: don't use [0], [1] for translations
     <div className="flex justify-between ">
       <div className=" my-20 flex flex-col gap-5 w-full md:w-[62%]">
-        <span className="font-header font-bold md:pb-8 text-2xl leading-8 md:text-4xl">
+        <span className="font-header font-bold md:pb-8 text-2xl md:text-4xl">
           {t('KeyDifferentiatingFactors', { returnObjects: true })[0].title}
         </span>
         <div className="font-header text-justify">

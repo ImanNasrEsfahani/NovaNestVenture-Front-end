@@ -69,7 +69,7 @@ export default function AboutUsProfile({lang}: {lang: string}) {
           </div>
         </div>
         <div className="flex flex-col pt-12 px-2 items-center justify-center space-y-5 rtl:space-y-reverse">
-          <p className="text-justify font-barlow pb-12 ltr:leading-8 rtl:text-lg rtl:leading-10">
+          <p className="text-justify font-barlow pb-12 rtl:text-lg rtl:leading-10">
             {t('focusText')}
           </p>
           <Button

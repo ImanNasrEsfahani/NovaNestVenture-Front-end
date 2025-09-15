@@ -26,7 +26,7 @@ export default async function MagazinePage({
         title={`${lang == 'en' ? "MAGAZINE" : "مجله" }`}
         lang={lang}
       />
-      <div className="max-w-[1600px] mx-auto my-32 grid grid-cols-3 gap-20">
+      <div className="max-w-responsive mx-auto my-32 grid grid-cols-3 gap-20">
         <MagazineCardsContainer/>
         <div className="col-span-1 flex flex-col gap-12">
           <SearchInput />
