@@ -9,6 +9,10 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
   // Pass translations as props to client component
   const translations = {
     formTitle: t('investorForm', { returnObjects: true }).formTitle,
+    formDescriptionStart: t('investorForm', { returnObjects: true }).formDescriptionStart,
+    formList: t('investorForm', { returnObjects: true }).formList,
+    formDescriptionEnd: t('investorForm', { returnObjects: true }).formDescriptionEnd,
+    
     formSubtitle: t('investorForm', { returnObjects: true }).formSubtitle,
     birthDate: t('birthDate'),
     birthDateErrorMessage: t('birthDateErrorMessage'),

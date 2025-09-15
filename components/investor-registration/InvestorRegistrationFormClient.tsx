@@ -15,6 +15,10 @@ import CountryInput from '@/components/common/form/CountryInput';
 
 interface Translations {
   formTitle: string;
+  formDescriptionStart: string;
+  formList: string[];
+  formDescriptionEnd: string;
+  
   formSubtitle: string;
   birthDate: string;
   birthDateErrorMessage: string;
@@ -138,6 +142,15 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                   <p className="text-black font-header font-medium text-xl md:text-[64px] md:leading-[75px]">
                     {translations.formTitle}
                   </p>
+                  <p>{translations.formDescriptionStart}</p>
+                  <div className="list-disc list-inside">
+                    {translations.formList.map((item, index) => (
+                      <li key={index} className="text-justify" >
+                        {item}
+                      </li>
+                    ))}
+                  </div>
+                  <p>{translations.formDescriptionEnd}</p>
                 </div>
                 <div className="w-full border-b-[1.5px] py-5 border-black h-auto flex flex-row justify-start">
                   <p className="text-black font-barlow font-medium text-[30px] leading-[42px]">
