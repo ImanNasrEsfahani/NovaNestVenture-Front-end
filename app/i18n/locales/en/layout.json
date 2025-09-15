@@ -1,19 +1,15 @@
 {
   "menuItems": [
     {
-      "label": "HOME",
-      "href": "en"
-    },
-    {
-      "label": "ABOUT US",
+      "label": "About US",
       "href": "en/about"
     },
     {
-      "label": "CONTACT US",
+      "label": "Contact US",
       "href": "en/contact"
     },
     {
-      "label": "OUR TEAM",
+      "label": "Our Team",
       "href": "en/our-team"
     }
   ],

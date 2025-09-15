@@ -1,10 +1,6 @@
 {
   "menuItems": [
     {
-      "label": "خانه",
-      "href": "fa"
-    },
-    {
       "label": "درباره ما",
       "href": "fa/about"
     },
@@ -24,7 +20,7 @@
     },
     {
       "label": "مرکز کارآفرینان",
-      "href": "fa/formEntrepreneurs"
+      "href": "fa/acceleration"
     },
     {
       "label": "جذب منتور",
