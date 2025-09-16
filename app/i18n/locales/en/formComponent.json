@@ -96,8 +96,8 @@
   "partnerForm": {
     "lng": "en",
     "dir": "ltr",
-    "banner": "BUSINESS AFFILIATES",
-    "formTitle": "BUSINESS AFFILIATES FORM",
+    "banner": "Business Affilicates",
+    "formTitle": "Business Affiliates Form",
     "formSubtitle": "Personal Information"
   },
 
@@ -105,8 +105,8 @@
     "lng": "en",
     "dir": "ltr",
     "NovaNestVenture": "NovaNest Venture",
-    "banner": "WORK WITH US",
-    "formTitle": "WORK WITH US",
+    "banner": "Work with us",
+    "formTitle": "Work with us Form",
     "formSubtitle": "Personal Information",
     "resumeFile": "CV File:"
   },
@@ -115,9 +115,9 @@
     "lng": "en",
     "dir": "ltr",
     "NovaNestVenture": "NovaNest Venture",
-    "banner": "APPLY JOB",
-    "BannerTitle": "Work With Us",
-    "formTitle": "Let’s Talk About How We Can Grow Together",
+    "banner": "Apply Job",
+    "BannerTitle": "Work With us",
+    "formTitle": "Apply Job Form",
     "formSubtitleTop": "Personal Information",
     "formSubtitleBottom": "Academic / Professional Information",
     "resumeFile": "CV File:",
@@ -150,7 +150,7 @@
 
   "entrepreneurForm": {
     "lng": "en",
-    "banner": "ENTREPRENEUR CENTER",
+    "banner": "Entrepreneur Center",
     "NovaNestVenture": "NovaNest Venture",
     "formTitle": "Entrepreneur Center form",
     "formSubtitle": "Personal Information"
@@ -159,9 +159,9 @@
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
-    "banner": "INVESTOR CENTER",
+    "banner": "Investor Center",
     "NovaNestVenture": "NovaNest Venture",
-    "formTitle": "INVESTOR REGISTRATION FORM",
+    "formTitle": "Investor Center Form",
     "formDescriptionStart": "Would you like to access unique investment opportunities? By joining the Novanest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:",
     "formList": [
       "Early access to high-potential startups and projects",
@@ -181,9 +181,9 @@
   "joinUsForm": {
     "lng": "en",
     "dir": "ltr",
-    "banner": "Mentor CENTER",
+    "banner": "Mentor Center",
     "NovaNestVenture": "NovaNest Venture",
-    "formTitle": "Work With Us",
+    "formTitle": "Mentor Center Form",
     "formSubtitle": "Let’s Talk About How We Can Grow Together",
     "positionRequired": "please select you position",
     "positionPlaceholder": "Select Your Position",
@@ -197,9 +197,9 @@
     "YesButton": "Yes",
     "NoButton": "No",
     "NovaNestVenture": "NovaNest Venture",
-    "banner": "STARTUPS VALIDATION FORM",
-    "formTitle": "STARTUPS FORM",
-    "formBanner": "STARTUPS VALIDATION",
+    "banner": "Startup Validation Form",
+    "formTitle": "Startup Form",
+    "formBanner": "Startup Validation",
     "secondTitle": "Grows and Scale Up",
     "subTitle": "Let’s Talk About Your Project",
     "formSubtitle": "Let’s Talk About Your Project",
