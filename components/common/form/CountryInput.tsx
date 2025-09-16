@@ -8,7 +8,10 @@ type Props = {
   lang: string;
   register: any;
   errors: any;
-  nameInput: string;
+  nameInputs?: {
+    countryOfResidence: string;
+    provinceOfResidence: string;
+  };
 
   countries: string[];
   countryName: string;
@@ -22,7 +25,7 @@ type Props = {
 export default function CountryInput({
   register,
   errors,
-  nameInput,
+  nameInputs,
 
   countries,
   countryName,
@@ -60,34 +63,38 @@ export default function CountryInput({
 
   return (
     <>
-      <Select
-        register={register}
-        errors={errors}
-        nameInput={nameInput}
-        label={countryName}
-        required={countryNameRequired}
-        className='input w-full'
-        labelClass='text-[#6b6b6b] dark:text-current'
-        placeholder={countryNamePlaceholder}
-        options={countriesData}
-        handleChange={handleCountryChange}
-        selected={selectedCountry}
-      />
-
-      <div className="col-span-1">
-        <Input
+      {nameInputs?.countryOfResidence && (
+        <Select
           register={register}
           errors={errors}
-          nameInput="provinceOfResidence"
-          type="text"
-          label={provinceOfResidence}
-          required={provinceOfResidenceRequired}
-          patternValue=""
-          patternMessage=""
-          placeholder={provinceOfResidencePlaceholder}
-          className="input col-span-1 mb-1 mt-2 w-full "
-          labelClass="text-[#6b6b6b] dark:text-current"
+          nameInput={nameInputs.countryOfResidence}
+          label={countryName}
+          required={countryNameRequired}
+          className='input w-full'
+          labelClass='text-[#6b6b6b] dark:text-current'
+          placeholder={countryNamePlaceholder}
+          options={countriesData}
+          handleChange={handleCountryChange}
+          selected={selectedCountry}
         />
+      )}
+
+      <div className="col-span-1">
+        {nameInputs?.provinceOfResidence && (
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.provinceOfResidence}
+            type="text"
+            label={provinceOfResidence}
+            required={provinceOfResidenceRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={provinceOfResidencePlaceholder}
+            className="input col-span-1 mb-1 mt-2 w-full "
+            labelClass="text-[#6b6b6b] dark:text-current"
+          />
+        )}
       </div>
     </>
   )

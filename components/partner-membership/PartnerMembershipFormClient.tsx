@@ -181,7 +181,10 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
               provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
               lang={lang}
               errors={errors}
-              nameInput="countryOfResidence"
+              nameInputs={{
+                  countryOfResidence: 'countryOfResidence',
+                  provinceOfResidence: 'provinceOfResidence'
+              }}
               register={register}
             />
 

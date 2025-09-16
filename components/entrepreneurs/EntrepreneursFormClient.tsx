@@ -185,7 +185,10 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                 provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
                 lang={lang}
                 errors={errors}
-                nameInput="countryOfResidence"
+                nameInputs={{
+                  countryOfResidence: 'countryOfResidence',
+                  provinceOfResidence: 'provinceOfResidence'
+                }}
                 register={register}
               />
 

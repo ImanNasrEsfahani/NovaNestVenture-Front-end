@@ -168,11 +168,11 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                   firstName: 'firstName',
                   lastName: 'lastName',
                   email: 'email',
-                  phoneNumber: '',
+                  phoneNumber: 'phoneNumber',
                   jobPosition: ''
                 }}
               />
-              <Input
+              {/* <Input
                 register={register}
                 errors={errors}
                 nameInput="birthDate"
@@ -184,19 +184,24 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 placeholder={translations.birthDatePlaceholder}
                 className="input col-span-1 mb-1 mt-3 w-full "
                 labelClass="dark:text-current"
-              />
+              /> */}
 
               <CountryInput
                 countries={translations.countries}
                 countryName={translations.countryName}
                 countryNameRequired={translations.countryNameRequired}
                 countryNamePlaceholder={translations.countryNamePlaceholder}
+
                 provinceOfResidence={translations.provinceOfResidence}
                 provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
                 provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+
+                nameInputs={{
+                  countryOfResidence: 'countryOfResidence',
+                  provinceOfResidence: '',
+                }}
                 lang={lang}
                 errors={errors}
-                nameInput="countryOfResidence"
                 register={register}
               />
 

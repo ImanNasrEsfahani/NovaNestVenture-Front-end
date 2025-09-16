@@ -5,6 +5,7 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
+  const { t: tInvestment } = getServerTranslation(lang, 'investment');
 
   // Pass translations as props to client component
   const translations = {
