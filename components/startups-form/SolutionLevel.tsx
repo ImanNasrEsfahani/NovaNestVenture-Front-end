@@ -14,7 +14,7 @@ type Props = {
     setValue: UseFormSetValue<StartupsFormData>
 }
 
-const SolutionLevel = (props: Props) => {
+export default function SolutionLevel(props: Props) {
 
   const {
     register,
@@ -107,5 +107,3 @@ const SolutionLevel = (props: Props) => {
     </div>
   )
 }
-
-export default
