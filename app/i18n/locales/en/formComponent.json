@@ -207,11 +207,13 @@
     "statusSelectRequired": "Your Status is Required",
     "statusSelectPlaceholder": "Select Your Status:",
     "idea": {
+      "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",
       "ideaExplanation": "Explain your idea in 5 lines? *",
       "ideaExplanationPlaceholder": "Description",
       "ideaExplanationRequired": "This field is required"
     },
     "trial": {
+      "description": "Take the first bold step by presenting your idea and identifying the most promising path to success. Carefully plan your journey to launch, define each milestone, and gather the right team of experts to support you along the way. Remember, validating the profitability of your idea is essential—low returns and high risks can lead to failure. A well-prepared trial phase sets the foundation for everything that follows.",
       "pitchDeck": "Do you have Pitch deck?*",
       "businessPlan": "Do you have Business Plan?*",
       "financial": "Do you have Financial?*",
@@ -458,8 +460,8 @@
   "IDEA": "IDEA",
   "MVP": "MVP",
   "TRIAL": "TRIAL",
-  "FisrtSale": "FisrtSale",
-  "SaleDevelopment": "SaleDevelopment",
+  "FisrtSale": "Fisrt Sale",
+  "SaleDevelopment": "Sale Development",
 
   "website": "Your Webstie *",
   "websitePlaceholder": "Your Webstie",

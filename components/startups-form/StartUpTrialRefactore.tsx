@@ -54,6 +54,7 @@ const StartUpTrialRefactore = (props: Props) => {
   return (
     <div className='w-full h-auto px-4 my-4'>
         <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
+          <p>{t('startUp',{ returnObjects: true }).trial.description}</p>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
                  <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Pitch deck?*</p>

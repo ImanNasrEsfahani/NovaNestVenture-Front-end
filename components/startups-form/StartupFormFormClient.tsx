@@ -197,12 +197,6 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
                 }
               })()}
               <StartUpFormCheckbox register={register} name={translations.TRIAL} />
-           {((): any => {
-                if (startupFormType == translations.IDEA) {
-                  return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
-                }
-              })()}
-              <StartUpFormCheckbox register={register} name={translations.TRIAL} />
               {((): any => {
                 if (startupFormType == translations.TRIAL) {
                   return (
