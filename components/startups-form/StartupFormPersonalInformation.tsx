@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Input from '@/components/common/form/Input';
+// import Input from '@/components/common/form/Input';
 import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
 import { getServerTranslation } from 'app/i18n';
 import CountryInput from '@/components/common/form/CountryInput';

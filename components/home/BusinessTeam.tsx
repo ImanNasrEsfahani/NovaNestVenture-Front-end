@@ -87,11 +87,11 @@ export default function AerialViewBusinessTeam(
     >
       <div className="pb-5 text-center font-condensed ltr:tracking-[3.75px] ltr:md:tracking-[7px]">
         <div className="flex flex-col space-y-2 md:mb-5 md:space-y-7">
-          <span className="text-base font-normal text-white md:text-xl">
+          <span className="font-normal text-white text-xl">
             {title}
             <br />
           </span>
-          <span className="text-base font-normal text-white text-xl">
+          <span className="text-base font-normal text-white">
             {text}
           </span>
         </div>
