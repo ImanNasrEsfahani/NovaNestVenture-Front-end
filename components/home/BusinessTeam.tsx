@@ -91,7 +91,7 @@ export default function AerialViewBusinessTeam(
             {title}
             <br />
           </span>
-          <span className="text-base font-normal text-white md:text-[30px]">
+          <span className="text-base font-normal text-white text-xl">
             {text}
           </span>
         </div>

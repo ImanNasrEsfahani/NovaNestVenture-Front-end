@@ -12,7 +12,7 @@ export default function LandaMagazine() {
       {/* hide component on mobile */}
       <div className="flex justify-center bg-neutral-800 py-5">
         <div className="flex flex-col">
-          <div className="my-10 font-header text-3xl font-normal text-white md:ml-16 md:text-[64px]">
+          <div className="my-10 font-header text-3xl font-normal text-white md:ml-16">
             NovaNest Venture MAGAZINE
           </div>
           <div className="flex flex-row items-center justify-center">

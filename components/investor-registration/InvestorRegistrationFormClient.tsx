@@ -139,7 +139,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
             <div className="w-full h-auto pt-8 ">
               <div className="w-10/12 mx-auto h-auto flex flex-col gap-12">
                 <div className="w-full h-auto flex flex-col justify-center">
-                  <p className="font-header text-xl md:text-[64px]">
+                  <p className="font-header text-xl">
                     {translations.formTitle}
                   </p>
                   <p>{translations.formDescriptionStart}</p>

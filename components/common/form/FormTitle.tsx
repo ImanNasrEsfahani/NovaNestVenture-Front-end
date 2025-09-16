@@ -11,8 +11,8 @@ export default function FormTitle(
     <div className='w-full h-[200px] md:h-[300px] bg-black'>
       <div className='size-full flex justify-center items-center'>
         <div className='w-full h-auto flex flex-col items-center'>
-          <p className="text-white font-header font-medium md:text-[64px]">{t(formName,{ returnObjects: true }).formTitle}</p>
-          <p className="text-white font-header font-medium md:text-[32px]">{t(formName,{ returnObjects: true }).formSubtitle}</p>
+          <p className="text-white font-header font-medium text-3xl">{t(formName,{ returnObjects: true }).formTitle}</p>
+          <p className="text-white font-header font-medium text-xl">{t(formName,{ returnObjects: true }).formSubtitle}</p>
         </div>
       </div>
       {/* <div className='text-center'>

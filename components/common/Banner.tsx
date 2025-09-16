@@ -24,7 +24,7 @@ export default async function Banner({
             <p className="text-white font-medium font-header text-[16px]" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
               {lang == 'en' ? 'NovaNest Venture' : 'نووا نست ونچر'}
             </p>
-            <p className="text-white font-header font-medium text-3xl md:text-[64px]" style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.9)' }}>
+            <p className="text-white font-header font-medium text-3xl" style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.9)' }}>
               {title}
             </p>
           </div>
