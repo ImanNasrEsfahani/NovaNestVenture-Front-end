@@ -150,7 +150,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
                   firstName: 'firstName',
                   lastName: 'lastName',
                   email: 'email',
-                  phoneNumber: '',
+                  phoneNumber: 'phoneNumber',
                   jobPosition: ''
                 }}
               />

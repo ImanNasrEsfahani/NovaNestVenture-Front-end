@@ -114,8 +114,8 @@ export default function HandicraftFormClient({ lang, translations }: HandicraftF
             nameInputs={{
               firstName: 'first_name',
               lastName: 'last_name',
-              email: '',
-              phoneNumber: '',
+              email: 'email',
+              phoneNumber: 'phone_number',
               jobPosition: ''
             }}
             noLabel={true}

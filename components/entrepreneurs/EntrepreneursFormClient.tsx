@@ -157,7 +157,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                   firstName: 'firstName',
                   lastName: 'lastName',
                   email: 'email',
-                  phoneNumber: '',
+                  phoneNumber: 'phoneNumber',
                   jobPosition: ''
                 }}
               />

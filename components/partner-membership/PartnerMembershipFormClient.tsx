@@ -153,7 +153,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
                 firstName: 'firstName',
                 lastName: 'lastName',
                 email: 'email',
-                phoneNumber: '',
+                phoneNumber: 'phoneNumber',
                 jobPosition: ''
               }}
             />

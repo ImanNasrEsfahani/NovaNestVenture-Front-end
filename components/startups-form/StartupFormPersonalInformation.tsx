@@ -41,7 +41,7 @@ export default function StartupFormPersonalInformation({
           nameInputs={{
             firstName: 'firstName',
             lastName: 'lastName',
-            phoneNumber: '',
+            phoneNumber: 'phoneNumber',
             email: 'email',
             jobPosition: ''
           }}
