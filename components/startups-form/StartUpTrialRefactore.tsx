@@ -6,12 +6,13 @@ import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { useLang } from 'stores/langStore'
 import { getServerTranslation } from 'app/i18n'
-import ChevDown from '@/public/static/logos/ChevDown'
-import TextArea from '@/components/common/TextArea'
+// import ChevDown from '@/public/static/logos/ChevDown'
+// import TextArea from '@/components/common/TextArea'
 import PropertyDropDown from '@/components/startups-form/PropertyDropDown'
 import TargetMarketDropDown from '@/components/startups-form/TargetMarketDropDown'
 import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown'
 import SolutionLevel from '@/components/startups-form/SolutionLevel'
+import ProblemsSection from '@/components/startups-form/ProblemSection'
 
 type Props = {
     handleFileCounterChange: (name: string) => void
@@ -53,11 +54,11 @@ const StartUpTrialRefactore = (props: Props) => {
 
   return (
     <div className='w-full h-auto px-4 my-4'>
+      <p>{t('startUp',{ returnObjects: true }).trial.description}</p>
         <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
-          <p>{t('startUp',{ returnObjects: true }).trial.description}</p>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Pitch deck?*</p>
+                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).trial.pitchDeck}</p>
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -91,7 +92,7 @@ const StartUpTrialRefactore = (props: Props) => {
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
                        <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).trial.choseFile}</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                           <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -120,23 +121,23 @@ const StartUpTrialRefactore = (props: Props) => {
                        <Input
                           register={register} 
                           errors={errors} 
-                          nameInput={t('startUp',{ returnObjects: true }).productName} 
+                          nameInput={t('startUp',{ returnObjects: true }).trial.productName} 
                           type={'text'} 
-                          required={t('startUp',{ returnObjects: true }).productNameRequired} 
+                          required={t('startUp',{ returnObjects: true }).trial.productNameRequired} 
                           patternValue={''} 
                           patternMessage={''} 
-                          placeholder={t('startUp',{ returnObjects: true }).productNamePlaceholder} 
+                          placeholder={t('startUp',{ returnObjects: true }).trial.productNamePlaceholder} 
                           className={'border rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                        <Input 
                           register={register} 
                           errors={errors} 
-                          nameInput={t('startUp',{ returnObjects: true }).siteAddress} 
+                          nameInput={t('startUp',{ returnObjects: true }).trial.siteAddress} 
                           type={'text'} 
-                          required={t('startUp',{ returnObjects: true }).siteAddressRequired} 
+                          required={t('startUp',{ returnObjects: true }).trial.siteAddressRequired} 
                           patternValue={''} 
                           patternMessage={''} 
-                          placeholder={t('startUp',{ returnObjects: true }).siteAddressPlaceholder} 
+                          placeholder={t('startUp',{ returnObjects: true }).trial.siteAddressPlaceholder} 
                           className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
                        />
                      </div>
@@ -145,7 +146,7 @@ const StartUpTrialRefactore = (props: Props) => {
           </div>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Business Plan?*</p>
+                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).trial.businessPlan}</p>
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -159,7 +160,7 @@ const StartUpTrialRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                        </div>
                        <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
@@ -171,7 +172,7 @@ const StartUpTrialRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                        </div>
                  </div>
                </div> 
@@ -179,7 +180,7 @@ const StartUpTrialRefactore = (props: Props) => {
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
                        <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).trial.choseFile}</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                           <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -208,7 +209,7 @@ const StartUpTrialRefactore = (props: Props) => {
           </div>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Financial?*</p>
+                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).trial.financial}</p>
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -222,7 +223,7 @@ const StartUpTrialRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                        </div>
                        <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("financial")
@@ -234,7 +235,7 @@ const StartUpTrialRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                        </div>
                  </div>
                </div> 
@@ -242,7 +243,7 @@ const StartUpTrialRefactore = (props: Props) => {
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
                        <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).trial.choseFile}</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                           <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -270,11 +271,20 @@ const StartUpTrialRefactore = (props: Props) => {
                )}
           </div>
         </div>
-        <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
+
+        <ProblemsSection
+          title={t('startUp',{ returnObjects: true }).trial.problems.title}
+          textAreaTitle={t('startUp',{ returnObjects: true }).trial.problems.customerProblem}
+          textAreaRequired={t('startUp',{ returnObjects: true }).trial.problems.customerProblemRequired}
+          textAreaPlaceholder={t('startUp',{ returnObjects: true }).trial.problems.customerProblemPlaceholder}
+          register={register}
+          errors={errors}
+        />
+        {/* <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
           setProblemsOpen(!problemsOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-semibold text-[24px]'>Problems</p>
+               <p className='font-barlow text-white font-semibold text-[24px]'>{t('startUp',{ returnObjects: true }).trial.problems}</p>
                <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>
@@ -283,17 +293,17 @@ const StartUpTrialRefactore = (props: Props) => {
         {problemsOpen && (
           <div className='w-full h-auto md:px-1'>
                <TextArea
-                 title={'Describe the customer problem you want to solve with your product or service. *'}
+                 title={t('startUp',{ returnObjects: true }).trial.problemsLabel}
                  register={register}
                  errors={errors} 
-                 required={"this fiels is required"} 
+                 required={t('startUp',{ returnObjects: true }).trial.problemsRequired} 
                  nameTextArea={"customerProblem"} 
                  patternValue={''} 
                  patternMessage={''} 
-                 placeholder={'Description'}                                                  
+                 placeholder={t('startUp',{ returnObjects: true }).trial.problemsPlaceholder}                                                  
                />
           </div>
-        )}
+        )} */}
         <SolutionLevel 
           handleSolutionsLevelChange={handleSolutionsLevelChange}
           solutionsLevel={solutionsLevel}

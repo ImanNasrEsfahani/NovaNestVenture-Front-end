@@ -28,7 +28,7 @@ const TargetMarketDropDown = (props: Props) => {
           setTargetMarketOpen(!targetMarketOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px]'>{t('startUp',{ returnObjects: true }).trial.targetMarket}</p>
+               <p className='font-barlow text-white font-medium text-[24px]'>{t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetMarket}</p>
                <div className={`${targetMarketOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>
@@ -38,50 +38,50 @@ const TargetMarketDropDown = (props: Props) => {
           <>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.targetCharacteristics}
+                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristics}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsRequired}
                   nameTextArea={"customerCharacteristic"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.targetCharacteristicsPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.targetCustomers}
+                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomers}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersRequired}
                   nameTextArea={"currentCustomers"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.targetCustomersPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.targetEstimated}
+                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimated}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedRequired} 
                   nameTextArea={"estimatedMarketSize"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.targetEstimatedPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea
-                  title={t('startUp',{ returnObjects: true }).trial.targetTotal}
+                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotal}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalRequired}
                   nameTextArea={"totalTamSamSom"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.targetTotalPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalPlaceholder}
               />
             </div>
           </>

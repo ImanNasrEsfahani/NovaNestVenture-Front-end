@@ -28,7 +28,7 @@ const PropertyDropDown = (props: Props) => {
           setPropertyOpen(!propertyOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px] '>{t('startUp',{ returnObjects: true }).trial.property}</p>
+               <p className='font-barlow text-white font-medium text-[24px] '>{t('startUp',{ returnObjects: true }).commons.propertyDropDown.property}</p>
                <div className={`${propertyOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>
@@ -38,62 +38,62 @@ const PropertyDropDown = (props: Props) => {
           <>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea
-                  title={t('startUp',{ returnObjects: true }).trial.propertyRevenue}
+                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenue}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenueRequired} 
                   nameTextArea={"startupRevenue"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.propertyRevenuePlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenuePlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.propertyMonthly}
+                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthly}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyRequired}
                   nameTextArea={"monthlyIncome"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.propertyMonthlyPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.propertyRate}
+                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRate}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRateRequired}
                   nameTextArea={"currentInterestRate"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.propertyRatePlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRatePlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.propertyBusiness}
+                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusiness}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessRequired}
                   nameTextArea={"currentRaisedFunding"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.propertyBusinessPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).trial.propertyCapital}
+                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapital}
                   register={register}
                   errors={errors} 
-                  required={"this fiels is required"} 
+                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalRequired}
                   nameTextArea={"neededCapital"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).trial.propertyCapitalPlaceholder}
+                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalPlaceholder}
               />
             </div>
           </>

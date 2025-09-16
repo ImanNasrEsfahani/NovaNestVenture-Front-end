@@ -65,6 +65,7 @@ export default function StartupFormSaleDevelopment({
         if ((Boolean(selectedRadioBusiness) === false) && (Boolean(selectedRadioPitch)) === false) {
           return (
             <div>
+              <p>{t('startUp',{ returnObjects: true }).SaleDevelopment.description}</p>
               <div className="my-6 mb-12 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
                 <div>
                 <Input
@@ -72,11 +73,11 @@ export default function StartupFormSaleDevelopment({
                     errors={errors}
                     nameInput="productName"
                     type="text"
-                    label={t('startUp',{ returnObjects: true }).productName}
-                    required={t('startUp',{ returnObjects: true }).productNameRequired}
+                    label={t('startUp',{ returnObjects: true }).SaleDevelopment.productName}
+                    required={t('startUp',{ returnObjects: true }).SaleDevelopment.productNameRequired}
                     patternValue=""
                     patternMessage="Only Alphabetic Characters are Allowed."
-                    placeholder={t('startUp',{ returnObjects: true }).productNamePlaceholder}
+                    placeholder={t('startUp',{ returnObjects: true }).SaleDevelopment.productNamePlaceholder}
                     className="input  mb-1 mt-3 w-full"
                     labelClass=" dark:text-current"
                   />
@@ -88,11 +89,11 @@ export default function StartupFormSaleDevelopment({
                     errors={errors}
                     nameInput="siteAddress"
                     type="text"
-                    label={t('startUp',{ returnObjects: true }).siteAddress}
-                    required={t('startUp',{ returnObjects: true }).siteAddressRequired}
+                    label={t('startUp',{ returnObjects: true }).SaleDevelopment.siteAddress}
+                    required={t('startUp',{ returnObjects: true }).SaleDevelopment.siteAddressRequired}
                     patternValue=""
                     patternMessage="Only Alphabetic Characters are Allowed."
-                    placeholder={t('startUp',{ returnObjects: true }).siteAddressPlaceholder}
+                    placeholder={t('startUp',{ returnObjects: true }).SaleDevelopment.siteAddressPlaceholder}
                     className="input  mb-1 mt-3 w-full"
                     labelClass=" dark:text-current"
                   />

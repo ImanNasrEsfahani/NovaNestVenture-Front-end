@@ -12,6 +12,7 @@ import BussinessModelDropDown from '@/components/startups-form/BussinessModelDro
 import SolutionLevel from '@/components/startups-form/SolutionLevel'
 import { useLang } from '../../stores/langStore'
 import { getServerTranslation } from 'app/i18n'
+import ProblemsSection from '@/components/startups-form/ProblemSection'
 
 type Props = {
     handleFileCounterChange: (name: string) => void
@@ -57,7 +58,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
     <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
       <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
            <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Pitch deck?*</p>
+             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).FirstSale.pitchDeck}</p>
            </div>
            <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
              <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -71,7 +72,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                    </div>
                    <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                       handleFileCounterChange("pitch")
@@ -83,7 +84,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                    </div>
              </div>
            </div> 
@@ -91,7 +92,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
              <div className='w-full h-auto'>
                  <div className='w-full h-auto flex flex-col items-center gap-2'>
                    <div className='size-auto'>
-                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).FirstSale.choseFile}</p>
                    </div>
                    <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                       <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -106,7 +107,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                         {filesCounter.pitch && (
                           <FileUpload
                             name="pitchDeckFile"
-                            label="Upload your document"
+                            label={t('startUp',{ returnObjects: true }).FirstSale.uploadDocument}
                             onChange={handlePitchFileChange}
                           />
                         )}
@@ -120,23 +121,23 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                    <Input
                       register={register} 
                       errors={errors} 
-                      nameInput={t('startUp.productName')} 
+                      nameInput={t('startUp',{ returnObjects: true }).FirstSale.productName} 
                       type={'text'} 
-                      required={t('startUp.productNameRequired')} 
+                      required={t('startUp',{ returnObjects: true }).FirstSale.productNameRequired} 
                       patternValue={''} 
                       patternMessage={''} 
-                      placeholder={t('startUp.productNamePlaceholder')} 
+                      placeholder={t('startUp',{ returnObjects: true }).FirstSale.productNamePlaceholder} 
                       className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                        
                    />
                    <Input 
                       register={register} 
                       errors={errors} 
-                      nameInput={t('startUp.siteAddress')} 
+                      nameInput={t('startUp',{ returnObjects: true }).FirstSale.siteAddress} 
                       type={'text'} 
-                      required={t('startUp.siteAddressRequired')} 
+                      required={t('startUp',{ returnObjects: true }).FirstSale.siteAddressRequired} 
                       patternValue={''} 
                       patternMessage={''} 
-                      placeholder={t('startUp.siteAddressPlaceholder')} 
+                      placeholder={t('startUp',{ returnObjects: true }).FirstSale.siteAddressPlaceholder} 
                       className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                        
                    />
                  </div>
@@ -145,7 +146,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
       </div>
       <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
            <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Business Plan?*</p>
+             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).FirstSale.businessPlan}</p>
            </div>
            <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
              <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -159,7 +160,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                    </div>
                    <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                       handleFileCounterChange("business")
@@ -171,7 +172,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                    </div>
              </div>
            </div> 
@@ -179,7 +180,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
              <div className='w-full h-auto'>
                  <div className='w-full h-auto flex flex-col items-center gap-2'>
                    <div className='size-auto'>
-                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).FirstSale.uploadDocument}</p>
                    </div>
                    <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                       <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -194,7 +195,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                         {filesCounter.pitch && (
                           <FileUpload
                             name="pitchDeckFile"
-                            label="Upload your document"
+                            label={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
                             onChange={handlePitchFileChange}
                           />
                         )}
@@ -208,7 +209,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
       </div>
       <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
            <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>Do you have Financial?*</p>
+             <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).FirstSale.financial}</p>
            </div>
            <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
              <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -222,7 +223,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                    </div>
                    <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                       handleFileCounterChange("financial")
@@ -234,7 +235,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                              }`}
                               />
                       </div>
-                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                      <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                    </div>
              </div>
            </div> 
@@ -242,7 +243,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
              <div className='w-full h-auto'>
                  <div className='w-full h-auto flex flex-col items-center gap-2'>
                    <div className='size-auto'>
-                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>Upload your document</p>
+                      <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).FirstSale.choseFile}</p>
                    </div>
                    <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                       <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -257,7 +258,7 @@ const StartUpFirstSaleRefactor = (props: Props) => {
                         {filesCounter.pitch && (
                           <FileUpload
                             name="pitchDeckFile"
-                            label="Upload your document"
+                            label={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
                             onChange={handlePitchFileChange}
                           />
                         )}
@@ -270,11 +271,21 @@ const StartUpFirstSaleRefactor = (props: Props) => {
            )}
       </div>
     </div>
-    <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
+
+    <ProblemsSection
+      title={t('startUp',{ returnObjects: true }).FirstSale.problems.title}
+      textAreaTitle={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblem}
+      textAreaRequired={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblemRequired}
+      textAreaPlaceholder={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblemPlaceholder}
+      register={register}
+      errors={errors}
+    />
+
+    {/* <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
       setProblemsOpen(!problemsOpen)
     }}>
     <div className='w-full h-auto flex justify-center items-center gap-2'>
-         <p className='font-barlow text-white font-semibold text-[24px]'>Problems</p>
+         <p className='font-barlow text-white font-semibold text-[24px]'>{t('startUp',{ returnObjects: true }).FirstSale.problems.title}</p>
          <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
            <ChevDown />
          </div>
@@ -283,17 +294,19 @@ const StartUpFirstSaleRefactor = (props: Props) => {
     {problemsOpen && (
       <div className='w-full h-auto md:px-1'>
            <TextArea
-             title={'Describe the customer problem you want to solve with your product or service. *'}
+             title={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblem}
              register={register}
              errors={errors} 
-             required={"this fiels is required"} 
+             required={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblemRequired}
              nameTextArea={"customerProblem"} 
              patternValue={''} 
              patternMessage={''} 
-             placeholder={'Description'}                                                  
+             placeholder={t('startUp',{ returnObjects: true }).FirstSale.problems.customerProblemPlaceholder}                                                  
            />
       </div>
-    )}
+    )} */}
+
+    
     <SolutionLevel
       handleSolutionsLevelChange={handleSolutionsLevelChange}
       solutionsLevel={solutionsLevel}
