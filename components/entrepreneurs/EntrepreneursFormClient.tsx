@@ -161,7 +161,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                   jobPosition: ''
                 }}
               />
-              <Input
+              {/* <Input
                 register={register}
                 errors={errors}
                 nameInput="birthDate"
@@ -173,7 +173,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                 placeholder={translations.birthDatePlaceholder}
                 className="input col-span-1 mb-1 mt-3 w-full"
                 labelClass="dark:text-current"
-              />
+              /> */}
 
               <CountryInput
                 countries={translations.countries}
@@ -187,7 +187,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                 errors={errors}
                 nameInputs={{
                   countryOfResidence: 'countryOfResidence',
-                  provinceOfResidence: 'provinceOfResidence'
+                  provinceOfResidence: ''
                 }}
                 register={register}
               />

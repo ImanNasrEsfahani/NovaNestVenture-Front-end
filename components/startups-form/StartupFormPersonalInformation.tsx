@@ -47,7 +47,7 @@ export default function StartupFormPersonalInformation({
           }}
         />
 
-        <Input
+        {/* <Input
           register={register}
           errors={errors}
           nameInput="birthDate"
@@ -59,7 +59,7 @@ export default function StartupFormPersonalInformation({
           placeholder={t('birthDatePlaceholder')}
           className="input col-span-1 mb-1 mt-2 w-full bg-whiteGold"
           labelClass=" dark:text-current"
-        />
+        /> */}
 
         <CountryInput
           countries={countries}
@@ -73,7 +73,7 @@ export default function StartupFormPersonalInformation({
           errors={errors}
           nameInputs={{
             countryOfResidence: 'countryOfResidence',
-            provinceOfResidence: 'provinceOfResidence'
+            provinceOfResidence: ''
           }}
           register={register}
         />

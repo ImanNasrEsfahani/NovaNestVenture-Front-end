@@ -157,7 +157,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
                 jobPosition: ''
               }}
             />
-            <Input
+            {/* <Input
               register={register}
               errors={errors}
               nameInput="birthDate"
@@ -169,7 +169,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
               placeholder={translations.birthDatePlaceholder}
               className="input col-span-1 mb-1 mt-3 w-full "
               labelClass="dark:text-current"
-            />
+            /> */}
 
             <CountryInput
               countries={translations.countries}
