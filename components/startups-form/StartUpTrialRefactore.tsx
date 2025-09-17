@@ -72,7 +72,7 @@ export default function StartUpTrialRefactore(props: Props) {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'Yes'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
                        </div>
                        <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
@@ -84,7 +84,7 @@ export default function StartUpTrialRefactore(props: Props) {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{'No'}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
                        </div>
                  </div>
                </div> 
