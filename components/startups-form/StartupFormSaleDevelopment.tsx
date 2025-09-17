@@ -65,7 +65,7 @@ export default function StartupFormSaleDevelopment({
         if ((Boolean(selectedRadioBusiness) === false) && (Boolean(selectedRadioPitch)) === false) {
           return (
             <div>
-              <p>{t('startUp',{ returnObjects: true }).SaleDevelopment.description}</p>
+              <p className='mt-4 mb-6'>{t('startUp',{ returnObjects: true }).SaleDevelopment.description}</p>
               <div className="my-6 mb-12 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
                 <div>
                 <Input

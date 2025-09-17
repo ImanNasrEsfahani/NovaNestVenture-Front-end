@@ -206,112 +206,221 @@
     "statusSelect": "استارت‌آپ شما در چه مرحله‌ای است؟ ",
     "statusSelectRequired": "وضعیت شما الزامی است",
     "statusSelectPlaceholder": "وضعیت خود را انتخاب کنید: ",
+    
     "idea": {
- "ideaExplanation": "ایده خود را در ۵ خط توضیح دهید؟ *",
- "ideaExplanationPlaceholder": "توضیحات",
- "ideaExplanationRequired": "پر کردن این قسمت الزامی است."
+      "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",
+
+      "ideaExplanation": "ایده خود را در ۵ خط توضیح دهید؟ *",
+      "ideaExplanationPlaceholder": "توضیحات",
+      "ideaExplanationRequired": "پر کردن این قسمت الزامی است."
     },
+
     "trial": {
- "pitchDeck": "آیا دارای Pitch Deck هستید؟*",
- "businessPlan": "آیا دارای طرح کسب‌وکار هستید؟*",
- "financial": "آیا دارای اطلاعات مالی هستید؟*",
- "problems": "مشکلات",
+      "description": "Take the first bold step by presenting your idea and identifying the most promising path to success. Carefully plan your journey to launch, define each milestone, and gather the right team of experts to support you along the way. Remember, validating the profitability of your idea is essential—low returns and high risks can lead to failure. A well-prepared trial phase sets the foundation for everything that follows.",
+      
+      "pitchDeck": "Do you have Pitch deck?*",
+      "choseFile": "Choose File",
+      
+      "productName": "Product Name *",
+      "productNameRequired": "Product Name is Required.",
+      "productNamePlaceholder": "Enter your Product Name",
+      
+      "siteAddress": "Site Address *",
+      "siteAddressRequired": "Site Address is Required.",
+      "siteAddressPlaceholder": "Enter your Site Address",
+      
+      "businessPlan": "Do you have Business Plan?",
 
- "problemsLabel": "مشکلی که قصد دارید با محصول یا خدمت خود حل کنید را توضیح دهید.*",
- "problemsPlaceholder": "توضیحات",
- "problemsRequired": "این فیلد الزامی است",
+      "financial": "Do you have Financial?*",
+     
+      
+      "businessPlanRequired": "Please choose an option",
 
- "solutions": "راه‌حل‌ها",
- "solutionsUniqueValue": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
- "solutionsUniqueValueRequired": "این فیلد الزامی است",
- "solutionsUniqueValuePlaceholder": "توضیحات",
-
- "solutionsLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
- "solutionsLevelList": [
-   "اصل اساسی مشاهده شده است.",
-   "مفهوم فناوری تدوین شده است.",
-   "اثبات تجربی مفهوم.",
-   "فناوری در آزمایشگاه تأیید شده است.",
-   "فناوری در شرایط محیطی تأیید شده است.",
-   "فناوری در شرایط محیطی ارائه شده است.",
-   "نمونه اولیه سیستم در محیط عملیاتی MVP نمایش داده شده است.",
-   "سیستم واقعی در محیط عملیاتی اثبات شده است.",
-   "سیستم کامل و تأیید شده است."
- ],
-
- "solutionsPosition": "چه چیزی در پیشنهاد ارزش منحصربه‌فرد شما (نوآوری) جدید است؟*",
- "solutionsPositionRequired": "این فیلد الزامی است",
- "solutionsPositionPlaceholder": "توضیحات",
-
- "businessModel": "مدل کسب‌وکار",
- "businessMonetization": "روش درآمدزایی برنامه خود را توضیح دهید؟*",
- "businessMonetizationRequired": "این فیلد الزامی است",
- "businessMonetizationPlaceholder": "توضیحات",
-
- "businessDelivery": "ساختار چرخه فروش خود را از ارتباط تا تحویل به وضوح ذکر کنید.*",
- "businessDeliveryRequired": "این فیلد الزامی است",
- "businessDeliveryPlaceholder": "توضیحات",
-
- "businessFinancial": "اگر برنامه شما دارای مدل مالی است، لطفاً آن را بارگذاری کنید.",
- "choseFile": "انتخاب فایل",
-
- "businessAccelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟*",
- "businessAcceleratorsRequired": "این فیلد الزامی است",
- "businessAcceleratorsPlaceholder": "توضیحات",
-
- "businessKnowUs": "چگونه با ما آشنا شدید؟*",
- "businessKnowUsRequired": "این فیلد الزامی است",
- "businessKnowUsPlaceholder": "توضیحات",
-
- "targetMarket": "بازار هدف",
- "targetCharacteristics": "بر اساس چه ویژگی‌هایی تصمیم می‌گیرید که مشتریان شما چه کسانی هستند و چه کسانی نیستند؟*",
- "targetCharacteristicsRequired": "این فیلد الزامی است",
- "targetCharacteristicsPlaceholder": "توضیحات",
-
- "targetCustomers": "مشتریان فعلی شما چه کسانی هستند؟ تاکنون چند مشتری داشته‌اید؟*",
- "targetCustomersRequired": "این فیلد الزامی است",
- "targetCustomersPlaceholder": "توضیحات",
-
- "targetEstimated": "چگونه اندازه بازار را تخمین زده‌اید؟*",
- "targetEstimatedRequired": "این فیلد الزامی است",
- "targetEstimatedPlaceholder": "توضیحات",
-
- "property": "دارایی",
- "propertyRevenue": "استارتاپ شما از زمان آغاز تاکنون چقدر درآمد داشته است؟*",
- "propertyRevenueRequired": "این فیلد الزامی است",
- "propertyRevenuePlaceholder": "توضیحات",
-
- "propertyMonthly": "درآمد ماهانه شما چقدر است؟*",
- "propertyMonthlyRequired": "این فیلد الزامی است",
- "propertyMonthlyPlaceholder": "توضیحات",
-
- "propertyRate": "نرخ سود فعلی شما چقدر است؟*",
- "propertyRateRequired": "این فیلد الزامی است",
- "propertyRatePlaceholder": "توضیحات",
-
- "propertyBusiness": "قبل از شروع کسب‌وکار خود چه میزان تأمین مالی داشته‌اید؟*",
- "propertyBusinessRequired": "این فیلد الزامی است",
- "propertyBusinessPlaceholder": "توضیحات",
-
- "propertyCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟*",
- "propertyCapitalRequired": "این فیلد الزامی است",
- "propertyCapitalPlaceholder": "توضیحات"
+      "businessFinancial": "If your plan has a financial model, please upload it."
     },
 
-    "pitchDeck": "آیا پیچ دک تهیه کرده‌اید؟",
-    "pitchDeckRequired": "لطفا یکی از گزینه های زیر را انتخاب کنید.",
-    
-    "businessPlan": "آیا بیزینس پلن آماده کرده‌اید؟",
-    "businessPlanRequired": "لطفا یکی از گزینه های زیر را انتخاب کنید.",
-    
-    "productName": "نام محصول *",
-    "productNameRequired": "نام محصول الزامی است.",
-    "productNamePlaceholder": "لطفا نام محصول خود را وارد کنید.",
-    
-    "siteAddress": "آدرس وب سایت *",
-    "siteAddressRequired": "آدرس وب سایت الزامی است.",
-    "siteAddressPlaceholder": "لطفا آدرس وب سایت خود را وارد کنید.",
+    "MVP": {
+      "description": "MVP is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development. This way, you are able to create the tangible product that provides the best and most appealing user experience for the most economical cost, an that can challenge and validate assumptions about a product's requirements.",
+      
+      "pitchDeck": "Do you have Pitch deck?*",
+      "choseFile": "Choose File",
 
+      "productName": "Product Name *",
+      "productNameRequired": "Product Name is Required.",
+      "productNamePlaceholder": "Enter your Product Name",
+      
+      "siteAddress": "Site Address *",
+      "siteAddressRequired": "Site Address is Required.",
+      "siteAddressPlaceholder": "Enter your Site Address",
+
+      "businessPlan": "Do you have Business Plan?*",
+      
+      "businessModel": "Business Model",
+      "businessMonetization": "Describe your program's monetization method?*",
+      "businessMonetizationRequired": "This field is required",
+      "businessMonetizationPlaceholder": "Description",
+      
+      "businessDelivery": "Please clearly mention the structure of your sales cycle from contact to delivery.*",
+      "businessDeliveryRequired": "This field is required",
+      "businessDeliveryPlaceholder": "Description",
+      
+      "financial": "If your plan has a financial model, please upload it.",
+
+      "businessAccelerators": "Have you previously cooperated with investors or accelerators?*",
+      "businessAcceleratorsRequired": "This field is required",
+      "businessAcceleratorsPlaceholder": "Description",
+
+      "businessKnowUs": "How did you get to know us?*", 
+      "businessKnowUsRequired": "This field is required",
+      "businessKnowUsPlaceholder": "Description"
+    },
+
+    "FirstSale": {
+      "description" : "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
+      "choseFile": "Choose File",
+
+      "productName": "Product Name *",
+      "productNameRequired": "Product Name is Required.",
+      "productNamePlaceholder": "Enter your Product Name",
+
+      "siteAddress": "Site Address *",
+      "siteAddressRequired": "Site Address is Required.",
+      "siteAddressPlaceholder": "Enter your Site Address",
+
+      "pitchDeck": "Do you have Pitch deck?",
+                            "pitchDeckRequired": "Please choose an option",
+      
+      "businessPlan": "Do you have Business Plan?",
+                            "businessPlanRequired": "Please choose an option",
+
+      "financial": "Do you have Financial?*"
+    },
+
+    "SaleDevelopment" : {
+      "description": "Collaborate with manufacturers to ensure a high quality product delivered to buyer's doors that exceeds customer expectations. Sales development is usually an organization that sits between the marketing and sales functions of a business and is responsible for the front-end of the sales cycle including identifying, connecting with, and qualifying leads. They normally set up qualified meetings between a salesperson and potential buyers with a high probability of purchasing a product.",
+      
+      "pitchDeck": "Do you have Pitch deck?*",
+      "choseFile": "Choose File",
+
+      "productName": "Product Name *",
+      "productNameRequired": "Product Name is Required.",
+      "productNamePlaceholder": "Enter your Product Name",
+
+      "siteAddress": "Site Address *",
+      "siteAddressRequired": "Site Address is Required.",
+      "siteAddressPlaceholder": "Enter your Site Address",
+
+      "businessPlan": "Do you have Business Plan?",
+      "financial": "Do you have Financial?*"
+    },
+
+    "commons": {
+      
+      "problems": {
+        "title": "Problems",
+        "customerProblem": "Describe the customer problem you want to solve with your product or service. *",
+        "customerProblemRequired": "This field is required!",
+        "customerProblemPlaceholder": "Description"
+      },
+
+      "propertyDropDown": {
+        "property": "Property",
+        "propertyRevenue": "How much revenue has your startup made since its inception?*",
+        "propertyRevenueRequired": "This field is required",
+        "propertyRevenuePlaceholder": "Description",
+
+        "propertyMonthly": "How much is your monthly income?*",
+        "propertyMonthlyRequired": "This field is required",
+        "propertyMonthlyPlaceholder": "Description",
+
+        "propertyRate": "What is your current interest rate?*",
+        "propertyRateRequired": "This field is required",
+        "propertyRatePlaceholder": "Description",
+
+        "propertyBusiness": "How much current funding did you raise before starting your business?*",
+        "propertyBusinessRequired": "This field is required",
+        "propertyBusinessPlaceholder": "Description",
+
+        "propertyCapital": "How much capital do you need to start your project?*",
+        "propertyCapitalRequired": "This field is required",
+        "propertyCapitalPlaceholder": "Description"
+      },
+
+      "targetMarketDropDown": {
+
+        "targetMarket": "Target Market",
+        "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?*",
+        "targetCharacteristicsRequired": "This field is required",
+        "targetCharacteristicsPlaceholder": "Description",
+
+        "targetCustomers": "Who are your current customers? How many customers have you had so far?*",
+        "targetCustomersRequired": "This field is required",
+        "targetCustomersPlaceholder": "Description",
+
+        "targetEstimated": "How have you estimated the size of the market?*",
+        "targetEstimatedRequired": "This field is required",
+        "targetEstimatedPlaceholder": "Description",
+
+        "targetTotal": "targetTotal",
+        "targetTotalRequired": "targetTotal",
+        "targetTotalPlaceholder": "targetTotal"
+      },
+
+      "solutionLevel": {
+        "solutions": "Solutions",
+        "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?*",
+        "solutionsUniqueValueRequired": "this fields is required",
+        "solutionsUniqueValuePlaceholder": "Description",
+
+        "solutionsLevel": "How much is level of your product and technology preparation?",
+        "solutionsLevelList": [
+          "The basic principle has been observed.",
+          "The technology concept has been formulated.",
+          "Experimental proof of concept.",
+          "The confirmed technology in laboratory.",
+          "The confirmed technology in the environmental conditions",
+          "The presented technology in the environmental conditions",
+          "Show the system prototype in the mvp operating environment.",
+          "The proved realistic system in the operating environment.",
+          "A complete and qualified system."
+        ],
+
+
+        "solutionsPosition": "What is your unique value proposition (innovation)? What is new about what you do?*",
+        "solutionsPositionRequired": "this fields is required",
+        "solutionsPositionPlaceholder": "Description"
+      },
+
+      "businessModel": {
+        "title": "Business Model",
+        "monetization": "Describe the method of monetization of your plan? *",
+        "monetizationOfYourPlan": "Explain how you plan to generate revenue?*",
+        "monetizationOfYourPlanRequired": "This field is required!",
+        "monetizationOfYourPlanPlaceholder": "Description",
+        "monetizationPlaceholder": "Description", 
+        "monetizationRequired": "This field is required!",
+
+        "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. *",
+        "deliveryPlaceholder": "Description",
+        "deliveryRequired": "This field is required!",
+
+        "financialPlan": "If your plan has a financial model, please upload.",
+        "choseFile": "Choose File",
+
+        "accelerators": "Have you previously cooperated with investors or accelerators?*",
+        "acceleratorsPlaceholder": "Description",
+        "acceleratorsRequired": "This field is required!",
+
+        "knowUs": "How did you get to know us?*",
+        "knowUsPlaceholder": "Description", 
+        "knowUsRequired": "This field is required!",
+
+        "structureOfYourSales": "Please explain your sales structure from the beginning *",
+        "structureOfYourSalesPlaceholder": "Description",
+        "structureOfYourSalesRequired": "This field is required!"
+      }
+    },
+    
     "investmentCeiling": "سقف سرمایه گذاری",
     "investmentCeilingRequired": "سقف سرمایه گذاری الزامی است.",
     "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",

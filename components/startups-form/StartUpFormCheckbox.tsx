@@ -1,3 +1,5 @@
+'use client'
+
 import { StartupsFormData } from '@/types/global';
 import React, { useEffect, useState } from 'react'
 import { UseFormRegister } from 'react-hook-form';
@@ -42,7 +44,7 @@ const StartUpFormCheckbox = (props: Props) => {
                   />
                 </div>
             </div>
-            <p id={name} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{name}</p>
+            <p id={name} className='font-barlow font-medium'>{name}</p>
         </div>
     </div>
   )

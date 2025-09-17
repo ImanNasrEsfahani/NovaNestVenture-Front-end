@@ -54,7 +54,7 @@ export default function StartUpTrialRefactore(props: Props) {
 
   return (
     <div className='w-full h-auto px-4 my-4'>
-      <p>{t('startUp',{ returnObjects: true }).trial.description}</p>
+      <p className='mt-4 mb-6'>{t('startUp',{ returnObjects: true }).trial.description}</p>
         <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
@@ -293,21 +293,21 @@ export default function StartUpTrialRefactore(props: Props) {
           // handlePitclearchFileChange={handlePitchFileChange}
           handleFinancialModelFileChange={handleFinancialModelFileChange}
           translations={{
-            businessModel: t('startUp',{ returnObjects: true }).commons.businessModel,
-            businessMonetization: t('startUp',{ returnObjects: true }).commons.businessMonetization,
-            businessMonetizationRequired: t('startUp',{ returnObjects: true }).commons.businessMonetizationRequired,
-            businessMonetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessMonetizationPlaceholder,
-            businessDelivery: t('startUp',{ returnObjects: true }).commons.businessDelivery,
-            businessDeliveryRequired: t('startUp',{ returnObjects: true }).commons.businessDeliveryRequired,
-            businessDeliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessDeliveryPlaceholder,
-            businessFinancial: t('startUp',{ returnObjects: true }).commons.businessFinancial,
-            choseFile: t('startUp',{ returnObjects: true }).commons.choseFile,
-            businessAccelerators: t('startUp',{ returnObjects: true }).commons.businessAccelerators,
-            businessAcceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessAcceleratorsRequired,
-            businessAcceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessAcceleratorsPlaceholder,
-            businessKnowUs: t('startUp',{ returnObjects: true }).commons.businessKnowUs,
-            businessKnowUsRequired: t('startUp',{ returnObjects: true }).commons.businessKnowUsRequired,
-            businessKnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessKnowUsPlaceholder,
+            title: t('startUp',{ returnObjects: true }).commons.businessModel.title,
+            Monetization: t('startUp',{ returnObjects: true }).commons.businessModel.Monetization,
+            MonetizationRequired: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationRequired,
+            MonetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationPlaceholder,
+            Delivery: t('startUp',{ returnObjects: true }).commons.businessModel.Delivery,
+            DeliveryRequired: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryRequired,
+            DeliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryPlaceholder,
+            Financial: t('startUp',{ returnObjects: true }).commons.businessModel.Financial,
+            choseFile: t('startUp',{ returnObjects: true }).commons.businessModel.choseFile,
+            Accelerators: t('startUp',{ returnObjects: true }).commons.businessModel.Accelerators,
+            AcceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsRequired,
+            AcceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsPlaceholder,
+            KnowUs: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUs,
+            KnowUsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsRequired,
+            KnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsPlaceholder,
           }}
         />
         <TargetMarketDropDown 

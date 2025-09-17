@@ -224,7 +224,7 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
                       handleFileCounterChange={handleFileCounterChange}
                       handlePitchFileChange={handlePitchFileChange}
                       handleBusinessFileChange={handleBusinessFileChange}
-                       filesCounter={filesCounter}
+                      filesCounter={filesCounter}
                       register={register}
                       errors={errors} 
                       setValue={setValue} 

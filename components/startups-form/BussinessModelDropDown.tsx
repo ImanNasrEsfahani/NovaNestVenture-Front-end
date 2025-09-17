@@ -11,21 +11,21 @@ type Props = {
   errors: FieldErrors<StartupsFormData>;
   handleFinancialModelFileChange: (file: any) => void;
   translations: {
-    businessModel: string;
-    businessMonetization: string;
-    businessMonetizationRequired: string;
-    businessMonetizationPlaceholder: string;
-    businessDelivery: string;
-    businessDeliveryRequired: string;
-    businessDeliveryPlaceholder: string;
-    businessFinancial: string;
+    title: string;
+    Monetization: string;
+    MonetizationRequired: string;
+    MonetizationPlaceholder: string;
+    Delivery: string;
+    DeliveryRequired: string;
+    DeliveryPlaceholder: string;
+    Financial: string;
     choseFile: string;
-    businessAccelerators: string;
-    businessAcceleratorsRequired: string;
-    businessAcceleratorsPlaceholder: string;
-    businessKnowUs: string;
-    businessKnowUsRequired: string;
-    businessKnowUsPlaceholder: string;
+    Accelerators: string;
+    AcceleratorsRequired: string;
+    AcceleratorsPlaceholder: string;
+    KnowUs: string;
+    KnowUsRequired: string;
+    KnowUsPlaceholder: string;
   };
 };
 
@@ -43,8 +43,8 @@ export default function BussinessModelDropDown(props: Props) {
         }}
       >
         <div className="w-full h-auto flex justify-center items-center gap-2">
-          <p className="font-barlow text-white font-medium text-[24px]">
-            {translations.businessModel}
+          <p className="font-barlow text-white font-medium text-2xl">
+            {translations.title}
           </p>
           <div
             className={`${businessOpen ? 'rotate-180' : 'rotate-0'} transition-all duration-300 ease-out mt-2`}
@@ -57,31 +57,31 @@ export default function BussinessModelDropDown(props: Props) {
         <>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.businessMonetization}
+              title={translations.Monetization}
               register={register}
               errors={errors}
-              required={translations.businessMonetizationRequired}
+              required={translations.MonetizationRequired}
               nameTextArea={'MonetizationOfYourPlan'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.businessMonetizationPlaceholder}
+              placeholder={translations.MonetizationPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.businessDelivery}
+              title={translations.Delivery}
               register={register}
               errors={errors}
-              required={translations.businessDeliveryRequired}
+              required={translations.DeliveryRequired}
               nameTextArea={'structureOfYourSales'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.businessDeliveryPlaceholder}
+              placeholder={translations.DeliveryPlaceholder}
             />
           </div>
           <div className="w-full h-auto flex justify-start items-center">
             <p className="text-black font-medium text-[15px] leading-[18px]">
-              {translations.businessFinancial}
+              {translations.Financial}
             </p>
           </div>
           <div className="w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6">
@@ -103,26 +103,26 @@ export default function BussinessModelDropDown(props: Props) {
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.businessAccelerators}
+              title={translations.Accelerators}
               register={register}
               errors={errors}
-              required={translations.businessAcceleratorsRequired}
+              required={translations.AcceleratorsRequired}
               nameTextArea={'cooperatedWithInvestors'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.businessAcceleratorsPlaceholder}
+              placeholder={translations.AcceleratorsPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.businessKnowUs}
+              title={translations.KnowUs}
               register={register}
               errors={errors}
-              required={translations.businessKnowUsRequired}
+              required={translations.KnowUsRequired}
               nameTextArea={'getToKnowUs'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.businessKnowUsPlaceholder}
+              placeholder={translations.KnowUsPlaceholder}
             />
           </div>
         </>
