@@ -1,5 +1,5 @@
 import UploadFile from '@/public/static/logos/FileUpload'
-import React, { useState } from 'react'
+import React from 'react'
 import Input from '@/components/common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
@@ -43,10 +43,6 @@ const StartUpMvpRefactore = (props: Props) => {
   } = props;  
 
   const { t } = getServerTranslation(lang, 'formComponent');
-
-  const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
-  const [businessOpen, setBusinessOpen] = useState<boolean>(false);
-
 
   return (
     <div className='w-full h-auto px-4 my-4'>

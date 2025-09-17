@@ -166,12 +166,8 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
     <div className="max-w-responsive mx-auto py-20">
       <div className='mb-12'>
         <FormTitle  
-          lang={lang} 
-          formName='startUp'
-          translations={{
-            formTitle: translations.formTitle,
-            formSubtitle: translations.formSubtitle
-          }}
+          formTitle={translations.formTitle}
+          formSubtitle={translations.formSubtitle}
         />
       </div>
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">

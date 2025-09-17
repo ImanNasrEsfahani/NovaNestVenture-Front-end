@@ -1,8 +1,6 @@
-import ChevDown from '@/public/static/logos/ChevDown'
 import FileUpload from '@/public/static/logos/FileUpload'
-import React, { useState } from 'react'
+import React from 'react'
 import Input from '@/components/common/form/Input'
-import TextArea from '@/components/common/TextArea'
 import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown'
 import PropertyDropDown from '@/components/startups-form/PropertyDropDown'
 import SolutionLevel from '@/components/startups-form/SolutionLevel'
@@ -48,10 +46,7 @@ const StartUpSaleDevelopRefactore = (props: Props) => {
         handleFinancialModelFileChange
     } = props; 
       
-    const { t } = getServerTranslation(lang, 'formComponent');
-
-  const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
-
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div className='w-full h-auto px-4 my-4'>

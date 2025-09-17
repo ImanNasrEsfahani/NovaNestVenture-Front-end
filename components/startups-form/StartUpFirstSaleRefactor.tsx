@@ -1,5 +1,5 @@
 import FileUpload from 'public/static/logos/FileUpload'
-import React, { useState } from 'react'
+import React from 'react'
 import Input from '@/components/common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
@@ -45,10 +45,8 @@ const StartUpFirstSaleRefactor = (props: Props) => {
         handleFinancialModelFileChange
       } = props; 
       
-        const lang = useLang((s) => s.lang)
-        const { t } = getServerTranslation(lang, 'formComponent');
-
-        const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
+  const lang = useLang((s) => s.lang)
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div className='w-full h-auto px-4 my-4'>

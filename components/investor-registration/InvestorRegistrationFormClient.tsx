@@ -133,12 +133,9 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
       <div className="max-w-responsive mx-auto py-20">
         <div className='mb-12'>
           <FormTitle
-            lang={lang}
-            formName='startUp'
-            translations={{
-              formTitle: translations.formTitle,
-              formSubtitle: translations.formSubtitle
-            }}/>
+            formTitle={translations.formTitle}
+            formSubtitle={translations.formSubtitle}
+        />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">

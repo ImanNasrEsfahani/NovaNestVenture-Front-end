@@ -130,12 +130,9 @@ export default function JobFormClient({ lang, translations }: JobFormClientProps
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle
-        lang={lang}
-        formName='jobForm'
-        translations={{
-          formTitle: translations.formTitle,
-          formSubtitle: translations.formSubtitle
-        }}/>
+        formTitle={translations.formTitle}
+        formSubtitle={translations.formSubtitle}
+      />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
         
         <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 xl:grid-cols-3">
