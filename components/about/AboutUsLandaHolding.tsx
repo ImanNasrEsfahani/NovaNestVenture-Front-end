@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 // import { getInitialProps } from 'react-i18next';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export default function AboutUsLandaHolding({lang}: {lang: string}) {
 
   const { t } = getServerTranslation(lang, 'aboutUs');
@@ -42,7 +44,7 @@ export default function AboutUsLandaHolding({lang}: {lang: string}) {
             className="rounded-xl"
             loading="lazy"
             layout="fill"
-            src="/static/images/about/team.webp"
+            src={`${base}static/images/about/team.webp`}
             alt="NovaNest Venture Team"
             objectFit="cover"
           />

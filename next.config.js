@@ -12,7 +12,8 @@ const nextConfig = {
       'NovaNestVenture.com',
       'localhost',
       "nova-back.NovaNestVenture.com"
-    ]
+    ],
+    unoptimized: true,
   },
   async rewrites() {
     return [
