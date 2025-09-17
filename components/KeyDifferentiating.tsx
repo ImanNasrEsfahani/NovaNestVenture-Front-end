@@ -45,7 +45,7 @@ export default function KeyDifferentiating({lang}: {lang: string}) {
       </div>
       <div className="hidden items-center w-[30%] md:flex md:justify-end">
         <Image
-          src="/static/images/home/key-differentiating/Vector 58.png"
+          src="/static/images/home/key-differentiating/differentiating.png"
           alt="NovaNest Venture Key Differentiating"
           width={486}
           height={741}

@@ -31,7 +31,7 @@ export default function Page({ params }: { params: { lang: string } }) {
       <Hero
         lang={params.lang}
         titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
-        backgroundImage="Hero.webp"
+        backgroundImage="hero.webp"
       />
       {/* <Hero2 lang={lang} /> */}
 
