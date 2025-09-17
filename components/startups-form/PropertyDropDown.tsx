@@ -45,7 +45,7 @@ export default function PropertyDropDown(props: Props) {
           setPropertyOpen(!propertyOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px] '>{translations.property}</p>
+               <p className='font-barlow text-white text-3xl'>{translations.property}</p>
                <div className={`${propertyOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>

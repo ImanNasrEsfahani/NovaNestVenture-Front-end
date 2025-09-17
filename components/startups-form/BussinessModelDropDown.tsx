@@ -43,9 +43,7 @@ export default function BussinessModelDropDown(props: Props) {
         }}
       >
         <div className="w-full h-auto flex justify-center items-center gap-2">
-          <p className="font-barlow text-white font-medium text-2xl">
-            {translations.title}
-          </p>
+          <p className="font-barlow text-white text-3xl">{translations.title}</p>
           <div
             className={`${businessOpen ? 'rotate-180' : 'rotate-0'} transition-all duration-300 ease-out mt-2`}
           >

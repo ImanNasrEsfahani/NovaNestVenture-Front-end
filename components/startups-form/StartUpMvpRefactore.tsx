@@ -4,9 +4,9 @@ import Input from '@/components/common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { getServerTranslation } from 'app/i18n'
-import ChevDown from '@/public/static/logos/ChevDown'
-import TextArea from '@/components/common/TextArea'
+import ProblemsSection from '@/components/startups-form/ProblemSection'
 import SolutionLevel from '@/components/startups-form/SolutionLevel'
+import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown'
 
 type Props = {
     lang: string;
@@ -194,30 +194,14 @@ const StartUpMvpRefactore = (props: Props) => {
                )}
           </div>
         </div>
-        <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
-          setProblemsOpen(!problemsOpen)
-        }}>
-          <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-semibold text-[24px] '>{t('startUp',{ returnObjects: true }).MVP.problems}</p>
-               <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-                 <ChevDown />
-               </div>
-          </div>
-        </div>
-        {problemsOpen && (
-          <div className='w-full h-auto md:px-1'>
-               <TextArea
-                 title={t('startUp',{ returnObjects: true }).MVP.problemsLabel}
-                 register={register}
-                 errors={errors} 
-                 required={t('startUp',{ returnObjects: true }).MVP.problemsRequired} 
-                 nameTextArea={"customerProblem"} 
-                 patternValue={''} 
-                 patternMessage={''} 
-                 placeholder={t('startUp',{ returnObjects: true }).MVP.problemsPlaceholder}
-               />
-          </div>
-        )}
+        <ProblemsSection
+          title={t('startUp',{ returnObjects: true }).commons.problems.title}
+          textAreaTitle={t('startUp',{ returnObjects: true }).commons.problems.customerProblem}
+          textAreaRequired={t('startUp',{ returnObjects: true }).commons.problems.customerProblemRequired}
+          textAreaPlaceholder={t('startUp',{ returnObjects: true }).commons.problems.customerProblemPlaceholder}
+          register={register}
+          errors={errors}
+        />
         <SolutionLevel
           handleSolutionsLevelChange={handleSolutionsLevelChange}
           solutionsLevel={solutionsLevel}
@@ -225,89 +209,29 @@ const StartUpMvpRefactore = (props: Props) => {
           errors={errors}
           setValue={setValue}
         />
-        <div className={`w-full h-auto cursor-pointer py-6 my-4 ${businessOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
-          setBusinessOpen(!businessOpen)
-        }}>
-            <div className='w-full h-auto flex justify-center items-center gap-2'>
-                 <p className='font-barlow text-white font-medium text-[24px]'>{t('startUp',{ returnObjects: true }).MVP.businessModel}</p>
-                 <div className={`${businessOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-                   <ChevDown />
-                 </div>
-            </div>
-        </div>
-        {businessOpen && (
-                <>
-                    <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                        <TextArea 
-                            title={t('startUp',{ returnObjects: true }).MVP.businessMonetization}
-                            register={register}
-                            errors={errors} 
-                            required={t('startUp',{ returnObjects: true }).MVP.businessMonetizationRequired} 
-                            nameTextArea={"MonetizationOfYourPlan"} 
-                            patternValue={''} 
-                            patternMessage={''} 
-                            placeholder={t('startUp',{ returnObjects: true }).MVP.businessMonetizationPlaceholder}                                                 
-                        />
-                    </div>
-                    <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                        <TextArea 
-                            title={t('startUp',{ returnObjects: true }).MVP.businessDelivery}
-                            register={register}
-                            errors={errors} 
-                            required={t('startUp',{ returnObjects: true }).MVP.businessDeliveryRequired} 
-                            nameTextArea={"structureOfYourSales"} 
-                            patternValue={''} 
-                            patternMessage={''} 
-                            placeholder={t('startUp',{ returnObjects: true }).MVP.businessDeliveryPlaceholder}
-                        />
-                    </div>
-                    <div className='w-full h-auto flex justify-start items-center'>
-                        <p className='text-black font-medium text-[15px] leading-[18px]'>{t('startUp',{ returnObjects: true }).MVP.financial}</p>
-                    </div>
-                    <div className='w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6'>
-                        <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
-                            <input
-                                  type="file"
-                                  name='financialModelFile'
-                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
-                                  onChange={(e) => {
-                                    handleFinancialModelFileChange(e.target.files ? e.target.files[0] : '')
-                                  }}
-                            />
-                            <p className='text-black font-barlow font-medium text-[13px] leading-4'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
-                            <UploadFile 
-                              name="financialModelFile"
-                              label="Upload your financial model"
-                              onChange={(file) => handleFinancialModelFileChange(file)}
-                            />
-                        </label>
-                    </div>
-                    <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                        <TextArea 
-                            title={t('startUp',{ returnObjects: true }).MVP.businessAccelerators}
-                            register={register}
-                            errors={errors} 
-                            required={t('startUp',{ returnObjects: true }).MVP.businessAcceleratorsRequired} 
-                            nameTextArea={"cooperatedWithInvestors"} 
-                            patternValue={''} 
-                            patternMessage={''} 
-                            placeholder={t('startUp',{ returnObjects: true }).MVP.businessAcceleratorsPlaceholder}                                            
-                        />
-                    </div>
-                    <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                        <TextArea 
-                            title={t('startUp',{ returnObjects: true }).MVP.businessKnowUs}
-                            register={register}
-                            errors={errors} 
-                            required={t('startUp',{ returnObjects: true }).MVP.businessKnowUsRequired} 
-                            nameTextArea={"getToKnowUs"} 
-                            patternValue={''} 
-                            patternMessage={''} 
-                            placeholder={t('startUp',{ returnObjects: true }).MVP.businessKnowUsPlaceholder}                                            
-                        />
-                    </div>
-                </>
-        )}
+      <BussinessModelDropDown
+        register={register}
+        errors={errors}
+        // handlePitchFileChange={handlePitchFileChange}
+        handleFinancialModelFileChange={handleFinancialModelFileChange}
+        translations={{
+          title: t('startUp',{ returnObjects: true }).commons.businessModel.title,
+          Monetization: t('startUp',{ returnObjects: true }).commons.businessModel.Monetization,
+          MonetizationRequired: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationRequired,
+          MonetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationPlaceholder,
+          Delivery: t('startUp',{ returnObjects: true }).commons.businessModel.Delivery,
+          DeliveryRequired: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryRequired,
+          DeliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryPlaceholder,
+          Financial: t('startUp',{ returnObjects: true }).commons.businessModel.Financial,
+          choseFile: t('startUp',{ returnObjects: true }).commons.businessModel.choseFile,
+          Accelerators: t('startUp',{ returnObjects: true }).commons.businessModel.Accelerators,
+          AcceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsRequired,
+          AcceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsPlaceholder,
+          KnowUs: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUs,
+          KnowUsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsRequired,
+          KnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsPlaceholder,
+        }}
+      />
     </div>
   )
 }

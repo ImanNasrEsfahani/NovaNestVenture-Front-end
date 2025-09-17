@@ -21,10 +21,10 @@ export default async function Banner({
       >
         <div className="h-auto w-full">
           <div className="h-auto w-full flex flex-col items-start gap-4">
-            <p className="text-white font-medium font-header text-[16px]" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+            <p className="text-white font-medium font-header text-xl" style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.9)', WebkitTextStroke: '2px gray', WebkitTextStrokeWidth: '2px', WebkitTextFillColor: 'white', paintOrder: 'stroke fill' }}>
               {lang == 'en' ? 'NovaNest Venture' : 'نووا نست ونچر'}
             </p>
-            <p className="text-white font-header font-medium text-3xl" style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.9)' }}>
+            <p className="text-white font-header font-semibold text-6xl" style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.9)', WebkitTextStroke: '2px gray', WebkitTextStrokeWidth: '2px', WebkitTextFillColor: 'white', paintOrder: 'stroke fill' }}>
               {title}
             </p>
           </div>

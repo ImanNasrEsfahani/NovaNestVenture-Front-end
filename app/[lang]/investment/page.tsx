@@ -42,10 +42,10 @@ export default function Page({
       </div>
 
       {/* Centered Text Section */}
-      <div className="flex justify-center items-center py-16">
+      <div className="flex justify-center items-center pt-32 pb-16">
         <div className="max-w-[75%] mx-auto text-center px-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
-            Startup Investment & Entrepreneurial Growth at NovaNest Venture
+            Startup Investment & Entrepreneurial Growth
             </h2>
           <h3 className="text-xl md:text-2xl font-semibold mb-8 text-gray-600">
             Empowering Scalable Startups. Supporting Founders. Building the Future.
@@ -63,8 +63,8 @@ export default function Page({
           {/* For Startup Investors Card */}
           <div className="flex flex-col bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center mb-6">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mr-4 mb-8">
+                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -79,7 +79,7 @@ export default function Page({
             <div className="text-center mt-6">
               <a
                 href="https://www.novanestventure.com/investor-registration"
-                className="btn btn-primary btn-lg"
+                className="btn btn-outline btn-lg"
               >
                 Investor Registration
               </a>
@@ -89,8 +89,8 @@ export default function Page({
           {/* For Entrepreneurs & Startup Founders Card */}
           <div className="flex flex-col bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center mb-6">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mr-4 mb-8">
+                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -105,7 +105,7 @@ export default function Page({
             <div className="text-center mt-6">
               <a
                 href="https://www.novanestventure.com/startups-form"
-                className="btn btn-success btn-lg"
+                className="btn btn-gray btn-lg"
               >
                 Startup Application
               </a>
@@ -170,7 +170,7 @@ export default function Page({
 
 
 
-      <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
+      {/* <div className="max-w-responsive mx-auto flex justify-between my-28 gap-5 font-header">
         <div className="w-full">
           <div className="flex flex-col">
             <span className="text-2xl md:text-4xl mb-8 font-bold">
@@ -189,7 +189,7 @@ export default function Page({
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-      </div>
+      </div> */}
       {/* <div className="grid grid-cols-1 items-center gap-6 px-8 py-10 md:grid-cols-2 md:gap-24 md:px-28 md:py-16">
         <div className="flex flex-col gap-6">
           <span className="font-header text-2xl text-primary md:text-4xl">
@@ -214,7 +214,7 @@ export default function Page({
       {/* <ButtonRefactor text={t('buttonTitle')} />
         </div>
       </div> */}
-      <div className="max-w-responsive mx-auto py-10 font-header">
+      {/* <div className="max-w-responsive mx-auto py-10 font-header">
         <div className='flex justify-between items-center gap-6'>
           <div className="relative w-[27rem] h-[26rem] rtl:h-[22rem] hidden md:inline">
             <Image
@@ -234,11 +234,11 @@ export default function Page({
           </div>
         </div>
         <FeaturesCardsContainer lang={lang} />
-      </div>
+      </div> */}
       {/* <UpcomingEvents /> */}
 
       {/* Investment Form */}
-      <InvestorRegistrationForm lang={lang}/>
+      {/* <InvestorRegistrationForm lang={lang}/> */}
     </div>
   );
 }

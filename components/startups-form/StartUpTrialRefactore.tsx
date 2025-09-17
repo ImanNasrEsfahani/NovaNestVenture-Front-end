@@ -310,47 +310,47 @@ export default function StartUpTrialRefactore(props: Props) {
             KnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsPlaceholder,
           }}
         />
-        <TargetMarketDropDown 
-          register={register}
-          errors={errors}
-          translations={{
-            targetMarket: t('startUp',{ returnObjects: true }).commons.targetMarket,
-            targetCharacteristics: t('startUp',{ returnObjects: true }).commons.targetCharacteristics,
-            targetCharacteristicsRequired: t('startUp',{ returnObjects: true }).commons.targetCharacteristicsRequired,
-            targetCharacteristicsPlaceholder: t('startUp',{ returnObjects: true }).commons.targetCharacteristicsPlaceholder,
-            targetCustomers: t('startUp',{ returnObjects: true }).commons.targetCustomers,
-            targetCustomersRequired: t('startUp',{ returnObjects: true }).commons.targetCustomersRequired,
-            targetCustomersPlaceholder: t('startUp',{ returnObjects: true }).commons.targetCustomersPlaceholder,
-            targetEstimated: t('startUp',{ returnObjects: true }).commons.targetEstimated,
-            targetEstimatedRequired: t('startUp',{ returnObjects: true }).commons.targetEstimatedRequired,
-            targetEstimatedPlaceholder: t('startUp',{ returnObjects: true }).commons.targetEstimatedPlaceholder,
-            targetTotal: t('startUp',{ returnObjects: true }).commons.targetTotal,
-            targetTotalRequired: t('startUp',{ returnObjects: true }).commons.targetTotalRequired,
-            targetTotalPlaceholder: t('startUp',{ returnObjects: true }).commons.targetTotalPlaceholder,
-          }}
-        />
-        <PropertyDropDown
-          register={register}
-          errors={errors}
-          translations={{ 
-            property: t('startUp',{ returnObjects: true }).commons.property,
-            propertyRevenue: t('startUp',{ returnObjects: true }).commons.propertyRevenue,
-            propertyRevenueRequired: t('startUp',{ returnObjects: true }).commons.propertyRevenueRequired,
-            propertyRevenuePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyRevenuePlaceholder,
-            propertyMonthly: t('startUp',{ returnObjects: true }).commons.propertyMonthly,
-            propertyMonthlyRequired: t('startUp',{ returnObjects: true }).commons.propertyMonthlyRequired,
-            propertyMonthlyPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyMonthlyPlaceholder,
-            propertyRate: t('startUp',{ returnObjects: true }).commons.propertyRate,
-            propertyRateRequired: t('startUp',{ returnObjects: true }).commons.propertyRateRequired,
-            propertyRatePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyRatePlaceholder,
-            propertyBusiness: t('startUp',{ returnObjects: true }).commons.propertyBusiness,
-            propertyBusinessRequired: t('startUp',{ returnObjects: true }).commons.propertyBusinessRequired,
-            propertyBusinessPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyBusinessPlaceholder,
-            propertyCapital: t('startUp',{ returnObjects: true }).commons.propertyCapital,
-            propertyCapitalRequired: t('startUp',{ returnObjects: true }).commons.propertyCapitalRequired,
-            propertyCapitalPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyCapitalPlaceholder,
-           }}
-        />
+      <TargetMarketDropDown 
+        register={register}
+        errors={errors}
+        translations={{
+          targetMarket: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetMarket,
+          targetCharacteristics: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristics,
+          targetCharacteristicsRequired: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsRequired,
+          targetCharacteristicsPlaceholder: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsPlaceholder,
+          targetCustomers: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomers,
+          targetCustomersRequired: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersRequired,
+          targetCustomersPlaceholder: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersPlaceholder,
+          targetEstimated: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimated,
+          targetEstimatedRequired: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedRequired,
+          targetEstimatedPlaceholder: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedPlaceholder,
+          targetTotal: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotal,
+          targetTotalRequired: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalRequired,
+          targetTotalPlaceholder: t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalPlaceholder,
+        }}
+      />
+      <PropertyDropDown 
+        register={register}
+        errors={errors}
+        translations={{ 
+          property: t('startUp',{ returnObjects: true }).commons.propertyDropDown.property,
+          propertyRevenue: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenue,
+          propertyRevenueRequired: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenueRequired,
+          propertyRevenuePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenuePlaceholder,
+          propertyMonthly: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthly,
+          propertyMonthlyRequired: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyRequired,
+          propertyMonthlyPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyPlaceholder,
+          propertyRate: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRate,
+          propertyRateRequired: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRateRequired,
+          propertyRatePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRatePlaceholder,
+          propertyBusiness: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusiness,
+          propertyBusinessRequired: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessRequired,
+          propertyBusinessPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessPlaceholder,
+          propertyCapital: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapital,
+          propertyCapitalRequired: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalRequired,
+          propertyCapitalPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalPlaceholder,
+        }}
+      />
     </div>
   );
 };

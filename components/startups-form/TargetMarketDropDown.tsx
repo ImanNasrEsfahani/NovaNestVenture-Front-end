@@ -41,7 +41,7 @@ export default function TargetMarketDropDown(props: Props) {
           setTargetMarketOpen(!targetMarketOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px]'>{translations.targetMarket}</p>
+               <p className='font-barlow text-white text-3xl'>{translations.targetMarket}</p>
                <div className={`${targetMarketOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>

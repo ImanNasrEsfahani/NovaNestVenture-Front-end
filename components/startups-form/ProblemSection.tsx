@@ -34,7 +34,7 @@ const ProblemsSection = ({
         onClick={() => setProblemsOpen(!problemsOpen)}
       >
         <div className='w-full h-auto flex justify-center items-center gap-2'>
-          <p className='font-barlow text-white font-semibold text-[24px]'>{title}</p>
+          <p className='font-barlow text-white text-3xl'>{title}</p>
           <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
             <ChevDown />
           </div>
