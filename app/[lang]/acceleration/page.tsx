@@ -4,7 +4,6 @@ import { getServerTranslation } from 'app/i18n';
 // import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import EntrepreneursForm from '@/components/entrepreneurs/EntrepreneursForm';
 import Banner from '@/components/common/Banner';
-import NovaNestPriority from '@/components/home/NovaNestPriority';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -130,8 +129,6 @@ export default function Page({
           </div>
         </section>
 
-
-        <NovaNestPriority lang={lang} />
 
         {/* Impact */}
         <section className="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-24 px-6">

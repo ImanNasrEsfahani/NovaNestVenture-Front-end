@@ -26,6 +26,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           lang={lang}
         />
       </div>
+      
       <div className="max-w-responsive mx-auto px-8 md:px-24 font-header">
         <Differences lang={lang} />
         <NatureOfStartups lang={lang} />
