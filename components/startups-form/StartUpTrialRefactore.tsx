@@ -32,7 +32,7 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpTrialRefactore = (props: Props) => {
+export default function StartUpTrialRefactore(props: Props) {
   const {
     handleFileCounterChange,
     handlePitchFileChange,
@@ -271,39 +271,15 @@ const StartUpTrialRefactore = (props: Props) => {
                )}
           </div>
         </div>
-
+               
         <ProblemsSection
-          title={t('startUp',{ returnObjects: true }).trial.problems.title}
-          textAreaTitle={t('startUp',{ returnObjects: true }).trial.problems.customerProblem}
-          textAreaRequired={t('startUp',{ returnObjects: true }).trial.problems.customerProblemRequired}
-          textAreaPlaceholder={t('startUp',{ returnObjects: true }).trial.problems.customerProblemPlaceholder}
+          title={t('startUp',{ returnObjects: true }).commons.problems.title}
+          textAreaTitle={t('startUp',{ returnObjects: true }).commons.problems.customerProblem}
+          textAreaRequired={t('startUp',{ returnObjects: true }).commons.problems.customerProblemRequired}
+          textAreaPlaceholder={t('startUp',{ returnObjects: true }).commons.problems.customerProblemPlaceholder}
           register={register}
           errors={errors}
         />
-        {/* <div className={`w-full h-auto cursor-pointer py-6 my-4 ${problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
-          setProblemsOpen(!problemsOpen)
-        }}>
-          <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-semibold text-[24px]'>{t('startUp',{ returnObjects: true }).trial.problems}</p>
-               <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-                 <ChevDown />
-               </div>
-          </div>
-        </div>
-        {problemsOpen && (
-          <div className='w-full h-auto md:px-1'>
-               <TextArea
-                 title={t('startUp',{ returnObjects: true }).trial.problemsLabel}
-                 register={register}
-                 errors={errors} 
-                 required={t('startUp',{ returnObjects: true }).trial.problemsRequired} 
-                 nameTextArea={"customerProblem"} 
-                 patternValue={''} 
-                 patternMessage={''} 
-                 placeholder={t('startUp',{ returnObjects: true }).trial.problemsPlaceholder}                                                  
-               />
-          </div>
-        )} */}
         <SolutionLevel 
           handleSolutionsLevelChange={handleSolutionsLevelChange}
           solutionsLevel={solutionsLevel}
@@ -312,22 +288,69 @@ const StartUpTrialRefactore = (props: Props) => {
           setValue={setValue}
         />
         <BussinessModelDropDown
-          lang={lang || 'en'}
           register={register}
           errors={errors}
           // handlePitclearchFileChange={handlePitchFileChange}
           handleFinancialModelFileChange={handleFinancialModelFileChange}
+          translations={{
+            businessModel: t('startUp',{ returnObjects: true }).commons.businessModel,
+            businessMonetization: t('startUp',{ returnObjects: true }).commons.businessMonetization,
+            businessMonetizationRequired: t('startUp',{ returnObjects: true }).commons.businessMonetizationRequired,
+            businessMonetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessMonetizationPlaceholder,
+            businessDelivery: t('startUp',{ returnObjects: true }).commons.businessDelivery,
+            businessDeliveryRequired: t('startUp',{ returnObjects: true }).commons.businessDeliveryRequired,
+            businessDeliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessDeliveryPlaceholder,
+            businessFinancial: t('startUp',{ returnObjects: true }).commons.businessFinancial,
+            choseFile: t('startUp',{ returnObjects: true }).commons.choseFile,
+            businessAccelerators: t('startUp',{ returnObjects: true }).commons.businessAccelerators,
+            businessAcceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessAcceleratorsRequired,
+            businessAcceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessAcceleratorsPlaceholder,
+            businessKnowUs: t('startUp',{ returnObjects: true }).commons.businessKnowUs,
+            businessKnowUsRequired: t('startUp',{ returnObjects: true }).commons.businessKnowUsRequired,
+            businessKnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessKnowUsPlaceholder,
+          }}
         />
         <TargetMarketDropDown 
           register={register}
           errors={errors}
+          translations={{
+            targetMarket: t('startUp',{ returnObjects: true }).commons.targetMarket,
+            targetCharacteristics: t('startUp',{ returnObjects: true }).commons.targetCharacteristics,
+            targetCharacteristicsRequired: t('startUp',{ returnObjects: true }).commons.targetCharacteristicsRequired,
+            targetCharacteristicsPlaceholder: t('startUp',{ returnObjects: true }).commons.targetCharacteristicsPlaceholder,
+            targetCustomers: t('startUp',{ returnObjects: true }).commons.targetCustomers,
+            targetCustomersRequired: t('startUp',{ returnObjects: true }).commons.targetCustomersRequired,
+            targetCustomersPlaceholder: t('startUp',{ returnObjects: true }).commons.targetCustomersPlaceholder,
+            targetEstimated: t('startUp',{ returnObjects: true }).commons.targetEstimated,
+            targetEstimatedRequired: t('startUp',{ returnObjects: true }).commons.targetEstimatedRequired,
+            targetEstimatedPlaceholder: t('startUp',{ returnObjects: true }).commons.targetEstimatedPlaceholder,
+            targetTotal: t('startUp',{ returnObjects: true }).commons.targetTotal,
+            targetTotalRequired: t('startUp',{ returnObjects: true }).commons.targetTotalRequired,
+            targetTotalPlaceholder: t('startUp',{ returnObjects: true }).commons.targetTotalPlaceholder,
+          }}
         />
-        <PropertyDropDown 
+        <PropertyDropDown
           register={register}
           errors={errors}
+          translations={{ 
+            property: t('startUp',{ returnObjects: true }).commons.property,
+            propertyRevenue: t('startUp',{ returnObjects: true }).commons.propertyRevenue,
+            propertyRevenueRequired: t('startUp',{ returnObjects: true }).commons.propertyRevenueRequired,
+            propertyRevenuePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyRevenuePlaceholder,
+            propertyMonthly: t('startUp',{ returnObjects: true }).commons.propertyMonthly,
+            propertyMonthlyRequired: t('startUp',{ returnObjects: true }).commons.propertyMonthlyRequired,
+            propertyMonthlyPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyMonthlyPlaceholder,
+            propertyRate: t('startUp',{ returnObjects: true }).commons.propertyRate,
+            propertyRateRequired: t('startUp',{ returnObjects: true }).commons.propertyRateRequired,
+            propertyRatePlaceholder: t('startUp',{ returnObjects: true }).commons.propertyRatePlaceholder,
+            propertyBusiness: t('startUp',{ returnObjects: true }).commons.propertyBusiness,
+            propertyBusinessRequired: t('startUp',{ returnObjects: true }).commons.propertyBusinessRequired,
+            propertyBusinessPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyBusinessPlaceholder,
+            propertyCapital: t('startUp',{ returnObjects: true }).commons.propertyCapital,
+            propertyCapitalRequired: t('startUp',{ returnObjects: true }).commons.propertyCapitalRequired,
+            propertyCapitalPlaceholder: t('startUp',{ returnObjects: true }).commons.propertyCapitalPlaceholder,
+           }}
         />
     </div>
   );
 };
-
-export default StartUpTrialRefactore;

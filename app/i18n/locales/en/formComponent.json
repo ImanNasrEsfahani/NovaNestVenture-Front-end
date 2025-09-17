@@ -232,13 +232,7 @@
       "businessPlan": "Do you have Business Plan?",
 
       "financial": "Do you have Financial?*",
-
-      "problems": "Problems",
-      "problemsLabel": "Describe the customer problem you want to solve with your product or service.*",
-      "problemsRequired": "This field is required",
-      "problemsPlaceholder": "Description",
-      
-      
+     
       
       "businessPlanRequired": "Please choose an option",
 
@@ -260,11 +254,6 @@
       "siteAddressPlaceholder": "Enter your Site Address",
 
       "businessPlan": "Do you have Business Plan?*",
-      
-      "problems": "Problems",
-      "problemsLabel": "Describe the customer problem you want to solve with your product or service.*",
-      "problemsRequired": "This field is required",
-      "problemsPlaceholder": "Description",
       
       "businessModel": "Business Model",
       "businessMonetization": "Describe your program's monetization method?*",
@@ -304,14 +293,7 @@
       "businessPlan": "Do you have Business Plan?",
                             "businessPlanRequired": "Please choose an option",
 
-      "financial": "Do you have Financial?*",
-
-      "problems": {
-        "title": "Problems",
-        "customerProblem": "Describe the customer problem you want to solve with your product or service. *",
-        "customerProblemRequired": "This field is required!",
-        "customerProblemPlaceholder": "Description"
-      }
+      "financial": "Do you have Financial?*"
     },
 
     "SaleDevelopment" : {
@@ -329,16 +311,18 @@
       "siteAddressPlaceholder": "Enter your Site Address",
 
       "businessPlan": "Do you have Business Plan?",
-      "financial": "Do you have Financial?*",
-
-      "problems": "Problems",
-      "problemsLabel": "Describe the customer problem you want to solve with your product or service.*",
-      "problemsRequired": "This field is required",
-      "problemsPlaceholder": "Description"
+      "financial": "Do you have Financial?*"
     },
 
     "commons": {
       
+      "problems": {
+        "title": "Problems",
+        "customerProblem": "Describe the customer problem you want to solve with your product or service. *",
+        "customerProblemRequired": "This field is required!",
+        "customerProblemPlaceholder": "Description"
+      },
+
       "propertyDropDown": {
         "property": "Property",
         "propertyRevenue": "How much revenue has your startup made since its inception?*",
@@ -405,6 +389,35 @@
         "solutionsPosition": "What is your unique value proposition (innovation)? What is new about what you do?*",
         "solutionsPositionRequired": "this fields is required",
         "solutionsPositionPlaceholder": "Description"
+      },
+
+      "businessModel": {
+        "title": "Business Model",
+        "monetization": "Describe the method of monetization of your plan? *",
+        "monetizationOfYourPlan": "Explain how you plan to generate revenue?*",
+        "monetizationOfYourPlanRequired": "This field is required!",
+        "monetizationOfYourPlanPlaceholder": "Description",
+        "monetizationPlaceholder": "Description", 
+        "monetizationRequired": "This field is required!",
+
+        "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. *",
+        "deliveryPlaceholder": "Description",
+        "deliveryRequired": "This field is required!",
+
+        "financialPlan": "If your plan has a financial model, please upload.",
+        "choseFile": "Choose File",
+
+        "accelerators": "Have you previously cooperated with investors or accelerators?*",
+        "acceleratorsPlaceholder": "Description",
+        "acceleratorsRequired": "This field is required!",
+
+        "knowUs": "How did you get to know us?*",
+        "knowUsPlaceholder": "Description", 
+        "knowUsRequired": "This field is required!",
+
+        "structureOfYourSales": "Please explain your sales structure from the beginning *",
+        "structureOfYourSalesPlaceholder": "Description",
+        "structureOfYourSalesRequired": "This field is required!"
       }
     },
 
@@ -425,34 +438,6 @@
       "scalable": "Briefly explain how your technology is scalable? *",
       "scalablePlaceholder": "Description",
       "scalableRequired": "This field is required!"
-    },
-    "businessModel": {
-      "title": "Business Model",
-      "monetization": "Describe the method of monetization of your plan? *",
-      "monetizationOfYourPlan": "Explain how you plan to generate revenue?*",
-      "monetizationOfYourPlanRequired": "This field is required!",
-      "monetizationOfYourPlanPlaceholder": "Description",
-      "monetizationPlaceholder": "Description", 
-      "monetizationRequired": "This field is required!",
-
-      "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. *",
-      "deliveryPlaceholder": "Description",
-      "deliveryRequired": "This field is required!",
-
-      "financialPlan": "If your plan has a financial model, please upload.",
-      "choseFile": "Choose File",
-
-      "accelerators": "Have you previously cooperated with investors or accelerators?*",
-      "acceleratorsPlaceholder": "Description",
-      "acceleratorsRequired": "This field is required!",
-
-      "knowUs": "How did you get to know us?*",
-      "knowUsPlaceholder": "Description", 
-      "knowUsRequired": "This field is required!",
-
-      "structureOfYourSales": "Please explain your sales structure from the beginning *",
-      "structureOfYourSalesPlaceholder": "Description",
-      "structureOfYourSalesRequired": "This field is required!"
     },
     "financialFile": "Do you have Financial?",
     "financialFileRequired": "Please choose an option",

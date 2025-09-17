@@ -3,24 +3,41 @@ import TextArea from '@/components/common/TextArea';
 import ChevDown from 'public/static/logos/ChevDown';
 import { StartupsFormData } from '@/types/global';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
-import { useLang } from '../../stores/langStore';
-import { getServerTranslation } from 'app/i18n';
+
+type PropertyTranslations = {
+  property: string;
+  propertyRevenue: string;
+  propertyRevenueRequired: string;
+  propertyRevenuePlaceholder: string;
+  propertyMonthly: string;
+  propertyMonthlyRequired: string;
+  propertyMonthlyPlaceholder: string;
+  propertyRate: string;
+  propertyRateRequired: string;
+  propertyRatePlaceholder: string;
+  propertyBusiness: string;
+  propertyBusinessRequired: string;
+  propertyBusinessPlaceholder: string;
+  propertyCapital: string;
+  propertyCapitalRequired: string;
+  propertyCapitalPlaceholder: string;
+}
 
 type Props = {
     register: UseFormRegister<StartupsFormData>
     errors: FieldErrors<StartupsFormData>
+    translations: PropertyTranslations
 }
 
-const PropertyDropDown = (props: Props) => {
+export default function PropertyDropDown(props: Props) {
 
   const {
     register,
-    errors
+    errors,
+    translations
   } = props;
 
-  const [propertyOpen, setPropertyOpen] = useState<boolean>(false);  
-  const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent');
+  const [propertyOpen, setPropertyOpen] = useState<boolean>(false);
 
   return (
     <div>
@@ -28,7 +45,7 @@ const PropertyDropDown = (props: Props) => {
           setPropertyOpen(!propertyOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px] '>{t('startUp',{ returnObjects: true }).commons.propertyDropDown.property}</p>
+               <p className='font-barlow text-white font-medium text-[24px] '>{translations.property}</p>
                <div className={`${propertyOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>
@@ -38,62 +55,62 @@ const PropertyDropDown = (props: Props) => {
           <>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea
-                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenue}
+                  title={translations.propertyRevenue}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenueRequired} 
+                  required={translations.propertyRevenueRequired} 
                   nameTextArea={"startupRevenue"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRevenuePlaceholder}
+                  placeholder={translations.propertyRevenuePlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthly}
+                  title={translations.propertyMonthly}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyRequired}
+                  required={translations.propertyMonthlyRequired}
                   nameTextArea={"monthlyIncome"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyMonthlyPlaceholder}
+                  placeholder={translations.propertyMonthlyPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRate}
+                  title={translations.propertyRate}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRateRequired}
+                  required={translations.propertyRateRequired}
                   nameTextArea={"currentInterestRate"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyRatePlaceholder}
+                  placeholder={translations.propertyRatePlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusiness}
+                  title={translations.propertyBusiness}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessRequired}
+                  required={translations.propertyBusinessRequired}
                   nameTextArea={"currentRaisedFunding"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyBusinessPlaceholder}
+                  placeholder={translations.propertyBusinessPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapital}
+                  title={translations.propertyCapital}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalRequired}
+                  required={translations.propertyCapitalRequired}
                   nameTextArea={"neededCapital"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.propertyDropDown.propertyCapitalPlaceholder}
+                  placeholder={translations.propertyCapitalPlaceholder}
               />
             </div>
           </>
@@ -101,5 +118,3 @@ const PropertyDropDown = (props: Props) => {
     </div>
   )
 }
-
-export default PropertyDropDown

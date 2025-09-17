@@ -1,26 +1,39 @@
+'use client'
 import React, { useState } from 'react'
 import TextArea from '@/components/common/TextArea'
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import ChevDown from 'public/static/logos/ChevDown'
-import { useLang } from 'stores/langStore'
-import { getServerTranslation } from 'app/i18n'
 
 type Props = {
     register: UseFormRegister<StartupsFormData>
     errors: FieldErrors<StartupsFormData>
+    translations: {
+        targetMarket: string
+        targetCharacteristics: string
+        targetCharacteristicsRequired: string
+        targetCharacteristicsPlaceholder: string
+        targetCustomers: string
+        targetCustomersRequired: string
+        targetCustomersPlaceholder: string
+        targetEstimated: string
+        targetEstimatedRequired: string
+        targetEstimatedPlaceholder: string
+        targetTotal: string
+        targetTotalRequired: string
+        targetTotalPlaceholder: string
+    }
 }
 
-const TargetMarketDropDown = (props: Props) => {
+export default function TargetMarketDropDown(props: Props) {
 
   const {
     register,
-    errors
+    errors,
+    translations
   } = props;  
 
   const [targetMarketOpen, setTargetMarketOpen] = useState<boolean>(false);  
-  const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent')
 
   return (
     <div>
@@ -28,7 +41,7 @@ const TargetMarketDropDown = (props: Props) => {
           setTargetMarketOpen(!targetMarketOpen)
         }}>
           <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white font-medium text-[24px]'>{t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetMarket}</p>
+               <p className='font-barlow text-white font-medium text-[24px]'>{translations.targetMarket}</p>
                <div className={`${targetMarketOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
                  <ChevDown />
                </div>
@@ -38,50 +51,50 @@ const TargetMarketDropDown = (props: Props) => {
           <>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristics}
+                  title={translations.targetCharacteristics}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsRequired}
+                  required={translations.targetCharacteristicsRequired}
                   nameTextArea={"customerCharacteristic"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCharacteristicsPlaceholder}
+                  placeholder={translations.targetCharacteristicsPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomers}
+                  title={translations.targetCustomers}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersRequired}
+                  required={translations.targetCustomersRequired}
                   nameTextArea={"currentCustomers"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetCustomersPlaceholder}
+                  placeholder={translations.targetCustomersPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea 
-                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimated}
+                  title={translations.targetEstimated}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedRequired} 
+                  required={translations.targetEstimatedRequired} 
                   nameTextArea={"estimatedMarketSize"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetEstimatedPlaceholder}
+                  placeholder={translations.targetEstimatedPlaceholder}
               />
             </div>
             <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
               <TextArea
-                  title={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotal}
+                  title={translations.targetTotal}
                   register={register}
                   errors={errors} 
-                  required={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalRequired}
+                  required={translations.targetTotalRequired}
                   nameTextArea={"totalTamSamSom"} 
                   patternValue={''} 
                   patternMessage={''} 
-                  placeholder={t('startUp',{ returnObjects: true }).commons.targetMarketDropDown.targetTotalPlaceholder}
+                  placeholder={translations.targetTotalPlaceholder}
               />
             </div>
           </>
@@ -89,5 +102,3 @@ const TargetMarketDropDown = (props: Props) => {
     </div>
   )
 }
-
-export default TargetMarketDropDown

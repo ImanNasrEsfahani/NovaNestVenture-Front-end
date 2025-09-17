@@ -5,20 +5,34 @@ import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 // import FileUpload from '@/public/static/logos/FileUpload'
 import ChevDown from 'public/static/logos/ChevDown';
-import { getServerTranslation } from 'app/i18n';
 
 type Props = {
   register: UseFormRegister<StartupsFormData>;
   errors: FieldErrors<StartupsFormData>;
   handleFinancialModelFileChange: (file: any) => void;
-  lang: string;
+  translations: {
+    businessModel: string;
+    businessMonetization: string;
+    businessMonetizationRequired: string;
+    businessMonetizationPlaceholder: string;
+    businessDelivery: string;
+    businessDeliveryRequired: string;
+    businessDeliveryPlaceholder: string;
+    businessFinancial: string;
+    choseFile: string;
+    businessAccelerators: string;
+    businessAcceleratorsRequired: string;
+    businessAcceleratorsPlaceholder: string;
+    businessKnowUs: string;
+    businessKnowUsRequired: string;
+    businessKnowUsPlaceholder: string;
+  };
 };
 
-const BussinessModelDropDown = (props: Props) => {
-  const { register, errors, handleFinancialModelFileChange, lang } = props;
+export default function BussinessModelDropDown(props: Props) {
 
+  const { register, errors, handleFinancialModelFileChange, translations } = props;
   const [businessOpen, setBusinessOpen] = useState<boolean>(false);
-  const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
     <div>
@@ -30,7 +44,7 @@ const BussinessModelDropDown = (props: Props) => {
       >
         <div className="w-full h-auto flex justify-center items-center gap-2">
           <p className="font-barlow text-white font-medium text-[24px]">
-            {t('startUp.businessModel')}
+            {translations.businessModel}
           </p>
           <div
             className={`${businessOpen ? 'rotate-180' : 'rotate-0'} transition-all duration-300 ease-out mt-2`}
@@ -43,31 +57,31 @@ const BussinessModelDropDown = (props: Props) => {
         <>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={t('startUp.businessMonetization')}
+              title={translations.businessMonetization}
               register={register}
               errors={errors}
-              required={t('startUp.businessMonetizationRequired')}
+              required={translations.businessMonetizationRequired}
               nameTextArea={'MonetizationOfYourPlan'}
               patternValue={''}
               patternMessage={''}
-              placeholder={t('startUp.businessMonetizationPlaceholder')}
+              placeholder={translations.businessMonetizationPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={t('startUp.businessDelivery')}
+              title={translations.businessDelivery}
               register={register}
               errors={errors}
-              required={t('startUp.businessDeliveryRequired')}
+              required={translations.businessDeliveryRequired}
               nameTextArea={'structureOfYourSales'}
               patternValue={''}
               patternMessage={''}
-              placeholder={t('startUp.businessDeliveryPlaceholder')}
+              placeholder={translations.businessDeliveryPlaceholder}
             />
           </div>
           <div className="w-full h-auto flex justify-start items-center">
             <p className="text-black font-medium text-[15px] leading-[18px]">
-              {t('startUp.businessFinancial')}
+              {translations.businessFinancial}
             </p>
           </div>
           <div className="w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6">
@@ -83,32 +97,32 @@ const BussinessModelDropDown = (props: Props) => {
                 }}
               />
               <p className="text-black font-barlow font-medium text-[13px] leading-4">
-                {t('startUp.choseFile')}
+                {translations.choseFile}
               </p>
             </label>
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={t('startUp.businessAccelerators')}
+              title={translations.businessAccelerators}
               register={register}
               errors={errors}
-              required={t('startUp.businessAcceleratorsRequired')}
+              required={translations.businessAcceleratorsRequired}
               nameTextArea={'cooperatedWithInvestors'}
               patternValue={''}
               patternMessage={''}
-              placeholder={t('startUp.businessAcceleratorsPlaceholder')}
+              placeholder={translations.businessAcceleratorsPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={t('startUp.businessKnowUs')}
+              title={translations.businessKnowUs}
               register={register}
               errors={errors}
-              required={t('startUp.businessKnowUsRequired')}
+              required={translations.businessKnowUsRequired}
               nameTextArea={'getToKnowUs'}
               patternValue={''}
               patternMessage={''}
-              placeholder={t('startUp.businessKnowUsPlaceholder')}
+              placeholder={translations.businessKnowUsPlaceholder}
             />
           </div>
         </>
@@ -116,5 +130,3 @@ const BussinessModelDropDown = (props: Props) => {
     </div>
   );
 };
-
-export default BussinessModelDropDown;
