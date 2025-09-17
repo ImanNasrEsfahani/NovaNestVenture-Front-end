@@ -148,7 +148,7 @@ export default function Page({
         {/* CTA */}
         <section className="py-24 px-6 text-center">
           <h2 className="text-2xl font-bold mb-6">
-            Have an innovative idea? Let's accelerate your startup!
+            Have an innovative idea? Let&apos;s accelerate your startup!
           </h2>
           <button className="btn btn-lg btn-primary text-white font-semibold normal-case">
             Get Started
