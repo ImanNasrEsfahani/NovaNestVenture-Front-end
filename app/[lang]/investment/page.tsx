@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 //import Certificate from '@/components/investment/Certificate';
 import { Metadata } from 'next';
-import FeaturesCardsContainer from '@/components/investment/FeaturesCardsContainer';
-import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
+// import FeaturesCardsContainer from '@/components/investment/FeaturesCardsContainer';
+// import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
 import NovaNestPriority from '@/components/home/NovaNestPriority';
 
 import { getServerTranslation } from 'app/i18n';
@@ -76,7 +76,7 @@ export default function Page({
             </p>
             <div className="text-center mt-6">
               <a
-                href={`${base}investors-form`}
+                href={`${base}investor-registration`}
                 className="btn btn-neutral text-white btn-lg normal-case"
               >
                 Investor Registration
