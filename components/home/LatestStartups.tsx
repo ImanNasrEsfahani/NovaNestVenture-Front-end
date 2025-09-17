@@ -17,7 +17,7 @@ export default function LatestStartups({lang}: {lang: string}) {
               </div>
               <p className="font-header">{t('NovaNestVenture')}</p>
               <div
-                className="ltr:tracking-0 md:tracking-0 font-header text-4xl font-bold text-black md:mt-3 md:text-[44px] ltr:tracking-[3.5px]"
+                className="ltr:tracking-0 md:tracking-0 font-header text-4xl font-bold text-black md:mt-3 md:text-4xl ltr:tracking-[3.5px]"
               >
                 {t('LatestStartups')}
               </div>

@@ -84,7 +84,7 @@ export default function SolutionLevel(props: Props) {
                                         </div>
                                     </div>
                                 </div>
-                                <p className='text-black font-barlow font-medium text-[12px] xl:text-[14px] leading-[14px] mb-1'>{item}</p>
+                                <p className='text-black font-barlow font-medium text-lg xl:text-lg leading-[14px] mb-1'>{item}</p>
                             </div>
                         ))}
                     </div>

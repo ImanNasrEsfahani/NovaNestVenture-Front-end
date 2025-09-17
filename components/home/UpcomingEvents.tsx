@@ -54,7 +54,7 @@ export default function UpcomingEvents() {
         <div className="flex items-center justify-between self-stretch md:w-[1100px]">
           <div className="flex items-center justify-start gap-1 md:gap-16">
             <div className="inline-flex flex-col items-center justify-start px-8 font-condensed">
-              <div className="text-right text-[40px] font-medium text-primary">
+              <div className="text-right text-4xl font-medium text-primary">
                 18
               </div>
               <div className="text-right text-3xl font-medium text-primary">

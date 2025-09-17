@@ -26,7 +26,7 @@ export default function UpcomingStartupsCard({ image, subTitle, text, goto, butt
               height={500}
             />
           </div>
-          <div className="self-center p-2 font-header text-bold text-[24px] font-normal leading-normal">
+          <div className="self-center p-2 font-header text-bold text-2xl font-normal leading-normal">
             {subTitle}
           </div>
           <div className='flex h-full flex-col gap-4 my-8'>
@@ -35,7 +35,7 @@ export default function UpcomingStartupsCard({ image, subTitle, text, goto, butt
             </div> */}
             <div className='flex h-full flex-col items-center justify-between gap-3 '>
               <div>
-                <p className='text-[15px] md:text-[16px]'>
+                <p className='text-lg md:text-lg'>
                   {text}
                 </p>
               </div>

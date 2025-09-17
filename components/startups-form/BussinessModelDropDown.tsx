@@ -78,7 +78,7 @@ export default function BussinessModelDropDown(props: Props) {
             />
           </div>
           <div className="w-full h-auto flex justify-start items-center">
-            <p className="text-black font-medium text-[15px] leading-[18px]">
+            <p className="text-black font-medium text-lg leading-[18px]">
               {translations.Financial}
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function BussinessModelDropDown(props: Props) {
                   );
                 }}
               />
-              <p className="text-black font-barlow font-medium text-[13px] leading-4">
+              <p className="text-black font-barlow font-medium text-lg leading-4">
                 {translations.choseFile}
               </p>
             </label>

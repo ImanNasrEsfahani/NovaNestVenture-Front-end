@@ -41,7 +41,7 @@ export default function BusinessTeamCard({
           <div className="font-barlow text-xs font-normal text-white md:text-base ">
             {roleInCompany}
           </div>
-          <div className="mt-1 font-header text-xs font-normal text-white md:text-[15px]">
+          <div className="mt-1 font-header text-xs font-normal text-white md:text-lg">
             {role}
           </div>
           <div className="mt-2 inline-flex gap-3 md:hidden">

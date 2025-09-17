@@ -142,7 +142,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                   </p>
                 </div>
                 <div className="w-full border-b-[1.5px] py-5 border-black h-auto flex flex-row justify-start">
-                  <p className="text-black font-header font-medium text-[30px] leading-[42px]">
+                  <p className="text-black font-header font-medium text-3xl leading-[42px]">
                     {translations.formSubtitle}
                   </p>
                 </div>

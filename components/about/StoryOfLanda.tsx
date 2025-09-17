@@ -74,7 +74,7 @@ export default function StoryOfLanda({lang}: {lang: string}) {
             <span className="mb-5 mt-9 font-header text-3xl text-primary">
               {t('TheStoryOfLanda', { returnObjects: true })[0].title}
             </span>
-            <div className="flex flex-col space-y-4 font-barlow text-[#000]">
+            <div className="flex flex-col space-y-4 font-barlow text-black">
               <p>{t('TheStoryOfLanda', { returnObjects: true })[0].text}</p>
               <div className="flex flex-col"></div>
             </div>
@@ -130,7 +130,7 @@ export default function StoryOfLanda({lang}: {lang: string}) {
           {/* top */}
 
           {/* down */}
-          {/* <div className="flex w-full flex-col gap-12 text-[#000] md:flex-col md:px-32 lg:flex-row xl:flex-col">
+          {/* <div className="flex w-full flex-col gap-12 text-black md:flex-col md:px-32 lg:flex-row xl:flex-col">
         <div className="flex flex-col px-10 font-barlow sm:px-0 md:w-full">
           <span className="font-header text-3xl text-primary">
             {t('VisionOfTheLanaHolding', { returnObjects: true })[0].title}

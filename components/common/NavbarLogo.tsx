@@ -19,7 +19,7 @@ export default function NavbarLogo () {
               width={50}
               height={50}
             />
-            <span className="font-condensed text-[12px] font-bold text-primary md:text-xl ltr:tracking-[0.25rem]">
+            <span className="font-condensed text-lg font-bold text-primary md:text-xl ltr:tracking-[0.25rem]">
               {lang == 'en' ? 'NovaNest Venture' : 'نوا نست ونچر' /* 'NovaNest Venture' in Arabic */}
             </span>
           </div>

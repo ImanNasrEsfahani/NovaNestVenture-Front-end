@@ -179,7 +179,7 @@ export default function LandaGeneClient({ translations, lang }: LandaGeneClientP
         <div className="flex h-auto w-full flex-col  justify-between p-0">
           <div className="flex w-full flex-col   p-0">
             <p
-              className={`w-full text-justify  text-[18px] leading-normal  text-primary ${
+              className={`w-full text-justify  text-xl leading-normal  text-primary ${
                 lang === 'en' ? 'md:tracking-[2px]' : ''
               }`}
             >

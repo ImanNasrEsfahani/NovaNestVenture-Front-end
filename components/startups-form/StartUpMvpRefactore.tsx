@@ -54,7 +54,7 @@ const StartUpMvpRefactore = (props: Props) => {
         <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.pitchDeck}</p>
+                 <p className='text-black font-medium font-barlow text-lg leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.pitchDeck}</p>
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -68,7 +68,7 @@ const StartUpMvpRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('yes')}</p>
                        </div>
                        <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("pitch")
@@ -80,7 +80,7 @@ const StartUpMvpRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('no')}</p>
                        </div>
                  </div>
                </div> 
@@ -88,7 +88,7 @@ const StartUpMvpRefactore = (props: Props) => {
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
                        <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
+                          <p className='text-grayLabel font-medium text-xs md:text-lg 2xl:text-2xl md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                           <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
@@ -137,7 +137,7 @@ const StartUpMvpRefactore = (props: Props) => {
           </div>
           <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
                <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-[16px] leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.businessPlan}</p>
+                 <p className='text-black font-medium font-barlow text-lg leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.businessPlan}</p>
                </div>
                <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
                  <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
@@ -151,7 +151,7 @@ const StartUpMvpRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('yes')}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('yes')}</p>
                        </div>
                        <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
                           handleFileCounterChange("business")
@@ -163,7 +163,7 @@ const StartUpMvpRefactore = (props: Props) => {
                                          }`}
                                   />
                           </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-[15px] leading-[18px]'>{t('no')}</p>
+                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('no')}</p>
                        </div>
                  </div>
                </div> 
@@ -171,7 +171,7 @@ const StartUpMvpRefactore = (props: Props) => {
                  <div className='w-full h-auto'>
                      <div className='w-full h-auto flex flex-col items-center gap-2'>
                        <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-[14px] 2xl:text-[20px] md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
+                          <p className='text-grayLabel font-medium text-xs md:text-lg 2xl:text-2xl md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
                        </div>
                        <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
                           <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">

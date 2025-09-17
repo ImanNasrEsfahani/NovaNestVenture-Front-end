@@ -33,7 +33,7 @@ export default function AboutUsLandaHolding({lang}: {lang: string}) {
           <p className=" text-2xl md:text-4xl font-bold text-black mb-2 md:mb-0">
             {t('aboutLandaHolding', { returnObjects: true })[0].title}
           </p>
-          <p className="text-[16px] md:text-lg text-justify">
+          <p className="text-lg text-justify">
             {t('aboutLandaHolding', { returnObjects: true })[0].text}
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function AboutUsLandaHolding({lang}: {lang: string}) {
           <span className=" text-2xl md:text-4xl font-bold mb-2 md:mb-0">
             {t('TheStoryOfLanda', { returnObjects: true })[0].title}
           </span>
-          <div className="flex flex-col text-[16px] md:text-lg text-justify text-black">
+          <div className="flex flex-col text-lg text-justify text-black">
             <p>{t('TheStoryOfLanda', { returnObjects: true })[0].text}</p>
           </div>
         </div>

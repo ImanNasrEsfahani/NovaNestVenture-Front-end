@@ -21,7 +21,7 @@ export default function Logo({ route }: { route: 'holding' | 'academy' }) {
           />
           <span
             className={`${route === 'academy' ? 'text-lime-400' : 'text-primary'
-              } text-[12px] font-bold tracking-[0.375px] md:text-xl`}
+              } text-lg font-bold tracking-[0.375px] md:text-xl`}
           >
             {route === 'academy' ? 'Academy' : 'NovaNest'}
           </span>
