@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   reactStrictMode: true,
   // output: "export",
   // distDir: 'out',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://NovaNestVenture.com' : '',
   images: {
     domains: [
       // 'res.cloudinary.com',

@@ -4,7 +4,7 @@ import { getServerTranslation } from 'app/i18n';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function AboutUsLandaHolding({lang}: {lang: string}) {
+export default function AboutUsNovaNest({lang}: {lang: string}) {
 
   const { t } = getServerTranslation(lang, 'aboutUs');
 
@@ -12,10 +12,10 @@ export default function AboutUsLandaHolding({lang}: {lang: string}) {
     // <div className="flex flex-col items-center justify-between bg-[#FAFAFA] pt-5 md:pr-[6.5rem] lg:flex-col xl:flex-row">
     // <div className="space-y-2 md:ml-20 px-6 py-2 text-black md:px-0 md:max-w-[200px]">
     //   <p className="font-header text-3xl font-semibold">
-    //     {t('aboutLandaHolding', { returnObjects: true })[0].title}
+    //     {t('AboutUsNovaNest', { returnObjects: true })[0].title}
     //   </p>
     //   <p className="mb-20  ml-0 mt-4 text-justify font-barlow font-normal tracking-wide rtl:text-base  md:mt-8 lg:w-[687px]">
-    //     {t('aboutLandaHolding', { returnObjects: true })[0].text}
+    //     {t('AboutUsNovaNest', { returnObjects: true })[0].text}
     //   </p>
     // </div>
     // <Image
@@ -33,10 +33,10 @@ export default function AboutUsLandaHolding({lang}: {lang: string}) {
       <div className="flex flex-col-reverse items-stretch justify-between md:flex-row md:gap-8 mb-10 md:mb-0">
         <div className="flex flex-col justify-between font-header text-black md:px-0 md:w-1/2">
           <p className=" text-2xl md:text-4xl font-bold text-black mb-2 md:mb-0">
-            {t('aboutLandaHolding', { returnObjects: true })[0].title}
+            {t('AboutUsNovaNest', { returnObjects: true })[0].title}
           </p>
           <p className="text-lg text-justify">
-            {t('aboutLandaHolding', { returnObjects: true })[0].text}
+            {t('AboutUsNovaNest', { returnObjects: true })[0].text}
           </p>
         </div>
         <div className="relative object-contain mx-auto h-48 w-full md:w-[46%] md:h-[340px] mb-6 md:mb-0">

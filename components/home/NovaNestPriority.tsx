@@ -1,4 +1,4 @@
-import LandaHoldingPriorityCard from './LandaHoldingPriorityCard';
+import PriorityCard from './PriorityCard';
 import { getServerTranslation } from 'app/i18n';
 
 export default function NovaNestPriority({lang}: {lang: string}) {
@@ -19,7 +19,7 @@ export default function NovaNestPriority({lang}: {lang: string}) {
                 { title, image }: { title: string; image: string },
                 index: number
               ) => (
-                <LandaHoldingPriorityCard
+                <PriorityCard
                   key={index}
                   title={title}
                   image={image}

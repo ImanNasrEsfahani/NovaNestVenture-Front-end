@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import AboutUsLandaHolding from '@/components/about/AboutUsLandaHolding';
+import AboutUsNovaNest from '@/components/about/AboutUsNovaNest';
 import AboutUsProfile from '@/components/about/AboutUsProfile';
 import Banner from '@/components/common/Banner';
 import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
@@ -38,7 +38,7 @@ export default function Page({
       </div>
       
       <div className='px-8 md:px-24 max-w-responsive mx-auto'>
-        <AboutUsLandaHolding lang={lang} />
+        <AboutUsNovaNest lang={lang} />
         <SubsidiaryCompanies lang={lang}/>
         <StoryOfLanda lang={lang}/>
         <KeyDifferentiating lang={lang} />
