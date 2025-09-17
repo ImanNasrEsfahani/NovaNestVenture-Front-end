@@ -212,20 +212,20 @@ const StartUpMvpRefactore = (props: Props) => {
         handleFinancialModelFileChange={handleFinancialModelFileChange}
         translations={{
           title: t('startUp',{ returnObjects: true }).commons.businessModel.title,
-          Monetization: t('startUp',{ returnObjects: true }).commons.businessModel.Monetization,
-          MonetizationRequired: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationRequired,
-          MonetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.MonetizationPlaceholder,
-          Delivery: t('startUp',{ returnObjects: true }).commons.businessModel.Delivery,
-          DeliveryRequired: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryRequired,
-          DeliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.DeliveryPlaceholder,
-          Financial: t('startUp',{ returnObjects: true }).commons.businessModel.Financial,
+          monetization: t('startUp',{ returnObjects: true }).commons.businessModel.monetization,
+          monetizationRequired: t('startUp',{ returnObjects: true }).commons.businessModel.monetizationRequired,
+          monetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.monetizationPlaceholder,
+          delivery: t('startUp',{ returnObjects: true }).commons.businessModel.delivery,
+          deliveryRequired: t('startUp',{ returnObjects: true }).commons.businessModel.deliveryRequired,
+          deliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.deliveryPlaceholder,
+          financial: t('startUp',{ returnObjects: true }).commons.businessModel.financial,
           choseFile: t('startUp',{ returnObjects: true }).commons.businessModel.choseFile,
-          Accelerators: t('startUp',{ returnObjects: true }).commons.businessModel.Accelerators,
-          AcceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsRequired,
-          AcceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.AcceleratorsPlaceholder,
-          KnowUs: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUs,
-          KnowUsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsRequired,
-          KnowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.KnowUsPlaceholder,
+          accelerators: t('startUp',{ returnObjects: true }).commons.businessModel.accelerators,
+          acceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.acceleratorsRequired,
+          acceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.acceleratorsPlaceholder,
+          knowUs: t('startUp',{ returnObjects: true }).commons.businessModel.knowUs,
+          knowUsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.knowUsRequired,
+          knowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.knowUsPlaceholder,
         }}
       />
     </div>
