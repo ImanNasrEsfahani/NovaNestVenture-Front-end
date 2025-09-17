@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
-import AccelerationCard from '@/components/acceleration/AccelerationCard';
+// import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import EntrepreneursForm from '@/components/entrepreneurs/EntrepreneursForm';
 import Banner from '@/components/common/Banner';
 import NovaNestPriority from '@/components/home/NovaNestPriority';
@@ -62,7 +62,9 @@ export default function Page({
               </button>
             </div>
             <div className="md:col-span-1">
-              <img
+              <Image
+                width={400}
+                height={400}
                 src={`${base}static/images/acceleration/novanest-accelerator-startup-mentorship-global-markets.png`}
                 alt="Startup Illustration"
                 className="rounded-2xl shadow-lg"
