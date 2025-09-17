@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import TextArea from '@/components/common/TextArea';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
-// import FileUpload from '@/public/static/logos/FileUpload'
-import ChevDown from 'public/static/logos/ChevDown';
+import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 
 type Props = {
   register: UseFormRegister<StartupsFormData>;
@@ -12,74 +11,70 @@ type Props = {
   handleFinancialModelFileChange: (file: any) => void;
   translations: {
     title: string;
-    Monetization: string;
-    MonetizationRequired: string;
-    MonetizationPlaceholder: string;
-    Delivery: string;
-    DeliveryRequired: string;
-    DeliveryPlaceholder: string;
-    Financial: string;
+    monetization: string;
+    monetizationRequired: string;
+    monetizationPlaceholder: string;
+    delivery: string;
+    deliveryRequired: string;
+    deliveryPlaceholder: string;
+    financial: string;
     choseFile: string;
-    Accelerators: string;
-    AcceleratorsRequired: string;
-    AcceleratorsPlaceholder: string;
-    KnowUs: string;
-    KnowUsRequired: string;
-    KnowUsPlaceholder: string;
+    accelerators: string;
+    acceleratorsRequired: string;
+    acceleratorsPlaceholder: string;
+    knowUs: string;
+    knowUsRequired: string;
+    knowUsPlaceholder: string;
   };
 };
 
 export default function BussinessModelDropDown(props: Props) {
 
-  const { register, errors, handleFinancialModelFileChange, translations } = props;
-  const [businessOpen, setBusinessOpen] = useState<boolean>(false);
+const { register, errors, handleFinancialModelFileChange, translations } = props;
+const [businessOpen, setBusinessOpen] = useState<boolean>(false);
+
+const handleToggle = () => {
+  console.log('Toggle clicked, current state:', businessOpen);
+  setBusinessOpen(!businessOpen);
+};
 
   return (
     <div>
-      <div
-        className={`w-full h-auto cursor-pointer py-6 my-4 ${businessOpen ? 'bg-grayCheckBox' : 'bg-grayDark'}`}
-        onClick={() => {
-          setBusinessOpen(!businessOpen);
-        }}
-      >
-        <div className="w-full h-auto flex justify-center items-center gap-2">
-          <p className="font-barlow text-white text-3xl">{translations.title}</p>
-          <div
-            className={`${businessOpen ? 'rotate-180' : 'rotate-0'} transition-all duration-300 ease-out mt-2`}
-          >
-            <ChevDown />
-          </div>
-        </div>
-      </div>
+      <CollapsibleHeader
+        title={translations.title}
+        isOpen={businessOpen}
+        onToggle={handleToggle}
+      />
+
       {businessOpen && (
         <>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.Monetization}
+              title={translations.monetization}
               register={register}
               errors={errors}
-              required={translations.MonetizationRequired}
+              required={translations.monetizationRequired}
               nameTextArea={'MonetizationOfYourPlan'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.MonetizationPlaceholder}
+              placeholder={translations.monetizationPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.Delivery}
+              title={translations.delivery}
               register={register}
               errors={errors}
-              required={translations.DeliveryRequired}
+              required={translations.deliveryRequired}
               nameTextArea={'structureOfYourSales'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.DeliveryPlaceholder}
+              placeholder={translations.deliveryPlaceholder}
             />
           </div>
           <div className="w-full h-auto flex justify-start items-center">
             <p className="text-black font-medium text-lg leading-[18px]">
-              {translations.Financial}
+              {translations.financial}
             </p>
           </div>
           <div className="w-full md:w-1/3 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden mt-2 mb-6">
@@ -101,26 +96,26 @@ export default function BussinessModelDropDown(props: Props) {
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.Accelerators}
+              title={translations.accelerators}
               register={register}
               errors={errors}
-              required={translations.AcceleratorsRequired}
+              required={translations.acceleratorsRequired}
               nameTextArea={'cooperatedWithInvestors'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.AcceleratorsPlaceholder}
+              placeholder={translations.acceleratorsPlaceholder}
             />
           </div>
           <div className="w-full md:w-2/3 mb-8 h-auto md:px-1">
             <TextArea
-              title={translations.KnowUs}
+              title={translations.knowUs}
               register={register}
               errors={errors}
-              required={translations.KnowUsRequired}
+              required={translations.knowUsRequired}
               nameTextArea={'getToKnowUs'}
               patternValue={''}
               patternMessage={''}
-              placeholder={translations.KnowUsPlaceholder}
+              placeholder={translations.knowUsPlaceholder}
             />
           </div>
         </>

@@ -12,6 +12,8 @@ import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
+import TextArea from '@/components/common/TextArea';
+
 import StartUpFormCheckbox from '@/components/startups-form/StartUpFormCheckbox';
 import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
 import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
@@ -39,6 +41,10 @@ interface Translations {
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+
+  howDidYouKnowUs: string;
+  howDidYouKnowUsRequired: string;
+  howDidYouKnowUsPlaceholder: string;
 }
 
 interface StartupFormFormClientProps {
@@ -172,31 +178,41 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
       </div>
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <StartupFormPersonalInformation
-            countries={translations.countries}
-            countryName={translations.countryName}
-            countryNameRequired={translations.countryNameRequired}
-            countryNamePlaceholder={translations.countryNamePlaceholder}
-            provinceOfResidence={translations.provinceOfResidence}
-            provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
-            provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
-            lang={lang}
-            register={register}
-            errors={errors}
-          />
-          <div className="col-span-2">
-            <div className="col-span-2">
-              <div className="bg-[#222222CC]">
-                <p className="mb-3 w-[310px] border-b px-10 py-5 text-2xl text-white md:w-[550px] md:text-3xl lg:w-[450px] lg:text-3xl xl:w-[650px]">
-                  {translations.secondTitle}
-                </p>
-                <hr className=" mb-5 mt-0 dark:border-[#222222CC] " />
-              </div>
-            </div>
+          <div className='pb-8'>         
+            <StartupFormPersonalInformation
+              countries={translations.countries}
+              countryName={translations.countryName}
+              countryNameRequired={translations.countryNameRequired}
+              countryNamePlaceholder={translations.countryNamePlaceholder}
+              provinceOfResidence={translations.provinceOfResidence}
+              provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+              provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+              lang={lang}
+              register={register}
+              errors={errors}
+            />
+            <TextArea
+              title={translations.howDidYouKnowUs}
+              register={register}
+              errors={errors}
+              placeholder={translations.howDidYouKnowUsPlaceholder}
+              nameTextArea="getToKnowUs"
+              patternMessage=""
+              patternValue=""
+              required={translations.howDidYouKnowUsRequired}
+            />
           </div>
+
+          <div className="bg-[#222222CC]">
+            <p className="mb-3 border-b px-10 py-5 text-2xl text-white">
+              {translations.secondTitle}
+            </p>
+            <hr className=" mb-5 mt-0 dark:border-[#222222CC] " />
+          </div>
+          
           <div className='w-full h-auto px-4'>
             <div className='h-auto w-full flex flex-col gap-2'>
-              <StartUpFormCheckbox register={register} name={translations.IDEA} />
+              {/* <StartUpFormCheckbox register={register} name={translations.IDEA} />
               {((): any => {
                 if (startupFormType == translations.IDEA) {
                   return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
@@ -241,7 +257,7 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
                     />
                   )
                 }
-              })()}
+              })()} */}
               <StartUpFormCheckbox register={register} name={translations.FisrtSale} />
               {((): any => {
                 if (startupFormType == translations.FisrtSale) {

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
-import ChevDown from 'public/static/logos/ChevDown';
 import TextArea from '@/components/common/TextArea';
+import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 
 type ProblemsSectionProps = {
   title: string;
@@ -25,21 +25,19 @@ const ProblemsSection = ({
 }: ProblemsSectionProps) => {
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 
+const handleToggle = () => {
+  console.log('Toggle clicked, current state:', problemsOpen);
+  setProblemsOpen(!problemsOpen);
+};
+
   return (
     <>
-      <div 
-        className={`w-full h-auto cursor-pointer py-6 my-4 ${
-          problemsOpen ? "bg-grayCheckBox" : "bg-grayDark"
-        }`} 
-        onClick={() => setProblemsOpen(!problemsOpen)}
-      >
-        <div className='w-full h-auto flex justify-center items-center gap-2'>
-          <p className='font-barlow text-white text-3xl'>{title}</p>
-          <div className={`${problemsOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-            <ChevDown />
-          </div>
-        </div>
-      </div>
+      <CollapsibleHeader
+        title={title}
+        isOpen={problemsOpen}
+        onToggle={handleToggle}
+      />
+      
       {problemsOpen && (
         <div className='w-full h-auto md:px-1'>
           <TextArea

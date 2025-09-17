@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TextArea from '@/components/common/TextArea';
-import ChevDown from 'public/static/logos/ChevDown';
+import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 import { StartupsFormData } from '@/types/global';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
@@ -38,83 +38,83 @@ export default function PropertyDropDown(props: Props) {
   } = props;
 
   const [propertyOpen, setPropertyOpen] = useState<boolean>(false);
+  const handleToggle = () => {
+    console.log('Toggle clicked, current state:', propertyOpen);
+    setPropertyOpen(!propertyOpen);
+  };
 
   return (
     <div>
-        <div className={`w-full h-auto cursor-pointer py-6 my-4 ${propertyOpen ? "bg-grayCheckBox" : "bg-grayDark"}`} onClick={() => {
-          setPropertyOpen(!propertyOpen)
-        }}>
-          <div className='w-full h-auto flex justify-center items-center gap-2'>
-               <p className='font-barlow text-white text-3xl'>{translations.property}</p>
-               <div className={`${propertyOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-                 <ChevDown />
-               </div>
+      <CollapsibleHeader
+        title={translations.property}
+        isOpen={propertyOpen}
+        onToggle={handleToggle}
+      />
+    
+      {propertyOpen && (
+        <>
+          <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
+            <TextArea
+                title={translations.propertyRevenue}
+                register={register}
+                errors={errors} 
+                required={translations.propertyRevenueRequired} 
+                nameTextArea={"startupRevenue"} 
+                patternValue={''} 
+                patternMessage={''} 
+                placeholder={translations.propertyRevenuePlaceholder}
+            />
           </div>
-        </div>
-        {propertyOpen && (
-          <>
-            <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-              <TextArea
-                  title={translations.propertyRevenue}
-                  register={register}
-                  errors={errors} 
-                  required={translations.propertyRevenueRequired} 
-                  nameTextArea={"startupRevenue"} 
-                  patternValue={''} 
-                  patternMessage={''} 
-                  placeholder={translations.propertyRevenuePlaceholder}
-              />
-            </div>
-            <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-              <TextArea 
-                  title={translations.propertyMonthly}
-                  register={register}
-                  errors={errors} 
-                  required={translations.propertyMonthlyRequired}
-                  nameTextArea={"monthlyIncome"} 
-                  patternValue={''} 
-                  patternMessage={''} 
-                  placeholder={translations.propertyMonthlyPlaceholder}
-              />
-            </div>
-            <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-              <TextArea 
-                  title={translations.propertyRate}
-                  register={register}
-                  errors={errors} 
-                  required={translations.propertyRateRequired}
-                  nameTextArea={"currentInterestRate"} 
-                  patternValue={''} 
-                  patternMessage={''} 
-                  placeholder={translations.propertyRatePlaceholder}
-              />
-            </div>
-            <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-              <TextArea 
-                  title={translations.propertyBusiness}
-                  register={register}
-                  errors={errors} 
-                  required={translations.propertyBusinessRequired}
-                  nameTextArea={"currentRaisedFunding"} 
-                  patternValue={''} 
-                  patternMessage={''} 
-                  placeholder={translations.propertyBusinessPlaceholder}
-              />
-            </div>
-            <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-              <TextArea 
-                  title={translations.propertyCapital}
-                  register={register}
-                  errors={errors} 
-                  required={translations.propertyCapitalRequired}
-                  nameTextArea={"neededCapital"} 
-                  patternValue={''} 
-                  patternMessage={''} 
-                  placeholder={translations.propertyCapitalPlaceholder}
-              />
-            </div>
-          </>
-        )}
+          <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
+            <TextArea 
+                title={translations.propertyMonthly}
+                register={register}
+                errors={errors} 
+                required={translations.propertyMonthlyRequired}
+                nameTextArea={"monthlyIncome"} 
+                patternValue={''} 
+                patternMessage={''} 
+                placeholder={translations.propertyMonthlyPlaceholder}
+            />
+          </div>
+          <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
+            <TextArea 
+                title={translations.propertyRate}
+                register={register}
+                errors={errors} 
+                required={translations.propertyRateRequired}
+                nameTextArea={"currentInterestRate"} 
+                patternValue={''} 
+                patternMessage={''} 
+                placeholder={translations.propertyRatePlaceholder}
+            />
+          </div>
+          <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
+            <TextArea 
+                title={translations.propertyBusiness}
+                register={register}
+                errors={errors} 
+                required={translations.propertyBusinessRequired}
+                nameTextArea={"currentRaisedFunding"} 
+                patternValue={''} 
+                patternMessage={''} 
+                placeholder={translations.propertyBusinessPlaceholder}
+            />
+          </div>
+          <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
+            <TextArea 
+                title={translations.propertyCapital}
+                register={register}
+                errors={errors} 
+                required={translations.propertyCapitalRequired}
+                nameTextArea={"neededCapital"} 
+                patternValue={''} 
+                patternMessage={''} 
+                placeholder={translations.propertyCapitalPlaceholder}
+            />
+          </div>
+        </>
+      )}
     </div>
   )
 }

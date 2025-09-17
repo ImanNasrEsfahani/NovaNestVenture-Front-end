@@ -30,16 +30,6 @@ export default function StartupFormIdea({
           patternValue=""
           required={t('startUp',{ returnObjects: true }).idea.ideaExplanationRequired}
         />
-        <TextArea
-          title={t('howDidYouKnowUs')}
-          register={register}
-          errors={errors}
-          placeholder={t('howDidYouKnowUsPlaceholder')}
-          nameTextArea="getToKnowUs"
-          patternMessage=""
-          patternValue=""
-          required={t('howDidYouKnowUsRequired')}
-        />
       </div>
     </>
   );

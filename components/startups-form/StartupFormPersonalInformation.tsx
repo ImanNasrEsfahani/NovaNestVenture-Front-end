@@ -31,7 +31,7 @@ export default function StartupFormPersonalInformation({
 
   return (
     <>
-      <div className="mb-12 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mb-8 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 xl:grid-cols-3">
         <PersonalInfoInput
           lang={lang}
           register={register}

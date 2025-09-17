@@ -1,4 +1,3 @@
-
 import Banner from '@/components/common/Banner';
 import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
 import { Metadata } from 'next';
@@ -25,10 +24,9 @@ export default function InvestorRegistrationPage({
         title={t('banner')}
         lang={lang}
       />
-      <div className='max-w-responsive mx-auto'>
 
-      <InvestorRegistrationForm lang={lang}/>
-      </div>
+
+        <InvestorRegistrationForm lang={lang}/>
     </div>
   );
 }
