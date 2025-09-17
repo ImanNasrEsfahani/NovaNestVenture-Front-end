@@ -57,7 +57,7 @@ export default function MagazineModernPostCard3() {
               style3="my-2"
             />
             {/* <div className="px-4 mt-3 text-slate-950">
-              <ul className="list-disc">
+              <ul className="space-y-4 list-disc">
                 <li className="my-2">
                   This is an item in the list, for example.
                 </li>

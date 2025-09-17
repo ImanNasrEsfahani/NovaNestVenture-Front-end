@@ -76,7 +76,7 @@ export default function Navbar({
                   </h2>
 
                   {/* Desktop Forms */}
-                  <ul className="absolute left-[-80px] top-14 mt-2 w-64 space-y-0 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
+                  <ul className="absolute left-[-80px] top-14 mt-2 w-64 space-y-4 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
                     {submenuItems.map(({ label, href }: any) => (
                       <li className="max-h-fit text-xl" key={label}>
                         <Link
@@ -111,7 +111,7 @@ export default function Navbar({
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
 
-        <ul className="menu absolute h-full w-80 space-y-0 divide-y divide-solid bg-white p-4 text-xl text-black  ltr:left-[110px] md:hidden">
+        <ul className="menu absolute h-full w-80 space-y-4 divide-y divide-solid bg-white p-4 text-xl text-black  ltr:left-[110px] md:hidden">
           {/* <ul className="menu absolute h-full w-80 space-y-5 bg-white p-4 text-xl text-black ltr:left-[70px] md:hidden  divide-y divide-solid"> */}
 
           <Image
@@ -127,8 +127,8 @@ export default function Navbar({
               <summary className="font-Barlow btn m-1 pt-2 font-condensed text-xl">
                 {lang === 'en' ? 'Services' : 'خدمات'}
               </summary>
-              <ul className="px-2">
-                <ul>
+              <ul className="px-2 space-y-4">
+                <ul className="space-y-4">
                   {submenuItems.map(
                     ({ label, href }: { label: string; href: string }) => (
                       <li key={label}>

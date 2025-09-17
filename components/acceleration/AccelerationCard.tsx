@@ -78,7 +78,7 @@ export default function AccelerationCard({
                   </span>
                 )}
               </div>
-              <ul>
+              <ul className='space-y-4'>
                 {itemsList?.map((item, index) => (
                   <li
                     key={index}
@@ -88,7 +88,7 @@ export default function AccelerationCard({
                   </li>
                 ))}
               </ul>
-              <ul>
+              <ul className='space-y-4'>
                 {itemsList?.map((item, index) => (
                   <li
                     key={index}
@@ -100,7 +100,7 @@ export default function AccelerationCard({
               </ul>
             </div>
 
-            <div className="text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 font-header">
+            <div className="space-y-4 text-lg md:text-2xl rtl:text-right  pl-2 md:pl-0 font-header">
               {t('CharacteristicsOfEntrepreneurship', { returnObjects: true }).title}
               <ul role="list" className="w-full list-disc md:text-lg text-sm  md:pb-0 rtl:text-right">
                 <li>{t('itemsCharecter', { returnObjects: true }).item1}</li>

@@ -10,6 +10,8 @@ import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 //import ButtonRefactor from '@/components/common/ButtonRefactor';
 
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Investment',
   description:
@@ -78,8 +80,8 @@ export default function Page({
             </p>
             <div className="text-center mt-6">
               <a
-                href="https://www.novanestventure.com/investor-registration"
-                className="btn btn-outline btn-lg"
+                href={`${base}formEntrepreneurs`}
+                className="btn btn-outline btn-lg normal-case"
               >
                 Investor Registration
               </a>
@@ -104,8 +106,8 @@ export default function Page({
             </p>
             <div className="text-center mt-6">
               <a
-                href="https://www.novanestventure.com/startups-form"
-                className="btn btn-gray btn-lg"
+                href={`${base}startups-form`}
+                className="btn btn-gray btn-lg normal-case"
               >
                 Startup Application
               </a>

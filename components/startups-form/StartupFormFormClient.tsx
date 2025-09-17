@@ -29,6 +29,9 @@ interface Translations {
   successMessage: string;
   failedMessage: string;
 
+  formTitle: string;
+  formSubtitle: string;
+
   countries: string[];
   countryName: string;
   countryNameRequired: string;
@@ -160,9 +163,16 @@ export default function StartupFormFormClient({ lang, translations }: StartupFor
   }));
 
   return (
-    <div className="container -m-4 mx-auto my-12 gap-y-0 font-barlow px-2 md:px-12 relative">
+    <div className="max-w-responsive mx-auto py-20">
       <div className='mb-12'>
-        <FormTitle lang={lang} formName='startUp'/>
+        <FormTitle  
+          lang={lang} 
+          formName='startUp'
+          translations={{
+            formTitle: translations.formTitle,
+            formSubtitle: translations.formSubtitle
+          }}
+        />
       </div>
       <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
         <form onSubmit={handleSubmit(onSubmit)}>

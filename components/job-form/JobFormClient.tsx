@@ -128,26 +128,17 @@ export default function JobFormClient({ lang, translations }: JobFormClientProps
   };
 
   return (
-    <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20">
-      <>
-        {/* <div className="text-center">
-                <p className="mb-20 font-serif text-2xl tracking-wide">
-                  {translations.formTitle}
-                </p>
-              </div>
-              <div>
-                <p className="mb-4 text-4xl">
-                  {translations.formSubtitle}
-                </p>
-              </div>
-              <div>
-                <hr className="mb-5 border-[#000000] dark:border-[#ffffff]" />
-              </div> */}
-      </>
-      <FormTitle lang={lang} formName="jobForm" />
+    <div className="max-w-responsive mx-auto py-20">
+      <FormTitle
+        lang={lang}
+        formName='jobForm'
+        translations={{
+          formTitle: translations.formTitle,
+          formSubtitle: translations.formSubtitle
+        }}/>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
         
-        <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             lang={lang}
             register={register}

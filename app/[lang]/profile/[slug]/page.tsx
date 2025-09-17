@@ -62,7 +62,7 @@ export default async function Page({
         {/* top */}
         {/* middle */}
         <div className="w-full">
-          <ul className="w-full">
+          <ul className="w-full space-y-4">
             {data.websites?.map((website: any, index: number) => (
               <Link
                 key={index}

@@ -73,7 +73,7 @@ export default function ContactUsDescription({lang}: {lang: string}) {
           {/* <Phone /> */}
           {/* <div className="mb-5 flex flex-col ltr:text-left rtl:text-right">
             <span className="font-semibold">{t('phone')}</span>
-            <ul className="gap-1"> */}
+            <ul className="space-y-4 gap-1"> */}
           {/* TODO: create component for below icons */}
           {/* <li> */}
           {/* <Link href="tel:+14165577622"> */}
@@ -105,7 +105,7 @@ export default function ContactUsDescription({lang}: {lang: string}) {
       {/* TODO: Separate component for email information */}
       {/* <div className="flex gap-5">
           <Email />
-          <ul>
+          <ul className="space-y-4">
             <li className="font-semibold ltr:text-left rtl:text-right">
               {t('email')}
             </li>

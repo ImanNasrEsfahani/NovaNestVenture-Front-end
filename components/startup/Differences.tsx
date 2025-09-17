@@ -10,7 +10,7 @@ export default function Differences({lang}: {lang: string}) {
         <div className='w-full md:w-[70%] flex flex-col justify-between gap-3 md:gap-5'>
             <h1 className='text-xl md:text-4xl font-semibold'>{t('differences-title')}</h1>
             <p className='text-sm md:text-base text-justify leading-5'>{t('differences-detail')}</p>
-            <ul className='list-disc text-xs md:text-sm ml-6 font-medium '>
+            <ul className='space-y-4 list-disc text-xs md:text-sm ml-6 font-medium '>
                 {t('differences-list', { returnObjects: true }).map((e : any, index: number) => (
                     <li key={index}>{e}</li>
                 ))}
