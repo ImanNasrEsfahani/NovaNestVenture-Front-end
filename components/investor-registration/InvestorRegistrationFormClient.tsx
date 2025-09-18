@@ -184,7 +184,22 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
               register={register}
             />
 
-            <div className="col-span-1">
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="investmentCeiling"
+              type="text"
+              label={translations.maximumInvestment}
+              // required={translations.maximumInvestmentRequired}
+              required=""
+              placeholder={translations.maximumInvestmentPlaceholder}
+              className="input col-span-1 mb-1 mt-3 w-full"
+              labelClass=" dark:text-current"
+              patternValue=""
+              patternMessage=""
+            />
+            
+            {/* <div className="col-span-1">
               <Input
                 register={register}
                 errors={errors}
@@ -199,24 +214,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 patternValue=""
                 patternMessage=""
               />
-            </div>
-
-            <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="investmentCeiling"
-                type="text"
-                label={translations.maximumInvestment}
-                // required={translations.maximumInvestmentRequired}
-                required=""
-                placeholder={translations.maximumInvestmentPlaceholder}
-                className="input col-span-1 mb-1 mt-3 w-full"
-                labelClass=" dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div>
+            </div> */}
 
             <div className="flex flex-col col-span-1 md:col-span-3 gap-6">
               <TextArea

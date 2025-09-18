@@ -229,20 +229,20 @@
   ],
   "cardData1": [
     {
-      "title": "Tourism Services",
+      "title": "Tourism\nServices",
       "image": "/static/images/home/priority/tourism-services.png"
     },
     {
-      "title": "Education",
+      "title": "Practical Education",
       "image": "/static/images/home/priority/education-systems.png"
     },
     {
       "title": "AI (Artificial Inteligent)",
-      "image": "/static/images/home/priority/artificial-intelligence.png"
+      "image": "/static/images/home/priority/services-for-teenagers.png"
     },
     {
       "title": "Services for Teenagers",
-      "image": "/static/images/home/priority/services-for-teenagers.png"
+      "image": "/static/images/home/priority/artificial-intelligence.png"
     }
   ],
   "LatestStartupsList": [

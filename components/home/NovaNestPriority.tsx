@@ -6,11 +6,11 @@ export default function NovaNestPriority({lang}: {lang: string}) {
 
   return (
     <div className="relative max-w-responsive mx-auto py-24">
-        <h3 className="mb-12 font-header text-4xl font-bold text-center">
+        <h3 className="text-4xl font-header font-bold mb-20 text-gray-800 text-center">
           {t('Priorities')}
         </h3>
         <div className="w-full px-4">
-          <div className="flex justify-center flex-wrap gap-5 max-w-responsive mx-auto">
+          <div className="flex justify-center flex-wrap gap-8 max-w-responsive mx-auto">
             {t('cardData1', { returnObjects: true }).map(
               (
                 { title, image }: { title: string; image: string },

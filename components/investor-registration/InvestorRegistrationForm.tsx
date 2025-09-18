@@ -46,17 +46,17 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
 
   return (
   <>
-    <div className='max-w-responsive mx-auto text-center'>
-      <h1 className="font-barlow text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
-        Join the Novanest Venture Investor Network
+    <div className='max-w-responsive mx-auto'>
+      <h1 className="font-header text-4xl font-bold text-center text-gray-800 mb-4 mt-20">
+        Become a NovaNest Venture Investor
       </h1>
 
-      <div className="text-lg text-gray-700 mb-8">
-        <p className="mb-6">
-          Would you like to access unique investment opportunities? By joining the Novanest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:
+      <div className="text-xl mb-8">
+        <p className="mb-6 font-bold text-center text-gray-500 mb-8">
+          Would you like to access unique investment opportunities? By joining the NovaNest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:
         </p>
         
-        <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
+        <ul className="list-disc list-inside space-y-2 font-base">
           <li>Early access to high-potential startups and projects</li>
           <li>In-depth market analyses and exclusive reports</li>
           <li>A diverse portfolio of opportunities with varying risk and return levels</li>
@@ -64,7 +64,7 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
           <li>Full transparency in the investment process and returns</li>
         </ul>
 
-        <p>
+        <p className="mt-8">
           To take advantage of these opportunities, please complete the form below. Our team will contact you shortly.
         </p>
     </div>

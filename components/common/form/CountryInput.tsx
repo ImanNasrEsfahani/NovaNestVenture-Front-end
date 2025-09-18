@@ -79,7 +79,6 @@ export default function CountryInput({
         />
       )}
 
-      <div className="col-span-1">
         {nameInputs?.provinceOfResidence && (
           <Input
             register={register}
@@ -95,7 +94,6 @@ export default function CountryInput({
             labelClass="text-[#6b6b6b] dark:text-current"
           />
         )}
-      </div>
     </>
   )
 }

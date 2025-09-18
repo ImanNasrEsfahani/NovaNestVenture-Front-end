@@ -60,8 +60,8 @@ export default function Navbar({
                   className="h-full"
                   src="/static/images/nova-nest-venture-logo.svg"
                   alt="Logo"
-                  width={100}
-                  height={100}
+                  width={180}
+                  height={180}
                 />
               </div>
             </Link>
