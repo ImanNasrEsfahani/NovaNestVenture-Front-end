@@ -149,29 +149,42 @@
   "NovaNestAcademy": "NovaNest Academy",
   "NovaNestAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic place that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   
-  "TitleBlackFirst" : "Mentorship",
-  "SubtitleBlackFirst" : "Become a NovaNest Mentor",
-  "TextBlackFirst" : "Join our network of experienced mentors and help shape the future of innovative startups. Share your expertise, grow your professional network, and make a real impact—while enjoying financial rewards, career growth, and exclusive opportunities.",
-  "landaHoldingBlackFirst": [
-    "Financial rewards and incentives",
-    "Recognition and prestige",
-    "Professional growth and learning",
-    "Expanded networking opportunities",
-    "Personal brand development",
-    "Meaningful impact on startups and society",
-    "Exclusive access to events and resources"
+  "specialFeatureCards": [
+    {
+      "id": "mentorship",
+      "title": "Mentorship",
+      "subtitle": "Become a Mentor",
+      "text": "Join our network of experienced mentors and help shape the future of innovative startups. Share your expertise, grow your professional network, and make a real impact—while enjoying financial rewards, career growth, and exclusive opportunities.",
+      "benefits": [
+        "Financial rewards and incentives",
+        "Recognition and prestige",
+        "Professional growth and learning",
+        "Expanded networking opportunities",
+        "Personal brand development",
+        "Meaningful impact on startups and society",
+        "Exclusive access to events and resources"
+      ],
+      "href": "investor-registration",
+      "buttonText": "Register"
+    },
+    {
+      "id": "trainee",
+      "title": "Trainee",
+      "subtitle": "Join the Team",
+      "text": "If you are talented, creative, and professional, join NovaNest and work alongside experienced mentors to help our innovative startups succeed. Share your skills, collaborate with expert teams, and make a real impact on the growth and development of emerging businesses.",
+      "benefits": [
+        "Hands-on experience with early-stage startups",
+        "Professional growth and learning from mentors teams",
+        "Expanded network with experts",
+        "Strengthening your personal brand and professional portfolio",
+        "Participation in innovative and socially impactful projects",
+        "Access to exclusive NovaNest events and resources"
+      ],
+      "href": "formEntrepreneurs",
+      "buttonText": "Register"
+    }
   ],
-  "TitleBlackSecond" : "Trainee",
-  "SubtitleBlackSecond" : "Join the NovaNest Team",
-  "TextBlackSecond" : "If you are talented, creative, and professional, join NovaNest and work alongside experienced mentors to help our innovative startups succeed. Share your skills, collaborate with expert teams, and make a real impact on the growth and development of emerging businesses.",
-  "landaHoldingBlackSecond": [
-    "Hands-on experience with early-stage startups",
-    "Professional growth and learning from mentors and international teams",
-    "Expanded network with entrepreneurs, investors, and industry experts",
-    "Strengthening your personal brand and professional portfolio",
-    "Participation in innovative and socially impactful projects",
-    "Access to exclusive NovaNest events and resources"
-  ],
+
   "partners": {
     "title": "Our Business Affiliates",
     "logos": [
