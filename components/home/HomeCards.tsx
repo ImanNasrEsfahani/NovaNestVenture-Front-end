@@ -13,7 +13,7 @@ export default function HomeCards({
   buttonText
 }: HomeCardsProps) {
   return (
-    <div>
+    <div className="mb-40">
        <HomeCardsSection smallTitle={smallTitle} text={text} images={images} reverse={reverse} link={link} titles={titles} buttonText={buttonText}/>
     </div>
   );

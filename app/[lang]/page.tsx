@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { lang: string } }) {
       {/* TODO: read t inside hero components using zustend */}
       <Hero
         lang={params.lang}
-        titles={[t('investment'), t('StartUp'), t('Acceleration'), t('Academy')]}
+        titles={[t('investment'), t('Acceleration'), t('StartUp Visa'), t('Entrepreneurship - PNP')] }
         backgroundImage="hero.webp"
       />
       {/* <Hero2 lang={lang} /> */}

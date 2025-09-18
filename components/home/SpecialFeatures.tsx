@@ -18,13 +18,9 @@ export default function SpecialFeatures({lang}: {lang: string}) {
   const learnMoreLabel = t('specialFeatures.learnMore');
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="relative inline-block">
-            {title}
-          </span>
-        </h2>
+        <h2 className="text-5xl font-header font-bold text-center mb-16">{title}</h2>
         <SpecialFeaturesClient
           lang={lang}
           features={features}

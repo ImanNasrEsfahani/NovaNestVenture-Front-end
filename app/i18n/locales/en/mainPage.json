@@ -6,7 +6,7 @@
     "features": [
       {
         "id": "startup-suv",
-        "title": "Startup – SUV",
+        "title": "Startup Visa Canada – SUV",
         "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
         "image": "/static/images/home/features/startup-visa.jpg",
         "link": "/startup"
@@ -75,6 +75,9 @@
   "AccelerationCenter": "Entrepreneurship CENTER",
   "investment": "Investment",
   "StartUp": "StartUp",
+  "StartUp Visa": "Startup-Visa",
+  "Entrepreneurship - PNP": "Entrepreneurship-PNP",
+
   "HeroSubtitle": "Feel The Future",
   "NovaNestVenture": "NovaNest Venture",
   "Home": "Home",
@@ -96,7 +99,7 @@
   "Register": "Register",
   
   "AboutUs": "ABOUT US",
-  "AboutUsContent": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level.",
+  "AboutUsContent": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level",
 
   "cards": [
     {
@@ -121,7 +124,7 @@
       "buttonText": "Vsit Now"
     },
     {
-      "smallTitle" : "NovaNestVenture",
+      "smallTitle" : "NovaNest",
       "title": "Acceleration",
       "text": "At NovaNest, we empower innovative startups to grow from idea to global success. Our accelerator provides mentorship, training, networking, and access to investors, helping entrepreneurs develop products, enter new markets, and achieve rapid growth. We focus on sectors such as Artificial Intelligence, Tourism, and Education, supporting startups in creating lasting impact on a global scale.",
       "reverse": true,

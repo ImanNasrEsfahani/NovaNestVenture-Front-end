@@ -26,14 +26,12 @@ export default function HomeCardsSection({
     <div
       className={`flex flex-col-reverse ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-x-10 items-center justify-between last:border-none`}
     >
-      <div className="flex flex-col h-full items-start justify-between gap-12 rtl:gap-16 md:w-1/2">
+      <div className="flex flex-col h-full items-start justify-between gap-16 md:w-1/2">
         <div className="flex flex-col items-start gap-4">
-          <span className="font-header text-1xl md:text-1xl">{smallTitle}</span>
-          <span className="lrt:tracking-[6.5px] font-header font-bold text-4xl md:text-5xl">
-            {titles}
-          </span>
+          <span className="font-header text-lg">{smallTitle}</span>
+          <span className="font-header text-5xl font-bold">{titles}</span>
         </div>
-        <p className="md:text-md text-justify font-EBGaramond text-base leading-[30px] first:mb-0 md:w-full ">
+        <p className="text-justify text-base first:mb-0 md:w-full ">
           {text}
         </p>
         <div className="w-[45%] md:w-[35%]">

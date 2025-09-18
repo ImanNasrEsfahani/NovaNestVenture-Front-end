@@ -7,7 +7,7 @@ const HomeCardsContainer = ({lang}: {lang: string}) => {
 
   const renderHomeCards = (cardData: CompanySectionsInterface[]) => {
     return (
-      <div className="w-full h-auto flex flex-col gap-4 md:gap-20 mb-10">
+      <div className="w-full h-auto flex flex-col gap-8 mb-20">
         {cardData.map(
           ({
             smallTitle,
@@ -38,7 +38,7 @@ const HomeCardsContainer = ({lang}: {lang: string}) => {
   };
 
   return (
-    <div className="relative text-black my-10 md:my-24" id="NovaNestVenture">
+    <div className="relative text-black my-20" id="NovaNestVenture">
       {renderHomeCards(t('cards', { returnObjects: true }))}
     </div>
   );
