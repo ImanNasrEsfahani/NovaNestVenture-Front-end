@@ -1,10 +1,10 @@
 import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
-import Differences from '@/components/startup/Differences';
-import NatureOfStartups from '@/components/startup/NatureOfStartups';
-import Gateway from '@/components/startup/Gateway';
-import Services from '@/components/startup/Services';
-import LatestStartups from '@/components/home/LatestStartups';
+// import Differences from '@/components/startup/Differences';
+// import NatureOfStartups from '@/components/startup/NatureOfStartups';
+// import Gateway from '@/components/startup/Gateway';
+// import Services from '@/components/startup/Services';
+// import LatestStartups from '@/components/home/LatestStartups';
 import Accordion from '@/components/startup/OurServicesAccardions';
 import Image from 'next/image';
 import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';

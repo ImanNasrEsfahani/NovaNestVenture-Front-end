@@ -60,5 +60,58 @@
     "ارزیابی ارزش‌گذاری",
     "مشاوره کسب‌وکار",
     "بررسی فاکتورها"
-  ]
+  ],
+  
+  "latest-startups": [
+    {
+        "title": "Landa Trip",
+        "description": "Landa Trip offers a unique experience of learning combined with travel and leisure. The platform connects learning enthusiasts worldwide, enabling them to share memories and favorite content. What sets Landa Trip apart is the opportunity to learn from top instructors while traveling, creating a deeper and unforgettable experience.",
+        "buttonText": "Go to website",
+        "buttonUrl": "https://landatrip.com/",
+        "imageSrc": "/static/images/startup/landa-trip.png",
+        "imageAlt": "Landa Trip logo",
+        "imageLogoSrc": "/static/images/home/startups/landa-trip.png",
+        "imageLogoAlt": "Landa Trip logo"
+    },
+    {
+        "title": "Vision Raft",
+        "description": "Vision Raft is an innovative platform that leverages virtual reality to allow children aged 4 to 7 to experience various educational programs creatively through games, without attending a physical classroom.",
+        "buttonText": "Go to website",
+        "buttonUrl": "https://visionraft.com/",
+        "imageSrc": "/static/images/startup/vision-raft.png",
+        "imageAlt": "Vision Raft logo",
+        "imageLogoSrc": "/static/images/home/startups/vision-raft.png",
+        "imageLogoAlt": "Vision Raft logo"
+    },
+    {
+        "title": "Diaco Center",
+        "description": "Diaco Center connects technology seekers with providers, facilitating technology transfer and interdisciplinary collaboration. Its advanced AI system offers tailored recommendations to meet the specific needs of each industry.",
+        "buttonText": "Go to website",
+        "buttonUrl": "https://www.diacocenter.com/",
+        "imageSrc": "/static/images/startup/diaco-center.png",
+        "imageAlt": "Diaco Center logo",
+        "imageLogoSrc": "/static/images/home/startups/diaco-center.png",
+        "imageLogoAlt": "Diaco Center logo"
+    },
+    {
+        "title": "PreventiGene",
+        "description": "PreventiGene analyzes medical history, genetics, and individual traits to provide a personalized pathway for preventing chronic diseases and cancer. It also enhances awareness about drug and food sensitivities, empowering individuals to safeguard their future health.",
+        "buttonText": "Go to website",
+        "buttonUrl": "https://www.preventigene.com/",
+        "imageSrc": "/static/images/startup/landa-gene.png",
+        "imageAlt": "PreventiGene logo",
+        "imageLogoSrc": "/static/images/home/startups/landa-gene.png",
+        "imageLogoAlt": "PreventiGene logo"
+    },
+    {
+        "title": "LandCraft",
+        "description": "LandCraft uses NFT technology and expert support to create an innovative platform for showcasing and selling handmade crafts, opening new opportunities for emerging and unknown artists worldwide.",
+        "buttonText": "Go to website",
+        "buttonUrl": "https://www.landcraft.com/",
+        "imageSrc": "/static/images/startup/handicraft.png",
+        "imageAlt": "Handicraft logo",
+        "imageLogoSrc": "/static/images/home/startups/handicraft.png",
+        "imageLogoAlt": "Handicraft logo"
+    }
+]
 }
