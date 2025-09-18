@@ -5,8 +5,9 @@ import NatureOfStartups from '@/components/startup/NatureOfStartups';
 import Gateway from '@/components/startup/Gateway';
 import Services from '@/components/startup/Services';
 import LatestStartups from '@/components/home/LatestStartups';
+import Accordion from '@/components/startup/OurServicesAccardions';
 import Image from 'next/image';
-
+import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -14,7 +15,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
   const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
-    <div>
+    <>
       <div className='hidden md:inline'>
         <Banner
           image="/static/images/startup/startup-banner.webp"
@@ -30,8 +31,6 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         />
       </div>
       
-      <div className="w-full">
-
       {/* What is Startup Visa */}
       <section className="py-24 px-6 max-w-6xl mx-auto">
         <h1 className="text-3xl font-header md:text-5xl font-bold mb-4 text-gray-800 text-center">
@@ -77,38 +76,30 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </section>
 
       <section className="py-16 max-w-responsive mx-auto">
+        <h3 className="text-4xl leading-loose text-center font-bold mb-4">Our Services for Canada’s Startup Visa Program</h3>
         <div className='grid lg:grid-cols-2 '>
           <div className='flex flex-col justify-center'>
-            <h3 className="text-3xl font-bold mb-2">
-              Services for Startup Visa Applicants
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Supporting you from idea to visa approval
+            <p className="text-gray-600 text-base mb-4">
+              At Novanest, we work closely with Canadian Designated Organizations to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.
             </p>
-            <ul className="pl-6 space-y-2 list-disc text-gray-700 text-lg">
-              <li className="font-semibold">Idea &amp; Business Model Assessment</li>
-              <li className="font-semibold">Introduction to Approved Startups</li>
-              <li className="font-semibold">Assistance in Securing Support</li>
-              <li className="font-semibold">Product Development &amp; MVP</li>
-              <li className="font-semibold">Immigration &amp; Documentation Support</li>
-              <li className="font-semibold">Post-Arrival Support in Canada</li>
-            </ul>
+            <Accordion />
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/static/images/home/startups/suv-services.png"
+              src="/static/images/startup/team.png"
               alt="SUV startup Services"
-              className="mx-auto w-full h-auto max-w-sm rounded-lg"
+              className="mx-auto w-auto max-w-sm rounded-lg"
               width={400}
               height={300}
             />
           </div>
         </div>
-
       </section>
 
+
+
       {/* Why Choose Us */}
-      <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue py-16 px-6">
+      <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue py-16 my-24">
         <div className="max-w-responsive mx-auto text-white text-center">
           <h2 className="text-3xl font-bold mb-4">Why Choose NovaNest?</h2>
           <p className="text-lg mb-8">Experience • Network • Expertise</p>
@@ -120,8 +111,37 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         </div>
       </section>
 
+      <section className='max-w-responsive mx-auto pt-12 px-4 w-100 lg:px-16 space-y-16 mb-16'>
+        {t('latest-startups', { returnObjects: true }).map(
+          (startup: {
+            title: string;
+            description: string;
+            buttonText: string;
+            buttonUrl: string;
+            imageSrc: string;
+            imageAlt: string;
+            imageLogoSrc: string;
+            imageLogoAlt: string;
+          }, idx: number) => (
+            <TwoColumnShowcase
+              key={startup.title}
+              title={startup.title}
+              description={startup.description}
+              buttonText={startup.buttonText}
+              buttonUrl={startup.buttonUrl}
+              imageSrc={startup.imageSrc}
+              imageAlt={startup.imageAlt}
+              imageLogoSrc={startup.imageLogoSrc}
+              imageLogoAlt={startup.imageLogoAlt}
+              reverse={idx % 2 === 1}
+              className={idx !== 0 ? "pt-32" : ""}
+            />
+          )
+        )}
+      </section>
+
       {/* How to Start */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
+      <section className="py-24 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">How to Start</h2>
         <p className="text-center text-gray-600 mb-10">Your First Step to Canada</p>
         <div className="grid md:grid-cols-3 gap-6">
@@ -145,41 +165,16 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
             Get Started
           </a>
         </div>
-      </section>
-    </div>
-
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr className='bg-black h-px my-8' />
+      </section>  
 
       {/* Old Content */}
-      <div className="max-w-responsive mx-auto px-8 md:px-24 font-header">
+      {/* <div className="max-w-responsive mx-auto px-8 md:px-24 font-header">
         <Differences lang={lang} />
         <NatureOfStartups lang={lang} />
         <Gateway lang={lang} />
         <Services lang={lang} />
         <LatestStartups lang={lang} />
-      </div>
-    </div>
+      </div> */}
+    </>
   )
 }
