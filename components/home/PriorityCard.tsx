@@ -9,7 +9,7 @@ export default function PriorityCard({
 }) {
 
   return (
-    <div className="relative flex h-24 w-[47%] justify-center overflow-hidden border border-primary md:h-40 md:w-[23%] rounded-lg">
+    <div className="relative flex h-24 w-[40%] justify-center overflow-hidden border border-primary md:h-40 md:w-1/5 rounded-lg">
       {/* Background Image */}
       <Image
         loading="lazy"
@@ -22,7 +22,7 @@ export default function PriorityCard({
 
       {/* Title Container */}
       <div className="inline-flex items-center justify-center gap-2.5">
-        <div className="flex w-10 items-center justify-center text-center font-header text-base font-normal text-black md:w-52 md:text-2xl">
+        <div className="flex items-center justify-center text-center text-base">
           {title}
         </div>
       </div>

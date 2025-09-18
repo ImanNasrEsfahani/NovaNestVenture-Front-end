@@ -6,14 +6,14 @@
     "features": [
       {
         "id": "startup-suv",
-        "title": "Startup Visa Canada – SUV",
+        "title": "Canada Startup Visa – SUV",
         "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
         "image": "/static/images/home/features/startup-visa.png",
         "link": "/startup"
       },
       {
         "id": "entrepreneur",
-        "title": "Entrepreneur",
+        "title": "Entrepreneurship PNP",
         "description": "PNPs in Canada offer a great path for entrepreneurs to invest and start a business. Each province has unique criteria, and with our expertise, we help you choose the right program, prepare documents, and complete the process—leading to a successful business and permanent residency.",
         "image": "/static/images/home/features/entrepreneur.png",
         "link": "/pnp"

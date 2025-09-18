@@ -1,5 +1,6 @@
 import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
+import Banner from '@/components/common/Banner';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -8,150 +9,182 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-emerald-600 to-teal-500 text-white py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div className='hidden md:inline'>
+        <Banner
+            image="/static/images/pnp/pnp-banner.png"
+            title={t('banner')}
+            lang={lang}
+        />
+        </div>
+        <div className='inline md:hidden'>
+        <Banner
+            image="/static/images/pnp/pnp-banner.png"
+            title={t('banner')}
+            lang={lang}
+        />
+        </div>
+
+        {/* Hero Section */}
+        <section className="max-w-responsive mx-auto flex flex-col text-center items-center py-24 px-6">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Entrepreneurship in Canada <br />
-                <span className="text-yellow-300">Provincial Nominee Programs (PNP)</span>
+                <span className="text-yellow-300 text-3xl">Provincial Nominee Programs (PNP)</span>
             </h1>
-            <p className="text-lg mb-6">
+            <p className="text-base mb-6">
                 Canada offers unique pathways for international entrepreneurs to
                 establish or purchase a business and obtain permanent residency
                 for themselves and their families through the Provincial Nominee Programs.
             </p>
-            <a className="bg-white text-emerald-700 font-semibold">
-                Start Your Journey
-            </a>
-          <Image
-            src="https://via.placeholder.com/550x400"
-            alt="Entrepreneurship Canada"
-            className="rounded-2xl shadow-lg"
-            width={550}
-            height={400}
-          />
-        </div>
-      </section>
 
-      {/* Why Start a Business */}
-      <section className="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <Image
-          src="https://via.placeholder.com/500x350"
-          alt="Business Growth"
-          className="rounded-xl shadow-md"
-            width={500}
-            height={350}
-        />
-        <div>
-          <h2 className="text-3xl font-bold mb-6">Why Start a Business in Canada?</h2>
-          <ul className="space-y-3 text-gray-700">
-            <li>• Stable and growing economy with global market access</li>
-            <li>• Demand for foreign entrepreneurs to boost provincial growth</li>
-            <li>• Strong government support: tax incentives, investments, infrastructure</li>
-            <li>• Clear PR pathway for applicants and families</li>
-          </ul>
-        </div>
-      </section>
+            <div className="mx-auto grid lg:grid-cols-2 gap-4 items-center">
+                <Image
+                src="/static/images/pnp/pnp-program-canada.png"
+                alt="Entrepreneurship Canada"
+                className="rounded-2xl shadow-lg"
+                width={550}
+                height={400}
+                />
+                <Image
+                src="/static/images/pnp/pnp-program-canada.png"
+                alt="Entrepreneurship Canada"
+                className="rounded-2xl shadow-lg"
+                width={550}
+                height={400}
+                />
+            </div>
+        </section>
 
-      {/* Requirements */}
-      <section className="bg-gray-50 py-16 px-6">
+        {/* Why Start a Business */}
+        <section className="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 className="text-3xl font-bold mb-6">Why Start a Business in Canada?</h2>
+                <ul className="space-y-3 text-gray-700">
+                <li>• Stable and growing economy with global market access</li>
+                <li>• Demand for foreign entrepreneurs to boost provincial growth</li>
+                <li>• Strong government support: tax incentives, investments, infrastructure</li>
+                <li>• Clear PR pathway for applicants and families</li>
+                </ul>
+            </div>
+            <Image
+                src="/static/images/pnp/pnp-program-canada.png"
+                alt="Business Growth"
+                className="rounded-xl shadow-md"
+                width={500}
+                height={350}
+            />
+        </section>
+
+        {/* Requirements */}
+        <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-3xl font-bold mb-6">
             General Requirements of Entrepreneurial PNP Programs
-          </h2>
-          <p className="text-gray-600 mb-8">
+            </h2>
+            <p className="text-gray-600 mb-8">
             While each province has its own specific rules, common requirements include:
-          </p>
-          <div className="grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-white shadow rounded-xl p-6">
-              <h3 className="font-semibold mb-3">Entrepreneurial Experience</h3>
-              <p className="text-gray-600">Proven entrepreneurial or managerial background.</p>
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+            <div className="bg-white shadow rounded-xl p-6 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-emerald-600 mb-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9 9 0 10-12 0M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <h3 className="font-semibold mb-3">Entrepreneurial Experience</h3>
+                <p className="text-gray-600">Proven entrepreneurial or managerial background.</p>
             </div>
-            <div className="bg-white shadow rounded-xl p-6">
-              <h3 className="font-semibold mb-3">Minimum Investment</h3>
-              <p className="text-gray-600">CAD 100,000 – CAD 600,000 depending on province.</p>
+            <div className="bg-white shadow rounded-xl p-6 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-emerald-600 mb-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6 2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h12a2 2 0 012 2v8z" />
+                </svg>
+                <h3 className="font-semibold mb-3">Minimum Investment</h3>
+                <p className="text-gray-600">CAD 100,000 – CAD 600,000 depending on province.</p>
             </div>
-            <div className="bg-white shadow rounded-xl p-6">
-              <h3 className="font-semibold mb-3">Feasible Business Plan</h3>
-              <p className="text-gray-600">Must meet provincial standards and show growth potential.</p>
+            <div className="bg-white shadow rounded-xl p-6 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-emerald-600 mb-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 4a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2h10z" />
+                </svg>
+                <h3 className="font-semibold mb-3">Feasible Business Plan</h3>
+                <p className="text-gray-600">Must meet provincial standards and show growth potential.</p>
             </div>
-            <div className="bg-white shadow rounded-xl p-6">
-              <h3 className="font-semibold mb-3">Job Creation</h3>
-              <p className="text-gray-600">Commitment to employ Canadians or permanent residents.</p>
+            <div className="bg-white shadow rounded-xl p-6 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-emerald-600 mb-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 7V6a2 2 0 012-2h8a2 2 0 012 2v1m-12 0h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z" />
+                </svg>
+                <h3 className="font-semibold mb-3">Job Creation</h3>
+                <p className="text-gray-600">Commitment to employ Canadians or permanent residents.</p>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
+        </section>
 
-      {/* Our Services */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
+        {/* Our Services */}
+        <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Our Services for Entrepreneurs
+            Our Services for Entrepreneurs
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-5">
+            <div className="space-y-5">
             {[
-              "Estimating & finding a business",
-              "Market research & information gathering",
-              "Drafting marketing & staffing documents",
-              "Preparing management & business plans",
-              "Financial forms according to SME standards",
-              "Resumes & required documents preparation",
-              "Templates for required letters",
-              "Filling provincial application forms",
-              "EOI submission for provinces",
-              "Net-worth verification & reporting",
+                "Estimating & finding a business",
+                "Market research & information gathering",
+                "Drafting marketing & staffing documents",
+                "Preparing management & business plans",
+                "Financial forms according to SME standards",
+                "Resumes & required documents preparation",
+                "Templates for required letters",
+                "Filling provincial application forms",
+                "EOI submission for provinces",
+                "Net-worth verification & reporting",
             ].map((item, i) => (
-              <div
+                <div
                 key={i}
                 className="p-4 border-l-4 border-emerald-600 bg-gray-50 rounded"
-              >
+                >
                 {i + 1}. {item}
-              </div>
+                </div>
             ))}
-          </div>
-          <div className="space-y-5">
+            </div>
+            <div className="space-y-5">
             {[
-              "Application submission & interview guidance",
-              "Work visas & study permits",
-              "Permanent residence application",
-              "Nomination services application",
-              "Landing services (bank, SIN, etc.)",
-              "Government fees coverage",
+                "Application submission & interview guidance",
+                "Work visas & study permits",
+                "Permanent residence application",
+                "Nomination services application",
+                "Landing services (bank, SIN, etc.)",
+                "Government fees coverage",
             ].map((item, i) => (
-              <div
+                <div
                 key={i}
                 className="p-4 border-l-4 border-teal-600 bg-gray-50 rounded"
-              >
+                >
                 {i + 11}. {item}
-              </div>
+                </div>
             ))}
-          </div>
+            </div>
         </div>
-      </section>
+        </section>
 
-      {/* Why Novanest */}
-      <section className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white py-20 px-6">
+        {/* Why Novanest */}
+        <section className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Novanest?</h2>
-          <ul className="space-y-4 text-lg">
+            <h2 className="text-3xl font-bold mb-6">Why Novanest?</h2>
+            <ul className="space-y-4 text-lg">
             <li>✔ Proven track record in investment & acceleration</li>
             <li>✔ Expert immigration, financial & business consultants</li>
             <li>✔ End-to-end services: planning, documentation, settlement</li>
             <li>✔ Transparent, results-driven, tailored to your success</li>
-          </ul>
+            </ul>
         </div>
-      </section>
+        </section>
 
-      {/* CTA */}
-      <section className="py-16 px-6 text-center">
+        {/* CTA */}
+        <section className="py-16 px-6 text-center">
         <h2 className="text-2xl font-bold mb-6">
-          Ready to Build Your Business in Canada?
+            Ready to Build Your Business in Canada?
         </h2>
         <a className="bg-emerald-600 text-white font-semibold">
-          Get Started with Novanest
+            Get Started with Novanest
         </a>
-      </section>
+        </section>
     </>
   )
 }

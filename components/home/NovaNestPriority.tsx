@@ -9,21 +9,19 @@ export default function NovaNestPriority({lang}: {lang: string}) {
         <h3 className="text-4xl font-header font-bold mb-20 text-gray-800 text-center">
           {t('Priorities')}
         </h3>
-        <div className="w-full px-4">
-          <div className="flex justify-center flex-wrap gap-8 max-w-responsive mx-auto">
-            {t('cardData1', { returnObjects: true }).map(
-              (
-                { title, image }: { title: string; image: string },
-                index: number
-              ) => (
-                <PriorityCard
-                  key={index}
-                  title={title}
-                  image={image}
-                />
-              )
-            )}
-          </div>
+        <div className="flex justify-center flex-wrap gap-8 max-w-responsive mx-auto">
+          {t('cardData1', { returnObjects: true }).map(
+            (
+              { title, image }: { title: string; image: string },
+              index: number
+            ) => (
+              <PriorityCard
+                key={index}
+                title={title}
+                image={image}
+              />
+            )
+          )}
         </div>
     </div>
   );
