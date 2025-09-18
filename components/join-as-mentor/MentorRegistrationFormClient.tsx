@@ -168,7 +168,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
               errors={errors}
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: 'provinceOfResidence'
+                provinceOfResidence: ''
               }}
               register={register}
             />

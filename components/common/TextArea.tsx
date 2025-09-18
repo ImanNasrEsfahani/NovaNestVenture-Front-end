@@ -1,5 +1,3 @@
-
-
 export default function TextArea({
   title,
   register,
@@ -34,7 +32,7 @@ export default function TextArea({
         rows={rows}
         cols={cols}
         className={
-          'textarea textarea-lg resize-none rounded-sm bg-transparent w-full mt-3 mb-1 get-shadow-sm text-sm placeholder:text-gray focus:outline-none' +
+          'textarea textarea-lg resize-none rounded-sm bg-transparent w-full mt-3 mb-1 get-shadow-sm border border-gray-400 text-sm placeholder:text-gray focus:outline-none' +
           (errors[nameTextArea] ? ' border-red-500' : '')
         }
         {...register(nameTextArea, {

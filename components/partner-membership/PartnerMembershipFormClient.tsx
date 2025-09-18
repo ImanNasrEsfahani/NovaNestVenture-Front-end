@@ -171,42 +171,39 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
             errors={errors}
             nameInputs={{
                 countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: 'provinceOfResidence'
+                provinceOfResidence: ''
             }}
             register={register}
           />
 
-          <div className="col-span-1">
-            <Input
-              register={register}
-              errors={errors}
-              nameInput="companyName"
-              type="text"
-              label={translations.companyName}
-              required={translations.companyNameRequired}
-              placeholder={translations.companyNamePlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full"
-              labelClass="dark:text-current"
-              patternValue=""
-              patternMessage=""
-            />
-          </div>
+          {/* <Input
+            register={register}
+            errors={errors}
+            nameInput="companyName"
+            type="text"
+            label={translations.companyName}
+            required={translations.companyNameRequired}
+            placeholder={translations.companyNamePlaceholder}
+            className="input col-span-1 mb-1 mt-3 w-full"
+            labelClass="dark:text-current"
+            patternValue=""
+            patternMessage=""
+          /> */}
 
-          <div className="col-span-1">
-            <Input
-              register={register}
-              errors={errors}
-              nameInput="investmentCeiling"
-              type="text"
-              label={translations.investmentCeiling}
-              required={translations.investmentCeilingRequired}
-              placeholder={translations.investmentCeilingPlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full"
-              labelClass=" dark:text-current"
-              patternValue=""
-              patternMessage=""
-            />
-          </div>
+          <Input
+            register={register}
+            errors={errors}
+            nameInput="investmentCeiling"
+            type="text"
+            label={translations.investmentCeiling}
+            // required={translations.investmentCeilingRequired}
+            required=""
+            placeholder={translations.investmentCeilingPlaceholder}
+            className="input col-span-1 mb-1 mt-3 w-full"
+            labelClass=" dark:text-current"
+            patternValue=""
+            patternMessage=""
+          />
 
           <div className="flex flex-col col-span-1 md:col-span-3 gap-6">
             <TextArea
@@ -217,7 +214,8 @@ export default function PartnerMembershipFormClient({ lang, translations }: Part
               nameTextArea="howDidYouKnowUs"
               patternMessage=""
               patternValue=""
-              required={translations.howDidYouKnowUsRequired}
+              // required={translations.howDidYouKnowUsRequired}
+              required=""
               rows={3}
             />
           </div>

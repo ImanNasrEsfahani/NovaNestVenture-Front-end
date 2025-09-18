@@ -37,7 +37,7 @@ export default function Select({
           {...register(nameInput, {
             required: required
           })}
-          className={`w-full mt-2 !rounded-sm get-shadow-sm active:outline-none focus:outline-none appearance-none bg-transparent placeholder:text-[#939393B2] ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
+          className={`w-full mt-3 !rounded-sm border border-gray-400 get-shadow-sm active:outline-none focus:outline-none appearance-none bg-transparent placeholder:text-[#939393B2] ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
           onChange={handleChange}
           defaultValue=""
         >

@@ -51,7 +51,7 @@ export default function Input({
           }
         })}
         placeholder={placeholder}
-        className={`w-full !rounded-sm get-shadow-sm focus:outline-none bg-transparent placeholder:text-[#939393B2] ${
+        className={`w-full !rounded-sm get-shadow-sm focus:outline-none border border-gray-400 bg-transparent placeholder:text-[#939393B2] ${
           className + (errors[nameInput] ? ' border-red-500' : '')
         }`}
       />
