@@ -8,7 +8,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
   return (
     <>
-
+        
     </>
   )
 }
