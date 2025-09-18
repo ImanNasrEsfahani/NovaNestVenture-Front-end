@@ -68,20 +68,20 @@ export default function Navbar({
           </div>
 
           <div className="hidden justify-center ltr:mr-12 xl:flex xl:flex-1">
-            <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl md:mb-3 ">
-              <li className="h-9">
+            <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl h-full">
+              <li className="h-full">
                 <div className="relative group">
-                  <h2 className="text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
+                  <h2 className="h-auto text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
                   {lang === 'en' ? 'Services' : 'خدمات'}
                   </h2>
 
                   {/* Desktop Forms */}
-                  <ul className="absolute left-[-80px] top-14 mt-2 w-64 space-y-4 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
+                  <ul className="absolute top-14 mt-2 w-96 space-y-2 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">
                     {submenuItems.map(({ label, href }: any) => (
-                      <li className="max-h-fit text-xl" key={label}>
+                      <li className="h-full text-xl" key={label}>
                         <Link
                           href={`${base}${href}`}
-                          className="block border p-5 font-bold text-black hover:bg-base-200 hover:text-primary"
+                          className="block p-5 hover:bg-base-400 hover:text-primary"
                         >
                           {label}
                         </Link>
@@ -92,8 +92,8 @@ export default function Navbar({
               </li>
               {menuItems.map(
                 ({ label, href }: { label: string; href: string }) => (
-                  <li className="h-9 text-xl mt-2" key={label}>
-                    <Link href={`${base}${href}`} className="text-white hover:bg-white">
+                  <li className="h-full text-xl mt-2" key={label}>
+                    <Link href={`${base}${href}`} className="text-white hover:bg-white hover:text-black h-full flex items-center px-4 rounded-xl transition-all">
                       {label}
                     </Link>
                   </li>
@@ -222,16 +222,6 @@ export default function Navbar({
           </div> */}
         </ul>
       </div>
-      <style>{`
-        .children {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-        }
-      `}</style>
     </div>
   );
 }
