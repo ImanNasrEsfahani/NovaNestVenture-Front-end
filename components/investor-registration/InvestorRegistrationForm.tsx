@@ -46,8 +46,8 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
 
   return (
   <>
-    <div className='max-w-responsive mx-auto'>
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
+    <div className='max-w-responsive mx-auto text-center'>
+      <h1 className="font-barlow text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
         Join the Novanest Venture Investor Network
       </h1>
 

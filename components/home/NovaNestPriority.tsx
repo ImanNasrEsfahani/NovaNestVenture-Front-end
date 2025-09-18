@@ -5,7 +5,7 @@ export default function NovaNestPriority({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
-    <div className="relative max-w-responsive py-24">
+    <div className="relative max-w-responsive mx-auto py-24">
         <h3 className="mb-12 font-header text-4xl font-bold text-center">
           {t('Priorities')}
         </h3>

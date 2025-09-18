@@ -41,19 +41,19 @@ module.exports = {
         'xl': '23px'
       },
       maxWidth: {
-        'responsive': 'clamp(320px, 95vw, 1920px)',
+        'responsive': 'clamp(280px, 92vw, 1400px)',
         // Mobile breakpoints
-        'container-xs': '384px',    // small phones (320-480px)
-        'container-sm': '512px',    // large phones (480-640px)
+        'container-xs': '300px',    // small phones (320-480px)
+        'container-sm': '400px',    // large phones (480-640px)
         // Tablet breakpoints  
-        'container-md': '672px',    // small tablets (640-768px)
-        'container-lg': '896px',    // large tablets (768-1024px)
+        'container-md': '500px',    // small tablets (640-768px)
+        'container-lg': '680px',    // large tablets (768-1024px)
         // Desktop breakpoints
-        'container-xl': '1152px',   // small desktop (1024-1280px)
-        'container-2xl': '1400px',  // medium desktop (1280-1536px)
-        'container-3xl': '1600px',  // large desktop (1536-1792px)
-        'container-4xl': '1800px',  // extra large desktop (1792px+)
-        'container-max': '1920px',  // full HD screens
+        'container-xl': '800px',   // small desktop (1024-1280px)
+        'container-2xl': '980px',  // medium desktop (1280-1536px)
+        'container-3xl': '1120px',  // large desktop (1536-1792px)
+        'container-4xl': '1260px',  // extra large desktop (1792px+)
+        'container-max': '1400px',  // full HD screens
       }
     },
   },

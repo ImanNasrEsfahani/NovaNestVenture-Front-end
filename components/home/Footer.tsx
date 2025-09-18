@@ -112,7 +112,7 @@ export default function Footer({
           </Link>
         </div>
       </div>
-      <div className="max-w-responsive p-4 border-t border-tableHeader text-center text-tableHeader">
+      <div className="max-w-responsive mx-auto p-4 border-t border-tableHeader text-center text-tableHeader">
         © Copyright {GetYear()} by{' '}
         <Link href={`${base}`} className="text-tableHeader">
           NovaNestVenture

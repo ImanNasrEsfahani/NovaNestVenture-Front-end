@@ -47,10 +47,10 @@ export default function Page({
       {/* Centered Text Section */}
       <div className="flex justify-center items-center pt-32 pb-16">
         <div className="max-w-[75%] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
+            <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
             Startup Investment & Entrepreneurial Growth
             </h2>
-          <h3 className="text-xl md:text-2xl font-semibold mb-8 text-gray-600">
+          <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
             Empowering Scalable Startups. Supporting Founders. Building the Future.
           </h3>
           <p className="text-lg leading-relaxed text-gray-700">
@@ -62,19 +62,21 @@ export default function Page({
 
       {/* Two Cards Section */}
       <div className="max-w-responsive mx-auto py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* For Startup Investors Card */}
-          <div className="flex flex-col get-shadow-g p-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="flex flex-col get-shadow-g p-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-800">For Startup Investors</h3>
+              <h3 className="font-header text-2xl font-bold text-gray-800">For Startup Investors</h3>
             </div>
-            <p className="mb-6">
-              Investing in startups is a powerful way to generate long-term returns and support innovation. At NovaNest, we minimize risks by carefully selecting scalable ventures and providing investors with access to a global network of experts, mentors, and co-investors.
-            </p>
-            <p className="">
-              Join NovaNest Venture&apos;s investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.
-            </p>
-            <div className="text-center mt-6">
+            <div className='text-base'>            
+              <p className="mb-6">
+                Investing in startups is a powerful way to generate long-term returns and support innovation. At NovaNest, we minimize risks by carefully selecting scalable ventures and providing investors with access to a global network of experts, mentors, and co-investors.
+              </p>
+              <p className="">
+                Join NovaNest Venture&apos;s investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.
+              </p>
+            </div>
+            <div className="text-center mt-12">
               <a
                 href={`${base}investor-registration`}
                 className="btn btn-neutral text-white btn-lg normal-case"
@@ -85,17 +87,19 @@ export default function Page({
           </div>
 
           {/* For Entrepreneurs & Startup Founders Card */}
-          <div className="flex flex-col get-shadow-g p-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="flex flex-col get-shadow-g p-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-800">For Entrepreneurs & Startup Founders</h3>
+              <h3 className="font-header text-2xl font-bold text-gray-800">For Entrepreneurs & Startup Founders</h3>
             </div>
-            <p className="mb-6">
-              Are you building a startup or launching a new business idea? NovaNest Venture offers tailored support including funding access, mentorship, and strategic guidance to help you grow your business and attract the right investors.
-            </p>
-            <p className="">
-              We prioritize founder-led innovation and scalable startup models—your vision, combined with our resources, can create global impact.
-            </p>
-            <div className="text-center mt-6">
+            <div className='text-base'>
+              <p className="mb-6">
+                Are you building a startup or launching a new business idea? NovaNest Venture offers tailored support including funding access, mentorship, and strategic guidance to help you grow your business and attract the right investors.
+              </p>
+              <p className="">
+                We prioritize founder-led innovation and scalable startup models—your vision, combined with our resources, can create global impact. I am iman nasr
+              </p>
+            </div>
+            <div className="text-center mt-12">
               <a
                 href={`${base}startups-form`}
                 className="btn btn-neutral text-white btn-lg normal-case"

@@ -42,19 +42,19 @@
   "successMessage": "Form Submitted Successfully.",
   "failedMessage": "An error occurred. Please Contact Support.",
 
-  "companyName": "Company Name *",
+  "companyName": "Company Name",
   "companyNameRequired": "Company Name is Required.",
   "companyNamePlaceholder": "Enter your Company Name",
 
-  "maximumInvestment": "Maximum Investment * ",
+  "maximumInvestment": "Maximum Investment",
   "maximumInvestmentRequired": "Maximum Investment is Required",
   "maximumInvestmentPlaceholder": "ex. 100,000$",
 
-  "preferredAreas": "Preferred Areas for Investment*",
+  "preferredAreas": "Preferred Areas for Investment *",
   "preferredAreasRequired": "This field is required",
   "preferredAreasPlaceholder": "Areas",
 
-  "howDidYouKnowUs": "How did you hear about us? *",
+  "howDidYouKnowUs": "How did you hear about us?",
   "howDidYouKnowUsRequired": "This field is required",
   "howDidYouKnowUsPlaceholder": "e.g. social media, etc",
 
@@ -159,9 +159,9 @@
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
-    "banner": "Investor Center",
+    "banner": "Investor Registration",
     "NovaNestVenture": "NovaNest Venture",
-    "formTitle": "Investor Center Form",
+    "formTitle": "Investor Registration Form",
     "formDescriptionStart": "Would you like to access unique investment opportunities? By joining the Novanest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:",
     "formList": [
       "Early access to high-potential startups and projects",

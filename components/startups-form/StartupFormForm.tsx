@@ -36,7 +36,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
 
   return (
     <div className="max-w-responsive mx-auto py-20">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
+        <h1 className="font-header text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
           Join the Novanest Venture Startup Network
         </h1>
         <p className="text-lg mb-4 leading-relaxed">

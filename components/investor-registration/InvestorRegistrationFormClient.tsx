@@ -191,7 +191,8 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 nameInput="companyName"
                 type="text"
                 label={translations.companyName}
-                required={translations.companyNameRequired}
+                // required={translations.companyNameRequired}
+                required=""
                 placeholder={translations.companyNamePlaceholder}
                 className="input col-span-1 mb-1 mt-3 w-full"
                 labelClass="dark:text-current"
@@ -207,7 +208,8 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 nameInput="investmentCeiling"
                 type="text"
                 label={translations.maximumInvestment}
-                required={translations.maximumInvestmentRequired}
+                // required={translations.maximumInvestmentRequired}
+                required=""
                 placeholder={translations.maximumInvestmentPlaceholder}
                 className="input col-span-1 mb-1 mt-3 w-full"
                 labelClass=" dark:text-current"
@@ -237,7 +239,8 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 nameTextArea="howDidYouKnowUs"
                 patternMessage=""
                 patternValue=""
-                required={translations.howDidYouKnowUsRequired}
+                // required={translations.howDidYouKnowUsRequired}
+                required=""
                 rows={1}
               />
             </div>

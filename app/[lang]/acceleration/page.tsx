@@ -73,7 +73,7 @@ export default function Page({
         </section>
 
         {/* Why NovaNest */}
-        <section className="max-w-responsive py-24 px-6 mx-auto">
+        <section className="max-w-responsive mx-auto py-24 px-6">
           <h2 className="text-3xl font-bold text-center mb-10">Why NovaNest Accelerator?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
