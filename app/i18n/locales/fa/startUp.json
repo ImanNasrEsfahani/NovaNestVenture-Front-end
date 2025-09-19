@@ -62,6 +62,52 @@
     "بررسی فاکتورها"
   ],
   
+  
+  "service-details": [
+      {
+          "header": "Business Concept Assessment & Development",
+          "content": [
+              "Assessing the client’s management experience and education in the context of a qualifying Canadian business",
+              "Identifying economic priorities in Canada and matching them with the client’s qualifications and proposed concepts",
+              "Collaborating with incubators and angel investors to evaluate and enhance the business concept",
+              "Assisting the client in developing a business concept that meets the requirements for a Letter of Support / Commitment Certificate"
+          ]
+      },
+      {
+          "header": "Business Documentation & Preparation",
+          "content": [
+              "Creating a professional Pitch Deck",
+              "Drafting a Business Plan within Canadian startup market standards",
+              "Business consultations, valuation assessments, and financial projections",
+              "Reviewing Pro Forma financial documents",
+              "Intellectual property review and filing patents (where applicable)",
+              "Incorporation, minute book preparation, and legal structuring"
+          ]
+      },
+      {
+          "header": "Support with Designated Organizations",
+          "content": [
+              "Presenting the client’s profile to designated entities",
+              "Coaching the client for all meetings and interviews with incubators",
+              "Supporting the client during Committee Review, Deal Screening, Coaching Meetings and related undertakings",
+              "Advising the client on compliance with the terms of the Letter of Support / Commitment Certificate"
+          ]
+      },
+      {
+          "header": "Immigration & Application Support",
+          "content": [
+              "Providing a checklist of required documents",
+              "Reviewing all documents and addressing potential issues",
+              "Drafting templates for required letters",
+              "Completing and reviewing all immigration forms",
+              "Preparing and submitting the complete immigration application to IRCC",
+              "Handling all correspondence with Canadian immigration authorities",
+              "Applications for work permits (client and spouse), study permits for children, and permanent residency",
+              "Landing services including guidance for opening a bank account, obtaining a SIN, and more"
+          ]
+      }
+  ],
+
   "latest-startups": [
     {
         "title": "Landa Trip",

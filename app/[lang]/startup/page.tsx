@@ -75,6 +75,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         </div>
       </section>
 
+      {/* Our Services */}
       <section className="py-16 max-w-responsive mx-auto">
         <h3 className="text-4xl font-header leading-loose text-center font-bold mb-4">Our Services for Canada Startup Visa</h3>
         <div className='grid lg:grid-cols-2 '>
@@ -82,7 +83,9 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
             <p className="text-gray-600 text-base mb-4">
               At Novanest, we work closely with Canadian Designated Organizations to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.
             </p>
-            <Accordion />
+            <Accordion 
+              data={t('service-details', { returnObjects: true })}
+            />
           </div>
           <div className="flex items-center justify-center">
             <Image
@@ -95,8 +98,6 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           </div>
         </div>
       </section>
-
-
 
       {/* Why Choose Us */}
       <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue py-16 my-24">
@@ -111,7 +112,9 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         </div>
       </section>
 
+      {/* Latest Startups */}
       <section className='max-w-responsive mx-auto pt-12 px-4 w-100 lg:px-16 space-y-16 mb-16'>
+        <h2 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">Latest Startups</h2>
         {t('latest-startups', { returnObjects: true }).map(
           (startup: {
             title: string;
@@ -141,7 +144,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </section>
 
       <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
-        <h3 className="text-3xl font-header md:text-5xl font-bold text-gray-800 text-center mb-12">Roadmap of SUV program</h3>
+        <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">Startup Visa Roadmap</h3>
         <Image
           src="/static/images/startup/startup-visa-canada-roadmap.png"
           alt="SUV startup roadmap"

@@ -1,6 +1,48 @@
 {
     "lng": "fa",
     "dir": "rtl",
-    "banner": "برنامه کارآفرینی"
-    
+    "banner": "برنامه کارآفرینی",
+
+    "service-details": [
+        {
+            "header": "Business Evaluation & Planning",
+            "content": [
+            "Assessing and selecting the right business based on applicant’s profile",
+            "Market research and data collection",
+            "Drafting marketing materials and business planning documents",
+            "Preparing HR and staffing documents",
+            "Developing a management plan",
+            "Writing a professional business plan aligned with provincial standards",
+            "Preparing financial forms according to SME standards"
+            ]
+        },
+        {
+            "header": "Document & Application Preparation",
+            "content": [
+            "Collecting required documents and preparing a professional resume",
+            "Preparing official templates for required letters",
+            "Completing provincial application forms",
+            "Preparing and submitting EOI (Expression of Interest) to provinces",
+            "Identifying licensed Net-Worth Verifier companies in Canada",
+            "Coordinating and obtaining net-worth verification reports",
+            "Submitting official applications to provincial authorities"
+            ]
+        },
+        {
+            "header": "Immigration Process Support",
+            "content": [
+            "Guidance and preparation for interviews",
+            "Applying for work permits for applicants and spouses, and study permits for children",
+            "Submitting Permanent Residence applications",
+            "Receiving provincial nomination (Nomination Services)"
+            ]
+        },
+        {
+            "header": "Settlement & Financial Support",
+            "content": [
+            "Landing services, including assistance with opening a bank account, obtaining SIN, and other settlement needs",
+            "Coverage of government fees"
+            ]
+        }
+    ]
 }
