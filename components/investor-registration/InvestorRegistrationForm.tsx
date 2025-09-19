@@ -52,7 +52,7 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
       </h1>
 
       <div className="text-xl mb-8">
-        <p className="font-bold text-center text-gray-500 mb-8">
+        <p className="font-bold text-center text-gray-500 mb-12">
           Would you like to access unique investment opportunities? By joining the NovaNest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:
         </p>
         
