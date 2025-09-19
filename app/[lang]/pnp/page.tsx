@@ -33,23 +33,25 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         </section>
 
         {/* Why Start a Business */}
-        <section className="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <h2 className="text-3xl font-bold mb-6">Why Start a Business in Canada?</h2>
-                <ul className="space-y-3 text-gray-700">
-                <li>Stable and growing economy with access to domestic and international markets</li>
-                <li>Continuous demand for foreign entrepreneurs and investors to boost provincial growth</li>
-                <li>Strong government and provincial support, including tax incentives, investment opportunities, and solid infrastructure</li>
-                <li>Clear pathway to permanent residency for applicants and their families</li>
-                </ul>
-            </div>
+        <section className="py-16 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-10 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-6">Why Start a Business in Canada?</h2>
+            <ul className="space-y-3 text-gray-700">
+              <li>Stable and growing economy with access to domestic and international markets</li>
+              <li>Continuous demand for foreign entrepreneurs and investors to boost provincial growth</li>
+              <li>Strong government and provincial support, including tax incentives, investment opportunities, and solid infrastructure</li>
+              <li>Clear pathway to permanent residency for applicants and their families</li>
+            </ul>
+          </div>
+          <div className="flex justify-center">
             <Image
-                src="/static/images/pnp/pnp-program-canada.png"
-                alt="Business Growth"
-                className="rounded-xl shadow-md"
-                width={500}
-                height={350}
+              src="/static/images/pnp/pnp-program-canada.png"
+              alt="Business Growth"
+              className="max-w-sm w-full rounded-xl shadow-md"
+              width={300}
+              height={150}
             />
+          </div>
         </section>
 
         {/* Requirements */}
