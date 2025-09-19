@@ -35,7 +35,7 @@ export default function Footer({
           <div className="text-justify text-xl font-medium text-primary pb-2">
             {t('about.title')}
           </div>
-          <div className="mt-1 text-justify text-base  font-normal text-black pb-2">
+          <div className="mt-1 text-justify text-sm font-normal text-black pb-2">
             {t('about.text')}
           </div>
           <div className="mt-2 flex flex-row items-center text-black gap-4">
@@ -109,6 +109,12 @@ export default function Footer({
             className="pt-2 hover:text-primary"
           >
             {t('contact', { returnObjects: true }).text.cNumber}
+          </Link>
+          <Link
+            href="mailto:info@NovaNestVenture.com"
+            className="pt-2 hover:text-primary"
+          >
+            {t('contact', { returnObjects: true }).text.email}
           </Link>
         </div>
       </div>

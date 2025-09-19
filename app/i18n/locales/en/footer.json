@@ -4,7 +4,7 @@
   "NovaNestVenture": "NovaNest Venture",
   "about": {
     "title": "About NovaNest Venture",
-    "text": "In NovaNest Venture, individuals will be trained based on their interests and capabilities. Necessary actions are taken at the NovaNest Acceleration Center to accelerate their unique abilities. Then, investment is made based on the investment priorities of developing the nurtured capabilities of individuals."
+    "text": "Novanest is an investor, accelerator, and growth hub that supports startups and entrepreneurs in scaling, securing funding, and entering global markets. With a strong network of investors, expert mentors, and international partners, we are your trusted companion on the journey from idea to success."
   },
   "explore": {
     "title": "Explore",
@@ -47,9 +47,10 @@
   "contact": {
     "title": "Contact",
     "text": {
-      "addressLineOne": "3308-3833 EVERGREEN PL,",
-      "addressLineTwo": "BURNABY BC V3J 0M2 Canada",
-      "cNumber": "(+1) 778 986-5432"
+      "addressLineOne": "3833 EVERGREEN PL,",
+      "addressLineTwo": "BURNABY, BC, Canada, V3J0M2",
+      "cNumber": "(+1) 778 986-5432",
+      "email": "info@NovaNestVenture.com"
     }
   }
 }

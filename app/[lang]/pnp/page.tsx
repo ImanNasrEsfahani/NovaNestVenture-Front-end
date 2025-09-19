@@ -181,8 +181,8 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         <h2 className="text-2xl font-bold mb-6">
             Ready to Build Your Business in Canada?
         </h2>
-        <a className="bg-emerald-600 text-white font-semibold">
-            Get Started with Novanest
+        <a className="btn btn-neutral text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
+            Get Started
         </a>
         </section>
     </>

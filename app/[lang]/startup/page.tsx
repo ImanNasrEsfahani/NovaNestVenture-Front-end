@@ -50,7 +50,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </section>
 
       {/* Who Can Apply */}
-      <section className="bg-gray-50 py-20 px-6">
+      <section className="bg-gray-50 py-16 pb-20 px-6">
         <h2 className="text-3xl font-bold font-header text-center mb-4">Who Can Apply?</h2>
         {/* <p className="text-center text-gray-900 text-base mb-4">Are You Eligible?</p> */}
         <p className="text-center text-gray-600 text-lg mb-10">Applicants generally fall into two categories:</p>
@@ -76,7 +76,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </section>
 
       <section className="py-16 max-w-responsive mx-auto">
-        <h3 className="text-4xl leading-loose text-center font-bold mb-4">Our Services for Canada’s Startup Visa Program</h3>
+        <h3 className="text-4xl font-header leading-loose text-center font-bold mb-4">Our Services for Canada Startup Visa</h3>
         <div className='grid lg:grid-cols-2 '>
           <div className='flex flex-col justify-center'>
             <p className="text-gray-600 text-base mb-4">
@@ -101,7 +101,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       {/* Why Choose Us */}
       <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue py-16 my-24">
         <div className="max-w-responsive mx-auto text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">Why Choose NovaNest?</h2>
+          <h2 className="text-3xl font-header font-bold mb-4">Why Choose NovaNest?</h2>
           <p className="text-lg mb-8">Experience • Network • Expertise</p>
           <ul className="space-y-3 text-lg">
             <li>✔ Expert team in investment & startup consulting</li>
@@ -140,10 +140,21 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         )}
       </section>
 
+      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+        <h3 className="text-3xl font-header md:text-5xl font-bold text-gray-800 text-center mb-12">Roadmap of SUV program</h3>
+        <Image
+          src="/static/images/startup/startup-visa-canada-roadmap.png"
+          alt="SUV startup roadmap"
+          className="mx-auto w-auto max-w-4xl rounded-lg"
+          width={1800}
+          height={2400}
+        />
+      </section>
+
       {/* How to Start */}
       <section className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4">How to Start</h2>
-        <p className="text-center text-gray-600 mb-10">Your First Step to Canada</p>
+        <h2 className="text-3xl font-header md:text-5xl font-bold mb-4 text-gray-800 text-center">How to Start</h2>
+        <p className="text-lg md:text-2xl font-semibold mb-12 text-gray-500 text-center">Your First Step to Canada</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             "Submit Your Info: Share your idea or investment interest.",
