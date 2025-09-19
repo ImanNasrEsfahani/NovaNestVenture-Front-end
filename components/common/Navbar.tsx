@@ -71,9 +71,17 @@ export default function Navbar({
             <ul className="menu menu-horizontal flex justify-center space-x-10 font-header text-xl h-full">
               <li className="h-full">
                 <div className="relative group">
-                  <h2 className="h-auto text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
+                  <h4 className="flex flex-row h-auto text-xl cursor-pointer transition-all p-2 group-hover:bg-white group-hover:text-black rounded-xl">
                   {lang === 'en' ? 'Services' : 'خدمات'}
-                  </h2>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-2 h-5 w-5 transition-transform group-hover:rotate-180"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    ></svg>
+                  </h4>
 
                   {/* Desktop Forms */}
                   <ul className="absolute top-14 mt-2 w-96 space-y-2 rounded-box bg-stone-100 p-2 shadow opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible">

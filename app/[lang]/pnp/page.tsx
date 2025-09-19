@@ -91,58 +91,11 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         </section>
 
         {/* Our Services */}
-        {/* <section className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">
-            Our Services for Entrepreneurs
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-5">
-            {[
-                "Estimating & finding a business",
-                "Market research & information gathering",
-                "Drafting marketing & staffing documents",
-                "Preparing management & business plans",
-                "Financial forms according to SME standards",
-                "Resumes & required documents preparation",
-                "Templates for required letters",
-                "Filling provincial application forms",
-                "EOI submission for provinces",
-                "Net-worth verification & reporting",
-            ].map((item, i) => (
-                <div
-                key={i}
-                className="p-4 border-l-4 border-emerald-600 bg-gray-50 rounded"
-                >
-                {i + 1}. {item}
-                </div>
-            ))}
-            </div>
-            <div className="space-y-5">
-            {[
-                "Application submission & interview guidance",
-                "Work visas & study permits",
-                "Permanent residence application",
-                "Nomination services application",
-                "Landing services (bank, SIN, etc.)",
-                "Government fees coverage",
-            ].map((item, i) => (
-                <div
-                key={i}
-                className="p-4 border-l-4 border-teal-600 bg-gray-50 rounded"
-                >
-                {i + 11}. {item}
-                </div>
-            ))}
-            </div>
-        </div>
-        </section> */}
-
-        {/* Our Services */}
         <section className="py-16 max-w-responsive mx-auto">
-        <h3 className="text-4xl font-header leading-loose text-center font-bold mb-4">Our Services for Entrepreneurs</h3>
+        <h3 className="text-4xl font-header leading-loose text-center font-bold mb-16">Our Services for Entrepreneurs</h3>
         <div className='grid lg:grid-cols-2 '>
             <div className='flex flex-col justify-center'>
-            <p className="text-gray-600 text-base mb-4">At Novanest, we provide end-to-end support for your entrepreneurial journey in Canada:</p>
+            <p className="text-gray-600 text-base mb-6">At Novanest, we provide end-to-end support for your entrepreneurial journey in Canada:</p>
             <Accordion 
                 data={t('service-details', { returnObjects: true })}
             />
