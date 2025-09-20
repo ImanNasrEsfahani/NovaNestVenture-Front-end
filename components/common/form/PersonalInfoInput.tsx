@@ -1,37 +1,70 @@
 'use client';
 // import React, { useState } from 'react'
 import Input from '@/components/common/form/Input';
-import { getServerTranslation } from 'app/i18n';
-// import { Type } from '@prisma/client';
+import { Type } from '@prisma/client';
 import Select from './Select';
 
 type Props = {
-  lang: string;
   register: any;
   errors: any;
-  nameInputs?: {
+  nameInputs: {
     firstName: string;
     lastName: string;
     email: string;
     phoneNumber: string;
     jobPosition: string;
   };
-  noLabel?: boolean;
+  noLabel: boolean;
+  translations: {
+    INTERN: string;
+    EMPLOYEE: string;
+
+    Developer: string;
+    Marketing: string;
+    Graphist: string;
+    Immigration: string;
+    Accountant: string;
+    Administrative: string;
+
+    firstName: string;
+    firstNameRequired: string;
+    firstNamePlaceholder: string;
+
+    lastName: string;
+    lastNameRequired: string;
+    lastNamePlaceholder: string;
+    
+    email: string;
+    emailRequired: string;
+    emailErrorMessage: string;
+    emailPlaceholder: string;
+
+    phoneNumber: string;
+    phoneNumberRequired: string;
+    phoneNumberErrorMessage: string;
+    phoneNumberPlaceholder: string;
+
+    jobPosition: string;
+    jobPositionRequired: string;
+    jobPositionPlaceholder: string;
+
+    application: string;
+    applicationRequired: string;
+    applicationPlaceholder: string;
+  }
 };
 
-const PersonalInfoInput = ({
-  lang,
+export default function PersonalInfoInput({
   register,
   errors,
   nameInputs,
-  noLabel
-}: Props) => {
-
-  const { t } = getServerTranslation(lang, 'formComponent');
+  noLabel,
+  translations
+}: Props) {
 
   enum Type {
-    INTERN = t('INTERN'),
-    EMPLOYEE = t('EMPLOYEE')
+    INTERN = translations.INTERN,
+    EMPLOYEE = translations.EMPLOYEE
   }
 
   const Types = [Type.INTERN, Type.EMPLOYEE];
@@ -42,12 +75,12 @@ const PersonalInfoInput = ({
   }));
 
   enum Type {
-    Developer = t('Developer'),
-    Marketing = t('Marketing'),
-    Graphist = t('Graphist'),
-    Immigration = t('Immigration'),
-    Accountant = t('Accountant'),
-    Administrative = t('administrative')
+    Developer = translations.Developer,
+    Marketing = translations.Marketing,
+    Graphist = translations.Graphist,
+    Immigration = translations.Immigration,
+    Accountant = translations.Accountant,
+    Administrative = translations.Administrative
   }
 
   const Types1 = [
@@ -80,10 +113,10 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.firstName}
               type="text"
-              required={t('firstNameRequired')}
+              required={translations.firstNameRequired}
               patternValue=""
               patternMessage=""
-              placeholder={t('firstNamePlaceholder')}
+              placeholder={translations.firstNamePlaceholder}
               className="input col-span-1 mb-1 mt-3 w-full"
             />
           ) : (
@@ -92,11 +125,11 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.firstName}
               type="text"
-              label={t('firstName')}
-              required={t('firstNameRequired')}
+              label={translations.firstName}
+              required={translations.firstNameRequired}
               patternValue=""
               patternMessage=""
-              placeholder={t('firstNamePlaceholder')}
+              placeholder={translations.firstNamePlaceholder}
               className="input  col-span-1 mb-1 mt-3 w-full"
               labelClass=" dark:text-current"
             />
@@ -112,10 +145,10 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.lastName}
               type="text"
-              required={t('lastNameRequired')}
+              required={translations.lastNameRequired}
               patternValue=""
               patternMessage=""
-              placeholder={t('lastNamePlaceholder')}
+              placeholder={translations.lastNamePlaceholder}
               className="input  col-span-1 mb-1 mt-3 w-full"
             />
           ) : (
@@ -124,11 +157,11 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.lastName}
               type="text"
-              label={t('lastName')}
-              required={t('lastNameRequired')}
+              label={translations.lastName}
+              required={translations.lastNameRequired}
               patternValue=""
               patternMessage=""
-              placeholder={t('lastNamePlaceholder')}
+              placeholder={translations.lastNamePlaceholder}
               className="input  col-span-1 mb-1 mt-3 w-full"
               labelClass=" dark:text-current"
             />
@@ -144,10 +177,10 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.email}
               type="email"
-              required={t('emailRequired')}
+              required={translations.emailRequired}
               patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-              patternMessage={t('emailErrorMessage')}
-              placeholder={t('EmailPlaceholder')}
+              patternMessage={translations.emailErrorMessage}
+              placeholder={translations.emailPlaceholder}
               className="input col-span-1 mb-1 mt-3 w-full"
             />
           ) : (
@@ -156,11 +189,11 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.email}
               type="email"
-              label={t('email')}
-              required={t('emailRequired')}
+              label={translations.email}
+              required={translations.emailRequired}
               patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-              patternMessage={t('emailErrorMessage')}
-              placeholder={t('EmailPlaceholder')}
+              patternMessage={translations.emailErrorMessage}
+              placeholder={translations.emailPlaceholder}
               className="input  col-span-1 mb-1 mt-3 w-full"
               labelClass=" dark:text-current"
             />
@@ -176,10 +209,10 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.phoneNumber}
               type="text"
-              required={t('phoneNumberRequired')}
+              required={translations.phoneNumberRequired}
               patternValue="^[0-9]{11}$"
-              patternMessage={t('phoneNumberErrorMessage')}
-              placeholder={t('phoneNumberPlaceholder')}
+              patternMessage={translations.phoneNumberErrorMessage}
+              placeholder={translations.phoneNumberPlaceholder}
               className="input col-span-1 mb-1 mt-3 w-full"
             />
           ) : (
@@ -188,11 +221,11 @@ const PersonalInfoInput = ({
               errors={errors}
               nameInput={nameInputs.phoneNumber}
               type="text"
-              label={t('phoneNumber')}
-              required={t('phoneNumberRequired')}
+              label={translations.phoneNumber}
+              required={translations.phoneNumberRequired}
               patternValue="^[0-9]{11}$"
-              patternMessage={t('phoneNumberErrorMessage')}
-              placeholder={t('phoneNumberPlaceholder')}
+              patternMessage={translations.phoneNumberErrorMessage}
+              placeholder={translations.phoneNumberPlaceholder}
               className="input  col-span-1  mb-1 mt-3 w-full"
               labelClass=" dark:text-current"
             />
@@ -205,11 +238,11 @@ const PersonalInfoInput = ({
             register={register}
             errors={errors}
             nameInput="Application"
-            label={t('jobPosition')}
-            required={t('jobPositionRequired')}
+            label={translations.jobPosition}
+            required={translations.jobPositionRequired}
             labelClass=" dark:text-current"
             className="input mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
-            placeholder={t('jobPositionPlaceholder')}
+            placeholder={translations.jobPositionPlaceholder}
             options={typesData}
           />
         </div>
@@ -220,11 +253,11 @@ const PersonalInfoInput = ({
             register={register}
             errors={errors}
             nameInput="statusSelect"
-            label={t('application')}
-            required={t('applicationRequired')}
+            label={translations.application}
+            required={translations.applicationRequired}
             labelClass=" dark:text-current"
             className="input col-span-1 mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
-            placeholder={t('applicationPlaceholder')}
+            placeholder={translations.applicationPlaceholder}
             options={types1Data}
           />
         </div>
@@ -233,11 +266,11 @@ const PersonalInfoInput = ({
             register={register}
             errors={errors}
             nameInput="statusSelect"
-            label={t('jobPosition')}
-            required={t('jobPositionRequired')}
+            label={translations.jobPosition}
+            required={translations.jobPositionRequired}
             className="select select-bordered mt-4 md:w-[435px] shadow-lg"
             labelClass=" dark:text-current"
-            placeholder={t('jobPositionPlaceholder')}
+            placeholder={translations.jobPositionPlaceholder}
               
             options={typesData}
             handleChange={handleItemChange}
@@ -248,11 +281,11 @@ const PersonalInfoInput = ({
             register={register}
             errors={errors}
             nameInput="statusSelect"
-            label={t('application')}
-            required={t('applicationRequired')}
+            label={translations.application}
+            required={translations.applicationRequired}
             className="select select-bordered md:w-[435px] mt-4 shadow-lg"
             labelClass=" dark:text-current"
-            placeholder={t('applicationPlaceholder')}
+            placeholder={translations.applicationPlaceholder}
               
             options={typesData}
             handleChange={handleItemChange}
@@ -262,8 +295,3 @@ const PersonalInfoInput = ({
   );
 };
 
-export { PersonalInfoInput };
-
-// function setSelectedRadio(value: string) {
-//   throw new Error('Function not implemented.');
-// }
