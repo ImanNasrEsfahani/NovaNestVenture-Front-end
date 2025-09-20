@@ -2,6 +2,7 @@ import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 import Banner from '@/components/common/Banner';
 import Accordion from '@/components/startup/OurServicesAccardions';
+import PNPApplicantForm from '@/components/common/form/PNPApplicantForm';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -61,28 +62,28 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             <p className="text-gray-600 mb-8">While each province has its own specific rules, common requirements include</p>
             <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-white shadow rounded-xl p-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-gray-600 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-primary mb-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9 9 0 10-12 0M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <h3 className="font-semibold mb-3">Entrepreneurial Experience</h3>
                 <p className="text-gray-600">Proven entrepreneurial or managerial experience</p>
             </div>
             <div className="bg-white shadow rounded-xl p-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-gray-600 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-primary mb-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6 2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h12a2 2 0 012 2v8z" />
                 </svg>
                 <h3 className="font-semibold mb-3">Minimum Investment</h3>
                 <p className="text-gray-600">Minimum investment (typically CAD 100,000 – CAD 600,000 depending on the province)</p>
             </div>
             <div className="bg-white shadow rounded-xl p-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-gray-600 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-primary mb-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 4a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2h10z" />
                 </svg>
                 <h3 className="font-semibold mb-3">Feasible Business Plan</h3>
                 <p className="text-gray-600">A feasible business plan that meets provincial standards</p>
             </div>
             <div className="bg-white shadow rounded-xl p-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-gray-600 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-primary mb-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 7V6a2 2 0 012-2h8a2 2 0 012 2v1m-12 0h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z" />
                 </svg>
                 <h3 className="font-semibold mb-3">Job Creation</h3>
@@ -153,6 +154,12 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             Get Started
           </a>
         </div>
+      </section>
+
+      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+        <PNPApplicantForm
+        lang={lang}
+        />
       </section>
     </>
   )

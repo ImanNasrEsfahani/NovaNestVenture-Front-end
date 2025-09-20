@@ -5,12 +5,12 @@
       "href": "fa/about"
     },
     {
-      "label": "تماس با ما",
-      "href": "fa/contact"
-    },
-    {
       "label": "تیم ما",
       "href": "fa/our-team"
+    },
+    {
+      "label": "تماس با ما",
+      "href": "fa/contact"
     }
   ],
   "submenuItems": [
@@ -29,10 +29,6 @@
     {
       "label": "برنامه های کارآفرینی",
       "href": "fa/pnp"
-    },
-    {
-      "label": "آکادمی کسب و کار",
-      "href": "fa/academy"
     }
   ]
 }

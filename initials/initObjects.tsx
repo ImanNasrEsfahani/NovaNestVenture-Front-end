@@ -8,6 +8,8 @@ import {
   MentorRegistrationFormData,
   Entrepreuneur,
   ContactUSFormData,
+  StartupApplicantFormDataType,
+  PNPApplicantFormDataType,
   FormData,
   LandaGeneFormData
 } from '@/types/global';
@@ -140,6 +142,20 @@ const ContactFormData: ContactUSFormData = {
   message: ''
 };
 
+const StartupApplicantFormData: StartupApplicantFormDataType = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  number: '',
+};
+
+const PNPApplicantFormData: PNPApplicantFormDataType = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  number: '',
+};
+
 const HandicraftFormData: HandicraftFormDataType = {
   first_name: '',
   last_name: '',
@@ -160,6 +176,8 @@ export {
   initialMentorRegistrationFormData,
   initialFormData,
   ContactFormData,
+  StartupApplicantFormData,
+  PNPApplicantFormData,
   RegisterationFormData,
   initialApplicationFormData,
   HandicraftFormData,

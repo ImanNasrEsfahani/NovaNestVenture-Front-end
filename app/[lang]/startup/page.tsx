@@ -8,6 +8,7 @@ import { getServerTranslation } from 'app/i18n';
 import Accordion from '@/components/startup/OurServicesAccardions';
 import Image from 'next/image';
 import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
+import StartupApplicantForm from '@/components/common/form/StartupApplicantForm';
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -180,6 +181,13 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           </a>
         </div>
       </section>  
+        
+      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+        <StartupApplicantForm
+        lang={lang}
+        />
+      </section>
+
 
       {/* Old Content */}
       {/* <div className="max-w-responsive mx-auto px-8 md:px-24 font-header">

@@ -33,6 +33,22 @@ interface ContactUSFormData {
   message: string;
 }
 
+// Define an interface for StartupApplicantFormData form data
+interface StartupApplicantFormDataType {
+  firstName: string;
+  lastName: string;
+  email: string;
+  number: string;
+}
+
+// Define an interface for PNPApplicantFormData form data
+interface PNPApplicantFormDataType {
+  firstName: string;
+  lastName: string;
+  email: string;
+  number: string;
+}
+
 // Define an interface for contact form data
 interface HandicraftForm {
   first_name: string;
@@ -420,6 +436,8 @@ interface WorkWithUsClientProps {
 export {
   WorkWithUsClientProps,
   ContactUSFormData,
+  StartupApplicantFormDataType,
+  PNPApplicantFormDataType,
   FormData,
   HomeCardsProps,
   personArrayInterface,

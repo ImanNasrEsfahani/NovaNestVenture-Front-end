@@ -40,7 +40,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "pages/api/contact-us/index.ts",
     "out/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

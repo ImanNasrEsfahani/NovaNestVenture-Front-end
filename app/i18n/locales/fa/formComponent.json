@@ -544,6 +544,27 @@
     ]
   },
 
+  
+  "startupApplicantForm": {
+    "formTitle":"Apply for SUV Program",
+    "formSubtitle":"Let’s Talk About Your Journey",
+
+    "sendingButton":"Submitting ....",
+    "sendButton": "Send",
+    "successMessage":"Form Submitted Successfully.",
+    "failedMessage":"An error occurred. Please Contact Support."
+  },
+
+  "PNPApplicantForm": {
+    "formTitle":"Apply for PNP Program",
+    "formSubtitle":"Let’s Talk About Your Journey",
+
+    "sendingButton":"Submitting ....",
+    "sendButton": "Send",
+    "successMessage":"Form Submitted Successfully.",
+    "failedMessage":"An error occurred. Please Contact Support."
+  },
+
   "universities": {
     "placeholder": "نام دانشگاه",
     "unis": {

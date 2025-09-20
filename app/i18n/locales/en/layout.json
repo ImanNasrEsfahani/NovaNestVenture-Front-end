@@ -5,12 +5,12 @@
       "href": "en/about"
     },
     {
-      "label": "Contact US",
-      "href": "en/contact"
-    },
-    {
       "label": "Our Team",
       "href": "en/our-team"
+    },
+    {
+      "label": "Contact US",
+      "href": "en/contact"
     }
   ],
   "submenuItems": [
@@ -29,10 +29,6 @@
     { 
       "label": "Entrepreneurship - PNP", 
       "href": "en/pnp"
-    },
-    { 
-      "label": "Business Academy", 
-      "href": "en/academy" 
     }
   ]
 }
