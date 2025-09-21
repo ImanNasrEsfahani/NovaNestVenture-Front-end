@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 import { initialStartupsFormData } from '../../initials/initObjects';
 import StartupFormPersonalInformation from '@/components/startups-form/StartupFormPersonalInformation';
-import StartupFormIdea from '@/components/startups-form/StartupFormIdea';
+// import StartupFormIdea from '@/components/startups-form/StartupFormIdea';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 // import GetCsrfToken from '@/utils/get-csrf-token';
 import { submitStartupsForm } from '../../pages/api/startups-form';
@@ -15,8 +15,8 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import TextArea from '@/components/common/TextArea';
 
 import StartUpFormCheckbox from '@/components/startups-form/StartUpFormCheckbox';
-import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
-import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
+// import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
+// import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
 import StartUpFirstSaleRefactor from '@/components/startups-form/StartUpFirstSaleRefactor';
 import StartUpSaleDevelopRefactore from '@/components/startups-form/StartUpSaleDevelopRefactore';
 

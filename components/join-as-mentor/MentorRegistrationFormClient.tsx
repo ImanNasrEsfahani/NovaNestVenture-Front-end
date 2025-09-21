@@ -8,7 +8,6 @@ import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 import CountryInput from '@/components/common/form/CountryInput';
-import { getServerTranslation } from 'app/i18n';
 
 import FormTitle from '@/components/common/form/FormTitle';
 import { MentorRegistrationFormData } from '@/types/global';
@@ -38,16 +37,50 @@ interface Translations {
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+
+  INTERN: string;
+  EMPLOYEE: string;
+
+  Developer: string;
+  Marketing: string;
+  Graphist: string;
+  Immigration: string;
+  Accountant: string;
+  Administrative: string;
+
+  firstName: string;
+  firstNameRequired: string;
+  firstNamePlaceholder: string;
+
+  lastName: string;
+  lastNameRequired: string;
+  lastNamePlaceholder: string;
+
+  email: string;
+  emailRequired: string;
+  emailErrorMessage: string;
+  emailPlaceholder: string;
+
+  phoneNumber: string;
+  phoneNumberRequired: string;
+  phoneNumberErrorMessage: string;
+  phoneNumberPlaceholder: string;
+
+  jobPosition: string;
+  jobPositionRequired: string;
+  jobPositionPlaceholder: string;
+
+  application: string;
+  applicationRequired: string;
+  applicationPlaceholder: string;
 }
 
-interface MentorRegistrationFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function MentorRegistrationFormClient({ lang, translations }: MentorRegistrationFormClientProps) {
-
-  const { t } = getServerTranslation(lang, 'formComponent');
+export default function MentorRegistrationFormClient({ lang, translations }: Props) {
 
   const {
     register,
@@ -146,41 +179,41 @@ export default function MentorRegistrationFormClient({ lang, translations }: Men
               }}
               noLabel={false}
               translations={{
-                INTERN: t('INTERN'),
-                EMPLOYEE: t('EMPLOYEE'),
+                INTERN: translations.INTERN,
+                EMPLOYEE: translations.EMPLOYEE,
 
-                Developer: t('Developer'),
-                Marketing: t('Marketing'),
-                Graphist: t('Graphist'),
-                Immigration: t('Immigration'),
-                Accountant: t('Accountant'),
-                Administrative: t('Administrative'),
+                Developer: translations.Developer,
+                Marketing: translations.Marketing,
+                Graphist: translations.Graphist,
+                Immigration: translations.Immigration,
+                Accountant: translations.Accountant,
+                Administrative: translations.Administrative,
 
-                firstName: t('firstName'),
-                firstNameRequired: t('firstNameRequired'),
-                firstNamePlaceholder: t('firstNamePlaceholder'),
+                firstName: translations.firstName,
+                firstNameRequired: translations.firstNameRequired,
+                firstNamePlaceholder: translations.firstNamePlaceholder,
 
-                lastName: t('lastName'),
-                lastNameRequired: t('lastNameRequired'),
-                lastNamePlaceholder: t('lastNamePlaceholder'),
+                lastName: translations.lastName,
+                lastNameRequired: translations.lastNameRequired,
+                lastNamePlaceholder: translations.lastNamePlaceholder,
                 
-                email: t('email'),
-                emailRequired: t('emailRequired'),
-                emailErrorMessage: t('emailErrorMessage'),
-                emailPlaceholder: t('emailPlaceholder'),
+                email: translations.email,
+                emailRequired: translations.emailRequired,
+                emailErrorMessage: translations.emailErrorMessage,
+                emailPlaceholder: translations.emailPlaceholder,
 
-                phoneNumber: t('phoneNumber'),
-                phoneNumberRequired: t('phoneNumberRequired'),
-                phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
-                phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+                phoneNumber: translations.phoneNumber,
+                phoneNumberRequired: translations.phoneNumberRequired,
+                phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
+                phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
 
-                jobPosition: t('jobPosition'),
-                jobPositionRequired: t('jobPositionRequired'),
-                jobPositionPlaceholder: t('jobPositionPlaceholder'),
+                jobPosition: translations.jobPosition,
+                jobPositionRequired: translations.jobPositionRequired,
+                jobPositionPlaceholder: translations.jobPositionPlaceholder,
 
-                application: t('application'),
-                applicationRequired: t('applicationRequired'),
-                applicationPlaceholder: t('applicationPlaceholder'),
+                application: translations.application,
+                applicationRequired: translations.applicationRequired,
+                applicationPlaceholder: translations.applicationPlaceholder,
               }}
             />
             <Input
