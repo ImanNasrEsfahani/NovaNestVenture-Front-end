@@ -15,7 +15,6 @@ export default function Page({
 }) {
 
   const { t } = getServerTranslation(lang, 'landaGene');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Prepare all translations that the client component needs
   const translations = {
@@ -34,8 +33,8 @@ export default function Page({
     // Banner translation
     banner: t('banner'),
 
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
   };
 
   return (

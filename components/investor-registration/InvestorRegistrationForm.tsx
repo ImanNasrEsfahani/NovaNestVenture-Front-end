@@ -3,7 +3,6 @@ import InvestorRegistrationFormClient from '@/components/investor-registration/I
 
 export default function InvestorRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
   // const { t: tInvestment } = getServerTranslation(lang, 'investment');
 
@@ -31,8 +30,8 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
     sendButton: t('sendButton'),
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
 
     countries: tCountry('countries', { returnObjects: true }),
     countryName: tCountry('countryName'),

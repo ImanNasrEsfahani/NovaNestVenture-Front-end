@@ -3,7 +3,6 @@ import StartupFormFormClient from '@/components/startups-form/StartupFormFormCli
 
 export default function StartupFormForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
   
   // Pass translations as props to client component
@@ -15,8 +14,8 @@ export default function StartupFormForm({lang}: {lang: string}) {
     FisrtSale: t('FisrtSale'),
     SaleDevelopment: t('SaleDevelopment'),
     sendButton: t('sendButton'),
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
     
     formTitle: t('startUp', { returnObjects: true }).formTitle,
     formSubtitle: t('startUp', { returnObjects: true }).formSubtitle,

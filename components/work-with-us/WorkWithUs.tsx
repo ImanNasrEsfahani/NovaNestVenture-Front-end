@@ -3,7 +3,6 @@ import WorkWithUsClient from 'components/work-with-us/WorkWithUsClient';
 
 export default function WorkWithUs({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Prepare all translations that the client component needs
   const translations = {
@@ -26,8 +25,8 @@ export default function WorkWithUs({ lang }: { lang: string }) {
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     sendButton: t('sendButton'),
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage')
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage')
   };
 
   return <WorkWithUsClient translations={translations} lang={lang} />;

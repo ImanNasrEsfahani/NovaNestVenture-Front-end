@@ -3,7 +3,6 @@ import PartnerMembershipFormClient from '@/components/partner-membership/Partner
 
 export default function PartnerMembershipForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
   // Pass translations as props to client component
@@ -23,8 +22,8 @@ export default function PartnerMembershipForm({lang}: {lang: string}) {
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
     sendButton: t('sendButton'),
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
 
     countries: tCountry('countries', { returnObjects: true }),
     countryName: tCountry('countryName'),

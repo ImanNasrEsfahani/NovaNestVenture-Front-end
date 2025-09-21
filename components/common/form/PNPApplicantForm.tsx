@@ -3,7 +3,6 @@ import PNPApplicantFormClient from './PNPApplicantFormClient';
 
 export default function PNPApplicantForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component
   const translations = {
@@ -13,8 +12,8 @@ export default function PNPApplicantForm({lang}: {lang: string}) {
     sendingButton: t("sendingButton"),
     sendButton: t("sendButton"),
 
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
     
     INTERN: t('INTERN'),
     EMPLOYEE: t('EMPLOYEE'),

@@ -3,7 +3,6 @@ import JobFormClient from '@/components/job-form/JobFormClient';
 
 export default function JobForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component
   const translations = {
@@ -11,8 +10,8 @@ export default function JobForm({lang}: {lang: string}) {
     formSubtitle: t('jobForm', { returnObjects: true }).formSubtitle,
     resumeFile: t('jobForm', { returnObjects: true }).resumeFile,
 
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
     
     INTERN: t('INTERN'),
     EMPLOYEE: t('EMPLOYEE'),

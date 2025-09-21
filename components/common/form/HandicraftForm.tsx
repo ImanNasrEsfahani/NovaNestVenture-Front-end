@@ -3,14 +3,13 @@ import HandicraftFormClient from '@/components/common/form/HandicraftFormClient'
 
 export default function HandicraftForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'handicraft');
-  const { t: tCommon } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component
   const translations = {
     button: t('button'),
 
-    successMessage: tCommon('successMessage'),
-    failedMessage: tCommon('failedMessage'),
+    successMessage: t('successMessage'),
+    failedMessage: t('failedMessage'),
 
     INTERN: t('INTERN'),
     EMPLOYEE: t('EMPLOYEE'),
