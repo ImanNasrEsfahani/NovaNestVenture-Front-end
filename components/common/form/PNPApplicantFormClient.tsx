@@ -6,10 +6,11 @@ import { PNPApplicantFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import { PNPApplicantFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
-import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
+import { getServerTranslation } from 'app/i18n';
 
 interface Translations {
     formTitle: string;
@@ -26,6 +27,9 @@ interface PNPApplicantFormClientProps {
 }
 
 export default function PNPApplicantFormClient({ lang, translations }: PNPApplicantFormClientProps) {
+
+  const { t } = getServerTranslation(lang, 'formComponent');
+
   const {
     register,
     handleSubmit,
@@ -116,7 +120,6 @@ export default function PNPApplicantFormClient({ lang, translations }: PNPApplic
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
                 <PersonalInfoInput
-                    lang={lang}
                     register={register}
                     errors={errors}
                     nameInputs={{
@@ -127,6 +130,43 @@ export default function PNPApplicantFormClient({ lang, translations }: PNPApplic
                         jobPosition: ''
                     }}
                     noLabel={false}
+                    translations={{
+                      INTERN: t('INTERN'),
+                      EMPLOYEE: t('EMPLOYEE'),
+
+                      Developer: t('Developer'),
+                      Marketing: t('Marketing'),
+                      Graphist: t('Graphist'),
+                      Immigration: t('Immigration'),
+                      Accountant: t('Accountant'),
+                      Administrative: t('Administrative'),
+
+                      firstName: t('firstName'),
+                      firstNameRequired: t('firstNameRequired'),
+                      firstNamePlaceholder: t('firstNamePlaceholder'),
+
+                      lastName: t('lastName'),
+                      lastNameRequired: t('lastNameRequired'),
+                      lastNamePlaceholder: t('lastNamePlaceholder'),
+                      
+                      email: t('email'),
+                      emailRequired: t('emailRequired'),
+                      emailErrorMessage: t('emailErrorMessage'),
+                      emailPlaceholder: t('emailPlaceholder'),
+
+                      phoneNumber: t('phoneNumber'),
+                      phoneNumberRequired: t('phoneNumberRequired'),
+                      phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+                      phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+                      jobPosition: t('jobPosition'),
+                      jobPositionRequired: t('jobPositionRequired'),
+                      jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+                      application: t('application'),
+                      applicationRequired: t('applicationRequired'),
+                      applicationPlaceholder: t('applicationPlaceholder'),
+                    }}
                 />
             </div>
 

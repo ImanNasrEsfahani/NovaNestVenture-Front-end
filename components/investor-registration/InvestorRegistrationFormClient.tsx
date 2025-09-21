@@ -6,12 +6,13 @@ import NotificationSendForm from '@/components/common/form/NotificationSendForm'
 import TextArea from '@/components/common/TextArea';
 import { initialInvestorRegistrationFormData } from '../../initials/initObjects';
 import { submitInvestorRegistrationForm } from '../../pages/api/investor-registration';
-import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 import FormTitle from '@/components/common/form/FormTitle';
 import CountryInput from '@/components/common/form/CountryInput';
+import { getServerTranslation } from 'app/i18n';
 
 interface Translations {
   formTitle: string;
@@ -54,6 +55,9 @@ interface InvestorRegistrationFormClientProps {
 }
 
 export default function InvestorRegistrationFormClient({ lang, translations }: InvestorRegistrationFormClientProps) {
+
+  const { t } = getServerTranslation(lang, 'formComponent');
+
   const {
     register,
     handleSubmit,
@@ -63,7 +67,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
     mode: 'onBlur',
     defaultValues: initialInvestorRegistrationFormData
   });
-
+  
   const {
     // csrfToken,
     // handleTokenChange,
@@ -140,7 +144,6 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
-              lang={lang}
               register={register}
               errors={errors}
               nameInputs={{
@@ -149,6 +152,44 @@ export default function InvestorRegistrationFormClient({ lang, translations }: I
                 email: 'email',
                 phoneNumber: 'phoneNumber',
                 jobPosition: ''
+              }}
+              noLabel={true}
+              translations={{
+                INTERN: t('INTERN'),
+                EMPLOYEE: t('EMPLOYEE'),
+
+                Developer: t('Developer'),
+                Marketing: t('Marketing'),
+                Graphist: t('Graphist'),
+                Immigration: t('Immigration'),
+                Accountant: t('Accountant'),
+                Administrative: t('Administrative'),
+
+                firstName: t('firstName'),
+                firstNameRequired: t('firstNameRequired'),
+                firstNamePlaceholder: t('firstNamePlaceholder'),
+
+                lastName: t('lastName'),
+                lastNameRequired: t('lastNameRequired'),
+                lastNamePlaceholder: t('lastNamePlaceholder'),
+                
+                email: t('email'),
+                emailRequired: t('emailRequired'),
+                emailErrorMessage: t('emailErrorMessage'),
+                emailPlaceholder: t('emailPlaceholder'),
+
+                phoneNumber: t('phoneNumber'),
+                phoneNumberRequired: t('phoneNumberRequired'),
+                phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+                phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+                jobPosition: t('jobPosition'),
+                jobPositionRequired: t('jobPositionRequired'),
+                jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+                application: t('application'),
+                applicationRequired: t('applicationRequired'),
+                applicationPlaceholder: t('applicationPlaceholder'),
               }}
             />
             {/* <Input

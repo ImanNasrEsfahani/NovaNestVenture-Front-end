@@ -1,6 +1,8 @@
 import * as React from 'react';
 // import Input from '@/components/common/form/Input';
-import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
+import { getServerTranslation } from 'app/i18n';
+
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import CountryInput from '@/components/common/form/CountryInput';
 
 export default function StartupFormPersonalInformation({
@@ -29,11 +31,12 @@ export default function StartupFormPersonalInformation({
   provinceOfResidencePlaceholder: string;
 }) {
 
+  const { t } = getServerTranslation(lang, 'formComponent');
+
   return (
     <>
       <div className="mb-8 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 xl:grid-cols-3">
         <PersonalInfoInput
-          lang={lang}
           register={register}
           errors={errors}
           nameInputs={{
@@ -42,6 +45,44 @@ export default function StartupFormPersonalInformation({
             phoneNumber: 'phoneNumber',
             email: 'email',
             jobPosition: ''
+          }}
+          noLabel={false}
+          translations={{
+            INTERN: t('INTERN'),
+            EMPLOYEE: t('EMPLOYEE'),
+
+            Developer: t('Developer'),
+            Marketing: t('Marketing'),
+            Graphist: t('Graphist'),
+            Immigration: t('Immigration'),
+            Accountant: t('Accountant'),
+            Administrative: t('Administrative'),
+
+            firstName: t('firstName'),
+            firstNameRequired: t('firstNameRequired'),
+            firstNamePlaceholder: t('firstNamePlaceholder'),
+
+            lastName: t('lastName'),
+            lastNameRequired: t('lastNameRequired'),
+            lastNamePlaceholder: t('lastNamePlaceholder'),
+            
+            email: t('email'),
+            emailRequired: t('emailRequired'),
+            emailErrorMessage: t('emailErrorMessage'),
+            emailPlaceholder: t('emailPlaceholder'),
+
+            phoneNumber: t('phoneNumber'),
+            phoneNumberRequired: t('phoneNumberRequired'),
+            phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+            phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+            jobPosition: t('jobPosition'),
+            jobPositionRequired: t('jobPositionRequired'),
+            jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+            application: t('application'),
+            applicationRequired: t('applicationRequired'),
+            applicationPlaceholder: t('applicationPlaceholder'),
           }}
         />
 

@@ -63,10 +63,9 @@ export default function PersonalInfoInput({
 }: Props) {
 
   enum Type {
-    INTERN = translations.INTERN,
-    EMPLOYEE = translations.EMPLOYEE
+    INTERN = 0,
+    EMPLOYEE = 1
   }
-
   const Types = [Type.INTERN, Type.EMPLOYEE];
 
   const typesData = Types.map((type: any) => ({
@@ -75,14 +74,13 @@ export default function PersonalInfoInput({
   }));
 
   enum Type {
-    Developer = translations.Developer,
-    Marketing = translations.Marketing,
-    Graphist = translations.Graphist,
-    Immigration = translations.Immigration,
-    Accountant = translations.Accountant,
-    Administrative = translations.Administrative
+    Developer = 0,
+    Marketing = 1,
+    Graphist = 2,
+    Immigration = 3,
+    Accountant = 4,
+    Administrative = 5
   }
-
   const Types1 = [
     Type.Developer,
     Type.Marketing,

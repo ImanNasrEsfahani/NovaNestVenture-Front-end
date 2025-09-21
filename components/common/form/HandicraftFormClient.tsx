@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { PersonalInfoInput } from './PersonalInfoInput';
+import PersonalInfoInput from './PersonalInfoInput';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { useForm } from 'react-hook-form';
 import { HandicraftFormData } from 'initials/initObjects';
@@ -11,6 +11,7 @@ import NotificationSendForm from './NotificationSendForm';
 import { submitHandiCraftApplicationForm } from 'pages/api/handiCrafts';
 import { useSubmit } from 'stores/dataStore';
 import ArrowRight from '@/components/icons/common/ArrowRight';
+import { getServerTranslation } from 'app/i18n';
 
 interface Translations {
   button: string;
@@ -25,6 +26,9 @@ interface HandicraftFormClientProps {
 
 // import { HandicraftForm, HandicraftForm } from '@/types/global';
 export default function HandicraftFormClient({ lang, translations }: HandicraftFormClientProps) {
+
+  const { t } = getServerTranslation(lang, 'formComponent');
+
   const {
     csrfToken,
     handleTokenChange,
@@ -108,7 +112,6 @@ export default function HandicraftFormClient({ lang, translations }: HandicraftF
       <div className="my-4 grid w-full grid-cols-1 md:flex md:w-2/5 md:flex-col md:items-center lg:w-2/5">
         <div className="grid w-full grid-cols-1 gap-x-3 md:grid-cols-2">
           <PersonalInfoInput
-            lang={lang}
             register={register}
             errors={errors}
             nameInputs={{
@@ -119,6 +122,43 @@ export default function HandicraftFormClient({ lang, translations }: HandicraftF
               jobPosition: ''
             }}
             noLabel={true}
+            translations={{
+              INTERN: t('INTERN'),
+              EMPLOYEE: t('EMPLOYEE'),
+
+              Developer: t('Developer'),
+              Marketing: t('Marketing'),
+              Graphist: t('Graphist'),
+              Immigration: t('Immigration'),
+              Accountant: t('Accountant'),
+              Administrative: t('Administrative'),
+
+              firstName: t('firstName'),
+              firstNameRequired: t('firstNameRequired'),
+              firstNamePlaceholder: t('firstNamePlaceholder'),
+
+              lastName: t('lastName'),
+              lastNameRequired: t('lastNameRequired'),
+              lastNamePlaceholder: t('lastNamePlaceholder'),
+              
+              email: t('email'),
+              emailRequired: t('emailRequired'),
+              emailErrorMessage: t('emailErrorMessage'),
+              emailPlaceholder: t('emailPlaceholder'),
+
+              phoneNumber: t('phoneNumber'),
+              phoneNumberRequired: t('phoneNumberRequired'),
+              phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+              phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+              jobPosition: t('jobPosition'),
+              jobPositionRequired: t('jobPositionRequired'),
+              jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+              application: t('application'),
+              applicationRequired: t('applicationRequired'),
+              applicationPlaceholder: t('applicationPlaceholder'),
+            }}
           />
         </div>
 

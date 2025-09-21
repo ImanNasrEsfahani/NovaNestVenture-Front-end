@@ -6,11 +6,12 @@ import { ContactUSFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import { ContactFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
-import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import Input from '@/components/common/form/Input';
 import TextArea from '@/components/common/TextArea';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
+import { getServerTranslation } from 'app/i18n';
 
 interface Translations {
   title: string;
@@ -30,6 +31,9 @@ interface ContactUsFormClientProps {
 }
 
 export default function ContactUsFormClient({ lang, translations }: ContactUsFormClientProps) {
+
+  const { t } = getServerTranslation(lang, 'formComponent');
+
   const {
     register,
     handleSubmit,
@@ -115,7 +119,6 @@ export default function ContactUsFormClient({ lang, translations }: ContactUsFor
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:w-[524px]">
           <PersonalInfoInput
-            lang={lang}
             register={register}
             errors={errors}
             nameInputs={{
@@ -126,6 +129,43 @@ export default function ContactUsFormClient({ lang, translations }: ContactUsFor
               jobPosition: ''
             }}
             noLabel={true}
+            translations={{
+              INTERN: t('INTERN'),
+              EMPLOYEE: t('EMPLOYEE'),
+
+              Developer: t('Developer'),
+              Marketing: t('Marketing'),
+              Graphist: t('Graphist'),
+              Immigration: t('Immigration'),
+              Accountant: t('Accountant'),
+              Administrative: t('Administrative'),
+
+              firstName: t('firstName'),
+              firstNameRequired: t('firstNameRequired'),
+              firstNamePlaceholder: t('firstNamePlaceholder'),
+
+              lastName: t('lastName'),
+              lastNameRequired: t('lastNameRequired'),
+              lastNamePlaceholder: t('lastNamePlaceholder'),
+              
+              email: t('email'),
+              emailRequired: t('emailRequired'),
+              emailErrorMessage: t('emailErrorMessage'),
+              emailPlaceholder: t('emailPlaceholder'),
+
+              phoneNumber: t('phoneNumber'),
+              phoneNumberRequired: t('phoneNumberRequired'),
+              phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+              phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+              jobPosition: t('jobPosition'),
+              jobPositionRequired: t('jobPositionRequired'),
+              jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+              application: t('application'),
+              applicationRequired: t('applicationRequired'),
+              applicationPlaceholder: t('applicationPlaceholder'),
+            }}
           />
 
           <div className="col-span-1">

@@ -6,12 +6,13 @@ import { Entrepreuneur } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import { initialFormData } from '../../initials/initObjects';
 import { submitEntrepreneurForm } from '../../pages/api/entrepreneurs';
-import { PersonalInfoInput } from '@/components/common/form/PersonalInfoInput';
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import TextArea from '@/components/common/TextArea';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import CountryInput from '@/components/common/form/CountryInput';
 import FormTitle from '@/components/common/form/FormTitle';
+import { getServerTranslation } from 'app/i18n';
 
 interface Translations {
   formTitle: string;
@@ -60,6 +61,8 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
     mode: 'onBlur',
     defaultValues: initialFormData
   });
+
+  const { t } = getServerTranslation(lang, 'formComponent');
 
   const {
     // csrfToken,
@@ -138,7 +141,6 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
-              lang={lang}
               register={register}
               errors={errors}
               nameInputs={{
@@ -147,6 +149,44 @@ export default function EntrepreneursFormClient({ lang, translations }: Entrepre
                 email: 'email',
                 phoneNumber: 'phoneNumber',
                 jobPosition: ''
+              }}
+              noLabel={false}
+              translations={{
+                INTERN: t('INTERN'),
+                EMPLOYEE: t('EMPLOYEE'),
+
+                Developer: t('Developer'),
+                Marketing: t('Marketing'),
+                Graphist: t('Graphist'),
+                Immigration: t('Immigration'),
+                Accountant: t('Accountant'),
+                Administrative: t('Administrative'),
+
+                firstName: t('firstName'),
+                firstNameRequired: t('firstNameRequired'),
+                firstNamePlaceholder: t('firstNamePlaceholder'),
+
+                lastName: t('lastName'),
+                lastNameRequired: t('lastNameRequired'),
+                lastNamePlaceholder: t('lastNamePlaceholder'),
+                
+                email: t('email'),
+                emailRequired: t('emailRequired'),
+                emailErrorMessage: t('emailErrorMessage'),
+                emailPlaceholder: t('emailPlaceholder'),
+
+                phoneNumber: t('phoneNumber'),
+                phoneNumberRequired: t('phoneNumberRequired'),
+                phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
+                phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+                jobPosition: t('jobPosition'),
+                jobPositionRequired: t('jobPositionRequired'),
+                jobPositionPlaceholder: t('jobPositionPlaceholder'),
+
+                application: t('application'),
+                applicationRequired: t('applicationRequired'),
+                applicationPlaceholder: t('applicationPlaceholder'),
               }}
             />
             {/* <Input
