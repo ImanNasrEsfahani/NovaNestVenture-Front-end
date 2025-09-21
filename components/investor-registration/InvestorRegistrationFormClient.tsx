@@ -47,7 +47,6 @@ interface Translations {
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
 
-  
   INTERN: string;
   EMPLOYEE: string;
 
@@ -85,12 +84,14 @@ interface Translations {
   applicationPlaceholder: string;
 }
 
-interface InvestorRegistrationFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function InvestorRegistrationFormClient({ lang, translations }: InvestorRegistrationFormClientProps) {
+export default function InvestorRegistrationFormClient({ lang, translations }: Props) {
+
+  console.log('Translations in <InvestorRegistrationFormClient />:', translations); // Debugging line to check translations
 
   const {
     register,

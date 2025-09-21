@@ -6,11 +6,11 @@ interface AccordionItem {
   content: string[];
 }
 
-interface OurServicesAccardionsProps {
+interface Props {
   data: AccordionItem[];
 }
 
-export default function OurServicesAccardions({ data }: OurServicesAccardionsProps) {
+export default function OurServicesAccardions({ data }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

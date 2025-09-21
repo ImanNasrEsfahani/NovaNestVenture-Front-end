@@ -1,13 +1,13 @@
 import React from 'react';
 import ChevDown from 'public/static/logos/ChevDown';
 
-interface CollapsibleHeaderProps {
+interface Props {
   title: string;
   isOpen: boolean;
   onToggle: () => void;
 }
 
-const CollapsibleHeader: React.FC<CollapsibleHeaderProps> = ({
+const CollapsibleHeader: React.FC<Props> = ({
   title,
   isOpen,
   onToggle

@@ -1,7 +1,7 @@
 import React from 'react';
 import FileUpload from 'public/static/logos/FileUpload';
 
-interface BusinessPlanUploadProps {
+interface Props {
   title: string;
   yesLabel: string;
   noLabel: string;
@@ -12,7 +12,7 @@ interface BusinessPlanUploadProps {
   onFileChange: (file: any) => void;
 }
 
-const BusinessPlanUpload: React.FC<BusinessPlanUploadProps> = ({
+const BusinessPlanUpload: React.FC<Props> = ({
   title,
   yesLabel,
   noLabel,

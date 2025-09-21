@@ -47,12 +47,12 @@ interface Translations {
   howDidYouKnowUsPlaceholder: string;
 }
 
-interface StartupFormFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function StartupFormFormClient({ lang, translations }: StartupFormFormClientProps) {
+export default function StartupFormFormClient({ lang, translations }: Props) {
 
   const {
     register,

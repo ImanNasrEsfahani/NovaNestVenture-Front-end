@@ -56,12 +56,12 @@ interface Translations {
     applicationPlaceholder: string;
 }
 
-interface PNPApplicantFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function PNPApplicantFormClient({ lang, translations }: PNPApplicantFormClientProps) {
+export default function PNPApplicantFormClient({ lang, translations }: Props) {
 
   const {
     register,

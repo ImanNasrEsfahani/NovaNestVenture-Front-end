@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 // import { useSubmit } from 'stores/submitStore';
 
-interface TeamRolesContainerClientProps {
+interface Props {
   lang: string;
   roles: string[];
   defaultRole: string;
@@ -14,7 +14,7 @@ export default function TeamRolesContainerClient({
   roles,
   defaultRole
   // onRoleSelect,
-}: TeamRolesContainerClientProps) {
+}: Props) {
   // const {selectedRole, updateRole} = useSubmit();
 
   const [selectedRole, setSelectedRole] = useState("")

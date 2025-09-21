@@ -26,7 +26,7 @@ interface Translations {
   howDidYouKnowUsRequired: string;
 }
 
-interface StartupFormMVPClientProps {
+interface Props {
   lang: string;
   translations: Translations;
   register: any;
@@ -44,7 +44,7 @@ export default function StartupFormMVPClient({
   handlePitchFileChange,
   handleBusinessFileChange,
   handleFinancialFileChange
-}: StartupFormMVPClientProps) {
+}: Props) {
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
   const [selectedRadioBusiness, setSelectedRadioBusiness] = useState('');

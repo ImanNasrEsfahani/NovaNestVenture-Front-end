@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface FormTitleProps {
+interface Props {
   formTitle: string;
   formSubtitle: string;
 }
 
-export default function FormTitle({ formTitle, formSubtitle}: FormTitleProps) {
+export default function FormTitle({ formTitle, formSubtitle}: Props) {
   return (
     <div className='w-full h-[100px] md:h-[200px] bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-lg'>
       <div className='size-full flex justify-center items-center'>

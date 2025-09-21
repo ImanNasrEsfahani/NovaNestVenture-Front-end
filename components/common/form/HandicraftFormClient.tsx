@@ -54,13 +54,13 @@ interface Translations {
   applicationPlaceholder: string;
 }
 
-interface HandicraftFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
 // import { HandicraftForm, HandicraftForm } from '@/types/global';
-export default function HandicraftFormClient({ lang, translations }: HandicraftFormClientProps) {
+export default function HandicraftFormClient({ lang, translations }: Props) {
 
   const {
     csrfToken,

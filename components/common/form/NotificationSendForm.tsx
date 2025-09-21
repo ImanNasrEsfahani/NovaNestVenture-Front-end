@@ -3,13 +3,13 @@
 import Check from '@/components/icons/common/Check';
 import { useSubmit } from 'stores/dataStore';
 
-interface NotificationSendFormProps {
+interface Props {
   lang: string;
   successMessage: string;
   failedMessage: string;
 }
 
-export default function NotificationSendForm({successMessage, failedMessage }: NotificationSendFormProps) {
+export default function NotificationSendForm({successMessage, failedMessage }: Props) {
 
   const {
     isSubmitting,

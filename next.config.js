@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // output: 'standalone',
   reactStrictMode: true,
-  // output: "export",
+  output: "export",
   // distDir: 'out',
   images: {
     domains: [
@@ -13,7 +13,7 @@ const nextConfig = {
       'localhost',
       "nova-back.NovaNestVenture.com"
     ],
-    unoptimized: true,
+    unoptimized: false,
   },
   async rewrites() {
     return [

@@ -1,5 +1,5 @@
 'use client'
-import { HomeCardsLeftProps } from '@/types/global';
+import { HomeCardsLeftInterface } from '@/types/global';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
@@ -10,7 +10,7 @@ export default function HomeCardsLeft({
   titles,
   link,
   buttonText
-}: HomeCardsLeftProps) {
+}: HomeCardsLeftInterface) {
 
   return (
     <div

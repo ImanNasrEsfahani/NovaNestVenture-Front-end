@@ -59,12 +59,12 @@ interface Translations {
   applicationPlaceholder: string;
 }
 
-interface JobFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function JobFormClient({ lang, translations }: JobFormClientProps) {
+export default function JobFormClient({ lang, translations }: Props) {
 
   const {
     register,

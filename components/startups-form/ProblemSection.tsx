@@ -4,7 +4,7 @@ import { StartupsFormData } from '@/types/global';
 import TextArea from '@/components/common/TextArea';
 import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 
-type ProblemsSectionProps = {
+type Props = {
   title: string;
   textAreaTitle: string;
   textAreaRequired: string;
@@ -22,7 +22,7 @@ const ProblemsSection = ({
   register,
   errors,
   nameTextArea = "customerProblem"
-}: ProblemsSectionProps) => {
+}: Props) => {
   const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
 
 const handleToggle = () => {

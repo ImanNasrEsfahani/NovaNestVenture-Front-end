@@ -29,12 +29,12 @@ interface Translations {
   failedMessage: string;
 }
 
-interface LandaGeneClientProps {
+interface Props {
   translations: Translations;
   lang: string;
 }
 
-export default function LandaGeneClient({ translations, lang }: LandaGeneClientProps) {
+export default function LandaGeneClient({ translations, lang }: Props) {
   const {
     register,
     handleSubmit,

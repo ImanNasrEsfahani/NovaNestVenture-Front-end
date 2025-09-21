@@ -56,12 +56,12 @@ interface Translations {
     applicationPlaceholder: string;
 }
 
-interface StartupApplicantFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function StartupApplicantFormClient({ lang, translations }: StartupApplicantFormClientProps) {
+export default function StartupApplicantFormClient({ lang, translations }: Props) {
   const {
     register,
     handleSubmit,

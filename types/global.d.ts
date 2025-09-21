@@ -284,7 +284,7 @@ interface LogosInterface {
   alt: string;
 }
 
-interface HomeCardsProps {
+interface HomeCardsInterface {
   smallTitle: string;
   titles: string;
   text: string;
@@ -295,7 +295,7 @@ interface HomeCardsProps {
   buttonText: string;
 }
 
-interface HomeCardsLeftProps {
+interface HomeCardsLeftInterface {
   titles: string;
   text: string;
   addedClass?: string;
@@ -439,7 +439,7 @@ export {
   StartupApplicantFormDataType,
   PNPApplicantFormDataType,
   FormData,
-  HomeCardsProps,
+  HomeCardsInterface,
   personArrayInterface,
   CompaniesArrayInterface,
   CompanySectionsInterface,
@@ -456,7 +456,7 @@ export {
   CoursesInterface,
   LogosInterface,
   PreparationListInterface,
-  HomeCardsLeftProps,
+  HomeCardsLeftInterface,
   BusinessPartnerShipFormData,
   StartupsFormData,
   PartnerMembershipFormData,

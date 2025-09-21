@@ -23,7 +23,7 @@ interface Translations {
   financialFileRequired: string;
 }
 
-interface StartupFormFirstSaleClientProps {
+interface Props {
   lang: string;
   translations: Translations;
   register: any;
@@ -41,7 +41,7 @@ export default function StartupFormFirstSaleClient({
   handlePitchFileChange,
   handleBusinessFileChange,
   handleFinancialFileChange
-}: StartupFormFirstSaleClientProps) {
+}: Props) {
 
   const [selectedRadioPitch, setSelectedRadioPitch] = useState('');
 

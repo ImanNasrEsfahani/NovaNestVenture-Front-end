@@ -82,12 +82,12 @@ interface Translations {
   applicationPlaceholder: string;
 }
 
-interface EntrepreneursFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function EntrepreneursFormClient({ lang, translations }: EntrepreneursFormClientProps) {
+export default function EntrepreneursFormClient({ lang, translations }: Props) {
   const {
     register,
     handleSubmit,

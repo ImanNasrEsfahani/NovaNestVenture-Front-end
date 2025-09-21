@@ -1,7 +1,6 @@
 const { i18n } = require('./package.json');
 const UnusedFilesWebpackPlugin = require('unused-files-webpack-plugin');
 
-
 module.exports = {
   i18n,
   defaultNS: 'common',

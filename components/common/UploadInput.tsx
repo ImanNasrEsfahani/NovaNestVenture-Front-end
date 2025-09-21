@@ -1,7 +1,7 @@
 import UploadIcon from '@/components/icons/UploadIcon';
 import { UseFormRegister, FieldErrors } from 'react-hook-form';
 
-interface UploadInputProps {
+interface Props {
   title: string;
   register: UseFormRegister<any>;
   errors: FieldErrors<any>;
@@ -17,7 +17,7 @@ export default function UploadInput({
   nameInput,
   handleChange,
   required
-}: UploadInputProps) {
+}: Props) {
   return (
     <div className="inline-flex max-w-full flex-col justify-center gap-3">
       {/* Label for the upload input */}

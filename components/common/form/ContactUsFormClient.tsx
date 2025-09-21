@@ -60,12 +60,12 @@ interface Translations {
   applicationPlaceholder: string;
 }
 
-interface ContactUsFormClientProps {
+interface Props {
   lang: string;
   translations: Translations;
 }
 
-export default function ContactUsFormClient({ lang, translations }: ContactUsFormClientProps) {
+export default function ContactUsFormClient({ lang, translations }: Props) {
 
   const {
     register,
