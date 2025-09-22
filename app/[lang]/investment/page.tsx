@@ -104,7 +104,7 @@ export default function Page({
                 href={`${base}startups-form`}
                 className="btn btn-neutral text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary"
                 >
-                Startup Application
+                Startup Validation
                 </a>
             </div>
           </div>

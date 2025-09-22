@@ -142,12 +142,12 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
 
   return (
     <div className="max-w-responsive mx-auto">
-        <div className='mb-12'>
+        {/* <div className='mb-12'>
             <FormTitle
                 formTitle={translations.formTitle}
                 formSubtitle={translations.formSubtitle}
             />
-        </div>
+        </div> */}
 
 
         <form onSubmit={handleSubmit(onSubmit)}>

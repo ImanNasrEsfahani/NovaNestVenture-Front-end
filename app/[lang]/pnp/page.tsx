@@ -36,19 +36,19 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         {/* Why Start a Business */}
         <section className="py-16 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-10 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Why Start a Business in Canada?</h2>
-            <ul className="space-y-3 text-gray-700">
-              <li>Stable and growing economy with access to domestic and international markets</li>
-              <li>Continuous demand for foreign entrepreneurs and investors to boost provincial growth</li>
-              <li>Strong government and provincial support, including tax incentives, investment opportunities, and solid infrastructure</li>
-              <li>Clear pathway to permanent residency for applicants and their families</li>
+            <h2 className="text-3xl font-header font-bold mb-6">Why Start a Business in Canada?</h2>
+            <ul className="space-y-3 text-gray-700 pl-6 list-outside list-[circle] marker:text-gray-700 marker:text-base">
+               <li>Stable and growing economy with access to domestic and international markets</li>
+               <li>Continuous demand for foreign entrepreneurs and investors to boost provincial growth</li>
+               <li>Strong government and provincial support, including tax incentives, investment opportunities, and solid infrastructure</li>
+               <li>Clear pathway to permanent residency for applicants and their families</li>
             </ul>
           </div>
           <div className="flex justify-center">
             <Image
-              src="/static/images/pnp/pnp-program-canada.png"
+              src="/static/images/pnp/pnp-program-canada.jpg"
               alt="Business Growth"
-              className="max-w-sm w-full rounded-xl shadow-md"
+              className="max-w-md w-full rounded-xl shadow-md"
               width={300}
               height={150}
             />
@@ -58,8 +58,8 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         {/* Requirements */}
         <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">General Requirements of Entrepreneurial PNP Programs</h2>
-            <p className="text-gray-600 mb-8">While each province has its own specific rules, common requirements include</p>
+            <h2 className="text-3xl font-header font-bold mb-6 text-gray-800">General Requirements of Entrepreneurial PNP Programs</h2>
+            <p className="text-lg font-semibold mb-8 text-gray-500">While each province has its own specific rules, common requirements include</p>
             <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-white shadow rounded-xl p-6 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto text-primary mb-4">
@@ -119,7 +119,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
         {/* Why Novanest */}
         <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Why Novanest?</h2>
+            <h2 className="text-3xl font-header font-bold mb-6">Why Novanest?</h2>
             <ul className="space-y-4 text-lg">
             <li>✔ Proven track record in investment & acceleration</li>
             <li>✔ Expert immigration, financial & business consultants</li>
@@ -131,8 +131,9 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
     {/* CTA */}
       <section className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-header md:text-5xl font-bold mb-4 text-gray-800 text-center">How to Start</h2>
-        <p className="text-lg md:text-2xl font-semibold mb-12 text-gray-500 text-center">Your First Step to Canada</p>
+        <h2 className="text-3xl font-header font-bold mb-4 text-gray-800 text-center">How to Start</h2>
+        <p className="text-lg font-semibold mb-8 text-gray-500 text-center">Your First Step to Canada</p>
+        <p className='mb-6 leading-loose'>If you’re interested in applying for Canada’s Provincial Entrepreneur Program and starting your own business in Canada, this opportunity allows you to generate income while securing permanent residency for yourself and your family. Book a free consultation with our experts today to assess your eligibility and find the right path for your future.</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             "Submit Your Info: Share your idea or investment interest.",

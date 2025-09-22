@@ -1,6 +1,7 @@
 import {
   HandicraftForm as HandicraftFormDataType,
   StartupsFormData,
+  AccelerationApplicantFormDataType,
   WorkWithUSFormData,
   PartnerMembershipFormData,
   JobFormData,
@@ -9,6 +10,7 @@ import {
   Entrepreuneur,
   ContactUSFormData,
   StartupApplicantFormDataType,
+  AcademyApplicantFormDataType,
   PNPApplicantFormDataType,
   FormData,
   LandaGeneFormData
@@ -149,6 +151,20 @@ const StartupApplicantFormData: StartupApplicantFormDataType = {
   number: '',
 };
 
+const AccelerationApplicantFormData: AccelerationApplicantFormDataType = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  number: '',
+};
+
+const AcademyApplicantFormData: AcademyApplicantFormDataType = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  number: '',
+};
+
 const PNPApplicantFormData: PNPApplicantFormDataType = {
   firstName: '',
   lastName: '',
@@ -177,6 +193,8 @@ export {
   initialFormData,
   ContactFormData,
   StartupApplicantFormData,
+  AccelerationApplicantFormData,
+  AcademyApplicantFormData,
   PNPApplicantFormData,
   RegisterationFormData,
   initialApplicationFormData,

@@ -23,15 +23,18 @@ export default function SpecialFeaturesClient({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
       {features.map((feature, index) => (
-        <motion.div
+        // make the whole card an anchor via motion.a
+        <motion.a
           key={feature.id}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="relative group h-full"
+          href={feature.link}
+          aria-label={learnMoreLabel}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.2 }}
+          className="relative group h-full block"
         >
-          <div className={`flex flex-col h-full bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${lang === 'fa' ? 'rtl' : 'ltr'}`}>
+          <div className={`flex flex-col h-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${lang === 'fa' ? 'rtl' : 'ltr'}`}>
             <div className="w-full aspect-video relative overflow-hidden">
               <div
                 className="size-full bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
@@ -50,20 +53,15 @@ export default function SpecialFeaturesClient({
                 {feature.description}
               </p>
               <div className="mt-auto text-right">
-                <a
-                  href={feature.link}
-                  className=""
-                  aria-label={learnMoreLabel}
-                >
+                {/* keep visual affordance */}
+                <span className="text-blue-600 font-medium">
                   {learnMoreLabel}
-                  <span className={`transform ${lang === 'fa' ? 'rotate-180' : ''}`}> →</span>
-                </a>
+                  <span className={`inline-block ml-2 transform ${lang === 'fa' ? 'rotate-180' : ''}`}>→</span>
+                </span>
               </div>
             </div>
           </div>
-
-          <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl transform rotate-1" />
-        </motion.div>
+        </motion.a>
       ))}
     </div>
   );

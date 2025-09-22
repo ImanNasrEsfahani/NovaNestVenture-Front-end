@@ -511,13 +511,18 @@
   },
 
   "startupApplicantForm": {
-    "formTitle":"Apply for SUV Program",
+    "formTitle":"Apply for SUV",
     "formSubtitle":"Let’s Talk About Your Journey",
 
     "sendingButton":"Submitting ....",
     "sendButton": "Send",
     "successMessage":"Form Submitted Successfully.",
     "failedMessage":"An error occurred. Please Contact Support."
+  },
+
+  "AcademyApplicantForm": {
+    "formTitle":"Apply for Academy Program",
+    "formSubtitle":"Let’s Talk About Your Journey"
   },
 
   "PNPApplicantForm": {

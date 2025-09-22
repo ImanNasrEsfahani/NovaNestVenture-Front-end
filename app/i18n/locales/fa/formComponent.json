@@ -555,6 +555,11 @@
     "failedMessage":"An error occurred. Please Contact Support."
   },
 
+  "AcademyApplicantForm": {
+    "formTitle":"Apply for Academy Program",
+    "formSubtitle":"Let’s Talk About Your Journey"
+  },
+  
   "PNPApplicantForm": {
     "formTitle":"Apply for PNP Program",
     "formSubtitle":"Let’s Talk About Your Journey",

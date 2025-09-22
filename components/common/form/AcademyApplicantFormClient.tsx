@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { StartupApplicantFormDataType } from '@/types/global';
+import { AcademyApplicantFormDataType } from '@/types/global';
 // import GetCsrfToken from '@/utils/get-csrf-token';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { StartupApplicantFormData } from '../../../initials/initObjects';
+import { AcademyApplicantFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
@@ -61,15 +61,16 @@ interface Props {
   translations: Translations;
 }
 
-export default function StartupApplicantFormClient({ lang, translations }: Props) {
+export default function AcademyApplicantFormClient({ lang, translations }: Props) {
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<StartupApplicantFormDataType>({
+  } = useForm<AcademyApplicantFormDataType>({
     mode: 'onBlur',
-    defaultValues: StartupApplicantFormData
+    defaultValues: AcademyApplicantFormData
   });
 
   const {
@@ -94,7 +95,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: StartupApplicantFormDataType) => {
+  const onSubmit = async (formData: AcademyApplicantFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -117,7 +118,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(StartupApplicantFormData); // Reset the form after successful submission
+        reset(AcademyApplicantFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -126,7 +127,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(StartupApplicantFormData);
+        reset(AcademyApplicantFormData);
 
         setTimeout(() => {
           handleNotifChange(false);

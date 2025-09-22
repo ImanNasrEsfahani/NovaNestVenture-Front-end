@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 // import AccelerationCard from '@/components/acceleration/AccelerationCard';
-import EntrepreneursForm from '@/components/entrepreneurs/EntrepreneursForm';
 import Banner from '@/components/common/Banner';
+import AccelerationApplicantForm from '@/components/common/form/AccelerationApplicantForm';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -39,67 +39,81 @@ export default function Page({
 
 
       
-
-      <div className="w-full">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-24 px-6">
-                {/* <div className={`max-w-responsive mx-auto mt-28 flex justify-between gap-8 px-10 font-header md:px-28 md:py-24`}> */}
-
-          <div className="max-w-responsive mx-auto grid lg:grid-cols-3 gap-10 items-center">
-            <div className="md:col-span-2">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      {/* Centered Text Section */}
+      <div className="flex justify-center items-center pt-32 pb-16">
+        <div className="max-w-[75%] mx-auto text-center">
+            <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800">
                 NovaNest Accelerator
-              </h1>
-              <p className="text-lg mb-6">
+            </h2>
+          <h3 className="text-base md:text-2xl font-semibold mb-8 text-gray-500">
+            NovaNest empowers entrepreneurs, startups, and businesses to grow and succeed in global markets
+          </h3>
+          <p className="text-base leading-loose text-gray-700 mb-8">
                 At NovaNest, we support entrepreneurs with innovative ideas,
                 guiding them from concept to success in global markets. Our goal is
                 to accelerate the growth of startups with resources, training, and
                 networking opportunities.
-              </p>
-              <button className="btn btn-lg bg-white text-indigo-700 font-semibold hover:bg-gray-100">
-                Contact Us
-              </button>
-            </div>
-            <div className="md:col-span-1">
-              <Image
-                width={400}
-                height={400}
-                src={`${base}static/images/acceleration/novanest-accelerator-startup-mentorship-global-markets.png`}
-                alt="Startup Illustration"
-                className="rounded-2xl shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
+          </p>
+          <a href="#acceleration-form" className="btn btn-neutral text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
+            Book a free consultation 
+          </a>
+        </div>
+      </div>
+
+      <div className="w-full">
 
         {/* Why NovaNest */}
         <section className="max-w-responsive mx-auto py-24 px-6">
-          <h2 className="text-3xl font-bold text-center mb-10">Why NovaNest Accelerator?</h2>
+          <h2 className="text-3xl font-header font-bold text-center mb-10">Why NovaNest Accelerator?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Expert Mentorship",
                 text: "Access to experienced advisors and founders offering guidance.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 11c1.657 0 3-1.343 3-3S9.657 5 8 5 5 6.343 5 8s1.343 3 3 3zM2 20v-1a4 4 0 014-4h12a4 4 0 014 4v1" />
+                  </svg>
+                )
               },
               {
                 title: "Global Networking",
                 text: "Connections to a worldwide network of investors and experts.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 6a6 6 0 100 12 6 6 0 000-12z" />
+                  </svg>
+                )
               },
               {
                 title: "Hands-on Training",
                 text: "Workshops covering business models, marketing, and fundraising.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v8M8 12h8M4 6h16v12H4z" />
+                  </svg>
+                )
               },
               {
                 title: "Financial Support",
                 text: "Help in securing funding from angel investors and VCs.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2M12 4v2M12 18v2" />
+                  </svg>
+                )
               },
             ].map((item, i) => (
               <div
                 key={i}
                 className="card bg-base-100 shadow-lg border border-gray-200 hover:shadow-xl transition"
               >
-                <div className="card-body p-6">
-                  <h3 className="card-title text-lg mb-3">{item.title}</h3>
+                <div className="card-body p-6 text-center flex flex-col items-center justify-center">
+                  {/* apply the Tailwind primary text color here so svg uses it via currentColor */}
+                  <div className="w-12 h-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center shrink-0 mb-2">
+                    {item.icon}
+                  </div>
+                  <h3 className="font-header card-title text-lg mb-3">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.text}</p>
                 </div>
               </div>
@@ -109,7 +123,7 @@ export default function Page({
 
         {/* Process */}
         <section className="bg-gray-50 py-24 px-6">
-          <h2 className="text-3xl font-bold text-center mb-10">Accelerator Process</h2>
+          <h2 className="text-3xl font-header font-bold text-center mb-10">Accelerator Process</h2>
           <div className="max-w-responsive mx-auto space-y-6">
             {[
               "Idea Evaluation: Market analysis and business model assessment.",
@@ -120,9 +134,9 @@ export default function Page({
             ].map((step, i) => (
               <div
                 key={i}
-                className="card w-full lg:max-w-xl 2xl:max-w-xl mx-auto flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200"
+                className="card w-full mx-auto flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200"
               >
-                <span className="font-bold text-indigo-600 mr-2">{i + 1}.</span>
+                <span className="font-bold mr-2">{i + 1}.</span>
                 {step}
               </div>
             ))}
@@ -144,9 +158,7 @@ export default function Page({
 
         {/* CTA */}
         <section className="py-24 px-6 text-center">
-          <h2 className="text-2xl font-bold mb-6">
-            Have an innovative idea? Let&apos;s accelerate your startup!
-          </h2>
+          <h2 className="text-2xl font-bold mb-6">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let’s start this path together.</h2>
           <button className="btn btn-lg btn-primary text-white font-semibold normal-case">
             Get Started
           </button>
@@ -237,8 +249,8 @@ export default function Page({
           lang={lang}
         /> */}
       {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
-      <div className="max-w-responsive mx-auto">
-         <EntrepreneursForm lang={lang} />
+      <div id="acceleration-form" className="max-w-responsive mx-auto">
+         <AccelerationApplicantForm lang={lang} />
       </div>
     </div>
   );

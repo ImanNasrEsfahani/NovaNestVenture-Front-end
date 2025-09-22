@@ -41,6 +41,22 @@ interface StartupApplicantFormDataType {
   number: string;
 }
 
+// Define an interface for AccelerationApplicantFormData form data
+interface AccelerationApplicantFormDataType {
+  firstName: string;
+  lastName: string;
+  email: string;
+  number: string;
+}
+
+// Define an interface for AcademyApplicantFormDataType form data
+interface AcademyApplicantFormDataType {
+  firstName: string;
+  lastName: string;
+  email: string;
+  number: string;
+}
+
 // Define an interface for PNPApplicantFormData form data
 interface PNPApplicantFormDataType {
   firstName: string;
@@ -437,6 +453,8 @@ export {
   WorkWithUsClientProps,
   ContactUSFormData,
   StartupApplicantFormDataType,
+  AccelerationApplicantFormDataType,
+  AcademyApplicantFormDataType,
   PNPApplicantFormDataType,
   FormData,
   HomeCardsInterface,

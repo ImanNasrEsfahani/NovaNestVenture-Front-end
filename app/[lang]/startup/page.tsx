@@ -159,6 +159,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       <section className="py-24 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-header md:text-5xl font-bold mb-4 text-gray-800 text-center">How to Start</h2>
         <p className="text-lg md:text-2xl font-semibold mb-12 text-gray-500 text-center">Your First Step to Canada</p>
+        <p className="text-base mb-6">If you’re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family, you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward.</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             "Submit Your Info: Share your idea or investment interest.",
