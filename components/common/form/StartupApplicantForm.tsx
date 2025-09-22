@@ -10,6 +10,7 @@ export default function StartupApplicantForm({lang}: {lang: string}) {
     formSubtitle: t("startupApplicantForm", { returnObjects: true }).formSubtitle,
 
     sendingButton: t("sendingButton"),
+    ReserveButton: t("ReserveButton"),
     sendButton: t("sendButton"),
 
     successMessage: t('successMessage'),

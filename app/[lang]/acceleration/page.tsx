@@ -45,10 +45,10 @@ export default function Page({
             <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800">
                 NovaNest Accelerator
             </h2>
-          <h3 className="text-base md:text-2xl font-semibold mb-8 text-gray-500">
+          <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
             NovaNest empowers entrepreneurs, startups, and businesses to grow and succeed in global markets
           </h3>
-          <p className="text-base leading-loose text-gray-700 mb-8">
+          <p className="text-lg leading-loose text-gray-700">
                 At NovaNest, we support entrepreneurs with innovative ideas,
                 guiding them from concept to success in global markets. Our goal is
                 to accelerate the growth of startups with resources, training, and
@@ -123,7 +123,7 @@ export default function Page({
 
         {/* Process */}
         <section className="bg-gray-50 py-24 px-6">
-          <h2 className="text-3xl font-header font-bold text-center mb-10">Accelerator Process</h2>
+          <h2 className="text-3xl font-header font-bold text-center mb-10">Acceleration Process</h2>
           <div className="max-w-responsive mx-auto space-y-6">
             {[
               "Idea Evaluation: Market analysis and business model assessment.",
@@ -147,7 +147,7 @@ export default function Page({
         {/* Impact */}
         <section className="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-24 px-6">
           <div className="max-w-responsive mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12">Our Impact</h2>
+            <h2 className="text-3xl font-header font-bold mb-12">Our Impact</h2>
             <ul className="space-y-4 text-lg">
               <li>✔ Secured funding from reputable investors.</li>
               <li>✔ Developed products and entered new markets.</li>
@@ -157,11 +157,8 @@ export default function Page({
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center">
-          <h2 className="text-2xl font-bold mb-6">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let’s start this path together.</h2>
-          <button className="btn btn-lg btn-primary text-white font-semibold normal-case">
-            Get Started
-          </button>
+        <section className="pt-24 pb-8 px-6 text-center">
+          <h3 className="text-xl">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let’s start this path together.</h3>
         </section>
       </div>
 

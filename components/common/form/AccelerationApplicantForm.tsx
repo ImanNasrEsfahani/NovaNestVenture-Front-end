@@ -10,6 +10,7 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
     formSubtitle: t("AcademyApplicantForm", { returnObjects: true }).formSubtitle,
 
     sendingButton: t("sendingButton"),
+    ReserveButton: t("ReserveButton"),
     sendButton: t("sendButton"),
 
     successMessage: t('successMessage'),

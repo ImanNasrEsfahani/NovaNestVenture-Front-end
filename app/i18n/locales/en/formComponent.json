@@ -13,7 +13,7 @@
   "email": "Email *",
   "emailRequired": "Email is Required.",
   "emailErrorMessage": "Enter a Valid Email Address.",
-  "EmailPlaceholder": "Your Email",
+  "emailPlaceholder": "Your Email",
 
   "phoneNumber": "Phone Number *",
   "phoneNumberRequired": "Phone Number is Required.",
@@ -36,6 +36,7 @@
   "birthDatePlaceholder": "Date of Birth",
 
   "sendButton": "Send",
+  "ReserveButton": "Reserve my free consultation",
   "sendingButton": "Submitting ....",
   "visitButton": "Visit Now",
 

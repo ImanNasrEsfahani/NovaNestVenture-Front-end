@@ -15,6 +15,7 @@ interface Translations {
     formTitle: string;
     formSubtitle: string;
     sendingButton: string;
+    ReserveButton: string;
     sendButton: string;
     successMessage: string;
     failedMessage: string;
@@ -205,7 +206,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
             <div className="w-60 mx-auto mt-6">
                 <ButtonRefactor 
                     type='submit'
-                    text={send ? translations.sendingButton : translations.sendButton}
+                    text={send ? translations.sendingButton : translations.ReserveButton}
                     disabled={errorsList[0] ? true : false}
                 />
             </div>
