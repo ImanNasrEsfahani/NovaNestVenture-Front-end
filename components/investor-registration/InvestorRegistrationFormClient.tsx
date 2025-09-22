@@ -91,8 +91,6 @@ interface Props {
 
 export default function InvestorRegistrationFormClient({ lang, translations }: Props) {
 
-  console.log('Translations in <InvestorRegistrationFormClient />:', translations); // Debugging line to check translations
-
   const {
     register,
     handleSubmit,
@@ -188,7 +186,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 phoneNumber: 'phoneNumber',
                 jobPosition: ''
               }}
-              noLabel={true}
+              noLabel={false}
               translations={{
                 INTERN: translations.INTERN,
                 EMPLOYEE: translations.EMPLOYEE,
