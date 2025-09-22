@@ -4,21 +4,21 @@
 
   "firstName": "First Name *",
   "firstNameRequired": "First Name is Required.",
-  "firstNamePlaceholder": "Your Name *",
+  "firstNamePlaceholder": "Your First Name",
 
   "lastName": "Last Name *",
   "lastNameRequired": "Last Name is Required.",
-  "lastNamePlaceholder": "Last Name",
+  "lastNamePlaceholder": "Your Last Name",
 
   "email": "Email *",
   "emailRequired": "Email is Required.",
   "emailErrorMessage": "Enter a Valid Email Address.",
-  "EmailPlaceholder": "Email",
+  "EmailPlaceholder": "Your Email",
 
   "phoneNumber": "Phone Number *",
   "phoneNumberRequired": "Phone Number is Required.",
   "phoneNumberErrorMessage": "Enter a Valid Phone Number",
-  "phoneNumberPlaceholder": "Your Number *",
+  "phoneNumberPlaceholder": "Your Phone Number",
 
   "jobPosition": "Type of Collaboration *",
   "jobPositionRequired": "Type of Collaboration is Required",
