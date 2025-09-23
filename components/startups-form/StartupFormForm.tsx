@@ -36,7 +36,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
   return (
     <div className="max-w-responsive mx-auto py-20">
         <h1 className="font-header text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
-          Join the NovaNest Venture Startup Network
+          Startup Investment Application
         </h1>
         <p className="text-lg mb-4 leading-relaxed">
           Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.

@@ -48,13 +48,8 @@ export default function Page({
           <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
             NovaNest empowers entrepreneurs, startups, and businesses to grow and succeed in global markets
           </h3>
-          <p className="text-lg leading-loose text-gray-700">
-                At NovaNest, we support entrepreneurs with innovative ideas,
-                guiding them from concept to success in global markets. Our goal is
-                to accelerate the growth of startups with resources, training, and
-                networking opportunities.
-          </p>
-          <a href="#acceleration-form" className="btn btn-neutral text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
+          <p className="text-lg leading-loose text-gray-700 mb-8">At NovaNest, we empower entrepreneurs, startups, and established businesses by guiding them from concept to sustainable success in global markets. Our mission is to accelerate growth through tailored resources, expert training, and valuable networking opportunities. Whether you are launching a new idea or scaling an existing business, we provide the support and guidance you need to achieve lasting impact.</p>
+          <a href="#acceleration-form" className="btn btn-neutral text-white text-md normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
             Book a free consultation 
           </a>
         </div>
@@ -69,7 +64,7 @@ export default function Page({
             {[
               {
                 title: "Expert Mentorship",
-                text: "Access to experienced advisors and founders offering guidance.",
+                text: "Access to experienced advisors and founders offering practical and strategic guidance.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 11c1.657 0 3-1.343 3-3S9.657 5 8 5 5 6.343 5 8s1.343 3 3 3zM2 20v-1a4 4 0 014-4h12a4 4 0 014 4v1" />
@@ -78,7 +73,7 @@ export default function Page({
               },
               {
                 title: "Global Networking",
-                text: "Connections to a worldwide network of investors and experts.",
+                text: "Connections to a worldwide network of investors, entrepreneurs, and industry experts.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 6a6 6 0 100 12 6 6 0 000-12z" />
@@ -87,7 +82,7 @@ export default function Page({
               },
               {
                 title: "Hands-on Training",
-                text: "Workshops covering business models, marketing, and fundraising.",
+                text: "Workshops and training programs covering business models, digital marketing, fundraising, and product development.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v8M8 12h8M4 6h16v12H4z" />
@@ -96,7 +91,7 @@ export default function Page({
               },
               {
                 title: "Financial Support",
-                text: "Help in securing funding from angel investors and VCs.",
+                text: "Assistance in securing funding through angel investors and venture capital networks.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2M12 4v2M12 18v2" />
@@ -110,7 +105,7 @@ export default function Page({
               >
                 <div className="card-body p-6 text-center flex flex-col items-center justify-center">
                   {/* apply the Tailwind primary text color here so svg uses it via currentColor */}
-                  <div className="w-12 h-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center shrink-0 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center shrink-0 my-4">
                     {item.icon}
                   </div>
                   <h3 className="font-header card-title text-lg mb-3">{item.title}</h3>
@@ -126,15 +121,15 @@ export default function Page({
           <h2 className="text-3xl font-header font-bold text-center mb-10">Acceleration Process</h2>
           <div className="max-w-responsive mx-auto space-y-6">
             {[
-              "Idea Evaluation: Market analysis and business model assessment.",
-              "Product Development: Build and refine MVPs.",
-              "Marketing & Sales: Craft strategies to attract customers.",
-              "Fundraising: Prepare and pitch to secure investment.",
-              "Global Expansion: Strategies for entering international markets.",
+              "Idea Evaluation: Market analysis, competitor review, and business model assessment.",
+              "Product Development: Guidance in designing and building a Minimum Viable Product (MVP).",
+              "Marketing & Sales: Crafting digital marketing and sales strategies to attract initial customers.",
+              "Fundraising: Preparing startups to pitch and secure investment.",
+              "Global Expansion: Planning and executing strategies for entry into international markets.",
             ].map((step, i) => (
               <div
                 key={i}
-                className="card w-full mx-auto flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200"
+                className="card mx-auto max-w-6xl flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200"
               >
                 <span className="font-bold mr-2">{i + 1}.</span>
                 {step}
@@ -157,7 +152,7 @@ export default function Page({
         </section>
 
         {/* CTA */}
-        <section className="pt-24 pb-8 px-6 text-center">
+        <section className="pt-24 pb-4 max-w-5xl mx-auto text-center">
           <h3 className="text-xl">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let’s start this path together.</h3>
         </section>
       </div>
@@ -246,7 +241,7 @@ export default function Page({
           lang={lang}
         /> */}
       {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
-      <div id="acceleration-form" className="max-w-responsive mx-auto">
+      <div id="acceleration-form" className="max-w-responsive mx-auto mb-36">
          <AccelerationApplicantForm lang={lang} />
       </div>
     </div>
