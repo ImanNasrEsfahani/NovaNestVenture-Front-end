@@ -13,7 +13,6 @@ import StartupApplicantForm from '@/components/common/form/StartupApplicantForm'
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
   const { t } = getServerTranslation(lang, 'startUp');
-  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
     <>
@@ -155,7 +154,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         />
       </section>
       
-      <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100 lg:px-16'>
+      <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100'>
         <StartupApplicantForm
         lang={lang}
         />
