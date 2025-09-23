@@ -149,7 +149,11 @@ export default function AccelerationApplicantFormClient({ lang, translations }: 
                 formSubtitle={translations.formSubtitle}
             />
         </div> */}
-
+        
+        {/* CTA */}
+        <section className="pt-24 pb-4 max-w-5xl mx-auto lg:px-4 text-center">
+          <h3 className="text-xl">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let&rsquo;s start this path together.</h3>
+        </section>
 
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-6 grid grid-cols-1 gap-x-6 mt-10 md:grid-cols-2 xl:grid-cols-3">

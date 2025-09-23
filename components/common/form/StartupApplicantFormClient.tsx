@@ -148,10 +148,13 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
                 formSubtitle={translations.formSubtitle}
             />
         </div> */}
-
+        {/* CTA */}
+        <div className="pb-4 max-w-5xl mx-auto text-center">
+          <h3 className="text-xl">If you&rsquo;re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family, you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward.</h3>
+        </div>
 
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mb-6 grid grid-cols-1 gap-x-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
                 <PersonalInfoInput
                     register={register}
                     errors={errors}

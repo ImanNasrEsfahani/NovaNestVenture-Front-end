@@ -150,11 +150,6 @@ export default function Page({
             </ul>
           </div>
         </section>
-
-        {/* CTA */}
-        <section className="pt-24 pb-4 max-w-5xl mx-auto text-center">
-          <h3 className="text-xl">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let’s start this path together.</h3>
-        </section>
       </div>
 
 
@@ -241,7 +236,7 @@ export default function Page({
           lang={lang}
         /> */}
       {/* <ButtonRefactor text={t('Register')} href="{`${base}'/startups-form'`}" /> */}
-      <div id="acceleration-form" className="max-w-responsive mx-auto mb-36">
+      <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mb-36">
          <AccelerationApplicantForm lang={lang} />
       </div>
     </div>

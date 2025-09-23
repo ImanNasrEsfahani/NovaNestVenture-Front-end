@@ -154,36 +154,8 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           height={2400}
         />
       </section>
-
-      {/* How to Start */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-header md:text-5xl font-bold mb-4 text-gray-800 text-center">How to Start</h2>
-        <p className="text-lg md:text-2xl font-semibold mb-12 text-gray-500 text-center">Your First Step to Canada</p>
-        <p className="text-base mb-6">If you’re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family, you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward.</p>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            "Submit Your Info: Share your idea or investment interest.",
-            "Free Consultation: We define the best path for you.",
-            "Start the Process: Prepare documents & meet investors/startups.",
-          ].map((step, i) => (
-            <div
-              key={i}
-              className="card shadow-lg border border-gray-200 hover:shadow-xl transition"
-            >
-              <div className="card-body p-6 flex items-center">
-                {i + 1}. {step}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="text-center mt-10">
-          <a href={`${base}investor-registration`} className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg shadow hover:bg-primary transition-colors">
-            Get Started
-          </a>
-        </div>
-      </section>  
-        
-      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+      
+      <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100 lg:px-16'>
         <StartupApplicantForm
         lang={lang}
         />

@@ -149,10 +149,14 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
                 formSubtitle={translations.formSubtitle}
             />
         </div> */}
-
+        
+        {/* CTA */}
+        <section className="pt-24 pb-4 max-w-5xl mx-auto lg:px-4 text-center">
+          <h3 className="text-xl">If you&rsquo;re interested in applying for Canada&rsquo;s Provincial Entrepreneur Program and starting your own business in Canada, this opportunity allows you to generate income while securing permanent residency for yourself and your family. Book a free consultation with our experts today to assess your eligibility and find the right path for your future.</h3>
+        </section>
 
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mb-6 grid grid-cols-1 gap-x-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
                 <PersonalInfoInput
                     register={register}
                     errors={errors}
