@@ -2,7 +2,6 @@ import Banner from '@/components/common/Banner';
 import StartupFormForm from '@/components/startups-form/StartupFormForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import { LandaBgBig } from 'public/static/logos/LandaBgBig';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Startups',
@@ -19,9 +18,6 @@ export default function StartupValidationPage({
 
   return (
     <div dir={t('dir')} className="relative overflow-hidden">
-      <div className="hidden lg:block rotate-[1.3deg] size-auto absolute right-0 top-1/2">
-        <LandaBgBig />
-      </div>
       <Banner
         image="/static/images/work-with-us/header.png"
         title={t('startUp', { returnObjects: true }).banner}

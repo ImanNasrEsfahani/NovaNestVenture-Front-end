@@ -1,8 +1,8 @@
 {
   "menuItems": [
     {
-      "label": "About US",
-      "href": "en/about"
+      "label": "Academy",
+      "href": "en/academy"
     },
     {
       "label": "Our Team",
@@ -10,7 +10,7 @@
     },
     {
       "label": "Contact US",
-      "href": "en/contact"
+      "href": "en/contact-us"
     }
   ],
   "submenuItems": [

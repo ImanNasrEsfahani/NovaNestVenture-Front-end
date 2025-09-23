@@ -16,7 +16,7 @@ import TextArea from '@/components/common/TextArea';
 
 import StartUpFormCheckbox from '@/components/startups-form/StartUpFormCheckbox';
 // import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
-// import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
+import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
 import StartUpFirstSaleRefactor from '@/components/startups-form/StartUpFirstSaleRefactor';
 import StartUpSaleDevelopRefactore from '@/components/startups-form/StartUpSaleDevelopRefactore';
 
@@ -237,7 +237,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                     />
                   )
                 }
-              })()}
+              })()}  */}
               <StartUpFormCheckbox register={register} name={translations.MVP} />
               {((): any => {
                 if (startupFormType == translations.MVP) {
@@ -257,7 +257,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                     />
                   )
                 }
-              })()} */}
+              })()}
               <StartUpFormCheckbox register={register} name={translations.FisrtSale} />
               {((): any => {
                 if (startupFormType == translations.FisrtSale) {

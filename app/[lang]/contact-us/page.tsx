@@ -3,6 +3,11 @@ import { getServerTranslation } from 'app/i18n';
 import ContactUsForm from '@/components/common/form/ContactUsForm';
 import ContactUsDescription from '@/components/common/ContactUsDescription';
 import './contact.css';
+import AboutUsNovaNest from '@/components/about/AboutUsNovaNest';
+import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
+import StoryOfLanda from '@/components/about/StoryOfLanda';
+import KeyDifferentiating from '@/components/KeyDifferentiating';
+import AboutUsProfile from '@/components/about/AboutUsProfile';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Contact',
@@ -43,6 +48,15 @@ export default function ContactUsPage({
             {t('banner')}
           </span>
         </div>
+      </div>
+      
+
+      <div className='px-8 md:px-24 max-w-responsive mx-auto'>
+        <AboutUsNovaNest lang={lang} />
+        <SubsidiaryCompanies lang={lang}/>
+        <StoryOfLanda lang={lang}/>
+        <KeyDifferentiating lang={lang} />
+        <AboutUsProfile lang={lang} />
       </div>
 
       {/* Main Content Grid */}

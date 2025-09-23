@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import AboutUsNovaNest from '@/components/about/AboutUsNovaNest';
-import AboutUsProfile from '@/components/about/AboutUsProfile';
-import Banner from '@/components/common/Banner';
 import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
 import StoryOfLanda from '@/components/about/StoryOfLanda';
 import KeyDifferentiating from '@/components/KeyDifferentiating';
+import AboutUsProfile from '@/components/about/AboutUsProfile';
+import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
 
 export const metadata: Metadata = {
