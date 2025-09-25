@@ -28,6 +28,7 @@ module.exports = {
       colors: {
         primary: '#AA8453',
         whiteGold: '#F8F5F0',
+        darkGold: '#e8decd',
         tableHeader: '#DDCEBA',
         blue: '#35427D',
         grayCheckBox: '#939393',

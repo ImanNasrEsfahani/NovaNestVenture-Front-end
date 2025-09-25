@@ -281,7 +281,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
 
             <div className='space-y-4'>
               {panels.filter(p => p.show).map((p) => (
-                 <div key={p.id} className="bg-whiteGold rounded-xl overflow-hidden shadow-sm">
+                 <div key={p.id} className="bg-darkGold rounded-xl overflow-hidden shadow-sm">
                    <CollapsibleHeader
                      title={p.title}
                      isOpen={openPanel === p.id}
