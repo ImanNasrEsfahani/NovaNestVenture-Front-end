@@ -98,31 +98,6 @@ export default function StartUpMvpRefactore({
         chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
         onFileChange={handleFinancialFileChange}
       />
-
-      <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
-          <TextArea
-            title={t('startUp', { returnObjects: true }).commons.accelerators}
-            register={register}
-            errors={errors}
-            required={t('startUp', { returnObjects: true }).commons.acceleratorsRequired}
-            nameTextArea={'cooperatedWithInvestors'}
-            patternValue={''}
-            patternMessage={''}
-            placeholder={t('startUp', { returnObjects: true }).commons.acceleratorsPlaceholder}
-          />
-        </div>
-        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
-          <TextArea
-            title={t('startUp', { returnObjects: true }).commons.knowUs}
-            register={register}
-            errors={errors}
-            required={t('startUp', { returnObjects: true }).commons.knowUsRequired}
-            nameTextArea={'getToKnowUs'}
-            patternValue={''}
-            patternMessage={''}
-            placeholder={t('startUp', { returnObjects: true }).commons.knowUsPlaceholder}
-          />
-        </div>
     </div>
   )
 }

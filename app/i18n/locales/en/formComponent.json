@@ -423,7 +423,7 @@
       "scalablePlaceholder": "Description",
       "scalableRequired": "This field is required!"
     },
-    "financialFile": "Do you have Financial?",
+    "financialFile": "Do you currently have a financial plan in place?",
     "financialFileRequired": "Please choose an option",
 
     "property": {

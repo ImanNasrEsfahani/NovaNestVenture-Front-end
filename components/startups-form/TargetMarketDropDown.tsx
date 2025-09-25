@@ -32,7 +32,7 @@ export default function TargetMarketDropDown( {
 
   return (
     <>
-      <div className='w-full bg-gray-100 py-8 px-4'>
+      <div className='w-full py-8 px-4'>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
           <TextArea 
               title={translations.targetCharacteristics}
