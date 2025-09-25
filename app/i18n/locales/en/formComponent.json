@@ -215,7 +215,7 @@
     "trial": {
       "description": "Take the first bold step by presenting your idea and identifying the most promising path to success. Carefully plan your journey to launch, define each milestone, and gather the right team of experts to support you along the way. Remember, validating the profitability of your idea is essential—low returns and high risks can lead to failure. A well-prepared trial phase sets the foundation for everything that follows.",
       
-      "pitchDeck": "Do you currently have a Pitchdeck in place?",
+      "pitchDeck": "Do you currently have a Pitchdeck in place? *",
       "choseFile": "Choose File",
       
       "productName": "Product Name *",
@@ -238,7 +238,7 @@
     "MVP": {
       "description": "MVP is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development. This way, you are able to create the tangible product that provides the best and most appealing user experience for the most economical cost, an that can challenge and validate assumptions about a product's requirements.",
       
-      "pitchDeck": "Do you currently have a Pitchdeck in place?",
+      "pitchDeck": "Do you currently have a Pitchdeck in place? *",
       "choseFile": "Choose File",
 
       "productName": "Product Name *",
@@ -276,7 +276,7 @@
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
 
-      "pitchDeck": "Do you currently have a Pitchdeck in place?",
+      "pitchDeck": "Do you currently have a Pitchdeck in place? *",
       "pitchDeckRequired": "Please choose an option",
       
       "businessPlan": "Do you currently have a Business plan in place?",
@@ -288,7 +288,7 @@
     "SaleDevelopment" : {
       "description": "Collaborate with manufacturers to ensure a high quality product delivered to buyer's doors that exceeds customer expectations. Sales development is usually an organization that sits between the marketing and sales functions of a business and is responsible for the front-end of the sales cycle including identifying, connecting with, and qualifying leads. They normally set up qualified meetings between a salesperson and potential buyers with a high probability of purchasing a product.",
       
-      "pitchDeck": "Do you currently have a Pitchdeck in place?",
+      "pitchDeck": "Do you currently have a Pitchdeck in place? *",
       "choseFile": "Choose File",
 
       "productName": "Product Name *",
