@@ -250,11 +250,11 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
           {/* disable native form controls while hidden to avoid focusable hidden elements */}
           <fieldset disabled={fileCounterState} className="w-full">
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-4 pt-6 pb-12">
-              <label>Product Name
+              <label>{productName}
                 <Input
                   register={register}
                   errors={errors}
-                  nameInput={productName}
+                  nameInput="productName"
                   type={'text'}
                   required={productNameRequired}
                   patternValue={''}
@@ -264,11 +264,11 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
                 />
               </label>
 
-              <label>Site Address
+              <label>{siteAddress}
                 <Input
                   register={register}
                   errors={errors}
-                  nameInput={siteAddress}
+                  nameInput="siteAddress"
                   type={'text'}
                   required={siteAddressRequired}
                   patternValue={''}
