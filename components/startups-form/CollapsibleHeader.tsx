@@ -17,7 +17,7 @@ export default function CollapsibleHeader({ title, isOpen, onToggle }: Props) {
         bg-primary text-white
         rounded-sm
         border-b border-primary/30
-        hover:bg-gray-600
+        hover:bg-[#222222CC]
         transition-colors duration-500
         focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/10"
     >
