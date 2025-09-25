@@ -1,7 +1,7 @@
 import PriorityCard from './PriorityCard';
 import { getServerTranslation } from 'app/i18n';
 
-export default function NovaNestPriority({lang}: {lang: string}) {
+export default function Priority({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (

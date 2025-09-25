@@ -28,9 +28,12 @@ export default function StartupFormForm({lang}: {lang: string}) {
     provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
     provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
 
-    howDidYouKnowUs: t('howDidYouKnowUs'),
-    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
-    howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
+    accelerators: t('startUp', { returnObjects: true }).commons.accelerators,
+    acceleratorsRequired: t('startUp', { returnObjects: true }).commons.acceleratorsRequired,
+    acceleratorsPlaceholder: t('startUp', { returnObjects: true }).commons.acceleratorsPlaceholder,
+    howDidYouKnowUs: t('startUp', { returnObjects: true }).commons.knowUs,
+    howDidYouKnowUsRequired: t('startUp', { returnObjects: true }).commons.KnowUsRequired,
+    howDidYouKnowUsPlaceholder: t('startUp', { returnObjects: true }).commons.KnowUsPlaceholder,
   };
 
   return (

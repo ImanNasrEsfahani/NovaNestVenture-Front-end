@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FileUpload from 'public/static/logos/FileUpload';
+import YesOrNoQuestion from './YesOrNoQuestion';
 
 interface Props {
   title: string;
   yesLabel: string;
   noLabel: string;
-  chooseFileLabel: string;
-  fileCounter: boolean;
-  onFileCounterChange: (name: string) => void;
+  chooseFile: string;
   onFileChange: (file: any) => void;
 }
 
@@ -15,71 +14,33 @@ const FinancialAnalysisUpload: React.FC<Props> = ({
   title,
   yesLabel,
   noLabel,
-  chooseFileLabel,
-  fileCounter,
-  onFileCounterChange,
+  chooseFile,
   onFileChange
 }) => {
-  return (
-    <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
-      <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-        <p className='text-black font-medium font-barlow text-lg leading-[19px]'>{title}</p>
-      </div>
-      
-      <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
-        <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-          <div className='size-auto flex flex-row gap-2 items-center' onClick={() => onFileCounterChange("financial")}>
-            <div className='border-2 rounded-full border-primary p-1'>
-              <div
-                className={`size-3 rounded-full transition-all ${
-                  fileCounter ? "bg-primary" : "bg-whiteGold"
-                }`}
-              />
-            </div>
-            <p className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{yesLabel}</p>
-          </div>
-          
-          <div className='size-auto flex flex-row gap-2 items-center' onClick={() => onFileCounterChange("financial")}>
-            <div className='border-2 rounded-full border-primary p-1'>
-              <div
-                className={`size-3 rounded-full transition-all ${
-                  !fileCounter ? "bg-primary" : "bg-whiteGold"
-                }`}
-              />
-            </div>
-            <p className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{noLabel}</p>
-          </div>
-        </div>
-      </div>
 
-      {fileCounter ? (
-        <div className='w-full h-auto'>
-          <div className='w-full h-auto flex flex-col items-center gap-2'>
-            <div className='size-auto'>
-              <p className='text-grayLabel font-medium text-xs md:text-lg 2xl:text-2xl md:leading-[14px]'>{chooseFileLabel}</p>
-            </div>
-            <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-              <label className="cursor-pointer relative size-12 flex items-center justify-center rounded-full hover:bg-gray-200 transition">
-                <input
-                  type="file"
-                  name='financialFile'
-                  className="absolute inset-0 size-full opacity-0 cursor-pointer"
-                  onChange={(e) => {
-                    onFileChange(e.target.files ? e.target.files[0] : '')
-                  }}
-                />
-                <FileUpload
-                  name="financialFile"
-                  label={chooseFileLabel}
-                  onChange={onFileChange}
-                />
-              </label>
-            </div>
-          </div>
+  const [fileCounterState, setFileCounter] = useState<boolean>(false);
+  
+  return (
+    <div className='w-full flex flex-col items-center mb-12'>
+      <YesOrNoQuestion
+        title={title}
+        yesLabel={yesLabel}
+        noLabel={noLabel}
+        value={fileCounterState}
+        onChange={setFileCounter}
+        name="fileCounter"
+      />
+
+      <div
+        aria-hidden={!fileCounterState}
+        className={`w-full md:max-w-lg 2xl:max-w-xl mx-auto mt-2 bg-whiteGold drop-shadow-md justify-center overflow-hidden
+          transition-[max-height,opacity,transform,padding] duration-700 ease-out min-h-0
+          ${fileCounterState ? 'max-h-auto opacity-100 translate-y-0 py-4 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+      >
+        <div className="px-4">
+          <FileUpload name="financialFile" label={chooseFile} onChange={onFileChange} disabled={!fileCounterState}/>
         </div>
-      ) : (
-        <></>
-      )}
+      </div>
     </div>
   );
 };

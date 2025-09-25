@@ -6,7 +6,7 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function NovaNestBlack({lang}: {lang: string}) {
+export default function HalvesCards({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   // Get the cards array directly from translation

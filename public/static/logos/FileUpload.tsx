@@ -4,19 +4,21 @@ type FileUploadProps = {
   name: string;
   label: string;
   onChange: (file: File | null) => void;
+  disabled?: boolean;
 }
 
-const FileUpload = ({ name, label, onChange }: FileUploadProps) => {
+const FileUpload = ({ name, label, onChange, disabled = false }: FileUploadProps) => {
   return (
     <div className="flex flex-col items-center justify-center">
-      
-      <label className="w-full cursor-pointer rounded-full hover:bg-gray-200 transition">
-        <p className="">{label}</p>
+
+      <label className="w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition">
+        <p className="font-base mb-2">{label}</p>
         <input
           type="file"
           name={name}
           className="opacity-0 cursor-pointer"
           onChange={(e) => onChange(e.target.files?.[0] || null)}
+          disabled={disabled}
         />
         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg" href="http://www.w3.org/1999/xlink">
           <rect x="0.5" width="27" height="27" fill="url(#pattern0_138_5516)" fillOpacity="0.6"/>

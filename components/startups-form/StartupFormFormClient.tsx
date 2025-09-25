@@ -42,6 +42,9 @@ interface Translations {
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
 
+  accelerators: string;
+  acceleratorsRequired: string;
+  acceleratorsPlaceholder: string;
   howDidYouKnowUs: string;
   howDidYouKnowUsRequired: string;
   howDidYouKnowUsPlaceholder: string;
@@ -191,16 +194,6 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
               register={register}
               errors={errors}
             />
-            <TextArea
-              title={translations.howDidYouKnowUs}
-              register={register}
-              errors={errors}
-              placeholder={translations.howDidYouKnowUsPlaceholder}
-              nameTextArea="getToKnowUs"
-              patternMessage=""
-              patternValue=""
-              required={translations.howDidYouKnowUsRequired}
-            />
           </div>
 
           <div className="bg-[#222222CC]">
@@ -238,70 +231,121 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                   )
                 }
               })()}  */}
-              <StartUpFormCheckbox register={register} name={translations.MVP} />
-              {((): any => {
-                if (startupFormType == translations.MVP) {
-                  return (
+              <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
+                <div className="col-span-1">
+                  <StartUpFormCheckbox register={register} name={translations.MVP} />
+                </div>
+
+                <div className="col-span-1">
+                  <StartUpFormCheckbox register={register} name={translations.FisrtSale} />
+                </div>
+                
+                <div className="col-span-1">
+                  <StartUpFormCheckbox register={register} name={translations.SaleDevelopment} />
+                </div>
+              </div>
+
+              <div className='w-full'>
+                <div
+                  aria-hidden={startupFormType !== translations.MVP}
+                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+                    ${startupFormType === translations.MVP ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                >
+                  <fieldset disabled={startupFormType !== translations.MVP}>
                     <StartUpMvpRefactore
+                      lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
                       handlePitchFileChange={handlePitchFileChange}
                       handleBusinessFileChange={handleBusinessFileChange}
+                      handleFinancialFileChange={handleFinancialFileChange}
                       filesCounter={filesCounter}
                       register={register}
-                      errors={errors} 
-                      setValue={setValue} 
-                      handleSolutionsLevelChange={handleSolutionsLevelChange} 
-                      solutionsLevel={solutionsLevel}      
+                      errors={errors}
+                      setValue={setValue}
+                      handleSolutionsLevelChange={handleSolutionsLevelChange}
+                      solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
-                      lang={lang || 'en'}
                     />
-                  )
-                }
-              })()}
-              <StartUpFormCheckbox register={register} name={translations.FisrtSale} />
-              {((): any => {
-                if (startupFormType == translations.FisrtSale) {
-                  return (
-                    <StartUpFirstSaleRefactor 
+                  </fieldset>
+                </div>
+
+                <div
+                  aria-hidden={startupFormType !== translations.FisrtSale}
+                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+                    ${startupFormType === translations.FisrtSale ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                >
+                  <fieldset disabled={startupFormType !== translations.FisrtSale}>
+                    <StartUpFirstSaleRefactor
+                      lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
                       handlePitchFileChange={handlePitchFileChange}
                       handleBusinessFileChange={handleBusinessFileChange}
+                      handleFinancialFileChange={handleFinancialFileChange}
                       filesCounter={filesCounter}
                       register={register}
                       errors={errors}
                       setValue={setValue}
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
-                      handleFinancialModelFileChange={handleFinancialModelFileChange} 
-                      handleFinancialFileChange={handleFinancialFileChange}                   
+                      handleFinancialModelFileChange={handleFinancialModelFileChange}
                     />
-                  )
-                }
-              })()}
-              <StartUpFormCheckbox register={register} name={translations.SaleDevelopment} />
-              {((): any => {
-                if (startupFormType == translations.SaleDevelopment) {
-                  return (
-                    <StartUpSaleDevelopRefactore 
+                  </fieldset>
+                </div>
+
+                <div
+                  aria-hidden={startupFormType !== translations.SaleDevelopment}
+                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+                    ${startupFormType === translations.SaleDevelopment ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                >
+                  <fieldset disabled={startupFormType !== translations.SaleDevelopment}>
+                    <StartUpSaleDevelopRefactore
+                      lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
                       handlePitchFileChange={handlePitchFileChange}
                       handleBusinessFileChange={handleBusinessFileChange}
+                      handleFinancialFileChange={handleFinancialFileChange}
                       filesCounter={filesCounter}
                       register={register}
                       errors={errors}
                       setValue={setValue}
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
-                      handleFinancialModelFileChange={handleFinancialModelFileChange} 
-                      handleFinancialFileChange={handleFinancialFileChange} 
-                      lang={lang || 'en'}
+                      handleFinancialModelFileChange={handleFinancialModelFileChange}
                     />
-                  )
-                }
-              })()}
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
 
+          <br />
+          <hr className=" my-5 mt-0 dark:border-[#222222CC] " />
+
+          <div className="w-10/12 mx-auto">
+            <TextArea
+              title={translations.accelerators}
+              register={register}
+              errors={errors}
+              required={translations.acceleratorsRequired}
+              nameTextArea={'cooperatedWithInvestors'}
+              patternValue={''}
+              patternMessage={''}
+              placeholder={translations.acceleratorsPlaceholder}
+            />
+          </div>
+          <div className="w-10/12 mx-auto">
+            <TextArea
+              title={translations.howDidYouKnowUs}
+              register={register}
+              errors={errors}
+              required={translations.howDidYouKnowUsRequired}
+              nameTextArea={'getToKnowUs'}
+              patternValue={''}
+              patternMessage={''}
+              placeholder={translations.howDidYouKnowUsPlaceholder}
+            />
+          </div>
+          
           <div className="flex justify-center w-1/3 md:w-1/4 lg:w-1/6 mx-auto mt-6">
             <ButtonRefactor type="submit" text={translations.sendButton} disabled={errorsList[0] ? true : false}/>
           </div>

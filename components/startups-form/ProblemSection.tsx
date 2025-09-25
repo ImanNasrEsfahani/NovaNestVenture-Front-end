@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 import TextArea from '@/components/common/TextArea';
-import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 
 type Props = {
-  title: string;
   textAreaTitle: string;
   textAreaRequired: string;
   textAreaPlaceholder: string;
@@ -14,46 +12,31 @@ type Props = {
   nameTextArea?: string;
 };
 
-const ProblemsSection = ({
-  title,
+export default function ProblemsSection({
   textAreaTitle,
   textAreaRequired,
   textAreaPlaceholder,
   register,
   errors,
-  nameTextArea = "customerProblem"
-}: Props) => {
-  const [problemsOpen, setProblemsOpen] = useState<boolean>(false);
-
-const handleToggle = () => {
-  console.log('Toggle clicked, current state:', problemsOpen);
-  setProblemsOpen(!problemsOpen);
-};
+  nameTextArea = 'customerProblem'
+}: Props) {
 
   return (
     <>
-      <CollapsibleHeader
-        title={title}
-        isOpen={problemsOpen}
-        onToggle={handleToggle}
-      />
-      
-      {problemsOpen && (
-        <div className='w-full h-auto md:px-1'>
+      <div className="w-full bg-gray-100 py-8 px-4">
+        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
           <TextArea
             title={textAreaTitle}
             register={register}
-            errors={errors} 
+            errors={errors}
             required={textAreaRequired}
-            nameTextArea={nameTextArea} 
-            patternValue={''} 
-            patternMessage={''} 
-            placeholder={textAreaPlaceholder}                                                  
+            nameTextArea={nameTextArea}
+            patternValue={''}
+            patternMessage={''}
+            placeholder={textAreaPlaceholder}
           />
         </div>
-      )}
+      </div>
     </>
   );
-};
-
-export default ProblemsSection;
+}

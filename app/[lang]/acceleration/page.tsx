@@ -24,7 +24,7 @@ export default function Page({
     <div>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/acceleration/accleration-hero.webp"
+          image="/static/images/acceleration/accleration-hero.jpg"
           title={t('banner')}
           lang={lang}
         />

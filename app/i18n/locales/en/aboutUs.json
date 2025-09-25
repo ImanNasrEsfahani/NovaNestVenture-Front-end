@@ -18,20 +18,20 @@
       "addedClass": ""
     }
   ],
-  "subsids": [
+  "TheStoryOfLanda": [
     {
-      "title": "Subsidiary companies of NovaNest Venture",
-      "text": "NovaNest Venture consists of 10 active companies operating in Canada and Iran, with offices in the cities of Toronto, Vancouver, Tehran, and Isfahan. Our mission is to invest in creative entrepreneurs, supporting them from the very beginning, starting with ideation, all the way to launching an international startup.",
+      "title": "The story of NovaNest",
+      "text": "NovaNest Venture started its activity in Canada in 2017 as a company in the field of investment in startup planning, business planning, and collecting resources to develop pioneering startup businesses. After years of success and many successful projects, in 2021, NovaNest Venture was identified as a federal company, certified and verified in both Canada and Iran. This aim has been pursued since then even more thoroughly and passionately than ever.",
       "reverse": true,
       "show": true,
       "index": 2,
       "addedClass": ""
     }
   ],
-  "TheStoryOfLanda": [
+  "subsids": [
     {
-      "title": "The story of NovaNest",
-      "text": "NovaNest Venture started its activity in Canada in 2017 as a company in the field of investment in startup planning, business planning, and collecting resources to develop pioneering startup businesses. After years of success and many successful projects, in 2021, NovaNest Venture was identified as a federal company, certified and verified in both Canada and Iran. This aim has been pursued since then even more thoroughly and passionately than ever.",
+      "title": "Subsidiary companies of NovaNest Venture",
+      "text": "NovaNest Venture consists of 10 active companies operating in Canada and Iran, with offices in the cities of Toronto, Vancouver, Tehran, and Isfahan. Our mission is to invest in creative entrepreneurs, supporting them from the very beginning, starting with ideation, all the way to launching an international startup.",
       "reverse": true,
       "show": true,
       "index": 2,
@@ -58,6 +58,25 @@
       "addedClass": ""
     }
   ],
+  "KeyDifferentiatingFactors": [
+    {
+      "title": "Key Differentiating Factors :",
+      "titleText": "First and foremost, it's essential to understand that the most critical aspect is the mental model and perspective behind these key differentiating factors. The way we perceive and approach a business can create various points of distinction.",
+      "title2":"What sets us apart ",
+      "text2":"1. Specialized Screening and Analysis of Startups: We specialize in screening and analyzing startups, creating opportunities for members to learn from each other.",
+      "text3":"2. Members Invest Directly: Members invest directly in startups of their choice, creating an environment where no member feels pressured to invest, and no member misses out on potential investment opportunities.    ",
+      "text4":"3. Focus on Building Investor Connections: Our primary approach is to foster connections among members, involving not only charitable activities but also numerous entertaining activities and social events.",
+      "text5":"4. Value Supporters' Financial Contributions: We highly value the financial contributions of our supporters. Their opinions and guidance contribute to all aspects of the holding's operations.    ",
+      "text6":"5. Inclusive Structure: Our structure provides an opportunity for entrepreneurs to engage with reputable investors who have the capacity to invest at the startup level.",
+      "text7":"6. Collaboration with Other Investment Centers: We welcome collaboration with other investment centers and investment communities. Entrepreneurs seeking capital from multiple investor groups benefit from this collaboration.",
+      "reverse": true,
+      "show": true,
+      "index": 2,
+      "addedClass": ""
+    }
+  ],
+
+  
   "LANDAStartups": [
     {
       "title": "NovaNest Venture Startups",
@@ -78,23 +97,6 @@
       "VisionRaft": "Vision Raft",
       "LandaHandicraft": "Landa Craft",
       "landaGene": "Landa Gene"
-    }
-  ],
-  "KeyDifferentiatingFactors": [
-    {
-      "title": "Key Differentiating Factors :",
-      "titleText": "First and foremost, it's essential to understand that the most critical aspect is the mental model and perspective behind these key differentiating factors. The way we perceive and approach a business can create various points of distinction.",
-      "title2":"What sets us apart ",
-      "text2":"1. Specialized Screening and Analysis of Startups: We specialize in screening and analyzing startups, creating opportunities for members to learn from each other.",
-      "text3":"2. Members Invest Directly: Members invest directly in startups of their choice, creating an environment where no member feels pressured to invest, and no member misses out on potential investment opportunities.    ",
-      "text4":"3. Focus on Building Investor Connections: Our primary approach is to foster connections among members, involving not only charitable activities but also numerous entertaining activities and social events.",
-      "text5":"4. Value Supporters' Financial Contributions: We highly value the financial contributions of our supporters. Their opinions and guidance contribute to all aspects of the holding's operations.    ",
-      "text6":"5. Inclusive Structure: Our structure provides an opportunity for entrepreneurs to engage with reputable investors who have the capacity to invest at the startup level.",
-      "text7":"6. Collaboration with Other Investment Centers: We welcome collaboration with other investment centers and investment communities. Entrepreneurs seeking capital from multiple investor groups benefit from this collaboration.",
-      "reverse": true,
-      "show": true,
-      "index": 2,
-      "addedClass": ""
     }
   ],
   "ReadMore": {

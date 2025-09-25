@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 
-export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
+export default function Academy({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
@@ -31,7 +31,7 @@ export default function HomeNovaNestAcademy({ lang }: { lang: string }) {
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
-            src={"/static/images/home/academy/nova-nest-venture-academy.webp"}
+            src={"/static/images/home/academy/nova-nest-venture-academy.jpg"}
             alt={"Academy"}
             fill
             sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"

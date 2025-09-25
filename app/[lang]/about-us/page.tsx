@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
-import AboutUsNovaNest from '@/components/about/AboutUsNovaNest';
+import AboutUs from '@/components/about/AboutUs';
 import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
-import StoryOfLanda from '@/components/about/StoryOfLanda';
+import StoryOfUs from '@/components/about/StoryOfUs';
 import KeyDifferentiating from '@/components/KeyDifferentiating';
-import AboutUsProfile from '@/components/about/AboutUsProfile';
+import Profile from '@/components/about/Profile';
 import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
 
@@ -37,12 +37,13 @@ export default function Page({
         />
       </div>
       
+      
       <div className='px-8 md:px-24 max-w-responsive mx-auto'>
-        <AboutUsNovaNest lang={lang} />
+        <AboutUs lang={lang} />
         <SubsidiaryCompanies lang={lang}/>
-        <StoryOfLanda lang={lang}/>
+        <StoryOfUs lang={lang}/>
         <KeyDifferentiating lang={lang} />
-        <AboutUsProfile lang={lang} />
+        <Profile lang={lang} />
       </div>
     </div>
   );

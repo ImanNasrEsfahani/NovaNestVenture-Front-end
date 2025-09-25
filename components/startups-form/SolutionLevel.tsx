@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import TextArea from '@/components/common/TextArea'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
-import { getServerTranslation } from '../../app/i18n'
-import { useLang } from '../../stores/langStore'
-import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
+
+type translations = {
+  solutionsUniqueValue: string;
+  solutionsUniqueValueRequired: string;
+  solutionsUniqueValuePlaceholder: string;
+  solutionsLevel: string;
+  solutionsLevelList: string[];
+};
 
 type Props = {
     register: UseFormRegister<StartupsFormData>
@@ -12,6 +17,7 @@ type Props = {
     solutionsLevel: number
     handleSolutionsLevelChange: (index: number) => void
     setValue: UseFormSetValue<StartupsFormData>
+    translations: translations
 }
 
 export default function SolutionLevel(props: Props) {
@@ -21,88 +27,58 @@ export default function SolutionLevel(props: Props) {
     errors,
     solutionsLevel,
     handleSolutionsLevelChange,
-    setValue
-  } = props;     
-
-  const lang = useLang((s) => s.lang);
-  const { t } = getServerTranslation(lang, 'formComponent');
-
-  const [solutionsOpen, setSolutionsOpen] = useState<boolean>(false);
-
-  const handleToggle = () => {
-    console.log('Toggle clicked, current state:', solutionsOpen);
-    setSolutionsOpen(!solutionsOpen);
-  };
+    setValue,
+    translations
+  } = props;
 
   return (
-    <div>
-      <CollapsibleHeader
-        title="Solution"
-        isOpen={solutionsOpen}
-        onToggle={handleToggle}
-      />
-      {solutionsOpen && (
-        <>
-              <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                <TextArea 
-                    title={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsUniqueValue}
-                    register={register}
-                    errors={errors} 
-                    required={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsUniqueValueRequired} 
-                    nameTextArea={"scalable"} 
-                    patternValue={''} 
-                    patternMessage={''} 
-                    placeholder={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsUniqueValuePlaceholder }                                                 
-                />
+    <>
+      <div className='w-full bg-gray-100 py-8 px-4'>
+        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
+          <TextArea 
+              title={translations.solutionsUniqueValue}
+              register={register}
+              errors={errors} 
+              required={translations.solutionsUniqueValueRequired} 
+              nameTextArea={"scalable"} 
+              patternValue={''} 
+              patternMessage={''} 
+              placeholder={translations.solutionsUniqueValuePlaceholder}                                                 
+          />
+          <div className='w-full mt-4'>
+              <p className='mb-2'>{translations.solutionsLevel}</p>
+              <div className="w-full flex flex-col gap-1 px-4" role="radiogroup" aria-label="Solution level">
+                {translations.solutionsLevelList.map((item: string, index: number) => (
+                  <label
+                    key={index}
+                    className="flex items-center gap-3 cursor-pointer p-2 rounded-md hover:bg-gray-50"
+                  >
+                    {/* hidden radio as peer */}
+                    <input
+                      type="radio"
+                      name="productLevel"
+                      className="peer sr-only"
+                      checked={solutionsLevel === index}
+                      onChange={() => {
+                        handleSolutionsLevelChange(index);
+                        setValue('productLevel', item);
+                      }}
+                    />
+
+                    {/* visual control; reacts to peer-checked */}
+                    <span className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-primary transition-colors
+                                      peer-checked:bg-primary peer-checked:border-primary">
+                      <span className={`w-2.5 h-2.5 rounded-full transition-colors ${solutionsLevel === index ? 'bg-white' : 'bg-transparent'}`} />
+                    </span>
+
+                    {/* label text */}
+                    <span className="text-sm text-gray-800">{item}</span>
+                  </label>
+                ))}
               </div>
-              <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                <div className='w-full h-auto flex flex-col gap-4 items-start'>
-                  <div className='w-full h-auto'>
-                      <p className='px-2 text-lg text-[#6b6b6b] dark:text-current'>{t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsLevel}</p>
-                  </div>
-                  <div className='w-full h-auto flex flex-col gap-1 items-start px-2'>
-                      {t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsLevelList.map((item: string, index: number) => (
-                          <div key={index} className='w-full flex flex-row gap-1 items-center'>
-                              <div className='size-auto flex flex-row items-center gap-2 cursor-pointer' onClick={() => {
-                                handleSolutionsLevelChange(index)
-                              }}>
-                                  <div className='border-2 rounded-full border-primary p-px'>
-                                      <div
-                                          className={`size-2 rounded-full transition-all ${
-                                            solutionsLevel == index ? "bg-primary" : "bg-white"
-                                          }`}
-                                      >
-                                        <input 
-                                          type='checkbox'
-                                          value={item}
-                                          className='size-full inset-0 opacity-0'
-                                          onChange={() => {
-                                            setValue("productLevel", item)
-                                          }}
-                                        />
-                                      </div>
-                                  </div>
-                              </div>
-                              <p className='text-black font-barlow font-medium text-lg xl:text-lg leading-[14px] mb-1'>{item}</p>
-                          </div>
-                      ))}
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-2/3 mb-8 h-auto md:px-1'>
-                <TextArea 
-                    title={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsPosition}
-                    register={register}
-                    errors={errors} 
-                    required={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsPositionRequired} 
-                    nameTextArea={"solution"} 
-                    patternValue={''} 
-                    patternMessage={''} 
-                    placeholder={t('startUp',{ returnObjects: true }).commons.solutionLevel.solutionsPositionPlaceholder}                                                        
-                />
-              </div>
-        </>
-      )}
-    </div>
+            </div>
+        </div>
+      </div>
+    </>
   )
 }

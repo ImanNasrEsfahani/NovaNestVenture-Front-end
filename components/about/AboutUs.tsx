@@ -4,7 +4,7 @@ import { getServerTranslation } from 'app/i18n';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-export default function AboutUsNovaNest({lang}: {lang: string}) {
+export default function AboutUs({lang}: {lang: string}) {
 
   const { t } = getServerTranslation(lang, 'aboutUs');
 

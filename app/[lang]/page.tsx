@@ -2,15 +2,15 @@ import { Metadata } from 'next';
 import Hero from '@/components/home/Hero';
 // import Hero2 from '@/components/home/Hero2';
 import SpecialFeatures from '@/components/home/SpecialFeatures';
-import NovaNestPriority from '@/components/home/NovaNestPriority';
+import Priority from '@/components/home/Priority';
 import LatestStartups from '@/components/home/LatestStartups';
-import NovaNestBlack from '@/components/home/NovaNestBlack';
+import HalvesCards from '@/components/home/HalvesCards';
 import HomeCardsContainer2 from '@/components/home/HomeCardsContainer2';
 // import UpcomingEvents from '@/components/home/UpcomingEvents';
 // import AerialViewBusinessTeam from '@/components/home/BusinessTeam';
 
 // import HomeUpComingStartups from '@/components/home/HomeUpComingStartups';
-import HomeNovaNestAcademy from '@/components/home/HomeNovaNestAcademy';
+import Academy from '@/components/home/Academy';
 import AboutUs from '@/components/home/AboutUs';
 import { getServerTranslation } from 'app/i18n';
 // import HomeUpcomingEvents from '@/components/home/HomeUpcomingEvents';
@@ -41,10 +41,10 @@ export default function Page({ params }: { params: { lang: string } }) {
         <SpecialFeatures lang={params.lang} />
         
         {/* <HomeUpComingStartups /> */}
-        <HomeNovaNestAcademy lang={params.lang} />
-        <NovaNestBlack lang={params.lang} />
+        <Academy lang={params.lang} />
+        <HalvesCards lang={params.lang} />
         <LatestStartups lang={params.lang} />
-        <NovaNestPriority lang={params.lang} />
+        <Priority lang={params.lang} />
         {/* <Partners /> */}
 
         {/* <HomeUpcomingEvents /> */}

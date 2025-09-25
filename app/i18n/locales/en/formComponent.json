@@ -55,10 +55,6 @@
   "preferredAreasRequired": "This field is required",
   "preferredAreasPlaceholder": "Areas",
 
-  "howDidYouKnowUs": "How did you hear about us?",
-  "howDidYouKnowUsRequired": "This field is required",
-  "howDidYouKnowUsPlaceholder": "e.g. social media, etc",
-
   "provinceOfResidence": "Province Of Residence *",
   "provinceOfResidencePlaceholder": "Province Of Residence is required",
   "provinceOfResidenceRequired": "Province Of Residence is required",
@@ -265,21 +261,14 @@
       "businessDeliveryRequired": "This field is required",
       "businessDeliveryPlaceholder": "Description",
       
-      "financial": "If your plan has a financial model, please upload it.",
+      "financial": "If your plan has a financial model, please upload it."
 
-      "businessAccelerators": "Have you previously cooperated with investors or accelerators?*",
-      "businessAcceleratorsRequired": "This field is required",
-      "businessAcceleratorsPlaceholder": "Description",
-
-      "businessKnowUs": "How did you get to know us?*", 
-      "businessKnowUsRequired": "This field is required",
-      "businessKnowUsPlaceholder": "Description"
     },
 
     "FirstSale": {
       "description" : "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
       "choseFile": "Choose File",
-
+      
       "productName": "Product Name *",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
@@ -317,6 +306,14 @@
 
     "commons": {
       
+      "accelerators": "Have you previously cooperated with investors or accelerators?",
+      "acceleratorsRequired": "This field is required",
+      "acceleratorsPlaceholder": "Description",
+
+      "knowUs": "How did you get to know us?", 
+      "knowUsRequired": "This field is required",
+      "knowUsPlaceholder": "Description",
+
       "problems": {
         "title": "Problems",
         "customerProblem": "Describe the customer problem you want to solve with your product or service. *",
@@ -384,12 +381,7 @@
           "Show the system prototype in the mvp operating environment.",
           "The proved realistic system in the operating environment.",
           "A complete and qualified system."
-        ],
-
-
-        "solutionsPosition": "What is your unique value proposition (innovation)? What is new about what you do?*",
-        "solutionsPositionRequired": "this fields is required",
-        "solutionsPositionPlaceholder": "Description"
+        ]
       },
 
       "businessModel": {
@@ -405,16 +397,7 @@
         "deliveryPlaceholder": "Description",
         "deliveryRequired": "This field is required!",
 
-        "financialPlan": "If your plan has a financial model, please upload.",
         "choseFile": "Choose File",
-
-        "accelerators": "Have you previously cooperated with investors or accelerators?*",
-        "acceleratorsPlaceholder": "Description",
-        "acceleratorsRequired": "This field is required!",
-
-        "knowUs": "How did you get to know us?*",
-        "knowUsPlaceholder": "Description", 
-        "knowUsRequired": "This field is required!",
 
         "structureOfYourSales": "Please explain your sales structure from the beginning *",
         "structureOfYourSalesPlaceholder": "Description",
@@ -557,10 +540,10 @@
   },
 
   "IDEA": "IDEA",
-  "MVP": "MVP",
+  "MVP": "Minimum Viable Product ( MVP )",
   "TRIAL": "TRIAL",
-  "FisrtSale": "Fisrt Sale",
-  "SaleDevelopment": "Sale Development",
+  "FisrtSale": "Early Traction",
+  "SaleDevelopment": "Scale-Up",
 
   "website": "Your Webstie *",
   "websitePlaceholder": "Your Webstie",

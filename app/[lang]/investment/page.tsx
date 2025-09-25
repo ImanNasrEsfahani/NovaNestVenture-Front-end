@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 // import FeaturesCardsContainer from '@/components/investment/FeaturesCardsContainer';
 // import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
-import NovaNestPriority from '@/components/home/NovaNestPriority';
+import NovaNestPriority from '@/components/home/Priority';
 
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';

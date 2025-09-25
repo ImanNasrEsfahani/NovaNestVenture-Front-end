@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 
-export default function StoryOfLanda({lang}: {lang: string}) {
+export default function StoryOfUs({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (

@@ -7,25 +7,29 @@ interface Props {
   onToggle: () => void;
 }
 
-const CollapsibleHeader: React.FC<Props> = ({
-  title,
-  isOpen,
-  onToggle
-}) => {
+export default function CollapsibleHeader({ title, isOpen, onToggle }: Props) {
   return (
-    <button 
-      className="w-full md:max-w-lg xl:max-w-xl mx-auto cursor-pointer py-6 bg-grayDark border-none outline-none focus:ring-2 focus:ring-blue-500"
-      onClick={onToggle}
+    <button
       type="button"
+      onClick={onToggle}
+      aria-expanded={isOpen}
+      className={`group w-full flex items-center justify-between gap-4 p-3
+        bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white
+        rounded-sm
+        border-b border-primary/30
+        hover:bg-gray-100 dark:hover:bg-gray-800
+        transition-all duration-200 ease-out
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/10
+        ${isOpen ? 'shadow-md bg-white dark:bg-gray-800 scale-[1.01]' : ''}`}
     >
-      <div className='w-full h-auto flex justify-center items-center gap-2'>
-        <p className="font-barlow text-white text-3xl select-none">{title}</p>
-        <div className={`${isOpen ? "rotate-180" : "rotate-0"} transition-all duration-300 ease-out mt-2`}>
-          <ChevDown />
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 flex items-center justify-center text-white">
+          <ChevDown/>
         </div>
+        <span className="text-left">
+          <p className="text-lg text-white">{title}</p>
+        </span>
       </div>
     </button>
   );
 };
-
-export default CollapsibleHeader;

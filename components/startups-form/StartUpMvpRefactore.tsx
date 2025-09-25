@@ -1,18 +1,20 @@
-import UploadFile from '@/public/static/logos/FileUpload'
 import React from 'react'
-import Input from '@/components/common/form/Input'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
 import { getServerTranslation } from 'app/i18n'
-import ProblemsSection from '@/components/startups-form/ProblemSection'
-import SolutionLevel from '@/components/startups-form/SolutionLevel'
-import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown'
+
+import PitchdeckUpload from '@/components/startups-form/PitchdeckUpload'
+import BusinessPlanUpload from '@/components/startups-form/BusinessPlanUpload'
+import FinancialAnalysisUpload from '@/components/startups-form/FinancialAnalysisUpload'
+import TextArea from '../common/TextArea'
+
 
 type Props = {
     lang: string;
     handleFileCounterChange: (name: string) => void
     handlePitchFileChange: (file: any) => void
     handleBusinessFileChange: (file: any) => void
+    handleFinancialFileChange: (file: any) => void
     filesCounter: {
         pitch: boolean;
         business: boolean;
@@ -26,210 +28,101 @@ type Props = {
     handleFinancialModelFileChange: (file: any) => void
 }
 
-const StartUpMvpRefactore = (props: Props) => {
-
-  const {
+export default function StartUpMvpRefactore({
     lang,
     handleFileCounterChange,
     handlePitchFileChange,
     handleBusinessFileChange,
+    handleFinancialFileChange,
     filesCounter,
     register,
     errors,
     solutionsLevel,
     handleSolutionsLevelChange,
     setValue,
-    handleFinancialModelFileChange
-  } = props;  
+    handleFinancialModelFileChange,
+}: Props) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div className='w-full h-auto px-4 my-4'>
-      <p className='mt-4 mb-6'>{t('startUp',{ returnObjects: true }).MVP.description}</p>
-        <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20'>
-          <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
-               <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-lg leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.pitchDeck}</p>
-               </div>
-               <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
-                 <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
-                          handleFileCounterChange("pitch")
-                       }}>
-                          <div className='border-2 rounded-full border-primary p-1'>
-                                  <div
-                                         className={`size-3 rounded-full transition-all ${
-                                           filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
-                                         }`}
-                                  />
-                          </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('yes')}</p>
-                       </div>
-                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
-                          handleFileCounterChange("pitch")
-                       }}>
-                          <div className='border-2 rounded-full border-primary p-1'>
-                                  <div
-                                         className={`size-3 rounded-full transition-all ${
-                                           !filesCounter.pitch ? "bg-primary" : "bg-whiteGold"
-                                         }`}
-                                  />
-                          </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('no')}</p>
-                       </div>
-                 </div>
-               </div> 
-               {filesCounter.pitch ? (
-                 <div className='w-full h-auto'>
-                     <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-lg 2xl:text-2xl md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
-                       </div>
-                       <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
-                            <input
-                                  type="file"
-                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
-                                  onChange={handlePitchFileChange}
-                            />
-                            <UploadFile 
-                              name="pitchDeckFile"
-                              label="Upload your pitch deck"
-                              onChange={(file) => handlePitchFileChange(file)}
-                            />
-                          </label>
-                       </div>
-                     </div>
-                 </div>
-               ) : (
-                 <div className='w-full h-auto'>
-                     <div className="w-full grid grid-cols-1 gap-x-6 gap-y-4 my-2">
-                       <Input
-                          register={register} 
-                          errors={errors} 
-                          nameInput={t('startUp',{ returnObjects: true }).MVP.productName} 
-                          type={'text'} 
-                          required={t('startUp',{ returnObjects: true }).MVP.productNameRequired} 
-                          patternValue={''} 
-                          patternMessage={''} 
-                          placeholder={t('startUp',{ returnObjects: true }).MVP.productNamePlaceholder} 
-                          className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
-                       />
-                       <Input 
-                          register={register} 
-                          errors={errors} 
-                          nameInput={t('startUp',{ returnObjects: true }).MVP.siteAddress} 
-                          type={'text'} 
-                          required={t('startUp',{ returnObjects: true }).MVP.siteAddressRequired} 
-                          patternValue={''} 
-                          patternMessage={''} 
-                          placeholder={t('startUp',{ returnObjects: true }).MVP.siteAddressPlaceholder} 
-                          className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}                                                                
-                       />
-                     </div>
-                 </div>
-               )}
-          </div>
-          <div className='col-span-1 h-auto flex flex-col gap-2 items-center'>
-               <div className='w-full h-auto flex flex-row justify-start items-center mt-2 mb-1'>
-                 <p className='text-black font-medium font-barlow text-lg leading-[19px]'>{t('startUp',{ returnObjects: true }).MVP.businessPlan}</p>
-               </div>
-               <div className='w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4'>
-                 <div className='w-full h-auto flex flex-row items-center justify-around cursor-pointer'>
-                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
-                          handleFileCounterChange("business")
-                       }}>
-                          <div className='border-2 rounded-full border-primary p-1'>
-                                  <div
-                                         className={`size-3 rounded-full transition-all ${
-                                           filesCounter.business ? "bg-primary" : "bg-whiteGold"
-                                         }`}
-                                  />
-                          </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('yes')}</p>
-                       </div>
-                       <div className='size-auto flex flex-row gap-2 items-center' onClick={() => {
-                          handleFileCounterChange("business")
-                       }}>
-                          <div className='border-2 rounded-full border-primary p-1'>
-                                  <div
-                                         className={`size-3 rounded-full transition-all ${
-                                           !filesCounter.business ? "bg-primary" : "bg-whiteGold"
-                                         }`}
-                                  />
-                          </div>
-                          <p id={''} className='text-grayCheckBox font-barlow font-medium text-lg leading-[18px]'>{t('no')}</p>
-                       </div>
-                 </div>
-               </div> 
-               {filesCounter.business ? (
-                 <div className='w-full h-auto'>
-                     <div className='w-full h-auto flex flex-col items-center gap-2'>
-                       <div className='size-auto'>
-                          <p className='text-grayLabel font-medium text-xs md:text-lg 2xl:text-2xl md:leading-[14px]'>{t('startUp',{ returnObjects: true }).MVP.choseFile}</p>
-                       </div>
-                       <div className='w-full md:w-1/2 h-auto bg-whiteGold drop-shadow-md flex justify-center relative overflow-hidden'>
-                          <label className="cursor-pointer relative size-full flex items-center justify-center rounded-full hover:bg-gray-200 transition">
-                            <input
-                                  type="file"
-                                  className="absolute inset-0 size-auto opacity-0 cursor-pointer"
-                                  onChange={handleBusinessFileChange}
-                            />
-                            <UploadFile 
-                              name="businessPlanFile"
-                              label="Upload your business plan"
-                              onChange={(file) => handleBusinessFileChange(file)}
-                            />
-                          </label>
-                       </div>
-                     </div>
-                 </div>
-               ) : (
-                 <></>
-               )}
-          </div>
-        </div>
-        <ProblemsSection
-          title={t('startUp',{ returnObjects: true }).commons.problems.title}
-          textAreaTitle={t('startUp',{ returnObjects: true }).commons.problems.customerProblem}
-          textAreaRequired={t('startUp',{ returnObjects: true }).commons.problems.customerProblemRequired}
-          textAreaPlaceholder={t('startUp',{ returnObjects: true }).commons.problems.customerProblemPlaceholder}
-          register={register}
-          errors={errors}
-        />
-        <SolutionLevel
-          handleSolutionsLevelChange={handleSolutionsLevelChange}
-          solutionsLevel={solutionsLevel}
-          register={register}
-          errors={errors}
-          setValue={setValue}
-        />
-      <BussinessModelDropDown
+    <div className='w-10/12 mx-auto flex flex-col'>
+      <p className='mt-4 mb-12'>{t('startUp',{ returnObjects: true }).MVP.description}</p>
+      <PitchdeckUpload
+        problem={true}
+        solution={true}
+        businessModel={true}
+        targetMarket={false}
+        property={false}
+        chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
+        productName={t('startUp',{ returnObjects: true }).MVP.productName}
+        productNameRequired={t('startUp',{ returnObjects: true }).MVP.productNameRequired}
+        productNamePlaceholder={t('startUp',{ returnObjects: true }).MVP.productNamePlaceholder}
+        siteAddress={t('startUp',{ returnObjects: true }).MVP.siteAddress}
+        siteAddressRequired={t('startUp',{ returnObjects: true }).MVP.siteAddressRequired}
+        siteAddressPlaceholder={t('startUp',{ returnObjects: true }).MVP.siteAddressPlaceholder}
+        fileCounter={filesCounter.pitch}
+        // onFileCounterChange={handleFileCounterChange}
+        onFileChange={handlePitchFileChange}
         register={register}
         errors={errors}
-        // handlePitchFileChange={handlePitchFileChange}
+        handleSolutionsLevelChange={handleSolutionsLevelChange}
+        solutionsLevel={solutionsLevel}
+        setValue={setValue}
         handleFinancialModelFileChange={handleFinancialModelFileChange}
         translations={{
-          title: t('startUp',{ returnObjects: true }).commons.businessModel.title,
-          monetization: t('startUp',{ returnObjects: true }).commons.businessModel.monetization,
-          monetizationRequired: t('startUp',{ returnObjects: true }).commons.businessModel.monetizationRequired,
-          monetizationPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.monetizationPlaceholder,
-          delivery: t('startUp',{ returnObjects: true }).commons.businessModel.delivery,
-          deliveryRequired: t('startUp',{ returnObjects: true }).commons.businessModel.deliveryRequired,
-          deliveryPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.deliveryPlaceholder,
-          financial: t('startUp',{ returnObjects: true }).commons.businessModel.financial,
-          choseFile: t('startUp',{ returnObjects: true }).commons.businessModel.choseFile,
-          accelerators: t('startUp',{ returnObjects: true }).commons.businessModel.accelerators,
-          acceleratorsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.acceleratorsRequired,
-          acceleratorsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.acceleratorsPlaceholder,
-          knowUs: t('startUp',{ returnObjects: true }).commons.businessModel.knowUs,
-          knowUsRequired: t('startUp',{ returnObjects: true }).commons.businessModel.knowUsRequired,
-          knowUsPlaceholder: t('startUp',{ returnObjects: true }).commons.businessModel.knowUsPlaceholder,
+          title: t('startUp', { returnObjects: true }).MVP.pitchDeck,
+          yesLabel: t('yes'),
+          noLabel: t('no'),
+
+          problems: t('startUp', { returnObjects: true }).commons.problems,
+          solutionLevel: t('startUp', { returnObjects: true }).commons.solutionLevel,
+          businessModel: t('startUp', { returnObjects: true }).commons.businessModel,
+          targetMarket: t('startUp', { returnObjects: true }).commons.targetMarketDropDown,
+          property: t('startUp', { returnObjects: true }).commons.propertyDropDown
         }}
       />
+
+      <BusinessPlanUpload
+        title={t('startUp',{ returnObjects: true }).MVP.businessPlan}
+        yesLabel={t('yes')}
+        noLabel={t('no')}
+        chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
+        onFileChange={handleBusinessFileChange}
+      />
+      
+      <FinancialAnalysisUpload
+        title={t('startUp',{ returnObjects: true }).MVP.financial}
+        yesLabel={t('yes')}
+        noLabel={t('no')}
+        chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
+        onFileChange={handleFinancialFileChange}
+      />
+
+      <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
+          <TextArea
+            title={t('startUp', { returnObjects: true }).commons.accelerators}
+            register={register}
+            errors={errors}
+            required={t('startUp', { returnObjects: true }).commons.acceleratorsRequired}
+            nameTextArea={'cooperatedWithInvestors'}
+            patternValue={''}
+            patternMessage={''}
+            placeholder={t('startUp', { returnObjects: true }).commons.acceleratorsPlaceholder}
+          />
+        </div>
+        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
+          <TextArea
+            title={t('startUp', { returnObjects: true }).commons.knowUs}
+            register={register}
+            errors={errors}
+            required={t('startUp', { returnObjects: true }).commons.knowUsRequired}
+            nameTextArea={'getToKnowUs'}
+            patternValue={''}
+            patternMessage={''}
+            placeholder={t('startUp', { returnObjects: true }).commons.knowUsPlaceholder}
+          />
+        </div>
     </div>
   )
 }
-
-export default StartUpMvpRefactore

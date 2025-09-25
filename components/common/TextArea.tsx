@@ -25,14 +25,14 @@ export default function TextArea({
   const pattern = new RegExp(patternValue);
 
   return (
-    <div className='flex flex-col items-start'>
+    <div className='w-full flex flex-col mb-4'>
       {/* Label for the textarea */}
-      {title && (<label className="px-2 !text-[#6b6b6b] dark:text-current">{title}</label>)}
+      {title && (<label className="pb-2">{title}</label>)}
       <textarea
         rows={rows}
         cols={cols}
         className={
-          'textarea textarea-lg resize-none rounded-sm bg-transparent w-full mt-3 mb-1 get-shadow-sm border border-gray-400 text-sm placeholder:text-gray focus:outline-none' +
+          'textarea rounded bg-white w-full border border-gray-400 text-sm placeholder:text-gray focus:outline-none' +
           (errors[nameTextArea] ? ' border-red-500' : '')
         }
         {...register(nameTextArea, {
@@ -45,7 +45,7 @@ export default function TextArea({
         placeholder={placeholder}
       />
       {errors[nameTextArea] && (
-        <span className="mt-2 text-sm text-red-500">
+        <span className="mt-1 text-md text-red-500">
           {errors[nameTextArea].message}
         </span>
       )}

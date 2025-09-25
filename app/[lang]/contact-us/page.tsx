@@ -3,11 +3,11 @@ import { getServerTranslation } from 'app/i18n';
 import ContactUsForm from '@/components/common/form/ContactUsForm';
 import ContactUsDescription from '@/components/common/ContactUsDescription';
 import './contact.css';
-import AboutUsNovaNest from '@/components/about/AboutUsNovaNest';
+import AboutUsNovaNest from '@/components/about/AboutUs';
 import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
-import StoryOfLanda from '@/components/about/StoryOfLanda';
+import StoryOfLanda from '@/components/about/StoryOfUs';
 import KeyDifferentiating from '@/components/KeyDifferentiating';
-import AboutUsProfile from '@/components/about/AboutUsProfile';
+import AboutUsProfile from '@/components/about/Profile';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Contact',
