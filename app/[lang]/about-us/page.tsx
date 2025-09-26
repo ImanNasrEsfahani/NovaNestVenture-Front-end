@@ -74,7 +74,7 @@ export default function Page({
           <div className='col-span-1 flex flex-col justify-center'>
             <p className='text-7xl font-bold font-header mb-4'>2019</p>
             <p className='text-base text-justify'>
-              Becoming a Knowledge-Based Accelerator in Iran Our educational activities evolved into Forough Accelerator, a knowledge-based accelerator recognized as one of the few in the country. It achieved the highest student employment among similar companies in Iran and collaborated with numerous international companies and startups.
+              The academy&apos;s activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator. Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale.
             </p>
           </div>
         </div>
