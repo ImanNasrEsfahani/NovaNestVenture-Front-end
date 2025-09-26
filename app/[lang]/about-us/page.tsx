@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import AboutUs from '@/components/about/AboutUs';
-import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
-import StoryOfUs from '@/components/about/StoryOfUs';
-import KeyDifferentiating from '@/components/KeyDifferentiating';
-import Profile from '@/components/about/Profile';
+// import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
+// import StoryOfUs from '@/components/about/StoryOfUs';
+// import KeyDifferentiating from '@/components/KeyDifferentiating';
+// import Profile from '@/components/about/Profile';
 import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
 
@@ -83,13 +83,13 @@ export default function Page({
           <div className='col-span-1 flex flex-col justify-center'>
             <p className='text-7xl font-bold font-header mb-4'>2021</p>
             <p className='text-base text-justify'>
-              Investing in Startups Focus shifted to investing in innovative and scalable startups with the official establishment of Landa Investment Holding in Toronto, Canada. The holding included 10 active subsidiary companies, with a special focus on artificial intelligence, genetics, technology supply and demand, tourism, and education. The holding supported startups in both Iran and Canada, helping them expand globally and achieve sustainable growth.
+              The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan. Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education. Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada.
             </p>
           </div>
           <div className='col-span-1'>
             <Image
               className="object-cover h-full rounded-xl"
-              src="/static/images/about/story/2021-our-story-nova-nest-venture.jpg"
+              src="/static/images/about/story/2021-our-story-nova-nest-venture.png"
               alt="story of NovaNest Venture"
               width={661}
               height={404}
@@ -101,7 +101,7 @@ export default function Page({
           <div className='col-span-1'>
             <Image
               className="object-cover h-full rounded-xl"
-              src="/static/images/about/story/2021-our-story-nova-nest-venture.jpg"
+              src="/static/images/about/story/2025-our-story-nova-nest-venture.png"
               alt="story of NovaNest Venture"
               width={661}
               height={404}
@@ -115,10 +115,10 @@ export default function Page({
           </div>
         </div>
 
-        <SubsidiaryCompanies lang={lang}/>
+        {/* <SubsidiaryCompanies lang={lang}/>
         <StoryOfUs lang={lang}/>
         <KeyDifferentiating lang={lang} />
-        <Profile lang={lang} />
+        <Profile lang={lang} /> */}
       </div>
     </>
   );
