@@ -5,8 +5,8 @@ export default function SubsidiaryCompanies({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'aboutUs');
 
   return (
-    <div className=" md:py-10">
-      <div>{t('', { returnObjects: true }).title}</div>
+    <>
+      <h2 className='font-header '>{t('', { returnObjects: true }).title}</h2>
       <span className="font-header font-bold text-2xl md:leading-10 md:text-4xl">
         {t('SubsidiaryCompanies', { returnObjects: true }).title}
       </span>
@@ -14,6 +14,6 @@ export default function SubsidiaryCompanies({lang}: {lang: string}) {
         {t('SubsidiaryCompanies', { returnObjects: true }).text}
       </p>
       <CompaniesContainer lang={lang || 'en'} />
-    </div>
+    </>
   );
 }
