@@ -1,5 +1,8 @@
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function AboutUs({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'mainPage');
@@ -14,8 +17,11 @@ export default function AboutUs({ lang }: { lang: string }) {
                     <p className="text-gray-700 text-xl leading-relaxed tracking-wide mb-8 px-6">
                         {t('AboutUsContent')} and ...
                     </p>
-                    <a href="/about" className="btn btn-neutral normal-case text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary hover:border-primary transition-all duration-300">
-                    Read more</a>
+                    {/* <a href="/about" className="btn btn-neutral normal-case text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary hover:border-primary transition-all duration-300">
+                    Read more</a> */}
+                    <div className="max-w-container-xxs mx-auto">
+                        <ButtonRefactor text={t('ReadMore')} type="link" href={`${base}/about`} />
+                    </div>
                 </div>
             </div>
         </section>

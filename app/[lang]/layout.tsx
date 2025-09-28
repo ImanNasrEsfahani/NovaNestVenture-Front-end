@@ -38,13 +38,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
-        <Navbar lang={lang} >
-          <main className='mx-auto'>
-            {children}
-          </main>
-          <Footer lang={lang} />
-          <ScrollUpButton />
-        </Navbar>
+        <Navbar lang={lang} />
+        <main className="mx-auto">
+          {children}
+        </main>
+        <Footer lang={lang} />
+        <ScrollUpButton />
       </body>
     </html>
   );

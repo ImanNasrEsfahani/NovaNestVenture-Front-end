@@ -44,6 +44,7 @@ module.exports = {
       maxWidth: {
         'responsive': 'clamp(280px, 92vw, 1400px)',
         // Mobile breakpoints
+        'container-xxs':'250px',    // small phones (320-480px)
         'container-xs': '300px',    // small phones (320-480px)
         'container-sm': '400px',    // large phones (480-640px)
         // Tablet breakpoints  

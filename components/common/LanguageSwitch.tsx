@@ -1,5 +1,6 @@
+"use client";
 import { useLang } from 'stores/langStore';
-import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 import { useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -7,7 +8,6 @@ import { setCookie } from 'cookies-next';
 
 export default function LanguageSwitch() {
   const { lang, setLanguage } = useLang();
-  const { i18n } = useTranslation();
   const router = useRouter();
   const pathName = usePathname();
 
