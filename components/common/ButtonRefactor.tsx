@@ -26,9 +26,9 @@ export default function ButtonRefactor({
               disabled={disabled}
               className={`bg-${
                 bgColor ? bgColor : 'black'
-              } delay-50 flex h-[50px] w-full flex-wrap place-content-center rounded-xl p-2 text-white transition duration-150 ease-in-out hover:bg-primary`}
+              } delay-50 flex h-[50px] w-full flex-wrap place-content-center rounded-xl text-white transition duration-150 ease-in-out hover:bg-primary`}
             >
-              <div className="z-10 flex flex-row-reverse items-center gap-2">
+              <div className="z-10 flex flex-row-reverse items-center gap-2 px-8 py-4">
                 <ChevronRightIcon className="size-5 rtl:rotate-180" />
                 <span className="text-md">{text}</span>
               </div>

@@ -34,7 +34,7 @@ export default function HomeCardsSection({
         <p className="text-justify text-base first:mb-0 md:w-full ">
           {text}
         </p>
-        <div className="max-w-container-xxs mx-auto">
+        <div className="max-w-container-xxs">
           <ButtonRefactor text={buttonText} type="link" href={`${base}${link}`} />
         </div>
       </div>
