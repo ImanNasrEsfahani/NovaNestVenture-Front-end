@@ -169,7 +169,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
         />
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
             errors={errors}
@@ -274,26 +274,26 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
             // required={translations.investmentCeilingRequired}
             required=""
             placeholder={translations.investmentCeilingPlaceholder}
-            className="input col-span-1 mb-1 mt-3 w-full"
+            className="input col-span-1 w-full"
             labelClass=" dark:text-current"
             patternValue=""
             patternMessage=""
           />
 
-          <div className="flex flex-col col-span-1 md:col-span-3 gap-6">
-            <TextArea
-              title={translations.howDidYouKnowUs}
-              register={register}
-              errors={errors}
-              placeholder={translations.howDidYouKnowUsPlaceholder}
-              nameTextArea="howDidYouKnowUs"
-              patternMessage=""
-              patternValue=""
-              // required={translations.howDidYouKnowUsRequired}
-              required=""
-              rows={3}
-            />
-          </div>
+        </div>
+        <div className="flex flex-col w-full">
+          <TextArea
+            title={translations.howDidYouKnowUs}
+            register={register}
+            errors={errors}
+            placeholder={translations.howDidYouKnowUsPlaceholder}
+            nameTextArea="howDidYouKnowUs"
+            patternMessage=""
+            patternValue=""
+            // required={translations.howDidYouKnowUsRequired}
+            required=""
+            rows={3}
+          />
         </div>
         <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
           <ButtonRefactor

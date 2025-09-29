@@ -1,6 +1,6 @@
 'use Client';
 import React, { useState } from 'react';
-import FileUpload from 'public/static/logos/FileUpload';
+import FileUpload from '@/components/common/form/FileUpload';
 import YesOrNoQuestion from './YesOrNoQuestion';
 
 interface Props {

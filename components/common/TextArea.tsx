@@ -25,7 +25,7 @@ export default function TextArea({
   const pattern = new RegExp(patternValue);
 
   return (
-    <div className='w-full flex flex-col mb-4'>
+    <div className='w-full flex flex-col py-4'>
       {/* Label for the textarea */}
       <label htmlFor={nameTextArea} className="w-full px-2 !text-[#6B6B6B] dark:text-current">{title}
         <textarea

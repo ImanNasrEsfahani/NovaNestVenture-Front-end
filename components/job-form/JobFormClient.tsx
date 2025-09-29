@@ -13,6 +13,7 @@ import Button from '@/components/common/Button';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
+import FileUpload from '@/components/common/form/FileUpload';
 
 interface Translations {
   formTitle: string;
@@ -20,7 +21,7 @@ interface Translations {
   resumeFile: string;
   successMessage: string;
   failedMessage: string;
-
+  choseFile: string;
   
   INTERN: string;
   EMPLOYEE: string;
@@ -57,6 +58,7 @@ interface Translations {
   application: string;
   applicationRequired: string;
   applicationPlaceholder: string;
+
 }
 
 interface Props {
@@ -160,9 +162,14 @@ export default function JobFormClient({ lang, translations }: Props) {
     value: value
   }));
 
-  // Adapter: UploadInput expects (file: File) => void but store wants { cvFile: File | "" }
-  const onCvFileChange = (file: File) => {
-    handleCvFileChange({ cvFile: file });
+  // Adapter: FileUpload/UploadInput may provide null (no file) or File; store wants { cvFile: File | "" }
+  const onCvFileChange = (file: File | null) => {
+    if (file) {
+      handleCvFileChange({ cvFile: file });
+    } else {
+      // clear file in store when null is passed
+      handleCvFileChange({ cvFile: "" });
+    }
   };
 
   return (
@@ -226,14 +233,7 @@ export default function JobFormClient({ lang, translations }: Props) {
 
 
           <div className="mt-2">
-            <UploadInput
-              title={translations.resumeFile}
-              register={register}
-              errors={errors}
-              handleChange={onCvFileChange}
-              nameInput="cvFile"
-              required
-            />
+            <FileUpload name="cvFile" label={translations.choseFile} onChange={onCvFileChange}/>
           </div>
         </div>
         <div className="pb-4 md:mx-auto text-center">

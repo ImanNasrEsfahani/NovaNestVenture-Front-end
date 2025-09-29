@@ -9,6 +9,7 @@ export default function JobForm({lang}: {lang: string}) {
     formTitle: t('jobForm', { returnObjects: true }).formTitle,
     formSubtitle: t('jobForm', { returnObjects: true }).formSubtitle,
     resumeFile: t('jobForm', { returnObjects: true }).resumeFile,
+    choseFile: t('jobForm', { returnObjects: true }).choseFile,
 
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Input from '@/components/common/form/Input';
-import FileUpload from 'public/static/logos/FileUpload';
+import FileUpload from '@/components/common/form/FileUpload';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 

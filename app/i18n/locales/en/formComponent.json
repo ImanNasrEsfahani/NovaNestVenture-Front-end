@@ -71,7 +71,7 @@
   "cityOfResidencePlaceholder": "Tehran",
   "cityOfResidenceRequired": "City Of Residence is required",
 
-  "investmentCeiling": "Investment Ceiling *",
+  "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
   "investmentCeilingPlaceholder": "ex. 100,000$",
 
@@ -109,7 +109,8 @@
     "banner": "Work with us",
     "formTitle": "Work with us ",
     "formSubtitle": "Personal Information",
-    "resumeFile": "CV File:"
+    "resumeFile": "CV File:",
+    "choseFile": "Choose File"
   },
 
   "workWithUS": {

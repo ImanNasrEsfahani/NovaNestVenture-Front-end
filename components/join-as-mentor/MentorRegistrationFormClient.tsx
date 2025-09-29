@@ -166,7 +166,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="mb-6 grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
               register={register}
               errors={errors}
@@ -247,7 +247,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               register={register}
             />
 
-            <div className="flex flex-col col-span-1 md:col-span-3 gap-6">
+            </div>
+            <div className="flex flex-col w-full">
               <TextArea
                 title={translations.preferredAreas}
                 register={register}
@@ -272,7 +273,6 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 rows={3}
               />
             </div>
-          </div>
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
             <ButtonRefactor
               type="submit"
