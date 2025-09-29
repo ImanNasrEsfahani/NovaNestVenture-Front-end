@@ -15,7 +15,7 @@ export default function Navbar({ lang }: { lang: string }) {
   const servicesLabel = lang === 'en' ? 'Services' : 'خدمات';
 
   return (
-    <nav className="navbar fixed inset-x-0 top-0 z-40 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm text-white shadow-lg">
+    <nav className="navbar fixed inset-x-0 top-0 z-40 bg-[rgba(0,0,0,0.6)] backdrop-blur-sm text-white shadow-lg">
       <div className="max-w-responsive w-full mx-auto" >
         <div className="navbar-start gap-2 flex flex-grow lg:flex-none lg:!w-auto">
           <div className="dropdown items-center">
@@ -98,7 +98,7 @@ export default function Navbar({ lang }: { lang: string }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
                 </svg>
               </div>
-              <ul className="menu menu-lg dropdown-content mt-0 translate-y-1 w-80 space-y-1 rounded-box bg-[rgba(0,0,0,0.3)] shadow">
+              <ul className="menu menu-lg dropdown-content mt-0 translate-y-1 w-80 space-y-1 rounded-box bg-[rgba(0,0,0,0.6)] shadow">
                 {submenuItems.map(({ label, href }) => (
                   <li key={label}>
                     <Link href={`${base}${href}`} className="px-2 py-3 text-white hover:text-primary hover:font-bold">

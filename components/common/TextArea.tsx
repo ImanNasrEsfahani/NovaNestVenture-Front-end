@@ -7,7 +7,7 @@ export default function TextArea({
   patternValue,
   patternMessage,
   placeholder,
-  rows,
+  rows = 4,
   cols,
 }: {
   title?: string;
@@ -27,25 +27,27 @@ export default function TextArea({
   return (
     <div className='w-full flex flex-col mb-4'>
       {/* Label for the textarea */}
-      {title && (<label className="pb-2">{title}</label>)}
-      <textarea
-        rows={rows}
-        cols={cols}
-        className={
-          'textarea rounded bg-white w-full border border-gray-400 text-sm placeholder:text-gray focus:outline-none' +
-          (errors[nameTextArea] ? ' border-red-500' : '')
-        }
-        {...register(nameTextArea, {
-          required: required,
-          pattern: {
-            value: pattern,
-            message: patternMessage,
-          },
-        })}
-        placeholder={placeholder}
-      />
+      <label htmlFor={nameTextArea} className="w-full px-2 !text-[#6B6B6B] dark:text-current">{title}
+        <textarea
+          id={nameTextArea}
+          rows={rows}
+          cols={cols}
+          className={
+            'textarea w-full !rounded-sm get-shadow-sm focus:outline-none border border-gray-400 bg-transparent placeholder:text-[#939393B2]' +
+            (errors[nameTextArea] ? ' border-red-500' : '')
+          }
+          {...register(nameTextArea, {
+            required: required,
+            pattern: {
+              value: pattern,
+              message: patternMessage,
+            },
+          })}
+          placeholder={placeholder}
+        />
+      </label>
       {errors[nameTextArea] && (
-        <span className="mt-1 text-md text-red-500">
+        <span className="px-2 text-sm text-red-500">
           {errors[nameTextArea].message}
         </span>
       )}

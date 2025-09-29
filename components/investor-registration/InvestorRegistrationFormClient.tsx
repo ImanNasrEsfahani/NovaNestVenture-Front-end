@@ -300,7 +300,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 patternMessage=""
                 patternValue=""
                 required={translations.preferredAreasRequired}
-                rows={1}
+                rows={3}
               />
 
               <TextArea
@@ -313,7 +313,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 patternValue=""
                 // required={translations.howDidYouKnowUsRequired}
                 required=""
-                rows={1}
+                rows={3}
               />
             </div>
           </div>

@@ -115,7 +115,7 @@ export default function PersonalInfoInput({
               patternValue=""
               patternMessage=""
               placeholder={translations.firstNamePlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
             />
           ) : (
             <Input
@@ -128,7 +128,7 @@ export default function PersonalInfoInput({
               patternValue=""
               patternMessage=""
               placeholder={translations.firstNamePlaceholder}
-              className="input  col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
               labelClass=" dark:text-current"
             />
           )}
@@ -147,7 +147,7 @@ export default function PersonalInfoInput({
               patternValue=""
               patternMessage=""
               placeholder={translations.lastNamePlaceholder}
-              className="input  col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
             />
           ) : (
             <Input
@@ -160,7 +160,7 @@ export default function PersonalInfoInput({
               patternValue=""
               patternMessage=""
               placeholder={translations.lastNamePlaceholder}
-              className="input  col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
               labelClass=" dark:text-current"
             />
           )}
@@ -179,7 +179,7 @@ export default function PersonalInfoInput({
               patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
               patternMessage={translations.emailErrorMessage}
               placeholder={translations.emailPlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
             />
           ) : (
             <Input
@@ -192,7 +192,7 @@ export default function PersonalInfoInput({
               patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
               patternMessage={translations.emailErrorMessage}
               placeholder={translations.emailPlaceholder}
-              className="input  col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
               labelClass=" dark:text-current"
             />
           )}
@@ -211,7 +211,7 @@ export default function PersonalInfoInput({
               patternValue="^[0-9]{11}$"
               patternMessage={translations.phoneNumberErrorMessage}
               placeholder={translations.phoneNumberPlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
             />
           ) : (
             <Input
@@ -224,7 +224,7 @@ export default function PersonalInfoInput({
               patternValue="^[0-9]{11}$"
               patternMessage={translations.phoneNumberErrorMessage}
               placeholder={translations.phoneNumberPlaceholder}
-              className="input  col-span-1  mb-1 mt-3 w-full"
+              className="input col-span-1 mb-1 w-full"
               labelClass=" dark:text-current"
             />
           )}
@@ -239,7 +239,7 @@ export default function PersonalInfoInput({
             label={translations.jobPosition}
             required={translations.jobPositionRequired}
             labelClass=" dark:text-current"
-            className="input mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
+            className="input col-span-1 mb-1 w-full"
             placeholder={translations.jobPositionPlaceholder}
             options={typesData}
           />
@@ -254,7 +254,7 @@ export default function PersonalInfoInput({
             label={translations.application}
             required={translations.applicationRequired}
             labelClass=" dark:text-current"
-            className="input col-span-1 mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
+            className="input col-span-1 mb-1 w-full"
             placeholder={translations.applicationPlaceholder}
             options={types1Data}
           />
@@ -266,7 +266,7 @@ export default function PersonalInfoInput({
             nameInput="statusSelect"
             label={translations.jobPosition}
             required={translations.jobPositionRequired}
-            className="select select-bordered mt-4 md:w-[435px] shadow-lg"
+            className="select select-bordered col-span-1 mb-1 w-full"
             labelClass=" dark:text-current"
             placeholder={translations.jobPositionPlaceholder}
               
@@ -281,7 +281,7 @@ export default function PersonalInfoInput({
             nameInput="statusSelect"
             label={translations.application}
             required={translations.applicationRequired}
-            className="select select-bordered md:w-[435px] mt-4 shadow-lg"
+            className="select select-bordered col-span-1 mb-1 w-full"
             labelClass=" dark:text-current"
             placeholder={translations.applicationPlaceholder}
               

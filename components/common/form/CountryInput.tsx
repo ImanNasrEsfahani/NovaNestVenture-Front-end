@@ -72,7 +72,7 @@ export default function CountryInput({
             nameInput={nameInputs.countryOfResidence}
             label={countryName}
             required={countryNameRequired}
-            className='input w-full'
+            className='input col-span-1 mb-1 w-full'
             labelClass='text-[#6b6b6b] dark:text-current'
             placeholder={countryNamePlaceholder}
             options={countriesData}
@@ -99,7 +99,7 @@ export default function CountryInput({
             patternValue=""
             patternMessage=""
             placeholder={provinceOfResidencePlaceholder}
-            className="input col-span-1 mb-1 mt-2 w-full "
+            className="input col-span-1 mb-1 w-full"
             labelClass="text-[#6b6b6b] dark:text-current"
           />
         )}

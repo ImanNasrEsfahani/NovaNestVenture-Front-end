@@ -293,7 +293,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Props) {
                 patternMessage=""
                 patternValue=""
                 required={translations.preferredAreasRequired}
-                rows={1}
+                rows={3}
               />
 
 
@@ -307,7 +307,7 @@ export default function EntrepreneursFormClient({ lang, translations }: Props) {
                 patternValue=""
                 // required={translations.howDidYouKnowUsRequired}
                 required=""
-                rows={1}
+                rows={3}
               />
             </div>
           </div>

@@ -55,6 +55,10 @@
   "preferredAreasRequired": "This field is required",
   "preferredAreasPlaceholder": "Areas",
 
+  "howDidYouKnowUs": "How did you know us? *",
+  "howDidYouKnowUsPlaceholder": "For example, social media, etc.",
+  "howDidYouKnowUsRequired": "This field is required.",
+
   "provinceOfResidence": "Province Of Residence *",
   "provinceOfResidencePlaceholder": "Province Of Residence is required",
   "provinceOfResidenceRequired": "Province Of Residence is required",

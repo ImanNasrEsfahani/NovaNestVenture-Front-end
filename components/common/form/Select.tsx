@@ -23,21 +23,18 @@ export default function Select({
   selected?: string;
 }) {
   return (
-    <div className="flex flex-col items-start">
+    <>
       <label
         htmlFor={nameInput}
-        className={`self-start px-4 !text-[#6B6B6B] ${labelClass}`}
+        className={`flex flex-col px-2 !text-[#6B6B6B] ${labelClass}`} /* stack label text over select */
       >
         {label}
-      </label>
-
-      <div className="flex w-full flex-col items-start">
         <select
           id={nameInput}
           {...register(nameInput, {
             required: required
           })}
-          className={`w-full mt-3 !rounded-sm border border-gray-400 get-shadow-sm active:outline-none focus:outline-none appearance-none bg-transparent placeholder:text-[#939393B2] ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
+          className={`w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
           onChange={handleChange}
           defaultValue=""
         >
@@ -50,15 +47,13 @@ export default function Select({
             </option>
           ))}
         </select>
+      </label>
 
-        {errors[nameInput] && (
-          <span className="mt-2 inline text-sm text-red-500">
-            {errors[nameInput].message}
-          </span>
-        )}
-      </div>
-
-      <br />
-    </div>
+      {errors[nameInput] && (
+        <span className="mt-2 inline text-sm text-red-500">
+          {errors[nameInput].message}
+        </span>
+      )}
+    </>
   );
 }
