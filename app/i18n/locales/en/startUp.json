@@ -159,5 +159,57 @@
             "imageLogoSrc": "/static/images/home/startups/handicraft.png",
             "imageLogoAlt": "Handicraft logo"
         }
-    ]
+    ],
+
+
+    "whatIsStartupVisa": {
+        "title": "What is Canada Startup Visa?",
+        "subtitle": "Opportunities for Entrepreneurs & Investors",
+        "description": "Canada’s Startup Visa program is a special immigration pathway for entrepreneurs and investors who want to launch innovative businesses in Canada or gain permanent residency by investing in approved startups. It provides support from trusted Canadian investors and accelerators to grow your business.",
+        "list": [
+        "Receive support from a designated organization approved by the Canadian government (investor or accelerator)",
+        "Launch your own business or invest in innovative startups",
+        "Gain permanent residency for you and your family"
+        ]
+    },
+    "whoCanApply": {
+        "title": "Who Can Apply?",
+        "subtitle": "Applicants generally fall into two categories:",
+        "categories": [
+        {
+            "title": "Entrepreneurs with their own startup:",
+            "details": [
+            "Innovative, scalable idea or product",
+            "Experience to run a business",
+            "Willing to live and work in Canada"
+            ]
+        },
+        {
+            "title": "Investors without their own startup:",
+            "details": [
+            "Invest in approved startups",
+            "Focus on profit and collaboration",
+            "Work with accelerators & investor networks"
+            ]
+        }
+        ]
+    },
+    "ourServices": {
+        "title": "Our Services for Canada Startup Visa",
+        "description": "At Novanest, we work closely with Canadian Designated Organizations to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
+        "imageAlt": "SUV startup Services"
+    },
+    "whyChooseUs": {
+        "title": "Why Choose NovaNest?",
+        "subtitle": "Experience • Network • Expertise",
+        "list": [
+        "✔ Expert team in investment & startup consulting",
+        "✔ Direct links with Canadian investor networks",
+        "✔ Full support from idea to settlement in Canada"
+        ]
+    },
+
+    "StartupVisaRoadmap" : "Startup Visa Roadmap",
+    "LatestStartups": "Latest Startups"
+    
 }

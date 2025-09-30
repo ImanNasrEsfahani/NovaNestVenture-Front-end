@@ -44,5 +44,72 @@
             "Coverage of government fees"
             ]
         }
-    ]
+    ],
+
+
+    "Intro": {
+        "title": "Entrepreneurship in Canada",
+        "subtitle": "Provincial Nominee Programs (PNP)",
+        "description": "Canada is one of the world’s most attractive destinations for entrepreneurs. Through the Provincial Nominee Programs (PNP), Canadian provinces offer unique pathways for international entrepreneurs to establish or purchase a business and obtain permanent residency for themselves and their families."
+    },
+
+    "whyStartBusiness": {
+        "title": "Why Start a Business in Canada?",
+        "points": [
+            "Stable and growing economy with access to domestic and international markets",
+            "Continuous demand for foreign entrepreneurs to boost provincial growth",
+            "Strong government and provincial support, including tax incentives, investment opportunities, and solid infrastructure",
+            "Clear pathway to permanent residency for applicants and their families"
+        ],
+        "image": {
+            "src": "/static/images/pnp/pnp-program-canada.jpg",
+            "alt": "Business Growth"
+        }
+    },
+
+    "requirements": {
+        "title": "General Requirements of Entrepreneurial PNP Programs",
+        "subtitle": "While each province has its own specific rules, common requirements include",
+        "items": [
+            {
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"w-10 h-10 mx-auto text-primary mb-4\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M18 18.72a9 9 0 10-12 0M15 10.5a3 3 0 11-6 0 3 3 0 016 0z\" /></svg>",
+                "title": "Entrepreneurial Experience",
+                "description": "Proven entrepreneurial or managerial experience"
+            },
+            {
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"w-10 h-10 mx-auto text-primary mb-4\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 6v6l4 2m6 2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h12a2 2 0 012 2v8z\" /></svg>",
+                "title": "Minimum Investment",
+                "description": "Minimum investment (CAD $100K – CAD $600K depending on the province)"
+            },
+            {
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"w-10 h-10 mx-auto text-primary mb-4\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M9 12h6m-6 4h6m2 4a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2h10z\" /></svg>",
+                "title": "Feasible Business Plan",
+                "description": "A feasible business plan that meets provincial standards"
+            },
+            {
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"w-10 h-10 mx-auto text-primary mb-4\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M6 7V6a2 2 0 012-2h8a2 2 0 012 2v1m-12 0h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z\" /></svg>",
+                "title": "Job Creation",
+                "description": "A commitment to create jobs for Canadians or permanent residents"
+            }
+        ]
+    },
+
+    "services": {
+        "title": "Our Services for Entrepreneurs",
+        "description": "At Novanest, we provide end-to-end support for your entrepreneurial journey in Canada:",
+        "image": {
+            "src": "/static/images/pnp/pnp-services.png",
+            "alt": "SUV startup Services"
+        }
+    },
+
+    "why": {
+        "title": "Why Novanest?",
+        "points": [
+            "✔ Proven track record in investment & acceleration",
+            "✔ Expert immigration, financial & business consultants",
+            "✔ End-to-end services: planning, documentation, settlement",
+            "✔ Transparent, results-driven, tailored to your success"
+        ]
+    }
 }
