@@ -20,23 +20,16 @@ export default function Hero({
       data-bgset={`/static/images/home/hero/${backgroundImage} [(max-width: 640px)] | /static/images/home/hero/${backgroundImage}`}
       className="relative h-[calc(100vh)] overflow-hidden"
     >
-      <div
-        className="absolute inset-0 opacity-70"
-        // This div will serve as the overlay
-      ></div>
-
-      <div className="relative z-10 mt-64 flex w-fit flex-col justify-center gap-8 md:mx-24 md:justify-start md:ltr:ml-10 ">
-        <ul className="space-y-4 mt-40 mx-12 flex list-disc flex-col gap-4 font-header text-xl tracking-wider text-[#FAFAFA] rtl:tracking-normal md:pt-24 md:text-4xl md:tracking-[3.6px]">
-          {titles.map((title: string, index: number) => (
-            <li
-              key={index}
-              className={`get-shadow marker:text-white`}
-            >
-              {title}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className='w-full mx-auto list-disc font-header text-lg md:text-xl lg:text-2xl tracking-wider text-white flex flex-col items-start pl-12 justify-center h-full gap-1 md:gap-2 lg:gap-6 lg:justify-start lg:pl-20 lg:max-w-none absolute lg:left-0 lg:right-0 top-1/3 lg:top-1/2 lg:translate-y-0'>
+        {titles.map((title: string, index: number) => (
+          <li
+            key={index}
+            className={`get-shadow marker:text-white`}
+          >
+            {title}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

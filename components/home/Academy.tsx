@@ -7,14 +7,16 @@ export default function Academy({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
-    <div className="flex flex-col justify-between gap-10 py-10 md:flex-row md:py-20 ">
-      <div className="w-full font-barlow md:w-[47%]  ">
-        <h1 className="mb-2 font-header">{t('NovaNestVenture')}</h1>
-        <h1 className="mb-8 font-header text-4xl font-bold">{t('Academy')}</h1>
-        <p className="">
-            {t('NovaNestAcademyInfo')}
-        </p>
-        <div className="mt-6 h-auto w-[224px]">
+    <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-16 md:py-36">
+      <div className="size-full flex flex-col justify-between">
+        <div>
+          <span className="mb-4 font-header">{t('NovaNestVenture')}</span>
+          <h2 className="font-header text-4xl lg:text-5xl font-bold">{t('Academy')}</h2>
+        </div>
+
+        <p className='leading-loose'>{t('NovaNestAcademyInfo')}</p>
+
+        <div className="max-w-container-xxs">
           <ButtonRefactor
             text={t('visit')}
             type="link"
@@ -23,32 +25,16 @@ export default function Academy({ lang }: { lang: string }) {
           />
         </div>
       </div>
-      
-      <div className="tooltip-success relative flex w-full justify-end md:w-[47%]">
-        <div
-          className={`relative h-72 w-full md:h-full`}
-        >
+
+      <div className="size-full">
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
             src={"/static/images/home/academy/nova-nest-venture-academy.jpg"}
             alt={"Academy"}
-            fill
-            sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
+            width={1200}
+            height={675}
           />
-        </div>
-        {/* <div
-          className={`relative  h-72 w-full max-w-xs md:h-full`}
-        >
-          <Image
-            loading="lazy"
-            className="rounded-lg object-cover"
-            src={"/static/images/home/academy/6.webp"}
-            alt={"Academy"}
-            fill
-            sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
-          />
-        </div> */}
       </div>
     </div>
   )

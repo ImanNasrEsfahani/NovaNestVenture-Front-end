@@ -1,13 +1,14 @@
-import HomeCards from './HomeCards';
+import HomeCardsSection from './HomeCardsSection';
 import { getServerTranslation } from 'app/i18n';
 import { CompanySectionsInterface } from '@/types/global';
 
-const HomeCardsContainer = ({lang}: {lang: string}) => {
+export default function HomeCardsContainer ({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
+  const cardData = (t('cards', { returnObjects: true }) as CompanySectionsInterface[]) ?? [];
 
-  const renderHomeCards = (cardData: CompanySectionsInterface[]) => {
-    return (
-      <div className="w-full h-auto flex flex-col gap-4 md:gap-20">
+  return (
+    <div className="relative text-black my-20" id="NovaNestVenture">
+      <div className="w-full h-auto flex flex-col gap-8 mb-20">
         {cardData.map(
           ({
             smallTitle,
@@ -20,28 +21,12 @@ const HomeCardsContainer = ({lang}: {lang: string}) => {
             images,
             buttonText
           }) => (
-            <HomeCards
-              smallTitle={smallTitle}
-              key={index}
-              titles={title}
-              text={text}
-              images={images}
-              reverse={reverse}
-              addedClass={addedClass}
-              link={link}
-              buttonText={buttonText}
-            />
+            <div className="mb-40">
+                <HomeCardsSection smallTitle={smallTitle} text={text} images={images} reverse={reverse} link={link} titles={title} buttonText={buttonText}/>
+            </div>
           )
         )}
       </div>
-    );
-  };
-
-  return (
-    <div className="relative text-black my-10 md:my-24" id="NovaNestVenture">
-      {renderHomeCards(t('cards', { returnObjects: true }))}
     </div>
   );
 };
-
-export default HomeCardsContainer;

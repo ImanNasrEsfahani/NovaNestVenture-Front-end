@@ -13,20 +13,14 @@ interface Feature {
 export default function SpecialFeatures({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
   
-  const title = t('specialFeatures.title');
-  const features = t('specialFeatures.features', { returnObjects: true }) as Feature[];
-  const learnMoreLabel = t('specialFeatures.learnMore');
-
   return (
-    <section className="pb-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-header font-bold text-center mb-16">{title}</h2>
-        <SpecialFeaturesClient
-          lang={lang}
-          features={features}
-          learnMoreLabel={learnMoreLabel}
-        />
-      </div>
+    <section className="container mx-auto px-4 pb-20 bg-gray-50">
+      <h2 className="text-5xl font-header font-bold text-center mb-16">{t('specialFeatures', { returnObjects: true}).title}</h2>
+      <SpecialFeaturesClient
+        lang={lang}
+        features={t('specialFeatures', { returnObjects: true}).features}
+        learnMore={t('specialFeatures', { returnObjects: true}).learnMore}
+      />
     </section>
   );
 }

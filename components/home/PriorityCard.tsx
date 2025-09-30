@@ -9,32 +9,24 @@ export default function PriorityCard({
 }) {
 
   return (
-    <div className="relative flex h-24 w-[40%] justify-center overflow-hidden border border-primary md:h-40 md:w-1/5 rounded-lg">
-      {/* Background Image */}
+    <div className="w-full h-36 relative flex items-center justify-center overflow-hidden border border-primary rounded-lg">
       <Image
         loading="lazy"
-        className="absolute bottom-2 -right-2 size-12 opacity-10 md:bottom-1 md:right-1 md:size-[145px]"
         src={image}
         alt=""
         width={500}
         height={500}
+        className="absolute bottom-2 -right-2 max-w-28 max-h-28 opacity-10 md:bottom-0"
       />
 
-      {/* Title Container */}
-      <div className="inline-flex items-center justify-center gap-2.5">
-        <div className="flex items-center justify-center text-center text-base">
-          {title}
-        </div>
-      </div>
-
-      {/* Small Image Overlay */}
+      <div className="z-20 text-base text-center">{title}</div>
       <Image
         loading="lazy"
-        className="absolute left-2 top-2 size-8 md:size-[50px]"
         src={image}
         alt="NovaNest Venture Priority"
         width={500}
         height={500}
+        className="absolute left-2 top-2 max-w-16 max-h-16 lg:max-w-12 lg:max-h-12 z-10"
       />
     </div>
   );

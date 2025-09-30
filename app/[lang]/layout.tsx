@@ -35,11 +35,11 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={dir(lang)}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.9" />
       </head>
       <body>
         <Navbar lang={lang} />
-        <main className="mx-auto">
+        <main className="w-full mx-auto">
           {children}
         </main>
         <Footer lang={lang} />

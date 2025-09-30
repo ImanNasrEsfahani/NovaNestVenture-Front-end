@@ -300,17 +300,6 @@ interface LogosInterface {
   alt: string;
 }
 
-interface HomeCardsInterface {
-  smallTitle: string;
-  titles: string;
-  text: string;
-  images: Array<{ src: string; alt: string }>;
-  reverse: boolean;
-  addedClass?: string;
-  link: string;
-  buttonText: string;
-}
-
 interface HomeCardsLeftInterface {
   titles: string;
   text: string;
@@ -457,7 +446,6 @@ export {
   AcademyApplicantFormDataType,
   PNPApplicantFormDataType,
   FormData,
-  HomeCardsInterface,
   personArrayInterface,
   CompaniesArrayInterface,
   CompanySectionsInterface,
