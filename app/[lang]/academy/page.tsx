@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import AcademyApplicantForm from '@/components/common/form/AcademyApplicantForm';
@@ -40,31 +39,27 @@ export default function Page({
         <main className="max-w-responsive mx-auto mt-10 mb-6 px-6">
             <section className="bg-white rounded-lg shadow-sm overflow-hidden">
             <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 items-center">
-                <div>
-                    <h1 className="text-4xl font-semibold font-header mb-4">
-                        NovaNest Academy
-                    </h1>
+            <div>
+                <h1 className="text-4xl font-semibold font-header mb-4">
+                {t('title')}
+                </h1>
 
-                    <p className="text-slate-700 leading-relaxed mb-4">
-                        At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas.
-                    </p>
+                {t('description', { returnObjects: true }).map((paragraph: string, index: number) => (
+                <p key={index} className="text-slate-700 leading-relaxed mb-4">
+                    {paragraph}
+                </p>
+                ))}
 
-                    <p className="text-slate-700 leading-relaxed mb-6">
-                        By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.
-                    </p>
+                <ul className="list-disc pl-5 text-slate-700 space-y-2 mb-6">
+                {t('features', { returnObjects: true }).map((feature: string, index: number) => (
+                    <li key={index}>{feature}</li>
+                ))}
+                </ul>
 
-                    <ul className="list-disc pl-5 text-slate-700 space-y-2 mb-6">
-                        <li>Hands-on projects with international mentors</li>
-                        <li>Workshops and skill-building sessions</li>
-                        <li>Mentorship, feedback and career guidance</li>
-                        <li>Opportunities to showcase your ideas</li>
-                    </ul>
-
-                    <p className="text-slate-700 mb-6 lg:mb-4">
-                        If you are a teenager or young adult interested in joining the NovaNest Academy, working alongside international mentors on real projects, and gaining valuable hands-on experience, you can submit your application through the link below.
-                    </p>
-
-                </div>
+                <p className="text-slate-700 mb-6 lg:mb-4">
+                {t('callToAction')}
+                </p>
+            </div>
 
                 <div className="flex items-center justify-center">
                     <div className="w-full max-w-md">

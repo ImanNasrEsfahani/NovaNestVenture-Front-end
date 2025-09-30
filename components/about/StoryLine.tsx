@@ -1,0 +1,33 @@
+import React from 'react';
+import Image from 'next/image';
+import { getServerTranslation } from 'app/i18n';
+
+export default function StoryLine({lang}: {lang: string}) {
+    const { t } = getServerTranslation(lang, 'aboutUs');
+
+
+    return (
+        <>
+            {t("storyLine", { returnObjects: true }).map((item: any, index: number) => (
+                <div
+                    key={index}
+                    className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'
+                >
+                    <div className={`col-span-1 ${index % 2 === 0 ? "order-last lg:order-first" : ""}`}>
+                        <Image
+                            className="object-cover h-full rounded-xl"
+                            src={item.image.src}
+                            alt={item.image.alt}
+                            width={item.image.width}
+                            height={item.image.height}
+                        />
+                    </div>
+                    <div className='col-span-1 flex flex-col justify-center'>
+                        <p className='text-7xl font-bold font-header mb-4'>{item.year}</p>
+                        <p className='text-base text-justify'>{item.description}</p>
+                    </div>
+                </div>
+            ))}
+        </>
+    );
+};

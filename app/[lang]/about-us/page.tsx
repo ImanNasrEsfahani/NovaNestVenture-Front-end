@@ -1,13 +1,8 @@
 import { Metadata } from 'next';
-import AboutUs from '@/components/about/AboutUs';
-// import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
-// import StoryOfUs from '@/components/about/StoryOfUs';
-// import KeyDifferentiating from '@/components/KeyDifferentiating';
-// import Profile from '@/components/about/Profile';
-import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
-
-import Image from 'next/image';
+import Banner from '@/components/common/Banner';
+import AboutUs from '@/components/about/AboutUs';
+import StoryLine from '@/components/about/StoryLine';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | About',
@@ -38,87 +33,11 @@ export default function Page({
           lang={lang}
         />
       </div>
-      
-      
-      <div className='max-w-responsive mx-auto'>
+
+      <div className='w-full max-w-responsive mx-auto'>
         <AboutUs lang={lang} />
 
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-x-16 my-24'>
-          <div className='col-span-1 flex flex-col justify-center'>
-            <p className='text-7xl font-bold font-header mb-4'>2017</p>
-            <p className='text-base text-justify'>
-              Beginning the Educational and Entrepreneurship Journey for Youth Our journey began in 2017 with the Landa Youth Business Academy. Over 250 young people aged 16 to 23 participated in programs that initially focused on robotics and technology and gradually expanded to entrepreneurship and startups. These young participants contributed to all startups developed within our organization and gained hands-on experience through real international projects. The academy continued its activities in Iran until 2025, preparing the next generation for a successful entry into the world of work and entrepreneurship.
-            </p>
-          </div>
-          <div className='col-span-1'>
-            <Image
-              className="object-cover w-full rounded-xl"
-              src="/static/images/about/story/2017-our-story-nova-nest-venture.png"
-              alt="story of NovaNest Venture"
-              width={661}
-              height={404}
-            />
-          </div>
-        </div>
-
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'>
-          <div className='col-span-1'>
-            <Image
-              className="object-cover h-full rounded-xl"
-              src="/static/images/about/story/2019-our-story-nova-nest-venture.png"
-              alt="story of NovaNest Venture"
-              width={661}
-              height={404}
-            />
-          </div>
-          <div className='col-span-1 flex flex-col justify-center'>
-            <p className='text-7xl font-bold font-header mb-4'>2019</p>
-            <p className='text-base text-justify'>
-              The academy&apos;s activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator. Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale.
-            </p>
-          </div>
-        </div>
-
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'>
-          <div className='col-span-1 flex flex-col justify-center'>
-            <p className='text-7xl font-bold font-header mb-4'>2021</p>
-            <p className='text-base text-justify'>
-              The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan. Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education. Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada.
-            </p>
-          </div>
-          <div className='col-span-1'>
-            <Image
-              className="object-cover h-full rounded-xl"
-              src="/static/images/about/story/2021-our-story-nova-nest-venture.png"
-              alt="story of NovaNest Venture"
-              width={661}
-              height={404}
-            />
-          </div>
-        </div>
-
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'>
-          <div className='col-span-1'>
-            <Image
-              className="object-cover h-full rounded-xl"
-              src="/static/images/about/story/2025-our-story-nova-nest-venture.png"
-              alt="story of NovaNest Venture"
-              width={661}
-              height={404}
-            />
-          </div>
-          <div className='col-span-1 flex flex-col justify-center'>
-            <p className='text-7xl font-bold font-header mb-4'>2025</p>
-            <p className='text-base text-justify'>
-              Official Establishment of NovaNest in Canada NovaNest was officially launched in Vancouver, Canada, providing professional services including Startup Visa and Provincial Entrepreneurship programs to international entrepreneurs. Our long-term goal is to become a global investment and accelerator hub, offering specialized and professional services to entrepreneurs anywhere in the world.
-            </p>
-          </div>
-        </div>
-
-        {/* <SubsidiaryCompanies lang={lang}/>
-        <StoryOfUs lang={lang}/>
-        <KeyDifferentiating lang={lang} />
-        <Profile lang={lang} /> */}
+        <StoryLine lang={lang} />
       </div>
     </>
   );
