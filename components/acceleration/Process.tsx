@@ -11,7 +11,10 @@ export default function Process({ lang }: { lang: string }) {
             </h2>
             <div className="max-w-responsive mx-auto space-y-6">
                 {t("process", { returnObjects: true }).items.map((item: string, i: number) => (
-                    <div className="card mx-auto max-w-6xl flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200">
+                    <div
+                        key={`${i}-${String(item).slice(0, 30)}`}
+                        className="card mx-auto max-w-6xl flex flex-row bg-base-100 shadow rounded-xl p-5 border border-gray-200"
+                    >
                         <span className="font-bold mr-2">{i + 1}.</span>
                         {item}
                     </div>
