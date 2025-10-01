@@ -21,7 +21,7 @@ export default function HomeCardsContainer ({lang}: {lang: string}) {
             images,
             buttonText
           }) => (
-            <div className="mb-40">
+            <div key={index} className="mb-40">
                 <HomeCardsSection smallTitle={smallTitle} text={text} images={images} reverse={reverse} link={link} titles={title} buttonText={buttonText}/>
             </div>
           )
