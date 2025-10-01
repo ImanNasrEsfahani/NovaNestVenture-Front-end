@@ -462,7 +462,7 @@ export {
   HomeCardsLeftInterface,
   BusinessPartnerShipFormData,
   StartupsFormData,
-  PartnerMembershipFormData,
+  JoinAsaPartnerFormData,
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
   JobFormData,

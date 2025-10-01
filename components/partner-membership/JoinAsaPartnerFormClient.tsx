@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { PartnerMembershipFormData } from '@/types/global';
+import { JoinAsaPartnerFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
 // import GetCsrfToken from '@/utils/get-csrf-token';
-import { initialPartnerMembershipFormData } from '../../initials/initObjects';
+import { initialJoinAsaPartnerFormData } from '../../initials/initObjects';
 import { submitPartnerMembershipForm } from '../../pages/api/partner-membership';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
@@ -88,9 +88,9 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<PartnerMembershipFormData>({
+  } = useForm<JoinAsaPartnerFormData>({
     mode: 'onBlur',
-    defaultValues: initialPartnerMembershipFormData
+    defaultValues: initialJoinAsaPartnerFormData
   });
 
 
@@ -114,7 +114,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: PartnerMembershipFormData) => {
+  const onSubmit = async (formData: JoinAsaPartnerFormData) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -137,7 +137,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialPartnerMembershipFormData); // Country does not reset
+        reset(initialJoinAsaPartnerFormData); // Country does not reset
 
         console.log(response);
 
@@ -149,7 +149,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         handleSuccessChange(true);
         handleNotifChange(false);
         handleSendChange(false);
-        reset(initialPartnerMembershipFormData);
+        reset(initialJoinAsaPartnerFormData);
         notifTimeout = setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds

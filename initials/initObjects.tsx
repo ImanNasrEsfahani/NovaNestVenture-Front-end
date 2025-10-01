@@ -3,7 +3,7 @@ import {
   StartupsFormData,
   AccelerationApplicantFormDataType,
   WorkWithUSFormData,
-  PartnerMembershipFormData,
+  JoinAsaPartnerFormData,
   JobFormData,
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
@@ -58,7 +58,7 @@ const initialStartupsFormData: StartupsFormData = {
   neededCapital: '',
 };
 
-const initialPartnerMembershipFormData: PartnerMembershipFormData = {
+const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
   firstName: '',
   lastName: '',
   email: '',
@@ -183,7 +183,7 @@ const RegisterationFormData: FormData = {
 
 export {
   initialStartupsFormData,
-  initialPartnerMembershipFormData,
+  initialJoinAsaPartnerFormData,
   initialJobFormData,
   initialInvestorRegistrationFormData,
   initialMentorRegistrationFormData,
