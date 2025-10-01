@@ -57,7 +57,7 @@ export default function Footer({
           <div className="text-xl font-medium text-primary pb-2">
             {t('explore.title')}
           </div>
-          {(t('explore.text', { returnObjects: true }) as Array<{ title: string; link: string }>).map((item, index) => (
+          {(t('explore', { returnObjects: true }).text as Array<{ title: string; link: string }>).map((item, index) => (
             <Link
               key={index}
               href={`${base}${item.link}`}
