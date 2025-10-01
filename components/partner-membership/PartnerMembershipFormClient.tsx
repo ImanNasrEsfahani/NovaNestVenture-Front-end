@@ -265,21 +265,6 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
             patternMessage=""
           /> */}
 
-          <Input
-            register={register}
-            errors={errors}
-            nameInput="investmentCeiling"
-            type="text"
-            label={translations.investmentCeiling}
-            // required={translations.investmentCeilingRequired}
-            required=""
-            placeholder={translations.investmentCeilingPlaceholder}
-            className="input col-span-1 w-full"
-            labelClass=" dark:text-current"
-            patternValue=""
-            patternMessage=""
-          />
-
         </div>
         <div className="flex flex-col w-full">
           <TextArea

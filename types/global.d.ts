@@ -115,14 +115,11 @@ interface WorkWithUSFormData {
 }
 
 // Define an interface for partner membership form data
-interface PartnerMembershipFormData {
+interface JoinAsaPartnerFormData {
   firstName: string;
   lastName: string;
-  birthDate: Date;
   email: string;
-  provinceOfResidence: string;
-  companyName: string;
-  investmentCeiling: string;
+  phoneNumber: string;
   howDidYouKnowUs: string;
 }
 

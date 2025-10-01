@@ -61,12 +61,9 @@ const initialStartupsFormData: StartupsFormData = {
 const initialPartnerMembershipFormData: PartnerMembershipFormData = {
   firstName: '',
   lastName: '',
-  birthDate: new Date(),
   email: '',
-  companyName: '',
+  phoneNumber: '',
   howDidYouKnowUs: '',
-  provinceOfResidence: '',
-  investmentCeiling: ''
 };
 
 const initialJobFormData: JobFormData = {

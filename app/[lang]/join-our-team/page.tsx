@@ -1,5 +1,5 @@
 import Banner from '@/components/common/Banner';
-import JobForm from '@/components/job-form/JobForm';
+import JoinOurTeamForm from '@/components/job-form/JoinOurTeamForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 
@@ -24,7 +24,7 @@ export default function ApplyFormPage({
         lang={lang}
       />
       <div className="max-w-responsive mx-auto">
-        <JobForm lang={lang} />
+        <JoinOurTeamForm lang={lang} />
       </div>
     </div>
   );

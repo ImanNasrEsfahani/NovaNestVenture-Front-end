@@ -66,7 +66,7 @@ interface Props {
   translations: Translations;
 }
 
-export default function JobFormClient({ lang, translations }: Props) {
+export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
   const {
     register,

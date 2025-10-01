@@ -102,12 +102,12 @@
     "formSubtitle": "Personal Information"
   },
 
-  "jobForm": {
+  "join-our-team": {
     "lng": "en",
     "dir": "ltr",
     "NovaNestVenture": "NovaNest Venture",
-    "banner": "Work with us",
-    "formTitle": "Work with us ",
+    "banner": "Join Our Team",
+    "formTitle": "Join Our Team ",
     "formSubtitle": "Personal Information",
     "resumeFile": "CV File:",
     "choseFile": "Choose File"

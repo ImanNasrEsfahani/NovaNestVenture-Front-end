@@ -1,15 +1,15 @@
 import { getServerTranslation } from 'app/i18n';
-import JobFormClient from '@/components/job-form/JobFormClient';
+import JoinOurTeamFormClient from '@/components/job-form/JoinOurTeamFormClient';
 
-export default function JobForm({lang}: {lang: string}) {
+export default function JoinOurTeamForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
 
   // Pass translations as props to client component
   const translations = {
-    formTitle: t('jobForm', { returnObjects: true }).formTitle,
-    formSubtitle: t('jobForm', { returnObjects: true }).formSubtitle,
-    resumeFile: t('jobForm', { returnObjects: true }).resumeFile,
-    choseFile: t('jobForm', { returnObjects: true }).choseFile,
+    formTitle: t('join-our-team', { returnObjects: true }).formTitle,
+    formSubtitle: t('join-our-team', { returnObjects: true }).formSubtitle,
+    resumeFile: t('join-our-team', { returnObjects: true }).resumeFile,
+    choseFile: t('join-our-team', { returnObjects: true }).choseFile,
 
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
@@ -51,5 +51,5 @@ export default function JobForm({lang}: {lang: string}) {
     applicationPlaceholder: t('applicationPlaceholder'),
   };
 
-  return <JobFormClient lang={lang} translations={translations} />;
+  return <JoinOurTeamFormClient lang={lang} translations={translations} />;
 }
