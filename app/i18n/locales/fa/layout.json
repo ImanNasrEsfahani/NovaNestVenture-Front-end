@@ -1,16 +1,16 @@
 {
   "menuItems": [
     {
-      "label": "درباره ما",
-      "href": "fa/about"
+      "label": "آکادمی",
+      "href": "fa/academy"
     },
     {
       "label": "تیم ما",
       "href": "fa/our-team"
     },
     {
-      "label": "تماس با ما",
-      "href": "fa/contact"
+      "label": "درباره ما",
+      "href": "fa/about-us"
     }
   ],
   "submenuItems": [

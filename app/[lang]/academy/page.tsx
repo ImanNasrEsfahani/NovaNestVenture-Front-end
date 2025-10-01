@@ -23,7 +23,7 @@ export default function Page({
     <>
         <div className="hidden md:inline">
             <Banner
-            image="/static/images/acceleration/accleration-hero.webp"
+            image="/static/images/acceleration/accleration-hero.jpg"
             title={t('banner')}
             lang={lang}
             />
@@ -64,7 +64,7 @@ export default function Page({
                 <div className="flex items-center justify-center">
                     <div className="w-full max-w-md">
                         <Image
-                        src="/static/images/academy/academy-illustration.png"
+                        src="/static/images/academy/academy-illustration.jpg"
                         alt="NovaNest Academy"
                         width={800}
                         height={600}

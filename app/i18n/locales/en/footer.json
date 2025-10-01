@@ -8,38 +8,54 @@
   },
   "explore": {
     "title": "Explore",
-    "text": {
-      "home": "Home",
-      "about": "About Us",
-      "contact": "Contact Us",
-      "ourTeam": "Our Team"
-    }
+    "text": [
+      {
+        "title": "Home",
+        "link": "home"
+      },
+      {
+        "title": "Academy",
+        "link": "academy"
+      },
+      {
+        "title": "Our Team",
+        "link": "our-Team"
+      },
+      {
+        "title": "About Us",
+        "link": "about-us"
+      },
+      {
+        "title": "Contact Us",
+        "link": "contact-us"
+      }
+    ]
   },
   "forms": {
     "title": "Forms",
     "text": {
       "startUp": {
-        "text": "Startup validation",
+        "text": "Startup Validation",
         "link": "startups-form"
       },
       "entrepreneur": {
-        "text": "Entrepreneurs registration",
+        "text": "Entrepreneurs Registration",
         "link": "formEntrepreneurs"
       },
       "investor": {
-        "text": "Investor Center",
+        "text": "Investor Registration",
         "link": "investor-registration"
       },
       "Join our team": {
-        "text": "Join our team",
+        "text": "Join Our Team",
         "link": "job-form"
       },
       "mentorship": {
-        "text": "Join as partnership",
+        "text": "Join as a Partner",
         "link": "partner-membership"
       },
       "mentor": {
-        "text": "Join as mentor",
+        "text": "Join as a Mentor",
         "link": "join-as-mentor"
       }
     }

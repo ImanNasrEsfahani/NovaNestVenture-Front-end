@@ -17,10 +17,10 @@ interface FooterText {
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Footer({
-    lang
-  }: {
-    lang: string;
-  }) {
+  lang
+}: {
+  lang: string;
+}) {
 
   const { t } = getServerTranslation(lang, "footer")
 
@@ -39,48 +39,33 @@ export default function Footer({
             {t('about.text')}
           </div>
           <div className="mt-2 flex flex-row items-center text-black gap-4">
-                <Link aria-label="Instagram" href={'https://instagram.com/novanestventure'} className="hover:text-primary" target="_blank">
-                  <Instagram />
-                </Link>
-                <Link aria-label="Email" href={'mailto:info@NovaNestVenture.com'} className="hover:text-primary">
-                  <Envelope />
-                </Link>
-                <Link aria-label="Whatsapp" href={'https://wa.me/+17789865432'} className="hover:text-primary" target="_blank">
-                  <Whatsapp />
-                </Link>
-                <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
-                  <LinkedIn />
-                </Link>
-                </div>
+            <Link aria-label="Instagram" href={'https://instagram.com/novanestventure'} className="hover:text-primary" target="_blank">
+              <Instagram />
+            </Link>
+            <Link aria-label="Email" href={'mailto:info@NovaNestVenture.com'} className="hover:text-primary">
+              <Envelope />
+            </Link>
+            <Link aria-label="Whatsapp" href={'https://wa.me/+17789865432'} className="hover:text-primary" target="_blank">
+              <Whatsapp />
+            </Link>
+            <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
+              <LinkedIn />
+            </Link>
+          </div>
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">
             {t('explore.title')}
           </div>
-          <Link
-            href={`${base}`}
-            className="pt-1 hover:text-primary"
-          >
-            {t('explore.text.home')}
-          </Link>
-          <Link
-            href={`${base}about`}
-            className="pt-1 hover:text-primary"
-          >
-            {t('explore.text.about')}
-          </Link>
-          <Link
-            href={`${base}contact`}
-            className="pt-1 hover:text-primary"
-          >
-            {t('explore.text.contact')}
-          </Link>
-          <Link
-            href={`${base}our-team`}
-            className="pt-1 hover:text-primary"
-          >
-            {t('explore.text.ourTeam')}
-          </Link>
+          {(t('explore.text', { returnObjects: true }) as Array<{ title: string; link: string }>).map((item, index) => (
+            <Link
+              key={index}
+              href={`${base}${item.link}`}
+              className="pt-1 hover:text-primary"
+            >
+              {item.title}
+            </Link>
+          ))}
         </div>
         <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">{t('forms', { returnObjects: true }).title}</div>
