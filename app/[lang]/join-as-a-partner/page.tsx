@@ -1,5 +1,5 @@
 import Banner from '@/components/common/Banner';
-import PartnerMembershipForm from '@/components/partner-membership/PartnerMembershipForm';
+import JoinAsaPartnerForm from '@/components/partner-membership/JoinAsaPartnerForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 
@@ -24,7 +24,7 @@ export default async function AffiliateFormPage({
         lang={lang}
       />
       <div className="max-w-responsive mx-auto">
-        <PartnerMembershipForm lang={lang}/>
+        <JoinAsaPartnerForm lang={lang}/>
       </div>
     </div>
   );

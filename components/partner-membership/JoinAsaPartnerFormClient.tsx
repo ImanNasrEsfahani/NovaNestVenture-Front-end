@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '@/components/common/form/Input';
 import { PartnerMembershipFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
@@ -83,7 +82,7 @@ interface Props {
   translations: Translations;
 }
 
-export default function PartnerMembershipFormClient({ lang, translations }: Props) {
+export default function JoinAsaPartnerFormClient({ lang, translations }: Props) {
   const {
     register,
     handleSubmit,
@@ -131,6 +130,8 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
     });
 
     // Send the form data to the API.
+    let notifTimeout: NodeJS.Timeout;
+
     submitPartnerMembershipForm(sendFormData)
       .then((response) => {
         handleSuccessChange(true);
@@ -140,7 +141,7 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
 
         console.log(response);
 
-        setTimeout(() => {
+        notifTimeout = setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
       })
@@ -149,10 +150,19 @@ export default function PartnerMembershipFormClient({ lang, translations }: Prop
         handleNotifChange(false);
         handleSendChange(false);
         reset(initialPartnerMembershipFormData);
-        setTimeout(() => {
+        notifTimeout = setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
       });
+
+    // Cleanup timeout if component unmounts
+    React.useEffect(() => {
+      return () => {
+        if (notifTimeout) {
+          clearTimeout(notifTimeout);
+        }
+      };
+    }, []);
   };
 
   const errorsList = Object.entries(errors).map(([name, value]) => ({

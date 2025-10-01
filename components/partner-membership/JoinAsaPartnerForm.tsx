@@ -1,7 +1,7 @@
 import { getServerTranslation } from 'app/i18n';
-import PartnerMembershipFormClient from '@/components/partner-membership/PartnerMembershipFormClient';
+import JoinAsaPartnerFormClient from '@/components/partner-membership/JoinAsaPartnerFormClient';
 
-export default function PartnerMembershipForm({lang}: {lang: string}) {
+export default function JoinAsaPartnerForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
@@ -70,5 +70,5 @@ export default function PartnerMembershipForm({lang}: {lang: string}) {
     applicationPlaceholder: t('applicationPlaceholder'),
   };
 
-  return <PartnerMembershipFormClient lang={lang} translations={translations} />;
+  return <JoinAsaPartnerFormClient lang={lang} translations={translations} />;
 }
