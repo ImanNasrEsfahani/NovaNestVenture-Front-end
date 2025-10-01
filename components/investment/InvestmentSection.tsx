@@ -13,7 +13,10 @@ export default function InvestmentSection({ lang }: {
             <div className="max-w-responsive mx-auto py-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {(t('forFounders', { returnObjects: true }) || []).map((section: any, idx: number) => (
-                        <div className="flex flex-col get-shadow-g p-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div
+                            key={section?.id ?? section?.title ?? idx}
+                            className="flex flex-col get-shadow-g p-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1"
+                        >
                             <div className="flex flex-col items-center mb-6">
                                 <h3 className="font-header text-3xl font-bold text-gray-800">
                                     {section.title}
