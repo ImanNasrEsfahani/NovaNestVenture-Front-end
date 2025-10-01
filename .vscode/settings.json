@@ -1,8 +1,18 @@
 {
     "i18n-ally.localesPaths": [
-        "locales",
-        "app/i18n",
-        "app/i18n/locales"
+        "app/i18n/locals"
     ],
+    "i18n-ally.locales": [
+        "en",
+        "fa"
+    ],
+    "i18n-ally.defaultLocale": "en",
+    "i18n-ally.enabledFrameworks": [
+        "react"
+    ],
+    "i18n-ally.keystyle": "nested", // or "flat" depending on your JSON structure
+    "i18n-ally.pathMatcher": "**/*.{tsx}", // Only scan .tsx files
+    "i18n-ally.sourceLanguage": "en",
+    "i18n-ally.sortKeys": true,
     "typescript.tsdk": "node_modules\\typescript\\lib"
 }
