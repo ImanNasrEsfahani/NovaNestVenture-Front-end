@@ -36,11 +36,11 @@
     "text": {
       "startUp": {
         "text": "ارزیابی استارت آپ",
-        "link": "startups-form"
+        "link": "startups-validation"
       },
       "entrepreneur": {
         "text": "ثبت نام کارآفرینان",
-        "link": "formEntrepreneurs"
+        "link": "entrepreneur-registration"
       },
       "investor": {
         "text": "مرکز سرمایه گذاری",
@@ -48,15 +48,15 @@
       },
       "Join our team": {
         "text": "عضویت به تیم",
-        "link": "job-form"
+        "link": "join-our-team"
       },
       "mentorship": {
         "text": "عضویت به عنوان پارتنر",
-        "link": "partner-membership"
+        "link": "join-as-a-partner"
       },
       "mentor": {
         "text": "عضویت به عنوان منتور",
-        "link": "join-as-mentor"
+        "link": "join-as-a-mentor"
       }
     }
   },
