@@ -59,17 +59,17 @@
   "howDidYouKnowUsPlaceholder": "For example, social media, etc.",
   "howDidYouKnowUsRequired": "This field is required.",
 
-  "provinceOfResidence": "Province Of Residence *",
-  "provinceOfResidencePlaceholder": "Province Of Residence is required",
-  "provinceOfResidenceRequired": "Province Of Residence is required",
+  "website": "Website",
+  "websiteRequired": "Website is required",
+  "websitePlaceholder": "Enter your website",
 
-  "countryOfResidence": "Country of Residence*",
-  "countryOfResidencePlaceholder": "Iran",
-  "countryOfResidenceRequired": "Country of Residence is required",
+  "linkedin": "LinkedIn",
+  "linkedinRequired": "LinkedIn is required",
+  "linkedinPlaceholder": "Enter your LinkedIn profile URL",
 
-  "cityOfResidence": "City of Residence*",
-  "cityOfResidencePlaceholder": "Tehran",
-  "cityOfResidenceRequired": "City Of Residence is required",
+  "breifIntroduction": "Brief Introduction",
+  "breifIntroductionRequired": "Brief Introduction is required",
+  "breifIntroductionPlaceholder": "Enter a brief introduction",
 
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
@@ -548,10 +548,6 @@
   "TRIAL": "TRIAL",
   "FisrtSale": "Early Traction",
   "SaleDevelopment": "Scale-Up",
-
-  "website": "Your Webstie *",
-  "websitePlaceholder": "Your Webstie",
-  "websiteRequired": "This field is required!",
 
   "prosField": "Type of Collaboration  *",
   "prosFieldRequired": "This field is required!",

@@ -249,7 +249,8 @@ export default function EntrepreneursFormClient({ lang, translations }: Props) {
               errors={errors}
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: ''
+                provinceOfResidence: '',
+                cityOfResidence: ''
               }}
               register={register}
             />

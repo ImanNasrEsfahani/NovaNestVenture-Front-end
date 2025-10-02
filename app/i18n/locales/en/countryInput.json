@@ -249,11 +249,20 @@
       "Zimbabwe",
       "Åland Islands"
     ],
+
     "countryName":"Select a country *",
     "countryNameRequired":"Your Country is Required.",
     "countryNamePlaceholder":"Select a country",
 
     "provinceOfResidence":"City Of Residence *",
     "provinceOfResidenceRequired":"City Of Residence is Required.",
-    "provinceOfResidencePlaceholder":"Enter your City Of Residence"
+    "provinceOfResidencePlaceholder":"Enter your City Of Residence",
+
+    "countryOfResidence": "Country of Residence*",
+    "countryOfResidencePlaceholder": "Iran",
+    "countryOfResidenceRequired": "Country of Residence is required",
+
+    "cityOfResidence": "City of Residence",
+    "cityOfResidencePlaceholder": "Vancouver",
+    "cityOfResidenceRequired": "City Of Residence is required"
 }

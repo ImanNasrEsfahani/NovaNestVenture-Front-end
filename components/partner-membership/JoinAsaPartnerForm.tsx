@@ -26,12 +26,30 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     failedMessage: t('failedMessage'),
 
     countries: tCountry('countries', { returnObjects: true }),
+
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
     provinceOfResidence: tCountry('provinceOfResidence'),
     provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
     provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
+
+    website: t('website'),
+    websiteRequired: t('websiteRequired'),
+    websitePlaceholder: t('websitePlaceholder'),
+
+    linkedin: t('linkedin'),
+    linkedinRequired: t('linkedinRequired'),
+    linkedinPlaceholder: t('linkedinPlaceholder'),
+
+    breifIntroduction: t('breifIntroduction'),
+    breifIntroductionRequired: t('breifIntroductionRequired'),
+    breifIntroductionPlaceholder: t('breifIntroductionPlaceholder'),
 
     INTERN: t('INTERN'),
     EMPLOYEE: t('EMPLOYEE'),

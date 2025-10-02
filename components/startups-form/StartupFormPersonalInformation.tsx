@@ -112,7 +112,8 @@ export default function StartupFormPersonalInformation({
           errors={errors}
           nameInputs={{
             countryOfResidence: 'countryOfResidence',
-            provinceOfResidence: ''
+            provinceOfResidence: '',
+            cityOfResidence: ''
           }}
           register={register}
         />

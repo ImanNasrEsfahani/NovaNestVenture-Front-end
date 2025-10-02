@@ -93,8 +93,8 @@ interface MentorRegistrationFormData {
   lastName: string;
   birthDate: Date;
   email: string;
+  phoneNumber: string;
   countryOfResidence: string;
-  provinceOfResidence: string;
   preferredAreas: string;
   howDidYouKnowUs: string;
 }

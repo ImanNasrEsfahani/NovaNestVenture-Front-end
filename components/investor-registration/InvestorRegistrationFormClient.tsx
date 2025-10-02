@@ -252,6 +252,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',
                 provinceOfResidence: '',
+                cityOfResidence: ''
               }}
               lang={lang}
               errors={errors}

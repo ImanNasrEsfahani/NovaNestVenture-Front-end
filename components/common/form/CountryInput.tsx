@@ -11,15 +11,22 @@ type Props = {
   nameInputs?: {
     countryOfResidence: string;
     provinceOfResidence: string;
+    cityOfResidence: string;
   };
 
   countries: string[];
+
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
+
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string; 
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
 }
 
 export default function CountryInput({
@@ -31,9 +38,14 @@ export default function CountryInput({
   countryName,
   countryNameRequired,
   countryNamePlaceholder,
+
   provinceOfResidence,
   provinceOfResidenceRequired,
-  provinceOfResidencePlaceholder
+  provinceOfResidencePlaceholder,
+
+  cityOfResidence,
+  cityOfResidenceRequired,
+  cityOfResidencePlaceholder
 }: Props) {
 
   // Fix: Ensure countries is always an array
@@ -99,6 +111,22 @@ export default function CountryInput({
             patternValue=""
             patternMessage=""
             placeholder={provinceOfResidencePlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            labelClass="text-[#6b6b6b] dark:text-current"
+          />
+        )}
+
+        {nameInputs?.cityOfResidence && (
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.cityOfResidence}
+            type="text"
+            label={cityOfResidence}
+            required={cityOfResidenceRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={cityOfResidencePlaceholder}
             className="input col-span-1 mb-1 w-full"
             labelClass="text-[#6b6b6b] dark:text-current"
           />

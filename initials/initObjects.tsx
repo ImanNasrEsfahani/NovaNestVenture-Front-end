@@ -99,8 +99,8 @@ const initialMentorRegistrationFormData: MentorRegistrationFormData = {
   lastName: '',
   birthDate: new Date(),
   email: '',
+  phoneNumber: '',
   countryOfResidence: '',
-  provinceOfResidence: '',
   preferredAreas: '',
   howDidYouKnowUs: '',
 };

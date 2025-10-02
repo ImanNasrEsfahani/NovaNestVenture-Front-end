@@ -12,6 +12,7 @@ import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
 import CountryInput from '@/components/common/form/CountryInput';
+import Input from '../common/form/Input';
 
 interface Translations {
   formTitle: string;
@@ -36,9 +37,27 @@ interface Translations {
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
+
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
+
+  website: string;
+  websiteRequired: string;
+  websitePlaceholder: string;
+  
+  linkedin: string;
+  linkedinRequired: string;
+  linkedinPlaceholder: string;
+
+  breifIntroduction: string;
+  breifIntroductionRequired: string;
+  breifIntroductionPlaceholder: string;
+
 
   INTERN: string;
   EMPLOYEE: string;
@@ -252,31 +271,77 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             provinceOfResidence={translations.provinceOfResidence}
             provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
             provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+            cityOfResidence={translations.cityOfResidence}
+            cityOfResidenceRequired={translations.cityOfResidenceRequired}
+            cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
+            
             lang={lang}
             errors={errors}
             nameInputs={{
                 countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: ''
+                provinceOfResidence: '',
+                cityOfResidence: 'cityOfResidence'
             }}
             register={register}
           />
 
-          {/* <Input
+          <Input
             register={register}
             errors={errors}
             nameInput="companyName"
             type="text"
             label={translations.companyName}
-            required={translations.companyNameRequired}
+            required=""
             placeholder={translations.companyNamePlaceholder}
-            className="input col-span-1 mb-1 mt-3 w-full"
-            labelClass="dark:text-current"
+            className="input col-span-1 mb-1 w-full"
+            labelClass=""
             patternValue=""
             patternMessage=""
-          /> */}
+          />
+
+          <Input
+            register={register}
+            errors={errors}
+            nameInput="website"
+            type="text"
+            label={translations.website}
+            required=""
+            placeholder={translations.websitePlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            labelClass=""
+            patternValue=""
+            patternMessage=""
+          />
+
+          <Input
+            register={register}
+            errors={errors}
+            nameInput="linkedin"
+            type="text"
+            label={translations.linkedin}
+            required=""
+            placeholder={translations.linkedinPlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            labelClass=""
+            patternValue=""
+            patternMessage=""
+          />
 
         </div>
         <div className="flex flex-col w-full">
+          <TextArea
+            title={translations.breifIntroduction}
+            register={register}
+            errors={errors}
+            placeholder={translations.breifIntroductionPlaceholder}
+            nameTextArea="breifIntroduction"
+            patternMessage=""
+            patternValue=""
+            // required={translations.howDidYouKnowUsRequired}
+            required=""
+            rows={3}
+          />
+
           <TextArea
             title={translations.howDidYouKnowUs}
             register={register}
