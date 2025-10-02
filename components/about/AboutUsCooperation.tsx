@@ -57,7 +57,7 @@ export default function AboutUsCooperation() {
           </p>
           <div className="pt-10 md:pt-16">
             <span className="mr-3">More</span>
-            <Link href={`${base}partner-membership`}>
+            <Link href={`${base}pnp`}>
               <Image
                 loading="lazy"
                 width={40}

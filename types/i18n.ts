@@ -7,7 +7,6 @@ import fAacceleration from '@/i18n/locales/fa/acceleration.json'
 import fAcardData from '@/i18n/locales/fa/cardData.json'
 import fAcontact from '@/i18n/locales/fa/contact.json'
 import fAcountryInput from '@/i18n/locales/fa/countryInput.json'
-import fAentrepreneur from '@/i18n/locales/fa/entrepreneur.json'
 import fAevents from '@/i18n/locales/fa/events.json'
 import fAfooter from '@/i18n/locales/fa/footer.json'
 import fAformComponent from '@/i18n/locales/fa/formComponent.json'
@@ -27,7 +26,6 @@ import eNacceleration from '@/i18n/locales/en/acceleration.json'
 import eNcardData from '@/i18n/locales/en/cardData.json'
 import eNcontact from '@/i18n/locales/en/contact.json'
 import eNcountryInput from '@/i18n/locales/en/countryInput.json'
-import eNentrepreneur from '@/i18n/locales/en/entrepreneur.json'
 import eNevents from '@/i18n/locales/en/events.json'
 import eNfooter from '@/i18n/locales/en/footer.json'
 import eNformComponent from '@/i18n/locales/en/formComponent.json'
@@ -51,7 +49,6 @@ export const resources = {
     fAcardData,
     fAcontact,
     fAcountryInput,
-    fAentrepreneur,
     fAevents,
     fAfooter,
     fAformComponent,
@@ -72,7 +69,6 @@ export const resources = {
     eNcardData,
     eNcontact,
     eNcountryInput,
-    eNentrepreneur,
     eNevents,
     eNfooter,
     eNformComponent,
@@ -96,7 +92,6 @@ i18n.use(initReactI18next).init({
     "cardData", 
     "contact", 
     "countryInput", 
-    "entrepreneur", 
     "events",
     "footer",
     "formComponent",

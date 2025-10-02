@@ -65,7 +65,7 @@
 
   "preferredAreas": "Preferred Areas for Investment *",
   "preferredAreasRequired": "This field is required",
-  "preferredAreasPlaceholder": "Areas",
+  "preferredAreasPlaceholder": "Area like Education, Tourism, AI, Genetic, and etc",
 
   "ExpertiesAreas": "What are your area of expertise? *",
   "ExpertiesAreasRequired": "This field is required",
@@ -169,14 +169,6 @@
     "professionalConsultation": "professional Consultation",
     "Internship": "Internship",
     "UniversityInternship": "UniversityInternship"
-  },
-
-  "entrepreneurForm": {
-    "lng": "en",
-    "banner": "Entrepreneur Center",
-    "NovaNestVenture": "NovaNest Venture",
-    "formTitle": "Entrepreneur Center form",
-    "formSubtitle": "Personal Information"
   },
 
   "investorForm": {
@@ -571,7 +563,6 @@
   "prosFieldRequired": "This field is required!",
   "prosFieldPlaceholder": "Employment / Intern",
 
-  "EntrepreneurTitle": "Entrepreneur Center Form",
   "PersonalInformation": "Personal Information",
 
   "countries" : [

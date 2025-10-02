@@ -148,14 +148,6 @@
     "UniversityInternship": "طرح پویش"
   },
 
-  "entrepreneurForm": {
-    "lng": "fa",
-    "banner": "مرکز کارآفرینان",
-    "NovaNestVenture": "نوانست ونچر",
-    "formTitle": "فرم مرکز کارآفرینان",
-    "formSubTitle": "اطلاعات شخصی"
-  },
-
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
@@ -601,7 +593,6 @@
   "prosFieldRequired": "این بخش الزامی است.",
   "prosFieldPlaceholder": "استخدام / کارآموزی",
 
-  "EntrepreneurTitle": "فرم مرکز کارآفرینان",
   "PersonalInformation": "اطلاعات شخصی",
 
   "countries": [
