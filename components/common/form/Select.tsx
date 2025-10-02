@@ -15,7 +15,7 @@ export default function Select({
   nameInput: string;
   label: string;
   required: string;
-  options: Array<{ value: string; label: string }>;
+  options: { value: number; label: string }[];
   className: string;
   labelClass: string;
   placeholder: string;

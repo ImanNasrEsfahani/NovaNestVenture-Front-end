@@ -25,10 +25,24 @@
   "TypeOfCollaborationErrorMassage": "نوع همکاری را وارد کنید",
   "TypeOfCollaborationPlaceholder":"نوع همکاری را انتخاب کنید",
 
+  "TypeOfCollaborationData": [
+    { "value": 0, "label": "کارآموزی" },
+    { "value": 1, "label": "استخدام" }
+  ],
+
   "FieldOfExpert": "زمینه تخصصی",
   "FieldOfExpertRequired":"زمینه تخصصی اجباری است",
   "FieldOfExpertErrorMassage":"زمینه تخصصی را وارد کنید",
   "FieldOfExpertPlaceholder":"زمینه تخصصی را انتخاب کنید",
+
+  "FieldOfExpertData": [
+    { "value": 0, "label": "برنامه نویس" },
+    { "value": 1, "label": "بازاریابی" },
+    { "value": 2, "label": "گرافیک" },
+    { "value": 3, "label": "مهاجرت" },
+    { "value": 4, "label": "حسابداری" },
+    { "value": 5, "label": "اداری" }
+  ],
 
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
@@ -73,15 +87,6 @@
   "investmentCeiling": "سقف سرمایه گذاری",
   "investmentCeilingRequired": "این بخش الزامی است.",
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
-
-  "INTERN" : "کارآموز",
-  "EMPLOYEE" : "استخدام",
-  "Developer":"برنامه نویسی",
-  "Marketing":"مارکتینگ",
-  "Graphist":"گرافیست",
-  "Immigration":"مهاجرت",
-  "Accountant":"حسابدار",
-  "administrative":"اداری",
 
   "contactForm": {
     "title": "با ما تماس بگیرید",

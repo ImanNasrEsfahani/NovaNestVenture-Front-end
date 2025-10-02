@@ -25,10 +25,24 @@
   "TypeOfCollaborationErrorMassage": "Select a Type",
   "TypeOfCollaborationPlaceholder": " Select a Type of Collaboration",
 
+  "TypeOfCollaborationData": [
+    { "value": 0, "label": "Internship" },
+    { "value": 1, "label": "Employee" }
+  ],
+
   "FieldOfExpert": "Field of Expert *",
   "FieldOfExpertRequired": "Field of Expert is Required",
   "FieldOfExpertErrorMassage": "Select a Field of Expert",
   "FieldOfExpertPlaceholder": "Select a Field of Expert",
+
+  "FieldOfExpertData": [
+    { "value": 0, "label": "Developer" },
+    { "value": 1, "label": "Marketing" },
+    { "value": 2, "label": "Graphist" },
+    { "value": 3, "label": "Immigration" },
+    { "value": 4, "label": "Accountant" },
+    { "value": 5, "label": "Administrative" }
+  ],
 
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
@@ -46,6 +60,13 @@
   "workHistorySummary": "Work History Summary",
   "workHistorySummaryRequired": "Work History Summary is required.",
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
+
+  "EducationLevelsData": [
+    { "value": 0, "label": "Diploma" },
+    { "value": 1, "label": "Bachelor" },
+    { "value": 2, "label": "Master" },
+    { "value": 3, "label": "PhD" }
+  ],
 
   "sendButton": "Send",
   "ReserveButton": "Reserve my free consultation",
@@ -94,15 +115,6 @@
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
   "investmentCeilingPlaceholder": "ex. 100,000$",
-
-  "INTERN" : "Internship",
-  "EMPLOYEE" : "Employment",
-  "Developer":"Development",
-  "Marketing":"Marketing",
-  "Graphist":"Graphic Design",
-  "Immigration":"Immigration",
-  "Accountant":"Accounting",
-  "administrative":"Administrative",
 
   "contactForm": {
     "title": "Reach us",

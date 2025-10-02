@@ -11,16 +11,6 @@ export default function HandicraftForm({lang}: {lang: string}) {
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
 
-    INTERN: t('INTERN'),
-    EMPLOYEE: t('EMPLOYEE'),
-
-    Developer: t('Developer'),
-    Marketing: t('Marketing'),
-    Graphist: t('Graphist'),
-    Immigration: t('Immigration'),
-    Accountant: t('Accountant'),
-    Administrative: t('Administrative'),
-
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
     firstNamePlaceholder: t('firstNamePlaceholder'),

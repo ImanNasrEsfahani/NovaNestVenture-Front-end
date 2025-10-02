@@ -14,15 +14,6 @@ type Props = {
   };
   noLabel: boolean;
   translations: {
-    INTERN: string;
-    EMPLOYEE: string;
-
-    Developer: string;
-    Marketing: string;
-    Graphist: string;
-    Immigration: string;
-    Accountant: string;
-    Administrative: string;
 
     firstName: string;
     firstNameRequired: string;
@@ -45,10 +36,12 @@ type Props = {
     TypeOfCollaboration: string;
     TypeOfCollaborationRequired: string;
     TypeOfCollaborationPlaceholder: string;
+    TypeOfCollaborationData: { value: number; label: string }[];
 
     FieldOfExpert: string;
     FieldOfExpertRequired: string;
     FieldOfExpertPlaceholder: string;
+    FieldOfExpertData: { value: number; label: string }[];
   }
 };
 
@@ -59,39 +52,6 @@ export default function PersonalInfoInput({
   noLabel,
   translations
 }: Props) {
-
-  enum TypeOfCollaborationType {
-    INTERN = 0,
-    EMPLOYEE = 1
-  }
-  const TypeOfCollaborationArray = [TypeOfCollaborationType.INTERN, TypeOfCollaborationType.EMPLOYEE];
-
-  const TypeOfCollaborationData = TypeOfCollaborationArray.map((type: any) => ({
-    value: type,
-    label: TypeOfCollaborationType[type]
-  }));
-
-  enum FieldOfExpert {
-    Developer = 0,
-    Marketing = 1,
-    Graphist = 2,
-    Immigration = 3,
-    Accountant = 4,
-    Administrative = 5
-  }
-  const FieldOfExpertArray = [
-    FieldOfExpert.Developer,
-    FieldOfExpert.Marketing,
-    FieldOfExpert.Graphist,
-    FieldOfExpert.Immigration,
-    FieldOfExpert.Accountant,
-    FieldOfExpert.Administrative
-  ];
-
-  const FieldOfExpertData = FieldOfExpertArray.map((type: any) => ({
-    value: type,
-    label: FieldOfExpert[type]
-  }));
 
   // const handleItemChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
   //   setSelectedRadio(event.target.value);
@@ -239,7 +199,7 @@ export default function PersonalInfoInput({
             labelClass=" dark:text-current"
             className="input col-span-1 mb-1 w-full"
             placeholder={translations.TypeOfCollaborationPlaceholder}
-            options={TypeOfCollaborationData}
+            options={translations.TypeOfCollaborationData}
           />
         </div>
       )}
@@ -254,7 +214,7 @@ export default function PersonalInfoInput({
             labelClass=" dark:text-current"
             className="input col-span-1 mb-1 w-full"
             placeholder={translations.FieldOfExpertPlaceholder}
-            options={FieldOfExpertData}
+            options={translations.FieldOfExpertData}
           />
         </div>
       )}

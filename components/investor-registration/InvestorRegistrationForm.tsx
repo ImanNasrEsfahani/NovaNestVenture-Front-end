@@ -46,16 +46,6 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
     cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
     cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
 
-    INTERN: t('INTERN'),
-    EMPLOYEE: t('EMPLOYEE'),
-
-    Developer: t('Developer'),
-    Marketing: t('Marketing'),
-    Graphist: t('Graphist'),
-    Immigration: t('Immigration'),
-    Accountant: t('Accountant'),
-    Administrative: t('Administrative'),
-
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
     firstNamePlaceholder: t('firstNamePlaceholder'),

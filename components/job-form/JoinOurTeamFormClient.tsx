@@ -29,16 +29,6 @@ interface Translations {
   failedMessage: string;
   choseFile: string;
   
-  INTERN: string;
-  EMPLOYEE: string;
-  
-  Developer: string;
-  Marketing: string;
-  Graphist: string;
-  Immigration: string;
-  Accountant: string;
-  Administrative: string;
-  
   firstName: string;
   firstNameRequired: string;
   firstNamePlaceholder: string;
@@ -60,11 +50,13 @@ interface Translations {
   TypeOfCollaboration: string;
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
+  TypeOfCollaborationData: { value: number; label: string }[];
 
   FieldOfExpert: string;
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
-  
+  FieldOfExpertData: { value: number; label: string }[];
+
   title: string;
   yesLabel: string;
   noLabel: string;
@@ -84,6 +76,8 @@ interface Translations {
   workHistorySummary: string;
   workHistorySummaryRequired: string;
   workHistorySummaryPlaceholder: string;
+
+  EducationLevelsData: { value: number; label: string }[];
 }
 
 interface Props {
@@ -199,25 +193,6 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
   
-  enum EducationLevels {
-    Diploma = 0,
-    Bachelor = 1,
-    Master = 2,
-    PhD = 3
-  }
-  const EducationLevelsArray = [
-    EducationLevels.Diploma,
-    EducationLevels.Bachelor,
-    EducationLevels.Master,
-    EducationLevels.PhD
-  ];
-
-  const EducationLevelsData = EducationLevelsArray.map((type: any) => ({
-    value: type,
-    label: EducationLevels[type]
-  }));
-
-
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle
@@ -239,16 +214,6 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
             }}
             noLabel={false}
             translations={{
-              INTERN: translations.INTERN,
-              EMPLOYEE: translations.EMPLOYEE,
-
-              Developer: translations.Developer,
-              Marketing: translations.Marketing,
-              Graphist: translations.Graphist,
-              Immigration: translations.Immigration,
-              Accountant: translations.Accountant,
-              Administrative: translations.Administrative,
-
               firstName: translations.firstName,
               firstNameRequired: translations.firstNameRequired,
               firstNamePlaceholder: translations.firstNamePlaceholder,
@@ -270,10 +235,12 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               TypeOfCollaboration: translations.TypeOfCollaboration,
               TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
               TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
+              TypeOfCollaborationData: translations.TypeOfCollaborationData,
 
               FieldOfExpert: translations.FieldOfExpert,
               FieldOfExpertRequired: translations.FieldOfExpertRequired,
               FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
+              FieldOfExpertData: translations.FieldOfExpertData
             }}
           />
         </div>
@@ -333,7 +300,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                     labelClass=" dark:text-current"
                     className="input col-span-1 mb-1 w-full"
                     placeholder={translations.EducationLevelsPlaceholder}
-                    options={EducationLevelsData}
+                    options={translations.EducationLevelsData}
                   />
                 </div>
 

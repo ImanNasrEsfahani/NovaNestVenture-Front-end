@@ -15,16 +15,6 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
     
-    INTERN: t('INTERN'),
-    EMPLOYEE: t('EMPLOYEE'),
-
-    Developer: t('Developer'),
-    Marketing: t('Marketing'),
-    Graphist: t('Graphist'),
-    Immigration: t('Immigration'),
-    Accountant: t('Accountant'),
-    Administrative: t('Administrative'),
-    
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
     firstNamePlaceholder: t('firstNamePlaceholder'),
@@ -46,11 +36,13 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
     TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
+    TypeOfCollaborationData: t('TypeOfCollaborationData', { returnObjects: true }) || [],
 
     FieldOfExpert: t('FieldOfExpert'),
     FieldOfExpertRequired: t('FieldOfExpertRequired'),
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
-
+    FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || [],
+    
     title: t('join-our-team', { returnObjects: true }).resumeQuestion,
     yesLabel: t('yes'),
     noLabel: t('no'),
@@ -72,6 +64,7 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     workHistorySummaryRequired: t('workHistorySummaryRequired'),
     workHistorySummaryPlaceholder: t('workHistorySummaryPlaceholder'),
 
+    EducationLevelsData: t('EducationLevelsData', { returnObjects: true }),
   };
 
   return <JoinOurTeamFormClient lang={lang} translations={translations} />;

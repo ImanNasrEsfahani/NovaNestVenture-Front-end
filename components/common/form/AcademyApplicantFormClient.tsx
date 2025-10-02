@@ -20,16 +20,6 @@ interface Translations {
     successMessage: string;
     failedMessage: string;
 
-    INTERN: string;
-    EMPLOYEE: string;
-
-    Developer: string;
-    Marketing: string;
-    Graphist: string;
-    Immigration: string;
-    Accountant: string;
-    Administrative: string;
-
     firstName: string;
     firstNameRequired: string;
     firstNamePlaceholder: string;
@@ -51,10 +41,12 @@ interface Translations {
     TypeOfCollaboration: string;
     TypeOfCollaborationRequired: string;
     TypeOfCollaborationPlaceholder: string;
+    TypeOfCollaborationData: { value: number; label: string }[];
 
     FieldOfExpert: string;
     FieldOfExpertRequired: string;
     FieldOfExpertPlaceholder: string;
+    FieldOfExpertData: { value: number; label: string }[];
 }
 
 interface Props {
@@ -165,15 +157,6 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
                     }}
                     noLabel={false}
                     translations={{
-                      INTERN: translations.INTERN,
-                      EMPLOYEE: translations.EMPLOYEE,
-
-                      Developer: translations.Developer,
-                      Marketing: translations.Marketing,
-                      Graphist: translations.Graphist,
-                      Immigration: translations.Immigration,
-                      Accountant: translations.Accountant,
-                      Administrative: translations.Administrative,
 
                       firstName: translations.firstName,
                       firstNameRequired: translations.firstNameRequired,
@@ -196,10 +179,12 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
                       TypeOfCollaboration: translations.TypeOfCollaboration,
                       TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
                       TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
+                      TypeOfCollaborationData: translations.TypeOfCollaborationData,
 
                       FieldOfExpert: translations.FieldOfExpert,
                       FieldOfExpertRequired: translations.FieldOfExpertRequired,
                       FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
+                      FieldOfExpertData: translations.FieldOfExpertData,
                     }}
                 />
             </div>
