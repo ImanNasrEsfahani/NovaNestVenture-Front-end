@@ -120,6 +120,10 @@ interface JoinAsaPartnerFormData {
   lastName: string;
   email: string;
   phoneNumber: string;
+  companyName: string;
+  website: string;
+  linkedin: string;
+  breifIntroduction: string;
   howDidYouKnowUs: string;
 }
 

@@ -12,9 +12,10 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     birthDate: t('birthDate'),
     birthDateErrorMessage: t('birthDateErrorMessage'),
     birthDatePlaceholder: t('birthDatePlaceholder'),
-    preferredAreas: t('preferredAreas'),
-    preferredAreasPlaceholder: t('preferredAreasPlaceholder'),
-    preferredAreasRequired: t('preferredAreasRequired'),
+    ExpertiesAreas: t('ExpertiesAreas'),
+    ExpertiesAreasPlaceholder: t('ExpertiesAreasPlaceholder'),
+    ExpertiesAreasRequired: t('ExpertiesAreasRequired'),
+
     howDidYouKnowUs: t('howDidYouKnowUs'),
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
@@ -35,6 +36,18 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     cityOfResidence: tCountry('cityOfResidence'),
     cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
     cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
+
+    website: t('website'),
+    websiteRequired: t('websiteRequired'),
+    websitePlaceholder: t('websitePlaceholder'),
+    
+    linkedin: t('linkedin'),
+    linkedinRequired: t('linkedinRequired'),
+    linkedinPlaceholder: t('linkedinPlaceholder'),
+
+    instagram: t('instagram'),
+    instagramRequired: t('instagramRequired'),
+    instagramPlaceholder: t('instagramPlaceholder'),
 
     INTERN: t('INTERN'),
     EMPLOYEE: t('EMPLOYEE'),

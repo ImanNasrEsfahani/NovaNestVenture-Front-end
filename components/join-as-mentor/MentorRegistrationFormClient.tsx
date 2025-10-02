@@ -20,9 +20,9 @@ interface Translations {
   birthDate: string;
   birthDateErrorMessage: string;
   birthDatePlaceholder: string;
-  preferredAreas: string;
-  preferredAreasPlaceholder: string;
-  preferredAreasRequired: string;
+  ExpertiesAreas: string;
+  ExpertiesAreasPlaceholder: string;
+  ExpertiesAreasRequired: string;
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
@@ -42,6 +42,18 @@ interface Translations {
   cityOfResidence: string;
   cityOfResidenceRequired: string;
   cityOfResidencePlaceholder: string;
+
+  website: string;
+  websiteRequired: string;
+  websitePlaceholder: string;
+  
+  linkedin: string;
+  linkedinRequired: string;
+  linkedinPlaceholder: string;
+
+  instagram: string;
+  instagramRequired: string;
+  instagramPlaceholder: string;
 
   INTERN: string;
   EMPLOYEE: string;
@@ -252,22 +264,64 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',
                 provinceOfResidence: '',
-                cityOfResidence: ''
+                cityOfResidence: 'cityOfResidence'
               }}
               register={register}
+            />
+
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="website"
+              type="text"
+              label={translations.website}
+              required=""
+              placeholder={translations.websitePlaceholder}
+              className="input col-span-1 mb-1 w-full"
+              labelClass=""
+              patternValue=""
+              patternMessage=""
+            />
+
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="linkedin"
+              type="text"
+              label={translations.linkedin}
+              required=""
+              placeholder={translations.linkedinPlaceholder}
+              className="input col-span-1 mb-1 w-full"
+              labelClass=""
+              patternValue=""
+              patternMessage=""
+            />
+
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="instagram"
+              type="text"
+              label={translations.instagram}
+              required=""
+              placeholder={translations.instagramPlaceholder}
+              className="input col-span-1 mb-1 w-full"
+              labelClass=""
+              patternValue=""
+              patternMessage=""
             />
 
             </div>
             <div className="flex flex-col w-full">
               <TextArea
-                title={translations.preferredAreas}
+                title={translations.ExpertiesAreas}
                 register={register}
                 errors={errors}
-                placeholder={translations.preferredAreasPlaceholder}
-                nameTextArea="preferredAreas"
+                placeholder={translations.ExpertiesAreasPlaceholder}
+                nameTextArea="ExpertiesAreas"
                 patternMessage=""
                 patternValue=""
-                required={translations.preferredAreasRequired}
+                required={translations.ExpertiesAreasRequired}
                 rows={3}
               />
 
