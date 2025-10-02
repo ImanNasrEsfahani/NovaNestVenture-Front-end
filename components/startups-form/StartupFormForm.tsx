@@ -24,9 +24,14 @@ export default function StartupFormForm({lang}: {lang: string}) {
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
     provinceOfResidence: tCountry('provinceOfResidence'),
     provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
     provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
 
     accelerators: t('startUp', { returnObjects: true }).commons.accelerators,
     acceleratorsRequired: t('startUp', { returnObjects: true }).commons.acceleratorsRequired,

@@ -16,7 +16,10 @@ export default function StartupFormPersonalInformation({
   countryNamePlaceholder,
   provinceOfResidence,
   provinceOfResidenceRequired,
-  provinceOfResidencePlaceholder
+  provinceOfResidencePlaceholder,
+  cityOfResidence,
+  cityOfResidenceRequired,
+  cityOfResidencePlaceholder
 }: {
   lang: string;
   register: any;
@@ -29,6 +32,9 @@ export default function StartupFormPersonalInformation({
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
 }) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
@@ -108,6 +114,10 @@ export default function StartupFormPersonalInformation({
           provinceOfResidence={provinceOfResidence}
           provinceOfResidenceRequired={provinceOfResidenceRequired}
           provinceOfResidencePlaceholder={provinceOfResidencePlaceholder}
+          cityOfResidence={cityOfResidence}
+          cityOfResidenceRequired={cityOfResidenceRequired}
+          cityOfResidencePlaceholder={cityOfResidencePlaceholder}
+          
           lang={lang}
           errors={errors}
           nameInputs={{
