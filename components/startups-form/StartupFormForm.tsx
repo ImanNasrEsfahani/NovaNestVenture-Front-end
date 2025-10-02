@@ -20,7 +20,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
     formTitle: t('startUp', { returnObjects: true }).formTitle,
     formSubtitle: t('startUp', { returnObjects: true }).formSubtitle,
 
-    countries: tCountry('countries', { returnObjects: true }),
+    countries: tCountry('countries', { returnObjects: true }) || [],
     countryName: tCountry('countryName'),
     countryNameRequired: tCountry('countryNameRequired'),
     countryNamePlaceholder: tCountry('countryNamePlaceholder'),
@@ -46,7 +46,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
         <h1 className="font-header text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
           {t('startUp', { returnObjects: true }).formHeader}
         </h1>
-        {t('startUp', { returnObjects: true }).formContent.map((paragraph: string, index: number) => (
+        {(t('startUp', { returnObjects: true }).formContent || []).map((paragraph: string, index: number) => (
           <p key={index} className="text-lg mb-4 leading-relaxed">
             {paragraph}
           </p>
