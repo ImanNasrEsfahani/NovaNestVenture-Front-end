@@ -50,7 +50,7 @@ export default function StartupFormPersonalInformation({
             lastName: 'lastName',
             phoneNumber: 'phoneNumber',
             email: 'email',
-            jobPosition: ''
+            TypeOfCollaboration: ''
           }}
           noLabel={false}
           translations={{
@@ -82,13 +82,13 @@ export default function StartupFormPersonalInformation({
             phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
             phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
-            jobPosition: t('jobPosition'),
-            jobPositionRequired: t('jobPositionRequired'),
-            jobPositionPlaceholder: t('jobPositionPlaceholder'),
+            TypeOfCollaboration: translations.TypeOfCollaboration,
+            TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
+            TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
 
-            application: t('application'),
-            applicationRequired: t('applicationRequired'),
-            applicationPlaceholder: t('applicationPlaceholder'),
+            FieldOfExpert: translations.FieldOfExpert,
+            FieldOfExpertRequired: translations.FieldOfExpertRequired,
+            FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
           }}
         />
 

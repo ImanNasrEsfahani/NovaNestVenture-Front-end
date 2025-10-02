@@ -4,7 +4,7 @@ import {
   AccelerationApplicantFormDataType,
   WorkWithUSFormData,
   JoinAsaPartnerFormData,
-  JobFormData,
+  JoinOurTeamFormData,
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
   Entrepreuneur,
@@ -70,11 +70,17 @@ const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
   howDidYouKnowUs: '',
 };
 
-const initialJobFormData: JobFormData = {
+const initialJoinOurTeamFormData: JoinOurTeamFormData = {
   firstName: '',
   lastName: '',
   email: '',
   phoneNumber: '',
+  TypeOfCollaboration: '',
+  FieldOfExpert: '',
+  birthDate: '',
+  educationField: '',
+  educationLevel: '',
+  workHistorySummary: '',
   cvFile: '' as File | ''
 };
 
@@ -188,7 +194,7 @@ const RegisterationFormData: FormData = {
 export {
   initialStartupsFormData,
   initialJoinAsaPartnerFormData,
-  initialJobFormData,
+  initialJoinOurTeamFormData,
   initialInvestorRegistrationFormData,
   initialMentorRegistrationFormData,
   initialFormData,

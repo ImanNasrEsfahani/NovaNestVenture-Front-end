@@ -6,11 +6,12 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
 
   // Pass translations as props to client component
   const translations = {
+    
     formTitle: t('join-our-team', { returnObjects: true }).formTitle,
     formSubtitle: t('join-our-team', { returnObjects: true }).formSubtitle,
     resumeFile: t('join-our-team', { returnObjects: true }).resumeFile,
     choseFile: t('join-our-team', { returnObjects: true }).choseFile,
-
+    
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
     
@@ -23,11 +24,11 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     Immigration: t('Immigration'),
     Accountant: t('Accountant'),
     Administrative: t('Administrative'),
-
+    
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
     firstNamePlaceholder: t('firstNamePlaceholder'),
-
+    
     lastName: t('lastName'),
     lastNameRequired: t('lastNameRequired'),
     lastNamePlaceholder: t('lastNamePlaceholder'),
@@ -36,19 +37,41 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     emailRequired: t('emailRequired'),
     emailErrorMessage: t('emailErrorMessage'),
     emailPlaceholder: t('emailPlaceholder'),
-
+    
     phoneNumber: t('phoneNumber'),
     phoneNumberRequired: t('phoneNumberRequired'),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
-    jobPosition: t('jobPosition'),
-    jobPositionRequired: t('jobPositionRequired'),
-    jobPositionPlaceholder: t('jobPositionPlaceholder'),
+    TypeOfCollaboration: t('TypeOfCollaboration'),
+    TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
+    TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
 
-    application: t('application'),
-    applicationRequired: t('applicationRequired'),
-    applicationPlaceholder: t('applicationPlaceholder'),
+    FieldOfExpert: t('FieldOfExpert'),
+    FieldOfExpertRequired: t('FieldOfExpertRequired'),
+    FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
+
+    title: t('join-our-team', { returnObjects: true }).resumeQuestion,
+    yesLabel: t('yes'),
+    noLabel: t('no'),
+
+    birthDate: t('birthDate'),
+    birthDateRequired: t('birthDateRequired'),
+    birthDateErrorMessage: t('birthDateErrorMessage'),
+    birthDatePlaceholder: t('birthDatePlaceholder'),
+
+    EducationLevels: t('EducationLevels'),
+    EducationLevelsRequired: t('EducationLevelsRequired'),
+    EducationLevelsPlaceholder: t('EducationLevelsPlaceholder'),
+
+    EducationField: t('EducationField'),
+    EducationFieldRequired: t('EducationFieldRequired'),
+    EducationFieldPlaceholder: t('EducationFieldPlaceholder'),
+    
+    workHistorySummary: t('workHistorySummary'),
+    workHistorySummaryRequired: t('workHistorySummaryRequired'),
+    workHistorySummaryPlaceholder: t('workHistorySummaryPlaceholder'),
+
   };
 
   return <JoinOurTeamFormClient lang={lang} translations={translations} />;

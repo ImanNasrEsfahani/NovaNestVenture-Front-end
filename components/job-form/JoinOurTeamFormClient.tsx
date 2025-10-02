@@ -1,11 +1,10 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import UploadInput from '@/components/common/UploadInput';
-import { JobFormData } from '@/types/global';
+import { JoinOurTeamFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
-import { initialJobFormData } from '../../initials/initObjects';
+import { initialJoinOurTeamFormData } from '../../initials/initObjects';
 import { submitApplyJobForm } from '../../pages/api/jobs';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
@@ -15,7 +14,14 @@ import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
 import FileUpload from '@/components/common/form/FileUpload';
 
+import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
+import Input from '@/components/common/form/Input';
+import Select from '@/components/common/form/Select';
+import TextArea from '@/components/common/TextArea';
+
+
 interface Translations {
+  
   formTitle: string;
   formSubtitle: string;
   resumeFile: string;
@@ -25,40 +31,63 @@ interface Translations {
   
   INTERN: string;
   EMPLOYEE: string;
-
+  
   Developer: string;
   Marketing: string;
   Graphist: string;
   Immigration: string;
   Accountant: string;
   Administrative: string;
-
+  
   firstName: string;
   firstNameRequired: string;
   firstNamePlaceholder: string;
-
+  
   lastName: string;
   lastNameRequired: string;
   lastNamePlaceholder: string;
-
+  
   email: string;
   emailRequired: string;
   emailErrorMessage: string;
   emailPlaceholder: string;
-
+  
   phoneNumber: string;
   phoneNumberRequired: string;
   phoneNumberErrorMessage: string;
   phoneNumberPlaceholder: string;
+  
+  TypeOfCollaboration: string;
+  TypeOfCollaborationRequired: string;
+  TypeOfCollaborationPlaceholder: string;
 
-  jobPosition: string;
-  jobPositionRequired: string;
-  jobPositionPlaceholder: string;
+  FieldOfExpert: string;
+  FieldOfExpertRequired: string;
+  FieldOfExpertPlaceholder: string;
 
   application: string;
   applicationRequired: string;
   applicationPlaceholder: string;
+  
+  title: string;
+  yesLabel: string;
+  noLabel: string;
 
+  birthDate: string;
+  birthDateErrorMessage: string;
+  birthDatePlaceholder: string;
+
+  EducationLevels: string;
+  EducationLevelsRequired: string;
+  EducationLevelsPlaceholder: string;
+
+  EducationField: string;
+  EducationFieldRequired: string;
+  EducationFieldPlaceholder: string;
+
+  workHistorySummary: string;
+  workHistorySummaryRequired: string;
+  workHistorySummaryPlaceholder: string;
 }
 
 interface Props {
@@ -73,9 +102,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<JobFormData>({
+  } = useForm<JoinOurTeamFormData>({
     mode: 'onBlur',
-    defaultValues: initialJobFormData
+    defaultValues: initialJoinOurTeamFormData
   });
 
   const {
@@ -105,7 +134,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     };
   }, [handleTokenChange]);
 
-  const onSubmit = async (formData: JobFormData) => {
+  const onSubmit = async (formData: JoinOurTeamFormData) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -136,7 +165,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialJobFormData); // Country does not reset
+        reset(initialJoinOurTeamFormData); // Country does not reset
 
         console.log(response);
 
@@ -172,6 +201,27 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     }
   };
 
+  const [fileCounterState, setFileCounter] = useState<boolean>(false);
+  
+  enum EducationLevels {
+    Diploma = 0,
+    Bachelor = 1,
+    Master = 2,
+    PhD = 3
+  }
+  const EducationLevelsArray = [
+    EducationLevels.Diploma,
+    EducationLevels.Bachelor,
+    EducationLevels.Master,
+    EducationLevels.PhD
+  ];
+
+  const EducationLevelsData = EducationLevelsArray.map((type: any) => ({
+    value: type,
+    label: EducationLevels[type]
+  }));
+
+
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle
@@ -189,7 +239,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               lastName: 'lastName',
               email: 'email',
               phoneNumber: 'phoneNumber',
-              jobPosition: 'jobPosition'
+              TypeOfCollaboration: 'TypeOfCollaboration'
             }}
             noLabel={false}
             translations={{
@@ -221,22 +271,114 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
               phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
 
-              jobPosition: translations.jobPosition,
-              jobPositionRequired: translations.jobPositionRequired,
-              jobPositionPlaceholder: translations.jobPositionPlaceholder,
+              TypeOfCollaboration: translations.TypeOfCollaboration,
+              TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
+              TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
 
-              application: translations.application,
-              applicationRequired: translations.applicationRequired,
-              applicationPlaceholder: translations.applicationPlaceholder,
+              FieldOfExpert: translations.FieldOfExpert,
+              FieldOfExpertRequired: translations.FieldOfExpertRequired,
+              FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
             }}
           />
+        </div>
+
+        <div className="w-full flex flex-col">
+          <YesOrNoQuestion
+            title={translations.title}
+            yesLabel={translations.yesLabel}
+            noLabel={translations.noLabel}
+            value={fileCounterState}
+            onChange={setFileCounter}
+            name="fileCounter"
+          />
+          <div
+            aria-hidden={!fileCounterState}
+            className={`w-full md:max-w-lg 2xl:max-w-xl mt-6 mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+              ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+          >
+            <div className="px-4">
+              <FileUpload name="cvFile" label={translations.choseFile} onChange={onCvFileChange} disabled={!fileCounterState} />
+            </div>
+          </div>
+  
+          <div
+            aria-hidden={fileCounterState}
+            className={`w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+              ${!fileCounterState ? 'max-h-[1200px] opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+          >
+            {/* disable native form controls while hidden to avoid focusable hidden elements */}
+            <fieldset disabled={fileCounterState} className="w-full">
+              <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-4 pt-6">
+                <div className="col-span-1">
+                  <Input
+                    register={register}
+                    errors={errors}
+                    nameInput="birthDate"
+                    type="date"
+                    label={translations.birthDate}
+                    required={''}
+                    patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
+                    patternMessage={translations.birthDateErrorMessage}
+                    placeholder={translations.birthDatePlaceholder}
+                    className="input col-span-1 mb-1 w-full"
+                    labelClass="dark:text-current"
+                  />
+                </div>
+                
+                <br />
+
+                <div className="col-span-1">
+                  <Select
+                    register={register}
+                    errors={errors}
+                    nameInput="educationLevel"
+                    label={translations.EducationLevels}
+                    required={!fileCounterState ? translations.EducationLevelsRequired : ''}
+                    labelClass=" dark:text-current"
+                    className="input col-span-1 mb-1 w-full"
+                    placeholder={translations.EducationLevelsPlaceholder}
+                    options={EducationLevelsData}
+                  />
+                </div>
+
+                <div className="col-span-1">
+                  <Input
+                    register={register}
+                    errors={errors}
+                    nameInput="educationField"
+                    type="text"
+                    label={translations.EducationField}
+                    required={!fileCounterState ? translations.EducationFieldRequired : ''}
+                    placeholder={translations.EducationFieldPlaceholder}
+                    className="input col-span-1 mb-1 w-full"
+                    labelClass=""
+                    patternValue=""
+                    patternMessage=""
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <div className="flex flex-col w-full">
+              <TextArea
+                title={translations.workHistorySummary}
+                register={register}
+                errors={errors}
+                placeholder={translations.workHistorySummaryPlaceholder}
+                nameTextArea="workHistorySummary"
+                patternMessage=""
+                patternValue=""
+                required={!fileCounterState ? translations.workHistorySummaryRequired : ''}
+                rows={3}
+              />
+
+            </div>
 
 
-          <div className="mt-2">
-            <FileUpload name="cvFile" label={translations.choseFile} onChange={onCvFileChange}/>
           </div>
         </div>
-        <div className="pb-4 md:mx-auto text-center">
+          
+        <div className="pt-24 pb-4 md:mx-auto text-center">
           {/* <ButtonRefactor type="submit" text="Submit" /> */}
           <Button
             type="submit"

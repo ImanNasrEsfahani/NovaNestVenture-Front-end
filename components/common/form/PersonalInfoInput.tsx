@@ -1,8 +1,6 @@
 'use client';
-// import React, { useState } from 'react'
 import Input from '@/components/common/form/Input';
-import { Type } from '@prisma/client';
-import Select from './Select';
+import Select from '@/components/common/form/Select';
 
 type Props = {
   register: any;
@@ -12,7 +10,7 @@ type Props = {
     lastName: string;
     email: string;
     phoneNumber: string;
-    jobPosition: string;
+    TypeOfCollaboration: string;
   };
   noLabel: boolean;
   translations: {
@@ -44,13 +42,13 @@ type Props = {
     phoneNumberErrorMessage: string;
     phoneNumberPlaceholder: string;
 
-    jobPosition: string;
-    jobPositionRequired: string;
-    jobPositionPlaceholder: string;
+    TypeOfCollaboration: string;
+    TypeOfCollaborationRequired: string;
+    TypeOfCollaborationPlaceholder: string;
 
-    application: string;
-    applicationRequired: string;
-    applicationPlaceholder: string;
+    FieldOfExpert: string;
+    FieldOfExpertRequired: string;
+    FieldOfExpertPlaceholder: string;
   }
 };
 
@@ -62,18 +60,18 @@ export default function PersonalInfoInput({
   translations
 }: Props) {
 
-  enum Type {
+  enum TypeOfCollaborationType {
     INTERN = 0,
     EMPLOYEE = 1
   }
-  const Types = [Type.INTERN, Type.EMPLOYEE];
+  const TypeOfCollaborationArray = [TypeOfCollaborationType.INTERN, TypeOfCollaborationType.EMPLOYEE];
 
-  const typesData = Types.map((type: any) => ({
+  const TypeOfCollaborationData = TypeOfCollaborationArray.map((type: any) => ({
     value: type,
-    label: type
+    label: TypeOfCollaborationType[type]
   }));
 
-  enum Type {
+  enum FieldOfExpert {
     Developer = 0,
     Marketing = 1,
     Graphist = 2,
@@ -81,18 +79,18 @@ export default function PersonalInfoInput({
     Accountant = 4,
     Administrative = 5
   }
-  const Types1 = [
-    Type.Developer,
-    Type.Marketing,
-    Type.Graphist,
-    Type.Immigration,
-    Type.Accountant,
-    Type.Administrative
+  const FieldOfExpertArray = [
+    FieldOfExpert.Developer,
+    FieldOfExpert.Marketing,
+    FieldOfExpert.Graphist,
+    FieldOfExpert.Immigration,
+    FieldOfExpert.Accountant,
+    FieldOfExpert.Administrative
   ];
 
-  const types1Data = Types1.map((type: any) => ({
+  const FieldOfExpertData = FieldOfExpertArray.map((type: any) => ({
     value: type,
-    label: type
+    label: FieldOfExpert[type]
   }));
 
   // const handleItemChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -230,65 +228,36 @@ export default function PersonalInfoInput({
           )}
         </div>
       )}
-      {nameInputs?.jobPosition && (
+      {nameInputs?.TypeOfCollaboration && (
         <div className="col-span-1">
           <Select
             register={register}
             errors={errors}
-            nameInput="Application"
-            label={translations.jobPosition}
-            required={translations.jobPositionRequired}
+            nameInput="TypeOfCollaboration"
+            label={translations.TypeOfCollaboration}
+            required={translations.TypeOfCollaborationRequired}
             labelClass=" dark:text-current"
             className="input col-span-1 mb-1 w-full"
-            placeholder={translations.jobPositionPlaceholder}
-            options={typesData}
+            placeholder={translations.TypeOfCollaborationPlaceholder}
+            options={TypeOfCollaborationData}
           />
         </div>
       )}
-      {nameInputs?.jobPosition && (
+      {nameInputs?.TypeOfCollaboration && (
         <div>
           <Select
             register={register}
             errors={errors}
-            nameInput="statusSelect"
-            label={translations.application}
-            required={translations.applicationRequired}
+            nameInput="FieldOfExpert"
+            label={translations.FieldOfExpert}
+            required={translations.FieldOfExpertRequired}
             labelClass=" dark:text-current"
             className="input col-span-1 mb-1 w-full"
-            placeholder={translations.applicationPlaceholder}
-            options={types1Data}
+            placeholder={translations.FieldOfExpertPlaceholder}
+            options={FieldOfExpertData}
           />
         </div>
       )}
-      {/* <Select
-            register={register}
-            errors={errors}
-            nameInput="statusSelect"
-            label={translations.jobPosition}
-            required={translations.jobPositionRequired}
-            className="select select-bordered col-span-1 mb-1 w-full"
-            labelClass=" dark:text-current"
-            placeholder={translations.jobPositionPlaceholder}
-              
-            options={typesData}
-            handleChange={handleItemChange}
-            selected={selectedRadio}
-          />
-          <Select
-
-            register={register}
-            errors={errors}
-            nameInput="statusSelect"
-            label={translations.application}
-            required={translations.applicationRequired}
-            className="select select-bordered col-span-1 mb-1 w-full"
-            labelClass=" dark:text-current"
-            placeholder={translations.applicationPlaceholder}
-              
-            options={typesData}
-            handleChange={handleItemChange}
-            selected={selectedRadio}
-          /> */}
     </>
   );
 };

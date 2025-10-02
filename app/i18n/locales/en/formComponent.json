@@ -20,20 +20,32 @@
   "phoneNumberErrorMessage": "Enter a Valid Phone Number",
   "phoneNumberPlaceholder": "Your Phone Number",
 
-  "jobPosition": "Type of Collaboration *",
-  "jobPositionRequired": "Type of Collaboration is Required",
-  "jobPositionErrorMassage": "Select a Type",
-  "jobPositionPlaceholder": " Select a Type of Collaboration",
+  "TypeOfCollaboration": "Type of Collaboration *",
+  "TypeOfCollaborationRequired": "Type of Collaboration is Required",
+  "TypeOfCollaborationErrorMassage": "Select a Type",
+  "TypeOfCollaborationPlaceholder": " Select a Type of Collaboration",
 
-  "application": "Type of Application *",
-  "applicationRequired": "Type of Application is Required",
-  "applicationErrorMassage": "Select a Type",
-  "applicationPlaceholder": "Select a Type of Application",
+  "FieldOfExpert": "Field of Expert *",
+  "FieldOfExpertRequired": "Field of Expert is Required",
+  "FieldOfExpertErrorMassage": "Select a Field of Expert",
+  "FieldOfExpertPlaceholder": "Select a Field of Expert",
 
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
   "birthDateErrorMessage": "Please enter a valid Date of Birth(e.g., 2001/02/11)",
   "birthDatePlaceholder": "Date of Birth",
+
+  "EducationLevels": "Education Level *",
+  "EducationLevelsRequired": "Education Level is Required",
+  "EducationLevelsPlaceholder": "Select Your Education Level",
+
+  "EducationField": "Please specify your field of study. *",
+  "EducationFieldRequired": "Field of study is required.",
+  "EducationFieldPlaceholder": "Enter your field of study like Computer Science, Business Administration, etc.",
+
+  "workHistorySummary": "Work History Summary",
+  "workHistorySummaryRequired": "Work History Summary is required.",
+  "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
 
   "sendButton": "Send",
   "ReserveButton": "Reserve my free consultation",
@@ -118,7 +130,8 @@
     "formTitle": "Join Our Team ",
     "formSubtitle": "Personal Information",
     "resumeFile": "CV File:",
-    "choseFile": "Choose File"
+    "choseFile": "Choose File",
+    "resumeQuestion": "Do you have an updated CV or resume?"
   },
 
   "workWithUS": {
@@ -213,9 +226,6 @@
     "secondTitle": "Grows and Scale Up",
     "subTitle": "Let’s Talk About Your Project",
     "formSubtitle": "Let’s Talk About Your Project",
-    "statusSelect": "Select Your Status:",
-    "statusSelectRequired": "Your Status is Required",
-    "statusSelectPlaceholder": "Select Your Status:",
     
     "idea": {
       "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",

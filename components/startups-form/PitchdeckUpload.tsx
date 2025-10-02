@@ -10,7 +10,7 @@ import ProblemsSection from '@/components/startups-form/ProblemSection';
 import SolutionLevel from '@/components/startups-form/SolutionLevel';
 import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown';
 import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
-import YesOrNoQuestion from './YesOrNoQuestion';
+import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 
 interface PitchdeckUploadProps {
   problem: boolean,

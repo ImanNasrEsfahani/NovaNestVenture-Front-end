@@ -48,13 +48,13 @@ interface Translations {
     phoneNumberErrorMessage: string;
     phoneNumberPlaceholder: string;
 
-    jobPosition: string;
-    jobPositionRequired: string;
-    jobPositionPlaceholder: string;
+    TypeOfCollaboration: string;
+    TypeOfCollaborationRequired: string;
+    TypeOfCollaborationPlaceholder: string;
 
-    application: string;
-    applicationRequired: string;
-    applicationPlaceholder: string;
+    FieldOfExpert: string;
+    FieldOfExpertRequired: string;
+    FieldOfExpertPlaceholder: string;
 }
 
 interface Props {
@@ -161,7 +161,7 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
                         lastName: 'lastname',
                         email: 'email',
                         phoneNumber: 'number',
-                        jobPosition: ''
+                        TypeOfCollaboration: ''
                     }}
                     noLabel={false}
                     translations={{
@@ -193,13 +193,13 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
                       phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
                       phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
 
-                      jobPosition: translations.jobPosition,
-                      jobPositionRequired: translations.jobPositionRequired,
-                      jobPositionPlaceholder: translations.jobPositionPlaceholder,
+                      TypeOfCollaboration: translations.TypeOfCollaboration,
+                      TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
+                      TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
 
-                      application: translations.application,
-                      applicationRequired: translations.applicationRequired,
-                      applicationPlaceholder: translations.applicationPlaceholder,
+                      FieldOfExpert: translations.FieldOfExpert,
+                      FieldOfExpertRequired: translations.FieldOfExpertRequired,
+                      FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
                     }}
                 />
             </div>

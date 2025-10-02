@@ -128,11 +128,17 @@ interface JoinAsaPartnerFormData {
 }
 
 // Define an interface for job application form data
-interface JobFormData {
+interface JoinOurTeamFormData {
   firstName: string;
   lastName: string;
   email: string;
   phoneNumber: string;
+  TypeOfCollaboration: string;
+  FieldOfExpert: string;
+  birthDate: string;
+  educationField: string;
+  educationLevel: string;
+  workHistorySummary: string;
   cvFile?: File | '' | undefined;
 }
 
@@ -469,7 +475,7 @@ export {
   JoinAsaPartnerFormData,
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
-  JobFormData,
+  JoinOurTeamFormData,
   Entrepreuneur,
   LoginFormData,
   DecodedToken,

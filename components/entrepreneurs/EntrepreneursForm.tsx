@@ -71,13 +71,13 @@ export default function EntrepreneursForm({lang}: {lang: string}) {
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
-    jobPosition: t('jobPosition'),
-    jobPositionRequired: t('jobPositionRequired'),
-    jobPositionPlaceholder: t('jobPositionPlaceholder'),
+    TypeOfCollaboration: t('TypeOfCollaboration'),
+    TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
+    TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
 
-    application: t('application'),
-    applicationRequired: t('applicationRequired'),
-    applicationPlaceholder: t('applicationPlaceholder'),
+    FieldOfExpert: t('FieldOfExpert'),
+    FieldOfExpertRequired: t('FieldOfExpertRequired'),
+    FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
   };
 
   return <EntrepreneursFormClient lang={lang} translations={translations} />;

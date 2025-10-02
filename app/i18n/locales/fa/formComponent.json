@@ -20,15 +20,15 @@
   "phoneNumberErrorMessage": "شماره تماس را به درستی وارد کنید.",
   "phoneNumberPlaceholder": "لطفا شماره تماس خود را وارد کنید.",
 
-  "jobPosition": "نوع همکاری",
-  "jobPositionRequired": "نوع همکاری واجب است",
-  "jobPositionErrorMassage": "نوع همکاری را وارد کنید",
-  "jobPositionPlaceholder":"نوع همکاری را انتخاب کنید",
+  "TypeOfCollaboration": "نوع همکاری",
+  "TypeOfCollaborationRequired": "نوع همکاری واجب است",
+  "TypeOfCollaborationErrorMassage": "نوع همکاری را وارد کنید",
+  "TypeOfCollaborationPlaceholder":"نوع همکاری را انتخاب کنید",
 
-  "application": "زمینه فعالیت",
-  "applicationRequired":"زمینه فعالیت اجباری است",
-  "applicationErrorMassage":"زمینه فعالیت را وارد کنید",
-  "applicationPlaceholder":"زمینه فعالیت را انتخاب کنید",
+  "FieldOfExpert": "زمینه تخصصی",
+  "FieldOfExpertRequired":"زمینه تخصصی اجباری است",
+  "FieldOfExpertErrorMassage":"زمینه تخصصی را وارد کنید",
+  "FieldOfExpertPlaceholder":"زمینه تخصصی را انتخاب کنید",
 
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
@@ -203,9 +203,6 @@
     "secondTitle": "رشد و توسعه فردی",
     "subTitle": "درباره پروژه شما",
     "formSubtitle": "درباره پروژه شما",
-    "statusSelect": "استارت‌آپ شما در چه مرحله‌ای است؟ ",
-    "statusSelectRequired": "وضعیت شما الزامی است",
-    "statusSelectPlaceholder": "وضعیت خود را انتخاب کنید: ",
     
     "idea": {
       "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",
