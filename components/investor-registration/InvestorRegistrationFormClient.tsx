@@ -43,9 +43,14 @@ interface Translations {
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
+
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
 
   INTERN: string;
   EMPLOYEE: string;
@@ -244,10 +249,12 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               countryName={translations.countryName}
               countryNameRequired={translations.countryNameRequired}
               countryNamePlaceholder={translations.countryNamePlaceholder}
-
               provinceOfResidence={translations.provinceOfResidence}
               provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
               provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+              cityOfResidence={translations.cityOfResidence}
+              cityOfResidenceRequired={translations.cityOfResidenceRequired}
+              cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
 
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',

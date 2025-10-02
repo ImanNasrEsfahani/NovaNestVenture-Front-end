@@ -34,9 +34,14 @@ interface Translations {
   countryName: string;
   countryNameRequired: string;
   countryNamePlaceholder: string;
+
   provinceOfResidence: string;
   provinceOfResidenceRequired: string;
   provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
 
   INTERN: string;
   EMPLOYEE: string;
@@ -238,6 +243,10 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               provinceOfResidence={translations.provinceOfResidence}
               provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
               provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+              cityOfResidence={translations.cityOfResidence}
+              cityOfResidenceRequired={translations.cityOfResidenceRequired}
+              cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
+              
               lang={lang}
               errors={errors}
               nameInputs={{
