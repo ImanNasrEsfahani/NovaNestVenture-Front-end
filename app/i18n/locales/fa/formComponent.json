@@ -196,6 +196,13 @@
     "subTitle": "درباره پروژه شما",
     "formSubtitle": "درباره پروژه شما",
     
+    "formHeader": "Startup Investment Application",
+    "formContent": [
+      "Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.",
+      "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation.",
+      "Completing this form is the first step toward a potential partnership and investment with us. We look forward to learning more about your startup and exploring how we can support your growth."
+    ],
+    
     "idea": {
       "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",
 
