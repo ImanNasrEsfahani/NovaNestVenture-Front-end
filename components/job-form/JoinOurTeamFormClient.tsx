@@ -64,10 +64,6 @@ interface Translations {
   FieldOfExpert: string;
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
-
-  application: string;
-  applicationRequired: string;
-  applicationPlaceholder: string;
   
   title: string;
   yesLabel: string;
