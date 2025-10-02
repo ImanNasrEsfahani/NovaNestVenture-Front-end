@@ -78,7 +78,37 @@ export default function CountryInput({
       {nameInputs?.countryOfResidence && (
         // wrap Select so we can overlay a caret icon via absolute positioning
         <div className="relative">
-          <Select
+          <label
+            htmlFor={nameInputs.countryOfResidence}
+            className="flex flex-col px-2 !text-[#6B6B6B]"
+          >
+            {countryName}
+            <select
+              id={nameInputs.countryOfResidence}
+              {...register(nameInputs.countryOfResidence, {
+                required: countryNameRequired
+              })}
+              className={`input col-span-1 mb-1 w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] ${errors[nameInputs.countryOfResidence] ? ' border-red-500' : ''}`}
+              onChange={handleCountryChange}
+              defaultValue=""
+            >
+              <option value="" disabled>
+                {countryNamePlaceholder}
+              </option>
+              {countries.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          {errors[nameInputs.countryOfResidence] && (
+            <span className="mt-2 inline text-sm text-red-500">
+              {errors[nameInputs.countryOfResidence].message}
+            </span>
+          )}
+          {/* <Select
             register={register}
             errors={errors}
             nameInput={nameInputs.countryOfResidence}
@@ -90,7 +120,7 @@ export default function CountryInput({
             options={countriesData}
             handleChange={handleCountryChange}
             selected={selectedCountry}
-          />
+          /> */}
           {/* caret icon (pointer-events-none so select still clickable) */}
           <span className="pointer-events-none absolute top-1/2 right-3 text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
