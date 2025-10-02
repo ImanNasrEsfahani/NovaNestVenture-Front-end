@@ -82,13 +82,13 @@ export default function StartupFormPersonalInformation({
             phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
             phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
-            TypeOfCollaboration: translations.TypeOfCollaboration,
-            TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
-            TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
+            TypeOfCollaboration: t('TypeOfCollaboration'),
+            TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
+            TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
 
-            FieldOfExpert: translations.FieldOfExpert,
-            FieldOfExpertRequired: translations.FieldOfExpertRequired,
-            FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
+            FieldOfExpert: t('FieldOfExpert'),
+            FieldOfExpertRequired: t('FieldOfExpertRequired'),
+            FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
           }}
         />
 
