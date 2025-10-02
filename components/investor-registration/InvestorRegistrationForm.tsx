@@ -67,10 +67,12 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
     TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
+    TypeOfCollaborationData: t('TypeOfCollaborationData', { returnObjects: true }),
 
     FieldOfExpert: t('FieldOfExpert'),
     FieldOfExpertRequired: t('FieldOfExpertRequired'),
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
+    FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }),
   };
 
 
