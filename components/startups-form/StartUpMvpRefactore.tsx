@@ -89,6 +89,7 @@ export default function StartUpMvpRefactore({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
         onFileChange={handleBusinessFileChange}
+        errors={errors}
       />
       
       <FinancialAnalysisUpload
@@ -97,6 +98,7 @@ export default function StartUpMvpRefactore({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
         onFileChange={handleFinancialFileChange}
+        errors={errors}
       />
     </div>
   )

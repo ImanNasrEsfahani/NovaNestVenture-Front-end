@@ -87,6 +87,7 @@ export default function StartUpSaleDevelopRefactore({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).SaleDevelopment.choseFile}
         onFileChange={handleBusinessFileChange}
+        errors={errors}
       />
       
       <FinancialAnalysisUpload
@@ -95,6 +96,7 @@ export default function StartUpSaleDevelopRefactore({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).SaleDevelopment.choseFile}
         onFileChange={handleFinancialFileChange}
+        errors={errors}
       />
     </div>
   )
