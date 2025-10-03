@@ -11,7 +11,7 @@ interface AcademicInfoSectionProps {
   errors: FieldErrors<WorkWithUSFormData>;
   workWithUS: any;
   langLevelData: any;
-  TypeOfSkillLevels: { value: string; label: string }[];
+  TypeOfSkillLevels: { value: number; label: string }[];
   cvFileRequired: string;
   onCvFileChange: (file: File) => void;
   handleUniChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
