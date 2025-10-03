@@ -8,34 +8,36 @@ export default function HandicraftForm({lang}: {lang: string}) {
   const translations = {
     button: t('button'),
 
-    successMessage: t('successMessage'),
-    failedMessage: t('failedMessage'),
+    successMessage: t('successMessage', { returnObjects: true }),
+    failedMessage: t('failedMessage', { returnObjects: true }),
 
-    firstName: t('firstName'),
-    firstNameRequired: t('firstNameRequired'),
-    firstNamePlaceholder: t('firstNamePlaceholder'),
+    firstName: t('firstName', { returnObjects: true }),
+    firstNameRequired: t('firstNameRequired', { returnObjects: true }),
+    firstNamePlaceholder: t('firstNamePlaceholder', { returnObjects: true }),
 
-    lastName: t('lastName'),
-    lastNameRequired: t('lastNameRequired'),
-    lastNamePlaceholder: t('lastNamePlaceholder'),
+    lastName: t('lastName', { returnObjects: true }),
+    lastNameRequired: t('lastNameRequired', { returnObjects: true }),
+    lastNamePlaceholder: t('lastNamePlaceholder', { returnObjects: true }),
     
-    email: t('email'),
-    emailRequired: t('emailRequired'),
-    emailErrorMessage: t('emailErrorMessage'),
-    emailPlaceholder: t('emailPlaceholder'),
+    email: t('email', { returnObjects: true }),
+    emailRequired: t('emailRequired', { returnObjects: true }),
+    emailErrorMessage: t('emailErrorMessage', { returnObjects: true }),
+    emailPlaceholder: t('emailPlaceholder', { returnObjects: true }),
 
-    phoneNumber: t('phoneNumber'),
-    phoneNumberRequired: t('phoneNumberRequired'),
-    phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
-    phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+    phoneNumber: t('phoneNumber', { returnObjects: true }),
+    phoneNumberRequired: t('phoneNumberRequired', { returnObjects: true }),
+    phoneNumberErrorMessage: t('phoneNumberErrorMessage', { returnObjects: true }),
+    phoneNumberPlaceholder: t('phoneNumberPlaceholder', { returnObjects: true }),
 
-    TypeOfCollaboration: t('TypeOfCollaboration'),
-    TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
-    TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
+    TypeOfCollaboration: t('TypeOfCollaboration', { returnObjects: true }),
+    TypeOfCollaborationRequired: t('TypeOfCollaborationRequired', { returnObjects: true }),
+    TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder', { returnObjects: true }),
+    TypeOfCollaborationData: t('TypeOfCollaborationData', { returnObjects: true }),
 
-    FieldOfExpert: t('FieldOfExpert'),
-    FieldOfExpertRequired: t('FieldOfExpertRequired'),
-    FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
+    FieldOfExpert: t('FieldOfExpert', { returnObjects: true }),
+    FieldOfExpertRequired: t('FieldOfExpertRequired', { returnObjects: true }),
+    FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder', { returnObjects: true }),
+    FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true })
   };
 
   return <HandicraftFormClient lang={lang} translations={translations} />;
