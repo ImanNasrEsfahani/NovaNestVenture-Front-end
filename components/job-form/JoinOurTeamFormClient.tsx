@@ -106,7 +106,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     handleSuccessChange
   } = useSubmit();
 
-  const { cvFileState, handleCvFileChange } = useFile();
+  const { FileState, handleFileChange } = useFile();
 
   useEffect(() => {
     let cancelled = false;
@@ -133,7 +133,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     const sendFormData = new FormData();
 
     const filePostMap = {
-      cvFile: cvFileState.cvFile
+      cvFile: FileState.cvFile
     };
 
     for (const [fieldName, file] of Object.entries(filePostMap)) {
@@ -157,6 +157,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         handleSendChange(false);
         reset(initialJoinOurTeamFormData); // Country does not reset
 
+        // clear file in central store so FileUpload clears too
+        handleFileChange({ cvFile: "" });
+
         console.log(response);
 
         setTimeout(() => {
@@ -167,6 +170,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         handleSuccessChange(true);
         handleNotifChange(false);
         handleSendChange(false);
+
+        // clear file in store on error as well (optional)
+        handleFileChange({ cvFile: "" });
 
         console.log(error);
 
@@ -184,10 +190,10 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
   // Adapter: FileUpload/UploadInput may provide null (no file) or File; store wants { cvFile: File | "" }
   const onCvFileChange = (file: File | null) => {
     if (file) {
-      handleCvFileChange({ cvFile: file });
+      handleFileChange({ cvFile: file });
     } else {
       // clear file in store when null is passed
-      handleCvFileChange({ cvFile: "" });
+      handleFileChange({ cvFile: "" });
     }
   };
 
@@ -260,7 +266,15 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
           >
             <div className="px-4">
-              <FileUpload name="cvFile" label={translations.choseFile} onChange={onCvFileChange} disabled={!fileCounterState} />
+              <FileUpload
+                nameInput="cvFile"
+                required={fileCounterState ? true : false}
+                errors={errors}
+                label={translations.choseFile}
+                onChange={onCvFileChange}
+                disabled={!fileCounterState}
+                file={FileState.cvFile} // <-- sync external value
+              />
             </div>
           </div>
   

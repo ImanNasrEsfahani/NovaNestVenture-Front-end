@@ -1,16 +1,29 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 type FileUploadProps = {
-  name: string;
+  nameInput: string;
   label: string;
   onChange: (file: File | null) => void;
-  disabled?: boolean;
+  disabled: boolean;
+  required: boolean;
+  errors: any;
+  file: File | string;
 }
 
-const FileUpload = ({ name, label, onChange, disabled = false }: FileUploadProps) => {
+const FileUpload = ({ nameInput, label, onChange, disabled = false, required = false, errors, file }: FileUploadProps) => {
   const [fileName, setFileName] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
+  // keep internal UI in sync with external file value (clear when parent resets)
+  useEffect(() => {
+    if (!file) {
+      setFileName(null);
+      if (inputRef.current) inputRef.current.value = '';
+    } else {
+      setFileName(file instanceof File ? file.name : String(file));
+    }
+  }, [file]);
+  
   const handleChange = (file: File | null) => {
     setFileName(file ? file.name : null);
     onChange(file);
@@ -24,13 +37,17 @@ const FileUpload = ({ name, label, onChange, disabled = false }: FileUploadProps
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <label className="w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition">
+      <label className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition ${ errors[nameInput] ? ' border-red-500' : ''  }`}>
         <p className="font-base mb-2">{label}</p>
         <input
           ref={inputRef}
+          id={nameInput}
           type="file"
-          name={name}
+          name={nameInput}
           className="opacity-0 absolute inset-0 w-full h-full cursor-pointer"
+          required={required}
+          aria-required={required}
+          aria-invalid={errors[nameInput]}
           onChange={(e) => handleChange(e.target.files?.[0] || null)}
           disabled={disabled}
         />
@@ -61,6 +78,12 @@ const FileUpload = ({ name, label, onChange, disabled = false }: FileUploadProps
           <p className="text-sm mt-2 text-gray-600">Click to upload</p>
         )}
       </label>
+
+      {errors[nameInput] && (
+        <span className="mt-2 inline text-sm text-red-500">
+          {errors[nameInput].message}
+        </span>
+      )}
     </div>
   );
 };

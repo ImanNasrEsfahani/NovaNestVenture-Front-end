@@ -166,7 +166,8 @@ export default function PersonalInfoInput({
               nameInput={nameInputs.phoneNumber}
               type="text"
               required={translations.phoneNumberRequired}
-              patternValue="^[0-9]{11}$"
+              // patternValue="^\+?[1-9]\d{1,14}$"
+              patternValue=""
               patternMessage={translations.phoneNumberErrorMessage}
               placeholder={translations.phoneNumberPlaceholder}
               className="input col-span-1 mb-1 w-full"
@@ -179,7 +180,8 @@ export default function PersonalInfoInput({
               type="text"
               label={translations.phoneNumber}
               required={translations.phoneNumberRequired}
-              patternValue="^[0-9]{11}$"
+              // patternValue="^\+?[1-9]\d{1,14}$"
+              patternValue=""
               patternMessage={translations.phoneNumberErrorMessage}
               placeholder={translations.phoneNumberPlaceholder}
               className="input col-span-1 mb-1 w-full"

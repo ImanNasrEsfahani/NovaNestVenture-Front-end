@@ -28,7 +28,9 @@ export default function Input({
   containerClass?: string;
   inputValue?: string;
 }) {
+  
   const value = new RegExp(patternValue); // **don`t use slash (/) before and after regex pattern for this component and don`t use i end of regex pattern in this component
+
   return (
     <div className={`flex flex-col items-start ${containerClass}`}>
       <label htmlFor={nameInput} className={`w-full px-2 !text-[#6B6B6B] ${labelClass}`}>{label}

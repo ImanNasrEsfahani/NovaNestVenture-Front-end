@@ -61,7 +61,7 @@ export default function Navbar({ lang }: { lang: string }) {
                 </li>
               ))}
               <li className="mt-12">
-                <LanguageSwitch />
+                {/* <LanguageSwitch /> */}
               </li>
             </ul>
           </div>
@@ -119,7 +119,7 @@ export default function Navbar({ lang }: { lang: string }) {
         </div>
 
         <div className="navbar-end hidden lg:flex flex-none !w-auto gap-2">
-          <LanguageSwitch />
+          {/* <LanguageSwitch /> */}
         </div>
       </div>
     </nav>
