@@ -5,7 +5,7 @@ import { JoinOurTeamFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialJoinOurTeamFormData } from '../../initials/initObjects';
-import { submitApplyJobForm } from '../../pages/api/jobs';
+import { submitJoinOurTeamForm } from '../../pages/api/jobs';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 // import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Button from '@/components/common/Button';
@@ -150,7 +150,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     });
 
     // Send the form data to the API.
-    submitApplyJobForm(sendFormData, csrfToken)
+    submitJoinOurTeamForm(sendFormData, csrfToken)
       .then((response) => {
         handleSuccessChange(true);
         handleNotifChange(true);
