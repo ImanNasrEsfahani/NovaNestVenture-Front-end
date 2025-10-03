@@ -106,7 +106,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     handleSuccessChange
   } = useSubmit();
 
-  const { FileState, handleFileChange } = useFile();
+  const { cvFileState, handleCvFileChange } = useFile();
 
   useEffect(() => {
     let cancelled = false;
@@ -133,7 +133,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     const sendFormData = new FormData();
 
     const filePostMap = {
-      cvFile: FileState.cvFile
+      cvFile: cvFileState.cvFile
     };
 
     for (const [fieldName, file] of Object.entries(filePostMap)) {
@@ -158,7 +158,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         reset(initialJoinOurTeamFormData); // Country does not reset
 
         // clear file in central store so FileUpload clears too
-        handleFileChange({ cvFile: "" });
+        handleCvFileChange({ cvFile: "" });
 
         console.log(response);
 
@@ -172,7 +172,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         handleSendChange(false);
 
         // clear file in store on error as well (optional)
-        handleFileChange({ cvFile: "" });
+        handleCvFileChange({ cvFile: "" });
 
         console.log(error);
 
@@ -190,10 +190,10 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
   // Adapter: FileUpload/UploadInput may provide null (no file) or File; store wants { cvFile: File | "" }
   const onCvFileChange = (file: File | null) => {
     if (file) {
-      handleFileChange({ cvFile: file });
+      handleCvFileChange({ cvFile: file });
     } else {
       // clear file in store when null is passed
-      handleFileChange({ cvFile: "" });
+      handleCvFileChange({ cvFile: "" });
     }
   };
 
@@ -273,7 +273,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                 label={translations.choseFile}
                 onChange={onCvFileChange}
                 disabled={!fileCounterState}
-                file={FileState.cvFile} // <-- sync external value
+                file={cvFileState.cvFile} // <-- sync external value
               />
             </div>
           </div>

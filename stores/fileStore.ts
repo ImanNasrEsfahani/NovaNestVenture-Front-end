@@ -2,7 +2,7 @@ import { produce } from "immer";
 import { create } from "zustand";
 
 type State = {
-    FileState: {cvFile:  File | ''};
+    cvFileState: {cvFile:  File | ''};
     filePostPitch: {pitchDeckFile:  File | ''},
     filePostFinancial: {financialFile:  File | ''},
     filePostFinancialModel: {financialModelFile:  File | ''},
@@ -10,7 +10,7 @@ type State = {
 }
 
 type Action = {
-    handleFileChange: (file: State['FileState']) => void,
+    handleCvFileChange: (file: State['cvFileState']) => void,
     handleBusinessFileChange: (file: any) => void,
     handlePitchFileChange: (file: any) => void,
     handleFinancialFileChange: (file: any) => void,
@@ -19,12 +19,12 @@ type Action = {
 
 const useFile = create<State & Action>((set) => {
     return {
-        FileState: { cvFile: "" },
+        cvFileState: { cvFile: "" },
         filePostPitch: { pitchDeckFile: ""},
         filePostFinancial: { financialFile: ""},
         filePostFinancialModel: { financialModelFile: ""},
         filePostBussines: { businessPlanFile: ""},
-        handleFileChange: (file) => set(() => ({FileState: file})),
+        handleCvFileChange: (file) => set(() => ({cvFileState: file})),
         handleBusinessFileChange: (file) => set(produce((state) => {
             state.filePostBussines.businessPlanFile = file
         })),

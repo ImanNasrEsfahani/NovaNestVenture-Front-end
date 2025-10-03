@@ -23,7 +23,7 @@ const BusinessPlanUpload: React.FC<Props> = ({
 }) => {
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
-  const { FileState, handleFileChange } = useFile();
+  const { cvFileState, handleCvFileChange } = useFile();
 
 
   return (
