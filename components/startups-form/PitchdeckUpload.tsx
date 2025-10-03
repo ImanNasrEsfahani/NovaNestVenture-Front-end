@@ -238,7 +238,15 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
             ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
         >
           <div className="px-4">
-            <FileUpload name="pitchDeckFile" label={chooseFile} onChange={onFileChange} disabled={!fileCounterState} />
+            <FileUpload
+              nameInput="pitchDeckFile"
+              required={fileCounterState ? true : false}
+              errors={errors}
+              label={chooseFile}
+              onChange={onFileChange}
+              disabled={!fileCounterState}
+              file=""
+            />
           </div>
         </div>
 

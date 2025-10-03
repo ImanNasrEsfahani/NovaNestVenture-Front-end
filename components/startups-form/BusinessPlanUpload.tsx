@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import FileUpload from '@/components/common/form/FileUpload';
 import YesOrNoQuestion from './YesOrNoQuestion';
+import { useFile } from 'stores/fileStore';
 
 interface Props {
   title: string;
@@ -9,6 +10,7 @@ interface Props {
   noLabel: string;
   chooseFile: string;
   onFileChange: (file: any) => void;
+  errors: any;
 }
 
 const BusinessPlanUpload: React.FC<Props> = ({
@@ -16,11 +18,14 @@ const BusinessPlanUpload: React.FC<Props> = ({
   yesLabel,
   noLabel,
   chooseFile,
-  onFileChange
+  onFileChange,
+  errors
 }) => {
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
-  
+  const { FileState, handleFileChange } = useFile();
+
+
   return (
     <div className='w-full flex flex-col items-center mb-12'>
       <YesOrNoQuestion
@@ -39,7 +44,15 @@ const BusinessPlanUpload: React.FC<Props> = ({
           ${fileCounterState ? 'max-h-auto opacity-100 translate-y-0 py-4 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
       >
         <div className="px-4">
-          <FileUpload name="businessPlanFile" label={chooseFile} onChange={onFileChange} disabled={!fileCounterState}/>
+          <FileUpload
+            nameInput="businessPlanFile"
+            required={fileCounterState ? true : false}
+            errors={errors}
+            label={chooseFile}
+            onChange={onFileChange}
+            disabled={!fileCounterState}
+            file=""
+          />
         </div>
       </div>
     </div>

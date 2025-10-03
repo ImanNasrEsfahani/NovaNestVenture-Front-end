@@ -8,6 +8,7 @@ interface Props {
   noLabel: string;
   chooseFile: string;
   onFileChange: (file: any) => void;
+  errors: any;
 }
 
 const FinancialAnalysisUpload: React.FC<Props> = ({
@@ -15,7 +16,8 @@ const FinancialAnalysisUpload: React.FC<Props> = ({
   yesLabel,
   noLabel,
   chooseFile,
-  onFileChange
+  onFileChange,
+  errors
 }) => {
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
@@ -38,7 +40,15 @@ const FinancialAnalysisUpload: React.FC<Props> = ({
           ${fileCounterState ? 'max-h-auto opacity-100 translate-y-0 py-4 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
       >
         <div className="px-4">
-          <FileUpload name="financialFile" label={chooseFile} onChange={onFileChange} disabled={!fileCounterState}/>
+          <FileUpload
+            nameInput="financialFile"
+            required={fileCounterState ? true : false}
+            errors={errors}
+            label={chooseFile}
+            onChange={onFileChange}
+            disabled={!fileCounterState}
+            file=""
+          />
         </div>
       </div>
     </div>

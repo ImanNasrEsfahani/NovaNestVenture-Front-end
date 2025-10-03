@@ -88,6 +88,7 @@ const StartUpFirstSaleRefactor = ({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
         onFileChange={handleBusinessFileChange}
+        errors={errors}
       />
       
       <FinancialAnalysisUpload
@@ -96,6 +97,7 @@ const StartUpFirstSaleRefactor = ({
         noLabel={t('no')}
         chooseFile={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
         onFileChange={handleFinancialFileChange}
+        errors={errors}
       />
 
     </div>
