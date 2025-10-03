@@ -49,6 +49,25 @@
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",
   "birthDatePlaceholder": "لطفا تاریخ تولد خود را وارد کنید.",
 
+  "EducationLevels": "Education Level *",
+  "EducationLevelsRequired": "Education Level is Required",
+  "EducationLevelsPlaceholder": "Select Your Education Level",
+
+  "EducationField": "Please specify your field of study. *",
+  "EducationFieldRequired": "Field of study is required.",
+  "EducationFieldPlaceholder": "Enter your field of study like Computer Science, Business Administration, etc.",
+
+  "workHistorySummary": "Work History Summary",
+  "workHistorySummaryRequired": "Work History Summary is required.",
+  "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
+
+  "EducationLevelsData": [
+    { "value": 0, "label": "Diploma" },
+    { "value": 1, "label": "Bachelor" },
+    { "value": 2, "label": "Master" },
+    { "value": 3, "label": "PhD" }
+  ],
+
   "sendButton": "ارسال",
   "sendingButton": "درحال ارسال ....",
   "visitButton": "مشاهده کنید",
