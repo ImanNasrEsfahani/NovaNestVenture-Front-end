@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitHandiCraftApplicationForm(
+export async function submitHandiCraftApplicationForm(
   sendFormData: FormData,
   csrfToken: string,
 ) {
@@ -23,9 +23,4 @@ async function submitHandiCraftApplicationForm(
   } catch (error) {
     console.error('Error sending form data:', error);
   }
-}
-
-
-export {
-  submitHandiCraftApplicationForm
 }

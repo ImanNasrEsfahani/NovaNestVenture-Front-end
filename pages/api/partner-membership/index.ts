@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitPartnerMembershipForm(
+export async function submitPartnerMembershipForm(
   sendFormData: FormData,
 ) {
   try {
@@ -24,8 +24,4 @@ async function submitPartnerMembershipForm(
 
 
   }
-}
-
-export {
-  submitPartnerMembershipForm
 }

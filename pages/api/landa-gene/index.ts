@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitLandaApplicationForm(
+export async function submitLandaApplicationForm(
   sendFormData: FormData,
   csrfToken: string,
 ) {
@@ -23,8 +23,4 @@ async function submitLandaApplicationForm(
     } catch (error) {
       console.error('Error sending form data:', error);
     }
-  }
- 
-  export {
-    submitLandaApplicationForm
   }

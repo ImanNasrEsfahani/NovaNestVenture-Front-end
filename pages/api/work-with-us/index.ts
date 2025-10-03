@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitWorkWithUsForm(
+export async function submitWorkWithUsForm(
   sendFormData: FormData,
   csrfToken: string
 ) {
@@ -17,5 +17,3 @@ async function submitWorkWithUsForm(
     console.error('Error sending form data:', error);
   }
 }
-
-export { submitWorkWithUsForm };

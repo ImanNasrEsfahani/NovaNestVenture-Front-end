@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitInvestorRegistrationForm(
+export async function submitInvestorRegistrationForm(
   sendFormData: FormData,
 ) {
   try {
@@ -21,8 +21,4 @@ async function submitInvestorRegistrationForm(
     console.error('Error sending form data:', error);
     throw error; // Re-throw to handle in the component
   }
-}
-
-export {
-  submitInvestorRegistrationForm
 }

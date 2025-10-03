@@ -1,6 +1,6 @@
 import apiClient from '@/utils/api';
 
-async function submitStartupsForm(
+export async function submitStartupsForm(
   sendFormData: FormData,
 ) {
 
@@ -20,8 +20,4 @@ async function submitStartupsForm(
   } catch (error) {
     console.error('Error sending form data:', error);
   }
-}
-
-export {
-  submitStartupsForm
 }
