@@ -3,7 +3,8 @@ import PNPApplicantFormClient from './PNPApplicantFormClient';
 
 export default function PNPApplicantForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
-
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
+  
   // Pass translations as props to client component
   const translations = {
     formTitle: t("PNPApplicantForm", { returnObjects: true }).formTitle,
@@ -34,6 +35,19 @@ export default function PNPApplicantForm({lang}: {lang: string}) {
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
+    countries: tCountry('countries', { returnObjects: true }),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
+    
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
     TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
