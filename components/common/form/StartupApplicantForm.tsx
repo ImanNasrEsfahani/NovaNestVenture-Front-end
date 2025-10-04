@@ -3,6 +3,7 @@ import StartupApplicantFormClient from './StartupApplicantFormClient';
 
 export default function StartupApplicantForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
   // Pass translations as props to client component
   const translations = {
@@ -33,6 +34,19 @@ export default function StartupApplicantForm({lang}: {lang: string}) {
     phoneNumberRequired: t('phoneNumberRequired'),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+    countries: tCountry('countries', { returnObjects: true }),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
 
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
