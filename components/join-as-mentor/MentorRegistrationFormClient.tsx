@@ -76,12 +76,12 @@ interface Translations {
   TypeOfCollaboration: string;
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
-  TypeOfCollaborationData: { value: number; label: string }[];
+  TypeOfCollaborationData: { value: string; label: string }[];
 
   FieldOfExpert: string;
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
-  FieldOfExpertData: { value: number; label: string }[];
+  FieldOfExpertData: { value: string; label: string }[];
 }
 
 interface Props {
@@ -184,6 +184,9 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 lastName: 'lastName',
                 email: 'email',
                 phoneNumber: 'phoneNumber',
+                countryOfResidence: 'countryOfResidence',
+                provinceOfResidence: '',
+                cityOfResidence: 'cityOfResidence',
                 TypeOfCollaboration: ''
               }}
               noLabel={false}
@@ -206,6 +209,19 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 phoneNumberRequired: translations.phoneNumberRequired,
                 phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
                 phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
+
+                countries: translations.countries,
+                countryName: translations.countryName,
+                countryNameRequired: translations.countryNameRequired,
+                countryNamePlaceholder: translations.countryNamePlaceholder,
+
+                provinceOfResidence: translations.provinceOfResidence,
+                provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
+                provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
+
+                cityOfResidence: translations.cityOfResidence,
+                cityOfResidenceRequired: translations.cityOfResidenceRequired,
+                cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
 
                 TypeOfCollaboration: translations.TypeOfCollaboration,
                 TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
@@ -244,7 +260,6 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               cityOfResidenceRequired={translations.cityOfResidenceRequired}
               cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
               
-              lang={lang}
               errors={errors}
               nameInputs={{
                 countryOfResidence: 'countryOfResidence',

@@ -15,7 +15,7 @@ export default function Select({
   nameInput: string;
   label: string;
   required: string;
-  options: { value: number; label: string }[];
+  options: { value: string; label: string }[];
   className: string;
   labelClass: string;
   placeholder: string;
@@ -26,9 +26,12 @@ export default function Select({
     <>
       <label
         htmlFor={nameInput}
-        className={`flex flex-col px-2 !text-[#6B6B6B] ${labelClass}`} /* stack label text over select */
+        className={`flex flex-col px-2 !text-[#6B6B6B] ${labelClass}`}
       >
-        {label}
+        <span className="flex">
+          {label}
+          {required ? <span>&nbsp;*</span> : null}
+        </span>
         <select
           id={nameInput}
           {...register(nameInput, {
@@ -42,7 +45,7 @@ export default function Select({
             {placeholder}
           </option>
           {options.map((option, index) => (
-            <option key={index} value={option.value}>
+            <option key={index} value={option.label}>
               {option.label}
             </option>
           ))}

@@ -1,6 +1,7 @@
 'use client';
 import Input from '@/components/common/form/Input';
 import Select from '@/components/common/form/Select';
+import CountryInput from '@/components/common/form/CountryInput';
 
 type Props = {
   register: any;
@@ -10,6 +11,9 @@ type Props = {
     lastName: string;
     email: string;
     phoneNumber: string;
+    countryOfResidence: string;
+    provinceOfResidence: string;
+    cityOfResidence: string;
     TypeOfCollaboration: string;
   };
   noLabel: boolean;
@@ -33,15 +37,28 @@ type Props = {
     phoneNumberErrorMessage: string;
     phoneNumberPlaceholder: string;
 
+    countries: string[];
+    countryName: string;
+    countryNameRequired: string;
+    countryNamePlaceholder: string;
+
+    provinceOfResidence: string;
+    provinceOfResidenceRequired: string;
+    provinceOfResidencePlaceholder: string;
+
+    cityOfResidence: string;
+    cityOfResidenceRequired: string;
+    cityOfResidencePlaceholder: string;
+
     TypeOfCollaboration: string;
     TypeOfCollaborationRequired: string;
     TypeOfCollaborationPlaceholder: string;
-    TypeOfCollaborationData: { value: number; label: string }[];
+    TypeOfCollaborationData: { value: string; label: string }[];
 
     FieldOfExpert: string;
     FieldOfExpertRequired: string;
     FieldOfExpertPlaceholder: string;
-    FieldOfExpertData: { value: number; label: string }[];
+    FieldOfExpertData: { value: string; label: string }[];
   }
 };
 
@@ -190,8 +207,30 @@ export default function PersonalInfoInput({
           )}
         </div>
       )}
+
+      <CountryInput
+        countries={translations.countries}
+        countryName={translations.countryName}
+        countryNameRequired={translations.countryNameRequired}
+        countryNamePlaceholder={translations.countryNamePlaceholder}
+        provinceOfResidence={translations.provinceOfResidence}
+        provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+        provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+        cityOfResidence={translations.cityOfResidence}
+        cityOfResidenceRequired={translations.cityOfResidenceRequired}
+        cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
+
+        nameInputs={{
+          countryOfResidence: nameInputs.countryOfResidence,
+          provinceOfResidence: '',
+          cityOfResidence: nameInputs.cityOfResidence
+        }}
+        errors={errors}
+        register={register}
+      />
+
       {nameInputs?.TypeOfCollaboration && (
-        <div className="col-span-1">
+        <div className="col-span-1 w-full">
           <Select
             register={register}
             errors={errors}
@@ -206,7 +245,7 @@ export default function PersonalInfoInput({
         </div>
       )}
       {nameInputs?.TypeOfCollaboration && (
-        <div>
+        <div className="col-span-1 w-full">
           <Select
             register={register}
             errors={errors}

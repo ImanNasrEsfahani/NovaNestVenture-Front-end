@@ -43,12 +43,12 @@ interface Translations {
     TypeOfCollaboration: string;
     TypeOfCollaborationRequired: string;
     TypeOfCollaborationPlaceholder: string;
-    TypeOfCollaborationData: { value: number; label: string }[];
+    TypeOfCollaborationData: { value: string; label: string }[];
 
     FieldOfExpert: string;
     FieldOfExpertRequired: string;
     FieldOfExpertPlaceholder: string;
-    FieldOfExpertData: { value: number; label: string }[];
+    FieldOfExpertData: { value: string; label: string }[];
 }
 
 interface Props {

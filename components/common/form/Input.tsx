@@ -33,7 +33,9 @@ export default function Input({
 
   return (
     <div className={`flex flex-col items-start ${containerClass}`}>
-      <label htmlFor={nameInput} className={`w-full px-2 !text-[#6B6B6B] ${labelClass}`}>{label}
+      <label htmlFor={nameInput} className={`w-full px-2 !text-[#6B6B6B] ${labelClass}`}>
+        {label}
+        {required ? <span > *</span> : null}
         <input
           id={nameInput}
           type={type}

@@ -5,7 +5,6 @@ import Select from '@/components/common/form/Select';
 import Input from '@/components/common/form/Input';
 
 type Props = {
-  lang: string;
   register: any;
   errors: any;
   nameInputs?: {
@@ -77,7 +76,7 @@ export default function CountryInput({
     <>
       {nameInputs?.countryOfResidence && (
         // wrap Select so we can overlay a caret icon via absolute positioning
-        <div className="relative">
+        <div className="col-span-1">
           <label
             htmlFor={nameInputs.countryOfResidence}
             className="flex flex-col px-2 !text-[#6B6B6B]"
@@ -108,19 +107,7 @@ export default function CountryInput({
               {errors[nameInputs.countryOfResidence].message}
             </span>
           )}
-          {/* <Select
-            register={register}
-            errors={errors}
-            nameInput={nameInputs.countryOfResidence}
-            label={countryName}
-            required={countryNameRequired}
-            className='input col-span-1 mb-1 w-full'
-            labelClass='text-[#6b6b6b] dark:text-current'
-            placeholder={countryNamePlaceholder}
-            options={countriesData}
-            handleChange={handleCountryChange}
-            selected={selectedCountry}
-          /> */}
+
           {/* caret icon (pointer-events-none so select still clickable) */}
           <span className="pointer-events-none absolute top-1/2 right-3 text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
@@ -130,7 +117,8 @@ export default function CountryInput({
         </div>
       )}
 
-        {nameInputs?.provinceOfResidence && (
+      {nameInputs?.provinceOfResidence && (
+        <div className="col-span-1">
           <Input
             register={register}
             errors={errors}
@@ -144,9 +132,11 @@ export default function CountryInput({
             className="input col-span-1 mb-1 w-full"
             labelClass="text-[#6b6b6b] dark:text-current"
           />
-        )}
+        </div>
+      )}
 
-        {nameInputs?.cityOfResidence && (
+      {nameInputs?.cityOfResidence && (
+        <div className="col-span-1">
           <Input
             register={register}
             errors={errors}
@@ -160,7 +150,8 @@ export default function CountryInput({
             className="input col-span-1 mb-1 w-full"
             labelClass="text-[#6b6b6b] dark:text-current"
           />
-        )}
+        </div>
+      )}
     </>
   )
 }

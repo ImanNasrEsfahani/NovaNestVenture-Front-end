@@ -38,6 +38,7 @@ export default function StartupFormPersonalInformation({
 }) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
 
   return (
     <>
@@ -48,8 +49,11 @@ export default function StartupFormPersonalInformation({
           nameInputs={{
             firstName: 'firstName',
             lastName: 'lastName',
-            phoneNumber: 'phoneNumber',
             email: 'email',
+            phoneNumber: 'phoneNumber',
+            countryOfResidence: 'countryOfResidence',
+            provinceOfResidence: '',
+            cityOfResidence: 'cityOfResidence',
             TypeOfCollaboration: ''
           }}
           noLabel={false}
@@ -72,6 +76,19 @@ export default function StartupFormPersonalInformation({
             phoneNumberRequired: t('phoneNumberRequired'),
             phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
             phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+            countries: tCountry('countries', { returnObjects: true }),
+            countryName: tCountry('countryName'),
+            countryNameRequired: tCountry('countryNameRequired'),
+            countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+            provinceOfResidence: tCountry('provinceOfResidence'),
+            provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+            provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+            cityOfResidence: tCountry('cityOfResidence'),
+            cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+            cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
 
             TypeOfCollaboration: t('TypeOfCollaboration'),
             TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
@@ -99,7 +116,7 @@ export default function StartupFormPersonalInformation({
           labelClass=" dark:text-current"
         /> */}
 
-        <CountryInput
+        {/* <CountryInput
           countries={countries}
           countryName={countryName}
           countryNameRequired={countryNameRequired}
@@ -111,7 +128,6 @@ export default function StartupFormPersonalInformation({
           cityOfResidenceRequired={cityOfResidenceRequired}
           cityOfResidencePlaceholder={cityOfResidencePlaceholder}
           
-          lang={lang}
           errors={errors}
           nameInputs={{
             countryOfResidence: 'countryOfResidence',
@@ -119,7 +135,7 @@ export default function StartupFormPersonalInformation({
             cityOfResidence: 'cityOfResidence'
           }}
           register={register}
-        />
+        /> */}
       </div>
     </>
   );

@@ -11,10 +11,10 @@ interface PersonalInfoSectionProps {
   workWithUS: any;
   translations: any;
   unis: any;
-  PositionsData: { value: number; label: string }[];
-  TypeOfContractWithStudentData: { value: number; label: string }[];
-  TypeOfContractWithProfessorData: { value: number; label: string }[];
-  TypeOfUnis: { value: number; label: string }[];
+  PositionsData: { value: string; label: string }[];
+  TypeOfContractWithStudentData: { value: string; label: string }[];
+  TypeOfContractWithProfessorData: { value: string; label: string }[];
+  TypeOfUnis: { value: string; label: string }[];
   selectPosition: string;
   selectStudentContract: string;
   selectProfessorContract: string;
