@@ -80,131 +80,70 @@ export default function PersonalInfoInput({
     <>
       {nameInputs?.firstName && (
         <div className="col-span-1 w-full">
-          {noLabel ? (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.firstName}
-              type="text"
-              required={translations.firstNameRequired}
-              patternValue=""
-              patternMessage=""
-              placeholder={translations.firstNamePlaceholder}
-              className="input col-span-1 mb-1 w-full"
-            />
-          ) : (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.firstName}
-              type="text"
-              label={translations.firstName}
-              required={translations.firstNameRequired}
-              patternValue=""
-              patternMessage=""
-              placeholder={translations.firstNamePlaceholder}
-              className="input col-span-1 mb-1 w-full"
-              labelClass=" dark:text-current"
-            />
-          )}
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.firstName}
+            type="text"
+            required={translations.firstNameRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={translations.firstNamePlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            {...(!noLabel ? { label: translations.firstName, labelClass: 'dark:text-current' } : {})}
+          />
         </div>
       )}
 
       {nameInputs?.lastName && (
         <div className="col-span-1 w-full">
-          {noLabel ? (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.lastName}
-              type="text"
-              required={translations.lastNameRequired}
-              patternValue=""
-              patternMessage=""
-              placeholder={translations.lastNamePlaceholder}
-              className="input col-span-1 mb-1 w-full"
-            />
-          ) : (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.lastName}
-              type="text"
-              label={translations.lastName}
-              required={translations.lastNameRequired}
-              patternValue=""
-              patternMessage=""
-              placeholder={translations.lastNamePlaceholder}
-              className="input col-span-1 mb-1 w-full"
-              labelClass=" dark:text-current"
-            />
-          )}
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.lastName}
+            type="text"
+            required={translations.lastNameRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={translations.lastNamePlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            {...(!noLabel ? { label: translations.lastName, labelClass: 'dark:text-current' } : {})}
+          />
         </div>
       )}
 
       {nameInputs?.email && (
         <div className="col-span-1 w-full">
-          {noLabel ? (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.email}
-              type="email"
-              required={translations.emailRequired}
-              patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-              patternMessage={translations.emailErrorMessage}
-              placeholder={translations.emailPlaceholder}
-              className="input col-span-1 mb-1 w-full"
-            />
-          ) : (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.email}
-              type="email"
-              label={translations.email}
-              required={translations.emailRequired}
-              patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-              patternMessage={translations.emailErrorMessage}
-              placeholder={translations.emailPlaceholder}
-              className="input col-span-1 mb-1 w-full"
-              labelClass=" dark:text-current"
-            />
-          )}
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.email}
+            type="email"
+            required={translations.emailRequired}
+            patternValue="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            patternMessage={translations.emailErrorMessage}
+            placeholder={translations.emailPlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            {...(!noLabel ? { label: translations.email, labelClass: 'dark:text-current' } : {})}
+          />
         </div>
       )}
 
       {nameInputs?.phoneNumber && (
         <div className="col-span-1 w-full">
-          {noLabel ? (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.phoneNumber}
-              type="text"
-              required={translations.phoneNumberRequired}
-              // patternValue="^\+?[1-9]\d{1,14}$"
-              patternValue=""
-              patternMessage={translations.phoneNumberErrorMessage}
-              placeholder={translations.phoneNumberPlaceholder}
-              className="input col-span-1 mb-1 w-full"
-            />
-          ) : (
-            <Input
-              register={register}
-              errors={errors}
-              nameInput={nameInputs.phoneNumber}
-              type="text"
-              label={translations.phoneNumber}
-              required={translations.phoneNumberRequired}
-              // patternValue="^\+?[1-9]\d{1,14}$"
-              patternValue=""
-              patternMessage={translations.phoneNumberErrorMessage}
-              placeholder={translations.phoneNumberPlaceholder}
-              className="input col-span-1 mb-1 w-full"
-              labelClass=" dark:text-current"
-            />
-          )}
+          <Input
+            register={register}
+            errors={errors}
+            nameInput={nameInputs.phoneNumber}
+            type="text"
+            required={translations.phoneNumberRequired}
+            // patternValue="^\+?[1-9]\d{1,14}$"
+            patternValue=""
+            patternMessage={translations.phoneNumberErrorMessage}
+            placeholder={translations.phoneNumberPlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            {...(!noLabel ? { label: translations.phoneNumber, labelClass: 'dark:text-current' } : {})}
+          />
         </div>
       )}
 
