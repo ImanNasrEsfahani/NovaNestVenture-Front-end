@@ -68,15 +68,18 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
 
     EducationLevels: t('EducationLevels', { returnObjects: true }),
     EducationLevelsRequired: t('EducationLevelsRequired', { returnObjects: true }),
+    EducationLevelsErrorMessage: t('EducationLevelsErrorMessage', { returnObjects: true }),
     EducationLevelsPlaceholder: t('EducationLevelsPlaceholder', { returnObjects: true }),
     EducationLevelsData: t('EducationLevelsData', { returnObjects: true }),
 
     EducationField: t('EducationField', { returnObjects: true }),
     EducationFieldRequired: t('EducationFieldRequired', { returnObjects: true }),
+    EducationFieldErrorMessage: t('EducationFieldErrorMessage', { returnObjects: true }),
     EducationFieldPlaceholder: t('EducationFieldPlaceholder', { returnObjects: true }),
     
     workHistorySummary: t('workHistorySummary', { returnObjects: true }),
     workHistorySummaryRequired: t('workHistorySummaryRequired', { returnObjects: true }),
+    workHistorySummaryErrorMessage: t('workHistorySummaryErrorMessage', { returnObjects: true }),
     workHistorySummaryPlaceholder: t('workHistorySummaryPlaceholder', { returnObjects: true }),
 
   };
