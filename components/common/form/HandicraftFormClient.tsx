@@ -35,6 +35,19 @@ interface Translations {
   phoneNumberErrorMessage: string;
   phoneNumberPlaceholder: string;
 
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+  
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
+
   TypeOfCollaboration: string;
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
@@ -144,6 +157,9 @@ export default function HandicraftFormClient({ lang, translations }: Props) {
               lastName: 'last_name',
               email: 'email',
               phoneNumber: 'phone_number',
+              countryOfResidence: '',
+              provinceOfResidence: '',
+              cityOfResidence: '',
               TypeOfCollaboration: ''
             }}
             noLabel={true}
@@ -166,6 +182,19 @@ export default function HandicraftFormClient({ lang, translations }: Props) {
               phoneNumberRequired: translations.phoneNumberRequired,
               phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
               phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
+
+              countries: translations.countries,
+              countryName: translations.countryName,
+              countryNameRequired: translations.countryNameRequired,
+              countryNamePlaceholder: translations.countryNamePlaceholder,
+              
+              provinceOfResidence: translations.provinceOfResidence,
+              provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
+              provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
+
+              cityOfResidence: translations.cityOfResidence,
+              cityOfResidenceRequired: translations.cityOfResidenceRequired,
+              cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
 
               TypeOfCollaboration: translations.TypeOfCollaboration,
               TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,

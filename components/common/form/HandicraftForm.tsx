@@ -3,7 +3,8 @@ import HandicraftFormClient from '@/components/common/form/HandicraftFormClient'
 
 export default function HandicraftForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'handicraft');
-
+  const { t: tCountry } = getServerTranslation(lang, 'countryInput');
+  
   // Pass translations as props to client component
   const translations = {
     button: t('button'),
@@ -28,6 +29,19 @@ export default function HandicraftForm({lang}: {lang: string}) {
     phoneNumberRequired: t('phoneNumberRequired', { returnObjects: true }),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage', { returnObjects: true }),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder', { returnObjects: true }),
+
+    countries: tCountry('countries', { returnObjects: true }),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
 
     TypeOfCollaboration: t('TypeOfCollaboration', { returnObjects: true }),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired', { returnObjects: true }),
