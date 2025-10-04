@@ -52,6 +52,7 @@ const BusinessPlanUpload: React.FC<Props> = ({
             onChange={onFileChange}
             disabled={!fileCounterState}
             file=""
+            
           />
         </div>
       </div>
