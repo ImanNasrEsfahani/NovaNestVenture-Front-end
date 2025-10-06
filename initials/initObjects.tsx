@@ -75,6 +75,8 @@ const initialJoinOurTeamFormData: JoinOurTeamFormData = {
   lastName: '',
   email: '',
   phoneNumber: '',
+  countryOfResidence: '',
+  cityOfResidence: '',
   TypeOfCollaboration: '',
   FieldOfExpert: '',
   birthDate: '',

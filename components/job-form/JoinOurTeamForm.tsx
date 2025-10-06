@@ -64,6 +64,8 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     birthDate: t('birthDate', { returnObjects: true }),
     birthDateRequired: t('birthDateRequired', { returnObjects: true }),
     birthDateErrorMessage: t('birthDateErrorMessage', { returnObjects: true }),
+    birthDateErrorMessageForFutureDate: t('birthDateErrorMessageForFutureDate', { returnObjects: true }),
+    birthDateErrorMessageForAge: t('birthDateErrorMessageForAge', { returnObjects: true }),
     birthDatePlaceholder: t('birthDatePlaceholder', { returnObjects: true }),
 
     EducationLevels: t('EducationLevels', { returnObjects: true }),

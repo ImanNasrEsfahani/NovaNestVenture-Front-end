@@ -12,7 +12,8 @@ export default function Input({
   patternMessage,
   className,
   labelClass,
-  containerClass
+  containerClass,
+  validate,
 }: {
   register: any;
   errors: any;
@@ -27,9 +28,15 @@ export default function Input({
   labelClass?: string;
   containerClass?: string;
   inputValue?: string;
+  validate?: any;
 }) {
   
-  const value = new RegExp(patternValue); // **don`t use slash (/) before and after regex pattern for this component and don`t use i end of regex pattern in this component
+  const value = patternValue ? new RegExp(patternValue) : undefined;
+
+  const registerOptions: any = {};
+  if (required) registerOptions.required = required;
+  if (value) registerOptions.pattern = { value, message: patternMessage };
+  if (validate) registerOptions.validate = validate;
 
   return (
     <div className={`flex flex-col items-start ${containerClass}`}>
@@ -39,13 +46,7 @@ export default function Input({
         <input
           id={nameInput}
           type={type}
-          {...register(nameInput, {
-            required: required,
-            pattern: {
-              value: value,
-              message: patternMessage
-            }
-          })}
+          {...register(nameInput, registerOptions)}
           placeholder={placeholder}
           className={`w-full !rounded-sm get-shadow-sm focus:outline-none border border-gray-400 bg-transparent placeholder:text-[#939393B2] ${
             className + (errors[nameInput] ? ' border-red-500' : '')

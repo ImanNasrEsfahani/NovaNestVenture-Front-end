@@ -89,12 +89,13 @@ export default function CountryInput({
               })}
               className={`input col-span-1 mb-1 w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] ${errors[nameInputs.countryOfResidence] ? ' border-red-500' : ''}`}
               onChange={handleCountryChange}
+              value={selectedCountry}
               defaultValue=""
             >
               <option value="" disabled>
                 {countryNamePlaceholder}
               </option>
-              {countries.map((option, index) => (
+              {safeCountries.map((option, index) => (
                 <option key={index} value={option}>
                   {option}
                 </option>

@@ -51,6 +51,8 @@
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
   "birthDateErrorMessage": "Please enter a valid Date of Birth(e.g., 2001/02/11)",
+  "birthDateErrorMessageForFutureDate": "Please enter a valid Date before of today",
+  "birthDateErrorMessageForAge": "Your age is not acceptable.",
   "birthDatePlaceholder": "Date of Birth",
 
   "EducationLevels": "Education Level",

@@ -77,6 +77,8 @@ interface Translations {
   birthDate: string;
   birthDateRequired: string;
   birthDateErrorMessage: string;
+  birthDateErrorMessageForFutureDate: string;
+  birthDateErrorMessageForAge: string;
   birthDatePlaceholder: string;
 
   EducationLevels: string;
@@ -328,11 +330,26 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                   type="date"
                   label={translations.birthDate}
                   required={translations.birthDateRequired}
-                  patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
+                  patternValue="" // date input provides yyyy-mm-dd, pattern not needed
                   patternMessage={translations.birthDateErrorMessage}
                   placeholder={translations.birthDatePlaceholder}
                   className="input"
                   labelClass=""
+                  validate={(value: string) => {
+                    if (!value) return translations.birthDateRequired;
+                    const birth = new Date(value);
+                    if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
+                    const today = new Date();
+                    // clear time
+                    today.setHours(0,0,0,0);
+                    birth.setHours(0,0,0,0);
+                    if (birth > today) return translations.birthDateErrorMessageForFutureDate;
+                    // compute age
+                    let age = today.getFullYear() - birth.getFullYear();
+                    const m = today.getMonth() - birth.getMonth();
+                    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+                    return age >= 14 || translations.birthDateErrorMessageForAge;
+                  }}
                 />
               </div>
               <div className="col-span-1">

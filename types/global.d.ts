@@ -133,6 +133,8 @@ interface JoinOurTeamFormData {
   lastName: string;
   email: string;
   phoneNumber: string;
+  countryOfResidence: string;
+  cityOfResidence: string;
   TypeOfCollaboration: string;
   FieldOfExpert: string;
   birthDate: string;
