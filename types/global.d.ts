@@ -137,10 +137,10 @@ interface JoinOurTeamFormData {
   cityOfResidence: string;
   TypeOfCollaboration: string;
   FieldOfExpert: string;
-  birthDate: string;
-  educationField: string;
-  educationLevel: string;
-  workHistorySummary: string;
+  birthDate?: string;
+  educationField?: string;
+  educationLevel?: string;
+  workHistorySummary?: string;
   cvFile?: File | '' | undefined;
 }
 

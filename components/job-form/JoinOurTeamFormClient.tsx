@@ -110,7 +110,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
+    clearErrors,
+    unregister, // <-- add this
   } = useForm<JoinOurTeamFormData>({
     mode: 'onBlur',
     defaultValues: initialJoinOurTeamFormData
@@ -218,6 +220,45 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
 
+  // helper that also clears validations when user chooses to upload resume
+  const setFileCounterAndClear = (v: boolean) => {
+    setFileCounter(v);
+
+    const fields: (keyof JoinOurTeamFormData)[] = ['birthDate', 'educationLevel', 'educationField', 'workHistorySummary'];
+
+    if (v) {
+      // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed
+      clearErrors(fields);
+      unregister(fields);
+      return;
+    }
+
+    clearErrors(fields);
+
+    // re-register with the same rules used by the inputs
+    register('educationLevel', { required: translations.EducationLevelsRequired || true });
+    register('educationField', { required: translations.EducationFieldRequired || true });
+    register('workHistorySummary', { required: translations.workHistorySummaryRequired || true });
+
+    // birthDate needs the same validate function as the Input uses
+    register('birthDate', {
+      required: translations.birthDateRequired || true,
+      validate: (value: string | undefined) => {
+        if (!value) return translations.birthDateRequired;
+        const birth = new Date(value);
+        if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        birth.setHours(0, 0, 0, 0);
+        if (birth > today) return translations.birthDateErrorMessageForFutureDate;
+        let age = today.getFullYear() - birth.getFullYear();
+        const m = today.getMonth() - birth.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+        return age >= 14 || translations.birthDateErrorMessageForAge;
+      }
+    });
+  };
+
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle
@@ -292,7 +333,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
             yesLabel={translations.yesLabel}
             noLabel={translations.noLabel}
             value={fileCounterState}
-            onChange={setFileCounter}
+            onChange={setFileCounterAndClear}
             name="fileCounter"
           />
           <div
@@ -336,6 +377,8 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                   className="input"
                   labelClass=""
                   validate={(value: string) => {
+                    // skip validation when resume is uploaded
+                    if (fileCounterState) return true;
                     if (!value) return translations.birthDateRequired;
                     const birth = new Date(value);
                     if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
