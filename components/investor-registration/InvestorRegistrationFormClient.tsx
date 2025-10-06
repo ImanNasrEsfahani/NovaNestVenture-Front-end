@@ -38,7 +38,7 @@ interface Translations {
   sendButton: string;
   successMessage: string;
   failedMessage: string;
-  
+
   countries: string[];
   countryName: string;
   countryNameRequired: string;
@@ -74,7 +74,7 @@ interface Translations {
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
   TypeOfCollaborationData: { value: string; label: string }[];
-  
+
   FieldOfExpert: string;
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
@@ -97,7 +97,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
     mode: 'onBlur',
     defaultValues: initialInvestorRegistrationFormData
   });
-  
+
   const {
     // csrfToken,
     // handleTokenChange,
@@ -169,7 +169,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
           <FormTitle
             formTitle={translations.formTitle}
             formSubtitle={translations.formSubtitle}
-        />
+          />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
@@ -196,7 +196,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 lastName: translations.lastName,
                 lastNameRequired: translations.lastNameRequired,
                 lastNamePlaceholder: translations.lastNamePlaceholder,
-                
+
                 email: translations.email,
                 emailRequired: translations.emailRequired,
                 emailErrorMessage: translations.emailErrorMessage,
@@ -231,40 +231,6 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 FieldOfExpertData: translations.FieldOfExpertData,
               }}
             />
-            {/* <Input
-              register={register}
-              errors={errors}
-              nameInput="birthDate"
-              type="date"
-              label={translations.birthDate}
-              required={''}
-              patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
-              patternMessage={translations.birthDateErrorMessage}
-              placeholder={translations.birthDatePlaceholder}
-              className="input col-span-1 mb-1 mt-3 w-full "
-              labelClass="dark:text-current"
-            /> */}
-
-            <CountryInput
-              countries={translations.countries}
-              countryName={translations.countryName}
-              countryNameRequired={translations.countryNameRequired}
-              countryNamePlaceholder={translations.countryNamePlaceholder}
-              provinceOfResidence={translations.provinceOfResidence}
-              provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
-              provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
-              cityOfResidence={translations.cityOfResidence}
-              cityOfResidenceRequired={translations.cityOfResidenceRequired}
-              cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
-
-              nameInputs={{
-                countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: '',
-                cityOfResidence: ''
-              }}
-              errors={errors}
-              register={register}
-            />
 
             <Input
               register={register}
@@ -276,54 +242,37 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               required=""
               placeholder={translations.maximumInvestmentPlaceholder}
               className="input col-span-1 w-full"
-              labelClass=" dark:text-current"
+              labelClass=""
               patternValue=""
               patternMessage=""
             />
-            
-            {/* <div className="col-span-1">
-              <Input
-                register={register}
-                errors={errors}
-                nameInput="companyName"
-                type="text"
-                label={translations.companyName}
-                // required={translations.companyNameRequired}
-                required=""
-                placeholder={translations.companyNamePlaceholder}
-                className="input col-span-1 mb-1 mt-3 w-full"
-                labelClass="dark:text-current"
-                patternValue=""
-                patternMessage=""
-              />
-            </div> */}
+          </div>
 
-            <div className="flex flex-col col-span-1 md:col-span-3 gap-6">
-              <TextArea
-                title={translations.preferredAreas}
-                register={register}
-                errors={errors}
-                placeholder={translations.preferredAreasPlaceholder}
-                nameTextArea="preferredAreas"
-                patternMessage=""
-                patternValue=""
-                required={translations.preferredAreasRequired}
-                rows={3}
-              />
+          <div className="flex flex-col gap-0">
+            <TextArea
+              title={translations.preferredAreas}
+              register={register}
+              errors={errors}
+              placeholder={translations.preferredAreasPlaceholder}
+              nameTextArea="preferredAreas"
+              patternMessage=""
+              patternValue=""
+              required={translations.preferredAreasRequired}
+              rows={3}
+            />
 
-              <TextArea
-                title={translations.howDidYouKnowUs}
-                register={register}
-                errors={errors}
-                placeholder={translations.howDidYouKnowUsPlaceholder}
-                nameTextArea="howDidYouKnowUs"
-                patternMessage=""
-                patternValue=""
-                // required={translations.howDidYouKnowUsRequired}
-                required=""
-                rows={3}
-              />
-            </div>
+            <TextArea
+              title={translations.howDidYouKnowUs}
+              register={register}
+              errors={errors}
+              placeholder={translations.howDidYouKnowUsPlaceholder}
+              nameTextArea="howDidYouKnowUs"
+              patternMessage=""
+              patternValue=""
+              // required={translations.howDidYouKnowUsRequired}
+              required=""
+              rows={3}
+            />
           </div>
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
             <ButtonRefactor
@@ -333,7 +282,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
             />
           </div>
         </form>
-      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

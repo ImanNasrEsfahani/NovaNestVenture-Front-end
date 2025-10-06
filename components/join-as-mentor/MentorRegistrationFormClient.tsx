@@ -248,27 +248,6 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               labelClass="dark:text-current"
             />
 
-            <CountryInput
-              countries={translations.countries}
-              countryName={translations.countryName}
-              countryNameRequired={translations.countryNameRequired}
-              countryNamePlaceholder={translations.countryNamePlaceholder}
-              provinceOfResidence={translations.provinceOfResidence}
-              provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
-              provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
-              cityOfResidence={translations.cityOfResidence}
-              cityOfResidenceRequired={translations.cityOfResidenceRequired}
-              cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
-              
-              errors={errors}
-              nameInputs={{
-                countryOfResidence: 'countryOfResidence',
-                provinceOfResidence: '',
-                cityOfResidence: 'cityOfResidence'
-              }}
-              register={register}
-            />
-
             <Input
               register={register}
               errors={errors}
@@ -322,7 +301,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 patternMessage=""
                 patternValue=""
                 required={translations.ExpertiesAreasRequired}
-                rows={3}
+                rows={5}
               />
 
               <TextArea

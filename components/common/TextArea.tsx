@@ -29,7 +29,7 @@ export default function TextArea({
       {/* Label for the textarea */}
       <label htmlFor={nameTextArea} className="w-full px-2 !text-[#6B6B6B] dark:text-current">
         {title}
-        {required ? <span > *</span> : null}
+        {required ? <span className="text-red-500 ml-1">*</span> : null}
         <textarea
           id={nameTextArea}
           rows={rows}

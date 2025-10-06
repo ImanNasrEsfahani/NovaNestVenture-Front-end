@@ -30,7 +30,7 @@ export default function Select({
       >
         <span className="flex">
           {label}
-          {required ? <span>&nbsp;*</span> : null}
+          {required ? <span className="text-red-500 ml-1">*</span> : null}
         </span>
         <select
           id={nameInput}

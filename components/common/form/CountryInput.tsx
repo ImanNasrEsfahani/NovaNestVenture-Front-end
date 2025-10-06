@@ -81,7 +81,10 @@ export default function CountryInput({
             htmlFor={nameInputs.countryOfResidence}
             className="flex flex-col px-2 !text-[#6B6B6B]"
           >
-            {countryName}
+            <span className="flex">
+              {countryName}
+              {countryNameRequired ? <span className="text-red-500 ml-1">*</span> : null}
+            </span>
             <select
               id={nameInputs.countryOfResidence}
               {...register(nameInputs.countryOfResidence, {

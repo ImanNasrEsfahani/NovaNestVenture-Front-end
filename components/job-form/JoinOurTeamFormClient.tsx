@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import { JoinOurTeamFormData } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
@@ -7,13 +7,11 @@ import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialJoinOurTeamFormData } from '../../initials/initObjects';
 import { submitJoinOurTeamForm } from '../../pages/api/jobs';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
-// import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Button from '@/components/common/Button';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
 import FileUpload from '@/components/common/form/FileUpload';
-
 import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 import Input from '@/components/common/form/Input';
 import Select from '@/components/common/form/Select';
@@ -118,109 +116,55 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     defaultValues: initialJoinOurTeamFormData
   });
 
-  const {
-    csrfToken,
-    handleTokenChange,
-    handleSubmitingChange,
-    handleSendChange,
-    handleNotifChange,
-    handleSuccessChange
-  } = useSubmit();
-
+  const { csrfToken, handleTokenChange, handleSubmitingChange, handleSendChange, handleNotifChange, handleSuccessChange } = useSubmit();
   const { cvFileState, handleCvFileChange } = useFile();
 
   useEffect(() => {
     let cancelled = false;
-    async function fetchCsrfToken() {
-      const token = await GetCsrfToken(
-        `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`
-      );
-      if (!cancelled) {
-        handleTokenChange(token);
-      }
-    }
-    fetchCsrfToken();
-    return () => {
-      cancelled = true;
-    };
+    (async () => {
+      const token = await GetCsrfToken(`${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`);
+      if (!cancelled) handleTokenChange(token);
+    })();
+    return () => { cancelled = true; };
   }, [handleTokenChange]);
 
   const onSubmit = async (formData: JoinOurTeamFormData) => {
-    // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
 
-    // Create a FormData object for form data.
     const sendFormData = new FormData();
+    if (cvFileState.cvFile) sendFormData.append('cvFile', cvFileState.cvFile as File, (cvFileState.cvFile as File).name);
 
-    const filePostMap = {
-      cvFile: cvFileState.cvFile
-    };
-
-    for (const [fieldName, file] of Object.entries(filePostMap)) {
-      if (file) {
-        sendFormData.append(fieldName, file, file.name);
-      }
-    }
-
-    // Append all non-file form fields.
-    Object.entries(formData).forEach(([fieldName, fieldValue]) => {
-      if (typeof fieldValue !== 'object' || fieldValue === null) {
-        sendFormData.append(fieldName, String(fieldValue));
-      } else sendFormData.append(fieldName, fieldValue[0]);
+    Object.entries(formData).forEach(([k, v]) => {
+      if (v == null) return;
+      if (typeof v === 'object' && v[0]) sendFormData.append(k, v[0]);
+      else sendFormData.append(k, String(v));
     });
 
-    // Send the form data to the API.
     submitJoinOurTeamForm(sendFormData, csrfToken)
-      .then((response) => {
+      .then((res) => {
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialJoinOurTeamFormData); // Country does not reset
-
-        // clear file in central store so FileUpload clears too
-        handleCvFileChange({ cvFile: "" });
-
-        console.log(response);
-
-        setTimeout(() => {
-          handleNotifChange(false);
-        }, 10000); // 10 seconds in milliseconds
+        reset(initialJoinOurTeamFormData);
+        handleCvFileChange({ cvFile: '' });
+        setTimeout(() => handleNotifChange(false), 10000);
       })
-      .catch((error) => {
-        handleSuccessChange(true);
-        handleNotifChange(false);
+      .catch((err) => {
+        handleSuccessChange(false);
+        handleNotifChange(true);
         handleSendChange(false);
-
-        // clear file in store on error as well (optional)
-        handleCvFileChange({ cvFile: "" });
-
-        console.log(error);
-
-        setTimeout(() => {
-          handleNotifChange(false);
-        }, 10000); // 10 seconds in milliseconds
+        handleCvFileChange({ cvFile: '' });
+        setTimeout(() => handleNotifChange(false), 10000);
+        console.error(err);
       });
   };
 
-  const errorsList = Object.entries(errors).map(([name, value]) => ({
-    name: name,
-    value: value
-  }));
-
-  // Adapter: FileUpload/UploadInput may provide null (no file) or File; store wants { cvFile: File | "" }
-  const onCvFileChange = (file: File | null) => {
-    if (file) {
-      handleCvFileChange({ cvFile: file });
-    } else {
-      // clear file in store when null is passed
-      handleCvFileChange({ cvFile: "" });
-    }
-  };
+  const onCvFileChange = (file: File | null) => handleCvFileChange({ cvFile: file ?? '' });
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
 
-  // helper that also clears validations when user chooses to upload resume
+  // toggle upload mode — clear errors for the optional group when enabling upload
   const setFileCounterAndClear = (v: boolean) => {
     setFileCounter(v);
 
@@ -234,39 +178,35 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     }
 
     clearErrors(fields);
-
     // re-register with the same rules used by the inputs
     register('educationLevel', { required: translations.EducationLevelsRequired || true });
     register('educationField', { required: translations.EducationFieldRequired || true });
     register('workHistorySummary', { required: translations.workHistorySummaryRequired || true });
 
-    // birthDate needs the same validate function as the Input uses
-    register('birthDate', {
-      required: translations.birthDateRequired || true,
-      validate: (value: string | undefined) => {
-        if (!value) return translations.birthDateRequired;
-        const birth = new Date(value);
-        if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        birth.setHours(0, 0, 0, 0);
-        if (birth > today) return translations.birthDateErrorMessageForFutureDate;
-        let age = today.getFullYear() - birth.getFullYear();
-        const m = today.getMonth() - birth.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
-        return age >= 14 || translations.birthDateErrorMessageForAge;
-      }
-    });
+    // register birthDate using the shared validator
+    register('birthDate', { required: translations.birthDateRequired || true, validate: birthValidate });
+  };
+
+  const birthValidate = (value?: string) => {
+    // skip validation when resume is uploaded
+    if (fileCounterState) return true;
+    if (!value) return translations.birthDateRequired;
+    const birth = new Date(value);
+    if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    birth.setHours(0, 0, 0, 0);
+    if (birth > today) return translations.birthDateErrorMessageForFutureDate;
+    let age = today.getFullYear() - birth.getFullYear();
+    const m = today.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+    return age >= 14 || translations.birthDateErrorMessageForAge;
   };
 
   return (
     <div className="max-w-responsive mx-auto py-20">
-      <FormTitle
-        formTitle={translations.formTitle}
-        formSubtitle={translations.formSubtitle}
-      />
+      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-
         <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 bg-whiteGold p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
@@ -376,23 +316,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                   placeholder={translations.birthDatePlaceholder}
                   className="input"
                   labelClass=""
-                  validate={(value: string) => {
-                    // skip validation when resume is uploaded
-                    if (fileCounterState) return true;
-                    if (!value) return translations.birthDateRequired;
-                    const birth = new Date(value);
-                    if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
-                    const today = new Date();
-                    // clear time
-                    today.setHours(0,0,0,0);
-                    birth.setHours(0,0,0,0);
-                    if (birth > today) return translations.birthDateErrorMessageForFutureDate;
-                    // compute age
-                    let age = today.getFullYear() - birth.getFullYear();
-                    const m = today.getMonth() - birth.getMonth();
-                    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
-                    return age >= 14 || translations.birthDateErrorMessageForAge;
-                  }}
+                  validate={birthValidate}
                 />
               </div>
               <div className="col-span-1">
@@ -449,7 +373,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
           <Button
             type="submit"
             bgColor="Primary"
-            disabled={errorsList[0] ? true : false}
+            disabled={Object.keys(errors).length > 0}
           />
         </div>
       </form>
