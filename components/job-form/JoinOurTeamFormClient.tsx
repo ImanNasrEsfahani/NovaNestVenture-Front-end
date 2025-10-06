@@ -329,7 +329,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
                   nameInput="birthDate"
                   type="date"
                   label={translations.birthDate}
-                  required={translations.birthDateRequired}
+                  required={!fileCounterState ? translations.birthDateRequired : ""}
                   patternValue="" // date input provides yyyy-mm-dd, pattern not needed
                   patternMessage={translations.birthDateErrorMessage}
                   placeholder={translations.birthDatePlaceholder}
