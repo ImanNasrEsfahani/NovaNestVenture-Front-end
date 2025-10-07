@@ -11,7 +11,6 @@ import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
-import CountryInput from '@/components/common/form/CountryInput';
 import Input from '../common/form/Input';
 
 interface Translations {

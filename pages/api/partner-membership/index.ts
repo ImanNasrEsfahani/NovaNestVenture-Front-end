@@ -5,7 +5,7 @@ export async function submitPartnerMembershipForm(
 ) {
   try {
     const response = await apiClient.post(
-      'partner-membership',
+      'affiliate-registration-form',
       sendFormData,
       {
         headers: {
