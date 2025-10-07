@@ -15,10 +15,13 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     ExpertiesAreas: t('ExpertiesAreas'),
     ExpertiesAreasPlaceholder: t('ExpertiesAreasPlaceholder'),
     ExpertiesAreasRequired: t('ExpertiesAreasRequired'),
-
+    ExpertiesAreasErrorMessage: t('ExpertiesAreasErrorMessage'),
+    
     howDidYouKnowUs: t('howDidYouKnowUs'),
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
+    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
+
     sendButton: t('sendButton'),
 
     successMessage: t('successMessage'),

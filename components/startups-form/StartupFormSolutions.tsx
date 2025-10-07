@@ -31,6 +31,9 @@ export default function StartupFormSolutions({
             patternMessage=""
             patternValue=""
             required={t('startUp',{ returnObjects: true }).solutions.solutionRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).solutions.solutionErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2">
@@ -54,6 +57,9 @@ export default function StartupFormSolutions({
             patternMessage=""
             patternValue=""
             required={t('startUp',{ returnObjects: true }).solutions.scalableRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).solutions.scalableErrorMessage}
+            validate=""
           />
         </div>
       </div>

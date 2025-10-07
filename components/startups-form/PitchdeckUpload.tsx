@@ -50,12 +50,14 @@ interface PitchdeckUploadProps {
       customerProblem: string;
       customerProblemRequired: string;
       customerProblemPlaceholder: string;
+      customerProblemErrorMessage: string;
     };
 
     solutionLevel: {
       solutionsUniqueValue: string;
       solutionsUniqueValueRequired: string;
       solutionsUniqueValuePlaceholder: string;
+      solutionsUniqueValueErrorMessage: string;
       solutionsLevel: string;
       solutionsLevelList: string[];
     };
@@ -66,9 +68,11 @@ interface PitchdeckUploadProps {
       monetization: string;
       monetizationRequired: string;
       monetizationPlaceholder: string;
+      monetizationErrorMessage: string;
       delivery: string;
       deliveryRequired: string;
       deliveryPlaceholder: string;
+      deliveryErrorMessage: string;
       financial: string;
 
       choseFile: string;
@@ -80,15 +84,22 @@ interface PitchdeckUploadProps {
       targetCharacteristics: string;
       targetCharacteristicsRequired: string;
       targetCharacteristicsPlaceholder: string;
+      targetCharacteristicsErrorMessage: string;
+
       targetCustomers: string;
       targetCustomersRequired: string;
       targetCustomersPlaceholder: string;
+      targetCustomersErrorMessage: string;
+      
       targetEstimated: string;
       targetEstimatedRequired: string;
       targetEstimatedPlaceholder: string;
+      targetEstimatedErrorMessage: string;
+
       targetTotal: string;
       targetTotalRequired: string;
       targetTotalPlaceholder: string;
+      targetTotalErrorMessage: string;
     };
     
     // Property
@@ -97,18 +108,23 @@ interface PitchdeckUploadProps {
       propertyRevenue: string;
       propertyRevenueRequired: string;
       propertyRevenuePlaceholder: string;
+      propertyRevenueErrorMessage: string;
       propertyMonthly: string;
       propertyMonthlyRequired: string;
       propertyMonthlyPlaceholder: string;
+      propertyMonthlyErrorMessage: string;
       propertyRate: string;
       propertyRateRequired: string;
       propertyRatePlaceholder: string;
+      propertyRateErrorMessage: string;
       propertyBusiness: string;
       propertyBusinessRequired: string;
       propertyBusinessPlaceholder: string;
+      propertyBusinessErrorMessage: string;
       propertyCapital: string;
       propertyCapitalRequired: string;
       propertyCapitalPlaceholder: string;
+      propertyCapitalErrorMessage: string;
     };
   };
 }
@@ -155,6 +171,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
           textAreaTitle={translations.problems.customerProblem}
           textAreaRequired={translations.problems.customerProblemRequired}
           textAreaPlaceholder={translations.problems.customerProblemPlaceholder}
+          textAreaErrorMessage={translations.problems.customerProblemErrorMessage}
           register={register}
           errors={errors}
         />
@@ -175,6 +192,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
             solutionsUniqueValue: translations.solutionLevel.solutionsUniqueValue,
             solutionsUniqueValueRequired: translations.solutionLevel.solutionsUniqueValueRequired,
             solutionsUniqueValuePlaceholder: translations.solutionLevel.solutionsUniqueValuePlaceholder,
+            solutionsUniqueValueErrorMessage: translations.solutionLevel.solutionsUniqueValueErrorMessage,
             solutionsLevel: translations.solutionLevel.solutionsLevel,
             solutionsLevelList: translations.solutionLevel.solutionsLevelList,
           }}

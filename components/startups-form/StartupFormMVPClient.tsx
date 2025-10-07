@@ -21,9 +21,11 @@ interface Translations {
   siteAddressPlaceholder: string;
   cooperatedWithInvestors: string;
   cooperatedWithInvestorsPlaceholder: string;
+  cooperatedWithInvestorsErrorMessage: string;
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
+  howDidYouKnowUsErrorMessage: string;
 }
 
 interface Props {
@@ -135,6 +137,9 @@ export default function StartupFormMVPClient({
                   patternMessage=""
                   patternValue=""
                   required=""
+                  maxLength={1450}
+                  maxLengthMessage={translations.cooperatedWithInvestorsErrorMessage}
+                  validate=""
                 />
               </div>
               <div className="col-span-2">
@@ -147,6 +152,9 @@ export default function StartupFormMVPClient({
                   patternMessage=""
                   patternValue=""
                   required={translations.howDidYouKnowUsRequired}
+                  maxLength={1450}
+                  maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+                  validate=""
                 />
               </div>
             </div>

@@ -32,6 +32,9 @@ export default function StartupFormTargetMarket({
           patternMessage=""
           patternValue=""
           required={t('startUp', { returnObjects: true }).targetMarket.customerCharacteristicRequired}
+          maxLength={1450}
+          maxLengthMessage={t('startUp', { returnObjects: true }).targetMarket.customerCharacteristicErrorMessage}
+          validate=""
         />
         </div>
         <div className="col-span-2">
@@ -44,6 +47,9 @@ export default function StartupFormTargetMarket({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).targetMarket.currentCustomersRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).targetMarket.currentCustomersErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2">
@@ -56,6 +62,9 @@ export default function StartupFormTargetMarket({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).targetMarket.estimatedMarketSizeRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).targetMarket.estimatedMarketSizeErrorMessage}
+            validate=""
           />
         </div>
         {/* <div className="col-span-2">

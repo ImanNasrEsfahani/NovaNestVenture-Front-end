@@ -7,6 +7,7 @@ type Props = {
   textAreaTitle: string;
   textAreaRequired: string;
   textAreaPlaceholder: string;
+  textAreaErrorMessage: string;
   register: UseFormRegister<StartupsFormData>;
   errors: FieldErrors<StartupsFormData>;
   nameTextArea?: string;
@@ -16,6 +17,7 @@ export default function ProblemsSection({
   textAreaTitle,
   textAreaRequired,
   textAreaPlaceholder,
+  textAreaErrorMessage,
   register,
   errors,
   nameTextArea = 'customerProblem'
@@ -34,6 +36,9 @@ export default function ProblemsSection({
             patternValue={''}
             patternMessage={''}
             placeholder={textAreaPlaceholder}
+            maxLength={1450}
+            maxLengthMessage={textAreaErrorMessage}
+            validate=""
           />
         </div>
       </div>

@@ -33,6 +33,9 @@ export default function StartupFormProblem({
             patternMessage=""
             patternValue=""
             required={t('startUp',{ returnObjects: true }).problems.customerProblemRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp',{ returnObjects: true }).problems.customerProblemErrorMessage}
+            validate=""
           />
         </div>
 

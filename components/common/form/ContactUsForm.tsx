@@ -12,6 +12,7 @@ export default function ContactUsFormWrapper({lang}: {lang: string}) {
     subjectPlaceholder: t('contactForm', { returnObjects: true }).subjectPlaceholder,
     messageRequired: t('contactForm', { returnObjects: true }).messageRequired,
     messagePlaceholder: t('contactForm', { returnObjects: true }).messagePlaceholder,
+    messagePlaceholderErrorMessage: t('contactForm', { returnObjects: true }).messagePlaceholderErrorMessage,
     sendingButton: t("sendingButton"),
     sendButton: t("sendButton"),
 

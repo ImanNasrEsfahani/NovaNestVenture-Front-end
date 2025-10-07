@@ -32,6 +32,9 @@ export default function StartupFormProperty({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).property.startupRevenueRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).property.startupRevenueErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2">
@@ -44,6 +47,9 @@ export default function StartupFormProperty({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).property.monthlyIncomeRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).property.monthlyIncomeErrorMessage}
+            validate=""
           />
         </div>
 
@@ -57,6 +63,9 @@ export default function StartupFormProperty({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).property.currentRaisedFundingRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).property.currentRaisedFundingErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2">
@@ -69,6 +78,9 @@ export default function StartupFormProperty({
             patternMessage=""
             patternValue=""
             required={t('startUp', { returnObjects: true }).property.neededCapitalRequired}
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).property.neededCapitalErrorMessage}
+            validate=""
           />
         </div>
       </div>

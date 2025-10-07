@@ -13,9 +13,11 @@ type Props = {
     monetization: string;
     monetizationRequired: string;
     monetizationPlaceholder: string;
+    monetizationErrorMessage: string;
     delivery: string;
     deliveryRequired: string;
     deliveryPlaceholder: string;
+    deliveryErrorMessage: string;
     financial: string;
     choseFile: string;
   };
@@ -41,6 +43,9 @@ export default function BussinessModelDropDown({
             patternValue={''}
             patternMessage={''}
             placeholder={translations.monetizationPlaceholder}
+            maxLength={1450}
+            maxLengthMessage={translations.monetizationErrorMessage}
+            validate=""
           />
         </div>
         <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
@@ -53,6 +58,9 @@ export default function BussinessModelDropDown({
             patternValue={''}
             patternMessage={''}
             placeholder={translations.deliveryPlaceholder}
+            maxLength={1450}
+            maxLengthMessage={translations.deliveryErrorMessage}
+            validate=""
           />
         </div>
       </div>

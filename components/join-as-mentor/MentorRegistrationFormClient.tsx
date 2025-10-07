@@ -23,9 +23,12 @@ interface Translations {
   ExpertiesAreas: string;
   ExpertiesAreasPlaceholder: string;
   ExpertiesAreasRequired: string;
+  ExpertiesAreasErrorMessage: string;
+  
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
+  howDidYouKnowUsErrorMessage: string;
   sendButton: string;
   successMessage: string;
   failedMessage: string;
@@ -302,6 +305,9 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 patternValue=""
                 required={translations.ExpertiesAreasRequired}
                 rows={5}
+                maxLength={1450}
+                maxLengthMessage={translations.ExpertiesAreasErrorMessage}
+                validate=""
               />
 
               <TextArea
@@ -314,6 +320,9 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 patternValue=""
                 required={translations.howDidYouKnowUsRequired}
                 rows={3}
+                maxLength={1450}
+                maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+                validate=""
               />
             </div>
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">

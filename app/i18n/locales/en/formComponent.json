@@ -65,6 +65,7 @@
 
   "workHistorySummary": "Work History Summary",
   "workHistorySummaryRequired": "Work History Summary is required.",
+  "workHistorySummaryErrorMessage": "Work History Summary must be less than 1450 characters.",
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
 
   "EducationLevelsData": [
@@ -91,16 +92,19 @@
   "maximumInvestmentRequired": "Maximum Investment is Required",
   "maximumInvestmentPlaceholder": "ex. 100,000$",
 
-  "preferredAreas": "Preferred Areas for Investment ",
-  "preferredAreasRequired": "This field is required",
-  "preferredAreasPlaceholder": "Area like Education, Tourism, AI, Genetic, and etc",
-
   "ExpertiesAreas": "What are your area of expertise? ",
   "ExpertiesAreasRequired": "This field is required",
   "ExpertiesAreasPlaceholder": "Marketing, AI, Sale, IT, Human Resources, etc.",
+  "ExpertiesAreasErrorMessage": "The message must be less than 1450 characters.",
+
+  "preferredAreas": "Preferred Areas for Investment ",
+  "preferredAreasRequired": "This field is required",
+  "preferredAreasPlaceholder": "Area like Education, Tourism, AI, Genetic, and etc",
+  "preferredAreasErrorMessage": "The message must be less than 1450 characters.",
 
   "howDidYouKnowUs": "How did you know us? ",
   "howDidYouKnowUsPlaceholder": "For example, social media, etc.",
+  "howDidYouKnowUsErrorMessage": "The message must be less than 1450 characters.",
   "howDidYouKnowUsRequired": "This field is required.",
 
   "website": "Website",
@@ -118,6 +122,7 @@
   "breifIntroduction": "Brief Introduction",
   "breifIntroductionRequired": "Brief Introduction is required",
   "breifIntroductionPlaceholder": "Enter a brief introduction",
+  "breifIntroductionErrorMessage": "The message must be less than 1450 characters.",
 
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
@@ -130,7 +135,8 @@
     "subjectPlaceholder": "Subject",
     "message": "Message",
     "messageRequired": "Your Message is Required",
-    "messagePlaceholder": "Message"
+    "messagePlaceholder": "Message",
+    "messagePlaceholderErrorMessage": "The message must be less than 1450 characters."
   },
 
   "partnerForm": {
@@ -250,7 +256,8 @@
       
       "ideaExplanation": "Explain your idea in 5 lines? ",
       "ideaExplanationPlaceholder": "Description",
-      "ideaExplanationRequired": "This field is required"
+      "ideaExplanationRequired": "This field is required",
+      "ideaExplanationErrorMessage": "The message must be less than 1450 characters."
     },
 
     "trial": {
@@ -358,7 +365,8 @@
         "title": "Problems",
         "customerProblem": "Describe the customer problem you want to solve with your product or service. ",
         "customerProblemRequired": "This field is required!",
-        "customerProblemPlaceholder": "Description"
+        "customerProblemPlaceholder": "Description",
+        "customerProblemErrorMessage": "The message must be less than 1450 characters."
       },
 
       "propertyDropDown": {
@@ -366,22 +374,27 @@
         "propertyRevenue": "How much revenue has your startup made since its inception?",
         "propertyRevenueRequired": "This field is required",
         "propertyRevenuePlaceholder": "Description",
+        "propertyRevenueErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyMonthly": "How much is your monthly income?",
         "propertyMonthlyRequired": "This field is required",
         "propertyMonthlyPlaceholder": "Description",
+        "propertyMonthlyErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyRate": "What is your current interest rate?",
         "propertyRateRequired": "This field is required",
         "propertyRatePlaceholder": "Description",
+        "propertyRateErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyBusiness": "How much current funding did you raise before starting your business?",
         "propertyBusinessRequired": "This field is required",
         "propertyBusinessPlaceholder": "Description",
+        "propertyBusinessErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyCapital": "How much capital do you need to start your project?",
         "propertyCapitalRequired": "This field is required",
-        "propertyCapitalPlaceholder": "Description"
+        "propertyCapitalPlaceholder": "Description",
+        "propertyCapitalErrorMessage": "The message must be less than 1450 characters."
       },
 
       "targetMarketDropDown": {
@@ -390,18 +403,22 @@
         "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?",
         "targetCharacteristicsRequired": "This field is required",
         "targetCharacteristicsPlaceholder": "Description",
+        "targetCharacteristicsErrorMessage": "The message must be less than 1450 characters.",
 
         "targetCustomers": "Who are your current customers? How many customers have you had so far?",
         "targetCustomersRequired": "This field is required",
         "targetCustomersPlaceholder": "Description",
+        "targetCustomersErrorMessage": "The message must be less than 1450 characters.",
 
         "targetEstimated": "How have you estimated the size of the market?",
         "targetEstimatedRequired": "This field is required",
         "targetEstimatedPlaceholder": "Description",
+        "targetEstimatedErrorMessage": "The message must be less than 1450 characters.",
 
         "targetTotal": "targetTotal",
         "targetTotalRequired": "targetTotal",
-        "targetTotalPlaceholder": "targetTotal"
+        "targetTotalPlaceholder": "targetTotal",
+        "targetTotalErrorMessage": "The message must be less than 1450 characters."
       },
 
       "solutionLevel": {
@@ -428,20 +445,24 @@
         "title": "Business Model",
         "monetization": "Describe the method of monetization of your plan? ",
         "monetizationOfYourPlan": "Explain how you plan to generate revenue?",
-        "monetizationOfYourPlanRequired": "This field is required!",
+        "monetizationOfYourPlanRequirmonetizationed": "This field is required!",
         "monetizationOfYourPlanPlaceholder": "Description",
+        "monetizationOfYourPlanErrorMessage": "The message must be less than 1450 characters.",
         "monetizationPlaceholder": "Description", 
         "monetizationRequired": "This field is required!",
+
 
         "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. ",
         "deliveryPlaceholder": "Description",
         "deliveryRequired": "This field is required!",
+        "deliveryErrorMessage": "The message must be less than 1450 characters.",
 
         "choseFile": "Choose File",
 
         "structureOfYourSales": "Please explain your sales structure from the beginning ",
         "structureOfYourSalesPlaceholder": "Description",
-        "structureOfYourSalesRequired": "This field is required!"
+        "structureOfYourSalesRequired": "This field is required!",
+        "structureOfYourSalesErrorMessage": "The message must be less than 1450 characters."
       }
     },
 
@@ -451,17 +472,22 @@
 
     "cooperatedWithInvestors": "Have you previously cooperated with investors or accelerators?",
     "cooperatedWithInvestorsPlaceholder": "Description",
-
+    "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
+    
     "solutions": {
       "title": "Solutions",
       "solution": "What is your unique value proposition (innovation)? What is new about what you do? ",
       "solutionPlaceholder": "Description",
       "solutionRequired": "This field is required!",
+      "solutionsErrorMessage": "The message must be less than 1450 characters.",
+
       "productLevel": "How much is level of your product and technology preparation?",
       "productLevelRequired": "Preparation Stats Required",
+      
       "scalable": "Briefly explain how your technology is scalable? ",
       "scalablePlaceholder": "Description",
-      "scalableRequired": "This field is required!"
+      "scalableRequired": "This field is required!",
+      "scalableErrorMessage": "The message must be less than 1450 characters."
     },
     "financialFile": "Do you currently have a financial plan in place?",
     "financialFileRequired": "Please choose an option",
@@ -471,27 +497,39 @@
       "startupRevenue": "How much revenue has your startup made since its inception? ",
       "startupRevenuePlaceholder": "Description",
       "startupRevenueRequired": "This field is required!",
+      "startupRevenueErrorMessage": "The message must be less than 1450 characters.",
+
       "monthlyIncome": "How much is your monthly income? ",
       "monthlyIncomePlaceholder": "Description",
       "monthlyIncomeRequired": "This field is required!",
+      "monthlyIncomeErrorMessage": "The message must be less than 1450 characters.",
+
       "currentRaisedFunding": "How much current funding did you raise before starting your business? ",
       "currentRaisedFundingPlaceholder": "Description",
       "currentRaisedFundingRequired": "This field is required!",
+      "currentRaisedFundingErrorMessage": "The message must be less than 1450 characters.",
+
       "neededCapital": "How much capital do you need to start your project? ",
       "neededCapitalPlaceholder": "Description",
-      "neededCapitalRequired": "This field is required!"
+      "neededCapitalRequired": "This field is required!",
+      "neededCapitalErrorMessage": "The message must be less than 1450 characters."
     },
     "targetMarket": {
       "title": "Target Market",
       "customerCharacteristic": "Based on what characteristics do you decide who are your customers and who are not? ",
       "customerCharacteristicPlaceholder": "Description",
       "customerCharacteristicRequired": "This field is required!",
+      "customerCharacteristicErrorMessage": "The message must be less than 1450 characters.",
+
       "currentCustomers": "Who are your current customers? How many customers have you had so far? ",
       "currentCustomersPlaceholder": "Description",
       "currentCustomersRequired": "This field is required!",
+      "currentCustomersErrorMessage": "The message must be less than 1450 characters.",
+
       "estimatedMarketSize": "How have you estimated the size of the market? ",
       "estimatedMarketSizePlaceholder": "Description",
-      "estimatedMarketSizeRequired": "This field is required!"
+      "estimatedMarketSizeRequired": "This field is required!",
+      "estimatedMarketSizeErrorMessage": "The message must be less than 1450 characters."
     },
 
     "radioButtonGroup": [

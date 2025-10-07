@@ -7,6 +7,7 @@ type translations = {
   solutionsUniqueValue: string;
   solutionsUniqueValueRequired: string;
   solutionsUniqueValuePlaceholder: string;
+  solutionsUniqueValueErrorMessage: string;
   solutionsLevel: string;
   solutionsLevelList: string[];
 };
@@ -43,7 +44,10 @@ export default function SolutionLevel(props: Props) {
               nameTextArea={"scalable"} 
               patternValue={''} 
               patternMessage={''} 
-              placeholder={translations.solutionsUniqueValuePlaceholder}                                                 
+              placeholder={translations.solutionsUniqueValuePlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.solutionsUniqueValueErrorMessage}
+              validate=""
           />
           <div className='w-full mt-4'>
               <p className='mb-2'>{translations.solutionsLevel}</p>

@@ -1,112 +1,145 @@
 {
   "yes": "بله",
   "no": "خیر",
-
   "firstName": "نام کوچک",
   "firstNameRequired": "نام اجباری است.",
   "firstNamePlaceholder": "لطفا نام خود را وارد کنید.",
-  
   "lastName": "نام خانوادگی",
   "lastNameRequired": "نام خانوادگی اجباری است.",
   "lastNamePlaceholder": "لطفا نام خانوادگی خود را وارد کنید.",
-  
   "email": "ایمیل",
   "emailRequired": "ایمیل اجباری است.",
   "emailErrorMessage": "لطفا آدرس ایمیل را به درستی وارد کنید.",
   "EmailPlaceholder": "لطفا ایمیل خود را وارد کنید.",
-  
   "phoneNumber": "شماره تماس",
   "phoneNumberRequired": "شماره تماس الزامی است.",
   "phoneNumberErrorMessage": "شماره تماس را به درستی وارد کنید.",
   "phoneNumberPlaceholder": "لطفا شماره تماس خود را وارد کنید.",
-
   "TypeOfCollaboration": "نوع همکاری",
   "TypeOfCollaborationRequired": "نوع همکاری واجب است",
   "TypeOfCollaborationErrorMassage": "نوع همکاری را وارد کنید",
-  "TypeOfCollaborationPlaceholder":"نوع همکاری را انتخاب کنید",
-
+  "TypeOfCollaborationPlaceholder": "نوع همکاری را انتخاب کنید",
   "TypeOfCollaborationData": [
-    { "value": 0, "label": "کارآموزی" },
-    { "value": 1, "label": "استخدام" }
+    {
+      "value": 0,
+      "label": "کارآموزی"
+    },
+    {
+      "value": 1,
+      "label": "استخدام"
+    }
   ],
-
   "FieldOfExpert": "زمینه تخصصی",
-  "FieldOfExpertRequired":"زمینه تخصصی اجباری است",
-  "FieldOfExpertErrorMassage":"زمینه تخصصی را وارد کنید",
-  "FieldOfExpertPlaceholder":"زمینه تخصصی را انتخاب کنید",
-
+  "FieldOfExpertRequired": "زمینه تخصصی اجباری است",
+  "FieldOfExpertErrorMassage": "زمینه تخصصی را وارد کنید",
+  "FieldOfExpertPlaceholder": "زمینه تخصصی را انتخاب کنید",
   "FieldOfExpertData": [
-    { "value": 0, "label": "برنامه نویس" },
-    { "value": 1, "label": "بازاریابی" },
-    { "value": 2, "label": "گرافیک" },
-    { "value": 3, "label": "مهاجرت" },
-    { "value": 4, "label": "حسابداری" },
-    { "value": 5, "label": "اداری" }
+    {
+      "value": 0,
+      "label": "برنامه نویس"
+    },
+    {
+      "value": 1,
+      "label": "بازاریابی"
+    },
+    {
+      "value": 2,
+      "label": "گرافیک"
+    },
+    {
+      "value": 3,
+      "label": "مهاجرت"
+    },
+    {
+      "value": 4,
+      "label": "حسابداری"
+    },
+    {
+      "value": 5,
+      "label": "اداری"
+    }
   ],
-
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",
   "birthDatePlaceholder": "لطفا تاریخ تولد خود را وارد کنید.",
-
   "EducationLevels": "Education Level",
   "EducationLevelsRequired": "Education Level is Required",
   "EducationLevelsPlaceholder": "Select Your Education Level",
-
   "EducationField": "Please specify your field of study.",
   "EducationFieldRequired": "Field of study is required.",
   "EducationFieldPlaceholder": "Enter your field of study like Computer Science, Business Administration, etc.",
-
   "workHistorySummary": "Work History Summary",
   "workHistorySummaryRequired": "Work History Summary is required.",
+  "workHistorySummaryErrorMessage": "Work History Summary must be less than 1450 characters.",
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
-
   "EducationLevelsData": [
-    { "value": 0, "label": "Diploma" },
-    { "value": 1, "label": "Bachelor" },
-    { "value": 2, "label": "Master" },
-    { "value": 3, "label": "PhD" }
+    {
+      "value": 0,
+      "label": "Diploma"
+    },
+    {
+      "value": 1,
+      "label": "Bachelor"
+    },
+    {
+      "value": 2,
+      "label": "Master"
+    },
+    {
+      "value": 3,
+      "label": "PhD"
+    }
   ],
-
   "sendButton": "ارسال",
   "sendingButton": "درحال ارسال ....",
   "visitButton": "مشاهده کنید",
-  
   "successMessage": "اطلاعات با موفقیت ارسال شد.",
   "failedMessage": "در ارسال اطلاعات مشکلی به وجود آمده! لطفا با پشتیبانی تماس بگیرید.",
-
   "companyName": "نام شرکت",
   "companyNameRequired": "نام شرکت الزامی است.",
   "companyNamePlaceholder": "لطفا نام شرکت را وارد کنید.",
-
   "maximumInvestment": "حداکثر سرمایه‌گذاری",
   "maximumInvestmentRequired": "حداکثر سرمایه‌گذاری الزامی است",
   "maximumInvestmentPlaceholder": "مثال: 100,000$",
-
+  "ExpertiesAreas": "What are your area of expertise? ",
+  "ExpertiesAreasRequired": "This field is required",
+  "ExpertiesAreasPlaceholder": "Marketing, AI, Sale, IT, Human Resources, etc.",
+  "ExpertiesAreasErrorMessage": "The message must be less than 1450 characters.",
   "preferredAreas": "مناطق مورد علاقه برای سرمایه‌گذاری",
   "preferredAreasRequired": "پر کردن این قسمت الزامی است",
   "preferredAreasPlaceholder": "مناطق",
-
+  "preferredAreasErrorMessage": "The message must be less than 1450 characters.",
   "howDidYouKnowUs": "نحوه آشنایی با ما",
   "howDidYouKnowUsPlaceholder": "مثلاً شبکه‌های اجتماعی و ...",
+  "howDidYouKnowUsErrorMessage": "پیام باید کمتر از 1450 کاراکتر باشد.",
   "howDidYouKnowUsRequired": "پر کردن این قسمت الزامی است",
+
+  "linkedin": "LinkedIn",
+  "linkedinRequired": "LinkedIn is required",
+  "linkedinPlaceholder": "Enter your LinkedIn profile URL",
+
+  "instagram": "Instagram",
+  "instagramRequired": "Instagram is required",
+  "instagramPlaceholder": "Enter your Instagram profile URL or username",
+
+  "breifIntroduction": "Brief Introduction",
+  "breifIntroductionRequired": "Brief Introduction is required",
+  "breifIntroductionPlaceholder": "Enter a brief introduction",
+  "breifIntroductionErrorMessage": "The message must be less than 1450 characters.",
 
   "provinceOfResidence": "استان محل سکونت",
   "provinceOfResidencePlaceholder": "استان محل سکونت را وارد کنید",
   "provinceOfResidenceRequired": "پر کردن استان محل سکونت الزامی است",
-
   "countryOfResidence": "کشور محل اقامت",
   "countryOfResidencePlaceholder": "ایران",
   "countryOfResidenceRequired": "وارد کردن کشور محل اقامت الزامی است",
-
   "cityOfResidence": "شهر محل اقامت",
   "cityOfResidencePlaceholder": "تهران",
   "cityOfResidenceRequired": "شهر محل اقامت الزامی است",
-
   "investmentCeiling": "سقف سرمایه گذاری",
   "investmentCeilingRequired": "این بخش الزامی است.",
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
-
   "contactForm": {
     "title": "با ما تماس بگیرید",
     "subject": "موضوع",
@@ -114,9 +147,9 @@
     "subjectPlaceholder": "موضوع شما",
     "message": "پیام شما",
     "messageRequired": "پیام شما الزامی است",
-    "messagePlaceholder": "پیام شما"
+    "messagePlaceholder": "پیام شما",
+    "messagePlaceholderErrorMessage": "پیام باید کمتر از 1450 کاراکتر باشد."
   },
-
   "partnerForm": {
     "lng": "fa",
     "dir": "rtl",
@@ -124,7 +157,6 @@
     "formTitle": "فرم شریک تجاری",
     "formSubtitle": "اطلااعات شخصی"
   },
-
   "jobForm": {
     "lng": "fa",
     "dir": "rtl",
@@ -134,7 +166,6 @@
     "formSubtitle": "اطلاعات شخصی",
     "resumeFile": "فایل رزومه:"
   },
-
   "workWithUS": {
     "lng": "fa",
     "dir": "rtl",
@@ -156,11 +187,9 @@
     "StudySubFieldRequired": "زیر رشته الزامی است",
     "PositionPlaceholder": "سمت",
     "contractPlaceholder": "نوع همکاری ",
-
     "email": "ایمیل",
     "emailRequired": "ایمیل اجباری است.",
     "emailPlaceholder": "لطفا ایمیل خود را وارد کنید.",
-    
     "cvFile": "فایل رزومه",
     "cvFileRequired": "رزومه اجباری است.",
     "cvFilePlaceholder": "لطفا رزومه خود را آپلود کنید.",
@@ -171,7 +200,6 @@
     "Internship": "کارآموزی",
     "UniversityInternship": "طرح پویش"
   },
-
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
@@ -187,13 +215,11 @@
       "شفافیت کامل در روند سرمایه‌گذاری و بازگشت سرمایه"
     ],
     "formDescriptionEnd": "برای بهره‌مندی از این فرصت‌ها، لطفاً فرم زیر را تکمیل کنید. تیم ما به زودی با شما تماس خواهد گرفت.",
-
     "formSubtitle": "اطلاعات شخصی",
     "interests": "علاقه مندی ها",
     "interestsRequired": "علاقه مندی ها الزامی است",
     "interestsPlaceholder": "علاقه مندی های خود را وارد کنید"
   },
-
   "joinUsForm": {
     "lng": "fa",
     "dir": "rtl",
@@ -206,7 +232,6 @@
     "contractType": "نوع قرارداد",
     "contractTypePlaceholder": "نوع قرارداد خود را انتخاب کنید"
   },
-
   "startUp": {
     "lng": "fa",
     "dir": "rtl",
@@ -219,179 +244,151 @@
     "secondTitle": "رشد و توسعه فردی",
     "subTitle": "درباره پروژه شما",
     "formSubtitle": "درباره پروژه شما",
-    
     "formHeader": "Startup Investment Application",
     "formContent": [
       "Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.",
       "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation.",
       "Completing this form is the first step toward a potential partnership and investment with us. We look forward to learning more about your startup and exploring how we can support your growth."
     ],
-    
     "idea": {
       "description": "Present your idea and identify the best opportunity for success, plan your path to launch and precisely set the steps, and find the right team of experts to help you take the steps one after another. Remember that the first step is the longest stride. You must remember to validate the profitability of your idea because low profitability and high investment risks lead to failure.",
-
       "ideaExplanation": "ایده خود را در ۵ خط توضیح دهید؟",
       "ideaExplanationPlaceholder": "توضیحات",
-      "ideaExplanationRequired": "پر کردن این قسمت الزامی است."
+      "ideaExplanationRequired": "پر کردن این قسمت الزامی است.",
+      "ideaExplanationErrorMessage": "The message must be less than 1450 characters."
     },
-
     "trial": {
       "description": "Take the first bold step by presenting your idea and identifying the most promising path to success. Carefully plan your journey to launch, define each milestone, and gather the right team of experts to support you along the way. Remember, validating the profitability of your idea is essential—low returns and high risks can lead to failure. A well-prepared trial phase sets the foundation for everything that follows.",
-      
       "pitchDeck": "Do you have Pitch deck?",
       "choseFile": "Choose File",
-      
       "productName": "Product Name",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-      
       "siteAddress": "Site Address",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-      
       "businessPlan": "Do you have Business Plan?",
-
       "financial": "Do you have Financial?",
-     
-      
       "businessPlanRequired": "Please choose an option",
-
       "businessFinancial": "If your plan has a financial model, please upload it."
     },
-
     "MVP": {
       "description": "MVP is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development. This way, you are able to create the tangible product that provides the best and most appealing user experience for the most economical cost, an that can challenge and validate assumptions about a product's requirements.",
-      
       "pitchDeck": "Do you have Pitch deck?",
       "choseFile": "Choose File",
-
       "productName": "Product Name",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-      
       "siteAddress": "Site Address",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "businessPlan": "Do you have Business Plan?",
-      
       "businessModel": "Business Model",
       "businessMonetization": "Describe your program's monetization method?",
       "businessMonetizationRequired": "This field is required",
       "businessMonetizationPlaceholder": "Description",
-      
       "businessDelivery": "Please clearly mention the structure of your sales cycle from contact to delivery.",
       "businessDeliveryRequired": "This field is required",
       "businessDeliveryPlaceholder": "Description",
-      
       "financial": "If your plan has a financial model, please upload it.",
-
       "businessAccelerators": "Have you previously cooperated with investors or accelerators?",
       "businessAcceleratorsRequired": "This field is required",
       "businessAcceleratorsPlaceholder": "Description",
-
-      "businessKnowUs": "How did you get to know us?", 
+      "businessKnowUs": "How did you get to know us?",
       "businessKnowUsRequired": "This field is required",
       "businessKnowUsPlaceholder": "Description"
     },
-
     "FirstSale": {
-      "description" : "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
+      "description": "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
       "choseFile": "Choose File",
-
       "productName": "Product Name",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-
       "siteAddress": "Site Address",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "pitchDeck": "Do you have Pitch deck?",
-                            "pitchDeckRequired": "Please choose an option",
-      
+      "pitchDeckRequired": "Please choose an option",
       "businessPlan": "Do you have Business Plan?",
-                            "businessPlanRequired": "Please choose an option",
-
+      "businessPlanRequired": "Please choose an option",
       "financial": "Do you have Financial?"
     },
-
-    "SaleDevelopment" : {
+    "SaleDevelopment": {
       "description": "Collaborate with manufacturers to ensure a high quality product delivered to buyer's doors that exceeds customer expectations. Sales development is usually an organization that sits between the marketing and sales functions of a business and is responsible for the front-end of the sales cycle including identifying, connecting with, and qualifying leads. They normally set up qualified meetings between a salesperson and potential buyers with a high probability of purchasing a product.",
-      
       "pitchDeck": "Do you have Pitch deck?",
       "choseFile": "Choose File",
-
       "productName": "Product Name",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-
       "siteAddress": "Site Address",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "businessPlan": "Do you have Business Plan?",
       "financial": "Do you have Financial?"
     },
-
     "commons": {
-      
       "problems": {
         "title": "Problems",
         "customerProblem": "Describe the customer problem you want to solve with your product or service.",
         "customerProblemRequired": "This field is required!",
-        "customerProblemPlaceholder": "Description"
+        "customerProblemPlaceholder": "Description",
+        "customerProblemErrorMessage": "The message must be less than 1450 characters."
       },
-
       "propertyDropDown": {
         "property": "Property",
         "propertyRevenue": "How much revenue has your startup made since its inception?",
         "propertyRevenueRequired": "This field is required",
         "propertyRevenuePlaceholder": "Description",
+        "propertyRevenueErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyMonthly": "How much is your monthly income?",
         "propertyMonthlyRequired": "This field is required",
         "propertyMonthlyPlaceholder": "Description",
+        "propertyMonthlyErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyRate": "What is your current interest rate?",
         "propertyRateRequired": "This field is required",
         "propertyRatePlaceholder": "Description",
+        "propertyRateErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyBusiness": "How much current funding did you raise before starting your business?",
         "propertyBusinessRequired": "This field is required",
         "propertyBusinessPlaceholder": "Description",
+        "propertyBusinessErrorMessage": "The message must be less than 1450 characters.",
 
         "propertyCapital": "How much capital do you need to start your project?",
         "propertyCapitalRequired": "This field is required",
-        "propertyCapitalPlaceholder": "Description"
+        "propertyCapitalPlaceholder": "Description",
+        "propertyCapitalErrorMessage": "The message must be less than 1450 characters."
       },
-
       "targetMarketDropDown": {
 
         "targetMarket": "Target Market",
         "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?",
         "targetCharacteristicsRequired": "This field is required",
         "targetCharacteristicsPlaceholder": "Description",
+        "targetCharacteristicsErrorMessage": "The message must be less than 1450 characters.",
 
         "targetCustomers": "Who are your current customers? How many customers have you had so far?",
         "targetCustomersRequired": "This field is required",
         "targetCustomersPlaceholder": "Description",
+        "targetCustomersErrorMessage": "The message must be less than 1450 characters.",
 
         "targetEstimated": "How have you estimated the size of the market?",
         "targetEstimatedRequired": "This field is required",
         "targetEstimatedPlaceholder": "Description",
+        "targetEstimatedErrorMessage": "The message must be less than 1450 characters.",
 
         "targetTotal": "targetTotal",
         "targetTotalRequired": "targetTotal",
-        "targetTotalPlaceholder": "targetTotal"
+        "targetTotalPlaceholder": "targetTotal",
+        "targetTotalErrorMessage": "The message must be less than 1450 characters."
       },
-
       "solutionLevel": {
         "solutions": "Solutions",
         "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
         "solutionsUniqueValueRequired": "this fields is required",
         "solutionsUniqueValuePlaceholder": "Description",
-
         "solutionsLevel": "How much is level of your product and technology preparation?",
         "solutionsLevelList": [
           "The basic principle has been observed.",
@@ -404,478 +401,1217 @@
           "The proved realistic system in the operating environment.",
           "A complete and qualified system."
         ],
-
-
         "solutionsPosition": "What is your unique value proposition (innovation)? What is new about what you do?",
         "solutionsPositionRequired": "this fields is required",
         "solutionsPositionPlaceholder": "Description"
       },
-
       "businessModel": {
         "title": "Business Model",
         "monetization": "Describe the method of monetization of your plan?",
         "monetizationOfYourPlan": "Explain how you plan to generate revenue?",
         "monetizationOfYourPlanRequired": "This field is required!",
         "monetizationOfYourPlanPlaceholder": "Description",
-        "monetizationPlaceholder": "Description", 
+        "monetizationOfYourPlanErrorMessage": "The message must be less than 1450 characters.",
+        "monetizationPlaceholder": "Description",
         "monetizationRequired": "This field is required!",
-
         "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery.",
         "deliveryPlaceholder": "Description",
         "deliveryRequired": "This field is required!",
-
         "financialPlan": "If your plan has a financial model, please upload.",
         "choseFile": "Choose File",
-
         "accelerators": "Have you previously cooperated with investors or accelerators?",
         "acceleratorsPlaceholder": "Description",
         "acceleratorsRequired": "This field is required!",
-
         "knowUs": "How did you get to know us?",
-        "knowUsPlaceholder": "Description", 
+        "knowUsPlaceholder": "Description",
         "knowUsRequired": "This field is required!",
-
         "structureOfYourSales": "Please explain your sales structure from the beginning",
         "structureOfYourSalesPlaceholder": "Description",
         "structureOfYourSalesRequired": "This field is required!"
       }
     },
-    
     "investmentCeiling": "سقف سرمایه گذاری",
     "investmentCeilingRequired": "سقف سرمایه گذاری الزامی است.",
     "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
-
     "problems": {
- "title": "مشکلات",
- "customerProblem": "توضیح دهید که محصول شما چه مشکلی از کاربر را برطرف میکند؟",
- "customerProblemRequired": "این قسمت الزامی است.",
- "customerProblemPlaceholder": "توضیحات"
+      "title": "مشکلات",
+      "customerProblem": "توضیح دهید که محصول شما چه مشکلی از کاربر را برطرف میکند؟",
+      "customerProblemRequired": "این قسمت الزامی است.",
+      "customerProblemPlaceholder": "توضیحات"
     },
     "cooperatedWithInvestors": "آیا قبلا با سرمایه گذاران یا شتاب دهنده ها کار کرده اید؟",
     "cooperatedWithInvestorsPlaceholder": "توضیحات",
+    "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
 
     "solutions": {
- "title": "راه حل ها",
- "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟",
- "solutionPlaceholder": "توضیحات",
- "solutionRequired": "این قسمت الزامی است!",
- "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
- "productLevelRequired": "آمار آماده سازی مورد نیاز است",
- "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد",
- "scalablePlaceholder": "توضیحات",
- "scalableRequired": "این قسمت الزامی است!"
+      "title": "راه حل ها",
+      "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟",
+      "solutionPlaceholder": "توضیحات",
+      "solutionRequired": "این قسمت الزامی است!",
+      "solutionsErrorMessage": "The message must be less than 1450 characters.",
+
+      "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
+      "productLevelRequired": "آمار آماده سازی مورد نیاز است",
+      
+      "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد",
+      "scalablePlaceholder": "توضیحات",
+      "scalableRequired": "این قسمت الزامی است!",
+      "scalableErrorMessage": "The message must be less than 1450 characters."
     },
     "businessModel": {
- "title": "طرح کسب و کار",
- "monetization": "روش کسب درآمد از طرح خود را توضیح دهید؟",
- "monetizationOfYourPlan": "روش کسب درآمد از طرح خود را توضیح دهید؟",
- "monetizationOfYourPlanRequired": "این قسمت الزامی است!",
- "monetizationOfYourPlanPlaceholder": "توضیحات",
- "monetizationPlaceholder": "توضیحات",
- "monetizationRequired": "این قسمت الزامی است!",
- 
- "delivery": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
- "deliveryPlaceholder": "توضیحات",
- "deliveryRequired": "این قسمت الزامی است!",
- 
- "financialPlan": "اگر طرح شما مدل مالی دارد، لطفا آپلود کنید.",
- "choseFile": "انتخاب فایل",
- 
- "accelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟",
- "acceleratorsPlaceholder": "توضیحات",
- "acceleratorsRequired": "این فیلد الزامی است!",
- 
- "knowUs": "چگونه با ما آشنا شدید؟",
- "knowUsPlaceholder": "توضیحات",
- "knowUsRequired": "این فیلد الزامی است!",
- 
- "structureOfYourSales": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
- "structureOfYourSalesPlaceholder": "توضیحات",
- "structureOfYourSalesRequired": "این قسمت الزامی است!"
+      "title": "طرح کسب و کار",
+      "monetization": "روش کسب درآمد از طرح خود را توضیح دهید؟",
+      "monetizationOfYourPlan": "روش کسب درآمد از طرح خود را توضیح دهید؟",
+      "monetizationOfYourPlanRequired": "این قسمت الزامی است!",
+      "monetizationOfYourPlanPlaceholder": "توضیحات",
+      "monetizationPlaceholder": "توضیحات",
+      "monetizationRequired": "این قسمت الزامی است!",
+      "delivery": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
+      "deliveryPlaceholder": "توضیحات",
+      "deliveryRequired": "این قسمت الزامی است!",
+      "financialPlan": "اگر طرح شما مدل مالی دارد، لطفا آپلود کنید.",
+      "choseFile": "انتخاب فایل",
+      "accelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟",
+      "acceleratorsPlaceholder": "توضیحات",
+      "acceleratorsRequired": "این فیلد الزامی است!",
+      "knowUs": "چگونه با ما آشنا شدید؟",
+      "knowUsPlaceholder": "توضیحات",
+      "knowUsRequired": "این فیلد الزامی است!",
+      "structureOfYourSales": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
+      "structureOfYourSalesPlaceholder": "توضیحات",
+      "structureOfYourSalesRequired": "این قسمت الزامی است!",
+      "structureOfYourSalesErrorMessage": "The message must be less than 1450 characters."
     },
     "financialFile": "آیا شما تمکن مالی دارید؟",
     "financialFileRequired": "لطفا یکی از گزینه ها را انتخاب کنید:",
-
     "property": {
- "title": "دارایی",
- "startupRevenue": "استارت آپ شما از زمان شروعش چقدر درآمد داشته است؟",
- "startupRevenuePlaceholder": "توضیحات",
- "startupRevenueRequired": "این قسمت الزامی است!",
- "monthlyIncome": "درآمد ماهانه شما چقدر است؟",
- "monthlyIncomePlaceholder": "توضیحات",
- "monthlyIncomeRequired": "این قسمت الزامی است!",
- "currentRaisedFunding": "قبل از شروع کسب و کارتان چقدر بودجه جاری جمع آوری کردید؟",
- "currentRaisedFundingPlaceholder": "توضیحات",
- "currentRaisedFundingRequired": "این قسمت الزامی است!",
- "neededCapital": "برای شروع پروژه خود به چه میزان سرمایه نیاز دارید؟",
- "neededCapitalPlaceholder": "توضیحات",
- "neededCapitalRequired": "این قسمت الزامی است!"
+      "title": "Property",
+      "startupRevenue": "How much revenue has your startup made since its inception? ",
+      "startupRevenuePlaceholder": "Description",
+      "startupRevenueRequired": "This field is required!",
+      "startupRevenueErrorMessage": "The message must be less than 1450 characters.",
+      
+      "monthlyIncome": "How much is your monthly income? ",
+      "monthlyIncomePlaceholder": "Description",
+      "monthlyIncomeRequired": "This field is required!",
+      "monthlyIncomeErrorMessage": "The message must be less than 1450 characters.",
+
+      "currentRaisedFunding": "How much current funding did you raise before starting your business? ",
+      "currentRaisedFundingPlaceholder": "Description",
+      "currentRaisedFundingRequired": "This field is required!",
+      "currentRaisedFundingErrorMessage": "The message must be less than 1450 characters.",
+
+      "neededCapital": "How much capital do you need to start your project? ",
+      "neededCapitalPlaceholder": "Description",
+      "neededCapitalRequired": "This field is required!",
+      "neededCapitalErrorMessage": "The message must be less than 1450 characters."
     },
     "targetMarket": {
- "title": "بازار هدف",
- "customerCharacteristic": "مشتریان خود را بر اساس چه معیاری انتخاب می‌کنید؟",
- "customerCharacteristicPlaceholder": "توضیحات",
- "customerCharacteristicRequired": "این قسمت الزامی است!",
- "currentCustomers": "مشتریان فعلی شما چه کسانی هستند؟ چه تعداد مشتری تا امروز داشته‌اید؟",
- "currentCustomersPlaceholder": "توضیحات",
- "currentCustomersRequired": "این قسمت الزامی است!",
- "estimatedMarketSize": "چگونه مقیاس و انداره بازار هدف خود را محاسبه می‌کنید؟",
- "estimatedMarketSizePlaceholder": "توضیحات",
- "estimatedMarketSizeRequired": "این قسمت الزامی است!"
-    },
+      "title": "بازار هدف",
+      "customerCharacteristic": "مشتریان خود را بر اساس چه معیاری انتخاب می‌کنید؟",
+      "customerCharacteristicPlaceholder": "توضیحات",
+      "customerCharacteristicRequired": "این قسمت الزامی است!",
+      "customerCharacteristicErrorMessage": "The message must be less than 1450 characters.",
 
+      "currentCustomers": "مشتریان فعلی شما چه کسانی هستند؟ چه تعداد مشتری تا امروز داشته‌اید؟",
+      "currentCustomersPlaceholder": "توضیحات",
+      "currentCustomersRequired": "این قسمت الزامی است!",
+      "currentCustomersErrorMessage": "The message must be less than 1450 characters.",
+      
+      "estimatedMarketSize": "چگونه مقیاس و انداره بازار هدف خود را محاسبه می‌کنید؟",
+      "estimatedMarketSizePlaceholder": "توضیحات",
+      "estimatedMarketSizeRequired": "این قسمت الزامی است!",
+      "estimatedMarketSizeErrorMessage": "The message must be less than 1450 characters."
+    },
     "radioButtonGroup": [
- { 
-   "value": "basicPrinciple",
-   "label": "اصول اولیه مشخص شده است"
- },
- {
-   "value": "technologyConcept",
-   "label": "ایده اولیه تکنولوژی شکل گرفته است"
- },
- { 
-   "value": "exprimentalProof",
-   "label": "ایده اولیه آزمایش شده است"
- },
- {
-   "value": "confirmedTechnologyLab",
-   "label": "تاییدیه فنی در محیط آزمایشگاهی گرفته شده است"
- },
- {
-   "value": "confirmedTechnologyEnv",
-   "label": "تاییدیه فنی در شرایط محیطی گرفته شده است"
- },
- {
-   "value": "presentedTechnologyEnv",
-   "label": "فناوری و تکنولوژی در شرایط محیطی ارائه شده است"
- },
- {
-   "value": "systemPrototypeInMvp",
-   "label": "نمونه اولیه در محیط عملیاتی نشان داده شده است"
- },
- {
-   "value": "realisticSystem",
-   "label": "سیستم واقعی در محیط عملیاتی ارائه شده است"
- },
- {
-   "value": "qualifiedSystem",
-   "label": "به‌عنوان یک سیستم کامل و واجد شرایط آماده شده است"
- }
+      {
+        "value": "basicPrinciple",
+        "label": "اصول اولیه مشخص شده است"
+      },
+      {
+        "value": "technologyConcept",
+        "label": "ایده اولیه تکنولوژی شکل گرفته است"
+      },
+      {
+        "value": "exprimentalProof",
+        "label": "ایده اولیه آزمایش شده است"
+      },
+      {
+        "value": "confirmedTechnologyLab",
+        "label": "تاییدیه فنی در محیط آزمایشگاهی گرفته شده است"
+      },
+      {
+        "value": "confirmedTechnologyEnv",
+        "label": "تاییدیه فنی در شرایط محیطی گرفته شده است"
+      },
+      {
+        "value": "presentedTechnologyEnv",
+        "label": "فناوری و تکنولوژی در شرایط محیطی ارائه شده است"
+      },
+      {
+        "value": "systemPrototypeInMvp",
+        "label": "نمونه اولیه در محیط عملیاتی نشان داده شده است"
+      },
+      {
+        "value": "realisticSystem",
+        "label": "سیستم واقعی در محیط عملیاتی ارائه شده است"
+      },
+      {
+        "value": "qualifiedSystem",
+        "label": "به‌عنوان یک سیستم کامل و واجد شرایط آماده شده است"
+      }
     ]
   },
-
-  
   "startupApplicantForm": {
-    "formTitle":"Apply for SUV Program",
-    "formSubtitle":"Let’s Talk About Your Journey",
-
-    "sendingButton":"Submitting ....",
+    "formTitle": "Apply for SUV Program",
+    "formSubtitle": "Let’s Talk About Your Journey",
+    "sendingButton": "Submitting ....",
     "sendButton": "Send",
-    "successMessage":"Form Submitted Successfully.",
-    "failedMessage":"An error occurred. Please Contact Support."
+    "successMessage": "Form Submitted Successfully.",
+    "failedMessage": "An error occurred. Please Contact Support."
   },
-
   "AcademyApplicantForm": {
-    "formTitle":"Apply for Academy Program",
-    "formSubtitle":"Let’s Talk About Your Journey"
+    "formTitle": "Apply for Academy Program",
+    "formSubtitle": "Let’s Talk About Your Journey"
   },
-  
   "PNPApplicantForm": {
-    "formTitle":"Apply for PNP Program",
-    "formSubtitle":"Let’s Talk About Your Journey",
-
-    "sendingButton":"Submitting ....",
+    "formTitle": "Apply for PNP Program",
+    "formSubtitle": "Let’s Talk About Your Journey",
+    "sendingButton": "Submitting ....",
     "sendButton": "Send",
-    "successMessage":"Form Submitted Successfully.",
-    "failedMessage":"An error occurred. Please Contact Support."
+    "successMessage": "Form Submitted Successfully.",
+    "failedMessage": "An error occurred. Please Contact Support."
   },
-
   "universities": {
     "placeholder": "نام دانشگاه",
     "unis": {
- "azadNjaf": "دانشگاه آزاد اسلامی واحد نجف آباد",
- "azadIsf": "دانشگاه آزاد اسلامی استان اصفهان",
- "dolati": "دانشگاه های دولتی",
- "etc": "سایر"
+      "azadNjaf": "دانشگاه آزاد اسلامی واحد نجف آباد",
+      "azadIsf": "دانشگاه آزاد اسلامی استان اصفهان",
+      "dolati": "دانشگاه های دولتی",
+      "etc": "سایر"
     }
   },
-
   "langLevel": {
     "placeholder": "میزان مهارت در زبان انگلیسی",
     "levels": {
- "base": "پایه",
- "elementary": "متوسط",
- "good": "حوب",
- "expert": "عالی"
+      "base": "پایه",
+      "elementary": "متوسط",
+      "good": "حوب",
+      "expert": "عالی"
     }
   },
-
   "IDEA": "ایده ها",
   "MVP": "MVP",
   "TRIAL": "نسخه آزمایشی",
   "FisrtSale": "فروش اولیه",
   "SaleDevelopment": "توسعه فروش",
-
   "website": "وبسایت ",
   "websitePlaceholder": "لطفا وبسایت خود را وارد کنید.",
   "websiteRequired": "این بخش الزامی است.",
-
   "prosField": "نوع همکاری",
   "prosFieldRequired": "این بخش الزامی است.",
   "prosFieldPlaceholder": "استخدام / کارآموزی",
-
   "PersonalInformation": "اطلاعات شخصی",
-
   "countries": [
-    { "value": "Iran", "label": "ایران" },
-    { "value": "Afghanistan", "label": "افغانستان" },
-    { "value": "Albania", "label": "آلبانی" },
-    { "value": "Algeria", "label": "الجزایر" },
-    { "value": "American Samoa", "label": "ساموآی آمریکا" },
-    { "value": "Andorra", "label": "آندورا" },
-    { "value": "Angola", "label": "آنگولا" },
-    { "value": "Anguilla", "label": "آنگویلا" },
-    { "value": "Antarctica", "label": "جنوبگان" },
-    { "value": "Antigua and Barbuda", "label": "آنتیگوا و باربودا" },
-    { "value": "Argentina", "label": "آرژانتین" },
-    { "value": "Armenia", "label": "ارمنستان" },
-    { "value": "Aruba", "label": "آروبا" },
-    { "value": "Australia", "label": "استرالیا" },
-    { "value": "Austria", "label": "اتریش" },
-    { "value": "Azerbaijan", "label": "جمهوری آذربایجان" },
-    { "value": "Bahamas (the)", "label": "باهاما" },
-    { "value": "Bahrain", "label": "بحرین" },
-    { "value": "Bangladesh", "label": "بنگلادش" },
-    { "value": "Barbados", "label": "باربادوس" },
-    { "value": "Belarus", "label": "بلاروس" },
-    { "value": "Belgium", "label": "بلژیک" },
-    { "value": "Belize", "label": "بلیز" },
-    { "value": "Benin", "label": "بنین" },
-    { "value": "Bermuda", "label": "برمودا" },
-    { "value": "Bhutan", "label": "بوتان" },
-    { "value": "Bolivia (Plurinational State of)", "label": "بولیوی (کشور چندملیتی)" },
-    { "value": "Bonaire, Sint Eustatius and Saba", "label": "بونیر، سنت یوستاتیوس و صبا" },
-    { "value": "Bosnia and Herzegovina", "label": "بوسنی و هرزگوین" },
-    { "value": "Botswana", "label": "بوتسوانا" },
-    { "value": "Bouvet Island", "label": "جزیره بووه" },
-    { "value": "Brazil", "label": "برزیل" },
-    { "value": "British Indian Ocean Territory (the)", "label": "قلمرو بریتانیایی اقیانوس هند" },
-    { "value": "Brunei Darussalam", "label": "برونئی دارالسلام" },
-    { "value": "Bulgaria", "label": "بلغارستان" },
-    { "value": "Burkina Faso", "label": "بورکینافاسو" },
-    { "value": "Burundi", "label": "بوروندی" },
-    { "value": "Cabo Verde", "label": "کیپ ورد" },
-    { "value": "Cambodia", "label": "کامبوج" },
-    { "value": "Cameroon", "label": "کامرون" },
-    { "value": "Canada", "label": "کانادا" },
-    { "value": "Cayman Islands (the)", "label": "جزایر کیمن" },
-    { "value": "Central African Republic (the)", "label": "جمهوری آفریقای مرکزی" },
-    { "value": "Chad", "label": "چاد" },
-    { "value": "Chile", "label": "شیلی" },
-    { "value": "China", "label": "چین" },
-    { "value": "Christmas Island", "label": "جزیره کریسمس" },
-    { "value": "Cocos (Keeling) Islands (the)", "label": "جزایر کوکوس (کیلینگ)" },
-    { "value": "Colombia", "label": "کلمبیا" },
-    { "value": "Comoros (the)", "label": "کومور" },
-    { "value": "Congo (the Democratic Republic of the)", "label": "جمهوری دموکراتیک کنگو"},
-    { "value": "Congo (the)", "label": "کنگو" },
-    { "value": "Cook Islands (the)", "label": "جزایر کوک" },
-    { "value": "Costa Rica", "label": "کاستاریکا" },
-    { "value": "Croatia", "label": "کرواسی" },
-    { "value": "Cuba", "label": "کوبا" },
-    { "value": "Curaçao", "label": "کوراسائو" },
-    { "value": "Cyprus", "label": "قبرس" },
-    { "value": "Czechia", "label": "جمهوری چک" },
-    { "value": "Côte d'Ivoire", "label": "ساحل عاج" },
-    { "value": "Denmark", "label": "دانمارک" },
-    { "value": "Djibouti", "label": "جیبوتی" },
-    { "value": "Dominica", "label": "دومینیکا" },
-    { "value": "Dominican Republic (the)", "label": "جمهوری دومینیکن" },
-    { "value": "Ecuador", "label": "اکوادور" },
-    { "value": "Egypt", "label": "مصر" },
-    { "value": "El Salvador", "label": "السالوادور" },
-    { "value": "Equatorial Guinea", "label": "گینه استوایی" },
-    { "value": "Eritrea", "label": "اریتره" },
-    { "value": "Estonia", "label": "استونی" },
-    { "value": "Eswatini", "label": "اسواتینی" },
-    { "value": "Ethiopia", "label": "اتیوپی" },
-    { "value": "Falkland Islands (the) [Malvinas]", "label": "جزایر فالکلند (مالویناس)"},
-    { "value": "Faroe Islands (the)", "label": "جزایر فارو" },
-    { "value": "Fiji", "label": "فیجی" },
-    { "value": "Finland", "label": "فنلاند" },
-    { "value": "France", "label": "فرانسه" },
-    { "value": "French Guiana", "label": "گویان فرانسه" },
-    { "value": "French Polynesia", "label": "پلی‌نزی فرانسه" },
-    { "value": "French Southern Territories (the)", "label": "سرزمین‌های جنوبی فرانسه"},
-    { "value": "Gabon", "label": "گابن" },
-    { "value": "Gambia (the)", "label": "گامبیا" },
-    { "value": "Georgia", "label": "گرجستان" },
-    { "value": "Germany", "label": "آلمان" },
-    { "value": "Ghana", "label": "غنا" },
-    { "value": "Gibraltar", "label": "جبل‌الطارق" },
-    { "value": "Greece", "label": "یونان" },
-    { "value": "Greenland", "label": "گرینلند" },
-    { "value": "Grenada", "label": "گرنادا" },
-    { "value": "Guadeloupe", "label": "گوادلوپ" },
-    { "value": "Guam", "label": "گوآم" },
-    { "value": "Guatemala", "label": "گواتمالا" },
-    { "value": "Guernsey", "label": "گرنزی" },
-    { "value": "Guinea", "label": "گینه" },
-    { "value": "Guinea-Bissau", "label": "گینه بیسائو" },
-    { "value": "Guyana", "label": "گویان" },
-    { "value": "Haiti", "label": "هائیتی" },
-    { "value": "Heard Island and McDonald Islands", "label": "جزیره هرد و جزایر مک‌دونالد" },
-    { "value": "Holy See (the)", "label": "واتیکان" },
-    { "value": "Honduras", "label": "هندوراس" },
-    { "value": "Hong Kong", "label": "هنگ‌کنگ" },
-    { "value": "Hungary", "label": "مجارستان" },
-    { "value": "Iceland", "label": "ایسلند" },
-    { "value": "India", "label": "هند" },
-    { "value": "Indonesia", "label": "اندونزی" },
-    { "value": "Iran (Islamic Republic of)", "label": "ایران (جمهوری اسلامی)" },
-    { "value": "Iraq", "label": "عراق" },
-    { "value": "Ireland", "label": "ایرلند" },
-    { "value": "Isle of Man", "label": "جزیره من" },
-    { "value": "Israel", "label": "اسرائیل" },
-    { "value": "Italy", "label": "ایتالیا" },
-    { "value": "Jamaica", "label": "جامائیکا" },
-    { "value": "Japan", "label": "ژاپن" },
-    { "value": "Jersey", "label": "جرزی" },
-    { "value": "Jordan", "label": "اردن" },
-    { "value": "Kazakhstan", "label": "قزاقستان" },
-    { "value": "Kenya", "label": "کنیا" },
-    { "value": "Kiribati", "label": "کیریباتی" },
-    { "value": "Korea (the Democratic People's Republic of)", "label": "کره شمالی"},
-    { "value": "Korea (the Republic of)", "label": "کره جنوبی" },
-    { "value": "Kuwait", "label": "کویت" },
-    { "value": "Kyrgyzstan", "label": "قرقیزستان" },
-    { "value": "Lao People's Democratic Republic (the)", "label": "لائوس" },
-    { "value": "Latvia", "label": "لتونی" },
-    { "value": "Lebanon", "label": "لبنان" },
-    { "value": "Lesotho", "label": "لسوتو" },
-    { "value": "Liberia", "label": "لیبریا" },
-    { "value": "Libya", "label": "لیبی" },
-    { "value": "Liechtenstein", "label": "لیختن‌اشتاین" },
-    { "value": "Lithuania", "label": "لیتوانی" },
-    { "value": "Luxembourg", "label": "لوکزامبورگ" },
-    { "value": "Macao", "label": "ماکائو" },
-    { "value": "Madagascar", "label": "ماداگاسکار" },
-    { "value": "Malawi", "label": "مالاوی" },
-    { "value": "Malaysia", "label": "مالزی" },
-    { "value": "Maldives", "label": "مالدیو" },
-    { "value": "Mali", "label": "مالی" },
-    { "value": "Malta", "label": "مالت" },
-    { "value": "Marshall Islands (the)", "label": "جزایر مارشال" },
-    { "value": "Martinique", "label": "مارتینیک" },
-    { "value": "Mauritania", "label": "موریتانی" },
-    { "value": "Mauritius", "label": "موریس" },
-    { "value": "Mayotte", "label": "مایوت" },
-    { "value": "Mexico", "label": "مکزیک" },
-    { "value": "Micronesia (Federated States of)", "label": "میکرونزی (ایالات فدرال)" },
-    { "value": "Moldova (the Republic of)", "label": "مولداوی" },
-    { "value": "Monaco", "label": "موناکو" },
-    { "value": "Mongolia", "label": "مغولستان" },
-    { "value": "Montenegro", "label": "مونته‌نگرو" },
-    { "value": "Montserrat", "label": "مونتسرات" },
-    { "value": "Morocco", "label": "مراکش" },
-    { "value": "Mozambique", "label": "موزامبیک" },
-    { "value": "Myanmar", "label": "میانمار" },
-    { "value": "Namibia", "label": "نامیبیا" },
-    { "value": "Nauru", "label": "نائورو" },
-    { "value": "Nepal", "label": "نپال" },
-    { "value": "Netherlands (the)", "label": "هلند" },
-    { "value": "New Caledonia", "label": "کالدونیای جدید" },
-    { "value": "New Zealand", "label": "نیوزیلند" },
-    { "value": "Nicaragua", "label": "نیکاراگوئه" },
-    { "value": "Niger (the)", "label": "نیجر" },
-    { "value": "Nigeria", "label": "نیجریه" },
-    { "value": "Niue", "label": "نیوئه" },
-    { "value": "Norfolk Island", "label": "جزیره نورفک" },
-    { "value": "Northern Mariana Islands (the)", "label": "جزایر ماریانای شمالی" },
-    { "value": "Norway", "label": "نروژ" },
-    { "value": "Oman", "label": "عمان" },
-    { "value": "Pakistan", "label": "پاکستان" },
-    { "value": "Palau", "label": "پالائو" },
-    { "value": "Palestine, State of", "label": "فلسطین" },
-    { "value": "Panama", "label": "پاناما" },
-    { "value": "Papua New Guinea", "label": "پاپوآ گینه نو" },
-    { "value": "Paraguay", "label": "پاراگوئه" },
-    { "value": "Peru", "label": "پرو" },
-    { "value": "Philippines (the)", "label": "فیلیپین" },
-    { "value": "Pitcairn", "label": "پیت‌کرن" },
-    { "value": "Poland", "label": "لهستان" },
-    { "value": "Portugal", "label": "پرتغال" },
-    { "value": "Puerto Rico", "label": "پورتوریکو" },
-    { "value": "Qatar", "label": "قطر" },
-    { "value": "Republic of North Macedonia", "label": "جمهوری مقدونیه شمالی" },
-    { "value": "Romania", "label": "رومانی" },
-    { "value": "Russian Federation (the)", "label": "روسیه" },
-    { "value": "Rwanda", "label": "رواندا" },
-    { "value": "Réunion", "label": "رئونیون" },
-    { "value": "Saint Barthélemy", "label": "سن بارتلمی" },
-    { "value": "Saint Helena, Ascension and Tristan da Cunha", "label": "سنت هلنا، اسنشن و تریستان دا کونیا" },
-    { "value": "Saint Kitts and Nevis", "label": "سنت کیتس و نویس" },
-    { "value": "Saint Lucia", "label": "سنت لوسیا" },
-    { "value": "Saint Martin (French part)", "label": "سنت مارتن (بخش فرانسوی)" },
-    { "value": "Saint Pierre and Miquelon", "label": "سن پی‌یر و میکلن" },
-    { "value": "Saint Vincent and the Grenadines", "label": "سنت وینسنت و گرنادین‌ها" },
-    { "value": "Samoa", "label": "ساموآ" },
-    { "value": "San Marino", "label": "سن مارینو" },
-    { "value": "Sao Tome and Principe", "label": "سائوتومه و پرنسیپ" },
-    { "value": "Saudi Arabia", "label": "عربستان سعودی" },
-    { "value": "Senegal", "label": "سنگال" },
-    { "value": "Serbia", "label": "صربستان" },
-    { "value": "Seychelles", "label": "سیشل" },
-    { "value": "Sierra Leone", "label": "سیرالئون" },
-    { "value": "Singapore", "label": "سنگاپور" },
-    { "value": "Sint Maarten (Dutch part)", "label": "سینت مارتن (بخش هلندی)" },
-    { "value": "Slovakia", "label": "اسلواکی" },
-    { "value": "Slovenia", "label": "اسلوونی" },
-    { "value": "Solomon Islands", "label": "جزایر سلیمان" },
-    { "value": "Somalia", "label": "سومالی" },
-    { "value": "South Africa", "label": "آفریقای جنوبی" },
-    { "value": "South Georgia and the South Sandwich Islands", "label": "جورجیا جنوبی و جزایر ساندویچ جنوبی" },
-    { "value": "South Sudan", "label": "سودان جنوبی" },
-    { "value": "Spain", "label": "اسپانیا" },
-    { "value": "Sri Lanka", "label": "سریلانکا" },
-    { "value": "Sudan (the)", "label": "سودان" },
-    { "value": "Suriname", "label": "سورینام" },
-    { "value": "Svalbard and Jan Mayen", "label": "اسوالبارد و یان ماین" },
-    { "value": "Sweden", "label": "سوئد" },
-    { "value": "Switzerland", "label": "سوئیس" },
-    { "value": "Syrian Arab Republic", "label": "جمهوری عربی سوریه" },
-    { "value": "Taiwan", "label": "تایوان" },
-    { "value": "Tajikistan", "label": "تاجیکستان" },
-    { "value": "Tanzania, United Republic of", "label": "تانزانیا، جمهوری متحد" },
-    { "value": "Thailand", "label": "تایلند" },
-    { "value": "Timor-Leste", "label": "تیمور شرقی" },
-    { "value": "Togo", "label": "توگو" },
-    { "value": "Tokelau", "label": "توکلاو" },
-    { "value": "Tonga", "label": "تونگا" },
-    { "value": "Trinidad and Tobago", "label": "ترینیداد و توباگو" },
-    { "value": "Tunisia", "label": "تونس" },
-    { "value": "Turkey", "label": "ترکیه" },
-    { "value": "Turkmenistan", "label": "ترکمنستان" },
-    { "value": "Turks and Caicos Islands (the)", "label": "جزایر ترک و کایکوس" },
-    { "value": "Tuvalu", "label": "توالو" },
-    { "value": "Uganda", "label": "اوگاندا" },
-    { "value": "Ukraine", "label": "اوکراین" },
-    { "value": "United Arab Emirates (the)", "label": "امارات متحده عربی" },
-    { "value": "United Kingdom of Great Britain and Northern Ireland (the)", "label": "پادشاهی متحده بریتانیای بزرگ و ایرلند شمالی" },
-    { "value": "United States Minor Outlying Islands (the)", "label": "جزایر دورافتاده کوچک ایالات متحده"},
-    { "value": "United States of America (the)", "label": "ایالات متحده آمریکا"},
-    { "value": "Uruguay", "label": "اوروگوئه" },
-    { "value": "Uzbekistan", "label": "ازبکستان" },
-    { "value": "Vanuatu", "label": "وانواتو" },
-    { "value": "Venezuela (Bolivarian Republic of)", "label": "ونزوئلا (جمهوری بولیواری)" },
-    { "value": "Viet Nam", "label": "ویتنام" },
-    { "value": "Virgin Islands (British)", "label": "جزایر ویرجین (بریتانیا)" },
-    { "value": "Virgin Islands (U.S.)", "label": "جزایر ویرجین (ایالات متحده)" },
-    { "value": "Wallis and Futuna", "label": "والیس و فوتونا" },
-    { "value": "Western Sahara", "label": "صحرای غربی" },
-    { "value": "Yemen", "label": "یمن" },
-    { "value": "Zambia", "label": "زامبیا" },
-    { "value": "Zimbabwe", "label": "زیمبابوه" },
-    { "value": "Åland Islands", "label": "جزایر آلند" }
+    {
+      "value": "Iran",
+      "label": "ایران"
+    },
+    {
+      "value": "Afghanistan",
+      "label": "افغانستان"
+    },
+    {
+      "value": "Albania",
+      "label": "آلبانی"
+    },
+    {
+      "value": "Algeria",
+      "label": "الجزایر"
+    },
+    {
+      "value": "American Samoa",
+      "label": "ساموآی آمریکا"
+    },
+    {
+      "value": "Andorra",
+      "label": "آندورا"
+    },
+    {
+      "value": "Angola",
+      "label": "آنگولا"
+    },
+    {
+      "value": "Anguilla",
+      "label": "آنگویلا"
+    },
+    {
+      "value": "Antarctica",
+      "label": "جنوبگان"
+    },
+    {
+      "value": "Antigua and Barbuda",
+      "label": "آنتیگوا و باربودا"
+    },
+    {
+      "value": "Argentina",
+      "label": "آرژانتین"
+    },
+    {
+      "value": "Armenia",
+      "label": "ارمنستان"
+    },
+    {
+      "value": "Aruba",
+      "label": "آروبا"
+    },
+    {
+      "value": "Australia",
+      "label": "استرالیا"
+    },
+    {
+      "value": "Austria",
+      "label": "اتریش"
+    },
+    {
+      "value": "Azerbaijan",
+      "label": "جمهوری آذربایجان"
+    },
+    {
+      "value": "Bahamas (the)",
+      "label": "باهاما"
+    },
+    {
+      "value": "Bahrain",
+      "label": "بحرین"
+    },
+    {
+      "value": "Bangladesh",
+      "label": "بنگلادش"
+    },
+    {
+      "value": "Barbados",
+      "label": "باربادوس"
+    },
+    {
+      "value": "Belarus",
+      "label": "بلاروس"
+    },
+    {
+      "value": "Belgium",
+      "label": "بلژیک"
+    },
+    {
+      "value": "Belize",
+      "label": "بلیز"
+    },
+    {
+      "value": "Benin",
+      "label": "بنین"
+    },
+    {
+      "value": "Bermuda",
+      "label": "برمودا"
+    },
+    {
+      "value": "Bhutan",
+      "label": "بوتان"
+    },
+    {
+      "value": "Bolivia (Plurinational State of)",
+      "label": "بولیوی (کشور چندملیتی)"
+    },
+    {
+      "value": "Bonaire, Sint Eustatius and Saba",
+      "label": "بونیر، سنت یوستاتیوس و صبا"
+    },
+    {
+      "value": "Bosnia and Herzegovina",
+      "label": "بوسنی و هرزگوین"
+    },
+    {
+      "value": "Botswana",
+      "label": "بوتسوانا"
+    },
+    {
+      "value": "Bouvet Island",
+      "label": "جزیره بووه"
+    },
+    {
+      "value": "Brazil",
+      "label": "برزیل"
+    },
+    {
+      "value": "British Indian Ocean Territory (the)",
+      "label": "قلمرو بریتانیایی اقیانوس هند"
+    },
+    {
+      "value": "Brunei Darussalam",
+      "label": "برونئی دارالسلام"
+    },
+    {
+      "value": "Bulgaria",
+      "label": "بلغارستان"
+    },
+    {
+      "value": "Burkina Faso",
+      "label": "بورکینافاسو"
+    },
+    {
+      "value": "Burundi",
+      "label": "بوروندی"
+    },
+    {
+      "value": "Cabo Verde",
+      "label": "کیپ ورد"
+    },
+    {
+      "value": "Cambodia",
+      "label": "کامبوج"
+    },
+    {
+      "value": "Cameroon",
+      "label": "کامرون"
+    },
+    {
+      "value": "Canada",
+      "label": "کانادا"
+    },
+    {
+      "value": "Cayman Islands (the)",
+      "label": "جزایر کیمن"
+    },
+    {
+      "value": "Central African Republic (the)",
+      "label": "جمهوری آفریقای مرکزی"
+    },
+    {
+      "value": "Chad",
+      "label": "چاد"
+    },
+    {
+      "value": "Chile",
+      "label": "شیلی"
+    },
+    {
+      "value": "China",
+      "label": "چین"
+    },
+    {
+      "value": "Christmas Island",
+      "label": "جزیره کریسمس"
+    },
+    {
+      "value": "Cocos (Keeling) Islands (the)",
+      "label": "جزایر کوکوس (کیلینگ)"
+    },
+    {
+      "value": "Colombia",
+      "label": "کلمبیا"
+    },
+    {
+      "value": "Comoros (the)",
+      "label": "کومور"
+    },
+    {
+      "value": "Congo (the Democratic Republic of the)",
+      "label": "جمهوری دموکراتیک کنگو"
+    },
+    {
+      "value": "Congo (the)",
+      "label": "کنگو"
+    },
+    {
+      "value": "Cook Islands (the)",
+      "label": "جزایر کوک"
+    },
+    {
+      "value": "Costa Rica",
+      "label": "کاستاریکا"
+    },
+    {
+      "value": "Croatia",
+      "label": "کرواسی"
+    },
+    {
+      "value": "Cuba",
+      "label": "کوبا"
+    },
+    {
+      "value": "Curaçao",
+      "label": "کوراسائو"
+    },
+    {
+      "value": "Cyprus",
+      "label": "قبرس"
+    },
+    {
+      "value": "Czechia",
+      "label": "جمهوری چک"
+    },
+    {
+      "value": "Côte d'Ivoire",
+      "label": "ساحل عاج"
+    },
+    {
+      "value": "Denmark",
+      "label": "دانمارک"
+    },
+    {
+      "value": "Djibouti",
+      "label": "جیبوتی"
+    },
+    {
+      "value": "Dominica",
+      "label": "دومینیکا"
+    },
+    {
+      "value": "Dominican Republic (the)",
+      "label": "جمهوری دومینیکن"
+    },
+    {
+      "value": "Ecuador",
+      "label": "اکوادور"
+    },
+    {
+      "value": "Egypt",
+      "label": "مصر"
+    },
+    {
+      "value": "El Salvador",
+      "label": "السالوادور"
+    },
+    {
+      "value": "Equatorial Guinea",
+      "label": "گینه استوایی"
+    },
+    {
+      "value": "Eritrea",
+      "label": "اریتره"
+    },
+    {
+      "value": "Estonia",
+      "label": "استونی"
+    },
+    {
+      "value": "Eswatini",
+      "label": "اسواتینی"
+    },
+    {
+      "value": "Ethiopia",
+      "label": "اتیوپی"
+    },
+    {
+      "value": "Falkland Islands (the) [Malvinas]",
+      "label": "جزایر فالکلند (مالویناس)"
+    },
+    {
+      "value": "Faroe Islands (the)",
+      "label": "جزایر فارو"
+    },
+    {
+      "value": "Fiji",
+      "label": "فیجی"
+    },
+    {
+      "value": "Finland",
+      "label": "فنلاند"
+    },
+    {
+      "value": "France",
+      "label": "فرانسه"
+    },
+    {
+      "value": "French Guiana",
+      "label": "گویان فرانسه"
+    },
+    {
+      "value": "French Polynesia",
+      "label": "پلی‌نزی فرانسه"
+    },
+    {
+      "value": "French Southern Territories (the)",
+      "label": "سرزمین‌های جنوبی فرانسه"
+    },
+    {
+      "value": "Gabon",
+      "label": "گابن"
+    },
+    {
+      "value": "Gambia (the)",
+      "label": "گامبیا"
+    },
+    {
+      "value": "Georgia",
+      "label": "گرجستان"
+    },
+    {
+      "value": "Germany",
+      "label": "آلمان"
+    },
+    {
+      "value": "Ghana",
+      "label": "غنا"
+    },
+    {
+      "value": "Gibraltar",
+      "label": "جبل‌الطارق"
+    },
+    {
+      "value": "Greece",
+      "label": "یونان"
+    },
+    {
+      "value": "Greenland",
+      "label": "گرینلند"
+    },
+    {
+      "value": "Grenada",
+      "label": "گرنادا"
+    },
+    {
+      "value": "Guadeloupe",
+      "label": "گوادلوپ"
+    },
+    {
+      "value": "Guam",
+      "label": "گوآم"
+    },
+    {
+      "value": "Guatemala",
+      "label": "گواتمالا"
+    },
+    {
+      "value": "Guernsey",
+      "label": "گرنزی"
+    },
+    {
+      "value": "Guinea",
+      "label": "گینه"
+    },
+    {
+      "value": "Guinea-Bissau",
+      "label": "گینه بیسائو"
+    },
+    {
+      "value": "Guyana",
+      "label": "گویان"
+    },
+    {
+      "value": "Haiti",
+      "label": "هائیتی"
+    },
+    {
+      "value": "Heard Island and McDonald Islands",
+      "label": "جزیره هرد و جزایر مک‌دونالد"
+    },
+    {
+      "value": "Holy See (the)",
+      "label": "واتیکان"
+    },
+    {
+      "value": "Honduras",
+      "label": "هندوراس"
+    },
+    {
+      "value": "Hong Kong",
+      "label": "هنگ‌کنگ"
+    },
+    {
+      "value": "Hungary",
+      "label": "مجارستان"
+    },
+    {
+      "value": "Iceland",
+      "label": "ایسلند"
+    },
+    {
+      "value": "India",
+      "label": "هند"
+    },
+    {
+      "value": "Indonesia",
+      "label": "اندونزی"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "label": "ایران (جمهوری اسلامی)"
+    },
+    {
+      "value": "Iraq",
+      "label": "عراق"
+    },
+    {
+      "value": "Ireland",
+      "label": "ایرلند"
+    },
+    {
+      "value": "Isle of Man",
+      "label": "جزیره من"
+    },
+    {
+      "value": "Israel",
+      "label": "اسرائیل"
+    },
+    {
+      "value": "Italy",
+      "label": "ایتالیا"
+    },
+    {
+      "value": "Jamaica",
+      "label": "جامائیکا"
+    },
+    {
+      "value": "Japan",
+      "label": "ژاپن"
+    },
+    {
+      "value": "Jersey",
+      "label": "جرزی"
+    },
+    {
+      "value": "Jordan",
+      "label": "اردن"
+    },
+    {
+      "value": "Kazakhstan",
+      "label": "قزاقستان"
+    },
+    {
+      "value": "Kenya",
+      "label": "کنیا"
+    },
+    {
+      "value": "Kiribati",
+      "label": "کیریباتی"
+    },
+    {
+      "value": "Korea (the Democratic People's Republic of)",
+      "label": "کره شمالی"
+    },
+    {
+      "value": "Korea (the Republic of)",
+      "label": "کره جنوبی"
+    },
+    {
+      "value": "Kuwait",
+      "label": "کویت"
+    },
+    {
+      "value": "Kyrgyzstan",
+      "label": "قرقیزستان"
+    },
+    {
+      "value": "Lao People's Democratic Republic (the)",
+      "label": "لائوس"
+    },
+    {
+      "value": "Latvia",
+      "label": "لتونی"
+    },
+    {
+      "value": "Lebanon",
+      "label": "لبنان"
+    },
+    {
+      "value": "Lesotho",
+      "label": "لسوتو"
+    },
+    {
+      "value": "Liberia",
+      "label": "لیبریا"
+    },
+    {
+      "value": "Libya",
+      "label": "لیبی"
+    },
+    {
+      "value": "Liechtenstein",
+      "label": "لیختن‌اشتاین"
+    },
+    {
+      "value": "Lithuania",
+      "label": "لیتوانی"
+    },
+    {
+      "value": "Luxembourg",
+      "label": "لوکزامبورگ"
+    },
+    {
+      "value": "Macao",
+      "label": "ماکائو"
+    },
+    {
+      "value": "Madagascar",
+      "label": "ماداگاسکار"
+    },
+    {
+      "value": "Malawi",
+      "label": "مالاوی"
+    },
+    {
+      "value": "Malaysia",
+      "label": "مالزی"
+    },
+    {
+      "value": "Maldives",
+      "label": "مالدیو"
+    },
+    {
+      "value": "Mali",
+      "label": "مالی"
+    },
+    {
+      "value": "Malta",
+      "label": "مالت"
+    },
+    {
+      "value": "Marshall Islands (the)",
+      "label": "جزایر مارشال"
+    },
+    {
+      "value": "Martinique",
+      "label": "مارتینیک"
+    },
+    {
+      "value": "Mauritania",
+      "label": "موریتانی"
+    },
+    {
+      "value": "Mauritius",
+      "label": "موریس"
+    },
+    {
+      "value": "Mayotte",
+      "label": "مایوت"
+    },
+    {
+      "value": "Mexico",
+      "label": "مکزیک"
+    },
+    {
+      "value": "Micronesia (Federated States of)",
+      "label": "میکرونزی (ایالات فدرال)"
+    },
+    {
+      "value": "Moldova (the Republic of)",
+      "label": "مولداوی"
+    },
+    {
+      "value": "Monaco",
+      "label": "موناکو"
+    },
+    {
+      "value": "Mongolia",
+      "label": "مغولستان"
+    },
+    {
+      "value": "Montenegro",
+      "label": "مونته‌نگرو"
+    },
+    {
+      "value": "Montserrat",
+      "label": "مونتسرات"
+    },
+    {
+      "value": "Morocco",
+      "label": "مراکش"
+    },
+    {
+      "value": "Mozambique",
+      "label": "موزامبیک"
+    },
+    {
+      "value": "Myanmar",
+      "label": "میانمار"
+    },
+    {
+      "value": "Namibia",
+      "label": "نامیبیا"
+    },
+    {
+      "value": "Nauru",
+      "label": "نائورو"
+    },
+    {
+      "value": "Nepal",
+      "label": "نپال"
+    },
+    {
+      "value": "Netherlands (the)",
+      "label": "هلند"
+    },
+    {
+      "value": "New Caledonia",
+      "label": "کالدونیای جدید"
+    },
+    {
+      "value": "New Zealand",
+      "label": "نیوزیلند"
+    },
+    {
+      "value": "Nicaragua",
+      "label": "نیکاراگوئه"
+    },
+    {
+      "value": "Niger (the)",
+      "label": "نیجر"
+    },
+    {
+      "value": "Nigeria",
+      "label": "نیجریه"
+    },
+    {
+      "value": "Niue",
+      "label": "نیوئه"
+    },
+    {
+      "value": "Norfolk Island",
+      "label": "جزیره نورفک"
+    },
+    {
+      "value": "Northern Mariana Islands (the)",
+      "label": "جزایر ماریانای شمالی"
+    },
+    {
+      "value": "Norway",
+      "label": "نروژ"
+    },
+    {
+      "value": "Oman",
+      "label": "عمان"
+    },
+    {
+      "value": "Pakistan",
+      "label": "پاکستان"
+    },
+    {
+      "value": "Palau",
+      "label": "پالائو"
+    },
+    {
+      "value": "Palestine, State of",
+      "label": "فلسطین"
+    },
+    {
+      "value": "Panama",
+      "label": "پاناما"
+    },
+    {
+      "value": "Papua New Guinea",
+      "label": "پاپوآ گینه نو"
+    },
+    {
+      "value": "Paraguay",
+      "label": "پاراگوئه"
+    },
+    {
+      "value": "Peru",
+      "label": "پرو"
+    },
+    {
+      "value": "Philippines (the)",
+      "label": "فیلیپین"
+    },
+    {
+      "value": "Pitcairn",
+      "label": "پیت‌کرن"
+    },
+    {
+      "value": "Poland",
+      "label": "لهستان"
+    },
+    {
+      "value": "Portugal",
+      "label": "پرتغال"
+    },
+    {
+      "value": "Puerto Rico",
+      "label": "پورتوریکو"
+    },
+    {
+      "value": "Qatar",
+      "label": "قطر"
+    },
+    {
+      "value": "Republic of North Macedonia",
+      "label": "جمهوری مقدونیه شمالی"
+    },
+    {
+      "value": "Romania",
+      "label": "رومانی"
+    },
+    {
+      "value": "Russian Federation (the)",
+      "label": "روسیه"
+    },
+    {
+      "value": "Rwanda",
+      "label": "رواندا"
+    },
+    {
+      "value": "Réunion",
+      "label": "رئونیون"
+    },
+    {
+      "value": "Saint Barthélemy",
+      "label": "سن بارتلمی"
+    },
+    {
+      "value": "Saint Helena, Ascension and Tristan da Cunha",
+      "label": "سنت هلنا، اسنشن و تریستان دا کونیا"
+    },
+    {
+      "value": "Saint Kitts and Nevis",
+      "label": "سنت کیتس و نویس"
+    },
+    {
+      "value": "Saint Lucia",
+      "label": "سنت لوسیا"
+    },
+    {
+      "value": "Saint Martin (French part)",
+      "label": "سنت مارتن (بخش فرانسوی)"
+    },
+    {
+      "value": "Saint Pierre and Miquelon",
+      "label": "سن پی‌یر و میکلن"
+    },
+    {
+      "value": "Saint Vincent and the Grenadines",
+      "label": "سنت وینسنت و گرنادین‌ها"
+    },
+    {
+      "value": "Samoa",
+      "label": "ساموآ"
+    },
+    {
+      "value": "San Marino",
+      "label": "سن مارینو"
+    },
+    {
+      "value": "Sao Tome and Principe",
+      "label": "سائوتومه و پرنسیپ"
+    },
+    {
+      "value": "Saudi Arabia",
+      "label": "عربستان سعودی"
+    },
+    {
+      "value": "Senegal",
+      "label": "سنگال"
+    },
+    {
+      "value": "Serbia",
+      "label": "صربستان"
+    },
+    {
+      "value": "Seychelles",
+      "label": "سیشل"
+    },
+    {
+      "value": "Sierra Leone",
+      "label": "سیرالئون"
+    },
+    {
+      "value": "Singapore",
+      "label": "سنگاپور"
+    },
+    {
+      "value": "Sint Maarten (Dutch part)",
+      "label": "سینت مارتن (بخش هلندی)"
+    },
+    {
+      "value": "Slovakia",
+      "label": "اسلواکی"
+    },
+    {
+      "value": "Slovenia",
+      "label": "اسلوونی"
+    },
+    {
+      "value": "Solomon Islands",
+      "label": "جزایر سلیمان"
+    },
+    {
+      "value": "Somalia",
+      "label": "سومالی"
+    },
+    {
+      "value": "South Africa",
+      "label": "آفریقای جنوبی"
+    },
+    {
+      "value": "South Georgia and the South Sandwich Islands",
+      "label": "جورجیا جنوبی و جزایر ساندویچ جنوبی"
+    },
+    {
+      "value": "South Sudan",
+      "label": "سودان جنوبی"
+    },
+    {
+      "value": "Spain",
+      "label": "اسپانیا"
+    },
+    {
+      "value": "Sri Lanka",
+      "label": "سریلانکا"
+    },
+    {
+      "value": "Sudan (the)",
+      "label": "سودان"
+    },
+    {
+      "value": "Suriname",
+      "label": "سورینام"
+    },
+    {
+      "value": "Svalbard and Jan Mayen",
+      "label": "اسوالبارد و یان ماین"
+    },
+    {
+      "value": "Sweden",
+      "label": "سوئد"
+    },
+    {
+      "value": "Switzerland",
+      "label": "سوئیس"
+    },
+    {
+      "value": "Syrian Arab Republic",
+      "label": "جمهوری عربی سوریه"
+    },
+    {
+      "value": "Taiwan",
+      "label": "تایوان"
+    },
+    {
+      "value": "Tajikistan",
+      "label": "تاجیکستان"
+    },
+    {
+      "value": "Tanzania, United Republic of",
+      "label": "تانزانیا، جمهوری متحد"
+    },
+    {
+      "value": "Thailand",
+      "label": "تایلند"
+    },
+    {
+      "value": "Timor-Leste",
+      "label": "تیمور شرقی"
+    },
+    {
+      "value": "Togo",
+      "label": "توگو"
+    },
+    {
+      "value": "Tokelau",
+      "label": "توکلاو"
+    },
+    {
+      "value": "Tonga",
+      "label": "تونگا"
+    },
+    {
+      "value": "Trinidad and Tobago",
+      "label": "ترینیداد و توباگو"
+    },
+    {
+      "value": "Tunisia",
+      "label": "تونس"
+    },
+    {
+      "value": "Turkey",
+      "label": "ترکیه"
+    },
+    {
+      "value": "Turkmenistan",
+      "label": "ترکمنستان"
+    },
+    {
+      "value": "Turks and Caicos Islands (the)",
+      "label": "جزایر ترک و کایکوس"
+    },
+    {
+      "value": "Tuvalu",
+      "label": "توالو"
+    },
+    {
+      "value": "Uganda",
+      "label": "اوگاندا"
+    },
+    {
+      "value": "Ukraine",
+      "label": "اوکراین"
+    },
+    {
+      "value": "United Arab Emirates (the)",
+      "label": "امارات متحده عربی"
+    },
+    {
+      "value": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "label": "پادشاهی متحده بریتانیای بزرگ و ایرلند شمالی"
+    },
+    {
+      "value": "United States Minor Outlying Islands (the)",
+      "label": "جزایر دورافتاده کوچک ایالات متحده"
+    },
+    {
+      "value": "United States of America (the)",
+      "label": "ایالات متحده آمریکا"
+    },
+    {
+      "value": "Uruguay",
+      "label": "اوروگوئه"
+    },
+    {
+      "value": "Uzbekistan",
+      "label": "ازبکستان"
+    },
+    {
+      "value": "Vanuatu",
+      "label": "وانواتو"
+    },
+    {
+      "value": "Venezuela (Bolivarian Republic of)",
+      "label": "ونزوئلا (جمهوری بولیواری)"
+    },
+    {
+      "value": "Viet Nam",
+      "label": "ویتنام"
+    },
+    {
+      "value": "Virgin Islands (British)",
+      "label": "جزایر ویرجین (بریتانیا)"
+    },
+    {
+      "value": "Virgin Islands (U.S.)",
+      "label": "جزایر ویرجین (ایالات متحده)"
+    },
+    {
+      "value": "Wallis and Futuna",
+      "label": "والیس و فوتونا"
+    },
+    {
+      "value": "Western Sahara",
+      "label": "صحرای غربی"
+    },
+    {
+      "value": "Yemen",
+      "label": "یمن"
+    },
+    {
+      "value": "Zambia",
+      "label": "زامبیا"
+    },
+    {
+      "value": "Zimbabwe",
+      "label": "زیمبابوه"
+    },
+    {
+      "value": "Åland Islands",
+      "label": "جزایر آلند"
+    }
   ]
 }

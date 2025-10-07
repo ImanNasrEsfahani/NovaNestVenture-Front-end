@@ -29,6 +29,9 @@ export default function StartupFormIdea({
           patternMessage=""
           patternValue=""
           required={t('startUp',{ returnObjects: true }).idea.ideaExplanationRequired}
+          maxLength={1450}
+          maxLengthMessage={t('startUp',{ returnObjects: true }).idea.ideaExplanationErrorMessage}
+          validate=""
         />
       </div>
     </>

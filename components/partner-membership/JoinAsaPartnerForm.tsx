@@ -21,6 +21,7 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     howDidYouKnowUs: t('howDidYouKnowUs'),
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
+    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
     sendButton: t('sendButton'),
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
@@ -50,6 +51,7 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     breifIntroduction: t('breifIntroduction'),
     breifIntroductionRequired: t('breifIntroductionRequired'),
     breifIntroductionPlaceholder: t('breifIntroductionPlaceholder'),
+    breifIntroductionErrorMessage: t('breifIntroductionErrorMessage'),
 
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),

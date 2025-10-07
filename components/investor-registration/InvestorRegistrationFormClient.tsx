@@ -32,8 +32,10 @@ interface Translations {
   preferredAreas: string;
   preferredAreasPlaceholder: string;
   preferredAreasRequired: string;
+  preferredAreasErrorMessage: string;
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
+  howDidYouKnowUsErrorMessage: string;
   howDidYouKnowUsRequired: string;
   sendButton: string;
   successMessage: string;
@@ -259,6 +261,9 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               patternValue=""
               required={translations.preferredAreasRequired}
               rows={3}
+              maxLength={1450}
+              maxLengthMessage={translations.preferredAreasErrorMessage}
+              validate=""
             />
 
             <TextArea
@@ -272,6 +277,9 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               // required={translations.howDidYouKnowUsRequired}
               required=""
               rows={3}
+              maxLength={1450}
+              maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+              validate=""
             />
           </div>
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">

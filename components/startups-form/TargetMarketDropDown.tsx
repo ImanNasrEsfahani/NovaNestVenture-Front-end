@@ -12,15 +12,22 @@ type Props = {
         targetCharacteristics: string
         targetCharacteristicsRequired: string
         targetCharacteristicsPlaceholder: string
+        targetCharacteristicsErrorMessage: string
+
         targetCustomers: string
         targetCustomersRequired: string
         targetCustomersPlaceholder: string
+        targetCustomersErrorMessage: string
+
         targetEstimated: string
         targetEstimatedRequired: string
         targetEstimatedPlaceholder: string
+        targetEstimatedErrorMessage: string
+
         targetTotal: string
         targetTotalRequired: string
         targetTotalPlaceholder: string
+        targetTotalErrorMessage: string
     }
 }
 
@@ -43,6 +50,9 @@ export default function TargetMarketDropDown( {
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.targetCharacteristicsPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.targetCharacteristicsErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -55,6 +65,9 @@ export default function TargetMarketDropDown( {
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.targetCustomersPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.targetCustomersErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -67,6 +80,9 @@ export default function TargetMarketDropDown( {
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.targetEstimatedPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.targetEstimatedErrorMessage}
+              validate=""
           />
         </div>
       </div>

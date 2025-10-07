@@ -36,9 +36,12 @@ export default function StartupFormForm({lang}: {lang: string}) {
     accelerators: t('startUp', { returnObjects: true }).commons.accelerators,
     acceleratorsRequired: t('startUp', { returnObjects: true }).commons.acceleratorsRequired,
     acceleratorsPlaceholder: t('startUp', { returnObjects: true }).commons.acceleratorsPlaceholder,
+    acceleratorsErrorMessage: t('acceleratorsErrorMessage', { returnObjects: true }),
+    
     howDidYouKnowUs: t('startUp', { returnObjects: true }).commons.knowUs,
     howDidYouKnowUsRequired: t('startUp', { returnObjects: true }).commons.KnowUsRequired,
     howDidYouKnowUsPlaceholder: t('startUp', { returnObjects: true }).commons.KnowUsPlaceholder,
+    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage', { returnObjects: true }),
   };
 
   return (

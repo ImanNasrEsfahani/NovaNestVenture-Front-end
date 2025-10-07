@@ -18,6 +18,7 @@ interface Translations {
   subjectPlaceholder: string;
   messageRequired: string;
   messagePlaceholder: string;
+  messagePlaceholderErrorMessage: string;
   sendingButton: string;
   sendButton: string;
   successMessage: string;
@@ -243,6 +244,9 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
               placeholder={translations.messagePlaceholder}
               rows={4}
               cols={20}
+              maxLength={1450}
+              maxLengthMessage={translations.messagePlaceholderErrorMessage}
+              validate=""
             />
           </div>
         </div>

@@ -29,6 +29,7 @@ interface Translations {
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
+  howDidYouKnowUsErrorMessage: string;
   sendButton: string;
   successMessage: string;
   failedMessage: string;
@@ -57,6 +58,7 @@ interface Translations {
   breifIntroduction: string;
   breifIntroductionRequired: string;
   breifIntroductionPlaceholder: string;
+  breifIntroductionErrorMessage: string;
 
   firstName: string;
   firstNameRequired: string;
@@ -301,9 +303,11 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             nameTextArea="breifIntroduction"
             patternMessage=""
             patternValue=""
-            // required={translations.howDidYouKnowUsRequired}
             required=""
             rows={5}
+            maxLength={1450}
+            maxLengthMessage={translations.breifIntroductionErrorMessage}
+            validate=""
           />
 
           <TextArea
@@ -317,6 +321,9 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             // required={translations.howDidYouKnowUsRequired}
             required=""
             rows={3}
+            maxLength={1450}
+            maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+            validate=""
           />
         </div>
         <div className="mx-auto w-44 pb-4 md:w-52 mt-20">

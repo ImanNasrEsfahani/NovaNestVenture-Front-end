@@ -9,18 +9,23 @@ type PropertyTranslations = {
   propertyRevenue: string;
   propertyRevenueRequired: string;
   propertyRevenuePlaceholder: string;
+  propertyRevenueErrorMessage: string;
   propertyMonthly: string;
   propertyMonthlyRequired: string;
   propertyMonthlyPlaceholder: string;
+  propertyMonthlyErrorMessage: string;
   propertyRate: string;
   propertyRateRequired: string;
   propertyRatePlaceholder: string;
+  propertyRateErrorMessage: string;
   propertyBusiness: string;
   propertyBusinessRequired: string;
   propertyBusinessPlaceholder: string;
+  propertyBusinessErrorMessage: string;
   propertyCapital: string;
   propertyCapitalRequired: string;
   propertyCapitalPlaceholder: string;
+  propertyCapitalErrorMessage: string;
 }
 
 type Props = {
@@ -44,6 +49,9 @@ export default function PropertyDropDown({ register, errors, translations }: Pro
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.propertyRevenuePlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.propertyRevenueErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -56,6 +64,9 @@ export default function PropertyDropDown({ register, errors, translations }: Pro
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.propertyMonthlyPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.propertyMonthlyErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -68,6 +79,9 @@ export default function PropertyDropDown({ register, errors, translations }: Pro
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.propertyRatePlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.propertyRateErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -80,6 +94,9 @@ export default function PropertyDropDown({ register, errors, translations }: Pro
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.propertyBusinessPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.propertyBusinessErrorMessage}
+              validate=""
           />
         </div>
         <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
@@ -92,6 +109,9 @@ export default function PropertyDropDown({ register, errors, translations }: Pro
               patternValue={''} 
               patternMessage={''} 
               placeholder={translations.propertyCapitalPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.propertyCapitalErrorMessage}
+              validate=""
           />
         </div>
       </div>

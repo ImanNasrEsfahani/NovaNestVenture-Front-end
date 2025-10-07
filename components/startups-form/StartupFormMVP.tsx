@@ -32,9 +32,11 @@ export default function StartupFormMVP({
     siteAddressPlaceholder: t('startUp', { returnObjects: true }).siteAddressPlaceholder,
     cooperatedWithInvestors: t('startUp', { returnObjects: true }).cooperatedWithInvestors,
     cooperatedWithInvestorsPlaceholder: t('startUp', { returnObjects: true }).cooperatedWithInvestorsPlaceholder,
+    cooperatedWithInvestorsErrorMessage: t('startUp', { returnObjects: true }).cooperatedWithInvestorsErrorMessage,
     howDidYouKnowUs: t('howDidYouKnowUs'),
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
-    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired')
+    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
+    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage')
   };
 
   return (

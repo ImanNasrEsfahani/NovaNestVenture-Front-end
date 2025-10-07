@@ -45,6 +45,9 @@ export default function StartupFormBusinessModel({
               t('startUp', { returnObjects: true }).businessModel
                 .monetizationOfYourPlanRequired
             }
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).businessModel.monetizationOfYourPlanErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2 mb-4 flex flex-col items-start gap-4">
@@ -66,6 +69,9 @@ export default function StartupFormBusinessModel({
               t('startUp', { returnObjects: true }).businessModel
                 .structureOfYourSalesRequired
             }
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).businessModel.structureOfYourSalesErrorMessage}
+            validate=""
           />
 
           <div>
@@ -112,6 +118,9 @@ export default function StartupFormBusinessModel({
             patternMessage=""
             patternValue=""
             required=""
+            maxLength={1450}
+            maxLengthMessage={t('startUp', { returnObjects: true }).cooperatedWithInvestorsErrorMessage}
+            validate=""
           />
         </div>
         <div className="col-span-2">
@@ -124,6 +133,9 @@ export default function StartupFormBusinessModel({
             patternMessage=""
             patternValue=""
             required={t('howDidYouKnowUsRequired')}
+            maxLength={1450}
+            maxLengthMessage={t('howDidYouKnowUsErrorMessage')}
+            validate=""
           />
         </div>
       </div>

@@ -50,9 +50,12 @@ interface Translations {
   accelerators: string;
   acceleratorsRequired: string;
   acceleratorsPlaceholder: string;
+  acceleratorsErrorMessage: string;
+  
   howDidYouKnowUs: string;
   howDidYouKnowUsRequired: string;
   howDidYouKnowUsPlaceholder: string;
+  howDidYouKnowUsErrorMessage: string;
 }
 
 interface Props {
@@ -340,6 +343,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
               patternValue={''}
               patternMessage={''}
               placeholder={translations.acceleratorsPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.acceleratorsErrorMessage}
+              validate=""
             />
           </div>
           <div className="w-10/12 mx-auto">
@@ -352,6 +358,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
               patternValue={''}
               patternMessage={''}
               placeholder={translations.howDidYouKnowUsPlaceholder}
+              maxLength={1450}
+              maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+              validate=""
             />
           </div>
           

@@ -9,27 +9,46 @@ export default function TextArea({
   placeholder,
   rows = 4,
   cols,
+  maxLength,
+  maxLengthMessage,
+  validate,
 }: {
   title?: string;
   register: any;
   errors: any;
-  required: string;
+  required?: string | boolean;
   nameTextArea: string;
   patternValue: string;
   patternMessage: string;
   placeholder: string;
   rows?: number;
   cols?: number;
+  maxLength: number;
+  maxLengthMessage: string;
+  validate: any;
+  // maxLength?: number;
+  // maxLengthMessage?: string;
+  // validate?: any;
 }) {
-  // Create a regular expression pattern for validation
-  const pattern = new RegExp(patternValue);
+  const pattern = patternValue ? new RegExp(patternValue) : undefined;
+
+  const isRequired =
+    required !== undefined &&
+    required !== false &&
+    !(typeof required === 'string' && required.trim() === '');
+
+  const registerOptions: any = {};
+  if (isRequired) registerOptions.required = typeof required === 'string' ? required : true;
+  if (pattern) registerOptions.pattern = { value: pattern, message: patternMessage };
+  if (maxLength) registerOptions.maxLength = { value: maxLength, message: maxLengthMessage ?? `Ensure this field has no more than ${maxLength} characters.` };
+  if (validate) registerOptions.validate = validate;
 
   return (
     <div className='w-full flex flex-col py-4'>
       {/* Label for the textarea */}
       <label htmlFor={nameTextArea} className="w-full px-2 !text-[#6B6B6B] dark:text-current">
         {title}
-        {required ? <span className="text-red-500 ml-1">*</span> : null}
+        {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
         <textarea
           id={nameTextArea}
           rows={rows}
@@ -38,13 +57,7 @@ export default function TextArea({
             'textarea w-full !rounded-sm get-shadow-sm focus:outline-none border border-gray-400 bg-transparent placeholder:text-[#939393B2]' +
             (errors[nameTextArea] ? ' border-red-500' : '')
           }
-          {...register(nameTextArea, {
-            required: required,
-            pattern: {
-              value: pattern,
-              message: patternMessage,
-            },
-          })}
+          {...register(nameTextArea, registerOptions)}
           placeholder={placeholder}
         />
       </label>

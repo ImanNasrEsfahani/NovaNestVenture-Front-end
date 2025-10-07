@@ -362,6 +362,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               patternValue=""
               required=""
               rows={8}
+              maxLength={1450}
+              maxLengthMessage={translations.workHistorySummaryErrorMessage}
+              validate=""
             />
           </div>
 
