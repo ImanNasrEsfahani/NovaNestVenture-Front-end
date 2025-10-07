@@ -128,6 +128,7 @@
   "instagram": "Instagram",
   "instagramRequired": "Instagram is required",
   "instagramPlaceholder": "Enter your Instagram profile URL or username",
+  "instagramErrorMessage": "Enter a Valid Instagram URL",
 
   "briefIntroduction": "Brief Introduction",
   "briefIntroductionRequired": "Brief Introduction is required",

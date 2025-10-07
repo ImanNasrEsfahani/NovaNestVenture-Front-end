@@ -72,14 +72,17 @@ interface Translations {
   website: string;
   websiteRequired: string;
   websitePlaceholder: string;
+  websiteErrorMessage: string;
   
   linkedin: string;
   linkedinRequired: string;
   linkedinPlaceholder: string;
+  linkedinErrorMessage: string;
 
   instagram: string;
   instagramRequired: string;
   instagramPlaceholder: string;
+  instagramErrorMessage: string;
 
   ExpertiesAreas: string;
   ExpertiesAreasPlaceholder: string;
@@ -284,8 +287,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               placeholder={translations.websitePlaceholder}
               className="input col-span-1 mb-1 w-full"
               labelClass=""
-              patternValue=""
-              patternMessage=""
+              patternValue="^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$"
+              patternMessage={translations.websiteErrorMessage}
             />
 
             <Input
@@ -298,8 +301,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               placeholder={translations.linkedinPlaceholder}
               className="input col-span-1 mb-1 w-full"
               labelClass=""
-              patternValue=""
-              patternMessage=""
+              patternValue="^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$"
+              patternMessage={translations.linkedinErrorMessage}
             />
 
             <Input
@@ -312,8 +315,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               placeholder={translations.instagramPlaceholder}
               className="input col-span-1 mb-1 w-full"
               labelClass=""
-              patternValue=""
-              patternMessage=""
+              patternValue="^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$"
+              patternMessage={translations.instagramErrorMessage}
             />
 
             </div>

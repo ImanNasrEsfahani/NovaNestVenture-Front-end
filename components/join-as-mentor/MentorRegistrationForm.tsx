@@ -54,14 +54,17 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     website: t('website'),
     websiteRequired: t('websiteRequired'),
     websitePlaceholder: t('websitePlaceholder'),
+    websiteErrorMessage: t('websiteErrorMessage'),
     
     linkedin: t('linkedin'),
     linkedinRequired: t('linkedinRequired'),
     linkedinPlaceholder: t('linkedinPlaceholder'),
+    linkedinErrorMessage: t('linkedinErrorMessage'),
 
     instagram: t('instagram'),
     instagramRequired: t('instagramRequired'),
     instagramPlaceholder: t('instagramPlaceholder'),
+    instagramErrorMessage: t('instagramErrorMessage'),
 
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
