@@ -49,10 +49,12 @@ interface Translations {
   website: string;
   websiteRequired: string;
   websitePlaceholder: string;
+  websiteErrorMessage: string;
   
   linkedin: string;
   linkedinRequired: string;
   linkedinPlaceholder: string;
+  linkedinErrorMessage: string;
 
   briefIntroduction: string;
   briefIntroductionRequired: string;
@@ -274,8 +276,8 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             placeholder={translations.websitePlaceholder}
             className="input col-span-1 mb-1 w-full"
             labelClass=""
-            patternValue=""
-            patternMessage=""
+            patternValue='^(https?:\\/\\/)?([\\w-]+\\.)+[\\w-]{2,}(\\/.*)?$'
+            patternMessage={translations.websiteErrorMessage}
           />
 
           <Input
@@ -288,8 +290,8 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             placeholder={translations.linkedinPlaceholder}
             className="input col-span-1 mb-1 w-full"
             labelClass=""
-            patternValue=""
-            patternMessage=""
+            patternValue='^(https?:\\/\\/)?([\\w-]+\\.)+[\\w-]{2,}(\\/.*)?$'
+            patternMessage={translations.linkedinErrorMessage}
           />
 
         </div>

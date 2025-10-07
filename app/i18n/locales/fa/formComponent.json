@@ -115,9 +115,15 @@
   "howDidYouKnowUsErrorMessage": "پیام باید کمتر از 1450 کاراکتر باشد.",
   "howDidYouKnowUsRequired": "پر کردن این قسمت الزامی است",
 
+  "website": "Website",
+  "websiteRequired": "Website is required",
+  "websitePlaceholder": "Enter your website",
+  "websiteErrorMessage": "Enter a Valid Website URL",
+
   "linkedin": "LinkedIn",
   "linkedinRequired": "LinkedIn is required",
   "linkedinPlaceholder": "Enter your LinkedIn profile URL",
+  "linkedinErrorMessage": "Enter a Valid LinkedIn URL",
 
   "instagram": "Instagram",
   "instagramRequired": "Instagram is required",
@@ -605,9 +611,6 @@
   "TRIAL": "نسخه آزمایشی",
   "FisrtSale": "فروش اولیه",
   "SaleDevelopment": "توسعه فروش",
-  "website": "وبسایت ",
-  "websitePlaceholder": "لطفا وبسایت خود را وارد کنید.",
-  "websiteRequired": "این بخش الزامی است.",
   "prosField": "نوع همکاری",
   "prosFieldRequired": "این بخش الزامی است.",
   "prosFieldPlaceholder": "استخدام / کارآموزی",

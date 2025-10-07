@@ -43,10 +43,12 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     website: t('website'),
     websiteRequired: t('websiteRequired'),
     websitePlaceholder: t('websitePlaceholder'),
+    websiteErrorMessage: t('websiteErrorMessage'),
 
     linkedin: t('linkedin'),
     linkedinRequired: t('linkedinRequired'),
     linkedinPlaceholder: t('linkedinPlaceholder'),
+    linkedinErrorMessage: t('linkedinErrorMessage'),
 
     briefIntroduction: t('briefIntroduction'),
     briefIntroductionRequired: t('briefIntroductionRequired'),
