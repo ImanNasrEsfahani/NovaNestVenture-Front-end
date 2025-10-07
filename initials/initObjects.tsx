@@ -98,14 +98,12 @@ const initialApplicationFormData: LandaGeneFormData = {
 const initialInvestorRegistrationFormData: InvestorRegistrationFormData = {
   firstName: '',
   lastName: '',
-  birthDate: new Date(),
   email: '',
+  phoneNumber: '',
   countryOfResidence: '',
-  provinceOfResidence: '',
-  companyName: '',
+  investmentCeiling: '',
   preferredAreas: '',
   howDidYouKnowUs: '',
-  investmentCeiling: ''
 };
 
 const initialMentorRegistrationFormData: MentorRegistrationFormData = {

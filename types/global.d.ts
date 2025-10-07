@@ -77,11 +77,9 @@ interface HandicraftForm {
 interface InvestorRegistrationFormData {
   firstName: string;
   lastName: string;
-  birthDate: Date;
   email: string;
+  phoneNumber: string;
   countryOfResidence: string;
-  provinceOfResidence: string;
-  companyName: string;
   investmentCeiling: string;
   preferredAreas: string;
   howDidYouKnowUs: string;
