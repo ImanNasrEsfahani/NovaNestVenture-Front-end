@@ -271,7 +271,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
         <div
           aria-hidden={fileCounterState}
           className={`w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-            ${!fileCounterState ? 'max-h-[1200px] opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+            ${!fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
         >
           {/* disable native form controls while hidden to avoid focusable hidden elements */}
           <fieldset disabled={fileCounterState} className="w-full">

@@ -261,7 +261,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 <div
                   aria-hidden={startupFormType !== translations.MVP}
                   className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.MVP ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                    ${startupFormType === translations.MVP ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
                 >
                   <fieldset disabled={startupFormType !== translations.MVP}>
                     <StartUpMvpRefactore
@@ -284,7 +284,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 <div
                   aria-hidden={startupFormType !== translations.FisrtSale}
                   className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.FisrtSale ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                    ${startupFormType === translations.FisrtSale ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
                 >
                   <fieldset disabled={startupFormType !== translations.FisrtSale}>
                     <StartUpFirstSaleRefactor
@@ -307,7 +307,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 <div
                   aria-hidden={startupFormType !== translations.SaleDevelopment}
                   className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.SaleDevelopment ? 'max-h-[2000px] opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+                    ${startupFormType === translations.SaleDevelopment ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
                 >
                   <fieldset disabled={startupFormType !== translations.SaleDevelopment}>
                     <StartUpSaleDevelopRefactore
