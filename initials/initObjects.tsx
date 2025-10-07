@@ -68,7 +68,7 @@ const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
   companyName: '',
   website: '',
   linkedin: '',
-  breifIntroduction: '',
+  briefIntroduction: '',
   howDidYouKnowUs: '',
 };
 

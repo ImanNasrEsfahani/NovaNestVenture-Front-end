@@ -127,7 +127,7 @@ interface JoinAsaPartnerFormData {
   companyName: string;
   website: string;
   linkedin: string;
-  breifIntroduction: string;
+  briefIntroduction: string;
   howDidYouKnowUs: string;
 }
 

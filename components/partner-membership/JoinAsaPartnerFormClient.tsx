@@ -54,10 +54,10 @@ interface Translations {
   linkedinRequired: string;
   linkedinPlaceholder: string;
 
-  breifIntroduction: string;
-  breifIntroductionRequired: string;
-  breifIntroductionPlaceholder: string;
-  breifIntroductionErrorMessage: string;
+  briefIntroduction: string;
+  briefIntroductionRequired: string;
+  briefIntroductionPlaceholder: string;
+  briefIntroductionErrorMessage: string;
 
   firstName: string;
   firstNameRequired: string;
@@ -295,17 +295,17 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         </div>
         <div className="flex flex-col w-full">
           <TextArea
-            title={translations.breifIntroduction}
+            title={translations.briefIntroduction}
             register={register}
             errors={errors}
-            placeholder={translations.breifIntroductionPlaceholder}
-            nameTextArea="breifIntroduction"
+            placeholder={translations.briefIntroductionPlaceholder}
+            nameTextArea="briefIntroduction"
             patternMessage=""
             patternValue=""
             required=""
             rows={5}
             maxLength={1450}
-            maxLengthMessage={translations.breifIntroductionErrorMessage}
+            maxLengthMessage={translations.briefIntroductionErrorMessage}
             validate=""
           />
 

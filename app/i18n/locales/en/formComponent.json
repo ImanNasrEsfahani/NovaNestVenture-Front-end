@@ -119,10 +119,10 @@
   "instagramRequired": "Instagram is required",
   "instagramPlaceholder": "Enter your Instagram profile URL or username",
 
-  "breifIntroduction": "Brief Introduction",
-  "breifIntroductionRequired": "Brief Introduction is required",
-  "breifIntroductionPlaceholder": "Enter a brief introduction",
-  "breifIntroductionErrorMessage": "The message must be less than 1450 characters.",
+  "briefIntroduction": "Brief Introduction",
+  "briefIntroductionRequired": "Brief Introduction is required",
+  "briefIntroductionPlaceholder": "Enter a brief introduction",
+  "briefIntroductionErrorMessage": "The message must be less than 1450 characters.",
 
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
