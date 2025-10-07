@@ -16,7 +16,7 @@ import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 import Input from '@/components/common/form/Input';
 import Select from '@/components/common/form/Select';
 import TextArea from '@/components/common/TextArea';
-
+import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
 
 interface Translations {
 
@@ -188,19 +188,13 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
   };
 
   const birthValidate = (value?: string) => {
-    // skip validation when resume is uploaded
     if (fileCounterState) return true;
-    if (!value) return translations.birthDateRequired;
-    const birth = new Date(value);
-    if (Number.isNaN(birth.getTime())) return translations.birthDateErrorMessage;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    birth.setHours(0, 0, 0, 0);
-    if (birth > today) return translations.birthDateErrorMessageForFutureDate;
-    let age = today.getFullYear() - birth.getFullYear();
-    const m = today.getMonth() - birth.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
-    return age >= 14 || translations.birthDateErrorMessageForAge;
+    return birthDateValidatorFactory(14, {
+      birthDateRequired: translations.birthDateRequired,
+      birthDateErrorMessage: translations.birthDateErrorMessage,
+      birthDateErrorMessageForFutureDate: translations.birthDateErrorMessageForFutureDate,
+      birthDateErrorMessageForAge: translations.birthDateErrorMessageForAge
+    })(value);
   };
 
   return (

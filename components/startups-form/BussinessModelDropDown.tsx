@@ -31,39 +31,35 @@ export default function BussinessModelDropDown({
 
 
   return (
-    <>
-      <div className='w-full py-8 px-4'>
-        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
-          <TextArea
-            title={translations.monetization}
-            register={register}
-            errors={formState.errors}
-            required={translations.monetizationRequired}
-            nameTextArea={'MonetizationOfYourPlan'}
-            patternValue={''}
-            patternMessage={''}
-            placeholder={translations.monetizationPlaceholder}
-            maxLength={1450}
-            maxLengthMessage={translations.monetizationErrorMessage}
-            validate=""
-          />
-        </div>
-        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
-          <TextArea
-            title={translations.delivery}
-            register={register}
-            errors={errors}
-            required={translations.deliveryRequired}
-            nameTextArea={'structureOfYourSales'}
-            patternValue={''}
-            patternMessage={''}
-            placeholder={translations.deliveryPlaceholder}
-            maxLength={1450}
-            maxLengthMessage={translations.deliveryErrorMessage}
-            validate=""
-          />
-        </div>
+    <div className='w-full p-6'>
+      <TextArea
+        title={translations.monetization}
+        register={register}
+        errors={formState.errors}
+        required={translations.monetizationRequired}
+        nameTextArea={'MonetizationOfYourPlan'}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.monetizationPlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.monetizationErrorMessage}
+        validate=""
+      />
+      <div className="w-full">
+        <TextArea
+          title={translations.delivery}
+          register={register}
+          errors={errors}
+          required={translations.deliveryRequired}
+          nameTextArea={'structureOfYourSales'}
+          patternValue={''}
+          patternMessage={''}
+          placeholder={translations.deliveryPlaceholder}
+          maxLength={1450}
+          maxLengthMessage={translations.deliveryErrorMessage}
+          validate=""
+        />
       </div>
-    </>
+    </div>
   );
 };

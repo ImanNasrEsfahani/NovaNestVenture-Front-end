@@ -79,7 +79,7 @@ export default function CountryInput({
         <div className="col-span-1">
           <label
             htmlFor={nameInputs.countryOfResidence}
-            className="flex flex-col px-2 !text-[#6B6B6B]"
+            className="flex flex-col px-2 text-gray text-sm"
           >
             <span className="flex">
               {countryName}

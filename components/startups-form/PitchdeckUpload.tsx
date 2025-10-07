@@ -31,19 +31,19 @@ interface PitchdeckUploadProps {
   onFileChange: (file: any) => void;
   register: UseFormRegister<StartupsFormData>;
   errors: FieldErrors<StartupsFormData>;
-  
+
   // Additional props for nested components
   handleSolutionsLevelChange: (value: any) => void;
   solutionsLevel: any;
   setValue: any;
   handleFinancialModelFileChange: (file: any) => void;
-  
+
   // Translation props
   translations: {
     title: string;
     yesLabel: string;
     noLabel: string;
-    
+
     // Problems Section
     problems: {
       title: string;
@@ -61,7 +61,7 @@ interface PitchdeckUploadProps {
       solutionsLevel: string;
       solutionsLevelList: string[];
     };
-    
+
     // Business Model
     businessModel: {
       title: string;
@@ -77,7 +77,7 @@ interface PitchdeckUploadProps {
 
       choseFile: string;
     };
-    
+
     // Target Market
     targetMarket: {
       targetMarket: string;
@@ -90,7 +90,7 @@ interface PitchdeckUploadProps {
       targetCustomersRequired: string;
       targetCustomersPlaceholder: string;
       targetCustomersErrorMessage: string;
-      
+
       targetEstimated: string;
       targetEstimatedRequired: string;
       targetEstimatedPlaceholder: string;
@@ -101,7 +101,7 @@ interface PitchdeckUploadProps {
       targetTotalPlaceholder: string;
       targetTotalErrorMessage: string;
     };
-    
+
     // Property
     property: {
       property: string;
@@ -160,7 +160,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
     setOpenPanel((prev) => (prev === id ? null : id));
   };
 
-  
+
   const panels = [
     {
       id: 'problems',
@@ -275,56 +275,53 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
         >
           {/* disable native form controls while hidden to avoid focusable hidden elements */}
           <fieldset disabled={fileCounterState} className="w-full">
-            <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-4 pt-6 pb-12">
-              <label>{productName}
-                <Input
-                  register={register}
-                  errors={errors}
-                  nameInput="productName"
-                  type={'text'}
-                  required={productNameRequired}
-                  patternValue={''}
-                  patternMessage={''}
-                  placeholder={productNamePlaceholder}
-                  className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
-                />
-              </label>
-
-              <label>{siteAddress}
-                <Input
-                  register={register}
-                  errors={errors}
-                  nameInput="siteAddress"
-                  type={'text'}
-                  required={siteAddressRequired}
-                  patternValue={''}
-                  patternMessage={''}
-                  placeholder={siteAddressPlaceholder}
-                  className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
-                />
-              </label>
-            </div>
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="productName"
+              type={'text'}
+              required={productNameRequired}
+              patternValue={''}
+              patternMessage={''}
+              placeholder={productNamePlaceholder}
+              className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
+              label={productName}
+              labelClass=""
+            />
+            <Input
+              register={register}
+              errors={errors}
+              nameInput="siteAddress"
+              type={'text'}
+              required={siteAddressRequired}
+              patternValue={''}
+              patternMessage={''}
+              placeholder={siteAddressPlaceholder}
+              className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
+              label={siteAddress}
+              labelClass=""
+            />
 
             <div className='space-y-4'>
               {panels.filter(p => p.show).map((p) => (
-                 <div key={p.id} className="bg-darkGold rounded-xl overflow-hidden shadow-sm">
-                   <CollapsibleHeader
-                     title={p.title}
-                     isOpen={openPanel === p.id}
-                     onToggle={() => togglePanel(p.id)}
-                   />
-                   {openPanel === p.id && (
-                     <div className="p-6">
-                       {p.content}
-                     </div>
-                   )}
-                 </div>
-               ))}
-             </div>
+                <div key={p.id} className="bg-darkGold rounded-xl overflow-hidden shadow-sm">
+                  <CollapsibleHeader
+                    title={p.title}
+                    isOpen={openPanel === p.id}
+                    onToggle={() => togglePanel(p.id)}
+                  />
+                  {openPanel === p.id && (
+                    <div className="p-6">
+                      {p.content}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </fieldset>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

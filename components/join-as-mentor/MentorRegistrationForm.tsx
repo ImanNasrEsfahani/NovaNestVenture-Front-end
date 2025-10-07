@@ -9,48 +9,9 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
   const translations = {
     formTitle: t('joinUsForm', { returnObjects: true }).formTitle,
     formSubtitle: t('joinUsForm', { returnObjects: true }).formSubtitle,
-    birthDate: t('birthDate'),
-    birthDateErrorMessage: t('birthDateErrorMessage'),
-    birthDatePlaceholder: t('birthDatePlaceholder'),
-    ExpertiesAreas: t('ExpertiesAreas'),
-    ExpertiesAreasPlaceholder: t('ExpertiesAreasPlaceholder'),
-    ExpertiesAreasRequired: t('ExpertiesAreasRequired'),
-    ExpertiesAreasErrorMessage: t('ExpertiesAreasErrorMessage'),
-    
-    howDidYouKnowUs: t('howDidYouKnowUs'),
-    howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
-    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
-    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
-
     sendButton: t('sendButton'),
-
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
-
-    countries: tCountry('countries', { returnObjects: true }),
-    countryName: tCountry('countryName'),
-    countryNameRequired: tCountry('countryNameRequired'),
-    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
-
-    provinceOfResidence: tCountry('provinceOfResidence'),
-    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
-    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
-
-    cityOfResidence: tCountry('cityOfResidence'),
-    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
-    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
-
-    website: t('website'),
-    websiteRequired: t('websiteRequired'),
-    websitePlaceholder: t('websitePlaceholder'),
-    
-    linkedin: t('linkedin'),
-    linkedinRequired: t('linkedinRequired'),
-    linkedinPlaceholder: t('linkedinPlaceholder'),
-
-    instagram: t('instagram'),
-    instagramRequired: t('instagramRequired'),
-    instagramPlaceholder: t('instagramPlaceholder'),
 
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
@@ -70,6 +31,38 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
 
+    countries: tCountry('countries', { returnObjects: true }),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
+
+    birthDate: t('birthDate'),  
+    birthDateRequired: t('birthDateRequired'),
+    birthDateErrorMessage: t('birthDateErrorMessage'),
+    birthDateErrorMessageForFutureDate: t('birthDateErrorMessageForFutureDate'),
+    birthDateErrorMessageForAge: t('birthDateErrorMessageForAge'),
+    birthDatePlaceholder: t('birthDatePlaceholder'),
+    
+    website: t('website'),
+    websiteRequired: t('websiteRequired'),
+    websitePlaceholder: t('websitePlaceholder'),
+    
+    linkedin: t('linkedin'),
+    linkedinRequired: t('linkedinRequired'),
+    linkedinPlaceholder: t('linkedinPlaceholder'),
+
+    instagram: t('instagram'),
+    instagramRequired: t('instagramRequired'),
+    instagramPlaceholder: t('instagramPlaceholder'),
+
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
     TypeOfCollaborationPlaceholder: t('TypeOfCollaborationPlaceholder'),
@@ -79,6 +72,16 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     FieldOfExpertRequired: t('FieldOfExpertRequired'),
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
     FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || [],
+
+    ExpertiesAreas: t('ExpertiesAreas'),
+    ExpertiesAreasPlaceholder: t('ExpertiesAreasPlaceholder'),
+    ExpertiesAreasRequired: t('ExpertiesAreasRequired'),
+    ExpertiesAreasErrorMessage: t('ExpertiesAreasErrorMessage'),
+    
+    howDidYouKnowUs: t('howDidYouKnowUs'),
+    howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
+    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
+    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
   };
 
   return <MentorRegistrationFormClient lang={lang} translations={translations} />;

@@ -109,11 +109,15 @@ const initialInvestorRegistrationFormData: InvestorRegistrationFormData = {
 const initialMentorRegistrationFormData: MentorRegistrationFormData = {
   firstName: '',
   lastName: '',
-  birthDate: new Date(),
   email: '',
   phoneNumber: '',
   countryOfResidence: '',
-  preferredAreas: '',
+  cityOfResidence: '',
+  birthDate: new Date(),
+  website: '',
+  linkedin: '',
+  instagram: '',
+  ExpertiesAreas: '',
   howDidYouKnowUs: '',
 };
 

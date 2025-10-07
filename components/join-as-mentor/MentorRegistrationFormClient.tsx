@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
@@ -7,56 +7,19 @@ import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
-import CountryInput from '@/components/common/form/CountryInput';
 
 import FormTitle from '@/components/common/form/FormTitle';
 import { MentorRegistrationFormData } from '@/types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
+import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
 
 interface Translations {
   formTitle: string;
   formSubtitle: string;
-  birthDate: string;
-  birthDateErrorMessage: string;
-  birthDatePlaceholder: string;
-  ExpertiesAreas: string;
-  ExpertiesAreasPlaceholder: string;
-  ExpertiesAreasRequired: string;
-  ExpertiesAreasErrorMessage: string;
-  
-  howDidYouKnowUs: string;
-  howDidYouKnowUsPlaceholder: string;
-  howDidYouKnowUsRequired: string;
-  howDidYouKnowUsErrorMessage: string;
   sendButton: string;
   successMessage: string;
   failedMessage: string;
-
-  countries: string[];
-  countryName: string;
-  countryNameRequired: string;
-  countryNamePlaceholder: string;
-
-  provinceOfResidence: string;
-  provinceOfResidenceRequired: string;
-  provinceOfResidencePlaceholder: string;
-
-  cityOfResidence: string;
-  cityOfResidenceRequired: string;
-  cityOfResidencePlaceholder: string;
-
-  website: string;
-  websiteRequired: string;
-  websitePlaceholder: string;
-  
-  linkedin: string;
-  linkedinRequired: string;
-  linkedinPlaceholder: string;
-
-  instagram: string;
-  instagramRequired: string;
-  instagramPlaceholder: string;
 
   firstName: string;
   firstNameRequired: string;
@@ -76,6 +39,19 @@ interface Translations {
   phoneNumberErrorMessage: string;
   phoneNumberPlaceholder: string;
 
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
+
   TypeOfCollaboration: string;
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
@@ -85,6 +61,35 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
+
+  birthDate: string;
+  birthDateRequired: string;
+  birthDateErrorMessage: string;
+  birthDateErrorMessageForFutureDate: string;
+  birthDateErrorMessageForAge: string;
+  birthDatePlaceholder: string;
+
+  website: string;
+  websiteRequired: string;
+  websitePlaceholder: string;
+  
+  linkedin: string;
+  linkedinRequired: string;
+  linkedinPlaceholder: string;
+
+  instagram: string;
+  instagramRequired: string;
+  instagramPlaceholder: string;
+
+  ExpertiesAreas: string;
+  ExpertiesAreasPlaceholder: string;
+  ExpertiesAreasRequired: string;
+  ExpertiesAreasErrorMessage: string;
+  
+  howDidYouKnowUs: string;
+  howDidYouKnowUsPlaceholder: string;
+  howDidYouKnowUsRequired: string;
+  howDidYouKnowUsErrorMessage: string;
 }
 
 interface Props {
@@ -124,6 +129,23 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
 
   //   fetchCsrfToken();
   // }, []);
+
+  const birthValidate = useMemo(
+    () =>
+      birthDateValidatorFactory(18, {
+        birthDateRequired: translations.birthDateRequired ?? 'Birth date is required',
+        birthDateErrorMessage: translations.birthDateErrorMessage ?? 'Invalid birth date',
+        birthDateErrorMessageForFutureDate: (translations as any).birthDateErrorMessageForFutureDate ?? translations.birthDateErrorMessage ?? 'Birth date cannot be in the future',
+        birthDateErrorMessageForAge: (translations as any).birthDateErrorMessageForAge ?? translations.birthDateErrorMessage ?? 'You must be at least 18 years old',
+      }),
+    [
+      translations.birthDateRequired,
+      translations.birthDateErrorMessage,
+      // include optional keys if present
+      (translations as any).birthDateErrorMessageForFutureDate,
+      (translations as any).birthDateErrorMessageForAge,
+    ]
+  );
 
   const onSubmit = async (formData: MentorRegistrationFormData) => {
     // Set loading and sending states.
@@ -249,6 +271,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               placeholder={translations.birthDatePlaceholder}
               className="input col-span-1 mb-1 w-full"
               labelClass="dark:text-current"
+              validate={birthValidate}
             />
 
             <Input

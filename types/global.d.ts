@@ -91,11 +91,15 @@ interface InvestorRegistrationFormData {
 interface MentorRegistrationFormData {
   firstName: string;
   lastName: string;
-  birthDate: Date;
   email: string;
   phoneNumber: string;
   countryOfResidence: string;
-  preferredAreas: string;
+  cityOfResidence: string;
+  birthDate: Date;
+  website: string;
+  linkedin: string;
+  instagram: string;
+  ExpertiesAreas: string;
   howDidYouKnowUs: string;
 }
 

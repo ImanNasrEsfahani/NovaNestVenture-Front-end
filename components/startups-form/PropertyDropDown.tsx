@@ -29,92 +29,80 @@ type PropertyTranslations = {
 }
 
 type Props = {
-    register: UseFormRegister<StartupsFormData>
-    errors: FieldErrors<StartupsFormData>
-    translations: PropertyTranslations
+  register: UseFormRegister<StartupsFormData>
+  errors: FieldErrors<StartupsFormData>
+  translations: PropertyTranslations
 }
 
 export default function PropertyDropDown({ register, errors, translations }: Props) {
 
   return (
-    <>
-      <div className='w-full py-8 px-4'>
-        <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
-          <TextArea
-              title={translations.propertyRevenue}
-              register={register}
-              errors={errors} 
-              required={translations.propertyRevenueRequired} 
-              nameTextArea={"startupRevenue"} 
-              patternValue={''} 
-              patternMessage={''} 
-              placeholder={translations.propertyRevenuePlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.propertyRevenueErrorMessage}
-              validate=""
-          />
-        </div>
-        <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
-          <TextArea 
-              title={translations.propertyMonthly}
-              register={register}
-              errors={errors} 
-              required={translations.propertyMonthlyRequired}
-              nameTextArea={"monthlyIncome"} 
-              patternValue={''} 
-              patternMessage={''} 
-              placeholder={translations.propertyMonthlyPlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.propertyMonthlyErrorMessage}
-              validate=""
-          />
-        </div>
-        <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
-          <TextArea 
-              title={translations.propertyRate}
-              register={register}
-              errors={errors} 
-              required={translations.propertyRateRequired}
-              nameTextArea={"currentInterestRate"} 
-              patternValue={''} 
-              patternMessage={''} 
-              placeholder={translations.propertyRatePlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.propertyRateErrorMessage}
-              validate=""
-          />
-        </div>
-        <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
-          <TextArea 
-              title={translations.propertyBusiness}
-              register={register}
-              errors={errors} 
-              required={translations.propertyBusinessRequired}
-              nameTextArea={"currentRaisedFunding"} 
-              patternValue={''} 
-              patternMessage={''} 
-              placeholder={translations.propertyBusinessPlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.propertyBusinessErrorMessage}
-              validate=""
-          />
-        </div>
-        <div className='w-full lg:max-w-xl xl:max-w-2xl mx-auto'>
-          <TextArea 
-              title={translations.propertyCapital}
-              register={register}
-              errors={errors} 
-              required={translations.propertyCapitalRequired}
-              nameTextArea={"neededCapital"} 
-              patternValue={''} 
-              patternMessage={''} 
-              placeholder={translations.propertyCapitalPlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.propertyCapitalErrorMessage}
-              validate=""
-          />
-        </div>
-      </div>
-    </>
+    <div className='w-full p-6'>
+      <TextArea
+        title={translations.propertyRevenue}
+        register={register}
+        errors={errors}
+        required={translations.propertyRevenueRequired}
+        nameTextArea={"startupRevenue"}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.propertyRevenuePlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.propertyRevenueErrorMessage}
+        validate=""
+      />
+      <TextArea
+        title={translations.propertyMonthly}
+        register={register}
+        errors={errors}
+        required={translations.propertyMonthlyRequired}
+        nameTextArea={"monthlyIncome"}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.propertyMonthlyPlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.propertyMonthlyErrorMessage}
+        validate=""
+      />
+      <TextArea
+        title={translations.propertyRate}
+        register={register}
+        errors={errors}
+        required={translations.propertyRateRequired}
+        nameTextArea={"currentInterestRate"}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.propertyRatePlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.propertyRateErrorMessage}
+        validate=""
+      />
+      <TextArea
+        title={translations.propertyBusiness}
+        register={register}
+        errors={errors}
+        required={translations.propertyBusinessRequired}
+        nameTextArea={"currentRaisedFunding"}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.propertyBusinessPlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.propertyBusinessErrorMessage}
+        validate=""
+      />
+      <TextArea
+        title={translations.propertyCapital}
+        register={register}
+        errors={errors}
+        required={translations.propertyCapitalRequired}
+        nameTextArea={"neededCapital"}
+        patternValue={''}
+        patternMessage={''}
+        placeholder={translations.propertyCapitalPlaceholder}
+        maxLength={1450}
+        maxLengthMessage={translations.propertyCapitalErrorMessage}
+        validate=""
+      />
+    </div>
   )
 }

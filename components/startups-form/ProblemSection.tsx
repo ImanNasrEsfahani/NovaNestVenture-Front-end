@@ -25,22 +25,20 @@ export default function ProblemsSection({
 
   return (
     <>
-      <div className="w-full py-8 px-4">
-        <div className="w-full lg:max-w-xl xl:max-w-2xl mx-auto">
-          <TextArea
-            title={textAreaTitle}
-            register={register}
-            errors={errors}
-            required={textAreaRequired}
-            nameTextArea={nameTextArea}
-            patternValue={''}
-            patternMessage={''}
-            placeholder={textAreaPlaceholder}
-            maxLength={1450}
-            maxLengthMessage={textAreaErrorMessage}
-            validate=""
-          />
-        </div>
+      <div className="w-full p-6">
+        <TextArea
+          title={textAreaTitle}
+          register={register}
+          errors={errors}
+          required={textAreaRequired}
+          nameTextArea={nameTextArea}
+          patternValue={''}
+          patternMessage={''}
+          placeholder={textAreaPlaceholder}
+          maxLength={1450}
+          maxLengthMessage={textAreaErrorMessage}
+          validate=""
+        />
       </div>
     </>
   );
