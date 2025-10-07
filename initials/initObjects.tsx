@@ -63,6 +63,8 @@ const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
   lastName: '',
   email: '',
   phoneNumber: '',
+  countryOfResidence: '',
+  cityOfResidence: '',
   companyName: '',
   website: '',
   linkedin: '',

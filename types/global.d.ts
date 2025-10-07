@@ -124,6 +124,8 @@ interface JoinAsaPartnerFormData {
   lastName: string;
   email: string;
   phoneNumber: string;
+  countryOfResidence: string;
+  cityOfResidence: string;
   companyName: string;
   website: string;
   linkedin: string;
