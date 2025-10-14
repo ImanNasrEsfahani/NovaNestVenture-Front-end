@@ -4,39 +4,38 @@ import TextArea from '@/components/common/TextArea';
 import { useForm, FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 
+type translations = {
+  title: string;
+  monetization: string;
+  monetizationRequired: string;
+  monetizationPlaceholder: string;
+  monetizationErrorMessage: string;
+  delivery: string;
+  deliveryRequired: string;
+  deliveryPlaceholder: string;
+  deliveryErrorMessage: string;
+  financial: string;
+  choseFile: string;
+};
+
 type Props = {
   register: UseFormRegister<StartupsFormData>
   errors: FieldErrors<StartupsFormData>
   handleFinancialModelFileChange: (file: any) => void;
-  translations: {
-    title: string;
-    monetization: string;
-    monetizationRequired: string;
-    monetizationPlaceholder: string;
-    monetizationErrorMessage: string;
-    delivery: string;
-    deliveryRequired: string;
-    deliveryPlaceholder: string;
-    deliveryErrorMessage: string;
-    financial: string;
-    choseFile: string;
-  };
+  translations: translations
 };
 
-export default function BussinessModelDropDown({
-  errors,
-  translations,
-}: Props) {
-  const { register, formState } = useForm<StartupsFormData>();
-
+export default function BussinessModelDropDown(props: Props) {
+  
+  const { register, errors, translations } = props;
 
   return (
     <div className='w-full p-6'>
       <TextArea
         title={translations.monetization}
         register={register}
-        errors={formState.errors}
-        required={translations.monetizationRequired}
+        errors={errors}
+        required={true}
         nameTextArea={'monetizationOfYourPlan'}
         patternValue={''}
         patternMessage={''}
@@ -50,7 +49,7 @@ export default function BussinessModelDropDown({
           title={translations.delivery}
           register={register}
           errors={errors}
-          required={translations.deliveryRequired}
+          required={true}
           nameTextArea={'structureOfYourSales'}
           patternValue={''}
           patternMessage={''}
