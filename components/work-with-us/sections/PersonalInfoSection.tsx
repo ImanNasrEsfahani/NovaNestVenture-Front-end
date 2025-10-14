@@ -114,6 +114,7 @@ export default function PersonalInfoSection({
       <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="col-span-1">
           <Input
+            id="your_first_name"
             register={register}
             errors={errors}
             nameInput="your_first_name"
@@ -129,6 +130,7 @@ export default function PersonalInfoSection({
         </div>
         <div className="col-span-1">
           <Input
+            id="your_last_name"
             register={register}
             errors={errors}
             nameInput="your_last_name"
@@ -144,6 +146,7 @@ export default function PersonalInfoSection({
         </div>
         <div className="col-span-1">
           <Input
+            id="email"
             register={register}
             errors={errors}
             nameInput="email"
@@ -158,6 +161,7 @@ export default function PersonalInfoSection({
         </div>
         <div className="col-span-1">
           <Input
+            id="phone_number"
             register={register}
             errors={errors}
             nameInput="phone_number"

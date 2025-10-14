@@ -263,6 +263,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               }}
             />
             <Input
+              id="birthDate"
               register={register}
               errors={errors}
               nameInput="birthDate"
@@ -278,6 +279,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             />
 
             <Input
+              id="website"
               register={register}
               errors={errors}
               nameInput="website"
@@ -292,6 +294,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             />
 
             <Input
+              id="linkedin"
               register={register}
               errors={errors}
               nameInput="linkedin"
@@ -306,6 +309,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             />
 
             <Input
+              id="instagram"
               register={register}
               errors={errors}
               nameInput="instagram"

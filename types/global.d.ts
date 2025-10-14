@@ -159,35 +159,51 @@ interface LandaGeneFormData {
 interface StartupsFormData {
   firstName: string;
   lastName: string;
-  birthDate: Date;
   email: string;
+  phoneNumber: string;
   countryOfResidence: string;
-  provinceOfResidence: string;
-  type: Type;
-  ideaExplanation: string;
-  getToKnowUs: string;
+  cityOfResidence: string;
+
+  // MVP or Early Traction or Scale-Up
+  startupType: Type;
+
+  // with Pitchdeck file
   pitchDeckFile?: File | '';
-  businessPlanFile?: File | '';
+
+  // General Information without pitchdeck file
   productName: string;
   siteAddress: string;
+
+  // Problem accordion
   customerProblem: string;
-  solution: string;
-  productLevel: Level; // You might want to define "Level" enum here
-  scalable: string;
+
+  // Solution accordion
+  uniqueValueProposition: string;
+  technologyReadinessLevel: string;
+  
+  // business model accordion
   monetizationOfYourPlan: string;
   structureOfYourSales: string;
-  financialModelFile?: File | '';
-  cooperatedWithInvestors: string;
-  financialFile?: File | '';
+  
+  // Target Market accordion
   customerCharacteristic: string;
   currentCustomers: string;
   estimatedMarketSize: string;
-  totalTamSamSom: string;
+
+  // Property accordion
   startupRevenue: string;
   monthlyIncome: string;
   currentInterestRate: string;
   currentRaisedFunding: string;
   neededCapital: string;
+
+  // other files
+  businessPlanFile?: File | '';
+  financialFile?: File | '';
+
+  // last questions
+  cooperatedWithInvestors: string;
+  howDidYouKnowUs: string;
 }
 
 interface Entrepreuneur {

@@ -9,6 +9,7 @@ interface Props {
   chooseFile: string;
   onFileChange: (file: any) => void;
   errors: any;
+  required: boolean;
 }
 
 const FinancialAnalysisUpload: React.FC<Props> = ({

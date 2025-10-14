@@ -207,6 +207,7 @@ export default function LandaGeneClient({ translations, lang }: Props) {
 
               <div className="col-span-1 w-full">
                 <Input
+                  id="email"
                   register={register}
                   errors={errors}
                   nameInput="email"
@@ -223,6 +224,7 @@ export default function LandaGeneClient({ translations, lang }: Props) {
 
               <div className="col-span-1 w-full">
                 <Input
+                  id="company_name"
                   register={register}
                   errors={errors}
                   nameInput="company_name"

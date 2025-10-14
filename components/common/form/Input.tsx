@@ -1,6 +1,7 @@
 // import { useForm, UseFormRegister, FieldValues } from 'react-hook-form';
 
 export default function Input({
+  id,
   register,
   errors,
   nameInput,
@@ -15,12 +16,13 @@ export default function Input({
   containerClass,
   validate,
 }: {
+  id: string;
   register: any;
   errors: any;
   nameInput: string;
   type: string;
   label?: string;
-  required: string | boolean;
+  required: string | boolean | undefined;
   patternValue: string;
   patternMessage: string;
   placeholder: string;
@@ -48,11 +50,11 @@ export default function Input({
 
   return (
     <div className={`flex flex-col items-start ${containerClass ?? ''}`}>
-      <label htmlFor={nameInput} className={`w-full px-2 text-gray text-sm ${labelClass ?? ''}`}>
+      <label htmlFor={id} className={`w-full px-2 text-gray text-sm ${labelClass ?? ''}`}>
         {label}
         {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
         <input
-          id={nameInput}
+          id={id}
           type={type}
           {...register(nameInput, registerOptions)}
           placeholder={placeholder}

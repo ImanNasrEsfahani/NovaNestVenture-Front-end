@@ -25,6 +25,7 @@ type Props = {
   solutionsLevel: number
   setValue: UseFormSetValue<StartupsFormData>
   handleFinancialModelFileChange: (file: any) => void
+  required: boolean
 }
 
 const StartUpFirstSaleRefactor = ({
@@ -39,7 +40,8 @@ const StartUpFirstSaleRefactor = ({
   solutionsLevel,
   handleSolutionsLevelChange,
   setValue,
-  handleFinancialModelFileChange
+  handleFinancialModelFileChange,
+  required
 }: Props) => { 
       
   const { t } = getServerTranslation(lang, 'formComponent');
@@ -80,6 +82,8 @@ const StartUpFirstSaleRefactor = ({
           targetMarket: t('startUp', { returnObjects: true }).commons.targetMarketDropDown,
           property: t('startUp', { returnObjects: true }).commons.propertyDropDown
         }}
+        required={required}
+        prefix="firstSale"
       />
 
       <BusinessPlanUpload
@@ -89,6 +93,7 @@ const StartUpFirstSaleRefactor = ({
         chooseFile={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
         onFileChange={handleBusinessFileChange}
         errors={errors}
+        required={required}
       />
       
       <FinancialAnalysisUpload
@@ -98,6 +103,7 @@ const StartUpFirstSaleRefactor = ({
         chooseFile={t('startUp',{ returnObjects: true }).FirstSale.choseFile}
         onFileChange={handleFinancialFileChange}
         errors={errors}
+        required={required}
       />
 
     </div>

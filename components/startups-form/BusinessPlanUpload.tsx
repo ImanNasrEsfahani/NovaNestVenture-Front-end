@@ -11,6 +11,7 @@ interface Props {
   chooseFile: string;
   onFileChange: (file: any) => void;
   errors: any;
+  required: boolean;
 }
 
 const BusinessPlanUpload: React.FC<Props> = ({

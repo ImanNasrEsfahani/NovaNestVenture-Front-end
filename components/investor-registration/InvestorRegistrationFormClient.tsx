@@ -235,6 +235,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
             />
 
             <Input
+              id="birthDate"
               register={register}
               errors={errors}
               nameInput="investmentCeiling"

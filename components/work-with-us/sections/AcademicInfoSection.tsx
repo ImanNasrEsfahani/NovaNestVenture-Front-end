@@ -31,6 +31,7 @@ export default function AcademicInfoSection({
     <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
       <div className="col-span-1">
         <Input
+          id="your_field_of_study"
           register={register}
           errors={errors}
           nameInput="your_field_of_study"
@@ -47,6 +48,7 @@ export default function AcademicInfoSection({
 
       <div className="col-span-1">
         <Input
+          id="your_subfield"
           register={register}
           errors={errors}
           nameInput="your_subfield"

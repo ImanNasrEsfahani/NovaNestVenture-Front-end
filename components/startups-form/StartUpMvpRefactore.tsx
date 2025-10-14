@@ -6,7 +6,6 @@ import { getServerTranslation } from 'app/i18n'
 import PitchdeckUpload from '@/components/startups-form/PitchdeckUpload'
 import BusinessPlanUpload from '@/components/startups-form/BusinessPlanUpload'
 import FinancialAnalysisUpload from '@/components/startups-form/FinancialAnalysisUpload'
-import TextArea from '../common/TextArea'
 
 
 type Props = {
@@ -26,6 +25,7 @@ type Props = {
     solutionsLevel: number
     setValue: UseFormSetValue<StartupsFormData>
     handleFinancialModelFileChange: (file: any) => void
+    required: boolean
 }
 
 export default function StartUpMvpRefactore({
@@ -41,6 +41,7 @@ export default function StartUpMvpRefactore({
     handleSolutionsLevelChange,
     setValue,
     handleFinancialModelFileChange,
+    required
 }: Props) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
@@ -81,6 +82,8 @@ export default function StartUpMvpRefactore({
           targetMarket: t('startUp', { returnObjects: true }).commons.targetMarketDropDown,
           property: t('startUp', { returnObjects: true }).commons.propertyDropDown
         }}
+        required={required}
+        prefix="mvp"
       />
 
       <BusinessPlanUpload
@@ -90,6 +93,7 @@ export default function StartUpMvpRefactore({
         chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
         onFileChange={handleBusinessFileChange}
         errors={errors}
+        required={required}
       />
       
       <FinancialAnalysisUpload
@@ -99,6 +103,7 @@ export default function StartUpMvpRefactore({
         chooseFile={t('startUp',{ returnObjects: true }).MVP.choseFile}
         onFileChange={handleFinancialFileChange}
         errors={errors}
+        required={required}
       />
     </div>
   )

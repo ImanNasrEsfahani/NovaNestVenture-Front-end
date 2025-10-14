@@ -81,6 +81,7 @@ export default function PersonalInfoInput({
       {nameInputs?.firstName && (
         <div className="col-span-1 w-full">
           <Input
+            id="first_name"
             register={register}
             errors={errors}
             nameInput={nameInputs.firstName}
@@ -98,6 +99,7 @@ export default function PersonalInfoInput({
       {nameInputs?.lastName && (
         <div className="col-span-1 w-full">
           <Input
+            id="last_name"
             register={register}
             errors={errors}
             nameInput={nameInputs.lastName}
@@ -115,6 +117,7 @@ export default function PersonalInfoInput({
       {nameInputs?.email && (
         <div className="col-span-1 w-full">
           <Input
+            id="email"
             register={register}
             errors={errors}
             nameInput={nameInputs.email}
@@ -132,6 +135,7 @@ export default function PersonalInfoInput({
       {nameInputs?.phoneNumber && (
         <div className="col-span-1 w-full">
           <Input
+            id="phone_number"
             register={register}
             errors={errors}
             nameInput={nameInputs.phoneNumber}

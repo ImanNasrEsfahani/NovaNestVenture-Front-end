@@ -103,6 +103,7 @@ export default function StartupFormPersonalInformation({
         />
 
         {/* <Input
+          id="birthDate"
           register={register}
           errors={errors}
           nameInput="birthDate"

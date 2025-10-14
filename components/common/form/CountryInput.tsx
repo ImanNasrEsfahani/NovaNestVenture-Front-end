@@ -124,6 +124,7 @@ export default function CountryInput({
       {nameInputs?.provinceOfResidence && (
         <div className="col-span-1">
           <Input
+            id="province_of_residence"
             register={register}
             errors={errors}
             nameInput={nameInputs.provinceOfResidence}
@@ -142,6 +143,7 @@ export default function CountryInput({
       {nameInputs?.cityOfResidence && (
         <div className="col-span-1">
           <Input
+            id="city_of_residence"
             register={register}
             errors={errors}
             nameInput={nameInputs.cityOfResidence}

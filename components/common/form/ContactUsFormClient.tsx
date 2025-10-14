@@ -219,6 +219,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
 
           <div className="col-span-1">
             <Input
+              id="subject"
               register={register}
               errors={errors}
               nameInput="subject"

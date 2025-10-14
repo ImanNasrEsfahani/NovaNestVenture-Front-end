@@ -174,6 +174,11 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
       });
   };
 
+  // register radio field once so validation works and we can reuse handlers
+  const startupField = register('startupType', {
+    required: 'Please select one option'
+  });
+
   const errorsList = Object.entries(errors).map(([name, value]) => ({
     name: name,
     value: value
@@ -244,26 +249,63 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 }
               })()}  */}
               <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
-                <div className="col-span-1">
-                  <StartUpFormCheckbox register={register} name={translations.MVP} />
-                </div>
+                {['MVP', 'FisrtSale', 'SaleDevelopment'].map((key) => {
+                  const label = (translations as any)[key];
+                  const isSelected = startupFormType === label;
 
-                <div className="col-span-1">
-                  <StartUpFormCheckbox register={register} name={translations.FisrtSale} />
-                </div>
-                
-                <div className="col-span-1">
-                  <StartUpFormCheckbox register={register} name={translations.SaleDevelopment} />
-                </div>
+                  return (
+                    <div className="col-span-1" key={key}>
+                      <div
+                        className={`w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4 rounded-lg transition-shadow cursor-pointer ${
+                          isSelected ? 'ring-2 ring-primary/60' : ''
+                        }`}
+                        onClick={() => {
+                          const syntheticEvent = {
+                            target: { value: label, name: 'startupType' }
+                          } as unknown as React.ChangeEvent<HTMLInputElement>;
+                          startupField.onChange?.(syntheticEvent);
+                          setStartUpFormType?.(label);
+                        }}
+                      >
+                        <div className="flex flex-row items-center gap-3">
+                          <div className={`border-2 rounded-full p-1 transition-colors ${isSelected ? 'border-primary' : 'border-gray-300'}`}>
+                            <div
+                              className={`relative size-4 rounded-full transition-all ${
+                                isSelected ? 'bg-primary' : 'bg-whiteGold'
+                              }`}
+                            >
+                              <input
+                                type="radio"
+                                className="absolute inset-0 size-full opacity-0 cursor-pointer"
+                                value={label}
+                                {...startupField}
+                                checked={isSelected}
+                                onChange={(e) => {
+                                  startupField.onChange?.(e);
+                                  setStartUpFormType?.(e.target.value);
+                                }}
+                              />
+                            </div>
+                          </div>
+
+                          <span className="font-heading font-medium">
+                            {label}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
 
+              {/* {errors.startupFormType && (
+                <p className="mt-2 text-sm text-red-500">{errors.startupFormType.message}</p>
+              )} */}
+
               <div className='w-full'>
-                <div
-                  aria-hidden={startupFormType !== translations.MVP}
-                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.MVP ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
-                >
-                  <fieldset disabled={startupFormType !== translations.MVP}>
+                {/* MVP section - render only when selected */}
+                {startupFormType === translations.MVP && (
+                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
                     <StartUpMvpRefactore
                       lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
@@ -277,16 +319,14 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
+                      required={startupFormType === translations.MVP}
                     />
-                  </fieldset>
-                </div>
+                  </div>
+                )}
 
-                <div
-                  aria-hidden={startupFormType !== translations.FisrtSale}
-                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.FisrtSale ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
-                >
-                  <fieldset disabled={startupFormType !== translations.FisrtSale}>
+                {/* First Sale section */}
+                {startupFormType === translations.FisrtSale && (
+                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
                     <StartUpFirstSaleRefactor
                       lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
@@ -300,16 +340,14 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
+                      required={startupFormType === translations.FisrtSale}
                     />
-                  </fieldset>
-                </div>
+                  </div>
+                )}
 
-                <div
-                  aria-hidden={startupFormType !== translations.SaleDevelopment}
-                  className={`overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-                    ${startupFormType === translations.SaleDevelopment ? 'opacity-100 translate-y-0 py-6 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
-                >
-                  <fieldset disabled={startupFormType !== translations.SaleDevelopment}>
+                {/* Sale Development section */}
+                {startupFormType === translations.SaleDevelopment && (
+                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
                     <StartUpSaleDevelopRefactore
                       lang={lang}
                       handleFileCounterChange={handleFileCounterChange}
@@ -323,9 +361,10 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
+                      required={startupFormType === translations.SaleDevelopment}
                     />
-                  </fieldset>
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -354,7 +393,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
               register={register}
               errors={errors}
               required={translations.howDidYouKnowUsRequired}
-              nameTextArea={'getToKnowUs'}
+              nameTextArea={'howDidYouKnowUs'}
               patternValue={''}
               patternMessage={''}
               placeholder={translations.howDidYouKnowUsPlaceholder}

@@ -28,6 +28,7 @@ const LandaGeneInput = ({
         <div className="col-span-1 w-full">
           {noLabel ?
             <Input
+              id="full_name"
               register={register}
               errors={errors}
               nameInput={nameInputs.full_name}
@@ -40,6 +41,7 @@ const LandaGeneInput = ({
             />
             :
             <Input
+              id="full_name"
               register={register}
               errors={errors}
               nameInput={nameInputs.full_name}
@@ -60,6 +62,7 @@ const LandaGeneInput = ({
         <div className="col-span-1 w-full">
           {noLabel ?
           <Input
+            id="phone_number"
             register={register}
             errors={errors}
             nameInput={nameInputs.phone_number}
@@ -72,6 +75,7 @@ const LandaGeneInput = ({
           />
             :
           <Input
+            id="phone_number"
             register={register}
             errors={errors}
             nameInput={nameInputs.phone_number}

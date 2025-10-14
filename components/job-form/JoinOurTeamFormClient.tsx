@@ -299,6 +299,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-6">
               <div className="col-span-1">
                 <Input
+                  id="birthDate"
                   register={register}
                   errors={errors}
                   nameInput="birthDate"
@@ -329,6 +330,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
               <div className="col-span-1">
                 <Input
+                  id="educationField"
                   register={register}
                   errors={errors}
                   nameInput="educationField"

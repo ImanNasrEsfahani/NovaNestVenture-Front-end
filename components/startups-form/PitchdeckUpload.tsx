@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import Input from '@/components/common/form/Input';
 import FileUpload from '@/components/common/form/FileUpload';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
@@ -127,32 +128,42 @@ interface PitchdeckUploadProps {
       propertyCapitalErrorMessage: string;
     };
   };
+  required: boolean;
+  prefix: string;
 }
 
-const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
-  problem,
-  solution,
-  businessModel,
-  targetMarket,
-  property,
+const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
+  const {
+    problem,
+    solution,
+    businessModel,
+    targetMarket,
+    property,
 
-  chooseFile,
-  productName,
-  productNameRequired,
-  productNamePlaceholder,
-  siteAddress,
-  siteAddressRequired,
-  siteAddressPlaceholder,
-  // onFileCounterChange,
-  onFileChange,
-  register,
-  errors,
-  handleSolutionsLevelChange,
-  solutionsLevel,
-  setValue,
-  handleFinancialModelFileChange,
-  translations
-}) => {
+    chooseFile,
+    productName,
+    productNameRequired,
+    productNamePlaceholder,
+    siteAddress,
+    siteAddressRequired,
+    siteAddressPlaceholder,
+    // onFileCounterChange,
+    onFileChange,
+    register,
+    errors,
+    handleSolutionsLevelChange,
+    solutionsLevel,
+    setValue,
+    handleFinancialModelFileChange,
+    translations,
+    required,
+    prefix
+  } = props;
+
+  useEffect(() => {
+    console.log('PitchdeckUpload errors:', errors);
+  }, [errors]);
+
   const [openPanel, setOpenPanel] = useState<string | null>('problems');
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
 
@@ -166,6 +177,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       id: 'problems',
       title: translations.problems.title,
       show: problem,
+      fields: ['customerProblem'],
       content: (
         <ProblemsSection
           textAreaTitle={translations.problems.customerProblem}
@@ -181,6 +193,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       id: 'solution',
       title: 'Solution',
       show: solution,
+      fields: ['uniqueValueProposition', 'solutionsLevel'],
       content: (
         <SolutionLevel
           handleSolutionsLevelChange={handleSolutionsLevelChange}
@@ -203,6 +216,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       id: 'businessModel',
       title: translations.businessModel.title,
       show: businessModel,
+      fields: ['monetizationOfYourPlan', 'structureOfYourSales'],
       content: (
         <BussinessModelDropDown
           register={register}
@@ -216,6 +230,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       id: 'targetMarket',
       title: translations.targetMarket.targetMarket,
       show: targetMarket,
+      fields: ['customerCharacteristic', 'currentCustomers', 'estimatedMarketSize'],
       content: (
         <TargetMarketDropDown
           register={register}
@@ -228,6 +243,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       id: 'property',
       title: translations.property.property,
       show: property,
+      fields: ['startupRevenue', 'monthlyIncome', 'currentRaisedFunding', 'neededCapital'],
       content: (
         <PropertyDropDown
           register={register}
@@ -250,76 +266,74 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = ({
       />
 
       <div className="relative">
-        <div
-          aria-hidden={!fileCounterState}
-          className={`w-full md:max-w-lg 2xl:max-w-xl mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-            ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
-        >
-          <div className="px-4">
-            <FileUpload
-              nameInput="pitchDeckFile"
-              required={fileCounterState ? true : false}
-              errors={errors}
-              label={chooseFile}
-              onChange={onFileChange}
-              disabled={!fileCounterState}
-              file=""
-            />
+        {fileCounterState ? (
+          <div className="w-full md:max-w-lg 2xl:max-w-xl mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 pointer-events-auto">
+            <div className="px-4 py-6">
+              <FileUpload
+                nameInput="pitchDeckFile"
+                required={required ? chooseFile : undefined}
+                errors={errors}
+                label={chooseFile}
+                onChange={onFileChange}
+                disabled={false}
+                file=""
+              />
+            </div>
           </div>
-        </div>
-
-        <div
-          aria-hidden={fileCounterState}
-          className={`w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
-            ${!fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
-        >
-          {/* disable native form controls while hidden to avoid focusable hidden elements */}
-          <fieldset disabled={fileCounterState} className="w-full">
+        ) : (
+          <div className="w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 pointer-events-auto">
             <Input
+              id={`${prefix}_product_name`}
               register={register}
               errors={errors}
               nameInput="productName"
-              type={'text'}
-              required={productNameRequired}
-              patternValue={''}
-              patternMessage={''}
+              type="text"
+              required={required ? productNameRequired : undefined}
+              patternValue=""
+              patternMessage=""
               placeholder={productNamePlaceholder}
-              className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
+              className="border col-span-1 rounded-lg border-primary bg-whiteGold p-2"
               label={productName}
               labelClass=""
             />
             <Input
+              id={`${prefix}_site_address`}
               register={register}
               errors={errors}
               nameInput="siteAddress"
-              type={'text'}
-              required={siteAddressRequired}
-              patternValue={''}
-              patternMessage={''}
+              type="text"
+              required={required ? siteAddressRequired : undefined}
+              patternValue=""
+              patternMessage=""
               placeholder={siteAddressPlaceholder}
-              className={'border col-span-1 rounded-lg border-primary bg-whiteGold p-2'}
+              className="border col-span-1 rounded-lg border-primary bg-whiteGold p-2"
               label={siteAddress}
               labelClass=""
             />
 
-            <div className='space-y-4'>
-              {panels.filter(p => p.show).map((p) => (
-                <div key={p.id} className="bg-darkGold rounded-xl overflow-hidden shadow-sm">
-                  <CollapsibleHeader
-                    title={p.title}
-                    isOpen={openPanel === p.id}
-                    onToggle={() => togglePanel(p.id)}
-                  />
-                  {openPanel === p.id && (
-                    <div className="p-6">
+            <div className="space-y-4">
+              {panels.filter((p) => p.show).map((p) => {
+                const hasError = p.fields?.some((field) => !!errors[field as keyof StartupsFormData]);
+                return (
+                  <div key={p.id} className={`bg-darkGold rounded-xl overflow-hidden shadow-sm ${hasError ? 'ring-1 ring-red-500' : ''}`}>
+                    <CollapsibleHeader
+                      title={p.title}
+                      isOpen={openPanel === p.id}
+                      onToggle={() => togglePanel(p.id)}
+                      hasError={hasError}
+                    />
+                    <div
+                      aria-hidden={openPanel !== p.id}
+                      className={`transition-all duration-300 ${openPanel === p.id ? 'opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}
+                    >
                       {p.content}
                     </div>
-                  )}
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </div>
-          </fieldset>
-        </div>
+          </div>
+        )}
       </div >
     </div >
   );

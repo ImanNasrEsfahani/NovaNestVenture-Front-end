@@ -38,8 +38,8 @@ export default function SolutionLevel(props: Props) {
         title={translations.solutionsUniqueValue}
         register={register}
         errors={errors}
-        required={translations.solutionsUniqueValueRequired}
-        nameTextArea={"scalable"}
+        required={true}
+        nameTextArea={"uniqueValueProposition"}
         patternValue={''}
         patternMessage={''}
         placeholder={translations.solutionsUniqueValuePlaceholder}
@@ -58,12 +58,12 @@ export default function SolutionLevel(props: Props) {
               {/* hidden radio as peer */}
               <input
                 type="radio"
-                name="productLevel"
+                name="technologyReadinessLevel"
                 className="peer sr-only"
                 checked={solutionsLevel === index}
                 onChange={() => {
                   handleSolutionsLevelChange(index);
-                  setValue('productLevel', item);
+                  setValue('technologyReadinessLevel', item);
                 }}
               />
 

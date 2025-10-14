@@ -86,7 +86,8 @@ export default function StartupFormFirstSaleClient({
             <div>
               <div className="my-6 mb-12 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
                 <div>
-                    <Input
+                  <Input
+                    id="product_name"
                     register={register}
                     errors={errors}
                     nameInput="productName"
@@ -103,6 +104,7 @@ export default function StartupFormFirstSaleClient({
 
                 <div>
                   <Input
+                    id="site_address"
                     register={register}
                     errors={errors}
                     nameInput="siteAddress"

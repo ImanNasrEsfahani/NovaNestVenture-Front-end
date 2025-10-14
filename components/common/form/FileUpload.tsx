@@ -5,12 +5,12 @@ type FileUploadProps = {
   label: string;
   onChange: (file: File | null) => void;
   disabled: boolean;
-  required: boolean;
+  required: boolean | undefined | string;
   errors: any;
   file: File | string;
 }
 
-const FileUpload = ({ nameInput, label, onChange, disabled = false, required = false, errors, file }: FileUploadProps) => {
+const FileUpload = ({ nameInput, label, onChange, disabled, required, errors, file }: FileUploadProps) => {
   const [fileName, setFileName] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -35,9 +35,17 @@ const FileUpload = ({ nameInput, label, onChange, disabled = false, required = f
     onChange(null);
   };
 
+  // show invalid state if RHF reports an error for this field
+  // or when the field is required but no file selected and the form has validation errors (submit attempted)
+  const hasAnyErrors = errors && Object.keys(errors).length > 0;
+  const showInvalid = !!errors?.[nameInput] || (required && !fileName && hasAnyErrors);
+
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <label className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition ${ errors[nameInput] ? ' border-red-500' : ''  }`}>
+      <label
+        className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition
+          ${ showInvalid ? ' border-2 border-red-500 ring-1 ring-red-200' : '' }`}
+      >
         <p className="font-base mb-2">{label}</p>
         <input
           ref={inputRef}
@@ -47,7 +55,7 @@ const FileUpload = ({ nameInput, label, onChange, disabled = false, required = f
           className="opacity-0 absolute inset-0 w-full h-full cursor-pointer"
           required={required}
           aria-required={required}
-          aria-invalid={errors[nameInput]}
+          aria-invalid={showInvalid}
           onChange={(e) => handleChange(e.target.files?.[0] || null)}
           disabled={disabled}
         />
@@ -57,7 +65,7 @@ const FileUpload = ({ nameInput, label, onChange, disabled = false, required = f
               <pattern id="pattern0_138_5516" patternContentUnits="objectBoundingBox" width="1" height="1">
                   <use href="#image0_138_5516" transform="scale(0.0078125)"/>
               </pattern>
-              <image id="image0_138_5516" width="128" height="128" preserveAspectRatio="none" href="data:image/png;base64,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"/>
+              <image id="image0_138_5516" width="128" height="128" preserveAspectRatio="none" href="data:image/png;base64,iVBORw0K..."/>
           </defs>
         </svg>
 
@@ -79,9 +87,9 @@ const FileUpload = ({ nameInput, label, onChange, disabled = false, required = f
         )}
       </label>
 
-      {errors[nameInput] && (
+      {showInvalid && (
         <span className="mt-2 inline text-sm text-red-500">
-          {errors[nameInput].message}
+          {errors?.[nameInput]?.message ?? 'Please upload a file.'}
         </span>
       )}
     </div>

@@ -17,45 +17,59 @@ import {
 } from '@/types/global';
 
 enum Type {
-  IDEA = 'IDEA',
   MVP = 'MVP',
-  TRIAL = 'TRIAL',
-  FisrtSale = 'FisrtSale', // Typo: Should be "FirstSale"
+  FisrtSale = 'FisrtSale',
   SaleDevelopment = 'SaleDevelopment'
 }
 
 const initialStartupsFormData: StartupsFormData = {
   firstName: '',
   lastName: '',
-  birthDate: new Date(),
   email: '',
+  phoneNumber: '',
   countryOfResidence: '',
-  provinceOfResidence: '',
-  type: Type.IDEA,
-  ideaExplanation: '',
-  getToKnowUs: '',
-  pitchDeckFile: '' as File | '',
-  businessPlanFile: '' as File | '',
+  cityOfResidence: '',
+
+  // MVP or Early Traction or Scale-Up
+  startupType: Type.MVP,
+
+  // with Pitchdeck file
+  pitchDeckFile: '',
+
+  // General Information without pitchdeck file
   productName: '',
   siteAddress: '',
+
+  // Problem accordion
   customerProblem: '',
-  solution: '',
-  productLevel: '',
-  scalable: '',
+
+  // Solution accordion
+  uniqueValueProposition: '',
+  technologyReadinessLevel: '',
+  
+  // business model accordion
   monetizationOfYourPlan: '',
   structureOfYourSales: '',
-  financialModelFile: '' as File | '',
-  cooperatedWithInvestors: '',
-  financialFile: '' as File | '',
+  
+  // Target Market accordion
   customerCharacteristic: '',
   currentCustomers: '',
   estimatedMarketSize: '',
-  totalTamSamSom: '',
+
+  // Property accordion
   startupRevenue: '',
   monthlyIncome: '',
   currentInterestRate: '',
   currentRaisedFunding: '',
   neededCapital: '',
+
+  // other files
+  businessPlanFile: '',
+  financialFile: '',
+
+  // last questions
+  cooperatedWithInvestors: '',
+  howDidYouKnowUs: ''
 };
 
 const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {

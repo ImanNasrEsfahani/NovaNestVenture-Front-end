@@ -253,6 +253,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
           />
 
           <Input
+            id="birthDate"
             register={register}
             errors={errors}
             nameInput="companyName"
@@ -267,6 +268,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
           />
 
           <Input
+            id="birthDate"
             register={register}
             errors={errors}
             nameInput="website"
@@ -281,6 +283,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
           />
 
           <Input
+            id="birthDate"
             register={register}
             errors={errors}
             nameInput="linkedin"

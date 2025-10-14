@@ -37,7 +37,7 @@ export default function BussinessModelDropDown({
         register={register}
         errors={formState.errors}
         required={translations.monetizationRequired}
-        nameTextArea={'MonetizationOfYourPlan'}
+        nameTextArea={'monetizationOfYourPlan'}
         patternValue={''}
         patternMessage={''}
         placeholder={translations.monetizationPlaceholder}
