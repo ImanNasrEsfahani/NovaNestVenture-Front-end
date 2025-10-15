@@ -12,15 +12,8 @@ interface Props {
   required: boolean;
 }
 
-const FinancialAnalysisUpload: React.FC<Props> = ({
-  title,
-  yesLabel,
-  noLabel,
-  chooseFile,
-  onFileChange,
-  errors
-}) => {
 
+export default function FinancialAnalysisUpload({ title, yesLabel, noLabel, chooseFile, onFileChange, errors, required }: Props) {
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
   
   return (
@@ -55,5 +48,3 @@ const FinancialAnalysisUpload: React.FC<Props> = ({
     </div>
   );
 };
-
-export default FinancialAnalysisUpload;

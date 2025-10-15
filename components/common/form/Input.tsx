@@ -48,6 +48,8 @@ export default function Input({
   if (value) registerOptions.pattern = { value, message: patternMessage };
   if (validate) registerOptions.validate = validate;
 
+  console.log("errors: ", errors);
+  
   return (
     <div className={`flex flex-col items-start ${containerClass ?? ''}`}>
       <label htmlFor={id} className={`w-full px-2 text-gray text-sm ${labelClass ?? ''}`}>

@@ -14,18 +14,14 @@ import FormTitle from '@/components/common/form/FormTitle';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import TextArea from '@/components/common/TextArea';
 
-import StartUpFormCheckbox from '@/components/startups-form/StartUpFormCheckbox';
-// import StartUpTrialRefactore from '@/components/startups-form/StartUpTrialRefactore';
 import StartUpMvpRefactore from '@/components/startups-form/StartUpMvpRefactore';
 import StartUpFirstSaleRefactor from '@/components/startups-form/StartUpFirstSaleRefactor';
 import StartUpSaleDevelopRefactore from '@/components/startups-form/StartUpSaleDevelopRefactore';
 
 interface Translations {
   secondTitle: string;
-  IDEA: string;
-  TRIAL: string;
   MVP: string;
-  FisrtSale: string;
+  FirstSale: string;
   SaleDevelopment: string;
   sendButton: string;
   successMessage: string;
@@ -222,34 +218,8 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           
           <div className='w-full h-auto px-4'>
             <div className='h-auto w-full flex flex-col gap-2'>
-              {/* <StartUpFormCheckbox register={register} name={translations.IDEA} />
-              {((): any => {
-                if (startupFormType == translations.IDEA) {
-                  return <StartupFormIdea lang={lang || 'en'} register={register} errors={errors} />
-                }
-              })()}
-              <StartUpFormCheckbox register={register} name={translations.TRIAL} />
-              {((): any => {
-                if (startupFormType == translations.TRIAL) {
-                  return (
-                    <StartUpTrialRefactore
-                      handleFileCounterChange={handleFileCounterChange}
-                      handlePitchFileChange={handlePitchFileChange}
-                      handleBusinessFileChange={handleBusinessFileChange}
-                      handleFinancialFileChange={handleFinancialFileChange}
-                      filesCounter={filesCounter}
-                      register={register}
-                      errors={errors} 
-                      handleSolutionsLevelChange={handleSolutionsLevelChange} 
-                      solutionsLevel={solutionsLevel}    
-                      setValue={setValue}               
-                      handleFinancialModelFileChange={handleFinancialModelFileChange}
-                    />
-                  )
-                }
-              })()}  */}
               <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
-                {['MVP', 'FisrtSale', 'SaleDevelopment'].map((key) => {
+                {['MVP', 'FirstSale', 'SaleDevelopment'].map((key) => {
                   const label = (translations as any)[key];
                   const isSelected = startupFormType === label;
 
@@ -330,7 +300,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 )}
 
                 {/* First Sale section */}
-                {startupFormType === translations.FisrtSale && (
+                {startupFormType === translations.FirstSale && (
                   <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
                     <StartUpFirstSaleRefactor
                       lang={lang}
@@ -345,7 +315,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       handleSolutionsLevelChange={handleSolutionsLevelChange}
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
-                      required={startupFormType === translations.FisrtSale}
+                      required={startupFormType === translations.FirstSale}
                       submitCount={submitCount}
                     />
                   </div>

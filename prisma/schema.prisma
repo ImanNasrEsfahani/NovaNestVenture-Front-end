@@ -182,10 +182,8 @@ model JobForm {
 }
 
 enum Type {
-  IDEA
   MVP
-  TRIAL
-  FisrtSale
+  FirstSale
   SaleDevelopment
 }
 

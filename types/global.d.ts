@@ -1,8 +1,6 @@
 export enum Type {
-  IDEA = 'IDEA',
   MVP = 'MVP',
-  TRIAL = 'TRIAL',
-  FisrtSale = 'FisrtSale', // Typo: Should be "FirstSale"
+  FirstSale = 'FirstSale',
   SaleDevelopment = 'SaleDevelopment'
 }
 

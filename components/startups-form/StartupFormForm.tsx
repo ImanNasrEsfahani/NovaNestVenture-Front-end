@@ -8,10 +8,8 @@ export default function StartupFormForm({lang}: {lang: string}) {
   // Pass translations as props to client component
   const translations = {
     secondTitle: t('startUp', { returnObjects: true }).secondTitle,
-    IDEA: t('IDEA'),
-    TRIAL: t('TRIAL'),
     MVP: t('MVP'),
-    FisrtSale: t('FisrtSale'),
+    FirstSale: t('FirstSale'),
     SaleDevelopment: t('SaleDevelopment'),
     sendButton: t('sendButton'),
     successMessage: t('successMessage'),

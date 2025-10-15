@@ -5,11 +5,6 @@ import FileUpload from '@/components/common/form/FileUpload';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 
-import PropertyDropDown from '@/components/startups-form/PropertyDropDown';
-import TargetMarketDropDown from '@/components/startups-form/TargetMarketDropDown';
-import ProblemsSection from '@/components/startups-form/ProblemSection';
-import SolutionLevel from '@/components/startups-form/SolutionLevel';
-import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown';
 import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 import PanelsRenderer from '@/components/startups-form/PanelsRenderer';
 import { getPanels } from '@/components/startups-form/getPanels';

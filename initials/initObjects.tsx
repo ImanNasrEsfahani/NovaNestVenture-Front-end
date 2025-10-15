@@ -18,7 +18,7 @@ import {
 
 enum Type {
   MVP = 'MVP',
-  FisrtSale = 'FisrtSale',
+  FirstSale = 'FirstSale',
   SaleDevelopment = 'SaleDevelopment'
 }
 

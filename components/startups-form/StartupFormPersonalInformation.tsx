@@ -101,42 +101,6 @@ export default function StartupFormPersonalInformation({
             FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || []
           }}
         />
-
-        {/* <Input
-          id="birthDate"
-          register={register}
-          errors={errors}
-          nameInput="birthDate"
-          type="date"
-          label={t('birthDate')}
-          required={t('birthDateRequired')}
-          patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
-          patternMessage={t('birthDateErrorMessage')}
-          placeholder={t('birthDatePlaceholder')}
-          className="input col-span-1 mb-1 mt-2 w-full bg-whiteGold"
-          labelClass=" dark:text-current"
-        /> */}
-
-        {/* <CountryInput
-          countries={countries}
-          countryName={countryName}
-          countryNameRequired={countryNameRequired}
-          countryNamePlaceholder={countryNamePlaceholder}
-          provinceOfResidence={provinceOfResidence}
-          provinceOfResidenceRequired={provinceOfResidenceRequired}
-          provinceOfResidencePlaceholder={provinceOfResidencePlaceholder}
-          cityOfResidence={cityOfResidence}
-          cityOfResidenceRequired={cityOfResidenceRequired}
-          cityOfResidencePlaceholder={cityOfResidencePlaceholder}
-          
-          errors={errors}
-          nameInputs={{
-            countryOfResidence: 'countryOfResidence',
-            provinceOfResidence: '',
-            cityOfResidence: 'cityOfResidence'
-          }}
-          register={register}
-        /> */}
       </div>
     </>
   );

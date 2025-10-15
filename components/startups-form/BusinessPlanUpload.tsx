@@ -14,18 +14,9 @@ interface Props {
   required: boolean;
 }
 
-const BusinessPlanUpload: React.FC<Props> = ({
-  title,
-  yesLabel,
-  noLabel,
-  chooseFile,
-  onFileChange,
-  errors
-}) => {
 
+export default function BusinessPlanUpload({ title, yesLabel, noLabel, chooseFile, onFileChange, errors, required }: Props) {
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
-  const { cvFileState, handleCvFileChange } = useFile();
-
 
   return (
     <div className='w-full flex flex-col items-center mb-12'>
@@ -60,5 +51,3 @@ const BusinessPlanUpload: React.FC<Props> = ({
     </div>
   );
 };
-
-export default BusinessPlanUpload;
