@@ -85,6 +85,7 @@ export default function StartUpMvpRefactore({
         }}
         required={required}
         prefix="mvp"
+        submitCount={submitCount}
       />
 
       <BusinessPlanUpload

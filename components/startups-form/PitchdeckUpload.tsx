@@ -142,7 +142,8 @@ interface PitchdeckUploadProps {
   submitCount?: number;
 }
 
-const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
+
+export default function PitchdeckUpload(props: PitchdeckUploadProps) {
   const {
     problem,
     solution,
@@ -370,5 +371,3 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
     </div >
   );
 };
-
-export default PitchdeckUpload;
