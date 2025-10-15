@@ -36,7 +36,7 @@ export default function AboutUsCooperation() {
                 width={40}
                 height={40}
                 className="inline"
-                src="/static/images/about/right-arrow2.png"
+                src="/static/images/about/right-arrow.png"
                 alt="arrow"
               />
             </Link>
@@ -63,7 +63,7 @@ export default function AboutUsCooperation() {
                 width={40}
                 height={40}
                 className="inline"
-                src="/static/images/about/right-arrow2.png"
+                src="/static/images/about/right-arrow.png"
                 alt="arrow"
               />
             </Link>

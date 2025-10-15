@@ -6,8 +6,8 @@ export default function VisionMission({ lang }: { lang: string }) {
   const visionMission = t('visionMission', { returnObjects: true }) as any;
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16 my-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+    <section className="w-full max-w-responsive mx-auto py-16 px-4 md:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         {/* Mission Card */}
         <div className="flex flex-col bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center gap-4 mb-6">

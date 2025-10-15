@@ -73,56 +73,6 @@
       "link": "https://invigorated-drop-231359.framer.app"
     }
   ],
-  "services": [
-    {
-      "title": "تنظیم پیچ دک",
-      "image": "1.png"
-    },
-    {
-      "title": "منتورینگ",
-      "image": "2.png"
-    },
-    {
-      "title": "شبکه سازی با افراد مورد نیاز",
-      "image": "3.png"
-    },
-    {
-      "title": "تامین مالی اولیه",
-      "image": "4.png"
-    },
-    {
-      "title": "توسعه MVP",
-      "image": "5.png"
-    },
-    {
-      "title": "تحقیق و توسعه",
-      "image": "6.png"
-    },
-    {
-      "title": "طراحی وب سایت",
-      "image": "7.png"
-    },
-    {
-      "title": "تنظیم بیزینس پلن",
-      "image": "8.png"
-    },
-    {
-      "title": "همفکری و پرورش ایده",
-      "image": "9.png"
-    },
-    {
-      "title": "فضای کار اشتراکی",
-      "image": "10.png"
-    },
-    {
-      "title": "ثبت اختراع",
-      "image": "11.png"
-    },
-    {
-      "title": "برگزاری رویدادهای ارائه استارت آپ",
-      "image": "12.png"
-    }
-  ],
   "cardData": [
     {
       "image": "/static/images/our-team/personnel/a1.webp",

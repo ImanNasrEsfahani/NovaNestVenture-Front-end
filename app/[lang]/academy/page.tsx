@@ -64,7 +64,7 @@ export default function Page({
                 <div className="flex items-center justify-center">
                     <div className="w-full max-w-md">
                         <Image
-                        src="/static/images/academy/academy-illustration.jpg"
+                        src="/static/images/academy/academy-illustration.png"
                         alt="NovaNest Academy"
                         width={800}
                         height={600}

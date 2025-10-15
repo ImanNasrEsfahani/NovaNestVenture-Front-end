@@ -4,6 +4,8 @@ import Banner from '@/components/common/Banner';
 import AboutUs from '@/components/about/AboutUs';
 import StoryLine from '@/components/about/StoryLine';
 import VisionMission from '@/components/about/VisionMission';
+import Differentiators from '@/components/about/Differentiators';
+import Founder from '@/components/about/Founder';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | About',
@@ -41,6 +43,10 @@ export default function Page({
         <StoryLine lang={lang} />
 
         <VisionMission lang={lang} />
+
+        <Differentiators lang={lang} />
+
+        <Founder lang={lang} />
       </div>
     </>
   );

@@ -380,14 +380,6 @@ interface CountriesDataInterface {
   text: string;
 }
 
-interface CardsList {
-  title: string;
-  text: string;
-  image: string;
-  reverse: boolean;
-  link: string;
-}
-
 interface translationCard {
   title: 'Investment';
   text: string;
@@ -479,7 +471,6 @@ export {
   CountriesDataInterface,
   ServicesInterface,
   AboutUsCardProps,
-  CardsList,
   ImagesInterface,
   WorkFieldsInterface,
   LandaGeneFormData,
