@@ -10,9 +10,9 @@ import TargetMarketDropDown from '@/components/startups-form/TargetMarketDropDow
 import ProblemsSection from '@/components/startups-form/ProblemSection';
 import SolutionLevel from '@/components/startups-form/SolutionLevel';
 import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown';
-import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 import PanelsRenderer from '@/components/startups-form/PanelsRenderer';
+import { getPanels } from '@/components/startups-form/getPanels';
 
 interface PitchdeckUploadProps {
   problem: boolean,
@@ -170,86 +170,20 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
     submitCount,
   } = props;
 
-  const panels = [
-    {
-      id: 'problems',
-      title: translations.problems.title,
-      show: problem,
-      fields: ['customerProblem'],
-      content: (
-        <ProblemsSection
-          textAreaTitle={translations.problems.customerProblem}
-          textAreaRequired={translations.problems.customerProblemRequired}
-          textAreaPlaceholder={translations.problems.customerProblemPlaceholder}
-          textAreaErrorMessage={translations.problems.customerProblemErrorMessage}
-          register={register}
-          errors={errors}
-        />
-      )
-    },
-    {
-      id: 'solution',
-      title: translations.solutionLevel.title,
-      show: solution,
-      fields: ['uniqueValueProposition', 'solutionsLevel'],
-      content: (
-        <SolutionLevel
-          handleSolutionsLevelChange={handleSolutionsLevelChange}
-          solutionsLevel={solutionsLevel}
-          register={register}
-          errors={errors}
-          setValue={setValue}
-          translations={{
-            solutionsUniqueValue: translations.solutionLevel.solutionsUniqueValue,
-            solutionsUniqueValueRequired: translations.solutionLevel.solutionsUniqueValueRequired,
-            solutionsUniqueValuePlaceholder: translations.solutionLevel.solutionsUniqueValuePlaceholder,
-            solutionsUniqueValueErrorMessage: translations.solutionLevel.solutionsUniqueValueErrorMessage,
-            solutionsLevel: translations.solutionLevel.solutionsLevel,
-            solutionsLevelList: translations.solutionLevel.solutionsLevelList,
-          }}
-        />
-      )
-    },
-    {
-      id: 'businessModel',
-      title: translations.businessModel.title,
-      show: businessModel,
-      fields: ['monetizationOfYourPlan', 'structureOfYourSales'],
-      content: (
-        <BussinessModelDropDown
-          register={register}
-          errors={errors}
-          translations={translations.businessModel}
-        />
-      )
-    },
-    {
-      id: 'targetMarket',
-      title: translations.targetMarket.targetMarket,
-      show: targetMarket,
-      fields: ['customerCharacteristic', 'currentCustomers', 'estimatedMarketSize'],
-      content: (
-        <TargetMarketDropDown
-          register={register}
-          errors={errors}
-          translations={translations.targetMarket}
-        />
-      )
-    },
-    {
-      id: 'property',
-      title: translations.property.property,
-      show: property,
-      fields: ['startupRevenue', 'monthlyIncome', 'currentRaisedFunding', 'neededCapital'],
-      content: (
-        <PropertyDropDown
-          register={register}
-          errors={errors}
-          translations={translations.property}
-        />
-      )
-    }
-  ];
+  const panels = getPanels({
+    problem,
+    solution,
+    businessModel,
+    targetMarket,
+    property,
+    register,
+    errors,
+    handleSolutionsLevelChange,
+    solutionsLevel,
+    setValue,
+    translations,
+    prefix
+  });
 
   // helper: find first panel id that has a validation error
   const findFirstErrorPanelId = () => {

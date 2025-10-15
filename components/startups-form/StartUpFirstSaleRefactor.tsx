@@ -6,7 +6,6 @@ import { getServerTranslation } from 'app/i18n'
 import PitchdeckUpload from '@/components/startups-form/PitchdeckUpload'
 import BusinessPlanUpload from '@/components/startups-form/BusinessPlanUpload'
 import FinancialAnalysisUpload from '@/components/startups-form/FinancialAnalysisUpload'
-import TextArea from '../common/TextArea'
 
 type Props = {
   lang: string
