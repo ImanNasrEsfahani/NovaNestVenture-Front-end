@@ -34,7 +34,7 @@ export default function AboutUsProfileCard({
           <Image
             loading="lazy"
             alt="instagram"
-            src="/static/images/instagram-logo.png"
+            src="/static/images/icons/instagram-logo.png"
             width={25}
             height={25}
           />
@@ -43,7 +43,7 @@ export default function AboutUsProfileCard({
           <Image
             loading="lazy"
             alt="twitter"
-            src="/static/images/twitter-logo.png"
+            src="/static/images/icons/twitter-logo.png"
             width={25}
             height={25}
           />
@@ -52,7 +52,7 @@ export default function AboutUsProfileCard({
           <Image
             loading="lazy"
             alt="telegram"
-            src="/static/images/telegram-logo.png"
+            src="/static/images/icons/telegram-logo.png"
             width={25}
             height={25}
           />
@@ -61,7 +61,7 @@ export default function AboutUsProfileCard({
           <Image
             loading="lazy"
             alt="facebook"
-            src="/static/images/face-book-logo.png"
+            src="/static/images/icons/facebook-logo.png"
             width={25}
             height={25}
           />

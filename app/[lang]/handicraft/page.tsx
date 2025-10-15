@@ -38,7 +38,7 @@ export default function Page({
           <div className=" relative w-1/2 mb-6 md:mb-0 md:w-1/5">
             <Image
               className="hidden md:block rtl:md:w-[300px]"
-              src="/static/images/landacraft1.png"
+              src="/static/images/handicraft/landacraft1.png"
               alt="handicraft"
               width={200}
               height={100}
@@ -80,7 +80,7 @@ export default function Page({
           <div className="pr-6 md:pt-">
             <Image
               className="hidden md:block md:w-[3500px] md:h-[350px]"
-              src="/static/images/landacraft4.png"
+              src="/static/images/handicraft/landacraft4.png"
               alt="handicraft"
               width={800}
               height={100}
