@@ -21,14 +21,14 @@ export default function Page({
     <>
       <div className='hidden md:inline'>
         <Banner
-          image="/static/images/group.webp"
+          image="/static/images/about/group.webp"
           title={t('banner')}
           lang={lang}
         />
       </div>
       <div className='inline md:hidden'>
         <Banner
-          image="/static/images/group-mobile.webp"
+          image="/static/images/about/group-mobile.webp"
           title={t('banner')}
           lang={lang}
         />
