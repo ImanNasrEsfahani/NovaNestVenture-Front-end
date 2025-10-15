@@ -222,17 +222,17 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
   const updateOpenPanelOnErrors = () => {
     const visiblePanels = panels.filter(p => p.show);
     const erroredIds = visiblePanels
-      .filter(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])))
+      .filter(p => (p.fields ?? []).some(f => Boolean(errors?.[f as keyof StartupsFormData])))
       .map(p => p.id);
 
     console.log('updateOpenPanelOnErrors: visible errored ids ->', erroredIds);
 
-    // initial mount handling kept if needed
+    // initial mount: open first errored (if any) and mark mounted
     if (!mountedRef.current) {
       mountedRef.current = true;
       if (erroredIds.length > 0) {
-        setOpenPanel(erroredIds[0]);
         console.log('initial mount: opening first errored ->', erroredIds[0]);
+        setOpenPanel(erroredIds[0]);
       }
       return;
     }
@@ -242,39 +242,30 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
       return;
     }
 
-    // if current panel already errored, do nothing
     if (erroredIds.includes(openPanel ?? '')) {
       console.log('updateOpenPanelOnErrors: current openPanel already has error ->', openPanel);
       return;
     }
 
-    // find next errored panel after current openPanel (forward search), wrap if needed
     const visibleIds = visiblePanels.map(p => p.id);
     const currentIndex = Math.max(0, visibleIds.indexOf(openPanel ?? ''));
     console.log('updateOpenPanelOnErrors: searching next errored panel ->', { visibleIds, currentIndex, erroredIds });
 
+    // forward search with wrap — compact loop that logs steps
+    const start = (currentIndex + 1) % visibleIds.length;
     let found: string | null = null;
-    for (let i = currentIndex + 1; i < visibleIds.length; i++) {
-      console.log('forward search i=', i, 'id=', visibleIds[i]);
-      if (erroredIds.includes(visibleIds[i])) {
-        found = visibleIds[i];
-        console.log('found forward errored panel at index', i, 'id=', found);
+    for (let offset = 0; offset < visibleIds.length; offset++) {
+      const idx = (start + offset) % visibleIds.length;
+      const id = visibleIds[idx];
+      console.log('search idx=', idx, 'id=', id);
+      if (erroredIds.includes(id)) {
+        found = id;
+        console.log('found errored panel at index', idx, 'id=', found);
         break;
       }
     }
-    if (!found) {
-      console.log('no forward match, wrapping search from start to currentIndex');
-      for (let i = 0; i <= currentIndex; i++) {
-        console.log('wrap search i=', i, 'id=', visibleIds[i]);
-        if (erroredIds.includes(visibleIds[i])) {
-          found = visibleIds[i];
-          console.log('found wrapped errored panel at index', i, 'id=', found);
-          break;
-        }
-      }
-    }
-    console.log('updateOpenPanelOnErrors: next errored panel chosen ->', found);
 
+    console.log('updateOpenPanelOnErrors: next errored panel chosen ->', found);
     if (found) {
       console.log('updateOpenPanelOnErrors: switching openPanel ->', found);
       setOpenPanel(found);
