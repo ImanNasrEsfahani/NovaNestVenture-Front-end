@@ -7,7 +7,6 @@
   "focusText": "اطلاعات موجود در گواهی ثبت شرکتها برای ارائه به عموم مردم تنظیم شده است. این گواهی، شامل اطلاعات آدرس دفتر NovaNest Venture در کشور کانادا و اطلاعات مدیران شرکت می‌شود. اطلاعات شخصی مربوط به مدیران باید در اختیار عموم قرار گیرد؛ چرا که این عمل مسئولیت پذیری شرکت را نشان می دهد.",
   "readMore": "بیشتر بخوانید",
   "readLess": "کمتر بخوانید",
-
   "AboutUsNovaNest": [
     {
       "title": "درباره نوانست ونچر",
@@ -77,29 +76,27 @@
       "DiacoCenter": "دیاکو سنتر",
       "VisionRaft": "ویژن رفت",
       "LandaHandicraft": "لاندا کرفت",
-      "landaGene":"لاندا ژن"
+      "landaGene": "لاندا ژن"
     }
   ],
   "KeyDifferentiatingFactors": [
     {
       "title": "دلایل تفاوت نوانست ونچر",
       "titleText": " درک این نکته ضروری است که مهمترین جنبه، نحوه درک و برخورد ما با یک کسب و کار و مدل ذهنی موجود است.",
-      "title2":"آنچه ما را متمایز می کند:",
-      "text2":"۱.  تحلیل تخصصی استارت آپ ها: ما در غربالگری و تحلیل استارت آپ ها تخصص داریم و فرصت هایی برای تبادل اطلاعات و یادگیری اعضا از یکدیگر ایجاد می کنیم.",
-      "text3":"۲.سرمایه گذاری مستقیم اعضا: اعضای نوانست ونچر به طور مستقیم در استارت آپ های انتخابی خود سرمایه گذاری و محیطی ایجاد می کنند که هیچ عضوی احساس فشار برای سرمایه گذاری نکند و ازطرفی هیچ عضوی هم فرصت های سرمایه گذاری بالقوه را از دست ندهد. ",
-      "text4":"۳. تمرکز بر ایجاد ارتباطات سرمایه گذار: رویکرد اصلی ما تقویت ارتباطات بین اعضا است که شامل فعالیت های خیرخواهانه و همچنین فعالیت های سرگرم کننده و رویدادهای اجتماعی متعدد می شود.",
-      "text5":"۴. ارزش گذاری بر مشارکت های مالی حامیان: ما ارزش زیادی برای مشارکت های مالی حامیان خود قائل هستیم. نظرات و راهنمایی های آنها در همه جنبه های فعالیت های سرمایه گذاری مشارکت دارد.",
-      "text6":"۵. ساختار فراگیر: ساختار ما فرصتی را برای کارآفرینان فراهم می کند تا با سرمایه گذاران معتبر که ظرفیت سرمایه گذاری در سطح استارت آپ را دارند، ارتباط داشته باشند.",
-      "text7":"۶. همکاری با سایر مراکز سرمایه گذاری: ما از همکاری با سایر مراکز سرمایه گذاری و جوامع سرمایه گذاری استقبال می کنیم. کارآفرینانی که به دنبال سرمایه از چندین گروه سرمایه گذار هستند از این همکاری بهره مند خواهند شد.",
+      "title2": "آنچه ما را متمایز می کند:",
+      "text2": "۱.  تحلیل تخصصی استارت آپ ها: ما در غربالگری و تحلیل استارت آپ ها تخصص داریم و فرصت هایی برای تبادل اطلاعات و یادگیری اعضا از یکدیگر ایجاد می کنیم.",
+      "text3": "۲.سرمایه گذاری مستقیم اعضا: اعضای نوانست ونچر به طور مستقیم در استارت آپ های انتخابی خود سرمایه گذاری و محیطی ایجاد می کنند که هیچ عضوی احساس فشار برای سرمایه گذاری نکند و ازطرفی هیچ عضوی هم فرصت های سرمایه گذاری بالقوه را از دست ندهد. ",
+      "text4": "۳. تمرکز بر ایجاد ارتباطات سرمایه گذار: رویکرد اصلی ما تقویت ارتباطات بین اعضا است که شامل فعالیت های خیرخواهانه و همچنین فعالیت های سرگرم کننده و رویدادهای اجتماعی متعدد می شود.",
+      "text5": "۴. ارزش گذاری بر مشارکت های مالی حامیان: ما ارزش زیادی برای مشارکت های مالی حامیان خود قائل هستیم. نظرات و راهنمایی های آنها در همه جنبه های فعالیت های سرمایه گذاری مشارکت دارد.",
+      "text6": "۵. ساختار فراگیر: ساختار ما فرصتی را برای کارآفرینان فراهم می کند تا با سرمایه گذاران معتبر که ظرفیت سرمایه گذاری در سطح استارت آپ را دارند، ارتباط داشته باشند.",
+      "text7": "۶. همکاری با سایر مراکز سرمایه گذاری: ما از همکاری با سایر مراکز سرمایه گذاری و جوامع سرمایه گذاری استقبال می کنیم. کارآفرینانی که به دنبال سرمایه از چندین گروه سرمایه گذار هستند از این همکاری بهره مند خواهند شد.",
       "reverse": true,
       "show": true,
       "index": 2,
       "addedClass": ""
     }
   ],
-  "ReadMore": {
-
-  },
+  "ReadMore": {},
   "itemList": [
     "پردازش و تجزیه و تحلیل تخصصی استارت‌آپ‌ها: ما در پردازش و تجزیه و تحلیل استارت‌آپ‌ها تخصص داریم و فرصت‌هایی برای اعضا فراهم می‌کنیم تا از یکدیگر یاد بگیرند.",
     "سرمایه‌گذاری مستقیم اعضا: اعضا به صورت مستقیم در استارت‌آپ‌های انتخابی خود سرمایه‌گذاری می‌کنند، این موجب می‌شود که هیچ عضوی احساس فشار برای سرمایه‌گذاری نکند و هیچ عضوی از فرصت‌های سرمایه‌گذاری ممکن حذف نشود.",
@@ -108,14 +105,13 @@
     "ساختار جامع: ساختار ما فرصتی برای کارآفرینان فراهم می‌کند تا با سرمایه‌گذاران معتبری که قادر به سرمایه‌گذاری در سطح استارت‌آپ هستند، در ارتباط باشند.",
     "همکاری با مراکز سرمایه‌گذاری دیگر: ما همکاری با مراکز سرمایه‌گذاری و جوامع سرمایه‌گذاری دیگر را خوش‌آمد می‌گوییم. کارآفرینانی که به دنبال سرمایه از گروه‌های سرمایه‌گذاری مختلف هستند از این همکاری بهره‌مند می‌شوند."
   ],
-  "SubsidiaryCompanies" :{
-    "title":"شرکت‌های زیر مجموعه نوانست ونچر",
-    "text":" نوانست ونچر شبکه‌ای از بیش از 10 شرکت در کانادا و ایران، حضور فعالی در بازارهای جهانی دارد. دفاتر فعال ما در شهرهای تورنتو، ونکوور، تهران و اصفهان واقع شده‌اند. ما با حمایت از کارآفرینان خلاق از مرحله ایده تا تجاری‌سازی، به رشد و توسعه کسب‌وکارهای نوپا کمک می‌کنیم."
-
+  "SubsidiaryCompanies": {
+    "title": "شرکت‌های زیر مجموعه نوانست ونچر",
+    "text": " نوانست ونچر شبکه‌ای از بیش از 10 شرکت در کانادا و ایران، حضور فعالی در بازارهای جهانی دارد. دفاتر فعال ما در شهرهای تورنتو، ونکوور، تهران و اصفهان واقع شده‌اند. ما با حمایت از کارآفرینان خلاق از مرحله ایده تا تجاری‌سازی، به رشد و توسعه کسب‌وکارهای نوپا کمک می‌کنیم."
   },
-  "VISIONMission" : { 
+  "VISIONMission": {
     "title": "چشم انداز نوانست ونچر",
-    "text":"نوانست ونچر طیف وسیعی از خدمات ازجمله حمایت از کارآفرینان و کسب‌وکارهای نوآور و سرمایه‌گذاری در استارت‌آپ‌های رو به رشد در بازارهای جهانی را ارائه می‌دهد. انجمن سرمایه‌گذاران نوانست از مدیران ارشد، رهبران کسب‌وکار و کارآفرینان باتجربه‌ تشکیل شده است تا در کنار هم از بهترین فرصت‌های سرمایه‌گذاری در شرکت‌های نوپای سراسر جهان بهره‌مند شوند. هدف ما این است که با ارزیابی کامل و دقیق بازار و انتخاب استارت‌آپ‌هایی با پتانسیل بالا و همچنین ارائه منابع تخصصی و جامع، خطر و ریسک سرماه‌گذرای را کاهش دهیم."
+    "text": "نوانست ونچر طیف وسیعی از خدمات ازجمله حمایت از کارآفرینان و کسب‌وکارهای نوآور و سرمایه‌گذاری در استارت‌آپ‌های رو به رشد در بازارهای جهانی را ارائه می‌دهد. انجمن سرمایه‌گذاران نوانست از مدیران ارشد، رهبران کسب‌وکار و کارآفرینان باتجربه‌ تشکیل شده است تا در کنار هم از بهترین فرصت‌های سرمایه‌گذاری در شرکت‌های نوپای سراسر جهان بهره‌مند شوند. هدف ما این است که با ارزیابی کامل و دقیق بازار و انتخاب استارت‌آپ‌هایی با پتانسیل بالا و همچنین ارائه منابع تخصصی و جامع، خطر و ریسک سرماه‌گذرای را کاهش دهیم."
   },
   "companies": [
     {
@@ -150,52 +146,60 @@
       }
     }
   ],
-
-  "storyLine":
-    [
-      {
-        "year": "2017",
-        "title": "Beginning the Educational and Entrepreneurship Journey for Youth",
-        "description": "Our journey began in 2017 with the Landa Youth Business Academy. Over 250 young people aged 16 to 23 participated in programs that initially focused on robotics and technology and gradually expanded to entrepreneurship and startups. These young participants contributed to all startups developed within our organization and gained hands-on experience through real international projects. The academy continued its activities in Iran until 2025, preparing the next generation for a successful entry into the world of work and entrepreneurship.",
-        "image": {
-          "src": "/static/images/about/story/2017-our-story-nova-nest-venture.png",
-          "alt": "story of NovaNest Venture",
-          "width": 661,
-          "height": 404
-        }
-      },
-      {
-        "year": "2019",
-        "title": "The academy's activities entered a new phase",
-        "description": "The academy's activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator. Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale.",
-        "image": {
-          "src": "/static/images/about/story/2019-our-story-nova-nest-venture.png",
-          "alt": "story of NovaNest Venture",
-          "width": 661,
-          "height": 404
-        }
-      },
-      {
-        "year": "2021",
-        "title": "The focus on investing in innovative and scalable startups",
-        "description": "The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan. Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education. Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada.",
-        "image": {
-          "src": "/static/images/about/story/2021-our-story-nova-nest-venture.png",
-          "alt": "story of NovaNest Venture",
-          "width": 661,
-          "height": 404
-        }
-      },
-      {
-        "year": "2025",
-        "title": "Official Establishment of NovaNest in Canada",
-        "description": "NovaNest was officially launched in Vancouver, Canada, providing professional services including Startup Visa and Provincial Entrepreneurship programs to international entrepreneurs. Our long-term goal is to become a global investment and accelerator hub, offering specialized and professional services to entrepreneurs anywhere in the world.",
-        "image": {
-          "src": "/static/images/about/story/2025-our-story-nova-nest-venture.png",
-          "alt": "story of NovaNest Venture",
-          "width": 661,
-          "height": 404
-        }
+  "storyLine": [
+    {
+      "year": "2017",
+      "title": "Beginning the Educational and Entrepreneurship Journey for Youth",
+      "description": "Our journey began in 2017 with the Landa Youth Business Academy. Over 250 young people aged 16 to 23 participated in programs that initially focused on robotics and technology and gradually expanded to entrepreneurship and startups. These young participants contributed to all startups developed within our organization and gained hands-on experience through real international projects. The academy continued its activities in Iran until 2025, preparing the next generation for a successful entry into the world of work and entrepreneurship.",
+      "image": {
+        "src": "/static/images/about/story/2017-our-story-nova-nest-venture.png",
+        "alt": "story of NovaNest Venture",
+        "width": 661,
+        "height": 404
       }
-    ]
+    },
+    {
+      "year": "2019",
+      "title": "The academy's activities entered a new phase",
+      "description": "The academy's activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator. Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale.",
+      "image": {
+        "src": "/static/images/about/story/2019-our-story-nova-nest-venture.png",
+        "alt": "story of NovaNest Venture",
+        "width": 661,
+        "height": 404
+      }
+    },
+    {
+      "year": "2021",
+      "title": "The focus on investing in innovative and scalable startups",
+      "description": "The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan. Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education. Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada.",
+      "image": {
+        "src": "/static/images/about/story/2021-our-story-nova-nest-venture.png",
+        "alt": "story of NovaNest Venture",
+        "width": 661,
+        "height": 404
+      }
+    },
+    {
+      "year": "2025",
+      "title": "Official Establishment of NovaNest in Canada",
+      "description": "NovaNest was officially launched in Vancouver, Canada, providing professional services including Startup Visa and Provincial Entrepreneurship programs to international entrepreneurs. Our long-term goal is to become a global investment and accelerator hub, offering specialized and professional services to entrepreneurs anywhere in the world.",
+      "image": {
+        "src": "/static/images/about/story/2025-our-story-nova-nest-venture.png",
+        "alt": "story of NovaNest Venture",
+        "width": 661,
+        "height": 404
+      }
+    }
+  ],
+  "visionMission": {
+    "mission": {
+      "title": "Mission",
+      "description": "NovaNest's mission is to empower entrepreneurs and startups by providing investment, acceleration, and specialized advisory services that support sustainable growth and successful entry into international markets. We nurture the next generation of entrepreneurs and professionals through education, hands-on experience, and access to a broad network of mentors and investors, helping them turn bold ideas into real, scalable businesses."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "NovaNest's vision is to become a leading global investment and acceleration hub, enabling entrepreneurs anywhere in the world to grow their businesses and achieve success on a global scale through professional support and a comprehensive network."
+    }
+  }
 }

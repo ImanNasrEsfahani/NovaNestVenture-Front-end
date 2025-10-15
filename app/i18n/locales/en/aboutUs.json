@@ -11,11 +11,17 @@
   "AboutUsNovaNest": [
     {
       "title": "About NovaNest Venture",
-      "text": "NovaNest was officially launched in 2025 in Vancouver, Canada, but behind this beginning lies years of extensive experience in investment, acceleration, and entrepreneurship education. Our journey started in 2017 with educational programs and youth skill development, and over the years, through the establishment of various companies and accelerators, investment in startups, and collaboration with universities and technology parks, we have gained valuable experience in business growth and development. This background empowers NovaNest today to provide professional services and guidance to entrepreneurs and startups in Canada, supporting their success and sustainable growth.",
+      "text": "NovaNest is the result of years of experience in investment, acceleration, and entrepreneurial education.",
       "reverse": true,
       "show": true,
       "index": 2,
       "addedClass": ""
+    },
+    {
+      "text": "Our journey began in 2017 with a focus on youth education and skill development. Over the years, through the establishment of companies and accelerators, investments in startups, and collaborations with universities and technology parks, we have gained valuable experience in business growth and development."
+    },
+    {
+      "text": "Today, after this extensive journey, our activities continue in Vancouver, Canada, under the name NovaNest. Building on our knowledge and expertise, we provide professional services and strategic guidance to entrepreneurs and startups around the world."
     }
   ],
   "TheStoryOfLanda": [
@@ -158,7 +164,9 @@
       {
         "year": "2017",
         "title": "Beginning the Educational and Entrepreneurship Journey for Youth",
-        "description": "Our journey began in 2017 with the Landa Youth Business Academy. Over 250 young people aged 16 to 23 participated in programs that initially focused on robotics and technology and gradually expanded to entrepreneurship and startups. These young participants contributed to all startups developed within our organization and gained hands-on experience through real international projects. The academy continued its activities in Iran until 2025, preparing the next generation for a successful entry into the world of work and entrepreneurship.",
+        "description": [
+          "Our journey began in 2017 with the Landa Youth Business Academy. Over 250 young people aged 16 to 23 participated in programs that initially focused on robotics and technology and gradually expanded to entrepreneurship and startups. These young participants contributed to all startups developed within our organization and gained hands-on experience through real international projects. The academy continued its activities in Iran until 2025, preparing the next generation for a successful entry into the world of work and entrepreneurship."
+        ],
         "image": {
           "src": "/static/images/about/story/2017-our-story-nova-nest-venture.png",
           "alt": "story of NovaNest Venture",
@@ -169,7 +177,10 @@
       {
         "year": "2019",
         "title": "The academy's activities entered a new phase",
-        "description": "The academy's activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator. Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale.",
+        "description": [
+          "The academy’s activities entered a new phase and the organization expanded significantly. Broad collaborations were established with universities and leading educational institutions, which eventually led to the founding of Forough Accelerator. With an innovative approach, the center provided a wide range of services in entrepreneurship development and consulting, from hosting specialized and vocational training programs to launching the accelerator.",
+          "Forough Accelerator quickly achieved a prominent position in Iran’s entrepreneurship ecosystem. It recorded the highest rate of student recruitment among similar accelerators and was recognized as one of the few knowledge-based accelerators in the country. Moreover, through collaborations with international companies and startups, the accelerator opened new horizons for the teams and entrepreneurs under its support and strengthened its reputation on a global scale."
+        ],
         "image": {
           "src": "/static/images/about/story/2019-our-story-nova-nest-venture.png",
           "alt": "story of NovaNest Venture",
@@ -180,7 +191,11 @@
       {
         "year": "2021",
         "title": "The focus on investing in innovative and scalable startups",
-        "description": "The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan. Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education. Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada.",
+        "description": [
+          "The focus on investing in innovative and scalable startups led to the official establishment of Landa Investment Holding in Toronto, Canada. With 10 active subsidiary companies, the holding expanded its operations across Iran and Canada, particularly in Toronto, Tehran, and Isfahan.",
+          "Landa Holding’s core services were defined around three key pillars: investment, acceleration, and incubation for startups. The organization placed special emphasis on strategic and high-potential sectors, including artificial intelligence, genetics, technology supply and demand, tourism, and education.",
+          "Leveraging an extensive network of investors, mentors, and business partners, Landa not only supported startups in Iran and Canada on their path to sustainable growth but also provided the necessary framework for international expansion and entry into global markets. This approach positioned Landa Holding as a key player in connecting the entrepreneurial ecosystems of Iran and Canada."
+        ],
         "image": {
           "src": "/static/images/about/story/2021-our-story-nova-nest-venture.png",
           "alt": "story of NovaNest Venture",
@@ -191,7 +206,12 @@
       {
         "year": "2025",
         "title": "Official Establishment of NovaNest in Canada",
-        "description": "NovaNest was officially launched in Vancouver, Canada, providing professional services including Startup Visa and Provincial Entrepreneurship programs to international entrepreneurs. Our long-term goal is to become a global investment and accelerator hub, offering specialized and professional services to entrepreneurs anywhere in the world.",
+        "description": [
+          "The year 2025 marked the beginning of a new chapter in our journey a point where all our experiences, learnings, and achievements from previous years came together under a unified and global brand: NovaNest.",
+          "Today, NovaNest stands as the result of seven years of continuous work in education, entrepreneurship, acceleration, and investment a brand that sees its mission beyond borders.",
+          "At this stage, our focus is on international expansion and building bridges between talents, startups, and investors around the world.",
+          "Our goal is to build a global network of entrepreneurs, creative youth, and innovative startups — a community where learning, growth, and investment opportunities come together."
+        ],
         "image": {
           "src": "/static/images/about/story/2025-our-story-nova-nest-venture.png",
           "alt": "story of NovaNest Venture",
@@ -199,6 +219,17 @@
           "height": 404
         }
       }
-    ]
+    ],
+
+  "visionMission": {
+    "mission": {
+      "title": "Mission",
+      "description": "NovaNest's mission is to empower entrepreneurs and startups by providing investment, acceleration, and specialized advisory services that support sustainable growth and successful entry into international markets. We nurture the next generation of entrepreneurs and professionals through education, hands-on experience, and access to a broad network of mentors and investors, helping them turn bold ideas into real, scalable businesses."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "NovaNest's vision is to become a leading global investment and acceleration hub, enabling entrepreneurs anywhere in the world to grow their businesses and achieve success on a global scale through professional support and a comprehensive network."
+    }
+  }
 
 }

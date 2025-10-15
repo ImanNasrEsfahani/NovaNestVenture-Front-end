@@ -3,6 +3,7 @@ import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import AboutUs from '@/components/about/AboutUs';
 import StoryLine from '@/components/about/StoryLine';
+import VisionMission from '@/components/about/VisionMission';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | About',
@@ -38,6 +39,8 @@ export default function Page({
         <AboutUs lang={lang} />
 
         <StoryLine lang={lang} />
+
+        <VisionMission lang={lang} />
       </div>
     </>
   );

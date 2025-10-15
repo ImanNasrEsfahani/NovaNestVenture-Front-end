@@ -23,7 +23,10 @@ export default function StoryLine({lang}: {lang: string}) {
                     </div>
                     <div className='col-span-1 flex flex-col justify-center'>
                         <p className='text-7xl font-bold font-header mb-4'>{item.year}</p>
-                        <p className='text-base text-justify'>{item.description}</p>
+
+                        {item.description.map((desc: string, i: number) => (
+                            <p key={i} className='text-base text-justify mb-2'>{desc}</p>
+                          ))}
                     </div>
                 </div>
             ))}
