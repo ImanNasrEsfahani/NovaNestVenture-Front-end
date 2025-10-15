@@ -6,14 +6,14 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-const AboutUsCard = ({
+export default function AboutUsCard({
   title,
   text,
   image,
   reverse,
   description,
   link
-}: AboutUsCardProps) => {
+}: AboutUsCardProps) {
 
 
   return (
@@ -28,17 +28,7 @@ const AboutUsCard = ({
               {text}
             </p>
             <Link href={`${base}${link}`}>
-              {/* <Button 
-                text='Visit Now' 
-                size={''} 
-                type='button'
-                bgColor="Primary"
-                goto={''}
-              /> */}
               <ButtonRefactor text="Visit Now" />
-              {/* <button className=" justify-items-center mx-auto bg-primary text-white md:mt-24 mt-8  flex px-10 py-2 font-barlow">
-                Visit Now
-              </button> */}
             </Link>{' '}
           </div>
           <div className="col-span-1 md:pl-0">
@@ -94,5 +84,3 @@ const AboutUsCard = ({
     </>
   );
 };
-
-export default AboutUsCard;

@@ -4,7 +4,6 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-//TODO: hero components
 export default function Hero({
   showLanda,
   leftImage,
@@ -43,13 +42,6 @@ export default function Hero({
         </div>
 
         {showButton ? (
-          // <Button
-          //   text={t('lng') === "en" ? "Register Now" : "همین الان ثبت نام کنید"}
-          //   size="notVisit"
-          //   goto="/startups-form"
-          //   bgColor="Primary"
-          //   lang={lang}
-          // />
           <div className='w-64'>
             <ButtonRefactor
               text={t('lng') === 'en' ? 'Register Now' : 'همین الان ثبت نام کنید'}

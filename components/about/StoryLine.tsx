@@ -5,7 +5,6 @@ import { getServerTranslation } from 'app/i18n';
 export default function StoryLine({lang}: {lang: string}) {
     const { t } = getServerTranslation(lang, 'aboutUs');
 
-
     return (
         <>
             {t("storyLine", { returnObjects: true }).map((item: any, index: number) => (
