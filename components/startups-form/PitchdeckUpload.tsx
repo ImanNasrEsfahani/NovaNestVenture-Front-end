@@ -12,6 +12,7 @@ import SolutionLevel from '@/components/startups-form/SolutionLevel';
 import BussinessModelDropDown from '@/components/startups-form/BussinessModelDropDown';
 import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
+import PanelsRenderer from '@/components/startups-form/PanelsRenderer';
 
 interface PitchdeckUploadProps {
   problem: boolean,
@@ -436,28 +437,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
             />
 
             <div className="space-y-4">
-              {panels.filter((p) => p.show).map((p) => {
-                const hasError = p.fields?.some((field) => !!errors[field as keyof StartupsFormData]);
-                console.log(`panel=${p.id} hasError=${hasError}`);
-                console.log(`openPanel=${openPanel}`);
-
-                return (
-                  <div key={p.id} className={`bg-darkGold rounded-xl overflow-hidden shadow-sm ${hasError ? 'ring-1 ring-red-500' : ''}`}>
-                    <CollapsibleHeader
-                      title={p.title}
-                      isOpen={openPanel === p.id}
-                      onToggle={() => togglePanel(p.id)}
-                      hasError={hasError}
-                    />
-                    <div
-                      aria-hidden={openPanel !== p.id}
-                      className={`transition-all duration-300 ${openPanel === p.id ? 'opacity-100' : 'opacity-0 max-h-0 pointer-events-none'}`}
-                    >
-                      {p.content}
-                    </div>
-                  </div>
-                );
-              })}
+              <PanelsRenderer panels={panels} openPanel={openPanel} togglePanel={togglePanel} errors={errors} />
             </div>
           </div>
         )}

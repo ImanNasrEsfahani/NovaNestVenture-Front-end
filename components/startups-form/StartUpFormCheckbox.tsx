@@ -38,9 +38,10 @@ const StartUpFormCheckbox = (props: Props) => {
                     type='radio'
                     className='size-full inset-0 opacity-0'
                     value={name}
-                    {...register("type", {
+                    {...register("startupType", {
                       required: true,
                     })}
+                    name="startupType"
                   />
                 </div>
             </div>
