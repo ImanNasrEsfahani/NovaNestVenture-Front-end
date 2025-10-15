@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Input from '@/components/common/form/Input';
 import FileUpload from '@/components/common/form/FileUpload';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
@@ -37,7 +37,6 @@ interface PitchdeckUploadProps {
   handleSolutionsLevelChange: (value: any) => void;
   solutionsLevel: any;
   setValue: any;
-  handleFinancialModelFileChange: (file: any) => void;
 
   // Translation props
   translations: {
@@ -55,10 +54,17 @@ interface PitchdeckUploadProps {
     };
 
     solutionLevel: {
+      title: string;
+      solution: string;
+      solutionPlaceholder: string,
+      solutionRequired: string,
+      solutionsErrorMessage: string,
+
       solutionsUniqueValue: string;
       solutionsUniqueValueRequired: string;
       solutionsUniqueValuePlaceholder: string;
       solutionsUniqueValueErrorMessage: string;
+
       solutionsLevel: string;
       solutionsLevelList: string[];
     };
@@ -130,6 +136,9 @@ interface PitchdeckUploadProps {
   };
   required: boolean;
   prefix: string;
+
+  // add submit counter so effect runs on form submit
+  submitCount?: number;
 }
 
 const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
@@ -154,23 +163,11 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
     handleSolutionsLevelChange,
     solutionsLevel,
     setValue,
-    handleFinancialModelFileChange,
     translations,
     required,
-    prefix
+    prefix,
+    submitCount,
   } = props;
-
-  useEffect(() => {
-    console.log('PitchdeckUpload errors:', errors);
-  }, [errors]);
-
-  const [openPanel, setOpenPanel] = useState<string | null>('problems');
-  const [fileCounterState, setFileCounter] = useState<boolean>(false);
-
-  const togglePanel = (id: string) => {
-    setOpenPanel((prev) => (prev === id ? null : id));
-  };
-
 
   const panels = [
     {
@@ -191,7 +188,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
     },
     {
       id: 'solution',
-      title: 'Solution',
+      title: translations.solutionLevel.title,
       show: solution,
       fields: ['uniqueValueProposition', 'solutionsLevel'],
       content: (
@@ -221,7 +218,6 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
         <BussinessModelDropDown
           register={register}
           errors={errors}
-          handleFinancialModelFileChange={handleFinancialModelFileChange}
           translations={translations.businessModel}
         />
       )
@@ -253,6 +249,134 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
       )
     }
   ];
+
+  // helper: find first panel id that has a validation error
+  const findFirstErrorPanelId = () => {
+    console.log('findFirstErrorPanelId: current errors:', errors);
+    const errored = panels
+      .map(p => ({ id: p.id, fields: p.fields ?? [], hasError: p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])) ?? false }))
+      .filter(p => p.hasError);
+    console.log('findFirstErrorPanelId: panels with errors:', errored);
+    const id =
+      panels.find(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])))?.id
+      // if none with errors, prefer the first visible panel, else fallback to first panel
+      ?? panels.find(p => p.show)?.id
+      ?? panels[0]?.id
+      ?? null;
+    console.log('findFirstErrorPanelId: chosen id ->', id);
+    return id;
+  };
+
+  // open panel state: default to first error-containing panel (if any) or first visible panel
+  const [openPanel, setOpenPanel] = useState<string | null>(() => {
+    const initial = findFirstErrorPanelId();
+    console.log('initial openPanel ->', initial);
+    return initial;
+  });
+
+  // track mount so first render where there are no errors doesn't auto-advance panels
+  const mountedRef = useRef(false);
+
+  // when errors change, open the first panel that contains an error.
+  // If the currently open panel has no error but there are errored panels,
+  // advance to the next errored panel (searching forward and wrapping).
+  // derive a stable key for errors so effect fires when content changes
+  const errorKeys = React.useMemo(() => Object.keys(errors || {}).sort().join(','), [errors]);
+
+  // extract logic that inspects panels/errors and decides which panel to open
+  const updateOpenPanelOnErrors = () => {
+    const visiblePanels = panels.filter(p => p.show);
+    const erroredIds = visiblePanels
+      .filter(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])))
+      .map(p => p.id);
+
+    console.log('updateOpenPanelOnErrors: visible errored ids ->', erroredIds);
+
+    // initial mount handling kept if needed
+    if (!mountedRef.current) {
+      mountedRef.current = true;
+      if (erroredIds.length > 0) {
+        setOpenPanel(erroredIds[0]);
+        console.log('initial mount: opening first errored ->', erroredIds[0]);
+      }
+      return;
+    }
+
+    if (erroredIds.length === 0) {
+      console.log('updateOpenPanelOnErrors: no errored panels; do nothing');
+      return;
+    }
+
+    // if current panel already errored, do nothing
+    if (erroredIds.includes(openPanel ?? '')) {
+      console.log('updateOpenPanelOnErrors: current openPanel already has error ->', openPanel);
+      return;
+    }
+
+    // find next errored panel after current openPanel (forward search), wrap if needed
+    const visibleIds = visiblePanels.map(p => p.id);
+    const currentIndex = Math.max(0, visibleIds.indexOf(openPanel ?? ''));
+    console.log('updateOpenPanelOnErrors: searching next errored panel ->', { visibleIds, currentIndex, erroredIds });
+
+    let found: string | null = null;
+    for (let i = currentIndex + 1; i < visibleIds.length; i++) {
+      console.log('forward search i=', i, 'id=', visibleIds[i]);
+      if (erroredIds.includes(visibleIds[i])) {
+        found = visibleIds[i];
+        console.log('found forward errored panel at index', i, 'id=', found);
+        break;
+      }
+    }
+    if (!found) {
+      console.log('no forward match, wrapping search from start to currentIndex');
+      for (let i = 0; i <= currentIndex; i++) {
+        console.log('wrap search i=', i, 'id=', visibleIds[i]);
+        if (erroredIds.includes(visibleIds[i])) {
+          found = visibleIds[i];
+          console.log('found wrapped errored panel at index', i, 'id=', found);
+          break;
+        }
+      }
+    }
+    console.log('updateOpenPanelOnErrors: next errored panel chosen ->', found);
+
+    if (found) {
+      console.log('updateOpenPanelOnErrors: switching openPanel ->', found);
+      setOpenPanel(found);
+    } else {
+      console.log('updateOpenPanelOnErrors: no next errored panel found');
+    }
+  };
+
+  useEffect(() => {
+    console.log('PitchdeckUpload: errors changed (raw):', errors);
+    console.log('PitchdeckUpload: errorKeys ->', errorKeys, 'submitCount ->', submitCount);
+
+    // delegate to extracted function
+    updateOpenPanelOnErrors();
+  }, [errorKeys, submitCount]); // now runs when form is submitted (submitCount changes)
+
+  const [fileCounterState, setFileCounter] = useState<boolean>(false);
+
+  const togglePanel = (id: string) => {
+    setOpenPanel((prev) => {
+      const visibleIds = panels.filter(p => p.show).map(p => p.id);
+      console.log('togglePanel: visible panels ->', visibleIds, 'prev ->', prev, 'clicked ->', id);
+
+      // if clicked panel is already open -> close it and open the next visible panel (if any)
+      if (prev === id) {
+        const idx = visibleIds.indexOf(id);
+        console.log("idx: ", idx);
+        const next = idx >= 0 && idx < visibleIds.length - 1 ? visibleIds[idx + 1] : null;
+        console.log('togglePanel: closing current, next visible ->', next);
+        return next;
+      }
+
+      // otherwise open the clicked panel (and close previous)
+      console.log('togglePanel: opening ->', id);
+      return id;
+    });
+  };
 
   return (
     <div className='w-full md:max-w-lg xl:max-w-2xl 2xl:max-w-4xl mx-auto pb-12'>
@@ -314,6 +438,9 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
             <div className="space-y-4">
               {panels.filter((p) => p.show).map((p) => {
                 const hasError = p.fields?.some((field) => !!errors[field as keyof StartupsFormData]);
+                console.log(`panel=${p.id} hasError=${hasError}`);
+                console.log(`openPanel=${openPanel}`);
+
                 return (
                   <div key={p.id} className={`bg-darkGold rounded-xl overflow-hidden shadow-sm ${hasError ? 'ring-1 ring-red-500' : ''}`}>
                     <CollapsibleHeader
@@ -324,7 +451,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
                     />
                     <div
                       aria-hidden={openPanel !== p.id}
-                      className={`transition-all duration-300 ${openPanel === p.id ? 'opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}
+                      className={`transition-all duration-300 ${openPanel === p.id ? 'opacity-100' : 'opacity-0 max-h-0 pointer-events-none'}`}
                     >
                       {p.content}
                     </div>

@@ -372,6 +372,39 @@
         "customerProblemErrorMessage": "The message must be less than 1450 characters."
       },
 
+      "solutionLevel": {
+        "title": "Solutions",
+        "solution": "What is your unique value proposition (innovation)? What is new about what you do? ",
+        "solutionPlaceholder": "Description",
+        "solutionRequired": "This field is required!",
+        "solutionsErrorMessage": "The message must be less than 1450 characters.",
+
+        "productLevel": "How much is level of your product and technology preparation?",
+        "productLevelRequired": "Preparation Stats Required",
+        
+        "scalable": "Briefly explain how your technology is scalable? ",
+        "scalablePlaceholder": "Description",
+        "scalableRequired": "This field is required!",
+        "scalableErrorMessage": "The message must be less than 1450 characters.",
+    
+        "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
+        "solutionsUniqueValueRequired": "this fields is required",
+        "solutionsUniqueValuePlaceholder": "Description",
+
+        "solutionsLevel": "How much is level of your product and technology preparation?",
+        "solutionsLevelList": [
+          "The basic principle has been observed.",
+          "The technology concept has been formulated.",
+          "Experimental proof of concept.",
+          "The confirmed technology in laboratory.",
+          "The confirmed technology in the environmental conditions",
+          "The presented technology in the environmental conditions",
+          "Show the system prototype in the mvp operating environment.",
+          "The proved realistic system in the operating environment.",
+          "A complete and qualified system."
+        ]
+      },
+
       "propertyDropDown": {
         "property": "Property",
         "propertyRevenue": "How much revenue has your startup made since its inception?",
@@ -424,26 +457,6 @@
         "targetTotalErrorMessage": "The message must be less than 1450 characters."
       },
 
-      "solutionLevel": {
-        "solutions": "Solutions",
-        "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
-        "solutionsUniqueValueRequired": "this fields is required",
-        "solutionsUniqueValuePlaceholder": "Description",
-
-        "solutionsLevel": "How much is level of your product and technology preparation?",
-        "solutionsLevelList": [
-          "The basic principle has been observed.",
-          "The technology concept has been formulated.",
-          "Experimental proof of concept.",
-          "The confirmed technology in laboratory.",
-          "The confirmed technology in the environmental conditions",
-          "The presented technology in the environmental conditions",
-          "Show the system prototype in the mvp operating environment.",
-          "The proved realistic system in the operating environment.",
-          "A complete and qualified system."
-        ]
-      },
-
       "businessModel": {
         "title": "Business Model",
         "monetization": "Describe the method of monetization of your plan? ",
@@ -476,22 +489,7 @@
     "cooperatedWithInvestors": "Have you previously cooperated with investors or accelerators?",
     "cooperatedWithInvestorsPlaceholder": "Description",
     "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
-    
-    "solutions": {
-      "title": "Solutions",
-      "solution": "What is your unique value proposition (innovation)? What is new about what you do? ",
-      "solutionPlaceholder": "Description",
-      "solutionRequired": "This field is required!",
-      "solutionsErrorMessage": "The message must be less than 1450 characters.",
-
-      "productLevel": "How much is level of your product and technology preparation?",
-      "productLevelRequired": "Preparation Stats Required",
-      
-      "scalable": "Briefly explain how your technology is scalable? ",
-      "scalablePlaceholder": "Description",
-      "scalableRequired": "This field is required!",
-      "scalableErrorMessage": "The message must be less than 1450 characters."
-    },
+  
     "financialFile": "Do you currently have a financial plan in place?",
     "financialFileRequired": "Please choose an option",
 

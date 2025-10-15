@@ -26,6 +26,7 @@ type Props = {
     setValue: UseFormSetValue<StartupsFormData>
     handleFinancialModelFileChange: (file: any) => void
     required: boolean
+    submitCount: number
 }
 
 export default function StartUpMvpRefactore({
@@ -41,7 +42,8 @@ export default function StartUpMvpRefactore({
     handleSolutionsLevelChange,
     setValue,
     handleFinancialModelFileChange,
-    required
+    required,
+    submitCount
 }: Props) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
@@ -70,7 +72,6 @@ export default function StartUpMvpRefactore({
         handleSolutionsLevelChange={handleSolutionsLevelChange}
         solutionsLevel={solutionsLevel}
         setValue={setValue}
-        handleFinancialModelFileChange={handleFinancialModelFileChange}
         translations={{
           title: t('startUp', { returnObjects: true }).MVP.pitchDeck,
           yesLabel: t('yes'),

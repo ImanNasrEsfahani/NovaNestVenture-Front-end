@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TextArea from '@/components/common/TextArea'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
 import { StartupsFormData } from '@/types/global'
@@ -22,7 +22,6 @@ type Props = {
 }
 
 export default function SolutionLevel(props: Props) {
-
   const {
     register,
     errors,
@@ -31,6 +30,11 @@ export default function SolutionLevel(props: Props) {
     setValue,
     translations
   } = props;
+
+  // ensure RHF knows about the radio field so it's included on submit/validation
+  useEffect(() => {
+    register('technologyReadinessLevel', { required: true });
+  }, [register]);
 
   return (
     <div className='w-full p-6'>
@@ -55,7 +59,6 @@ export default function SolutionLevel(props: Props) {
               key={index}
               className="flex items-center gap-3 cursor-pointer p-2 rounded-md hover:bg-gray-50"
             >
-              {/* hidden radio as peer */}
               <input
                 type="radio"
                 name="technologyReadinessLevel"
@@ -63,7 +66,8 @@ export default function SolutionLevel(props: Props) {
                 checked={solutionsLevel === index}
                 onChange={() => {
                   handleSolutionsLevelChange(index);
-                  setValue('technologyReadinessLevel', item);
+                  // update RHF value so it's submitted
+                  setValue('technologyReadinessLevel', item, { shouldDirty: true, shouldTouch: true });
                 }}
               />
 

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import TextArea from '@/components/common/TextArea';
-import { useForm, FieldErrors, UseFormRegister } from 'react-hook-form';
+import { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { StartupsFormData } from '@/types/global';
 
 type translations = {
@@ -21,7 +21,6 @@ type translations = {
 type Props = {
   register: UseFormRegister<StartupsFormData>
   errors: FieldErrors<StartupsFormData>
-  handleFinancialModelFileChange: (file: any) => void;
   translations: translations
 };
 

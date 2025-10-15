@@ -25,6 +25,7 @@ type Props = {
     setValue: UseFormSetValue<StartupsFormData>
     handleFinancialModelFileChange: (file: any) => void
     required: boolean
+    submitCount: number
 }
 
 export default function StartUpSaleDevelopRefactore({
@@ -40,7 +41,8 @@ export default function StartUpSaleDevelopRefactore({
     handleSolutionsLevelChange,
     setValue,
     handleFinancialModelFileChange,
-    required
+    required,
+    submitCount
 }: Props) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
@@ -69,7 +71,6 @@ export default function StartUpSaleDevelopRefactore({
         handleSolutionsLevelChange={handleSolutionsLevelChange}
         solutionsLevel={solutionsLevel}
         setValue={setValue}
-        handleFinancialModelFileChange={handleFinancialModelFileChange}
         translations={{
           title: t('startUp', { returnObjects: true }).FirstSale.pitchDeck,
           yesLabel: t('yes'),
@@ -83,6 +84,7 @@ export default function StartUpSaleDevelopRefactore({
         }}
         required={required}
         prefix='scaleup'
+        submitCount={submitCount}
       />
       
       <BusinessPlanUpload

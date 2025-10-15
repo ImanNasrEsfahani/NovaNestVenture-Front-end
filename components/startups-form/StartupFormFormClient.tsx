@@ -68,7 +68,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, submitCount },
     reset,
     setValue
   } = useForm<StartupsFormData>({
@@ -272,7 +272,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                             <div
                               className={`relative size-4 rounded-full transition-all ${
                                 isSelected ? 'bg-primary' : 'bg-whiteGold'
-                              }`}
+                              } ${errors.startupType ? 'border-2 border-red-500' : '' }`}
                             >
                               <input
                                 type="radio"
@@ -284,6 +284,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                                   startupField.onChange?.(e);
                                   setStartUpFormType?.(e.target.value);
                                 }}
+                                aria-invalid={!!errors.startupType}
                               />
                             </div>
                           </div>
@@ -298,9 +299,12 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                 })}
               </div>
 
-              {/* {errors.startupFormType && (
-                <p className="mt-2 text-sm text-red-500">{errors.startupFormType.message}</p>
-              )} */}
+              {/* show validation error for the radio group */}
+              {errors.startupType && (
+                <p className="mt-2 text-sm text-red-500" role="alert">
+                  {errors.startupType?.message ?? 'Please select one option'}
+                </p>
+              )}
 
               <div className='w-full'>
                 {/* MVP section - render only when selected */}
@@ -320,6 +324,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
                       required={startupFormType === translations.MVP}
+                      submitCount={submitCount}
                     />
                   </div>
                 )}
@@ -341,6 +346,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
                       required={startupFormType === translations.FisrtSale}
+                      submitCount={submitCount}
                     />
                   </div>
                 )}
@@ -362,6 +368,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                       solutionsLevel={solutionsLevel}
                       handleFinancialModelFileChange={handleFinancialModelFileChange}
                       required={startupFormType === translations.SaleDevelopment}
+                      submitCount={submitCount}
                     />
                   </div>
                 )}
