@@ -1,16 +1,16 @@
 {
   "menuItems": [
     {
-      "label": "Academy",
-      "href": "en/academy"
+      "label": "About us",
+      "href": "en/about-us"
     },
     {
       "label": "Our Team",
       "href": "en/our-team"
     },
     {
-      "label": "About us",
-      "href": "en/about-us"
+      "label": "Academy",
+      "href": "en/academy"
     }
   ],
   "submenuItems": [

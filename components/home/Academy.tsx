@@ -30,7 +30,7 @@ export default function Academy({ lang }: { lang: string }) {
           <Image
             loading="lazy"
             className="rounded-lg object-cover"
-            src={"/static/images/home/academy/nova-nest-venture-academy.jpg"}
+            src={"/static/images/home/academy/nova-nest-venture-academy.png"}
             alt={"Academy"}
             width={1200}
             height={675}

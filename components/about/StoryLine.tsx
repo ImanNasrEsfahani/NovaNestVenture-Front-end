@@ -13,7 +13,7 @@ export default function StoryLine({lang}: {lang: string}) {
                     key={index}
                     className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'
                 >
-                    <div className={`col-span-1 ${index % 2 === 0 ? "order-last lg:order-first" : ""}`}>
+                    <div className={`col-span-1 flex justify-center items-center ${index % 2 === 0 ? "lg:order-last order-first" : ""}`}>
                         <Image
                             className="object-cover h-full rounded-xl"
                             src={item.image.src}

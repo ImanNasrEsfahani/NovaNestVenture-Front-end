@@ -18,7 +18,7 @@ export default function AboutUs({ lang }: { lang: string }) {
             {/* <a href="/about" className="btn btn-neutral normal-case text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary hover:border-primary transition-all duration-300">
             Read more</a> */}
             <div className="max-w-container-xxs mx-auto">
-                <ButtonRefactor text={t('ReadMore')} type="link" href={`${base}/about`} />
+                <ButtonRefactor text={t('ReadMore')} type="link" href={`${base}/about-us`} />
             </div>
         </section>
     );

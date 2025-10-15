@@ -10,8 +10,12 @@
     "title": "Explore",
     "text": [
       {
-        "title": "Home",
-        "link": ""
+        "title": "Startup Visa",
+        "link": "startup"
+      },
+      {
+        "title": "Entrepreneurship Program",
+        "link": "pnp"
       },
       {
         "title": "Academy",
@@ -22,12 +26,8 @@
         "link": "our-team"
       },
       {
-        "title": "About Us",
+        "title": "About us",
         "link": "about-us"
-      },
-      {
-        "title": "Contact Us",
-        "link": "contact-us"
       }
     ]
   },
