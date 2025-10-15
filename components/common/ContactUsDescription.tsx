@@ -15,10 +15,14 @@ export default function ContactUsDescription({lang}: {lang: string}) {
   return (
     <div className="h-full">
       <div className="mb-5 mt-10 flex flex-col items-center md:my-0 md:w-[494px] md:items-start">
-        <h1 className="font-header text-4xl md:text-5xl text-black uppercase font-bold">
+        <h1 className="font-header text-4xl md:text-5xl mb-4">
           {t('NovaNestVenture')}
         </h1>
-        <p className="my-5 text-justify font-normal">{t('text')}</p>
+        { t('text', { returnObjects: true }).map((p: string, i: number) => (
+          <p key={i} className="text-justify font-normal mb-4">
+            {p}
+          </p>
+        ))}
       </div>
       {/* TODO: make code more modular with new components */}
       {/* TODO: avoid hardcode links and urls */}

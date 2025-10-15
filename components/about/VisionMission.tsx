@@ -16,7 +16,7 @@ export default function VisionMission({ lang }: { lang: string }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h2 className="text-3xl md:text-4xl font-header font-bold text-primary">
+            <h2 className="text-3xl md:text-4xl font-header font-bold text-primary mb-6">
               {visionMission.mission.title}
             </h2>
           </div>
@@ -52,17 +52,6 @@ export default function VisionMission({ lang }: { lang: string }) {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Decorative Divider */}
-      <div className="flex items-center justify-center my-16">
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-        <div className="px-4">
-          <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
-          </svg>
-        </div>
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
       </div>
     </section>
   );

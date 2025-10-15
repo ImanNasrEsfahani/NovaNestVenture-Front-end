@@ -2,7 +2,10 @@
     "lng": "fa",
     "NovaNestVenture": "نوانست ونچر",
     "banner": "ارتباط با ما",
-    "text": "نوانست ونچر به عنوان یک شرکت فعال در حوزه سرمایه گذاری، راه اندازی استارت آپ و کارآفرینی با تیمی مجرب از افراد متخصص، برای آن دسته از کسانی که به دنبال سرمایه برای ایده‌های خود، شروع یک کسب و کار یا سرمایه‌گذاری در کشور کانادا هستند، خدمات متنوعی ارائه می‌دهد.",
+    "text": [
+        "NovaNest is an innovation and growth hub based in Canada, dedicated to empowering international startups and entrepreneurs.",
+        "We strive to transform bold ideas into sustainable and scalable businesses through a unique combination of investment, acceleration, and specialized advisory services."
+    ],
     "phone": "شماره تماس",
     "email": "اطلاعات ایمیل",
     "address": "آدرس",

@@ -2,7 +2,10 @@
     "lng": "en",
     "NovaNestVenture": "NovaNest Venture",
     "banner": "Contact us",
-    "text": "NovaNest Venture is a leading investment, startup, and entrepreneurship company with a proven track record of success. Our team of experienced professionals is dedicated to helping you achieve your goals in Canada.",
+    "text": [
+        "NovaNest is an innovation and growth hub based in Canada, dedicated to empowering international startups and entrepreneurs.",
+        "We strive to transform bold ideas into sustainable and scalable businesses through a unique combination of investment, acceleration, and specialized advisory services."
+    ],
     "phone": "Phone Call",
     "email": "Email Info",
     "address": "Adress",

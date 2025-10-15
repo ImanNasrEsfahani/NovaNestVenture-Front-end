@@ -169,7 +169,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
               firstName: 'firstName',
               lastName: 'lastName',
               email: 'email',
-              phoneNumber: 'phonenumber',
+              phoneNumber: 'phoneNumber',
               countryOfResidence: '',
               provinceOfResidence: '',
               cityOfResidence: '',
