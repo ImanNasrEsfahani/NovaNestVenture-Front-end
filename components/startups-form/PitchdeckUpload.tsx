@@ -395,7 +395,7 @@ const PitchdeckUpload: React.FC<PitchdeckUploadProps> = (props) => {
             <div className="px-4 py-6">
               <FileUpload
                 nameInput="pitchDeckFile"
-                required={required ? chooseFile : undefined}
+                required={required ? true : undefined}
                 errors={errors}
                 label={chooseFile}
                 onChange={onFileChange}

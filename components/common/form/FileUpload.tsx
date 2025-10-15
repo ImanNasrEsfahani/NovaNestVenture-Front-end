@@ -5,12 +5,12 @@ type FileUploadProps = {
   label: string;
   onChange: (file: File | null) => void;
   disabled: boolean;
-  required: boolean | undefined | string;
+  required: boolean | undefined;
   errors: any;
   file: File | string;
 }
 
-const FileUpload = ({ nameInput, label, onChange, disabled, required, errors, file }: FileUploadProps) => {
+export default function FileUpload({ nameInput, label, onChange, disabled, required, errors, file }: FileUploadProps) {
   const [fileName, setFileName] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -95,5 +95,3 @@ const FileUpload = ({ nameInput, label, onChange, disabled, required, errors, fi
     </div>
   );
 };
-
-export default FileUpload
