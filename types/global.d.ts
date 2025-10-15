@@ -24,9 +24,10 @@ interface BusinessPartnerShipFormData {
 
 // Define an interface for contact form data
 interface ContactUSFormData {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
-  number: string;
+  phoneNumber: string;
   subject: string;
   message: string;
 }

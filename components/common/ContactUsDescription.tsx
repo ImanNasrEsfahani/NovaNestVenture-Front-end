@@ -24,7 +24,7 @@ export default function ContactUsDescription({lang}: {lang: string}) {
       {/* TODO: avoid hardcode links and urls */}
       <div className="flex flex-row gap-7 pt-2">
         <Link
-          href={'https://instagram.com/landa_holding?igshid=YTQwZjQ0NmI0OA=='}
+          href={'https://instagram.com/novanestventure'}
           target="_blank"
         >
           <Image
@@ -35,7 +35,7 @@ export default function ContactUsDescription({lang}: {lang: string}) {
             loading="lazy"
           />
         </Link>
-        <Link href={'https://wa.me/02126917419'} target="_blank">
+        <Link href={'https://wa.me/+17789865432'} target="_blank">
         <Image
           src="/static/images/icons/whatsapp_second.png"
           alt="NovaNest Venture Key Differentiating"

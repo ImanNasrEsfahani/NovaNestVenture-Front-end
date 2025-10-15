@@ -31,7 +31,7 @@ export default function VisionMission({ lang }: { lang: string }) {
         </div>
 
         {/* Vision Card */}
-        <div className="flex flex-col bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

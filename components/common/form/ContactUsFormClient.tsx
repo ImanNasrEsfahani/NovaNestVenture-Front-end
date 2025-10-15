@@ -14,11 +14,16 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 interface Translations {
   title: string;
+
+  subject: string;
   subjectRequired: string;
   subjectPlaceholder: string;
+  
+  message: string;
   messageRequired: string;
   messagePlaceholder: string;
   messagePlaceholderErrorMessage: string;
+  
   sendingButton: string;
   sendButton: string;
   successMessage: string;
@@ -161,16 +166,16 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
             register={register}
             errors={errors}
             nameInputs={{
-              firstName: 'name',
-              lastName: '',
+              firstName: 'firstName',
+              lastName: 'lastName',
               email: 'email',
-              phoneNumber: 'number',
+              phoneNumber: 'phonenumber',
               countryOfResidence: '',
               provinceOfResidence: '',
               cityOfResidence: '',
               TypeOfCollaboration: ''
             }}
-            noLabel={true}
+            noLabel={false}
             translations={{
 
               firstName: translations.firstName,
@@ -180,7 +185,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
               lastName: translations.lastName,
               lastNameRequired: translations.lastNameRequired,
               lastNamePlaceholder: translations.lastNamePlaceholder,
-              
+
               email: translations.email,
               emailRequired: translations.emailRequired,
               emailErrorMessage: translations.emailErrorMessage,
@@ -216,44 +221,42 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
 
             }}
           />
-
-          <div className="col-span-1">
-            <Input
-              id="subject"
-              register={register}
-              errors={errors}
-              nameInput="subject"
-              type="text"
-              required={translations.subjectRequired}
-              patternValue=""
-              patternMessage={translations.subjectRequired}
-              placeholder={translations.subjectPlaceholder}
-              className="input  col-span-1 mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
-              labelClass=" dark:text-current"
-              containerClass=""
-            />
-          </div>
-
-          <div className="col-span-1 md:col-span-2">
-            <TextArea
-              register={register}
-              errors={errors}
-              required={translations.messageRequired}
-              nameTextArea="message"
-              patternValue=""
-              patternMessage=""
-              placeholder={translations.messagePlaceholder}
-              rows={4}
-              cols={20}
-              maxLength={1450}
-              maxLengthMessage={translations.messagePlaceholderErrorMessage}
-              validate=""
-            />
-          </div>
         </div>
 
+        <Input
+          id="subject"
+          register={register}
+          errors={errors}
+          nameInput="subject"
+          type="text"
+          required={translations.subjectRequired}
+          patternValue=""
+          patternMessage={translations.subjectRequired}
+          placeholder={translations.subjectPlaceholder}
+          className="input mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
+          label={translations.subject}
+          labelClass=""
+          containerClass=""
+        />
+
+        <TextArea
+          title={translations.message}
+          register={register}
+          errors={errors}
+          required={translations.messageRequired}
+          nameTextArea="message"
+          patternValue=""
+          patternMessage=""
+          placeholder={translations.messagePlaceholder}
+          rows={4}
+          cols={20}
+          maxLength={1450}
+          maxLengthMessage={translations.messagePlaceholderErrorMessage}
+          validate=""
+        />
+
         <div className="w-60 mx-auto mt-6">
-          <ButtonRefactor 
+          <ButtonRefactor
             type='submit'
             text={send ? translations.sendingButton : translations.sendButton}
             disabled={errorsList[0] ? true : false}

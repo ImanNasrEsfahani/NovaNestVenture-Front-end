@@ -164,9 +164,10 @@ const initialFormData: Entrepreuneur = {
 };
 
 const ContactFormData: ContactUSFormData = {
-  name: '',
+  firstName: '',
+  lastName: '',
   email: '',
-  number: '',
+  phoneNumber: '',
   subject: '',
   message: ''
 };

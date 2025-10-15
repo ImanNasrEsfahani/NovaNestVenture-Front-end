@@ -6,6 +6,8 @@ import StoryLine from '@/components/about/StoryLine';
 import VisionMission from '@/components/about/VisionMission';
 import Differentiators from '@/components/about/Differentiators';
 import Founder from '@/components/about/Founder';
+import ContactUsForm from '@/components/common/form/ContactUsForm';
+import ContactUsDescription from '@/components/common/ContactUsDescription';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | About',
@@ -47,6 +49,11 @@ export default function Page({
         <Differentiators lang={lang} />
 
         <Founder lang={lang} />
+
+        <div className='w-full max-w-responsive mx-auto grid grid-cols-1 gap-12 px-5 py-8 md:flex items-center md:flex-row md:justify-between'>        
+          <ContactUsDescription lang={lang} />
+          <ContactUsForm lang={lang} />
+        </div>
       </div>
     </>
   );

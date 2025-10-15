@@ -75,6 +75,7 @@ export default function PersonalInfoInput({
   // };
 
   // const [selectedRadio, setSelectedRadio] = useState('');
+  console.log(translations);
 
   return (
     <>
