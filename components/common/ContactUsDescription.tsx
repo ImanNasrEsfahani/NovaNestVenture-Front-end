@@ -28,7 +28,7 @@ export default function ContactUsDescription({lang}: {lang: string}) {
       {/* TODO: avoid hardcode links and urls */}
       <div className="flex flex-row gap-7 pt-2">
         <Link
-          href={'https://instagram.com/novanestventure'}
+          href={'https://instagram.com/novanest.venture'}
           target="_blank"
         >
           <Image

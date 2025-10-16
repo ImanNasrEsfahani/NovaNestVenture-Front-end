@@ -39,7 +39,7 @@ export default function Footer({
             {t('about.text')}
           </div>
           <div className="mt-2 flex flex-row items-center text-black gap-4">
-            <Link aria-label="Instagram" href={'https://instagram.com/novanestventure'} className="hover:text-primary" target="_blank">
+            <Link aria-label="Instagram" href={'https://instagram.com/novanest.venture'} className="hover:text-primary" target="_blank">
               <Instagram />
             </Link>
             <Link aria-label="Email" href={'mailto:info@NovaNestVenture.com'} className="hover:text-primary">
