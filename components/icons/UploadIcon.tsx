@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UploadIcon = () => {
+export default function UploadIcon() {
   return (
     <svg
       width="24"
@@ -20,5 +20,3 @@ const UploadIcon = () => {
     </svg>
   );
 };
-
-export default UploadIcon;

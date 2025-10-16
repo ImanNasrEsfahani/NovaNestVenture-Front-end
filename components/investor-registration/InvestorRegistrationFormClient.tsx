@@ -11,7 +11,6 @@ import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 import FormTitle from '@/components/common/form/FormTitle';
-import CountryInput from '@/components/common/form/CountryInput';
 
 interface Translations {
   formTitle: string;

@@ -10,7 +10,7 @@ type Props = {
     register: UseFormRegister<StartupsFormData>
 }
 
-const StartUpFormCheckbox = (props: Props) => {
+export default function StartUpFormCheckbox(props: Props) {
 
   const { name, register } = props;
   const {
@@ -50,5 +50,3 @@ const StartUpFormCheckbox = (props: Props) => {
     </div>
   )
 }
-
-export default StartUpFormCheckbox

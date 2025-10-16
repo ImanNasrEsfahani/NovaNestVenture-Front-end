@@ -6,7 +6,7 @@ import './contact.css';
 import AboutUsNovaNest from '@/components/about/AboutUs';
 import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
 import StoryOfLanda from '@/components/about/StoryOfUs';
-import KeyDifferentiating from '@/components/KeyDifferentiating';
+import KeyDifferentiating from '@/components/contact-us/KeyDifferentiating';
 import AboutUsProfile from '@/components/about/Profile';
 
 export const metadata: Metadata = {
