@@ -6,7 +6,7 @@ export default function VisionMission({ lang }: { lang: string }) {
   const visionMission = t('visionMission', { returnObjects: true }) as any;
 
   return (
-    <section className="w-full max-w-responsive mx-auto py-16 px-4 md:px-8">
+    <section className="w-full max-w-responsive mx-auto pt-16 pb-24 px-4 md:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         {/* Mission Card */}
         <div className="flex flex-col bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -16,7 +16,7 @@ export default function VisionMission({ lang }: { lang: string }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h2 className="text-3xl md:text-4xl font-header font-bold text-primary mb-6">
+            <h2 className="text-3xl md:text-4xl font-header font-bold text-primary">
               {visionMission.mission.title}
             </h2>
           </div>

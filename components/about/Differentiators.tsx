@@ -8,7 +8,7 @@ export default function Differentiators({ lang }: { lang: string }) {
 
   return (
     <section className="w-full max-w-responsive mx-auto py-12 px-4">
-        <h3 className="text-2xl md:text-3xl font-header font-bold text-center mb-6">
+        <h3 className="text-2xl md:text-3xl font-header font-bold text-center pb-12">
           {title}
         </h3>
 

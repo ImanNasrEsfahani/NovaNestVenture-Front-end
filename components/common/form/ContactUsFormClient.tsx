@@ -161,7 +161,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
         {translations.title}
       </h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:w-[524px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <PersonalInfoInput
             register={register}
             errors={errors}
@@ -233,7 +233,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
           patternValue=""
           patternMessage={translations.subjectRequired}
           placeholder={translations.subjectPlaceholder}
-          className="input mb-1 mt-3 w-full bg-whiteGold dark:placeholder-[#9CA3AF]"
+          className="input"
           label={translations.subject}
           labelClass=""
           containerClass=""

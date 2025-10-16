@@ -11,20 +11,20 @@ export default function Founder({ lang }: { lang: string }) {
       <div className="bg-whiteGold rounded-2xl shadow-md overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center p-6">
           <div className="h-full flex justify-center px-2">
-            <div className="size-full aspect-square relative rounded-full overflow-hidden ring-2 ring-primary/20">
+            <div className="size-full aspect-square relative rounded-lg overflow-hidden ring-2 ring-primary/20">
               <Image
                 src={founder.image?.src ?? '/static/images/about/founder-rasoul-moradimehr.png'}
                 alt={founder.image?.alt ?? 'Founder of NovaNest Venture - Rasoul Moradimehr'}
                 fill
                 sizes="(max-width: 1024px) 40vw, 240px"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
           </div>
 
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            <h3 className="text-xl md:text-2xl font-header font-bold">{founder.title}</h3>
-            <h4 className="text-lg md:text-xl font-semibold text-primary">{founder.name}</h4>
+          <div className="lg:col-span-2 flex flex-col justify-center gap-4 py-4">
+            <h3 className="text-xl md:text-2xl font-header font-bold mb-2">{founder.title}</h3>
+            <h4 className="text-lg md:text-xl font-semibold text-primary mb-6">{founder.name}</h4>
 
             <div className="text-sm md:text-base text-gray-700 space-y-4">
               { founder.paragraphs.map((p: string, i: number) => (

@@ -8,7 +8,7 @@ export default function AboutUs({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'mainPage');
 
     return (
-        <section className="w-full max-w-responsive mx-auto text-center pt-20 pb-10 bg-gradient-to-b from-white to-gray-50">
+        <section className="w-full max-w-responsive mx-auto text-center pt-20 pb-10">
             <h2 className="text-3xl md:text-4xl font-header font-bold mb-8 text-gray-800 relative">
                 <span className="relative inline-block">{t('AboutUs')}</span>
             </h2>
@@ -17,7 +17,7 @@ export default function AboutUs({ lang }: { lang: string }) {
             </p>
             {/* <a href="/about" className="btn btn-neutral normal-case text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary hover:border-primary transition-all duration-300">
             Read more</a> */}
-            <div className="max-w-container-xxs mx-auto">
+            <div className="max-w-xs lg:w-[200px] mx-auto">
                 <ButtonRefactor text={t('ReadMore')} type="link" href={`${base}/about-us`} />
             </div>
         </section>

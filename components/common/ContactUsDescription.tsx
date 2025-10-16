@@ -59,16 +59,28 @@ export default function ContactUsDescription({lang}: {lang: string}) {
           />
         </Link>
         <Link
-          href={'https://www.linkedin.com/company/landa-startup-inc'}
+          href={'https://www.linkedin.com/company/novanest'}
           target="_blank"
         >
-          {/* <Image
-          src="/static/images/icons/web.png"
+          <Image
+          src="/static/images/icons/linkedin.png"
           alt="NovaNest Venture Key Differentiating"
           width={26}
           height={741}
           loading="lazy"
-        /> */}
+        />
+        </Link>
+        <Link
+          href={'https://www.facebook.com/novanest'}
+          target="_blank"
+        >
+          <Image
+          src="/static/images/icons/facebook.png"
+          alt="NovaNest Venture Key Differentiating"
+          width={26}
+          height={741}
+          loading="lazy"
+        />
         </Link>
       </div>
       {/* TODO: use translation instead hardcode */}
