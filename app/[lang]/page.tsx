@@ -9,6 +9,12 @@ import Academy from '@/components/home/Academy';
 import AboutUs from '@/components/home/AboutUs';
 import { getServerTranslation } from 'app/i18n';
 
+
+import WhatIsStartupVisa from '@/components/startup/WhatIsStartupVisa';
+import OurServices from '@/components/startup/OurServices';
+import Intro from "@/components/pnp/Intro";
+import OurService from '@/components/pnp/OurService';
+
 export const metadata: Metadata = {
   title: 'NovaNest Venture',
   description:
@@ -30,6 +36,13 @@ export default function Page({ params }: { params: { lang: string } }) {
         <AboutUs lang={params.lang} />
         <HomeCardsContainer lang={params.lang} />
         <SpecialFeatures lang={params.lang} />
+
+        <WhatIsStartupVisa lang={params.lang} />
+        <OurServices lang={params.lang} />
+
+        <Intro lang={params.lang} />
+        <OurService lang={params.lang} />
+
         <Academy lang={params.lang} />
         <HalvesCards lang={params.lang} />
         <LatestStartups lang={params.lang} />

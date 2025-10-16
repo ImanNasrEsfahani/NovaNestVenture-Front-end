@@ -24,7 +24,7 @@ export default function HomeCardsSection({
 
   return (
     <div
-      className={`flex flex-col-reverse ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-x-10 items-center justify-between last:border-none`}
+      className={`flex flex-col-reverse ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-x-10 items-center justify-between`}
     >
       <div className="flex flex-col h-full items-start justify-between gap-16 md:w-1/2">
         <div className="flex flex-col items-start gap-4">
