@@ -155,7 +155,7 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-6 grid grid-cols-1 gap-x-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mb-6 grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
             errors={errors}

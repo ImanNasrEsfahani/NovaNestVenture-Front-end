@@ -46,7 +46,7 @@ export default function PersonalInfoSection({
 }: PersonalInfoSectionProps) {
   return (
     <>
-      <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
         <Select 
           labelClass='' 
           register={register} 
@@ -111,7 +111,7 @@ export default function PersonalInfoSection({
           {workWithUS.formSubtitleTop}
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="col-span-1">
           <Input
             id="your_first_name"

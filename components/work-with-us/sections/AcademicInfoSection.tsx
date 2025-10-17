@@ -28,7 +28,7 @@ export default function AcademicInfoSection({
   handleUniChange
 }: AcademicInfoSectionProps) {
   return (
-    <div className="grid grid-cols-1 gap-x-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
       <div className="col-span-1">
         <Input
           id="your_field_of_study"

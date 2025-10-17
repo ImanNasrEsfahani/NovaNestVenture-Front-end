@@ -18,7 +18,7 @@ export default function StartupFormBusinessModel({
 
   return (
     <>
-      <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="my-6 grid grid-cols-1 gap-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="col-span-2">
           <div className="bg-[#222222CC]">
             <p className="mb-3 w-[310px] border-b py-5 pl-10 text-3xl text-white md:w-[550px] lg:w-[450px] xl:w-[650px]">

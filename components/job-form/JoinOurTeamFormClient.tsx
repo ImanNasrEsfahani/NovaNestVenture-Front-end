@@ -206,7 +206,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-        <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 p-3 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-4 mb-6 grid grid-cols-1 gap-6 gap-y-4 p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
             errors={errors}

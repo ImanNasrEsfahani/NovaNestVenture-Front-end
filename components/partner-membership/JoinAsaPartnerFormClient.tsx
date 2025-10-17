@@ -196,7 +196,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         />
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 gap-x-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
             errors={errors}
