@@ -2,57 +2,11 @@
     "lng": "fa",
     "dir": "rtl",
     "banner": "برنامه کارآفرینی",
-
-    "service-details": [
-        {
-            "header": "Business Evaluation & Planning",
-            "content": [
-            "Assessing and selecting the right business based on applicant’s profile",
-            "Market research and data collection",
-            "Drafting marketing materials and business planning documents",
-            "Preparing HR and staffing documents",
-            "Developing a management plan",
-            "Writing a professional business plan aligned with provincial standards",
-            "Preparing financial forms according to SME standards"
-            ]
-        },
-        {
-            "header": "Document & Application Preparation",
-            "content": [
-            "Collecting required documents and preparing a professional resume",
-            "Preparing official templates for required letters",
-            "Completing provincial application forms",
-            "Preparing and submitting EOI (Expression of Interest) to provinces",
-            "Identifying licensed Net-Worth Verifier companies in Canada",
-            "Coordinating and obtaining net-worth verification reports",
-            "Submitting official applications to provincial authorities"
-            ]
-        },
-        {
-            "header": "Immigration Process Support",
-            "content": [
-            "Guidance and preparation for interviews",
-            "Applying for work permits for applicants and spouses, and study permits for children",
-            "Submitting Permanent Residence applications",
-            "Receiving provincial nomination (Nomination Services)"
-            ]
-        },
-        {
-            "header": "Settlement & Financial Support",
-            "content": [
-            "Landing services, including assistance with opening a bank account, obtaining SIN, and other settlement needs",
-            "Coverage of government fees"
-            ]
-        }
-    ],
-
-
     "Intro": {
         "title": "Entrepreneurship in Canada",
         "subtitle": "Provincial Nominee Programs (PNP)",
         "description": "Canada is one of the world’s most attractive destinations for entrepreneurs. Through the Provincial Nominee Programs (PNP), Canadian provinces offer unique pathways for international entrepreneurs to establish or purchase a business and obtain permanent residency for themselves and their families."
     },
-
     "whyStartBusiness": {
         "title": "Why Start a Business in Canada?",
         "points": [
@@ -66,7 +20,6 @@
             "alt": "Business Growth"
         }
     },
-
     "requirements": {
         "title": "General Requirements of Entrepreneurial PNP Programs",
         "subtitle": "While each province has its own specific rules, common requirements include",
@@ -93,16 +46,58 @@
             }
         ]
     },
-
     "services": {
         "title": "Our Services for Entrepreneurs",
-        "description": "At Novanest, we provide end-to-end support for your entrepreneurial journey in Canada:",
+        "description": "At Novanest, our services are designed to guide entrepreneurs through every stage of the provincial entrepreneur immigration process — from developing a solid and practical business plan to obtaining provincial nomination and successfully establishing and expanding their business in Canada. Our focus is to make the entire journey clear, strategic, and result-driven.",
+        "serviceDetails": [
+            {
+                "header": "Business Evaluation & Planning",
+                "content": [
+                    "Assessing and selecting the right business based on applicant’s profile",
+                    "Market research and data collection",
+                    "Drafting marketing materials and business planning documents",
+                    "Preparing HR and staffing documents",
+                    "Developing a management plan",
+                    "Writing a professional business plan aligned with provincial standards",
+                    "Preparing financial forms according to SME standards"
+                ]
+            },
+            {
+                "header": "Document & Application Preparation",
+                "content": [
+                    "Collecting required documents and preparing a professional resume",
+                    "Preparing official templates for required letters",
+                    "Completing provincial application forms",
+                    "Preparing and submitting EOI (Expression of Interest) to provinces",
+                    "Identifying licensed Net-Worth Verifier companies in Canada",
+                    "Coordinating and obtaining net-worth verification reports",
+                    "Submitting official applications to provincial authorities"
+                ]
+            },
+            {
+                "header": "Immigration Process Support",
+                "content": [
+                    "Guidance and preparation for interviews",
+                    "Applying for work permits for applicants and spouses, and study permits for children",
+                    "Submitting Permanent Residence applications",
+                    "Receiving provincial nomination (Nomination Services)"
+                ]
+            },
+            {
+                "header": "Settlement & Financial Support",
+                "content": [
+                    "Landing services, including assistance with opening a bank account, obtaining SIN, and other settlement needs",
+                    "Coverage of government fees"
+                ]
+            }
+        ],
         "image": {
             "src": "/static/images/pnp/pnp-services.png",
-            "alt": "SUV startup Services"
+            "alt": "SUV startup Services",
+            "width": 400,
+            "height": 300
         }
     },
-
     "why": {
         "title": "Why Novanest?",
         "points": [

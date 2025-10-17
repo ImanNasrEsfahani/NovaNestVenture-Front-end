@@ -34,10 +34,10 @@
   "CharacteristicsOfEntrepreneurship": {
     "title": "ویژگی‌های کارآفرینی:"
   },
-  "itemsCharecter" : {
-    "item1":"کارآفرینی یک فعالیت اقتصادی و پویا است",
-    "item2":"کارآفرینی با نوآوری رابطه مستقیم دارد",
-    "item3":"کارآفرینی مستلزم ریسک‌پذیری است"
+  "itemsCharecter": {
+    "item1": "کارآفرینی یک فعالیت اقتصادی و پویا است",
+    "item2": "کارآفرینی با نوآوری رابطه مستقیم دارد",
+    "item3": "کارآفرینی مستلزم ریسک‌پذیری است"
   },
   "AcceleratorProcess": [
     {
@@ -61,52 +61,47 @@
     }
   ],
   "Register": "ثبت نام کنید",
-
-
   "Intro": {
     "title": "NovaNest Accelerator",
     "subtitle": "NovaNest empowers entrepreneurs, startups, and businesses to grow and succeed in global markets",
     "description": "At NovaNest, we empower entrepreneurs, startups, and established businesses by guiding them from concept to sustainable success in global markets. Our mission is to accelerate growth through tailored resources, expert training, and valuable networking opportunities. Whether you are launching a new idea or scaling an existing business, we provide the support and guidance you need to achieve lasting impact.",
     "cta": "Book a free consultation"
   },
-
   "why": {
     "title": "Why Choose NovaNest Accelerator?",
     "items": [
-              {
-                "title": "Expert Mentorship",
-                "text": "Access to experienced advisors and founders offering practical and strategic guidance.",
-                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 11c1.657 0 3-1.343 3-3S9.657 5 8 5 5 6.343 5 8s1.343 3 3 3zM2 20v-1a4 4 0 014-4h12a4 4 0 014 4v1\" /></svg>"
-              },
-              {
-                "title": "Global Networking",
-                "text": "Connections to a worldwide network of investors, entrepreneurs, and industry experts.",
-                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 6a6 6 0 100 12 6 6 0 000-12z\" /></svg>"
-              },
-              {
-                "title": "Hands-on Training",
-                "text": "Workshops and training programs covering business models, digital marketing, fundraising, and product development.",
-                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 8v8M8 12h8M4 6h16v12H4z\" /></svg>"
-              },
-              {
-                "title": "Financial Support",
-                "text": "Assistance in securing funding through angel investors and venture capital networks.",
-                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2M12 4v2M12 18v2\" /></svg>"
-              }
-            ]
+      {
+        "title": "Expert Mentorship",
+        "text": "Access to experienced advisors and founders offering practical and strategic guidance.",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 11c1.657 0 3-1.343 3-3S9.657 5 8 5 5 6.343 5 8s1.343 3 3 3zM2 20v-1a4 4 0 014-4h12a4 4 0 014 4v1\" /></svg>"
+      },
+      {
+        "title": "Global Networking",
+        "text": "Connections to a worldwide network of investors, entrepreneurs, and industry experts.",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 6a6 6 0 100 12 6 6 0 000-12z\" /></svg>"
+      },
+      {
+        "title": "Hands-on Training",
+        "text": "Workshops and training programs covering business models, digital marketing, fundraising, and product development.",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 8v8M8 12h8M4 6h16v12H4z\" /></svg>"
+      },
+      {
+        "title": "Financial Support",
+        "text": "Assistance in securing funding through angel investors and venture capital networks.",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6 text-current\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"1.5\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2M12 4v2M12 18v2\" /></svg>"
+      }
+    ]
   },
-
   "process": {
     "title": "Acceleration Process",
     "items": [
-              "Idea Evaluation: Market analysis, competitor review, and business model assessment.",
-              "Product Development: Guidance in designing and building a Minimum Viable Product (MVP).",
-              "Marketing & Sales: Crafting digital marketing and sales strategies to attract initial customers.",
-              "Fundraising: Preparing startups to pitch and secure investment.",
-              "Global Expansion: Planning and executing strategies for entry into international markets."
-            ]
+      "Idea Evaluation: Market analysis, competitor review, and business model assessment.",
+      "Product Development: Guidance in designing and building a Minimum Viable Product (MVP).",
+      "Marketing & Sales: Crafting digital marketing and sales strategies to attract initial customers.",
+      "Fundraising: Preparing startups to pitch and secure investment.",
+      "Global Expansion: Planning and executing strategies for entry into international markets."
+    ]
   },
-
   "impact": {
     "title": "Our Impact",
     "items": [

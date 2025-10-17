@@ -36,27 +36,43 @@
   "FieldOfExpertData": [
     {
       "value": 0,
-      "label": "برنامه نویس"
+      "label": "Developer"
     },
     {
       "value": 1,
-      "label": "بازاریابی"
+      "label": "Marketing"
     },
     {
       "value": 2,
-      "label": "گرافیک"
+      "label": "Sales"
     },
     {
       "value": 3,
-      "label": "مهاجرت"
+      "label": "Graphist"
     },
     {
       "value": 4,
-      "label": "حسابداری"
+      "label": "Accountant"
     },
     {
       "value": 5,
-      "label": "اداری"
+      "label": "Administrative Assistant"
+    },
+    {
+      "value": 6,
+      "label": "Socail Media Admin"
+    },
+    {
+      "value": 7,
+      "label": "Video Editor"
+    },
+    {
+      "value": 8,
+      "label": "Photo and Video Content Creator"
+    },
+    {
+      "value": 9,
+      "label": "Other"
     }
   ],
   "FieldOfExpertOther": "Please specify your field of expertise.",
@@ -65,6 +81,8 @@
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",
+  "birthDateErrorMessageForFutureDate": "لطفا تاریخ معتبری قبل از امروز وارد کنید",
+  "birthDateErrorMessageForAge": "سن شما قابل قبول نیست.",
   "birthDatePlaceholder": "لطفا تاریخ تولد خود را وارد کنید.",
   "EducationLevels": "Education Level",
   "EducationLevelsRequired": "Education Level is Required",
@@ -79,18 +97,22 @@
   "EducationLevelsData": [
     {
       "value": 0,
-      "label": "Diploma"
+      "label": "Under-Diploma"
     },
     {
       "value": 1,
-      "label": "Bachelor"
+      "label": "Diploma"
     },
     {
       "value": 2,
-      "label": "Master"
+      "label": "Bachelor"
     },
     {
       "value": 3,
+      "label": "Master"
+    },
+    {
+      "value": 4,
       "label": "PhD"
     }
   ],
@@ -117,36 +139,22 @@
   "howDidYouKnowUsPlaceholder": "مثلاً شبکه‌های اجتماعی و ...",
   "howDidYouKnowUsErrorMessage": "پیام باید کمتر از 1450 کاراکتر باشد.",
   "howDidYouKnowUsRequired": "پر کردن این قسمت الزامی است",
-
   "website": "Website",
   "websiteRequired": "Website is required",
   "websitePlaceholder": "Enter your website",
   "websiteErrorMessage": "Enter a Valid Website URL",
-
   "linkedin": "LinkedIn",
   "linkedinRequired": "LinkedIn is required",
   "linkedinPlaceholder": "Enter your LinkedIn profile URL",
   "linkedinErrorMessage": "Enter a Valid LinkedIn URL",
-
   "instagram": "Instagram",
   "instagramRequired": "Instagram is required",
   "instagramPlaceholder": "Enter your Instagram profile URL or username",
   "instagramErrorMessage": "Enter a Valid Instagram URL",
-
   "briefIntroduction": "Brief Introduction",
   "briefIntroductionRequired": "Brief Introduction is required",
   "briefIntroductionPlaceholder": "Enter a brief introduction",
   "briefIntroductionErrorMessage": "The message must be less than 1450 characters.",
-
-  "provinceOfResidence": "استان محل سکونت",
-  "provinceOfResidencePlaceholder": "استان محل سکونت را وارد کنید",
-  "provinceOfResidenceRequired": "پر کردن استان محل سکونت الزامی است",
-  "countryOfResidence": "کشور محل اقامت",
-  "countryOfResidencePlaceholder": "ایران",
-  "countryOfResidenceRequired": "وارد کردن کشور محل اقامت الزامی است",
-  "cityOfResidence": "شهر محل اقامت",
-  "cityOfResidencePlaceholder": "تهران",
-  "cityOfResidenceRequired": "شهر محل اقامت الزامی است",
   "investmentCeiling": "سقف سرمایه گذاری",
   "investmentCeilingRequired": "این بخش الزامی است.",
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
@@ -328,45 +336,37 @@
         "propertyRevenueRequired": "This field is required",
         "propertyRevenuePlaceholder": "Description",
         "propertyRevenueErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyMonthly": "How much is your monthly income?",
         "propertyMonthlyRequired": "This field is required",
         "propertyMonthlyPlaceholder": "Description",
         "propertyMonthlyErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyRate": "What is your current interest rate?",
         "propertyRateRequired": "This field is required",
         "propertyRatePlaceholder": "Description",
         "propertyRateErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyBusiness": "How much current funding did you raise before starting your business?",
         "propertyBusinessRequired": "This field is required",
         "propertyBusinessPlaceholder": "Description",
         "propertyBusinessErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyCapital": "How much capital do you need to start your project?",
         "propertyCapitalRequired": "This field is required",
         "propertyCapitalPlaceholder": "Description",
         "propertyCapitalErrorMessage": "The message must be less than 1450 characters."
       },
       "targetMarketDropDown": {
-
         "targetMarket": "Target Market",
         "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?",
         "targetCharacteristicsRequired": "This field is required",
         "targetCharacteristicsPlaceholder": "Description",
         "targetCharacteristicsErrorMessage": "The message must be less than 1450 characters.",
-
         "targetCustomers": "Who are your current customers? How many customers have you had so far?",
         "targetCustomersRequired": "This field is required",
         "targetCustomersPlaceholder": "Description",
         "targetCustomersErrorMessage": "The message must be less than 1450 characters.",
-
         "targetEstimated": "How have you estimated the size of the market?",
         "targetEstimatedRequired": "This field is required",
         "targetEstimatedPlaceholder": "Description",
         "targetEstimatedErrorMessage": "The message must be less than 1450 characters.",
-
         "targetTotal": "targetTotal",
         "targetTotalRequired": "targetTotal",
         "targetTotalPlaceholder": "targetTotal",
@@ -430,17 +430,14 @@
     "cooperatedWithInvestors": "آیا قبلا با سرمایه گذاران یا شتاب دهنده ها کار کرده اید؟",
     "cooperatedWithInvestorsPlaceholder": "توضیحات",
     "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
-
     "solutions": {
       "title": "راه حل ها",
       "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟",
       "solutionPlaceholder": "توضیحات",
       "solutionRequired": "این قسمت الزامی است!",
       "solutionsErrorMessage": "The message must be less than 1450 characters.",
-
       "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
       "productLevelRequired": "آمار آماده سازی مورد نیاز است",
-      
       "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد",
       "scalablePlaceholder": "توضیحات",
       "scalableRequired": "این قسمت الزامی است!",
@@ -478,17 +475,14 @@
       "startupRevenuePlaceholder": "Description",
       "startupRevenueRequired": "This field is required!",
       "startupRevenueErrorMessage": "The message must be less than 1450 characters.",
-      
       "monthlyIncome": "How much is your monthly income? ",
       "monthlyIncomePlaceholder": "Description",
       "monthlyIncomeRequired": "This field is required!",
       "monthlyIncomeErrorMessage": "The message must be less than 1450 characters.",
-
       "currentRaisedFunding": "How much current funding did you raise before starting your business? ",
       "currentRaisedFundingPlaceholder": "Description",
       "currentRaisedFundingRequired": "This field is required!",
       "currentRaisedFundingErrorMessage": "The message must be less than 1450 characters.",
-
       "neededCapital": "How much capital do you need to start your project? ",
       "neededCapitalPlaceholder": "Description",
       "neededCapitalRequired": "This field is required!",
@@ -500,12 +494,10 @@
       "customerCharacteristicPlaceholder": "توضیحات",
       "customerCharacteristicRequired": "این قسمت الزامی است!",
       "customerCharacteristicErrorMessage": "The message must be less than 1450 characters.",
-
       "currentCustomers": "مشتریان فعلی شما چه کسانی هستند؟ چه تعداد مشتری تا امروز داشته‌اید؟",
       "currentCustomersPlaceholder": "توضیحات",
       "currentCustomersRequired": "این قسمت الزامی است!",
       "currentCustomersErrorMessage": "The message must be less than 1450 characters.",
-      
       "estimatedMarketSize": "چگونه مقیاس و انداره بازار هدف خود را محاسبه می‌کنید؟",
       "estimatedMarketSizePlaceholder": "توضیحات",
       "estimatedMarketSizeRequired": "این قسمت الزامی است!",
@@ -551,7 +543,7 @@
     ]
   },
   "startupApplicantForm": {
-    "formTitle": "Apply for SUV Program",
+    "formTitle": "Apply for Startup Visa Program",
     "formSubtitle": "Let’s Talk About Your Journey",
     "sendingButton": "Submitting ....",
     "sendButton": "Send",
