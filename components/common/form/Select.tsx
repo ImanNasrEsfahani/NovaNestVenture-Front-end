@@ -32,24 +32,33 @@ export default function Select({
           {label}
           {required ? <span className="text-red-500 ml-1">*</span> : null}
         </span>
-        <select
-          id={nameInput}
-          {...register(nameInput, {
-            required: required
-          })}
-          className={`w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
-          onChange={handleChange}
-          defaultValue=""
-        >
-          <option value="" disabled>
-            {placeholder}
-          </option>
-          {options.map((option, index) => (
-            <option key={index} value={option.label}>
-              {option.label}
+
+        <div className="relative">
+          <select
+            id={nameInput}
+            {...register(nameInput, {
+              required: required
+            })}
+            className={`w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] pr-10 ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
+            onChange={handleChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
+              {placeholder}
             </option>
-          ))}
-        </select>
+            {options.map((option, index) => (
+              <option key={index} value={option.label}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+
+          <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+            </svg>
+          </span>
+        </div>
       </label>
 
       {errors[nameInput] && (
