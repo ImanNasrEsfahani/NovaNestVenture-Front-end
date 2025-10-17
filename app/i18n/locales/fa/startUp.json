@@ -3,7 +3,6 @@
   "dir": "rtl",
   "banner": "استارتاپ چیست",
   "button": "مراحل راه‌اندازی استارتاپ",
-
   "differences-title": "تفاوت‌های کلیدی بین استارتاپ‌ها و کسب‌وکارهای کوچک",
   "differences-detail": "در حالی که همه استارتاپ‌ها فعالیت خود را به‌عنوان کسب‌وکارهای کوچک آغاز می‌کنند، اهداف نهایی آن‌ها تفاوت قابل‌توجهی با یکدیگر دارند. هدف اصلی استارتاپ‌ها، عبور از وضعیت اولیه و تبدیل شدن به بازیگران بزرگ در بازار هدف است. در مقابل، بسیاری از کسب‌وکارهای کوچک به دنبال ثبات و سودآوری در یک حوزه مشخص هستند. آن‌ها بیشتر بر رشد ارگانیک، رضایت مشتری و عملیات پایدار تمرکز دارند و مالکان این کسب‌وکارها اغلب از مقیاس فعلی خود راضی هستند و تمایلی به گسترش سریع ندارند. استارتاپ‌ها با ذهنیت یا بزرگ شو یا کنار برو فعالیت می‌کنند، در حالی که کسب‌وکارهای کوچک دوام و بازدهی مستمر را در اولویت قرار می‌دهند.,",
   "differences-list": [
@@ -12,13 +11,10 @@
     "پتانسیل رشد سریع",
     "خلاقیت و نوآوری"
   ],
-
   "nature-title": "ماهیت استارتاپ‌ها",
   "nature-detail": "داشتن یک ایده نوآورانه، برای شکل‌گیری استارتاپ ضروری است. این نوع کسب‌وکارها اغلب به‌دنبال حل مشکلات یا ارائه خدمات جدید از طریق شناسایی خلأ در محصولات یا خدمات موجود و ارائه راه‌حل‌های خلاقانه هستند. نوانست ونچر، با بهره‌گیری از تیمی متشکل از متخصصان، مشاوران و کارشناسان بین‌المللی، آماده است تا از کارآفرینان مشتاق برای راه‌اندازی کسب‌وکارشان و عبور از چالش‌های این مسیر حمایت کند.",
-
   "gateway-title": "نوانست ونچر : دروازه‌ای برای موفقیت در کانادا",
   "gateway-detail": "نوانست خدمات جامع و تخصصی برای کمک به استارتاپ‌های نوپا که از طریق برنامه ویزای استارتاپ وارد کانادا شده‌اند، ارائه می‌دهد. با بهره‌گیری از خدمات مشاوره‌ای تیم مجرب ما، می‌توانید بر چالش‌های راه‌اندازی و توسعه استارتاپ بین‌المللی در حوزه‌های مختلفی ازجمله سلامت، ژننیک، آموزش و صنایع دستی غلبه کنید.",
-
   "service-title": "خدمات نوانست",
   "service-list": [
     {
@@ -42,7 +38,6 @@
       "description": "رشد و گسترش یک کسب‌وکار در بازاری جدید و ناشناخته، نیازمند سرمایه‌گذاری کافی است. ما با فراهم کردن بستر سرمایه‌گذاری، مسیر رشد و موفقیت استارتاپ‌ها را هموار می‌کنیم."
     }
   ],
-
   "services-title": "خدمات نوانست برای استارتاپ‌های تازه‌وارد به بازار کانادا",
   "services-list": [
     "تدوین طرح تجاری تخصصی",
@@ -61,144 +56,143 @@
     "مشاوره کسب‌وکار",
     "بررسی فاکتورها"
   ],
-  
-  
-  "service-details": [
-      {
-          "header": "Business Concept Assessment & Development",
-          "content": [
-              "Assessing the client’s management experience and education in the context of a qualifying Canadian business",
-              "Identifying economic priorities in Canada and matching them with the client’s qualifications and proposed concepts",
-              "Collaborating with incubators and angel investors to evaluate and enhance the business concept",
-              "Assisting the client in developing a business concept that meets the requirements for a Letter of Support / Commitment Certificate"
-          ]
-      },
-      {
-          "header": "Business Documentation & Preparation",
-          "content": [
-              "Creating a professional Pitch Deck",
-              "Drafting a Business Plan within Canadian startup market standards",
-              "Business consultations, valuation assessments, and financial projections",
-              "Reviewing Pro Forma financial documents",
-              "Intellectual property review and filing patents (where applicable)",
-              "Incorporation, minute book preparation, and legal structuring"
-          ]
-      },
-      {
-          "header": "Support with Designated Organizations",
-          "content": [
-              "Presenting the client’s profile to designated entities",
-              "Coaching the client for all meetings and interviews with incubators",
-              "Supporting the client during Committee Review, Deal Screening, Coaching Meetings and related undertakings",
-              "Advising the client on compliance with the terms of the Letter of Support / Commitment Certificate"
-          ]
-      },
-      {
-          "header": "Immigration & Application Support",
-          "content": [
-              "Providing a checklist of required documents",
-              "Reviewing all documents and addressing potential issues",
-              "Drafting templates for required letters",
-              "Completing and reviewing all immigration forms",
-              "Preparing and submitting the complete immigration application to IRCC",
-              "Handling all correspondence with Canadian immigration authorities",
-              "Applications for work permits (client and spouse), study permits for children, and permanent residency",
-              "Landing services including guidance for opening a bank account, obtaining a SIN, and more"
-          ]
-      }
-  ],
-
   "latest-startups": [
     {
-        "title": "Landa Trip",
-        "description": "Landa Trip offers a unique experience of learning combined with travel and leisure. The platform connects learning enthusiasts worldwide, enabling them to share memories and favorite content. What sets Landa Trip apart is the opportunity to learn from top instructors while traveling, creating a deeper and unforgettable experience.",
-        "buttonText": "Go to website",
-        "buttonUrl": "https://landatrip.com/",
-        "imageSrc": "/static/images/startup/landa-trip.png",
-        "imageAlt": "Landa Trip logo",
-        "imageLogoSrc": "/static/images/home/startups/landa-trip.png",
-        "imageLogoAlt": "Landa Trip logo"
+      "title": "Landa Trip",
+      "description": "Landa Trip offers a unique experience of learning combined with travel and leisure. The platform connects learning enthusiasts worldwide, enabling them to share memories and favorite content. What sets Landa Trip apart is the opportunity to learn from top instructors while traveling, creating a deeper and unforgettable experience.",
+      "buttonText": "Go to website",
+      "buttonUrl": "https://landatrip.com/",
+      "imageSrc": "/static/images/startup/landa-trip.png",
+      "imageAlt": "Landa Trip logo",
+      "imageLogoSrc": "/static/images/home/startups/landa-trip.png",
+      "imageLogoAlt": "Landa Trip logo"
     },
     {
-        "title": "Vision Raft",
-        "description": "Vision Raft is an innovative platform that leverages virtual reality to allow children aged 4 to 7 to experience various educational programs creatively through games, without attending a physical classroom.",
-        "buttonText": "Go to website",
-        "buttonUrl": "https://visionraft.com/",
-        "imageSrc": "/static/images/startup/vision-raft.png",
-        "imageAlt": "Vision Raft logo",
-        "imageLogoSrc": "/static/images/home/startups/vision-raft.png",
-        "imageLogoAlt": "Vision Raft logo"
+      "title": "Vision Raft",
+      "description": "Vision Raft is an innovative platform that leverages virtual reality to allow children aged 4 to 7 to experience various educational programs creatively through games, without attending a physical classroom.",
+      "buttonText": "Go to website",
+      "buttonUrl": "https://visionraft.com/",
+      "imageSrc": "/static/images/startup/vision-raft.png",
+      "imageAlt": "Vision Raft logo",
+      "imageLogoSrc": "/static/images/home/startups/vision-raft.png",
+      "imageLogoAlt": "Vision Raft logo"
     },
     {
-        "title": "Diaco Center",
-        "description": "Diaco Center connects technology seekers with providers, facilitating technology transfer and interdisciplinary collaboration. Its advanced AI system offers tailored recommendations to meet the specific needs of each industry.",
-        "buttonText": "Go to website",
-        "buttonUrl": "https://www.diacocenter.com/",
-        "imageSrc": "/static/images/startup/diaco-center.png",
-        "imageAlt": "Diaco Center logo",
-        "imageLogoSrc": "/static/images/home/startups/diaco-center.png",
-        "imageLogoAlt": "Diaco Center logo"
+      "title": "Diaco Center",
+      "description": "Diaco Center connects technology seekers with providers, facilitating technology transfer and interdisciplinary collaboration. Its advanced AI system offers tailored recommendations to meet the specific needs of each industry.",
+      "buttonText": "Go to website",
+      "buttonUrl": "https://www.diacocenter.com/",
+      "imageSrc": "/static/images/startup/diaco-center.png",
+      "imageAlt": "Diaco Center logo",
+      "imageLogoSrc": "/static/images/home/startups/diaco-center.png",
+      "imageLogoAlt": "Diaco Center logo"
     },
     {
-        "title": "PreventiGene",
-        "description": "PreventiGene analyzes medical history, genetics, and individual traits to provide a personalized pathway for preventing chronic diseases and cancer. It also enhances awareness about drug and food sensitivities, empowering individuals to safeguard their future health.",
-        "buttonText": "Go to website",
-        "buttonUrl": "https://www.preventigene.com/",
-        "imageSrc": "/static/images/startup/landa-gene.png",
-        "imageAlt": "PreventiGene logo",
-        "imageLogoSrc": "/static/images/home/startups/landa-gene.png",
-        "imageLogoAlt": "PreventiGene logo"
+      "title": "PreventiGene",
+      "description": "PreventiGene analyzes medical history, genetics, and individual traits to provide a personalized pathway for preventing chronic diseases and cancer. It also enhances awareness about drug and food sensitivities, empowering individuals to safeguard their future health.",
+      "buttonText": "Go to website",
+      "buttonUrl": "https://www.preventigene.com/",
+      "imageSrc": "/static/images/startup/landa-gene.png",
+      "imageAlt": "PreventiGene logo",
+      "imageLogoSrc": "/static/images/home/startups/landa-gene.png",
+      "imageLogoAlt": "PreventiGene logo"
     }
   ],
-
   "whatIsStartupVisa": {
     "title": "What is Canada Startup Visa?",
     "subtitle": "Opportunities for Entrepreneurs & Investors",
     "description": "Canada’s Startup Visa program is a special immigration pathway for entrepreneurs and investors who want to launch innovative businesses in Canada or gain permanent residency by investing in approved startups. It provides support from trusted Canadian investors and accelerators to grow your business.",
     "list": [
-    "Receive support from a designated organization approved by the Canadian government (investor or accelerator)",
-    "Launch your own business or invest in innovative startups",
-    "Gain permanent residency for you and your family"
+      "Receive support from a designated organization approved by the Canadian government (investor or accelerator)",
+      "Launch your own business or invest in innovative startups",
+      "Gain permanent residency for you and your family"
     ]
   },
   "whoCanApply": {
-      "title": "Who Can Apply?",
-      "subtitle": "Applicants generally fall into two categories:",
-      "categories": [
+    "title": "Who Can Apply?",
+    "subtitle": "Applicants generally fall into two categories:",
+    "categories": [
       {
-          "title": "Entrepreneurs with their own startup:",
-          "details": [
+        "title": "Entrepreneurs with their own startup:",
+        "details": [
           "Innovative, scalable idea or product",
           "Experience to run a business",
           "Willing to live and work in Canada"
-          ]
+        ]
       },
       {
-          "title": "Investors without their own startup:",
-          "details": [
+        "title": "Investors without their own startup:",
+        "details": [
           "Invest in approved startups",
           "Focus on profit and collaboration",
           "Work with accelerators & investor networks"
-          ]
+        ]
       }
-      ]
+    ]
   },
-  "ourServices": {
-      "title": "Our Services for Canada Startup Visa",
-      "description": "At Novanest, we work closely with Canadian Designated Organizations to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
-      "imageAlt": "SUV startup Services"
+  "services": {
+    "title": "Our Services for Canada Startup Visa",
+    "description": "At Novanest, we work closely with <a href=\"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa/designated-organizations.html\" target=\"_blank\" rel=\"noopener noreferrer\">Canadian Designated Organizations</a> to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
+    "serviceDetails": [
+      {
+        "header": "Business Concept Assessment & Development",
+        "content": [
+          "Assessing the client’s management experience and education in the context of a qualifying Canadian business",
+          "Identifying economic priorities in Canada and matching them with the client’s qualifications and proposed concepts",
+          "Collaborating with incubators and angel investors to evaluate and enhance the business concept",
+          "Assisting the client in developing a business concept that meets the requirements for a Letter of Support / Commitment Certificate"
+        ]
+      },
+      {
+        "header": "Business Documentation & Preparation",
+        "content": [
+          "Creating a professional Pitch Deck",
+          "Drafting a Business Plan within Canadian startup market standards",
+          "Business consultations, valuation assessments, and financial projections",
+          "Reviewing Pro Forma financial documents",
+          "Intellectual property review and filing patents (where applicable)",
+          "Incorporation, minute book preparation, and legal structuring"
+        ]
+      },
+      {
+        "header": "Support with Designated Organizations",
+        "content": [
+          "Presenting the client’s profile to designated entities",
+          "Coaching the client for all meetings and interviews with incubators",
+          "Supporting the client during Committee Review, Deal Screening, Coaching Meetings and related undertakings",
+          "Advising the client on compliance with the terms of the Letter of Support / Commitment Certificate"
+        ]
+      },
+      {
+        "header": "Immigration & Application Support",
+        "content": [
+          "Providing a checklist of required documents",
+          "Reviewing all documents and addressing potential issues",
+          "Drafting templates for required letters",
+          "Completing and reviewing all immigration forms",
+          "Preparing and submitting the complete immigration application to IRCC",
+          "Handling all correspondence with Canadian immigration authorities",
+          "Applications for work permits (client and spouse), study permits for children, and permanent residency",
+          "Landing services including guidance for opening a bank account, obtaining a SIN, and more"
+        ]
+      }
+    ],
+    "image": {
+      "src": "/static/images/startup/team.png",
+      "alt": "SUV startup Services",
+      "width": 400,
+      "height": 300
+    }
   },
   "whyChooseUs": {
-      "title": "Why Choose NovaNest?",
-      "subtitle": "Experience • Network • Expertise",
-      "list": [
+    "title": "Why Choose NovaNest?",
+    "subtitle": "Experience • Network • Expertise",
+    "list": [
       "✔ Expert team in investment & startup consulting",
       "✔ Direct links with Canadian investor networks",
       "✔ Full support from idea to settlement in Canada"
-      ]
+    ]
   },
-
-"StartupVisaRoadmap" : "Startup Visa Roadmap",
-"LatestStartups": "Latest Startups"
-
+  "StartupVisaRoadmap": "Startup Visa Roadmap",
+  "LatestStartups": "Latest Startups"
 }

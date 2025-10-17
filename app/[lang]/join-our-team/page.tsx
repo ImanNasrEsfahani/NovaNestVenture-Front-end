@@ -16,6 +16,13 @@ export default function ApplyFormPage({
 }) {
   const { t } = getServerTranslation(lang, 'formComponent');
 
+  type Benefit = {
+    id: string;
+    emoji: string;
+    title: string;
+    items: string[];
+  };
+
   return (
     <div dir={t('dir')}>
       <Banner
@@ -45,7 +52,7 @@ export default function ApplyFormPage({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {t("workWithUS", {returnObjects: true}).benefits.map((b: object) => (
+          {t("workWithUS", {returnObjects: true}).benefits.map((b: Benefit) => (
             <article
               key={b.id}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border-t-4 border-primary"
