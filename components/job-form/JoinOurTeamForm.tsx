@@ -13,6 +13,7 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     resumeFile: t('join-our-team', { returnObjects: true }).resumeFile,
     choseFile: t('join-our-team', { returnObjects: true }).choseFile,
     
+    sendButton: t('sendButton', { returnObjects: true }),
     successMessage: t('successMessage', { returnObjects: true }),
     failedMessage: t('failedMessage', { returnObjects: true }),
     

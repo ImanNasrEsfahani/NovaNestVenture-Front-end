@@ -23,6 +23,7 @@ interface Translations {
   formTitle: string;
   formSubtitle: string;
   resumeFile: string;
+  sendButton: string;
   successMessage: string;
   failedMessage: string;
   choseFile: string;
@@ -381,6 +382,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
           <Button
             type="submit"
             bgColor="Primary"
+            text={translations.sendButton}
             disabled={Object.keys(errors).length > 0}
           />
         </div>
