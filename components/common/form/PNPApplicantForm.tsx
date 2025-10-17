@@ -9,6 +9,7 @@ export default function PNPApplicantForm({lang}: {lang: string}) {
   const translations = {
     formTitle: t("PNPApplicantForm", { returnObjects: true }).formTitle,
     formSubtitle: t("PNPApplicantForm", { returnObjects: true }).formSubtitle,
+    formDescription: t("PNPApplicantForm", { returnObjects: true }).formDescription || [],
 
     sendingButton: t("sendingButton"),
     ReserveButton: t("ReserveButton"),

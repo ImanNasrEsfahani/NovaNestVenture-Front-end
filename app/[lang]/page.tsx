@@ -9,6 +9,7 @@ import Academy from '@/components/home/Academy';
 import AboutUs from '@/components/home/AboutUs';
 import { getServerTranslation } from 'app/i18n';
 
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 import WhatIsStartupVisa from '@/components/startup/WhatIsStartupVisa';
 import OurServices from '@/components/startup/OurServices';
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
 
 export default function Page({ params }: { params: { lang: string } }) {
   const { t } = getServerTranslation(params.lang, 'mainPage');
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
     <>
@@ -39,9 +41,15 @@ export default function Page({ params }: { params: { lang: string } }) {
 
         <WhatIsStartupVisa lang={params.lang} />
         <OurServices lang={params.lang} />
+        <div className="max-w-xs mx-auto mb-24">
+          <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/startup/#startup-application-form`} />
+        </div>
 
         <Intro lang={params.lang} />
         <OurService lang={params.lang} />
+        <div className="max-w-xs mx-auto mb-24">
+          <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/pnp/#pnp-application-form`} />
+        </div>
 
         <Academy lang={params.lang} />
         <HalvesCards lang={params.lang} />

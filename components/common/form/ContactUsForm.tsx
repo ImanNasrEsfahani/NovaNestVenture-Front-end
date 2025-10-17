@@ -8,6 +8,7 @@ export default function ContactUsFormWrapper({lang}: {lang: string}) {
   // Pass translations as props to client component
   const translations = {
     title: t('contactForm', { returnObjects: true }).title,
+    subTitle: t('contactForm', { returnObjects: true }).subTitle,
 
     subject: t('contactForm', { returnObjects: true }).subject,
     subjectRequired: t('contactForm', { returnObjects: true }).subjectRequired,

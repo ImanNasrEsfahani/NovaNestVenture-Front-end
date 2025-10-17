@@ -1,16 +1,6 @@
 {
   "menuItems": [
     {
-      "label": "آکادمی",
-      "href": "fa/academy"
-    },
-    {
-      "label": "درباره ما",
-      "href": "fa/about-us"
-    }
-  ],
-  "submenuItems": [
-    {
       "label": "سرمایه گذاران",
       "href": "fa/investment"
     },
@@ -25,6 +15,11 @@
     {
       "label": "برنامه های کارآفرینی",
       "href": "fa/pnp"
+    },
+    {
+      "label": "درباره ما",
+      "href": "fa/about-us"
     }
-  ]
+  ],
+  "submenuItems": [  ]
 }

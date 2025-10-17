@@ -52,10 +52,10 @@
       "button": "Investor Registration"
     },
     {
-      "title": "For Entrepreneurs & Startup Founders",
+      "title": "For Startup Founders",
       "p1": "Are you leading a startup with a validated MVP? At NovaNest Venture, we provide tailored support to help you scale and succeed. Our services include funding access, expert mentorship, and strategic guidance designed to accelerate growth.",
       "p2": "We focus on founder-led innovation and scalable business models, empowering your startup with the right resources and connections to reach investors and expand globally.",
-      "href": "startups-form",
+      "href": "startups-validation",
       "button": "Startup Validation"
     }
   ],

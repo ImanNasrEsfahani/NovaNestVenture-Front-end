@@ -9,6 +9,7 @@ export default function StartupApplicantForm({lang}: {lang: string}) {
   const translations = {
     formTitle: t("startupApplicantForm", { returnObjects: true }).formTitle,
     formSubtitle: t("startupApplicantForm", { returnObjects: true }).formSubtitle,
+    formDescription: t("", { returnObjects: true }).formDescription,
 
     sendingButton: t("sendingButton"),
     ReserveButton: t("ReserveButton"),

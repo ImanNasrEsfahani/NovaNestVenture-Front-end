@@ -11,9 +11,11 @@ import Input from '@/components/common/form/Input';
 import TextArea from '@/components/common/TextArea';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
+import FormTitle from './FormTitle';
 
 interface Translations {
   title: string;
+  subTitle: string;
 
   subject: string;
   subjectRequired: string;
@@ -157,9 +159,8 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
 
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <h2 className="flex w-full justify-center font-header text-4xl mb-10 ltr:tracking-[.em]">
-        {translations.title}
-      </h2>
+      <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
+      
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <PersonalInfoInput

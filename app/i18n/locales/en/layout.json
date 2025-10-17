@@ -1,15 +1,5 @@
 {
   "menuItems": [
-    {
-      "label": "About us",
-      "href": "en/about-us"
-    },
-    {
-      "label": "Academy",
-      "href": "en/academy"
-    }
-  ],
-  "submenuItems": [
     { 
       "label": "Investment",
       "href": "en/investment"
@@ -23,8 +13,13 @@
       "href": "en/startup"
     },
     { 
-      "label": "Entrepreneurship - PNP", 
+      "label": "Entrepreneurship", 
       "href": "en/pnp"
+    },
+    {
+      "label": "About us",
+      "href": "en/about-us"
     }
-  ]
+  ],
+  "submenuItems": []
 }

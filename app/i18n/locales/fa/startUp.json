@@ -148,16 +148,6 @@
         "imageAlt": "PreventiGene logo",
         "imageLogoSrc": "/static/images/home/startups/landa-gene.png",
         "imageLogoAlt": "PreventiGene logo"
-    },
-    {
-        "title": "LandCraft",
-        "description": "LandCraft uses NFT technology and expert support to create an innovative platform for showcasing and selling handmade crafts, opening new opportunities for emerging and unknown artists worldwide.",
-        "buttonText": "Go to website",
-        "buttonUrl": "https://www.landcraft.com/",
-        "imageSrc": "/static/images/startup/handicraft.png",
-        "imageAlt": "Handicraft logo",
-        "imageLogoSrc": "/static/images/home/startups/handicraft.png",
-        "imageLogoAlt": "Handicraft logo"
     }
   ],
 

@@ -12,54 +12,54 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
 
 interface Translations {
-    formTitle: string;
-    formSubtitle: string;
-    sendingButton: string;
-    ReserveButton: string;
-    sendButton: string;
-    successMessage: string;
-    failedMessage: string;
+  formTitle: string;
+  formSubtitle: string;
+  sendingButton: string;
+  ReserveButton: string;
+  sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 
-    firstName: string;
-    firstNameRequired: string;
-    firstNamePlaceholder: string;
+  firstName: string;
+  firstNameRequired: string;
+  firstNamePlaceholder: string;
 
-    lastName: string;
-    lastNameRequired: string;
-    lastNamePlaceholder: string;
+  lastName: string;
+  lastNameRequired: string;
+  lastNamePlaceholder: string;
 
-    email: string;
-    emailRequired: string;
-    emailErrorMessage: string;
-    emailPlaceholder: string;
+  email: string;
+  emailRequired: string;
+  emailErrorMessage: string;
+  emailPlaceholder: string;
 
-    phoneNumber: string;
-    phoneNumberRequired: string;
-    phoneNumberErrorMessage: string;
-    phoneNumberPlaceholder: string;
+  phoneNumber: string;
+  phoneNumberRequired: string;
+  phoneNumberErrorMessage: string;
+  phoneNumberPlaceholder: string;
 
-    countries: string[];
-    countryName: string;
-    countryNameRequired: string;
-    countryNamePlaceholder: string;
-    
-    provinceOfResidence: string;
-    provinceOfResidenceRequired: string;
-    provinceOfResidencePlaceholder: string;
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
 
-    cityOfResidence: string;
-    cityOfResidenceRequired: string;
-    cityOfResidencePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 
-    TypeOfCollaboration: string;
-    TypeOfCollaborationRequired: string;
-    TypeOfCollaborationPlaceholder: string;
-    TypeOfCollaborationData: { value: string; label: string }[];
-    
-    FieldOfExpert: string;
-    FieldOfExpertRequired: string;
-    FieldOfExpertPlaceholder: string;
-    FieldOfExpertData: { value: string; label: string }[];
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
+
+  TypeOfCollaboration: string;
+  TypeOfCollaborationRequired: string;
+  TypeOfCollaborationPlaceholder: string;
+  TypeOfCollaborationData: { value: string; label: string }[];
+
+  FieldOfExpert: string;
+  FieldOfExpertRequired: string;
+  FieldOfExpertPlaceholder: string;
+  FieldOfExpertData: { value: string; label: string }[];
 }
 
 interface Props {
@@ -146,91 +146,87 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
   }));
 
   return (
-    <div className="max-w-responsive mx-auto">
-        {/* <div className='mb-12'>
-            <FormTitle
-                formTitle={translations.formTitle}
-                formSubtitle={translations.formSubtitle}
-            />
-        </div> */}
-        {/* CTA */}
-        <div className="pb-4 max-w-5xl mx-auto text-center">
-          <h3 className="text-xl">If you&rsquo;re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family, you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward.</h3>
+    <div id="startup-application-form" className="max-w-responsive mx-auto">
+      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+
+      {/* CTA */}
+      <div className="pb-4 max-w-responsive mx-auto text-center">
+        <h3 className="text-xl"></h3>
+      </div>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="mb-6 grid grid-cols-1 gap-x-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
+          <PersonalInfoInput
+            register={register}
+            errors={errors}
+            nameInputs={{
+              firstName: 'firstname',
+              lastName: 'lastname',
+              email: 'email',
+              phoneNumber: 'number',
+              countryOfResidence: '',
+              provinceOfResidence: '',
+              cityOfResidence: '',
+              TypeOfCollaboration: ''
+            }}
+            noLabel={false}
+            translations={{
+
+              firstName: translations.firstName,
+              firstNameRequired: translations.firstNameRequired,
+              firstNamePlaceholder: translations.firstNamePlaceholder,
+
+              lastName: translations.lastName,
+              lastNameRequired: translations.lastNameRequired,
+              lastNamePlaceholder: translations.lastNamePlaceholder,
+
+              email: translations.email,
+              emailRequired: translations.emailRequired,
+              emailErrorMessage: translations.emailErrorMessage,
+              emailPlaceholder: translations.emailPlaceholder,
+
+              phoneNumber: translations.phoneNumber,
+              phoneNumberRequired: translations.phoneNumberRequired,
+              phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
+              phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
+
+              countries: translations.countries,
+              countryName: translations.countryName,
+              countryNameRequired: translations.countryNameRequired,
+              countryNamePlaceholder: translations.countryNamePlaceholder,
+
+              provinceOfResidence: translations.provinceOfResidence,
+              provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
+              provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
+
+              cityOfResidence: translations.cityOfResidence,
+              cityOfResidenceRequired: translations.cityOfResidenceRequired,
+              cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
+
+              TypeOfCollaboration: translations.TypeOfCollaboration,
+              TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
+              TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
+              TypeOfCollaborationData: translations.TypeOfCollaborationData,
+
+              FieldOfExpert: translations.FieldOfExpert,
+              FieldOfExpertRequired: translations.FieldOfExpertRequired,
+              FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
+              FieldOfExpertData: translations.FieldOfExpertData,
+            }}
+          />
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-6 grid grid-cols-1 gap-x-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
-                <PersonalInfoInput
-                    register={register}
-                    errors={errors}
-                    nameInputs={{
-                        firstName: 'firstname',
-                        lastName: 'lastname',
-                        email: 'email',
-                        phoneNumber: 'number',
-                        countryOfResidence: '',
-                        provinceOfResidence: '',
-                        cityOfResidence: '',
-                        TypeOfCollaboration: ''
-                    }}
-                    noLabel={false}
-                    translations={{
+        <div className="w-60 mx-auto mt-6">
+          <ButtonRefactor
+            type='submit'
+            text={send ? translations.sendingButton : translations.ReserveButton}
+            disabled={errorsList[0] ? true : false}
+          />
+        </div>
 
-                      firstName: translations.firstName,
-                      firstNameRequired: translations.firstNameRequired,
-                      firstNamePlaceholder: translations.firstNamePlaceholder,
+      </form>
 
-                      lastName: translations.lastName,
-                      lastNameRequired: translations.lastNameRequired,
-                      lastNamePlaceholder: translations.lastNamePlaceholder,
-                      
-                      email: translations.email,
-                      emailRequired: translations.emailRequired,
-                      emailErrorMessage: translations.emailErrorMessage,
-                      emailPlaceholder: translations.emailPlaceholder,
-
-                      phoneNumber: translations.phoneNumber,
-                      phoneNumberRequired: translations.phoneNumberRequired,
-                      phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
-                      phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
-                      
-                      countries: translations.countries,
-                      countryName: translations.countryName,
-                      countryNameRequired: translations.countryNameRequired,
-                      countryNamePlaceholder: translations.countryNamePlaceholder,
-                      
-                      provinceOfResidence: translations.provinceOfResidence,
-                      provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
-                      provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
-
-                      cityOfResidence: translations.cityOfResidence,
-                      cityOfResidenceRequired: translations.cityOfResidenceRequired,
-                      cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
-                      
-                      TypeOfCollaboration: translations.TypeOfCollaboration,
-                      TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
-                      TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
-                      TypeOfCollaborationData: translations.TypeOfCollaborationData,
-
-                      FieldOfExpert: translations.FieldOfExpert,
-                      FieldOfExpertRequired: translations.FieldOfExpertRequired,
-                      FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
-                      FieldOfExpertData: translations.FieldOfExpertData,
-                    }}
-                />
-            </div>
-
-            <div className="w-60 mx-auto mt-6">
-                <ButtonRefactor 
-                    type='submit'
-                    text={send ? translations.sendingButton : translations.ReserveButton}
-                    disabled={errorsList[0] ? true : false}
-                />
-            </div>
-
-        </form>
-
-        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
+      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
     </div>
   );
 }

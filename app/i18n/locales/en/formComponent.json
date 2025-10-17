@@ -132,7 +132,9 @@
   "investmentCeilingPlaceholder": "ex. 100,000$",
 
   "contactForm": {
-    "title": "Reach us",
+    "title": "Contact us",
+    "subTitle": "We'd love to hear from you",
+
     "subject": "Subject",
     "subjectRequired": "Your Subject is Required",
     "subjectPlaceholder": "Subject",
@@ -544,11 +546,23 @@
   "startupApplicantForm": {
     "formTitle":"Apply for SUV",
     "formSubtitle":"Let’s Talk About Your Journey",
-
+    "formDescription": [
+      "If you&rsquo;re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family",
+      "you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward."
+    ],
     "sendingButton":"Submitting ....",
     "sendButton": "Send",
     "successMessage":"Form Submitted Successfully.",
     "failedMessage":"An error occurred. Please Contact Support."
+  },
+
+  "AccelerationApplicantForm": {
+    "formTitle":"Apply for Acceleration Program",
+    "formSubtitle":"Let’s Talk About Your Journey",
+    "formDescription": [
+      "If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success.",
+      "Book your free consultation today and let&rsquo;s start this path together."
+    ]
   },
 
   "AcademyApplicantForm": {
@@ -559,6 +573,10 @@
   "PNPApplicantForm": {
     "formTitle":"Apply for PNP Program",
     "formSubtitle":"Let’s Talk About Your Journey",
+    "formDescription": [
+      "If you&rsquo;re interested in applying for Canada&rsquo;s Provincial Entrepreneur Program and starting your own business in Canada, this opportunity allows you to generate income while securing permanent residency for yourself and your family.",
+      "Book a free consultation with our experts today to assess your eligibility and find the right path for your future."
+    ],
 
     "sendingButton":"Submitting ....",
     "sendButton": "Send",

@@ -5,8 +5,8 @@ export default function Why({lang}: {lang: string}) {
     const { t } = getServerTranslation(lang, 'pnp');
 
     return (
-        <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue text-white py-20 px-6">
-            <div className="max-w-4xl mx-auto text-center">
+        <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue text-white py-20 mb-16 px-6">
+            <div className="max-w-responsive mx-auto text-center">
                 <h2 className="text-3xl font-header font-bold mb-6">
                     {t('why', { returnObjects: true }).title}
                 </h2>

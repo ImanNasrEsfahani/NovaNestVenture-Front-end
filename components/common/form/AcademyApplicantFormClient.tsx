@@ -12,54 +12,54 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
 
 interface Translations {
-    formTitle: string;
-    formSubtitle: string;
-    sendingButton: string;
-    ReserveButton: string;
-    sendButton: string;
-    successMessage: string;
-    failedMessage: string;
+  formTitle: string;
+  formSubtitle: string;
+  sendingButton: string;
+  ReserveButton: string;
+  sendButton: string;
+  successMessage: string;
+  failedMessage: string;
 
-    firstName: string;
-    firstNameRequired: string;
-    firstNamePlaceholder: string;
+  firstName: string;
+  firstNameRequired: string;
+  firstNamePlaceholder: string;
 
-    lastName: string;
-    lastNameRequired: string;
-    lastNamePlaceholder: string;
+  lastName: string;
+  lastNameRequired: string;
+  lastNamePlaceholder: string;
 
-    email: string;
-    emailRequired: string;
-    emailErrorMessage: string;
-    emailPlaceholder: string;
+  email: string;
+  emailRequired: string;
+  emailErrorMessage: string;
+  emailPlaceholder: string;
 
-    phoneNumber: string;
-    phoneNumberRequired: string;
-    phoneNumberErrorMessage: string;
-    phoneNumberPlaceholder: string;
+  phoneNumber: string;
+  phoneNumberRequired: string;
+  phoneNumberErrorMessage: string;
+  phoneNumberPlaceholder: string;
 
-    countries: string[];
-    countryName: string;
-    countryNameRequired: string;
-    countryNamePlaceholder: string;
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
 
-    provinceOfResidence: string;
-    provinceOfResidenceRequired: string;
-    provinceOfResidencePlaceholder: string;
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
 
-    cityOfResidence: string;
-    cityOfResidenceRequired: string;
-    cityOfResidencePlaceholder: string;
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
 
-    TypeOfCollaboration: string;
-    TypeOfCollaborationRequired: string;
-    TypeOfCollaborationPlaceholder: string;
-    TypeOfCollaborationData: { value: string; label: string }[];
+  TypeOfCollaboration: string;
+  TypeOfCollaborationRequired: string;
+  TypeOfCollaborationPlaceholder: string;
+  TypeOfCollaborationData: { value: string; label: string }[];
 
-    FieldOfExpert: string;
-    FieldOfExpertRequired: string;
-    FieldOfExpertPlaceholder: string;
-    FieldOfExpertData: { value: string; label: string }[];
+  FieldOfExpert: string;
+  FieldOfExpertRequired: string;
+  FieldOfExpertPlaceholder: string;
+  FieldOfExpertData: { value: string; label: string }[];
 }
 
 interface Props {
@@ -147,88 +147,82 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
   }));
 
   return (
-    <div className="max-w-responsive mx-auto">
-        {/* <div className='mb-12'>
-            <FormTitle
-                formTitle={translations.formTitle}
-                formSubtitle={translations.formSubtitle}
-            />
-        </div> */}
+    <div className="max-w-responsive mx-auto mt-24">
+      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
 
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="grid grid-cols-1 gap-x-6 mt-12 md:grid-cols-2 xl:grid-cols-3">
+          <PersonalInfoInput
+            register={register}
+            errors={errors}
+            nameInputs={{
+              firstName: 'firstname',
+              lastName: 'lastname',
+              email: 'email',
+              phoneNumber: 'number',
+              countryOfResidence: 'countryOfResidence',
+              provinceOfResidence: 'provinceOfResidence ',
+              cityOfResidence: 'cityOfResidence',
+              TypeOfCollaboration: ''
+            }}
+            noLabel={false}
+            translations={{
 
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="grid grid-cols-1 gap-x-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
-                <PersonalInfoInput
-                    register={register}
-                    errors={errors}
-                    nameInputs={{
-                        firstName: 'firstname',
-                        lastName: 'lastname',
-                        email: 'email',
-                        phoneNumber: 'number',
-                        countryOfResidence: 'countryOfResidence',
-                        provinceOfResidence: 'provinceOfResidence ',
-                        cityOfResidence: 'cityOfResidence',
-                        TypeOfCollaboration: ''
-                    }}
-                    noLabel={false}
-                    translations={{
+              firstName: translations.firstName,
+              firstNameRequired: translations.firstNameRequired,
+              firstNamePlaceholder: translations.firstNamePlaceholder,
 
-                      firstName: translations.firstName,
-                      firstNameRequired: translations.firstNameRequired,
-                      firstNamePlaceholder: translations.firstNamePlaceholder,
+              lastName: translations.lastName,
+              lastNameRequired: translations.lastNameRequired,
+              lastNamePlaceholder: translations.lastNamePlaceholder,
 
-                      lastName: translations.lastName,
-                      lastNameRequired: translations.lastNameRequired,
-                      lastNamePlaceholder: translations.lastNamePlaceholder,
-                      
-                      email: translations.email,
-                      emailRequired: translations.emailRequired,
-                      emailErrorMessage: translations.emailErrorMessage,
-                      emailPlaceholder: translations.emailPlaceholder,
+              email: translations.email,
+              emailRequired: translations.emailRequired,
+              emailErrorMessage: translations.emailErrorMessage,
+              emailPlaceholder: translations.emailPlaceholder,
 
-                      phoneNumber: translations.phoneNumber,
-                      phoneNumberRequired: translations.phoneNumberRequired,
-                      phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
-                      phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
+              phoneNumber: translations.phoneNumber,
+              phoneNumberRequired: translations.phoneNumberRequired,
+              phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
+              phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
 
-                      countries: translations.countries,
-                      countryName: translations.countryName,
-                      countryNameRequired: translations.countryNameRequired,
-                      countryNamePlaceholder: translations.countryNamePlaceholder,
+              countries: translations.countries,
+              countryName: translations.countryName,
+              countryNameRequired: translations.countryNameRequired,
+              countryNamePlaceholder: translations.countryNamePlaceholder,
 
-                      provinceOfResidence: translations.provinceOfResidence,
-                      provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
-                      provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
+              provinceOfResidence: translations.provinceOfResidence,
+              provinceOfResidenceRequired: translations.provinceOfResidenceRequired,
+              provinceOfResidencePlaceholder: translations.provinceOfResidencePlaceholder,
 
-                      cityOfResidence: translations.cityOfResidence,
-                      cityOfResidenceRequired: translations.cityOfResidenceRequired,
-                      cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
+              cityOfResidence: translations.cityOfResidence,
+              cityOfResidenceRequired: translations.cityOfResidenceRequired,
+              cityOfResidencePlaceholder: translations.cityOfResidencePlaceholder,
 
-                      TypeOfCollaboration: translations.TypeOfCollaboration,
-                      TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
-                      TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
-                      TypeOfCollaborationData: translations.TypeOfCollaborationData,
+              TypeOfCollaboration: translations.TypeOfCollaboration,
+              TypeOfCollaborationRequired: translations.TypeOfCollaborationRequired,
+              TypeOfCollaborationPlaceholder: translations.TypeOfCollaborationPlaceholder,
+              TypeOfCollaborationData: translations.TypeOfCollaborationData,
 
-                      FieldOfExpert: translations.FieldOfExpert,
-                      FieldOfExpertRequired: translations.FieldOfExpertRequired,
-                      FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
-                      FieldOfExpertData: translations.FieldOfExpertData,
-                    }}
-                />
-            </div>
+              FieldOfExpert: translations.FieldOfExpert,
+              FieldOfExpertRequired: translations.FieldOfExpertRequired,
+              FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
+              FieldOfExpertData: translations.FieldOfExpertData,
+            }}
+          />
+        </div>
 
-            <div className="w-60 mx-auto mt-6">
-                <ButtonRefactor 
-                    type='submit'
-                    text={send ? translations.sendingButton : translations.ReserveButton}
-                    disabled={errorsList[0] ? true : false}
-                />
-            </div>
+        <div className="w-60 mx-auto mt-6">
+          <ButtonRefactor
+            type='submit'
+            text={send ? translations.sendingButton : translations.ReserveButton}
+            disabled={errorsList[0] ? true : false}
+          />
+        </div>
 
-        </form>
+      </form>
 
-        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
+      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
     </div>
   );
 }

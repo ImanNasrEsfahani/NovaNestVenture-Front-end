@@ -1,4 +1,7 @@
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 import { getServerTranslation } from 'app/i18n';
+
+const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 type Props = { lang: string };
 
@@ -15,12 +18,10 @@ export default function Intro({ lang }: Props) {
                     {t("Intro", { returnObjects: true }).subtitle}
                 </h3>
                 <p className="text-lg leading-loose text-gray-700 mb-8">{t("Intro", { returnObjects: true }).description}</p>
-                <a
-                    href="#acceleration-form"
-                    className="btn btn-neutral text-white text-md normal-case font-light transition duration-150 ease-in-out hover:bg-primary"
-                >
-                    {t("Intro", { returnObjects: true }).cta}
-                </a>
+                
+                <div className="max-w-xs lg:w-[300px] mx-auto">
+                    <ButtonRefactor text={t("Intro", { returnObjects: true }).cta} type="link" href={`${base}/about-us`} />
+                </div>
             </div>
         </div>
     );

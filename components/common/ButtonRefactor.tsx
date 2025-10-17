@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 type ButtonProps = {
   text: string;
-  type?: 'button' | 'reset' | 'submit' | 'link';
+  type?: 'simple-link' |'button' | 'reset' | 'submit' | 'link';
   href?: string;
   disabled?: boolean;
   bgColor?: 'primary' | 'secondary' | 'white' | 'black' | 'transparent';
@@ -17,6 +17,18 @@ export default function ButtonRefactor({
   bgColor
 }: ButtonProps) {
   switch (type) {
+    // If the type is 'Link'
+    case 'simple-link':
+      return (
+        href && (
+          <a href={href} className={`bg-${
+                bgColor ? bgColor : 'black'
+              } delay-50 flex h-[50px] w-full flex-wrap place-content-center rounded-xl text-white transition duration-150 ease-in-out hover:bg-primary py-4`}>
+                {text} <ChevronRightIcon className="ml-4 mt-1 size-5 rtl:rotate-180" />
+          </a>
+        )
+      );
+
     // If the type is 'Link'
     case 'link':
       return (

@@ -5,9 +5,9 @@ export default function Impact({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'acceleration');
 
     return (
-        <section className="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-24 px-6">
+        <section className="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-24 mb-24 px-6">
             <div className="w-full max-w-responsive mx-auto text-center">
-                <h2 className="text-3xl font-header font-bold mb-12">{t('impact.title')}</h2>
+                <h2 className="text-3xl font-header font-bold mb-9">{t('impact.title')}</h2>
                 <ul className="space-y-4 text-lg">
                     {t('impact.items', { returnObjects: true }).map((item: string, index: number) => (
                         <li key={index}>{item}</li>

@@ -2,49 +2,44 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "Startup-Visa",
-    "button": "Startup Launch Stages" ,
-
-    "differences-title" : "Key Differences Between Startups and Small Businesses",
-    "differences-detail" : "While all startups begin their journey as small businesses, their ultimate goals differ significantly. Their primary objective is to transcend their initial \"startup\" status and establish themselves as dominant players in their chosen markets. In contrast, many small businesses prioritize stability and profitability within a defined niche. They focus on organic growth, customer satisfaction, and sustainable operations. Their owners are often content with their current scale and may not actively seek aggressive expansion. Startups operate with a go big or go home\" mentality, while small businesses prioritize longevity and consistent returns",
-    "differences-list" :[
+    "button": "Startup Launch Stages",
+    "differences-title": "Key Differences Between Startups and Small Businesses",
+    "differences-detail": "While all startups begin their journey as small businesses, their ultimate goals differ significantly. Their primary objective is to transcend their initial \"startup\" status and establish themselves as dominant players in their chosen markets. In contrast, many small businesses prioritize stability and profitability within a defined niche. They focus on organic growth, customer satisfaction, and sustainable operations. Their owners are often content with their current scale and may not actively seek aggressive expansion. Startups operate with a go big or go home\" mentality, while small businesses prioritize longevity and consistent returns",
+    "differences-list": [
         "Problem-solving ability",
         "Scalability",
         "Rapid growth potential",
         "Creativity and innovation"
     ],
-
-    "nature-title" : "The Nature of Startups",
-    "nature-detail" : "Having an innovative idea is essential for the development of a startup. These businesses often aim to solve problems or introduce new services by identifying gaps in existing products or services and offering creative solutions. NovaNest Venture, equipped with professionals, consultants, and international experts, stands ready to support aspiring entrepreneurs in launching their businesses and navigating any challenges they may encounter along the way.",
-
-    "gateway-title" : "NovaNest Venture: Your Gateway to Success in Canada",
-    "gateway-detail" : "NovaNest Venture provides comprehensive services to help early-stage startups that have recently entered Canada through the Startup Visa Program expand and grow their businesses in the country. By utilizing the consulting services of our expert team, you can overcome the challenges of launching and developing an international startup in areas such as marketing, human resources, finance, and legal matters.",
-    
-    "service-title" : "NovaNest Venture Services",
-    "service-list" : [
+    "nature-title": "The Nature of Startups",
+    "nature-detail": "Having an innovative idea is essential for the development of a startup. These businesses often aim to solve problems or introduce new services by identifying gaps in existing products or services and offering creative solutions. NovaNest Venture, equipped with professionals, consultants, and international experts, stands ready to support aspiring entrepreneurs in launching their businesses and navigating any challenges they may encounter along the way.",
+    "gateway-title": "NovaNest Venture: Your Gateway to Success in Canada",
+    "gateway-detail": "NovaNest Venture provides comprehensive services to help early-stage startups that have recently entered Canada through the Startup Visa Program expand and grow their businesses in the country. By utilizing the consulting services of our expert team, you can overcome the challenges of launching and developing an international startup in areas such as marketing, human resources, finance, and legal matters.",
+    "service-title": "NovaNest Venture Services",
+    "service-list": [
         {
-            "icon" : "MusicPlay",
-            "title" : "Mentorship and Consulting",
-            "description" : " One of the key advantages of NovaNest Venture's startup services is access to a team of international experts and consultants who specialize in startup registration and expansion on a global scale. "
+            "icon": "MusicPlay",
+            "title": "Mentorship and Consulting",
+            "description": " One of the key advantages of NovaNest Venture's startup services is access to a team of international experts and consultants who specialize in startup registration and expansion on a global scale. "
         },
         {
-            "icon" : "PresentionChart",
-            "title" : "Market Analysis",
-            "description" : " Our international team, with its deep knowledge of the Canadian market and its potential, offers personalized guidance on how to grow and develop your business in this country."
+            "icon": "PresentionChart",
+            "title": "Market Analysis",
+            "description": " Our international team, with its deep knowledge of the Canadian market and its potential, offers personalized guidance on how to grow and develop your business in this country."
         },
         {
-            "icon" : "Data",
-            "title" : "Networking",
-            "description" : " Through collaborations with international partners, NovaNest Venture assists you in building your brand and establishing effective business connections in Canada."
+            "icon": "Data",
+            "title": "Networking",
+            "description": " Through collaborations with international partners, NovaNest Venture assists you in building your brand and establishing effective business connections in Canada."
         },
         {
-            "icon" : "MoneyRecive",
-            "title" : "Investment",
-            "description" : " The growth and expansion of a business in a new market with unknown potential requires adequate investment. At NovaNest Venture, we facilitate the growth and success of startups through investment."
+            "icon": "MoneyRecive",
+            "title": "Investment",
+            "description": " The growth and expansion of a business in a new market with unknown potential requires adequate investment. At NovaNest Venture, we facilitate the growth and success of startups through investment."
         }
     ],
-
     "services-title": "NovaNest Venture Services for Startups Entering the Canadian Market",
-    "services-list" : [
+    "services-list": [
         "Qualified business plan draft",
         "Delivering startup documentation to organizations",
         "Assistance in developing a business concept",
@@ -61,53 +56,6 @@
         "Business consulting",
         "Invoice review"
     ],
-
-    "service-details": [
-        {
-            "header": "Business Concept Assessment & Development",
-            "content": [
-                "Assessing the client’s management experience and education in the context of a qualifying Canadian business",
-                "Identifying economic priorities in Canada and matching them with the client’s qualifications and proposed concepts",
-                "Collaborating with incubators and angel investors to evaluate and enhance the business concept",
-                "Assisting the client in developing a business concept that meets the requirements for a Letter of Support / Commitment Certificate"
-            ]
-        },
-        {
-            "header": "Business Documentation & Preparation",
-            "content": [
-                "Creating a professional Pitch Deck",
-                "Drafting a Business Plan within Canadian startup market standards",
-                "Business consultations, valuation assessments, and financial projections",
-                "Reviewing Pro Forma financial documents",
-                "Intellectual property review and filing patents (where applicable)",
-                "Incorporation, minute book preparation, and legal structuring"
-            ]
-        },
-        {
-            "header": "Support with Designated Organizations",
-            "content": [
-                "Presenting the client’s profile to designated entities",
-                "Coaching the client for all meetings and interviews with incubators",
-                "Supporting the client during Committee Review, Deal Screening, Coaching Meetings and related undertakings",
-                "Advising the client on compliance with the terms of the Letter of Support / Commitment Certificate"
-            ]
-        },
-        {
-            "header": "Immigration & Application Support",
-            "content": [
-                "Providing a checklist of required documents",
-                "Reviewing all documents and addressing potential issues",
-                "Drafting templates for required letters",
-                "Completing and reviewing all immigration forms",
-                "Preparing and submitting the complete immigration application to IRCC",
-                "Handling all correspondence with Canadian immigration authorities",
-                "Applications for work permits (client and spouse), study permits for children, and permanent residency",
-                "Landing services including guidance for opening a bank account, obtaining a SIN, and more"
-            ]
-        }
-    ],
-
-
     "latest-startups": [
         {
             "title": "Landa Trip",
@@ -148,68 +96,103 @@
             "imageAlt": "PreventiGene logo",
             "imageLogoSrc": "/static/images/home/startups/landa-gene.png",
             "imageLogoAlt": "PreventiGene logo"
-        },
-        {
-            "title": "LandaCraft",
-            "description": "LandaCraft uses NFT technology and expert support to create an innovative platform for showcasing and selling handmade crafts, opening new opportunities for emerging and unknown artists worldwide.",
-            "buttonText": "Go to website",
-            "buttonUrl": "https://landcraft.landaholding.com/",
-            "imageSrc": "/static/images/startup/handicraft.png",
-            "imageAlt": "Handicraft logo",
-            "imageLogoSrc": "/static/images/home/startups/handicraft.png",
-            "imageLogoAlt": "Handicraft logo"
         }
     ],
-
-
     "whatIsStartupVisa": {
         "title": "Canada Startup Visa",
         "subtitle": "Opportunities for Entrepreneurs & Investors",
         "description": "Canada’s Startup Visa program is a special immigration pathway for entrepreneurs and investors who want to launch innovative businesses in Canada or gain permanent residency by investing in approved startups. It provides support from trusted Canadian investors and accelerators to grow your business.",
         "list": [
-        "Receive support from a designated organization approved by the Canadian government (investor or accelerator)",
-        "Launch your own business or invest in innovative startups",
-        "Gain permanent residency for you and your family"
+            "Receive support from a designated organization approved by the Canadian government (investor or accelerator)",
+            "Launch your own business or invest in innovative startups",
+            "Gain permanent residency for you and your family"
         ]
     },
     "whoCanApply": {
         "title": "Who Can Apply?",
         "subtitle": "Applicants generally fall into two categories:",
         "categories": [
-        {
-            "title": "Entrepreneurs with their own startup:",
-            "details": [
-            "Innovative, scalable idea or product",
-            "Experience to run a business",
-            "Willing to live and work in Canada"
-            ]
-        },
-        {
-            "title": "Investors without their own startup:",
-            "details": [
-            "Invest in approved startups",
-            "Focus on profit and collaboration",
-            "Work with accelerators & investor networks"
-            ]
-        }
+            {
+                "title": "Entrepreneurs with their own startup:",
+                "details": [
+                    "Innovative, scalable idea or product",
+                    "Experience to run a business",
+                    "Willing to live and work in Canada"
+                ]
+            },
+            {
+                "title": "Investors without their own startup:",
+                "details": [
+                    "Invest in approved startups",
+                    "Focus on profit and collaboration",
+                    "Work with accelerators & investor networks"
+                ]
+            }
         ]
     },
-    "ourServices": {
+    "services": {
         "title": "Our Services for Canada Startup Visa",
-        "description": "At Novanest, we work closely with Canadian Designated Organizations to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
-        "imageAlt": "SUV startup Services"
+        "description": "At Novanest, we work closely with <a href=\"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa/designated-organizations.html\" target=\"_blank\" rel=\"noopener noreferrer\">Canadian Designated Organizations</a> to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
+        "serviceDetails": [
+            {
+                "header": "Business Concept Assessment & Development",
+                "content": [
+                    "Assessing the client’s management experience and education in the context of a qualifying Canadian business",
+                    "Identifying economic priorities in Canada and matching them with the client’s qualifications and proposed concepts",
+                    "Collaborating with incubators and angel investors to evaluate and enhance the business concept",
+                    "Assisting the client in developing a business concept that meets the requirements for a Letter of Support / Commitment Certificate"
+                ]
+            },
+            {
+                "header": "Business Documentation & Preparation",
+                "content": [
+                    "Creating a professional Pitch Deck",
+                    "Drafting a Business Plan within Canadian startup market standards",
+                    "Business consultations, valuation assessments, and financial projections",
+                    "Reviewing Pro Forma financial documents",
+                    "Intellectual property review and filing patents (where applicable)",
+                    "Incorporation, minute book preparation, and legal structuring"
+                ]
+            },
+            {
+                "header": "Support with Designated Organizations",
+                "content": [
+                    "Presenting the client’s profile to designated entities",
+                    "Coaching the client for all meetings and interviews with incubators",
+                    "Supporting the client during Committee Review, Deal Screening, Coaching Meetings and related undertakings",
+                    "Advising the client on compliance with the terms of the Letter of Support / Commitment Certificate"
+                ]
+            },
+            {
+                "header": "Immigration & Application Support",
+                "content": [
+                    "Providing a checklist of required documents",
+                    "Reviewing all documents and addressing potential issues",
+                    "Drafting templates for required letters",
+                    "Completing and reviewing all immigration forms",
+                    "Preparing and submitting the complete immigration application to IRCC",
+                    "Handling all correspondence with Canadian immigration authorities",
+                    "Applications for work permits (client and spouse), study permits for children, and permanent residency",
+                    "Landing services including guidance for opening a bank account, obtaining a SIN, and more"
+                ]
+            }
+        ],
+        "image": {
+            "src": "/static/images/startup/team.png",
+            "alt": "SUV startup Services",
+            "width": 400,
+            "height": 300
+        }
     },
     "whyChooseUs": {
         "title": "Why Choose NovaNest?",
         "subtitle": "Experience • Network • Expertise",
         "list": [
-        "✔ Expert team in investment & startup consulting",
-        "✔ Direct links with Canadian investor networks",
-        "✔ Full support from idea to settlement in Canada"
+            "✔ Expert team in investment & startup consulting",
+            "✔ Direct links with Canadian investor networks",
+            "✔ Full support from idea to settlement in Canada"
         ]
     },
-
-    "StartupVisaRoadmap" : "Startup Visa Roadmap",
+    "StartupVisaRoadmap": "Startup Visa Roadmap",
     "LatestStartups": "Latest Startups"
-    
 }

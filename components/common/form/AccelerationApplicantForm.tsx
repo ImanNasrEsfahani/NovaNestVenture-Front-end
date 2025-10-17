@@ -7,8 +7,9 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
   
   // Pass translations as props to client component
   const translations = {
-    formTitle: t("AcademyApplicantForm", { returnObjects: true }).formTitle,
-    formSubtitle: t("AcademyApplicantForm", { returnObjects: true }).formSubtitle,
+    formTitle: t("AccelerationApplicantForm", { returnObjects: true }).formTitle,
+    formSubtitle: t("AccelerationApplicantForm", { returnObjects: true }).formSubtitle,
+    formDescription: t("AccelerationApplicantForm", { returnObjects: true }).formDescription,
 
     sendingButton: t("sendingButton"),
     ReserveButton: t("ReserveButton"),
@@ -58,6 +59,6 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
     FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }),
   };
-
+  
   return <AccelerationApplicantFormClient lang={lang} translations={translations} />;
 }

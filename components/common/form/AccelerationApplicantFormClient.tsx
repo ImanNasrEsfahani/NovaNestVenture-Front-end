@@ -14,6 +14,7 @@ import FormTitle from '@/components/common/form/FormTitle';
 interface Translations {
     formTitle: string;
     formSubtitle: string;
+    formDescription: string[];
 
     sendingButton: string;
     ReserveButton: string;
@@ -150,16 +151,13 @@ export default function AccelerationApplicantFormClient({ lang, translations }: 
 
   return (
     <div className="max-w-responsive mx-auto">
-        {/* <div className='mb-12'>
-            <FormTitle
-                formTitle={translations.formTitle}
-                formSubtitle={translations.formSubtitle}
-            />
-        </div> */}
+        <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
         
         {/* CTA */}
-        <section className="pt-24 pb-4 max-w-5xl mx-auto lg:px-4 text-center">
-          <h3 className="text-xl">If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success. Book your free consultation today and let&rsquo;s start this path together.</h3>
+        <section className="pt-12 pb-4 max-w-5xl mx-auto lg:px-4 text-center">
+          {translations.formDescription.map((text, index) => (
+            <p className="text-xl" key={index}>{text}</p>
+          ))}
         </section>
 
         <form onSubmit={handleSubmit(onSubmit)}>

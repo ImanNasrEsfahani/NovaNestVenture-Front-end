@@ -37,6 +37,17 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       <OurServices lang={lang} />
 
       <Why lang={lang} />
+      
+      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+        <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("StartupVisaRoadmap")}</h3>
+        <Image
+          src="/static/images/startup/startup-visa-canada-roadmap.png"
+          alt="SUV startup roadmap"
+          className="mx-auto w-auto max-w-4xl rounded-lg"
+          width={1800}
+          height={2400}
+        />
+      </section>
 
       {/* Latest Startups */}
       <section className='max-w-responsive mx-auto pt-12 px-4 w-100 lg:px-16 space-y-16 mb-16'>
@@ -67,17 +78,6 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
             />
           )
         )}
-      </section>
-
-      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
-        <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("StartupVisaRoadmap")}</h3>
-        <Image
-          src="/static/images/startup/startup-visa-canada-roadmap.png"
-          alt="SUV startup roadmap"
-          className="mx-auto w-auto max-w-4xl rounded-lg"
-          width={1800}
-          height={2400}
-        />
       </section>
 
       <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100'>

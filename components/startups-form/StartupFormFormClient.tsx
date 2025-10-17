@@ -188,7 +188,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           formSubtitle={translations.formSubtitle}
         />
       </div>
-      <div className="container mx-auto bg-[#faf8f5] dark:bg-transparent">
+      <div className="container mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='pb-8'>         
             <StartupFormPersonalInformation
