@@ -117,6 +117,7 @@
     }
   ],
   "sendButton": "ارسال",
+  "ReserveButton": "رزرو مشاوره رایگان من",
   "sendingButton": "درحال ارسال ....",
   "visitButton": "مشاهده کنید",
   "successMessage": "اطلاعات با موفقیت ارسال شد.",
@@ -160,6 +161,7 @@
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
   "contactForm": {
     "title": "با ما تماس بگیرید",
+    "subTitle": "We'd love to hear from you",
     "subject": "موضوع",
     "subjectRequired": "موضوع شما الزامی است",
     "subjectPlaceholder": "موضوع شما",
@@ -175,14 +177,16 @@
     "formTitle": "فرم شریک تجاری",
     "formSubtitle": "اطلااعات شخصی"
   },
-  "jobForm": {
-    "lng": "fa",
-    "dir": "rtl",
-    "NovaNestVenture": "نوانست ونچر",
-    "banner": "درخواست همکاری",
-    "formTitle": "فرم درخواست همکاری",
-    "formSubtitle": "اطلاعات شخصی",
-    "resumeFile": "فایل رزومه:"
+  "join-our-team": {
+    "lng": "en",
+    "dir": "ltr",
+    "NovaNestVenture": "NovaNest Venture",
+    "banner": "Join Our Team",
+    "formTitle": "Join Our Team ",
+    "formSubtitle": "Personal Information",
+    "resumeFile": "CV File:",
+    "choseFile": "Choose File",
+    "resumeQuestion": "Do you have an updated CV or resume?"
   },
   "workWithUS": {
     "lng": "fa",
@@ -216,7 +220,83 @@
     "hiring": "استخدام",
     "professionalConsultation": "مشاوره تخصصی",
     "Internship": "کارآموزی",
-    "UniversityInternship": "طرح پویش"
+    "UniversityInternship": "طرح پویش",
+    "title": "Join the NovaNest Professional Team",
+    "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
+    "description": "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success.",
+    "benefits": [
+      {
+        "id": "financial",
+        "emoji": "💰",
+        "title": "Financial Benefits",
+        "items": [
+          "Hands-on experience and collaboration with early-stage startups",
+          "Compensation for your projects and contributions",
+          "Opportunity to participate in successful projects and benefit financially"
+        ]
+      },
+      {
+        "id": "recognition",
+        "emoji": "🌟",
+        "title": "Recognition and Prestige",
+        "items": [
+          "Official introduction on NovaNest website and social media",
+          "Participation in workshops, events, and projects as a specialist",
+          "Features in specialized media and newsletters"
+        ]
+      },
+      {
+        "id": "growth",
+        "emoji": "📚",
+        "title": "Professional Growth & Learning",
+        "items": [
+          "Learning and collaborating with mentors and international teams",
+          "Access to NovaNest webinars, classes, and bootcamps"
+        ]
+      },
+      {
+        "id": "networking",
+        "emoji": "🤝",
+        "title": "Networking Expansion",
+        "items": [
+          "Membership in NovaNest’s professional network in Iran and Canada",
+          "Direct connections with founders, investors, and VCs",
+          "Participation in private gatherings and exclusive events"
+        ]
+      },
+      {
+        "id": "branding",
+        "emoji": "🌐",
+        "title": "Personal Brand Development",
+        "items": [
+          "Showcase your skills and expertise in projects and educational programs",
+          "Co-create specialized content with NovaNest (videos, podcasts, articles)",
+          "Highlight your experience in your dedicated NovaNest Professional profile"
+        ]
+      },
+      {
+        "id": "impact",
+        "emoji": "🌍",
+        "title": "Real and Social Impact",
+        "items": [
+          "Contribute to the growth of talented startups and teams",
+          "Collaborate on innovative projects with social impact",
+          "Opportunities to participate in NovaNest social responsibility programs"
+        ]
+      }
+    ],
+    "specialPerks": {
+      "id": "perks",
+      "emoji": "🎁",
+      "title": "Exclusive Perks",
+      "items": [
+        "Invitations to internal and international events",
+        "Access to NovaNest co-working space if needed",
+        "Receive official certification and accredited membership",
+        "Priority collaboration with NovaNest startups"
+      ]
+    },
+    "callToAction": "Join the NovaNest Professional Team today and bring your experience, expertise, and creativity to help shape the next generation of startups."
   },
   "investorForm": {
     "lng": "en",
@@ -286,13 +366,7 @@
       "businessDelivery": "Please clearly mention the structure of your sales cycle from contact to delivery.",
       "businessDeliveryRequired": "This field is required",
       "businessDeliveryPlaceholder": "Description",
-      "financial": "If your plan has a financial model, please upload it.",
-      "businessAccelerators": "Have you previously cooperated with investors or accelerators?",
-      "businessAcceleratorsRequired": "This field is required",
-      "businessAcceleratorsPlaceholder": "Description",
-      "businessKnowUs": "How did you get to know us?",
-      "businessKnowUsRequired": "This field is required",
-      "businessKnowUsPlaceholder": "Description"
+      "financial": "If your plan has a financial model, please upload it."
     },
     "FirstSale": {
       "description": "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
@@ -323,12 +397,46 @@
       "financial": "Do you have Financial?"
     },
     "commons": {
+      "accelerators": "Have you previously cooperated with investors or accelerators?",
+      "acceleratorsRequired": "This field is required",
+      "acceleratorsPlaceholder": "Description",
+      "knowUs": "How did you get to know us?",
+      "knowUsRequired": "This field is required",
+      "knowUsPlaceholder": "Description",
       "problems": {
         "title": "Problems",
         "customerProblem": "Describe the customer problem you want to solve with your product or service.",
         "customerProblemRequired": "This field is required!",
         "customerProblemPlaceholder": "Description",
         "customerProblemErrorMessage": "The message must be less than 1450 characters."
+      },
+      "solutionLevel": {
+        "title": "Solutions",
+        "solution": "What is your unique value proposition (innovation)? What is new about what you do? ",
+        "solutionPlaceholder": "Description",
+        "solutionRequired": "This field is required!",
+        "solutionsErrorMessage": "The message must be less than 1450 characters.",
+        "productLevel": "How much is level of your product and technology preparation?",
+        "productLevelRequired": "Preparation Stats Required",
+        "scalable": "Briefly explain how your technology is scalable? ",
+        "scalablePlaceholder": "Description",
+        "scalableRequired": "This field is required!",
+        "scalableErrorMessage": "The message must be less than 1450 characters.",
+        "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
+        "solutionsUniqueValueRequired": "this fields is required",
+        "solutionsUniqueValuePlaceholder": "Description",
+        "solutionsLevel": "How much is level of your product and technology preparation?",
+        "solutionsLevelList": [
+          "The basic principle has been observed.",
+          "The technology concept has been formulated.",
+          "Experimental proof of concept.",
+          "The confirmed technology in laboratory.",
+          "The confirmed technology in the environmental conditions",
+          "The presented technology in the environmental conditions",
+          "Show the system prototype in the mvp operating environment.",
+          "The proved realistic system in the operating environment.",
+          "A complete and qualified system."
+        ]
       },
       "propertyDropDown": {
         "property": "Property",
@@ -372,101 +480,32 @@
         "targetTotalPlaceholder": "targetTotal",
         "targetTotalErrorMessage": "The message must be less than 1450 characters."
       },
-      "solutionLevel": {
-        "solutions": "Solutions",
-        "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
-        "solutionsUniqueValueRequired": "this fields is required",
-        "solutionsUniqueValuePlaceholder": "Description",
-        "solutionsLevel": "How much is level of your product and technology preparation?",
-        "solutionsLevelList": [
-          "The basic principle has been observed.",
-          "The technology concept has been formulated.",
-          "Experimental proof of concept.",
-          "The confirmed technology in laboratory.",
-          "The confirmed technology in the environmental conditions",
-          "The presented technology in the environmental conditions",
-          "Show the system prototype in the mvp operating environment.",
-          "The proved realistic system in the operating environment.",
-          "A complete and qualified system."
-        ],
-        "solutionsPosition": "What is your unique value proposition (innovation)? What is new about what you do?",
-        "solutionsPositionRequired": "this fields is required",
-        "solutionsPositionPlaceholder": "Description"
-      },
       "businessModel": {
         "title": "Business Model",
-        "monetization": "Describe the method of monetization of your plan?",
+        "monetization": "Describe the method of monetization of your plan? ",
         "monetizationOfYourPlan": "Explain how you plan to generate revenue?",
-        "monetizationOfYourPlanRequired": "This field is required!",
+        "monetizationOfYourPlanRequirmonetizationed": "This field is required!",
         "monetizationOfYourPlanPlaceholder": "Description",
         "monetizationOfYourPlanErrorMessage": "The message must be less than 1450 characters.",
         "monetizationPlaceholder": "Description",
         "monetizationRequired": "This field is required!",
-        "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery.",
+        "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. ",
         "deliveryPlaceholder": "Description",
         "deliveryRequired": "This field is required!",
-        "financialPlan": "If your plan has a financial model, please upload.",
+        "deliveryErrorMessage": "The message must be less than 1450 characters.",
         "choseFile": "Choose File",
-        "accelerators": "Have you previously cooperated with investors or accelerators?",
-        "acceleratorsPlaceholder": "Description",
-        "acceleratorsRequired": "This field is required!",
-        "knowUs": "How did you get to know us?",
-        "knowUsPlaceholder": "Description",
-        "knowUsRequired": "This field is required!",
-        "structureOfYourSales": "Please explain your sales structure from the beginning",
+        "structureOfYourSales": "Please explain your sales structure from the beginning ",
         "structureOfYourSalesPlaceholder": "Description",
-        "structureOfYourSalesRequired": "This field is required!"
+        "structureOfYourSalesRequired": "This field is required!",
+        "structureOfYourSalesErrorMessage": "The message must be less than 1450 characters."
       }
     },
     "investmentCeiling": "سقف سرمایه گذاری",
     "investmentCeilingRequired": "سقف سرمایه گذاری الزامی است.",
     "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
-    "problems": {
-      "title": "مشکلات",
-      "customerProblem": "توضیح دهید که محصول شما چه مشکلی از کاربر را برطرف میکند؟",
-      "customerProblemRequired": "این قسمت الزامی است.",
-      "customerProblemPlaceholder": "توضیحات"
-    },
     "cooperatedWithInvestors": "آیا قبلا با سرمایه گذاران یا شتاب دهنده ها کار کرده اید؟",
     "cooperatedWithInvestorsPlaceholder": "توضیحات",
     "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
-    "solutions": {
-      "title": "راه حل ها",
-      "solution": "میزان آمادگی محصول شما در چه مرحله‌ای قرار دارد؟",
-      "solutionPlaceholder": "توضیحات",
-      "solutionRequired": "این قسمت الزامی است!",
-      "solutionsErrorMessage": "The message must be less than 1450 characters.",
-      "productLevel": "سطح آمادگی محصول و فناوری شما چقدر است؟",
-      "productLevelRequired": "آمار آماده سازی مورد نیاز است",
-      "scalable": "لطفا به طور خلاصه توضیح دهید که چگونه قرار است محصول شما مقیاس پذیر باشد",
-      "scalablePlaceholder": "توضیحات",
-      "scalableRequired": "این قسمت الزامی است!",
-      "scalableErrorMessage": "The message must be less than 1450 characters."
-    },
-    "businessModel": {
-      "title": "طرح کسب و کار",
-      "monetization": "روش کسب درآمد از طرح خود را توضیح دهید؟",
-      "monetizationOfYourPlan": "روش کسب درآمد از طرح خود را توضیح دهید؟",
-      "monetizationOfYourPlanRequired": "این قسمت الزامی است!",
-      "monetizationOfYourPlanPlaceholder": "توضیحات",
-      "monetizationPlaceholder": "توضیحات",
-      "monetizationRequired": "این قسمت الزامی است!",
-      "delivery": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
-      "deliveryPlaceholder": "توضیحات",
-      "deliveryRequired": "این قسمت الزامی است!",
-      "financialPlan": "اگر طرح شما مدل مالی دارد، لطفا آپلود کنید.",
-      "choseFile": "انتخاب فایل",
-      "accelerators": "آیا قبلاً با سرمایه‌گذاران یا شتاب‌دهنده‌ها همکاری داشته‌اید؟",
-      "acceleratorsPlaceholder": "توضیحات",
-      "acceleratorsRequired": "این فیلد الزامی است!",
-      "knowUs": "چگونه با ما آشنا شدید؟",
-      "knowUsPlaceholder": "توضیحات",
-      "knowUsRequired": "این فیلد الزامی است!",
-      "structureOfYourSales": "لطفا ساختار فروش خود را از ابتدا توضیح دهید",
-      "structureOfYourSalesPlaceholder": "توضیحات",
-      "structureOfYourSalesRequired": "این قسمت الزامی است!",
-      "structureOfYourSalesErrorMessage": "The message must be less than 1450 characters."
-    },
     "financialFile": "آیا شما تمکن مالی دارید؟",
     "financialFileRequired": "لطفا یکی از گزینه ها را انتخاب کنید:",
     "property": {
@@ -545,10 +584,22 @@
   "startupApplicantForm": {
     "formTitle": "Apply for Startup Visa Program",
     "formSubtitle": "Let’s Talk About Your Journey",
+    "formDescription": [
+      "If you&rsquo;re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family",
+      "you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward."
+    ],
     "sendingButton": "Submitting ....",
     "sendButton": "Send",
     "successMessage": "Form Submitted Successfully.",
     "failedMessage": "An error occurred. Please Contact Support."
+  },
+  "AccelerationApplicantForm": {
+    "formTitle": "Apply for Acceleration Program",
+    "formSubtitle": "Let’s Talk About Your Journey",
+    "formDescription": [
+      "If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success.",
+      "Book your free consultation today and let&rsquo;s start this path together."
+    ]
   },
   "AcademyApplicantForm": {
     "formTitle": "Apply for Academy Program",
@@ -557,6 +608,10 @@
   "PNPApplicantForm": {
     "formTitle": "Apply for PNP Program",
     "formSubtitle": "Let’s Talk About Your Journey",
+    "formDescription": [
+      "If you&rsquo;re interested in applying for Canada&rsquo;s Provincial Entrepreneur Program and starting your own business in Canada, this opportunity allows you to generate income while securing permanent residency for yourself and your family.",
+      "Book a free consultation with our experts today to assess your eligibility and find the right path for your future."
+    ],
     "sendingButton": "Submitting ....",
     "sendButton": "Send",
     "successMessage": "Form Submitted Successfully.",
