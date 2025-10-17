@@ -3,5 +3,85 @@
   "banner": "مرکز مشاوره",
   "NovaNestVenture": "نوانست ونچر",
   "formTitle": "مرکز مشاوره",
-  "formSubtitle": "اطلاعات شخصی"
+  "formSubtitle": "اطلاعات شخصی",
+    
+  "title": "Join the NovaNest Mentor Team",
+  "subtitle": "Become a guiding light for innovative startups",
+  "description": "Are you an experienced mentor passionate about supporting innovative startups? NovaNest invites you to join our network of professional mentors and help guide startups on their journey to growth and success.",
+  "intro": "By joining the NovaNest Mentor Team, you will gain unique opportunities:",
+  "benefits": [
+    {
+      "id": "financial",
+      "emoji": "💰",
+      "title": "Financial Benefits",
+      "items": [
+        "Compensation for mentoring and advisory sessions",
+        "Opportunity to earn a share from successful projects",
+        "Conduct paid courses under your personal brand",
+        "Rewards for introducing promising startups to NovaNest"
+      ]
+    },
+    {
+      "id": "recognition",
+      "emoji": "🌟",
+      "title": "Recognition and Prestige",
+      "items": [
+        "Official introduction on NovaNest website and social media",
+        "Participation as a speaker or expert in panels, workshops, and events",
+        "Features in specialized media and newsletters",
+        "Dedicated mentor profile on NovaNest platform"
+      ]
+    },
+    {
+      "id": "professionalGrowth",
+      "emoji": "📚",
+      "title": "Professional Growth & Learning",
+      "items": [
+        "Free or discounted access to NovaNest webinars, classes, and bootcamps",
+        "Collaboration with international mentors for mutual learning"
+      ]
+    },
+    {
+      "id": "networking",
+      "emoji": "🤝",
+      "title": "Networking Opportunities",
+      "items": [
+        "Membership in NovaNest's specialized mentor network (Iran & Canada)",
+        "Direct connections with founders, investors, and VCs",
+        "Attendance at private mentor and investor gatherings"
+      ]
+    },
+    {
+      "id": "personalBranding",
+      "emoji": "🌐",
+      "title": "Personal Branding",
+      "items": [
+        "Conduct exclusive courses with your personal brand on NovaNest platform",
+        "Co-create content (videos, podcasts, articles) with NovaNest",
+        "Publish expert content under your name on NovaNest blogs and channels"
+      ]
+    },
+    {
+      "id": "realImpact",
+      "emoji": "🌍",
+      "title": "Real Impact & Social Contribution",
+      "items": [
+        "Contribute to the growth of talented startups and teams",
+        "Collaborate on high-impact social projects",
+        "Participate as a mentor in NovaNest social responsibility programs"
+      ]
+    }
+  ],
+  "specialPerks": {
+    "id": "specialPerks",
+    "emoji": "🎁",
+    "title": "Special Perks",
+    "items": [
+      "Invitations to internal and international events",
+      "Access to NovaNest co-working space if needed",
+      "Receive official mentor certification and accredited membership",
+      "Priority collaboration with NovaNest startups"
+    ]
+  },
+  "callToAction": "Join NovaNest mentors today and share your experience with the next generation of entrepreneurs."
 }
