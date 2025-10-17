@@ -3,6 +3,7 @@ import Instagram from '@/components/icons/footer/Instagram';
 import Envelope from '@/components/icons/footer/Envelope';
 import Whatsapp from '@/components/icons/footer/Whatsapp';
 import LinkedIn from '@/components/icons/footer/LinkedIn';
+import Facebook from '@/components/icons/footer/Facebook';
 import { getServerTranslation } from 'app/i18n';
 
 interface FooterItem {
@@ -50,6 +51,9 @@ export default function Footer({
             </Link>
             <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
               <LinkedIn />
+            </Link>
+            <Link aria-label="Facebook" href={'https://www.facebook.com/novanestventure'} className="hover:text-primary" target="_blank" rel="noopener noreferrer">
+              <Facebook />
             </Link>
           </div>
         </div>
