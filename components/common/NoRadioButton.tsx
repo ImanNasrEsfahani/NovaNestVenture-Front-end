@@ -13,7 +13,7 @@ export default function NoRadioButton({
 }) {
   return (
     <div>
-      <label className="text-[#6b6b6b] ">{title}</label>
+      <label className="">{title}</label>
       <div className="mb-5 mt-4 flex flex-row rounded-lg bg-[#f9f6f3] p-4 drop-shadow-lg">
         <label className="flex-column mr-10 flex">
           <input

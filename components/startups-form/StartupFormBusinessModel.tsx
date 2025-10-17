@@ -92,7 +92,7 @@ export default function StartupFormBusinessModel({
           errors={errors}
         /> */}
         {/* <div className="col-start-1 col-span-1">
-          <label className="text-[#6b6b6b] ">If your plan has a financial model, please upload</label>
+          <label className="">If your plan has a financial model, please upload</label>
           <div className='flex justify-center'>
             <input
               type="file"

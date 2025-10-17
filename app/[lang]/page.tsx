@@ -1,12 +1,14 @@
 import { Metadata } from 'next';
 import Hero from '@/components/home/Hero';
 import SpecialFeatures from '@/components/home/SpecialFeatures';
+import Differentiators from '@/components/about/Differentiators';
 import Priority from '@/components/home/Priority';
 import LatestStartups from '@/components/home/LatestStartups';
 import HalvesCards from '@/components/home/HalvesCards';
 import HomeCardsContainer from '@/components/home/HomeCardsContainer';
 import Academy from '@/components/home/Academy';
 import AboutUs from '@/components/home/AboutUs';
+
 import { getServerTranslation } from 'app/i18n';
 
 import ButtonRefactor from '@/components/common/ButtonRefactor';
@@ -30,7 +32,7 @@ export default function Page({ params }: { params: { lang: string } }) {
     <>
       <Hero
         lang={params.lang}
-        titles={[t('investment'), t('Acceleration'), t('StartUp Visa'), t('Entrepreneurship - PNP')] }
+        titles={[t('investment'), t('Acceleration'), t('StartUp Visa'), t('Entrepreneurship - PNP')]}
         backgroundImage="hero.webp"
       />
 
@@ -54,6 +56,8 @@ export default function Page({ params }: { params: { lang: string } }) {
         <Academy lang={params.lang} />
         <HalvesCards lang={params.lang} />
         <LatestStartups lang={params.lang} />
+        <Differentiators lang={params.lang} />
+
         <Priority lang={params.lang} />
       </section>
     </>

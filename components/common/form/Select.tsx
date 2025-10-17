@@ -26,9 +26,9 @@ export default function Select({
     <>
       <label
         htmlFor={nameInput}
-        className={`flex flex-col px-2 !text-[#6B6B6B] ${labelClass}`}
+        className={`flex flex-col px-2 ${labelClass}`}
       >
-        <span className="flex text-gray text-sm">
+        <span className="flex text-gray">
           {label}
           {required ? <span className="text-red-500 ml-1">*</span> : null}
         </span>

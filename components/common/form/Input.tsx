@@ -52,7 +52,7 @@ export default function Input({
   
   return (
     <div className={`flex flex-col items-start ${containerClass ?? ''}`}>
-      <label htmlFor={id} className={`w-full px-2 text-gray text-sm ${labelClass ?? ''}`}>
+      <label htmlFor={id} className={`w-full px-2 text-gray ${labelClass ?? ''}`}>
         {label}
         {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
         <input

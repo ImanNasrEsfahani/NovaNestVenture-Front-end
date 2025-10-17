@@ -11,10 +11,6 @@ interface FooterItem {
   link: string;
 }
 
-interface FooterText {
-  [key: string]: FooterItem;
-}
-
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Footer({
@@ -32,14 +28,10 @@ export default function Footer({
   return (
     <div className="bg-[#F7F3EE] font-barlow">
       <div className="max-w-responsive mx-auto p-6  flex flex-wrap justify-between space-y-5">
-        <div className="mt-5 flex flex-col w-full xl:w-2/5 gap-2">
-          <div className="text-justify text-xl font-medium text-primary pb-2">
-            {t('about.title')}
-          </div>
-          <div className="mt-1 text-justify text-sm font-normal text-black pb-2">
-            {t('about.text')}
-          </div>
-          <div className="mt-2 flex flex-row items-center text-black gap-4">
+        <div className="mt-5 flex flex-col w-full lg:w-2/5">
+          <div className="text-justify text-xl font-medium text-primary pb-2">{t('about.title')}</div>
+          <div className="text-justify font-normal pb-2">{t('about.text')}</div>
+          <div className="mt-2 flex flex-row items-center gap-4">
             <Link aria-label="Instagram" href={'https://instagram.com/novanest.venture'} className="hover:text-primary" target="_blank">
               <Instagram />
             </Link>
@@ -57,7 +49,7 @@ export default function Footer({
             </Link>
           </div>
         </div>
-        <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
+        <div className="mt-5 flex flex-col w-full lg:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">
             {t('explore.title')}
           </div>
@@ -65,46 +57,45 @@ export default function Footer({
             <Link
               key={index}
               href={`${base}${item.link}`}
-              className="pt-1 hover:text-primary"
+              className={`hover:text-primary ${ index > 0 ? 'pt-1' : ''}`}
             >
               {item.title}
             </Link>
           ))}
         </div>
-        <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
+        <div className="mt-5 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">{t('forms', { returnObjects: true }).title}</div>
-          {Object.entries(t('forms', { returnObjects: true }).text as FooterText).map(([key, value]) => (
+          {(t('forms', { returnObjects: true }).text as Array<{ title: string; link: string }>).map((item, index) => (
             <Link
-              key={key}
-              href={`${base}${value.link}`}
-              className="pt-1 hover:text-primary"
+              key={index}
+              href={`${base}${item.link}`}
+              className={`hover:text-primary ${ index > 0 ? 'pt-1' : ''}`}
             >
-              {value.text}
+              {item.title}
             </Link>
           ))}
         </div>
-        <div className="col-span-1 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
+        <div className="mt-5 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">
             {t('contact', { returnObjects: true }).title}
           </div>
-          <div className="pt-1 text-black">
-            {t('contact', { returnObjects: true }).text.addressLineOne}
-          </div>
-          <div className="text-black">
-            {t('contact', { returnObjects: true }).text.addressLineTwo}
-          </div>
-          <Link
-            href="tel:0017789865432"
-            className="pt-2 hover:text-primary"
-          >
-            {t('contact', { returnObjects: true }).text.cNumber}
-          </Link>
-          <Link
-            href="mailto:info@NovaNestVenture.com"
-            className="pt-2 hover:text-primary"
-          >
-            {t('contact', { returnObjects: true }).text.email}
-          </Link>
+
+          {(t('contact', { returnObjects: true }).text as Array<{ type: 'text' | 'link'; title: string; link?: string }>).map(
+            (item, index) =>
+              item.type === 'link' && item.link ? (
+                <Link
+                  key={item.title}
+                  href={item.link}
+                  className={`hover:text-primary ${index > 0 ? 'pt-1' : ''} `}
+                >
+                  {item.title}
+                </Link>
+              ) : (
+                <div key={item.title} className={`${index > 0 ? 'pt-1' : ''}`}>
+                  {item.title}
+                </div>
+              )
+          )}
         </div>
       </div>
       <div className="max-w-responsive mx-auto p-4 border-t border-tableHeader text-center text-tableHeader">

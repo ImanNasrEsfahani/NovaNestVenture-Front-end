@@ -104,7 +104,7 @@ export default function CountryInput({
             patternMessage=""
             placeholder={provinceOfResidencePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            labelClass="text-[#6b6b6b] "
+            labelClass=""
           />
         </div>
       )}
@@ -123,7 +123,7 @@ export default function CountryInput({
             patternMessage=""
             placeholder={cityOfResidencePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            labelClass="text-[#6b6b6b] "
+            labelClass=""
           />
         </div>
       )}

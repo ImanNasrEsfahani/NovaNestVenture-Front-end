@@ -46,7 +46,7 @@ export default function TextArea({
   return (
     <div className='w-full flex flex-col py-4'>
       {/* Label for the textarea */}
-      <label htmlFor={nameTextArea} className="w-full px-2 text-sm">
+      <label htmlFor={nameTextArea} className="w-full px-2">
         {title}
         {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
         <textarea

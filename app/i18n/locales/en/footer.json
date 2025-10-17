@@ -29,36 +29,50 @@
   },
   "forms": {
     "title": "Forms",
-    "text": {
-      "startUp": {
-        "text": "Startup Validation",
+    "text": [
+      {
+        "title": "Startup Validation",
         "link": "startups-validation"
       },
-      "investor": {
-        "text": "Investor Registration",
+      {
+        "title": "Investor Registration",
         "link": "investor-registration"
       },
-      "Join our team": {
-        "text": "Join Our Team",
+      {
+        "title": "Join Our Team",
         "link": "join-our-team"
       },
-      "mentorship": {
-        "text": "Affiliate Registration Form",
+      {
+        "title": "Affiliate Registration Form",
         "link": "affiliate-registration-form"
       },
-      "mentor": {
-        "text": "Join as a Mentor",
+      {
+        "title": "Join as a Mentor",
         "link": "join-as-a-mentor"
       }
-    }
+    ]
   },
   "contact": {
     "title": "Contact",
-    "text": {
-      "addressLineOne": "3833 Evergreen PL,",
-      "addressLineTwo": "Burnaby, BC, Canada, V3J 0M2",
-      "cNumber": "(+1) 778 986-5432",
-      "email": "info@NovaNestVenture.com"
-    }
+    "text": [
+      {
+        "type": "text",
+        "title": "3833 Evergreen PL,"
+      },
+      {
+        "type": "text",
+        "title": "Burnaby, BC, Canada, V3J 0M2"
+      },
+      {
+        "type": "link",
+        "title": "(+1) 778 986-5432",
+        "link": "tel:+17789865432"
+      },
+      {
+        "type": "link",
+        "title": "info@NovaNestVenture.com",
+        "link": "mailto:info@NovaNestVenture.com"
+      }
+    ]
   }
 }

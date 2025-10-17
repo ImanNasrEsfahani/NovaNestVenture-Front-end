@@ -29,36 +29,50 @@
   },
   "forms": {
     "title": "فرم ها",
-    "text": {
-      "startUp": {
-        "text": "ارزیابی استارت آپ",
+    "text": [
+      {
+        "title": "Startup Validation",
         "link": "startups-validation"
       },
-      "investor": {
-        "text": "مرکز سرمایه گذاری",
+      {
+        "title": "Investor Registration",
         "link": "investor-registration"
       },
-      "Join our team": {
-        "text": "عضویت به تیم",
+      {
+        "title": "Join Our Team",
         "link": "join-our-team"
       },
-      "mentorship": {
-        "text": "عضویت به عنوان پارتنر",
+      {
+        "title": "Affiliate Registration Form",
         "link": "affiliate-registration-form"
       },
-      "mentor": {
-        "text": "عضویت به عنوان منتور",
+      {
+        "title": "Join as a Mentor",
         "link": "join-as-a-mentor"
       }
-    }
+    ]
   },
   "contact": {
     "title": "ارتباط با ما",
-    "text": {
-      "addressLineOne": "کانادا، بریتیش کلمبیا، برنابی،",
-      "addressLineTwo": "خیابان نورث، ساختمان های EVERGREEN PL",
-      "cNumber": "+1 (778) 986-5432",
-      "email": "info@NovaNestVenture.com"
-    }
+        "text": [
+      {
+        "type": "text",
+        "title": "کانادا، بریتیش کلمبیا، برنابی،"
+      },
+      {
+        "type": "text",
+        "title": "خیابان نورث، ساختمان های EVERGREEN PL"
+      },
+      {
+        "type": "link",
+        "title": "(+1) 778 986-5432",
+        "link": "tel:+17789865432"
+      },
+      {
+        "type": "link",
+        "title": "info@NovaNestVenture.com",
+        "link": "mailto:info@NovaNestVenture.com"
+      }
+    ]
   }
 }
