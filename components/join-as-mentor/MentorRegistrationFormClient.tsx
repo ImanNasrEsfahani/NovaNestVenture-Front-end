@@ -62,6 +62,10 @@ interface Translations {
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
 
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
+
   birthDate: string;
   birthDateRequired: string;
   birthDateErrorMessage: string;
@@ -73,7 +77,7 @@ interface Translations {
   websiteRequired: string;
   websitePlaceholder: string;
   websiteErrorMessage: string;
-  
+
   linkedin: string;
   linkedinRequired: string;
   linkedinPlaceholder: string;
@@ -88,7 +92,7 @@ interface Translations {
   ExpertiesAreasPlaceholder: string;
   ExpertiesAreasRequired: string;
   ExpertiesAreasErrorMessage: string;
-  
+
   howDidYouKnowUs: string;
   howDidYouKnowUsPlaceholder: string;
   howDidYouKnowUsRequired: string;
@@ -227,7 +231,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 lastName: translations.lastName,
                 lastNameRequired: translations.lastNameRequired,
                 lastNamePlaceholder: translations.lastNamePlaceholder,
-                
+
                 email: translations.email,
                 emailRequired: translations.emailRequired,
                 emailErrorMessage: translations.emailErrorMessage,
@@ -259,7 +263,11 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 FieldOfExpert: translations.FieldOfExpert,
                 FieldOfExpertRequired: translations.FieldOfExpertRequired,
                 FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
-                FieldOfExpertData: translations.FieldOfExpertData
+                FieldOfExpertData: translations.FieldOfExpertData,
+
+                FieldOfExpertOther: translations.FieldOfExpertOther,
+                FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+                FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
               }}
             />
             <Input
@@ -274,7 +282,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               patternMessage={translations.birthDateErrorMessage}
               placeholder={translations.birthDatePlaceholder}
               className="input col-span-1 mb-1 w-full"
-              labelClass="dark:text-current"
+              labelClass=""
               validate={birthValidate}
             />
 
@@ -323,39 +331,39 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               patternMessage={translations.instagramErrorMessage}
             />
 
-            </div>
-            <div className="flex flex-col w-full">
-              <TextArea
-                title={translations.ExpertiesAreas}
-                register={register}
-                errors={errors}
-                placeholder={translations.ExpertiesAreasPlaceholder}
-                nameTextArea="ExpertiesAreas"
-                patternMessage=""
-                patternValue=""
-                required={translations.ExpertiesAreasRequired}
-                rows={5}
-                maxLength={1450}
-                maxLengthMessage={translations.ExpertiesAreasErrorMessage}
-                validate=""
-              />
+          </div>
+          <div className="flex flex-col w-full">
+            <TextArea
+              title={translations.ExpertiesAreas}
+              register={register}
+              errors={errors}
+              placeholder={translations.ExpertiesAreasPlaceholder}
+              nameTextArea="ExpertiesAreas"
+              patternMessage=""
+              patternValue=""
+              required={translations.ExpertiesAreasRequired}
+              rows={5}
+              maxLength={1450}
+              maxLengthMessage={translations.ExpertiesAreasErrorMessage}
+              validate=""
+            />
 
-              <TextArea
-                title={translations.howDidYouKnowUs}
-                register={register}
-                errors={errors}
-                placeholder={translations.howDidYouKnowUsPlaceholder}
-                nameTextArea="howDidYouKnowUs"
-                patternMessage=""
-                patternValue=""
-                // required={translations.howDidYouKnowUsRequired}
-                required=""
-                rows={3}
-                maxLength={1450}
-                maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
-                validate=""
-              />
-            </div>
+            <TextArea
+              title={translations.howDidYouKnowUs}
+              register={register}
+              errors={errors}
+              placeholder={translations.howDidYouKnowUsPlaceholder}
+              nameTextArea="howDidYouKnowUs"
+              patternMessage=""
+              patternValue=""
+              // required={translations.howDidYouKnowUsRequired}
+              required=""
+              rows={3}
+              maxLength={1450}
+              maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+              validate=""
+            />
+          </div>
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
             <ButtonRefactor
               type="submit"

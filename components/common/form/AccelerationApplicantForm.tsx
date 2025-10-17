@@ -58,6 +58,10 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
     FieldOfExpertRequired: t('FieldOfExpertRequired'),
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
     FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }),
+
+    FieldOfExpertOther: t('FieldOfExpertOther', { returnObjects: true }),
+    FieldOfExpertOtherRequired: t('FieldOfExpertOtherRequired', { returnObjects: true }),
+    FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true })
   };
   
   return <AccelerationApplicantFormClient lang={lang} translations={translations} />;

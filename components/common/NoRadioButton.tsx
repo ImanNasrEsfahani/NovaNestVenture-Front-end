@@ -13,8 +13,8 @@ export default function NoRadioButton({
 }) {
   return (
     <div>
-      <label className="text-[#6b6b6b] dark:text-current">{title}</label>
-      <div className="mb-5 mt-4 flex flex-row rounded-lg bg-[#f9f6f3] p-4 drop-shadow-lg dark:bg-[#1D232A]">
+      <label className="text-[#6b6b6b] ">{title}</label>
+      <div className="mb-5 mt-4 flex flex-row rounded-lg bg-[#f9f6f3] p-4 drop-shadow-lg">
         <label className="flex-column mr-10 flex">
           <input
             type="radio"
@@ -22,7 +22,7 @@ export default function NoRadioButton({
             {...register(name, {
               required: required
             })}
-            className="radio mr-2 text-indigo-600 drop-shadow-lg dark:text-indigo-400"
+            className="radio mr-2 text-indigo-600 drop-shadow-lg"
           />
           <span>Yes</span>
         </label>
@@ -33,7 +33,7 @@ export default function NoRadioButton({
             {...register(name, {
               required: required
             })}
-            className="radio mr-2 text-indigo-600 drop-shadow-lg dark:text-indigo-400"
+            className="radio mr-2 text-indigo-600 drop-shadow-lg"
           />
           <span>No</span>
         </label>

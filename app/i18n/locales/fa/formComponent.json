@@ -59,6 +59,9 @@
       "label": "اداری"
     }
   ],
+  "FieldOfExpertOther": "Please specify your field of expertise.",
+  "FieldOfExpertOtherRequired": "Field of expertise is required.",
+  "FieldOfExpertOtherPlaceholder": "Enter your field of expertise",
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",

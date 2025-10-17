@@ -54,7 +54,7 @@ export default function PersonalInfoSection({
           nameInput="your_position" 
           label={workWithUS.PositionPlaceholder} 
           required="" 
-          className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" 
+          className="select select-bordered mt-4 w-full max-w-xs px-8 " 
           placeholder={workWithUS.PositionPlaceholder} 
           options={PositionsData} 
           handleChange={handleItemChange} 
@@ -69,7 +69,7 @@ export default function PersonalInfoSection({
             nameInput="type_of_contract" 
             label={workWithUS.contractPlaceholder} 
             required="" 
-            className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" 
+            className="select select-bordered mt-4 w-full max-w-xs px-8 " 
             placeholder={workWithUS.contractPlaceholder} 
             options={TypeOfContractWithStudentData} 
             handleChange={handleContractWithStudentItemChange} 
@@ -83,7 +83,7 @@ export default function PersonalInfoSection({
             nameInput="type_of_contract" 
             label={workWithUS.contractPlaceholder} 
             required="" 
-            className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" 
+            className="select select-bordered mt-4 w-full max-w-xs px-8 " 
             placeholder={workWithUS.contractPlaceholder} 
             options={TypeOfContractWithProfessorData} 
             handleChange={handleContractWithProfessorItemChange} 
@@ -98,7 +98,7 @@ export default function PersonalInfoSection({
           nameInput="uni" 
           label={unis.placeholder} 
           required="" 
-          className="select select-bordered mt-4 w-full max-w-xs px-8 dark:text-current" 
+          className="select select-bordered mt-4 w-full max-w-xs px-8 " 
           placeholder={unis.placeholder} 
           options={TypeOfUnis} 
           handleChange={handleUniChange} 
@@ -123,7 +123,7 @@ export default function PersonalInfoSection({
             required={translations.firstNameRequired}
             placeholder={translations.firstNamePlaceholder}
             className="input  col-span-1 mb-1 mt-3 w-full"
-            labelClass=" dark:text-current"
+            labelClass=" "
             patternValue=""
             patternMessage=""
           />
@@ -139,7 +139,7 @@ export default function PersonalInfoSection({
             required={translations.lastNameRequired}
             placeholder={translations.lastNamePlaceholder}
             className="input  col-span-1 mb-1 mt-3 w-full"
-            labelClass=" dark:text-current"
+            labelClass=" "
             patternValue=""
             patternMessage=""
           />
@@ -156,7 +156,7 @@ export default function PersonalInfoSection({
             patternValue=""
             patternMessage=""
             placeholder={workWithUS.emailPlaceholder}
-            className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md dark:placeholder-[#9CA3AF]"
+            className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md"
           />
         </div>
         <div className="col-span-1">
@@ -171,7 +171,7 @@ export default function PersonalInfoSection({
             patternValue="^[0-9]{11}$"
             patternMessage={translations.phoneNumberErrorMessage}
             placeholder={translations.phoneNumberPlaceholder}
-            className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md dark:placeholder-[#9CA3AF]"
+            className="input col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md"
           />
         </div>
       </div>

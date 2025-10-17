@@ -213,7 +213,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
             <p className="mb-3 border-b px-10 py-5 text-2xl text-white">
               {translations.secondTitle}
             </p>
-            <hr className=" mb-5 mt-0 dark:border-[#222222CC] " />
+            <hr className=" mb-5 mt-0" />
           </div>
           
           <div className='w-full h-auto px-4'>
@@ -347,7 +347,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           </div>
 
           <br />
-          <hr className=" my-5 mt-0 dark:border-[#222222CC] " />
+          <hr className=" my-5 mt-0" />
 
           <div className="w-10/12 mx-auto">
             <TextArea

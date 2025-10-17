@@ -20,12 +20,12 @@ interface Translations {
   subject: string;
   subjectRequired: string;
   subjectPlaceholder: string;
-  
+
   message: string;
   messageRequired: string;
   messagePlaceholder: string;
   messagePlaceholderErrorMessage: string;
-  
+
   sendingButton: string;
   sendButton: string;
   successMessage: string;
@@ -71,6 +71,10 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
+
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
 }
 
 interface Props {
@@ -160,7 +164,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
       <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
-      
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <PersonalInfoInput
@@ -220,6 +224,9 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
               FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
               FieldOfExpertData: translations.FieldOfExpertData,
 
+              FieldOfExpertOther: translations.FieldOfExpertOther,
+              FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
             }}
           />
         </div>

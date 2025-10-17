@@ -25,8 +25,8 @@ export default function YesOrNoQuestion({
   ];
 
   return (
-    <div className="w-full md:max-w-lg xl:max-w-2xl 2xl:max-w-4xl mx-auto pb-2">
-      {title && <p className="text-lg mb-4">{title}</p>}
+    <div className="w-full md:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto">
+      {title && <p className="mb-4">{title}</p>}
 
       <div
         role="radiogroup"
@@ -40,13 +40,13 @@ export default function YesOrNoQuestion({
             role="radio"
             aria-checked={value === opt.value}
             onClick={() => onChange(opt.value)}
-            className={`w-full flex items-center gap-3 px-12 py-4 rounded focus:outline-none transform transition-all duration-700 ease-out
+            className={`w-full flex items-center gap-3 p-2 rounded focus:outline-none transform transition-all duration-700 ease-out
               ${value === opt.value ? 'bg-white ring-2 ring-primary/70 shadow-md' : 'bg-gold hover:bg-gray-200'}`}
           >
             <span className="border-2 rounded-full border-primary p-1 flex items-center justify-center transition-colors duration-700 ease-out">
-              <span className={`size-4 rounded-full transition-transform duration-700 ease-out ${value === opt.value ? 'bg-primary' : 'bg-white'}`} />
+              <span className={`size-2 rounded-full transition-transform duration-700 ease-out ${value === opt.value ? 'bg-primary' : 'bg-white'}`} />
             </span>
-            <span className="text-lg select-none transition-colors duration-700 ease-out">{opt.label}</span>
+            <span className="select-none transition-colors duration-700 ease-out">{opt.label}</span>
           </button>
         ))}
       </div>

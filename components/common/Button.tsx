@@ -47,7 +47,7 @@ export default function Button({
           ? 'mt-[19px] h-[32px] w-[195px] pb-4 pl-[72px] pr-[71px] pt-[15px] md:h-[60px]'
           : 'mt-[19px] h-11 w-full pb-4 pl-[72px] pr-[71px] pt-[15px] md:flex md:w-[185px]'
         } ${bgColor === 'Primary' ? 'bg-black' : 'bg-[#FDD30A]'
-        } btn btn-wide relative inset-0 mt-3 flex items-center justify-center overflow-hidden border border-white px-10 py-5 text-center font-condensed text-base font-normal uppercase leading-none tracking-wider text-white hover:text-white dark:text-current`}
+        } btn btn-wide relative inset-0 mt-3 flex items-center justify-center overflow-hidden border border-white px-10 py-5 text-center font-condensed text-base font-normal uppercase leading-none tracking-wider text-white hover:text-white `}
       type={type}
     >
       <span className="absolute inset-0 bg-black"></span>

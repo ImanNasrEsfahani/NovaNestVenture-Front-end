@@ -24,7 +24,7 @@ export default function StartupFormBusinessModel({
             <p className="mb-3 w-[310px] border-b py-5 pl-10 text-3xl text-white md:w-[550px] lg:w-[450px] xl:w-[650px]">
               {t('startUp', { returnObjects: true }).businessModel.title}
             </p>
-            <hr className=" mb-5 mt-0 dark:border-[#222222CC] " />
+            <hr className=" mb-5 mt-0" />
           </div>
           <div></div>
           <TextArea
@@ -92,11 +92,11 @@ export default function StartupFormBusinessModel({
           errors={errors}
         /> */}
         {/* <div className="col-start-1 col-span-1">
-          <label className="text-[#6b6b6b] dark:text-current">If your plan has a financial model, please upload</label>
+          <label className="text-[#6b6b6b] ">If your plan has a financial model, please upload</label>
           <div className='flex justify-center'>
             <input
               type="file"
-              className="bg-[#f9f6f3] dark:bg-[#1D232A] mt-3 p-5 w-full rounded-lg"
+              className="bg-[#f9f6f3] mt-3 p-5 w-full rounded-lg"
               {...register('financialFile', {
                 required: '',
               })}

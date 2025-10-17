@@ -73,7 +73,7 @@ export default function CountryInput({
   return (
     <>
       {nameInputs?.countryOfResidence && (
-        <div className="col-span-1">
+        <div className="col-span-1 w-full">
           <Select
             register={register}
             errors={errors}
@@ -91,7 +91,7 @@ export default function CountryInput({
       )}
 
       {nameInputs?.provinceOfResidence && (
-        <div className="col-span-1">
+        <div className="col-span-1 w-full">
           <Input
             id="province_of_residence"
             register={register}
@@ -104,13 +104,13 @@ export default function CountryInput({
             patternMessage=""
             placeholder={provinceOfResidencePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            labelClass="text-[#6b6b6b] dark:text-current"
+            labelClass="text-[#6b6b6b] "
           />
         </div>
       )}
 
       {nameInputs?.cityOfResidence && (
-        <div className="col-span-1">
+        <div className="col-span-1 w-full">
           <Input
             id="city_of_residence"
             register={register}
@@ -123,7 +123,7 @@ export default function CountryInput({
             patternMessage=""
             placeholder={cityOfResidencePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            labelClass="text-[#6b6b6b] dark:text-current"
+            labelClass="text-[#6b6b6b] "
           />
         </div>
       )}

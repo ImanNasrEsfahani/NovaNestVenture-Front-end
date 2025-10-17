@@ -1,4 +1,5 @@
 'use client';
+import React, { useState } from 'react';
 import Input from '@/components/common/form/Input';
 import Select from '@/components/common/form/Select';
 import CountryInput from '@/components/common/form/CountryInput';
@@ -59,6 +60,10 @@ type Props = {
     FieldOfExpertRequired: string;
     FieldOfExpertPlaceholder: string;
     FieldOfExpertData: { value: string; label: string }[];
+
+    FieldOfExpertOther: string;
+    FieldOfExpertOtherRequired: string;
+    FieldOfExpertOtherPlaceholder: string;
   }
 };
 
@@ -70,11 +75,17 @@ export default function PersonalInfoInput({
   translations
 }: Props) {
 
-  // const handleItemChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-  //   setSelectedRadio(event.target.value);
-  // };
+  // track selection for FieldOfExpert to show "other" text input
+  const [fieldOfExpertValue, setFieldOfExpertValue] = useState<string>('');
+  const [showFieldOther, setShowFieldOther] = useState<boolean>(false);
 
-  // const [selectedRadio, setSelectedRadio] = useState('');
+  const handleFieldOfExpertChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const val = String(e.target.value || '');
+    setFieldOfExpertValue(val);
+    // show when option equals "other" (case-insensitive) — adjust if your i18n value differs
+    setShowFieldOther(val.trim().toLowerCase() === 'other');
+  };
+
   console.log(translations);
 
   return (
@@ -92,7 +103,7 @@ export default function PersonalInfoInput({
             patternMessage=""
             placeholder={translations.firstNamePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            {...(!noLabel ? { label: translations.firstName, labelClass: 'dark:text-current' } : {})}
+            {...(!noLabel ? { label: translations.firstName, labelClass: '' } : {})}
           />
         </div>
       )}
@@ -110,7 +121,7 @@ export default function PersonalInfoInput({
             patternMessage=""
             placeholder={translations.lastNamePlaceholder}
             className="input col-span-1 mb-1 w-full"
-            {...(!noLabel ? { label: translations.lastName, labelClass: 'dark:text-current' } : {})}
+            {...(!noLabel ? { label: translations.lastName, labelClass: '' } : {})}
           />
         </div>
       )}
@@ -128,7 +139,7 @@ export default function PersonalInfoInput({
             patternMessage={translations.emailErrorMessage}
             placeholder={translations.emailPlaceholder}
             className="input col-span-1 mb-1 w-full"
-            {...(!noLabel ? { label: translations.email, labelClass: 'dark:text-current' } : {})}
+            {...(!noLabel ? { label: translations.email, labelClass: '' } : {})}
           />
         </div>
       )}
@@ -147,7 +158,7 @@ export default function PersonalInfoInput({
             patternMessage={translations.phoneNumberErrorMessage}
             placeholder={translations.phoneNumberPlaceholder}
             className="input col-span-1 mb-1 w-full"
-            {...(!noLabel ? { label: translations.phoneNumber, labelClass: 'dark:text-current' } : {})}
+            {...(!noLabel ? { label: translations.phoneNumber, labelClass: '' } : {})}
           />
         </div>
       )}
@@ -181,13 +192,14 @@ export default function PersonalInfoInput({
             nameInput="TypeOfCollaboration"
             label={translations.TypeOfCollaboration}
             required={translations.TypeOfCollaborationRequired}
-            labelClass=" dark:text-current"
+            labelClass=" "
             className="input col-span-1 mb-1 w-full"
             placeholder={translations.TypeOfCollaborationPlaceholder}
             options={translations.TypeOfCollaborationData}
           />
         </div>
       )}
+
       {nameInputs?.TypeOfCollaboration && (
         <div className="col-span-1 w-full">
           <Select
@@ -196,10 +208,32 @@ export default function PersonalInfoInput({
             nameInput="FieldOfExpert"
             label={translations.FieldOfExpert}
             required={translations.FieldOfExpertRequired}
-            labelClass=" dark:text-current"
+            labelClass=" "
             className="input col-span-1 mb-1 w-full"
             placeholder={translations.FieldOfExpertPlaceholder}
             options={translations.FieldOfExpertData}
+            handleChange={handleFieldOfExpertChange}
+            selected={fieldOfExpertValue}
+          />
+        </div>
+      )}
+
+      {/* When user selects "Other" show a text input to specify — register under "FieldOfExpertOther" */}
+      {showFieldOther && (
+        <div className="col-span-1 w-full">
+          <Input
+            id="field_of_expert_other"
+            register={register}
+            errors={errors}
+            nameInput="FieldOfExpertOther"
+            type="text"
+            label={translations.FieldOfExpertOther}
+            required={translations.FieldOfExpertOtherRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={translations.FieldOfExpertOtherPlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            labelClass=""
           />
         </div>
       )}

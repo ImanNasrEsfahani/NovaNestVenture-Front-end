@@ -57,6 +57,10 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder', { returnObjects: true }),
     FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || [],
     
+    FieldOfExpertOther: t('FieldOfExpertOther', { returnObjects: true }),
+    FieldOfExpertOtherRequired: t('FieldOfExpertOtherRequired', { returnObjects: true }),
+    FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true }),
+
     title: t('join-our-team', { returnObjects: true }).resumeQuestion,
     yesLabel: t('yes'),
     noLabel: t('no'),

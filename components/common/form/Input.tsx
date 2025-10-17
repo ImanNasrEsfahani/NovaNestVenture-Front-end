@@ -73,7 +73,6 @@ export default function Input({
         </span>
       )}
 
-      {label && <br />}
     </div>
   );
 }

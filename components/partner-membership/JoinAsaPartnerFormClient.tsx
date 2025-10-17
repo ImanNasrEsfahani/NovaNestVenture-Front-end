@@ -50,7 +50,7 @@ interface Translations {
   websiteRequired: string;
   websitePlaceholder: string;
   websiteErrorMessage: string;
-  
+
   linkedin: string;
   linkedinRequired: string;
   linkedinPlaceholder: string;
@@ -88,6 +88,10 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
+
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
 }
 
 interface Props {
@@ -216,7 +220,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
               lastName: translations.lastName,
               lastNameRequired: translations.lastNameRequired,
               lastNamePlaceholder: translations.lastNamePlaceholder,
-              
+
               email: translations.email,
               emailRequired: translations.emailRequired,
               emailErrorMessage: translations.emailErrorMessage,
@@ -226,7 +230,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
               phoneNumberRequired: translations.phoneNumberRequired,
               phoneNumberErrorMessage: translations.phoneNumberErrorMessage,
               phoneNumberPlaceholder: translations.phoneNumberPlaceholder,
-              
+
               countries: translations.countries,
               countryName: translations.countryName,
               countryNameRequired: translations.countryNameRequired,
@@ -248,7 +252,11 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
               FieldOfExpert: translations.FieldOfExpert,
               FieldOfExpertRequired: translations.FieldOfExpertRequired,
               FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
-              FieldOfExpertData: translations.FieldOfExpertData
+              FieldOfExpertData: translations.FieldOfExpertData,
+
+              FieldOfExpertOther: translations.FieldOfExpertOther,
+              FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
             }}
           />
 

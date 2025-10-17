@@ -1,140 +1,167 @@
 {
   "yes": "Yes",
   "no": "No",
-
   "firstName": "First Name ",
   "firstNameRequired": "First Name is Required.",
   "firstNamePlaceholder": "Your First Name",
-
   "lastName": "Last Name ",
   "lastNameRequired": "Last Name is Required.",
   "lastNamePlaceholder": "Your Last Name",
-
   "email": "Email ",
   "emailRequired": "Email is Required.",
   "emailErrorMessage": "Enter a Valid Email Address.",
-  "emailPlaceholder": "Your Ecountriesmail",
-
+  "emailPlaceholder": "Your E-mail address like someone@gmail.com",
   "phoneNumber": "Phone Number ",
   "phoneNumberRequired": "Phone Number is Required.",
   "phoneNumberErrorMessage": "Enter a Valid Phone Number",
   "phoneNumberPlaceholder": "Your Phone Number",
-
   "TypeOfCollaboration": "Type of Collaboration ",
   "TypeOfCollaborationRequired": "Type of Collaboration is Required",
   "TypeOfCollaborationErrorMassage": "Select a Type",
   "TypeOfCollaborationPlaceholder": " Select a Type of Collaboration",
-
   "TypeOfCollaborationData": [
-    { "value": 0, "label": "Internship" },
-    { "value": 1, "label": "Employee" }
+    {
+      "value": 0,
+      "label": "Internship"
+    },
+    {
+      "value": 1,
+      "label": "Employee"
+    }
   ],
-
   "FieldOfExpert": "Field of Expert ",
   "FieldOfExpertRequired": "Field of Expert is Required",
   "FieldOfExpertErrorMassage": "Select a Field of Expert",
   "FieldOfExpertPlaceholder": "Select a Field of Expert",
-
   "FieldOfExpertData": [
-    { "value": 0, "label": "Developer" },
-    { "value": 1, "label": "Marketing" },
-    { "value": 2, "label": "Sales" },
-    { "value": 3, "label": "Graphist" },
-    { "value": 4, "label": "Accountant" },
-    { "value": 5, "label": "Administrative Assistant" },
-    { "value": 6, "label": "Socail Media Admin" },
-    { "value": 7, "label": "Video Editor" },
-    { "value": 8, "label": "Photo and Video Content Creator" },
-    { "value": 9, "label": "Other" }
+    {
+      "value": 0,
+      "label": "Developer"
+    },
+    {
+      "value": 1,
+      "label": "Marketing"
+    },
+    {
+      "value": 2,
+      "label": "Sales"
+    },
+    {
+      "value": 3,
+      "label": "Graphist"
+    },
+    {
+      "value": 4,
+      "label": "Accountant"
+    },
+    {
+      "value": 5,
+      "label": "Administrative Assistant"
+    },
+    {
+      "value": 6,
+      "label": "Socail Media Admin"
+    },
+    {
+      "value": 7,
+      "label": "Video Editor"
+    },
+    {
+      "value": 8,
+      "label": "Photo and Video Content Creator"
+    },
+    {
+      "value": 9,
+      "label": "Other"
+    }
   ],
-
+  "FieldOfExpertOther": "Please specify your field of expertise.",
+  "FieldOfExpertOtherRequired": "Field of expertise is required.",
+  "FieldOfExpertOtherPlaceholder": "Enter your field of expertise",
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
   "birthDateErrorMessage": "Please enter a valid Date of Birth(e.g., 2001/02/11)",
   "birthDateErrorMessageForFutureDate": "Please enter a valid Date before of today",
   "birthDateErrorMessageForAge": "Your age is not acceptable.",
   "birthDatePlaceholder": "Date of Birth",
-
   "EducationLevels": "Education Level",
   "EducationLevelsRequired": "Education Level is Required",
   "EducationLevelsPlaceholder": "Select Your Education Level",
-
   "EducationField": "Please specify your field of study.",
   "EducationFieldRequired": "Field of study is required.",
   "EducationFieldPlaceholder": "Enter your field of study like Computer Science, Business Administration, etc.",
-
   "workHistorySummary": "Work History Summary",
   "workHistorySummaryRequired": "Work History Summary is required.",
   "workHistorySummaryErrorMessage": "Work History Summary must be less than 1450 characters.",
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
-
   "EducationLevelsData": [
-    { "value": 0, "label": "Under-Diploma" },
-    { "value": 1, "label": "Diploma" },
-    { "value": 2, "label": "Bachelor" },
-    { "value": 3, "label": "Master" },
-    { "value": 4, "label": "PhD" }
+    {
+      "value": 0,
+      "label": "Under-Diploma"
+    },
+    {
+      "value": 1,
+      "label": "Diploma"
+    },
+    {
+      "value": 2,
+      "label": "Bachelor"
+    },
+    {
+      "value": 3,
+      "label": "Master"
+    },
+    {
+      "value": 4,
+      "label": "PhD"
+    }
   ],
-
   "sendButton": "Send",
   "ReserveButton": "Reserve my free consultation",
   "sendingButton": "Submitting ....",
   "visitButton": "Visit Now",
-
   "successMessage": "Form Submitted Successfully.",
   "failedMessage": "An error occurred. Please Contact Support.",
-
   "companyName": "Company Name",
   "companyNameRequired": "Company Name is Required.",
   "companyNamePlaceholder": "Enter your Company Name",
-
   "maximumInvestment": "Maximum Investment",
   "maximumInvestmentRequired": "Maximum Investment is Required",
   "maximumInvestmentPlaceholder": "ex. 100,000$",
-
   "ExpertiesAreas": "What are your area of expertise? ",
   "ExpertiesAreasRequired": "This field is required",
   "ExpertiesAreasPlaceholder": "Marketing, AI, Sale, IT, Human Resources, etc.",
   "ExpertiesAreasErrorMessage": "The message must be less than 1450 characters.",
-
   "preferredAreas": "Preferred Areas for Investment ",
   "preferredAreasRequired": "This field is required",
   "preferredAreasPlaceholder": "Area like Education, Tourism, AI, Genetic, and etc",
   "preferredAreasErrorMessage": "The message must be less than 1450 characters.",
-
   "howDidYouKnowUs": "How did you know us? ",
   "howDidYouKnowUsPlaceholder": "For example, social media, etc.",
   "howDidYouKnowUsErrorMessage": "The message must be less than 1450 characters.",
   "howDidYouKnowUsRequired": "This field is required.",
-
   "website": "Website",
   "websiteRequired": "Website is required",
   "websitePlaceholder": "Enter your website",
   "websiteErrorMessage": "Enter a Valid Website URL",
-
   "linkedin": "LinkedIn",
   "linkedinRequired": "LinkedIn is required",
   "linkedinPlaceholder": "Enter your LinkedIn profile URL",
   "linkedinErrorMessage": "Enter a Valid LinkedIn URL",
-
   "instagram": "Instagram",
   "instagramRequired": "Instagram is required",
   "instagramPlaceholder": "Enter your Instagram profile URL or username",
   "instagramErrorMessage": "Enter a Valid Instagram URL",
-
   "briefIntroduction": "Brief Introduction",
   "briefIntroductionRequired": "Brief Introduction is required",
   "briefIntroductionPlaceholder": "Enter a brief introduction",
   "briefIntroductionErrorMessage": "The message must be less than 1450 characters.",
-
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
   "investmentCeilingPlaceholder": "ex. 100,000$",
-
   "contactForm": {
     "title": "Contact us",
     "subTitle": "We'd love to hear from you",
-
     "subject": "Subject",
     "subjectRequired": "Your Subject is Required",
     "subjectPlaceholder": "Subject",
@@ -143,7 +170,6 @@
     "messagePlaceholder": "Message",
     "messagePlaceholderErrorMessage": "The message must be less than 1450 characters."
   },
-
   "partnerForm": {
     "lng": "en",
     "dir": "ltr",
@@ -151,7 +177,6 @@
     "formTitle": "Affiliate Registration Form",
     "formSubtitle": "Personal Information"
   },
-
   "join-our-team": {
     "lng": "en",
     "dir": "ltr",
@@ -163,7 +188,6 @@
     "choseFile": "Choose File",
     "resumeQuestion": "Do you have an updated CV or resume?"
   },
-
   "workWithUS": {
     "lng": "en",
     "dir": "ltr",
@@ -185,11 +209,9 @@
     "StudySubFieldRequired": "your Study sub Field is required",
     "PositionPlaceholder": "Select your position",
     "contractPlaceholder": "Select your contract",
-
     "email": "Email",
     "emailRequired": "Email is Required.",
     "emailPlaceholder": "Your Email",
-
     "cvFile": "CV File",
     "cvFileRequired": "cv file is Required.",
     "cvFilePlaceholder": "please upload your cv file.",
@@ -198,9 +220,84 @@
     "hiring": "hiring",
     "professionalConsultation": "professional Consultation",
     "Internship": "Internship",
-    "UniversityInternship": "UniversityInternship"
+    "UniversityInternship": "UniversityInternship",
+    "title": "Join the NovaNest Professional Team",
+    "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
+    "description": "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success.",
+    "benefits": [
+      {
+        "id": "financial",
+        "emoji": "💰",
+        "title": "Financial Benefits",
+        "items": [
+          "Hands-on experience and collaboration with early-stage startups",
+          "Compensation for your projects and contributions",
+          "Opportunity to participate in successful projects and benefit financially"
+        ]
+      },
+      {
+        "id": "recognition",
+        "emoji": "🌟",
+        "title": "Recognition and Prestige",
+        "items": [
+          "Official introduction on NovaNest website and social media",
+          "Participation in workshops, events, and projects as a specialist",
+          "Features in specialized media and newsletters"
+        ]
+      },
+      {
+        "id": "growth",
+        "emoji": "📚",
+        "title": "Professional Growth & Learning",
+        "items": [
+          "Learning and collaborating with mentors and international teams",
+          "Access to NovaNest webinars, classes, and bootcamps"
+        ]
+      },
+      {
+        "id": "networking",
+        "emoji": "🤝",
+        "title": "Networking Expansion",
+        "items": [
+          "Membership in NovaNest’s professional network in Iran and Canada",
+          "Direct connections with founders, investors, and VCs",
+          "Participation in private gatherings and exclusive events"
+        ]
+      },
+      {
+        "id": "branding",
+        "emoji": "🌐",
+        "title": "Personal Brand Development",
+        "items": [
+          "Showcase your skills and expertise in projects and educational programs",
+          "Co-create specialized content with NovaNest (videos, podcasts, articles)",
+          "Highlight your experience in your dedicated NovaNest Professional profile"
+        ]
+      },
+      {
+        "id": "impact",
+        "emoji": "🌍",
+        "title": "Real and Social Impact",
+        "items": [
+          "Contribute to the growth of talented startups and teams",
+          "Collaborate on innovative projects with social impact",
+          "Opportunities to participate in NovaNest social responsibility programs"
+        ]
+      }
+    ],
+    "specialPerks": {
+      "id": "perks",
+      "emoji": "🎁",
+      "title": "Exclusive Perks",
+      "items": [
+        "Invitations to internal and international events",
+        "Access to NovaNest co-working space if needed",
+        "Receive official certification and accredited membership",
+        "Priority collaboration with NovaNest startups"
+      ]
+    },
+    "callToAction": "Join the NovaNest Professional Team today and bring your experience, expertise, and creativity to help shape the next generation of startups."
   },
-
   "investorForm": {
     "lng": "en",
     "dir": "ltr",
@@ -216,13 +313,11 @@
       "Full transparency in the investment process and returns"
     ],
     "formDescriptionEnd": "To take advantage of these opportunities, please complete the form below. Our team will contact you shortly.",
-    
     "formSubtitle": "Personal Information",
     "interests": "Intrests",
     "interestsRequired": "Intrests is Required.",
     "interestsPlaceholder": "Enter your Intrests."
   },
-
   "joinUsForm": {
     "lng": "en",
     "dir": "ltr",
@@ -235,7 +330,6 @@
     "contractType": "Type of Contract",
     "contractTypePlaceholder": "Select Your Type of Contract"
   },
-
   "startUp": {
     "lng": "en",
     "dir": "ltr",
@@ -248,92 +342,67 @@
     "secondTitle": "Grows and Scale Up",
     "subTitle": "Let’s Talk About Your Project",
     "formSubtitle": "Let’s Talk About Your Project",
-
     "formHeader": "Startup Investment Application",
     "formContent": [
       "Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.",
       "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation.",
       "Completing this form is the first step toward a potential partnership and investment with us. We look forward to learning more about your startup and exploring how we can support your growth."
     ],
-
     "MVP": {
       "description": "MVP is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development. This way, you are able to create the tangible product that provides the best and most appealing user experience for the most economical cost, an that can challenge and validate assumptions about a product's requirements.",
-      
       "pitchDeck": "Do you currently have a Pitchdeck in place? ",
       "choseFile": "Choose File",
-
       "productName": "Product Name ",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-      
       "siteAddress": "Site Address ",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "businessPlan": "Do you currently have a Business plan in place?",
-      
       "businessModel": "Business Model",
       "businessMonetization": "Describe your program's monetization method?",
       "businessMonetizationRequired": "This field is required",
       "businessMonetizationPlaceholder": "Description",
-      
       "businessDelivery": "Please clearly mention the structure of your sales cycle from contact to delivery.",
       "businessDeliveryRequired": "This field is required",
       "businessDeliveryPlaceholder": "Description",
-      
       "financial": "If your plan has a financial model, please upload it."
-
     },
-
     "FirstSale": {
-      "description" : "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
+      "description": "In business, product development (PD) covers the complete process of bringing a new product to market, renewing an existing product and introducing a product in a new market. You need to create a brand that helps you stand out from competitors by connecting with the values and emotions of your target customer. Among various business considerations, product design and the transformation into a product available for sale, and finally the means for it to generate income are the most important factors.",
       "choseFile": "Choose File",
-      
       "productName": "Product Name ",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-
       "siteAddress": "Site Address ",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "pitchDeck": "Do you currently have a Pitchdeck in place? ",
       "pitchDeckRequired": "Please choose an option",
-      
       "businessPlan": "Do you currently have a Business plan in place?",
       "businessPlanRequired": "Please choose an option",
-
       "financial": "Do you currently have a financial model in place?"
     },
-
-    "SaleDevelopment" : {
+    "SaleDevelopment": {
       "description": "Collaborate with manufacturers to ensure a high quality product delivered to buyer's doors that exceeds customer expectations. Sales development is usually an organization that sits between the marketing and sales functions of a business and is responsible for the front-end of the sales cycle including identifying, connecting with, and qualifying leads. They normally set up qualified meetings between a salesperson and potential buyers with a high probability of purchasing a product.",
-      
       "pitchDeck": "Do you currently have a Pitchdeck in place? ",
       "choseFile": "Choose File",
-
       "productName": "Product Name ",
       "productNameRequired": "Product Name is Required.",
       "productNamePlaceholder": "Enter your Product Name",
-
       "siteAddress": "Site Address ",
       "siteAddressRequired": "Site Address is Required.",
       "siteAddressPlaceholder": "Enter your Site Address",
-
       "businessPlan": "Do you currently have a Business plan in place?",
       "financial": "Do you currently have a financial plan in place?"
     },
-
     "commons": {
-      
       "accelerators": "Have you previously cooperated with investors or accelerators?",
       "acceleratorsRequired": "This field is required",
       "acceleratorsPlaceholder": "Description",
-
-      "knowUs": "How did you get to know us?", 
+      "knowUs": "How did you get to know us?",
       "knowUsRequired": "This field is required",
       "knowUsPlaceholder": "Description",
-
       "problems": {
         "title": "Problems",
         "customerProblem": "Describe the customer problem you want to solve with your product or service. ",
@@ -341,26 +410,21 @@
         "customerProblemPlaceholder": "Description",
         "customerProblemErrorMessage": "The message must be less than 1450 characters."
       },
-
       "solutionLevel": {
         "title": "Solutions",
         "solution": "What is your unique value proposition (innovation)? What is new about what you do? ",
         "solutionPlaceholder": "Description",
         "solutionRequired": "This field is required!",
         "solutionsErrorMessage": "The message must be less than 1450 characters.",
-
         "productLevel": "How much is level of your product and technology preparation?",
         "productLevelRequired": "Preparation Stats Required",
-        
         "scalable": "Briefly explain how your technology is scalable? ",
         "scalablePlaceholder": "Description",
         "scalableRequired": "This field is required!",
         "scalableErrorMessage": "The message must be less than 1450 characters.",
-    
         "solutionsUniqueValue": "What is your unique value proposition (innovation)? What is new about what you do?",
         "solutionsUniqueValueRequired": "this fields is required",
         "solutionsUniqueValuePlaceholder": "Description",
-
         "solutionsLevel": "How much is level of your product and technology preparation?",
         "solutionsLevelList": [
           "The basic principle has been observed.",
@@ -374,59 +438,48 @@
           "A complete and qualified system."
         ]
       },
-
       "propertyDropDown": {
         "property": "Property",
         "propertyRevenue": "How much revenue has your startup made since its inception?",
         "propertyRevenueRequired": "This field is required",
         "propertyRevenuePlaceholder": "Description",
         "propertyRevenueErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyMonthly": "How much is your monthly income?",
         "propertyMonthlyRequired": "This field is required",
         "propertyMonthlyPlaceholder": "Description",
         "propertyMonthlyErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyRate": "What is your current interest rate?",
         "propertyRateRequired": "This field is required",
         "propertyRatePlaceholder": "Description",
         "propertyRateErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyBusiness": "How much current funding did you raise before starting your business?",
         "propertyBusinessRequired": "This field is required",
         "propertyBusinessPlaceholder": "Description",
         "propertyBusinessErrorMessage": "The message must be less than 1450 characters.",
-
         "propertyCapital": "How much capital do you need to start your project?",
         "propertyCapitalRequired": "This field is required",
         "propertyCapitalPlaceholder": "Description",
         "propertyCapitalErrorMessage": "The message must be less than 1450 characters."
       },
-
       "targetMarketDropDown": {
-
         "targetMarket": "Target Market",
         "targetCharacteristics": "Based on what characteristics do you decide who are your customers and who are not?",
         "targetCharacteristicsRequired": "This field is required",
         "targetCharacteristicsPlaceholder": "Description",
         "targetCharacteristicsErrorMessage": "The message must be less than 1450 characters.",
-
         "targetCustomers": "Who are your current customers? How many customers have you had so far?",
         "targetCustomersRequired": "This field is required",
         "targetCustomersPlaceholder": "Description",
         "targetCustomersErrorMessage": "The message must be less than 1450 characters.",
-
         "targetEstimated": "How have you estimated the size of the market?",
         "targetEstimatedRequired": "This field is required",
         "targetEstimatedPlaceholder": "Description",
         "targetEstimatedErrorMessage": "The message must be less than 1450 characters.",
-
         "targetTotal": "targetTotal",
         "targetTotalRequired": "targetTotal",
         "targetTotalPlaceholder": "targetTotal",
         "targetTotalErrorMessage": "The message must be less than 1450 characters."
       },
-
       "businessModel": {
         "title": "Business Model",
         "monetization": "Describe the method of monetization of your plan? ",
@@ -434,52 +487,41 @@
         "monetizationOfYourPlanRequirmonetizationed": "This field is required!",
         "monetizationOfYourPlanPlaceholder": "Description",
         "monetizationOfYourPlanErrorMessage": "The message must be less than 1450 characters.",
-        "monetizationPlaceholder": "Description", 
+        "monetizationPlaceholder": "Description",
         "monetizationRequired": "This field is required!",
-
-
         "delivery": "Please clearly mention the structure of your sales cycle from contact to delivery. ",
         "deliveryPlaceholder": "Description",
         "deliveryRequired": "This field is required!",
         "deliveryErrorMessage": "The message must be less than 1450 characters.",
-
         "choseFile": "Choose File",
-
         "structureOfYourSales": "Please explain your sales structure from the beginning ",
         "structureOfYourSalesPlaceholder": "Description",
         "structureOfYourSalesRequired": "This field is required!",
         "structureOfYourSalesErrorMessage": "The message must be less than 1450 characters."
       }
     },
-
     "investmentCeiling": "Investment Ceiling",
     "investmentCeilingRequired": "Investment Ceiling is Required.",
     "investmentCeilingPlaceholder": "Enter your Investment Ceiling",
-
     "cooperatedWithInvestors": "Have you previously cooperated with investors or accelerators?",
     "cooperatedWithInvestorsPlaceholder": "Description",
     "cooperatedWithInvestorsErrorMessage": "The message must be less than 1450 characters.",
-  
     "financialFile": "Do you currently have a financial plan in place?",
     "financialFileRequired": "Please choose an option",
-
     "property": {
       "title": "Property",
       "startupRevenue": "How much revenue has your startup made since its inception? ",
       "startupRevenuePlaceholder": "Description",
       "startupRevenueRequired": "This field is required!",
       "startupRevenueErrorMessage": "The message must be less than 1450 characters.",
-
       "monthlyIncome": "How much is your monthly income? ",
       "monthlyIncomePlaceholder": "Description",
       "monthlyIncomeRequired": "This field is required!",
       "monthlyIncomeErrorMessage": "The message must be less than 1450 characters.",
-
       "currentRaisedFunding": "How much current funding did you raise before starting your business? ",
       "currentRaisedFundingPlaceholder": "Description",
       "currentRaisedFundingRequired": "This field is required!",
       "currentRaisedFundingErrorMessage": "The message must be less than 1450 characters.",
-
       "neededCapital": "How much capital do you need to start your project? ",
       "neededCapitalPlaceholder": "Description",
       "neededCapitalRequired": "This field is required!",
@@ -491,18 +533,15 @@
       "customerCharacteristicPlaceholder": "Description",
       "customerCharacteristicRequired": "This field is required!",
       "customerCharacteristicErrorMessage": "The message must be less than 1450 characters.",
-
       "currentCustomers": "Who are your current customers? How many customers have you had so far? ",
       "currentCustomersPlaceholder": "Description",
       "currentCustomersRequired": "This field is required!",
       "currentCustomersErrorMessage": "The message must be less than 1450 characters.",
-
       "estimatedMarketSize": "How have you estimated the size of the market? ",
       "estimatedMarketSizePlaceholder": "Description",
       "estimatedMarketSizeRequired": "This field is required!",
       "estimatedMarketSizeErrorMessage": "The message must be less than 1450 characters."
     },
-
     "radioButtonGroup": [
       {
         "value": "basicPrinciple",
@@ -542,48 +581,42 @@
       }
     ]
   },
-
   "startupApplicantForm": {
-    "formTitle":"Apply for SUV",
-    "formSubtitle":"Let’s Talk About Your Journey",
+    "formTitle": "Apply for SUV",
+    "formSubtitle": "Let’s Talk About Your Journey",
     "formDescription": [
       "If you&rsquo;re interested in applying for Canada’s Startup Visa program and securing permanent residency for yourself and your family",
       "you can book a free consultation with our experts to evaluate your eligibility and explore the right path forward."
     ],
-    "sendingButton":"Submitting ....",
+    "sendingButton": "Submitting ....",
     "sendButton": "Send",
-    "successMessage":"Form Submitted Successfully.",
-    "failedMessage":"An error occurred. Please Contact Support."
+    "successMessage": "Form Submitted Successfully.",
+    "failedMessage": "An error occurred. Please Contact Support."
   },
-
   "AccelerationApplicantForm": {
-    "formTitle":"Apply for Acceleration Program",
-    "formSubtitle":"Let’s Talk About Your Journey",
+    "formTitle": "Apply for Acceleration Program",
+    "formSubtitle": "Let’s Talk About Your Journey",
     "formDescription": [
       "If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success.",
       "Book your free consultation today and let&rsquo;s start this path together."
     ]
   },
-
   "AcademyApplicantForm": {
-    "formTitle":"Apply for Academy Program",
-    "formSubtitle":"Let’s Talk About Your Journey"
+    "formTitle": "Apply for Academy Program",
+    "formSubtitle": "Let’s Talk About Your Journey"
   },
-
   "PNPApplicantForm": {
-    "formTitle":"Apply for PNP Program",
-    "formSubtitle":"Let’s Talk About Your Journey",
+    "formTitle": "Apply for PNP Program",
+    "formSubtitle": "Let’s Talk About Your Journey",
     "formDescription": [
       "If you&rsquo;re interested in applying for Canada&rsquo;s Provincial Entrepreneur Program and starting your own business in Canada, this opportunity allows you to generate income while securing permanent residency for yourself and your family.",
       "Book a free consultation with our experts today to assess your eligibility and find the right path for your future."
     ],
-
-    "sendingButton":"Submitting ....",
+    "sendingButton": "Submitting ....",
     "sendButton": "Send",
-    "successMessage":"Form Submitted Successfully.",
-    "failedMessage":"An error occurred. Please Contact Support."
+    "successMessage": "Form Submitted Successfully.",
+    "failedMessage": "An error occurred. Please Contact Support."
   },
-
   "universities": {
     "placeholder": "university",
     "unis": {
@@ -593,7 +626,6 @@
       "etc": "etc"
     }
   },
-
   "langLevel": {
     "placeholder": "Language Skill Level",
     "levels": {
@@ -603,267 +635,1013 @@
       "expert": "Expert"
     }
   },
-
   "MVP": "Minimum Viable Product ( MVP )",
   "FirstSale": "Early Traction",
   "SaleDevelopment": "Scale-Up",
-
   "prosField": "Type of Collaboration  ",
   "prosFieldRequired": "This field is required!",
   "prosFieldPlaceholder": "Employment / Intern",
-
   "PersonalInformation": "Personal Information",
-
-  "countries" : [
-    { "value": "Iran", "label": "Iran" },
-    { "value": "Afghanistan", "label": "Afghanistan" },
-    { "value": "Albania", "label": "Albania" },
-    { "value": "Algeria", "label": "Algeria" },
-    { "value": "American Samoa", "label": "American Samoa" },
-    { "value": "Andorra", "label": "Andorra" },
-    { "value": "Angola", "label": "Angola" },
-    { "value": "Anguilla", "label": "Anguilla" },
-    { "value": "Antarctica", "label": "Antarctica" },
-    { "value": "Antigua and Barbuda", "label": "Antigua and Barbuda" },
-    { "value": "Argentina", "label": "Argentina" },
-    { "value": "Armenia", "label": "Armenia" },
-    { "value": "Aruba", "label": "Aruba" },
-    { "value": "Australia", "label": "Australia" },
-    { "value": "Austria", "label": "Austria" },
-    { "value": "Azerbaijan", "label": "Azerbaijan" },
-    { "value": "Bahamas (the)", "label": "Bahamas (the)" },
-    { "value": "Bahrain", "label": "Bahrain" },
-    { "value": "Bangladesh", "label": "Bangladesh" },
-    { "value": "Barbados", "label": "Barbados" },
-    { "value": "Belarus", "label": "Belarus" },
-    { "value": "Belgium", "label": "Belgium" },
-    { "value": "Belize", "label": "Belize" },
-    { "value": "Benin", "label": "Benin" },
-    { "value": "Bermuda", "label": "Bermuda" },
-    { "value": "Bhutan", "label": "Bhutan" },
-    { "value": "Bolivia (Plurinational State of)", "label": "Bolivia (Plurinational State of)" },
-    { "value": "Bonaire, Sint Eustatius and Saba", "label": "Bonaire, Sint Eustatius and Saba" },
-    { "value": "Bosnia and Herzegovina", "label": "Bosnia and Herzegovina" },
-    { "value": "Botswana", "label": "Botswana" },
-    { "value": "Bouvet Island", "label": "Bouvet Island" },
-    { "value": "Brazil", "label": "Brazil" },
-    { "value": "British Indian Ocean Territory (the)", "label": "British Indian Ocean Territory (the)" },
-    { "value": "Brunei Darussalam", "label": "Brunei Darussalam" },
-    { "value": "Bulgaria", "label": "Bulgaria" },
-    { "value": "Burkina Faso", "label": "Burkina Faso" },
-    { "value": "Burundi", "label": "Burundi" },
-    { "value": "Cabo Verde", "label": "Cabo Verde" },
-    { "value": "Cambodia", "label": "Cambodia" },
-    { "value": "Cameroon", "label": "Cameroon" },
-    { "value": "Canada", "label": "Canada" },
-    { "value": "Cayman Islands (the)", "label": "Cayman Islands (the)" },
-    { "value": "Central African Republic (the)", "label": "Central African Republic (the)" },
-    { "value": "Chad", "label": "Chad" },
-    { "value": "Chile", "label": "Chile" },
-    { "value": "China", "label": "China" },
-    { "value": "Christmas Island", "label": "Christmas Island" },
-    { "value": "Cocos (Keeling) Islands (the)", "label": "Cocos (Keeling) Islands (the)" },
-    { "value": "Colombia", "label": "Colombia" },
-    { "value": "Comoros (the)", "label": "Comoros (the)" },
-    { "value": "Congo (the Democratic Republic of the)", "label": "Congo (the Democratic Republic of the)" },
-    { "value": "Congo (the)", "label": "Congo (the)" },
-    { "value": "Cook Islands (the)", "label": "Cook Islands (the)" },
-    { "value": "Costa Rica", "label": "Costa Rica" },
-    { "value": "Croatia", "label": "Croatia" },
-    { "value": "Cuba", "label": "Cuba" },
-    { "value": "Curaçao", "label": "Curaçao" },
-    { "value": "Cyprus", "label": "Cyprus" },
-    { "value": "Czechia", "label": "Czechia" },
-    { "value": "Côte d'Ivoire", "label": "Côte d'Ivoire" },
-    { "value": "Denmark", "label": "Denmark" },
-    { "value": "Djibouti", "label": "Djibouti" },
-    { "value": "Dominica", "label": "Dominica" },
-    { "value": "Dominican Republic (the)", "label": "Dominican Republic (the)" },
-    { "value": "Ecuador", "label": "Ecuador" },
-    { "value": "Egypt", "label": "Egypt" },
-    { "value": "El Salvador", "label": "El Salvador" },
-    { "value": "Equatorial Guinea", "label": "Equatorial Guinea" },
-    { "value": "Eritrea", "label": "Eritrea" },
-    { "value": "Estonia", "label": "Estonia" },
-    { "value": "Eswatini", "label": "Eswatini" },
-    { "value": "Ethiopia", "label": "Ethiopia" },
-    { "value": "Falkland Islands (the) [Malvinas]", "label": "Falkland Islands (the) [Malvinas]" },
-    { "value": "Faroe Islands (the)", "label": "Faroe Islands (the)" },
-    { "value": "Fiji", "label": "Fiji" },
-    { "value": "Finland", "label": "Finland" },
-    { "value": "France", "label": "France" },
-    { "value": "French Guiana", "label": "French Guiana" },
-    { "value": "French Polynesia", "label": "French Polynesia" },
-    { "value": "French Southern Territories (the)", "label": "French Southern Territories (the)" },
-    { "value": "Gabon", "label": "Gabon" },
-    { "value": "Gambia (the)", "label": "Gambia (the)" },
-    { "value": "Georgia", "label": "Georgia" },
-    { "value": "Germany", "label": "Germany" },
-    { "value": "Ghana", "label": "Ghana" },
-    { "value": "Gibraltar", "label": "Gibraltar" },
-    { "value": "Greece", "label": "Greece" },
-    { "value": "Greenland", "label": "Greenland" },
-    { "value": "Grenada", "label": "Grenada" },
-    { "value": "Guadeloupe", "label": "Guadeloupe" },
-    { "value": "Guam", "label": "Guam" },
-    { "value": "Guatemala", "label": "Guatemala" },
-    { "value": "Guernsey", "label": "Guernsey" },
-    { "value": "Guinea", "label": "Guinea" },
-    { "value": "Guinea-Bissau", "label": "Guinea-Bissau" },
-    { "value": "Guyana", "label": "Guyana" },
-    { "value": "Haiti", "label": "Haiti" },
-    { "value": "Heard Island and McDonald Islands", "label": "Heard Island and McDonald Islands" },
-    { "value": "Holy See (the)", "label": "Holy See (the)" },
-    { "value": "Honduras", "label": "Honduras" },
-    { "value": "Hong Kong", "label": "Hong Kong" },
-    { "value": "Hungary", "label": "Hungary" },
-    { "value": "Iceland", "label": "Iceland" },
-    { "value": "India", "label": "India" },
-    { "value": "Indonesia", "label": "Indonesia" },
-    { "value": "Iran (Islamic Republic of)", "label": "Iran (Islamic Republic of)" },
-    { "value": "Iraq", "label": "Iraq" },
-    { "value": "Ireland", "label": "Ireland" },
-    { "value": "Isle of Man", "label": "Isle of Man" },
-    { "value": "Israel", "label": "Israel" },
-    { "value": "Italy", "label": "Italy" },
-    { "value": "Jamaica", "label": "Jamaica" },
-    { "value": "Japan", "label": "Japan" },
-    { "value": "Jersey", "label": "Jersey" },
-    { "value": "Jordan", "label": "Jordan" },
-    { "value": "Kazakhstan", "label": "Kazakhstan" },
-    { "value": "Kenya", "label": "Kenya" },
-    { "value": "Kiribati", "label": "Kiribati" },
-    { "value": "Korea (the Democratic People's Republic of)", "label": "Korea (the Democratic People's Republic of)" },
-    { "value": "Korea (the Republic of)", "label": "Korea (the Republic of)" },
-    { "value": "Kuwait", "label": "Kuwait" },
-    { "value": "Kyrgyzstan", "label": "Kyrgyzstan" },
-    { "value": "Lao People's Democratic Republic (the)", "label": "Lao People's Democratic Republic (the)" },
-    { "value": "Latvia", "label": "Latvia" },
-    { "value": "Lebanon", "label": "Lebanon" },
-    { "value": "Lesotho", "label": "Lesotho" },
-    { "value": "Liberia", "label": "Liberia" },
-    { "value": "Libya", "label": "Libya" },
-    { "value": "Liechtenstein", "label": "Liechtenstein" },
-    { "value": "Lithuania", "label": "Lithuania" },
-    { "value": "Luxembourg", "label": "Luxembourg" },
-    { "value": "Macao", "label": "Macao" },
-    { "value": "Madagascar", "label": "Madagascar" },
-    { "value": "Malawi", "label": "Malawi" },
-    { "value": "Malaysia", "label": "Malaysia" },
-    { "value": "Maldives", "label": "Maldives" },
-    { "value": "Mali", "label": "Mali" },
-    { "value": "Malta", "label": "Malta" },
-    { "value": "Marshall Islands (the)", "label": "Marshall Islands (the)" },
-    { "value": "Martinique", "label": "Martinique" },
-    { "value": "Mauritania", "label": "Mauritania" },
-    { "value": "Mauritius", "label": "Mauritius" },
-    { "value": "Mayotte", "label": "Mayotte" },
-    { "value": "Mexico", "label": "Mexico" },
-    { "value": "Micronesia (Federated States of)", "label": "Micronesia (Federated States of)" },
-    { "value": "Moldova (the Republic of)", "label": "Moldova (the Republic of)" },
-    { "value": "Monaco", "label": "Monaco" },
-    { "value": "Mongolia", "label": "Mongolia" },
-    { "value": "Montenegro", "label": "Montenegro" },
-    { "value": "Montserrat", "label": "Montserrat" },
-    { "value": "Morocco", "label": "Morocco" },
-    { "value": "Mozambique", "label": "Mozambique" },
-    { "value": "Myanmar", "label": "Myanmar" },
-    { "value": "Namibia", "label": "Namibia" },
-    { "value": "Nauru", "label": "Nauru" },
-    { "value": "Nepal", "label": "Nepal" },
-    { "value": "Netherlands (the)", "label": "Netherlands (the)" },
-    { "value": "New Caledonia", "label": "New Caledonia" },
-    { "value": "New Zealand", "label": "New Zealand" },
-    { "value": "Nicaragua", "label": "Nicaragua" },
-    { "value": "Niger (the)", "label": "Niger (the)" },
-    { "value": "Nigeria", "label": "Nigeria" },
-    { "value": "Niue", "label": "Niue" },
-    { "value": "Norfolk Island", "label": "Norfolk Island" },
-    { "value": "Northern Mariana Islands (the)", "label": "Northern Mariana Islands (the)" },
-    { "value": "Norway", "label": "Norway" },
-    { "value": "Oman", "label": "Oman" },
-    { "value": "Pakistan", "label": "Pakistan" },
-    { "value": "Palau", "label": "Palau" },
-    { "value": "Palestine, State of", "label": "Palestine, State of" },
-    { "value": "Panama", "label": "Panama" },
-    { "value": "Papua New Guinea", "label": "Papua New Guinea" },
-    { "value": "Paraguay", "label": "Paraguay" },
-    { "value": "Peru", "label": "Peru" },
-    { "value": "Philippines (the)", "label": "Philippines (the)" },
-    { "value": "Pitcairn", "label": "Pitcairn" },
-    { "value": "Poland", "label": "Poland" },
-    { "value": "Portugal", "label": "Portugal" },
-    { "value": "Puerto Rico", "label": "Puerto Rico" },
-    { "value": "Qatar", "label": "Qatar" },
-    { "value": "Republic of North Macedonia", "label": "Republic of North Macedonia" },
-    { "value": "Romania", "label": "Romania" },
-    { "value": "Russian Federation (the)", "label": "Russian Federation (the)" },
-    { "value": "Rwanda", "label": "Rwanda" },
-    { "value": "Réunion", "label": "Réunion" },
-    { "value": "Saint Barthélemy", "label": "Saint Barthélemy" },
-    { "value": "Saint Helena, Ascension and Tristan da Cunha", "label": "Saint Helena, Ascension and Tristan da Cunha" },
-    { "value": "Saint Kitts and Nevis", "label": "Saint Kitts and Nevis" },
-    { "value": "Saint Lucia", "label": "Saint Lucia" },
-    { "value": "Saint Martin (French part)", "label": "Saint Martin (French part)" },
-    { "value": "Saint Pierre and Miquelon", "label": "Saint Pierre and Miquelon" },
-    { "value": "Saint Vincent and the Grenadines", "label": "Saint Vincent and the Grenadines" },
-    { "value": "Samoa", "label": "Samoa" },
-    { "value": "San Marino", "label": "San Marino" },
-    { "value": "Sao Tome and Principe", "label": "Sao Tome and Principe" },
-    { "value": "Saudi Arabia", "label": "Saudi Arabia" },
-    { "value": "Senegal", "label": "Senegal" },
-    { "value": "Serbia", "label": "Serbia" },
-    { "value": "Seychelles", "label": "Seychelles" },
-    { "value": "Sierra Leone", "label": "Sierra Leone" },
-    { "value": "Singapore", "label": "Singapore" },
-    { "value": "Sint Maarten (Dutch part)", "label": "Sint Maarten (Dutch part)" },
-    { "value": "Slovakia", "label": "Slovakia" },
-    { "value": "Slovenia", "label": "Slovenia" },
-    { "value": "Solomon Islands", "label": "Solomon Islands" },
-    { "value": "Somalia", "label": "Somalia" },
-    { "value": "South Africa", "label": "South Africa" },
-    { "value": "South Georgia and the South Sandwich Islands", "label": "South Georgia and the South Sandwich Islands" },
-    { "value": "South Sudan", "label": "South Sudan" },
-    { "value": "Spain", "label": "Spain" },
-    { "value": "Sri Lanka", "label": "Sri Lanka" },
-    { "value": "Sudan (the)", "label": "Sudan (the)" },
-    { "value": "Suriname", "label": "Suriname" },
-    { "value": "Svalbard and Jan Mayen", "label": "Svalbard and Jan Mayen" },
-    { "value": "Sweden", "label": "Sweden" },
-    { "value": "Switzerland", "label": "Switzerland" },
-    { "value": "Syrian Arab Republic", "label": "Syrian Arab Republic" },
-    { "value": "Taiwan", "label": "Taiwan" },
-    { "value": "Tajikistan", "label": "Tajikistan" },
-    { "value": "Tanzania, United Republic of", "label": "Tanzania, United Republic of" },
-    { "value": "Thailand", "label": "Thailand" },
-    { "value": "Timor-Leste", "label": "Timor-Leste" },
-    { "value": "Togo", "label": "Togo" },
-    { "value": "Tokelau", "label": "Tokelau" },
-    { "value": "Tonga", "label": "Tonga" },
-    { "value": "Trinidad and Tobago", "label": "Trinidad and Tobago" },
-    { "value": "Tunisia", "label": "Tunisia" },
-    { "value": "Turkey", "label": "Turkey" },
-    { "value": "Turkmenistan", "label": "Turkmenistan" },
-    { "value": "Turks and Caicos Islands (the)", "label": "Turks and Caicos Islands (the)" },
-    { "value": "Tuvalu", "label": "Tuvalu" },
-    { "value": "Uganda", "label": "Uganda" },
-    { "value": "Ukraine", "label": "Ukraine" },
-    { "value": "United Arab Emirates (the)", "label": "United Arab Emirates (the)" },
-    { "value": "United Kingdom of Great Britain and Northern Ireland (the)", "label": "United Kingdom of Great Britain and Northern Ireland (the)" },
-    { "value": "United States Minor Outlying Islands (the)", "label": "United States Minor Outlying Islands (the)" },
-    { "value": "United States of America (the)", "label": "United States of America (the)" },
-    { "value": "Uruguay", "label": "Uruguay" },
-    { "value": "Uzbekistan", "label": "Uzbekistan" },
-    { "value": "Vanuatu", "label": "Vanuatu" },
-    { "value": "Venezuela (Bolivarian Republic of)", "label": "Venezuela (Bolivarian Republic of)" },
-    { "value": "Viet Nam", "label": "Viet Nam" },
-    { "value": "Virgin Islands (British)", "label": "Virgin Islands (British)" },
-    { "value": "Virgin Islands (U.S.)", "label": "Virgin Islands (U.S.)" },
-    { "value": "Wallis and Futuna", "label": "Wallis and Futuna" },
-    { "value": "Western Sahara", "label": "Western Sahara" },
-    { "value": "Yemen", "label": "Yemen" },
-    { "value": "Zambia", "label": "Zambia" },
-    { "value": "Zimbabwe", "label": "Zimbabwe" },
-    { "value": "Åland Islands", "label": "Åland Islands" }
+  "countries": [
+    {
+      "value": "Iran",
+      "label": "Iran"
+    },
+    {
+      "value": "Afghanistan",
+      "label": "Afghanistan"
+    },
+    {
+      "value": "Albania",
+      "label": "Albania"
+    },
+    {
+      "value": "Algeria",
+      "label": "Algeria"
+    },
+    {
+      "value": "American Samoa",
+      "label": "American Samoa"
+    },
+    {
+      "value": "Andorra",
+      "label": "Andorra"
+    },
+    {
+      "value": "Angola",
+      "label": "Angola"
+    },
+    {
+      "value": "Anguilla",
+      "label": "Anguilla"
+    },
+    {
+      "value": "Antarctica",
+      "label": "Antarctica"
+    },
+    {
+      "value": "Antigua and Barbuda",
+      "label": "Antigua and Barbuda"
+    },
+    {
+      "value": "Argentina",
+      "label": "Argentina"
+    },
+    {
+      "value": "Armenia",
+      "label": "Armenia"
+    },
+    {
+      "value": "Aruba",
+      "label": "Aruba"
+    },
+    {
+      "value": "Australia",
+      "label": "Australia"
+    },
+    {
+      "value": "Austria",
+      "label": "Austria"
+    },
+    {
+      "value": "Azerbaijan",
+      "label": "Azerbaijan"
+    },
+    {
+      "value": "Bahamas (the)",
+      "label": "Bahamas (the)"
+    },
+    {
+      "value": "Bahrain",
+      "label": "Bahrain"
+    },
+    {
+      "value": "Bangladesh",
+      "label": "Bangladesh"
+    },
+    {
+      "value": "Barbados",
+      "label": "Barbados"
+    },
+    {
+      "value": "Belarus",
+      "label": "Belarus"
+    },
+    {
+      "value": "Belgium",
+      "label": "Belgium"
+    },
+    {
+      "value": "Belize",
+      "label": "Belize"
+    },
+    {
+      "value": "Benin",
+      "label": "Benin"
+    },
+    {
+      "value": "Bermuda",
+      "label": "Bermuda"
+    },
+    {
+      "value": "Bhutan",
+      "label": "Bhutan"
+    },
+    {
+      "value": "Bolivia (Plurinational State of)",
+      "label": "Bolivia (Plurinational State of)"
+    },
+    {
+      "value": "Bonaire, Sint Eustatius and Saba",
+      "label": "Bonaire, Sint Eustatius and Saba"
+    },
+    {
+      "value": "Bosnia and Herzegovina",
+      "label": "Bosnia and Herzegovina"
+    },
+    {
+      "value": "Botswana",
+      "label": "Botswana"
+    },
+    {
+      "value": "Bouvet Island",
+      "label": "Bouvet Island"
+    },
+    {
+      "value": "Brazil",
+      "label": "Brazil"
+    },
+    {
+      "value": "British Indian Ocean Territory (the)",
+      "label": "British Indian Ocean Territory (the)"
+    },
+    {
+      "value": "Brunei Darussalam",
+      "label": "Brunei Darussalam"
+    },
+    {
+      "value": "Bulgaria",
+      "label": "Bulgaria"
+    },
+    {
+      "value": "Burkina Faso",
+      "label": "Burkina Faso"
+    },
+    {
+      "value": "Burundi",
+      "label": "Burundi"
+    },
+    {
+      "value": "Cabo Verde",
+      "label": "Cabo Verde"
+    },
+    {
+      "value": "Cambodia",
+      "label": "Cambodia"
+    },
+    {
+      "value": "Cameroon",
+      "label": "Cameroon"
+    },
+    {
+      "value": "Canada",
+      "label": "Canada"
+    },
+    {
+      "value": "Cayman Islands (the)",
+      "label": "Cayman Islands (the)"
+    },
+    {
+      "value": "Central African Republic (the)",
+      "label": "Central African Republic (the)"
+    },
+    {
+      "value": "Chad",
+      "label": "Chad"
+    },
+    {
+      "value": "Chile",
+      "label": "Chile"
+    },
+    {
+      "value": "China",
+      "label": "China"
+    },
+    {
+      "value": "Christmas Island",
+      "label": "Christmas Island"
+    },
+    {
+      "value": "Cocos (Keeling) Islands (the)",
+      "label": "Cocos (Keeling) Islands (the)"
+    },
+    {
+      "value": "Colombia",
+      "label": "Colombia"
+    },
+    {
+      "value": "Comoros (the)",
+      "label": "Comoros (the)"
+    },
+    {
+      "value": "Congo (the Democratic Republic of the)",
+      "label": "Congo (the Democratic Republic of the)"
+    },
+    {
+      "value": "Congo (the)",
+      "label": "Congo (the)"
+    },
+    {
+      "value": "Cook Islands (the)",
+      "label": "Cook Islands (the)"
+    },
+    {
+      "value": "Costa Rica",
+      "label": "Costa Rica"
+    },
+    {
+      "value": "Croatia",
+      "label": "Croatia"
+    },
+    {
+      "value": "Cuba",
+      "label": "Cuba"
+    },
+    {
+      "value": "Curaçao",
+      "label": "Curaçao"
+    },
+    {
+      "value": "Cyprus",
+      "label": "Cyprus"
+    },
+    {
+      "value": "Czechia",
+      "label": "Czechia"
+    },
+    {
+      "value": "Côte d'Ivoire",
+      "label": "Côte d'Ivoire"
+    },
+    {
+      "value": "Denmark",
+      "label": "Denmark"
+    },
+    {
+      "value": "Djibouti",
+      "label": "Djibouti"
+    },
+    {
+      "value": "Dominica",
+      "label": "Dominica"
+    },
+    {
+      "value": "Dominican Republic (the)",
+      "label": "Dominican Republic (the)"
+    },
+    {
+      "value": "Ecuador",
+      "label": "Ecuador"
+    },
+    {
+      "value": "Egypt",
+      "label": "Egypt"
+    },
+    {
+      "value": "El Salvador",
+      "label": "El Salvador"
+    },
+    {
+      "value": "Equatorial Guinea",
+      "label": "Equatorial Guinea"
+    },
+    {
+      "value": "Eritrea",
+      "label": "Eritrea"
+    },
+    {
+      "value": "Estonia",
+      "label": "Estonia"
+    },
+    {
+      "value": "Eswatini",
+      "label": "Eswatini"
+    },
+    {
+      "value": "Ethiopia",
+      "label": "Ethiopia"
+    },
+    {
+      "value": "Falkland Islands (the) [Malvinas]",
+      "label": "Falkland Islands (the) [Malvinas]"
+    },
+    {
+      "value": "Faroe Islands (the)",
+      "label": "Faroe Islands (the)"
+    },
+    {
+      "value": "Fiji",
+      "label": "Fiji"
+    },
+    {
+      "value": "Finland",
+      "label": "Finland"
+    },
+    {
+      "value": "France",
+      "label": "France"
+    },
+    {
+      "value": "French Guiana",
+      "label": "French Guiana"
+    },
+    {
+      "value": "French Polynesia",
+      "label": "French Polynesia"
+    },
+    {
+      "value": "French Southern Territories (the)",
+      "label": "French Southern Territories (the)"
+    },
+    {
+      "value": "Gabon",
+      "label": "Gabon"
+    },
+    {
+      "value": "Gambia (the)",
+      "label": "Gambia (the)"
+    },
+    {
+      "value": "Georgia",
+      "label": "Georgia"
+    },
+    {
+      "value": "Germany",
+      "label": "Germany"
+    },
+    {
+      "value": "Ghana",
+      "label": "Ghana"
+    },
+    {
+      "value": "Gibraltar",
+      "label": "Gibraltar"
+    },
+    {
+      "value": "Greece",
+      "label": "Greece"
+    },
+    {
+      "value": "Greenland",
+      "label": "Greenland"
+    },
+    {
+      "value": "Grenada",
+      "label": "Grenada"
+    },
+    {
+      "value": "Guadeloupe",
+      "label": "Guadeloupe"
+    },
+    {
+      "value": "Guam",
+      "label": "Guam"
+    },
+    {
+      "value": "Guatemala",
+      "label": "Guatemala"
+    },
+    {
+      "value": "Guernsey",
+      "label": "Guernsey"
+    },
+    {
+      "value": "Guinea",
+      "label": "Guinea"
+    },
+    {
+      "value": "Guinea-Bissau",
+      "label": "Guinea-Bissau"
+    },
+    {
+      "value": "Guyana",
+      "label": "Guyana"
+    },
+    {
+      "value": "Haiti",
+      "label": "Haiti"
+    },
+    {
+      "value": "Heard Island and McDonald Islands",
+      "label": "Heard Island and McDonald Islands"
+    },
+    {
+      "value": "Holy See (the)",
+      "label": "Holy See (the)"
+    },
+    {
+      "value": "Honduras",
+      "label": "Honduras"
+    },
+    {
+      "value": "Hong Kong",
+      "label": "Hong Kong"
+    },
+    {
+      "value": "Hungary",
+      "label": "Hungary"
+    },
+    {
+      "value": "Iceland",
+      "label": "Iceland"
+    },
+    {
+      "value": "India",
+      "label": "India"
+    },
+    {
+      "value": "Indonesia",
+      "label": "Indonesia"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "label": "Iran (Islamic Republic of)"
+    },
+    {
+      "value": "Iraq",
+      "label": "Iraq"
+    },
+    {
+      "value": "Ireland",
+      "label": "Ireland"
+    },
+    {
+      "value": "Isle of Man",
+      "label": "Isle of Man"
+    },
+    {
+      "value": "Israel",
+      "label": "Israel"
+    },
+    {
+      "value": "Italy",
+      "label": "Italy"
+    },
+    {
+      "value": "Jamaica",
+      "label": "Jamaica"
+    },
+    {
+      "value": "Japan",
+      "label": "Japan"
+    },
+    {
+      "value": "Jersey",
+      "label": "Jersey"
+    },
+    {
+      "value": "Jordan",
+      "label": "Jordan"
+    },
+    {
+      "value": "Kazakhstan",
+      "label": "Kazakhstan"
+    },
+    {
+      "value": "Kenya",
+      "label": "Kenya"
+    },
+    {
+      "value": "Kiribati",
+      "label": "Kiribati"
+    },
+    {
+      "value": "Korea (the Democratic People's Republic of)",
+      "label": "Korea (the Democratic People's Republic of)"
+    },
+    {
+      "value": "Korea (the Republic of)",
+      "label": "Korea (the Republic of)"
+    },
+    {
+      "value": "Kuwait",
+      "label": "Kuwait"
+    },
+    {
+      "value": "Kyrgyzstan",
+      "label": "Kyrgyzstan"
+    },
+    {
+      "value": "Lao People's Democratic Republic (the)",
+      "label": "Lao People's Democratic Republic (the)"
+    },
+    {
+      "value": "Latvia",
+      "label": "Latvia"
+    },
+    {
+      "value": "Lebanon",
+      "label": "Lebanon"
+    },
+    {
+      "value": "Lesotho",
+      "label": "Lesotho"
+    },
+    {
+      "value": "Liberia",
+      "label": "Liberia"
+    },
+    {
+      "value": "Libya",
+      "label": "Libya"
+    },
+    {
+      "value": "Liechtenstein",
+      "label": "Liechtenstein"
+    },
+    {
+      "value": "Lithuania",
+      "label": "Lithuania"
+    },
+    {
+      "value": "Luxembourg",
+      "label": "Luxembourg"
+    },
+    {
+      "value": "Macao",
+      "label": "Macao"
+    },
+    {
+      "value": "Madagascar",
+      "label": "Madagascar"
+    },
+    {
+      "value": "Malawi",
+      "label": "Malawi"
+    },
+    {
+      "value": "Malaysia",
+      "label": "Malaysia"
+    },
+    {
+      "value": "Maldives",
+      "label": "Maldives"
+    },
+    {
+      "value": "Mali",
+      "label": "Mali"
+    },
+    {
+      "value": "Malta",
+      "label": "Malta"
+    },
+    {
+      "value": "Marshall Islands (the)",
+      "label": "Marshall Islands (the)"
+    },
+    {
+      "value": "Martinique",
+      "label": "Martinique"
+    },
+    {
+      "value": "Mauritania",
+      "label": "Mauritania"
+    },
+    {
+      "value": "Mauritius",
+      "label": "Mauritius"
+    },
+    {
+      "value": "Mayotte",
+      "label": "Mayotte"
+    },
+    {
+      "value": "Mexico",
+      "label": "Mexico"
+    },
+    {
+      "value": "Micronesia (Federated States of)",
+      "label": "Micronesia (Federated States of)"
+    },
+    {
+      "value": "Moldova (the Republic of)",
+      "label": "Moldova (the Republic of)"
+    },
+    {
+      "value": "Monaco",
+      "label": "Monaco"
+    },
+    {
+      "value": "Mongolia",
+      "label": "Mongolia"
+    },
+    {
+      "value": "Montenegro",
+      "label": "Montenegro"
+    },
+    {
+      "value": "Montserrat",
+      "label": "Montserrat"
+    },
+    {
+      "value": "Morocco",
+      "label": "Morocco"
+    },
+    {
+      "value": "Mozambique",
+      "label": "Mozambique"
+    },
+    {
+      "value": "Myanmar",
+      "label": "Myanmar"
+    },
+    {
+      "value": "Namibia",
+      "label": "Namibia"
+    },
+    {
+      "value": "Nauru",
+      "label": "Nauru"
+    },
+    {
+      "value": "Nepal",
+      "label": "Nepal"
+    },
+    {
+      "value": "Netherlands (the)",
+      "label": "Netherlands (the)"
+    },
+    {
+      "value": "New Caledonia",
+      "label": "New Caledonia"
+    },
+    {
+      "value": "New Zealand",
+      "label": "New Zealand"
+    },
+    {
+      "value": "Nicaragua",
+      "label": "Nicaragua"
+    },
+    {
+      "value": "Niger (the)",
+      "label": "Niger (the)"
+    },
+    {
+      "value": "Nigeria",
+      "label": "Nigeria"
+    },
+    {
+      "value": "Niue",
+      "label": "Niue"
+    },
+    {
+      "value": "Norfolk Island",
+      "label": "Norfolk Island"
+    },
+    {
+      "value": "Northern Mariana Islands (the)",
+      "label": "Northern Mariana Islands (the)"
+    },
+    {
+      "value": "Norway",
+      "label": "Norway"
+    },
+    {
+      "value": "Oman",
+      "label": "Oman"
+    },
+    {
+      "value": "Pakistan",
+      "label": "Pakistan"
+    },
+    {
+      "value": "Palau",
+      "label": "Palau"
+    },
+    {
+      "value": "Palestine, State of",
+      "label": "Palestine, State of"
+    },
+    {
+      "value": "Panama",
+      "label": "Panama"
+    },
+    {
+      "value": "Papua New Guinea",
+      "label": "Papua New Guinea"
+    },
+    {
+      "value": "Paraguay",
+      "label": "Paraguay"
+    },
+    {
+      "value": "Peru",
+      "label": "Peru"
+    },
+    {
+      "value": "Philippines (the)",
+      "label": "Philippines (the)"
+    },
+    {
+      "value": "Pitcairn",
+      "label": "Pitcairn"
+    },
+    {
+      "value": "Poland",
+      "label": "Poland"
+    },
+    {
+      "value": "Portugal",
+      "label": "Portugal"
+    },
+    {
+      "value": "Puerto Rico",
+      "label": "Puerto Rico"
+    },
+    {
+      "value": "Qatar",
+      "label": "Qatar"
+    },
+    {
+      "value": "Republic of North Macedonia",
+      "label": "Republic of North Macedonia"
+    },
+    {
+      "value": "Romania",
+      "label": "Romania"
+    },
+    {
+      "value": "Russian Federation (the)",
+      "label": "Russian Federation (the)"
+    },
+    {
+      "value": "Rwanda",
+      "label": "Rwanda"
+    },
+    {
+      "value": "Réunion",
+      "label": "Réunion"
+    },
+    {
+      "value": "Saint Barthélemy",
+      "label": "Saint Barthélemy"
+    },
+    {
+      "value": "Saint Helena, Ascension and Tristan da Cunha",
+      "label": "Saint Helena, Ascension and Tristan da Cunha"
+    },
+    {
+      "value": "Saint Kitts and Nevis",
+      "label": "Saint Kitts and Nevis"
+    },
+    {
+      "value": "Saint Lucia",
+      "label": "Saint Lucia"
+    },
+    {
+      "value": "Saint Martin (French part)",
+      "label": "Saint Martin (French part)"
+    },
+    {
+      "value": "Saint Pierre and Miquelon",
+      "label": "Saint Pierre and Miquelon"
+    },
+    {
+      "value": "Saint Vincent and the Grenadines",
+      "label": "Saint Vincent and the Grenadines"
+    },
+    {
+      "value": "Samoa",
+      "label": "Samoa"
+    },
+    {
+      "value": "San Marino",
+      "label": "San Marino"
+    },
+    {
+      "value": "Sao Tome and Principe",
+      "label": "Sao Tome and Principe"
+    },
+    {
+      "value": "Saudi Arabia",
+      "label": "Saudi Arabia"
+    },
+    {
+      "value": "Senegal",
+      "label": "Senegal"
+    },
+    {
+      "value": "Serbia",
+      "label": "Serbia"
+    },
+    {
+      "value": "Seychelles",
+      "label": "Seychelles"
+    },
+    {
+      "value": "Sierra Leone",
+      "label": "Sierra Leone"
+    },
+    {
+      "value": "Singapore",
+      "label": "Singapore"
+    },
+    {
+      "value": "Sint Maarten (Dutch part)",
+      "label": "Sint Maarten (Dutch part)"
+    },
+    {
+      "value": "Slovakia",
+      "label": "Slovakia"
+    },
+    {
+      "value": "Slovenia",
+      "label": "Slovenia"
+    },
+    {
+      "value": "Solomon Islands",
+      "label": "Solomon Islands"
+    },
+    {
+      "value": "Somalia",
+      "label": "Somalia"
+    },
+    {
+      "value": "South Africa",
+      "label": "South Africa"
+    },
+    {
+      "value": "South Georgia and the South Sandwich Islands",
+      "label": "South Georgia and the South Sandwich Islands"
+    },
+    {
+      "value": "South Sudan",
+      "label": "South Sudan"
+    },
+    {
+      "value": "Spain",
+      "label": "Spain"
+    },
+    {
+      "value": "Sri Lanka",
+      "label": "Sri Lanka"
+    },
+    {
+      "value": "Sudan (the)",
+      "label": "Sudan (the)"
+    },
+    {
+      "value": "Suriname",
+      "label": "Suriname"
+    },
+    {
+      "value": "Svalbard and Jan Mayen",
+      "label": "Svalbard and Jan Mayen"
+    },
+    {
+      "value": "Sweden",
+      "label": "Sweden"
+    },
+    {
+      "value": "Switzerland",
+      "label": "Switzerland"
+    },
+    {
+      "value": "Syrian Arab Republic",
+      "label": "Syrian Arab Republic"
+    },
+    {
+      "value": "Taiwan",
+      "label": "Taiwan"
+    },
+    {
+      "value": "Tajikistan",
+      "label": "Tajikistan"
+    },
+    {
+      "value": "Tanzania, United Republic of",
+      "label": "Tanzania, United Republic of"
+    },
+    {
+      "value": "Thailand",
+      "label": "Thailand"
+    },
+    {
+      "value": "Timor-Leste",
+      "label": "Timor-Leste"
+    },
+    {
+      "value": "Togo",
+      "label": "Togo"
+    },
+    {
+      "value": "Tokelau",
+      "label": "Tokelau"
+    },
+    {
+      "value": "Tonga",
+      "label": "Tonga"
+    },
+    {
+      "value": "Trinidad and Tobago",
+      "label": "Trinidad and Tobago"
+    },
+    {
+      "value": "Tunisia",
+      "label": "Tunisia"
+    },
+    {
+      "value": "Turkey",
+      "label": "Turkey"
+    },
+    {
+      "value": "Turkmenistan",
+      "label": "Turkmenistan"
+    },
+    {
+      "value": "Turks and Caicos Islands (the)",
+      "label": "Turks and Caicos Islands (the)"
+    },
+    {
+      "value": "Tuvalu",
+      "label": "Tuvalu"
+    },
+    {
+      "value": "Uganda",
+      "label": "Uganda"
+    },
+    {
+      "value": "Ukraine",
+      "label": "Ukraine"
+    },
+    {
+      "value": "United Arab Emirates (the)",
+      "label": "United Arab Emirates (the)"
+    },
+    {
+      "value": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "label": "United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "value": "United States Minor Outlying Islands (the)",
+      "label": "United States Minor Outlying Islands (the)"
+    },
+    {
+      "value": "United States of America (the)",
+      "label": "United States of America (the)"
+    },
+    {
+      "value": "Uruguay",
+      "label": "Uruguay"
+    },
+    {
+      "value": "Uzbekistan",
+      "label": "Uzbekistan"
+    },
+    {
+      "value": "Vanuatu",
+      "label": "Vanuatu"
+    },
+    {
+      "value": "Venezuela (Bolivarian Republic of)",
+      "label": "Venezuela (Bolivarian Republic of)"
+    },
+    {
+      "value": "Viet Nam",
+      "label": "Viet Nam"
+    },
+    {
+      "value": "Virgin Islands (British)",
+      "label": "Virgin Islands (British)"
+    },
+    {
+      "value": "Virgin Islands (U.S.)",
+      "label": "Virgin Islands (U.S.)"
+    },
+    {
+      "value": "Wallis and Futuna",
+      "label": "Wallis and Futuna"
+    },
+    {
+      "value": "Western Sahara",
+      "label": "Western Sahara"
+    },
+    {
+      "value": "Yemen",
+      "label": "Yemen"
+    },
+    {
+      "value": "Zambia",
+      "label": "Zambia"
+    },
+    {
+      "value": "Zimbabwe",
+      "label": "Zimbabwe"
+    },
+    {
+      "value": "Åland Islands",
+      "label": "Åland Islands"
+    }
   ]
 }

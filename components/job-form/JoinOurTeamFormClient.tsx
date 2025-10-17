@@ -68,6 +68,10 @@ interface Translations {
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
 
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
+
   title: string;
   yesLabel: string;
   noLabel: string;
@@ -200,7 +204,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
-      
+
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
         <div className="mt-4 mb-6 grid grid-cols-1 gap-x-6 gap-y-4 p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
@@ -257,12 +261,16 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               FieldOfExpert: translations.FieldOfExpert,
               FieldOfExpertRequired: translations.FieldOfExpertRequired,
               FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
-              FieldOfExpertData: translations.FieldOfExpertData
+              FieldOfExpertData: translations.FieldOfExpertData,
+
+              FieldOfExpertOther: translations.FieldOfExpertOther,
+              FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
             }}
           />
         </div>
 
-        <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col p-3">
           <YesOrNoQuestion
             title={translations.title}
             yesLabel={translations.yesLabel}
@@ -273,7 +281,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
           />
           <div
             aria-hidden={!fileCounterState}
-            className={`w-full md:max-w-lg 2xl:max-w-xl mt-6 mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+            className={`w-full md:max-w-lg 2xl:max-w-xl mt-2 mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-900 ease-out origin-top min-h-0
               ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
           >
             <div className="px-4">

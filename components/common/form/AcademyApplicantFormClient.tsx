@@ -60,6 +60,10 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
+
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
 }
 
 interface Props {
@@ -208,6 +212,10 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
               FieldOfExpertRequired: translations.FieldOfExpertRequired,
               FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
               FieldOfExpertData: translations.FieldOfExpertData,
+
+              FieldOfExpertOther: translations.FieldOfExpertOther,
+              FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
             }}
           />
         </div>

@@ -40,7 +40,7 @@ export default function AcademicInfoSection({
           required={workWithUS.StudyFieldRequired}
           placeholder={workWithUS.StudyFieldPlaceholder}
           className="input  col-span-1 mb-1 mt-3 w-full"
-          labelClass=" dark:text-current"
+          labelClass=" "
           patternValue=""
           patternMessage=""
         />
@@ -57,7 +57,7 @@ export default function AcademicInfoSection({
           required={workWithUS.StudySubFieldRequired}
           placeholder={workWithUS.StudySubFieldPlaceholder}
           className="input  col-span-1 mb-1 mt-3 w-full"
-          labelClass=" dark:text-current"
+          labelClass=" "
           patternValue=""
           patternMessage=""
         />
@@ -82,7 +82,7 @@ export default function AcademicInfoSection({
           nameInput="langLevel" 
           label={langLevelData.placeholder} 
           required="" 
-          className="select select-bordered mt-4 w-full px-8 shadow-sm dark:text-current" 
+          className="select select-bordered mt-4 w-full px-8 shadow-sm " 
           placeholder={langLevelData.placeholder} 
           options={TypeOfSkillLevels} 
           handleChange={handleUniChange} 

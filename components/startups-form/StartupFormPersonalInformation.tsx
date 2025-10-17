@@ -3,13 +3,12 @@ import * as React from 'react';
 import { getServerTranslation } from 'app/i18n';
 
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
-import CountryInput from '@/components/common/form/CountryInput';
 
 export default function StartupFormPersonalInformation({
   lang,
   register,
   errors,
-  
+
   countries,
   countryName,
   countryNameRequired,
@@ -66,7 +65,7 @@ export default function StartupFormPersonalInformation({
             lastName: t('lastName'),
             lastNameRequired: t('lastNameRequired'),
             lastNamePlaceholder: t('lastNamePlaceholder'),
-            
+
             email: t('email'),
             emailRequired: t('emailRequired'),
             emailErrorMessage: t('emailErrorMessage'),
@@ -98,7 +97,11 @@ export default function StartupFormPersonalInformation({
             FieldOfExpert: t('FieldOfExpert'),
             FieldOfExpertRequired: t('FieldOfExpertRequired'),
             FieldOfExpertPlaceholder: t('FieldOfExpertPlaceholder'),
-            FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || []
+            FieldOfExpertData: t('FieldOfExpertData', { returnObjects: true }) || [],
+
+            FieldOfExpertOther: t('FieldOfExpertOther', { returnObjects: true }),
+            FieldOfExpertOtherRequired: t('FieldOfExpertOtherRequired', { returnObjects: true }),
+            FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true })
           }}
         />
       </div>

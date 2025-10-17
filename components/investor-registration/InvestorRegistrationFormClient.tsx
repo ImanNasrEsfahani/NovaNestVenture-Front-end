@@ -80,6 +80,10 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
+  
+  FieldOfExpertOther: string;
+  FieldOfExpertOtherRequired: string;
+  FieldOfExpertOtherPlaceholder: string;
 }
 
 interface Props {
@@ -230,6 +234,10 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 FieldOfExpertRequired: translations.FieldOfExpertRequired,
                 FieldOfExpertPlaceholder: translations.FieldOfExpertPlaceholder,
                 FieldOfExpertData: translations.FieldOfExpertData,
+
+                FieldOfExpertOther: translations.FieldOfExpertOther,
+                FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
+                FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
               }}
             />
 
