@@ -172,15 +172,16 @@
     {
       "id": "trainee",
       "title": "Trainee",
-      "subtitle": "Join Our Team",
-      "text": "If you are talented, creative, and professional, join NovaNest and work alongside experienced mentors to help our innovative startups succeed. Share your skills, collaborate with expert teams, and make a real impact on the growth and development of emerging businesses.",
+      "subtitle": "Join as a Trainee",
+      "text": "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader.",
       "benefits": [
-        "Hands-on experience with early-stage startups",
-        "Professional growth and learning from mentors teams",
-        "Expanded network with experts",
-        "Strengthening your personal brand and professional portfolio",
-        "Participation in innovative and socially impactful projects",
-        "Access to exclusive NovaNest events and resources"
+        "Real-world learning alongside mentors and startup teams",
+        "Hands-on experience with innovative projects",
+        "Practical training in entrepreneurship and business development",
+        "Personal growth and skill-building opportunities",
+        "Mentorship and guidance from experienced professionals",
+        "Certificate of completion and potential career pathways within NovaNest",
+        "Access to exclusive events and resources"
       ],
       "href": "join-our-team",
       "buttonText": "Register"
