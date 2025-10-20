@@ -10,20 +10,28 @@
     "title": "Explore",
     "text": [
       {
-        "title": "Home",
-        "link": ""
+        "title": "سرمایه گذاری",
+        "link": "investment"
       },
       {
-        "title": "Academy",
+        "title": "شتابدهی",
+        "link": "acceleration"
+      },
+      {
+        "title": "Startup Visa",
+        "link": "startup"
+      },
+      {
+        "title": "کارآفرینی",
+        "link": "pnp"
+      },
+      {
+        "title": "آکادمی",
         "link": "academy"
       },
       {
-        "title": "About Us",
+        "title": "درباره ما",
         "link": "about-us"
-      },
-      {
-        "title": "Contact Us",
-        "link": "contact-us"
       }
     ]
   },
@@ -31,27 +39,27 @@
     "title": "فرم ها",
     "text": [
       {
-        "title": "Startup Validation",
+        "title": "ارزیابی استارتاپ",
         "link": "startups-validation"
       },
       {
-        "title": "Investor Registration",
+        "title": "ثبت نام سرمایه گذار",
         "link": "investor-registration"
       },
       {
-        "title": "Join Our Team",
+        "title": "پیوستن به تیم ما",
         "link": "join-our-team"
       },
       {
-        "title": "Affiliate Registration Form",
+        "title": "فرم ثبت نام همکاران",
         "link": "affiliate-registration-form"
       },
       {
-        "title": "Join as a Mentor",
+        "title": "پیوستن به عنوان منتور",
         "link": "join-as-a-mentor"
       },
       {
-        "title": "Join as a Trainee",
+        "title": "پیوستن به عنوان کارآموز",
         "link": "join-as-a-trainee"
       }
     ]

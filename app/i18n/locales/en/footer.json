@@ -10,6 +10,14 @@
     "title": "Explore",
     "text": [
       {
+        "title": "Investment",
+        "link": "investment"
+      },
+      {
+        "title": "Acceleration",
+        "link": "acceleration"
+      },
+      {
         "title": "Startup Visa",
         "link": "startup"
       },
