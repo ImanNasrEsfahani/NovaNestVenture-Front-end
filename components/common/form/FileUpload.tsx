@@ -41,7 +41,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
   const showInvalid = !!errors?.[nameInput] || (required && !fileName && hasAnyErrors);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full lg:max-w-md">
+    <div className="flex flex-col items-center justify-center w-full">
       <label
         className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition
           ${ showInvalid ? 'border-2 border-red-500 ring-1 ring-red-200' : '' }`}
@@ -52,7 +52,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
           id={nameInput}
           type="file"
           name={nameInput}
-          className="opacity-0 absolute inset-0 w-full h-full cursor-pointer"
+          className="opacity-0"
           required={required}
           aria-required={required}
           aria-invalid={showInvalid}
