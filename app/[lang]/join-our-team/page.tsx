@@ -26,7 +26,7 @@ export default function ApplyFormPage({
   return (
     <div dir={t('dir')}>
       <Banner
-        image="/static/images/work-with-us/header.jpeg"
+        image="/static/images/work-with-us/header.png"
         title={t('workWithUS', { returnObjects: true }).banner}
         lang={lang}
       />

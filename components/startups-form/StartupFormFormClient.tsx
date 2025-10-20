@@ -121,9 +121,6 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
     // Convert file objects to Blob and append them.
     for (const [fieldName, file] of Object.entries(filePostMap)) {
       if (file) {
-        // console.log(fieldName, typeof(fieldName))
-        // console.log(file, typeof(file))
-        // console.log(file.name, typeof(file.name))
         sendFormData.append(fieldName, file, file.name);
       }
     }

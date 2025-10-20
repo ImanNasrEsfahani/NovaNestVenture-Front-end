@@ -86,8 +86,6 @@ export default function PersonalInfoInput({
     setShowFieldOther(val.trim().toLowerCase() === 'other');
   };
 
-  console.log(translations);
-
   return (
     <>
       {nameInputs?.firstName && (

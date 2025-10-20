@@ -14,25 +14,18 @@ const apiClient = axios.create({
   maxRedirects: 3,
 });
 
-console.log("API Base URL:", baseURL);
+// console.log("API Base URL:", baseURL);
 
 // Add this line for debugging
-console.log('🐳 Docker Environment Check:', {
-  NEXT_PUBLIC_DJANGO_HOST_URL: process.env.NEXT_PUBLIC_DJANGO_HOST_URL,
-  NODE_ENV: process.env.NODE_ENV
-});
+// console.log('🐳 Docker Environment Check:', {
+//   NEXT_PUBLIC_DJANGO_HOST_URL: process.env.NEXT_PUBLIC_DJANGO_HOST_URL,
+//   NODE_ENV: process.env.NODE_ENV
+// });
 
 // Add request interceptor for debugging
 apiClient.interceptors.request.use(
   (config) => {
     const fullUrl = (config.baseURL || '') + (config.url || '');
-    console.log('Making request to:', fullUrl);
-    console.log('Request config:', {
-      method: config.method,
-      url: config.url,
-      baseURL: config.baseURL,
-      headers: config.headers,
-    });
     return config;
   },
   (error) => {
@@ -44,11 +37,6 @@ apiClient.interceptors.request.use(
 // Add response interceptor for debugging
 apiClient.interceptors.response.use(
   (response) => {
-    console.log('Response received:', {
-      status: response.status,
-      statusText: response.statusText,
-      url: response.config.url,
-    });
     return response;
   },
   (error) => {

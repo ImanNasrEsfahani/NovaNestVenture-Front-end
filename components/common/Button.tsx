@@ -36,8 +36,6 @@ export default function Button({
   
   const lang = useLang().lang
 
-  console.log(lang)
-
   return (
     <button
       onClick={() => {

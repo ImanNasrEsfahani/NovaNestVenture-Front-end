@@ -183,25 +183,21 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
 
   // helper: find first panel id that has a validation error
   const findFirstErrorPanelId = () => {
-    console.log('findFirstErrorPanelId: current errors:', errors);
     const errored = panels
       .map(p => ({ id: p.id, fields: p.fields ?? [], hasError: p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])) ?? false }))
       .filter(p => p.hasError);
-    console.log('findFirstErrorPanelId: panels with errors:', errored);
     const id =
       panels.find(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])))?.id
       // if none with errors, prefer the first visible panel, else fallback to first panel
       ?? panels.find(p => p.show)?.id
       ?? panels[0]?.id
       ?? null;
-    console.log('findFirstErrorPanelId: chosen id ->', id);
     return id;
   };
 
   // open panel state: default to first error-containing panel (if any) or first visible panel
   const [openPanel, setOpenPanel] = useState<string | null>(() => {
     const initial = findFirstErrorPanelId();
-    console.log('initial openPanel ->', initial);
     return initial;
   });
 
@@ -221,31 +217,25 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
       .filter(p => (p.fields ?? []).some(f => Boolean(errors?.[f as keyof StartupsFormData])))
       .map(p => p.id);
 
-    console.log('updateOpenPanelOnErrors: visible errored ids ->', erroredIds);
-
     // initial mount: open first errored (if any) and mark mounted
     if (!mountedRef.current) {
       mountedRef.current = true;
       if (erroredIds.length > 0) {
-        console.log('initial mount: opening first errored ->', erroredIds[0]);
         setOpenPanel(erroredIds[0]);
       }
       return;
     }
 
     if (erroredIds.length === 0) {
-      console.log('updateOpenPanelOnErrors: no errored panels; do nothing');
       return;
     }
 
     if (erroredIds.includes(openPanel ?? '')) {
-      console.log('updateOpenPanelOnErrors: current openPanel already has error ->', openPanel);
       return;
     }
 
     const visibleIds = visiblePanels.map(p => p.id);
     const currentIndex = Math.max(0, visibleIds.indexOf(openPanel ?? ''));
-    console.log('updateOpenPanelOnErrors: searching next errored panel ->', { visibleIds, currentIndex, erroredIds });
 
     // forward search with wrap — compact loop that logs steps
     const start = (currentIndex + 1) % visibleIds.length;
@@ -253,26 +243,18 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
     for (let offset = 0; offset < visibleIds.length; offset++) {
       const idx = (start + offset) % visibleIds.length;
       const id = visibleIds[idx];
-      console.log('search idx=', idx, 'id=', id);
       if (erroredIds.includes(id)) {
         found = id;
-        console.log('found errored panel at index', idx, 'id=', found);
         break;
       }
     }
 
-    console.log('updateOpenPanelOnErrors: next errored panel chosen ->', found);
     if (found) {
-      console.log('updateOpenPanelOnErrors: switching openPanel ->', found);
       setOpenPanel(found);
-    } else {
-      console.log('updateOpenPanelOnErrors: no next errored panel found');
     }
   };
 
   useEffect(() => {
-    console.log('PitchdeckUpload: errors changed (raw):', errors);
-    console.log('PitchdeckUpload: errorKeys ->', errorKeys, 'submitCount ->', submitCount);
 
     // delegate to extracted function
     updateOpenPanelOnErrors();
@@ -283,19 +265,15 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
   const togglePanel = (id: string) => {
     setOpenPanel((prev) => {
       const visibleIds = panels.filter(p => p.show).map(p => p.id);
-      console.log('togglePanel: visible panels ->', visibleIds, 'prev ->', prev, 'clicked ->', id);
 
       // if clicked panel is already open -> close it and open the next visible panel (if any)
       if (prev === id) {
         const idx = visibleIds.indexOf(id);
-        console.log("idx: ", idx);
         const next = idx >= 0 && idx < visibleIds.length - 1 ? visibleIds[idx + 1] : null;
-        console.log('togglePanel: closing current, next visible ->', next);
         return next;
       }
 
       // otherwise open the clicked panel (and close previous)
-      console.log('togglePanel: opening ->', id);
       return id;
     });
   };
