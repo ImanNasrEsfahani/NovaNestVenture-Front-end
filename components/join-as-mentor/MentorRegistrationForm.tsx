@@ -10,6 +10,7 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     formTitle: t('joinUsForm', { returnObjects: true }).formTitle,
     formSubtitle: t('joinUsForm', { returnObjects: true }).formSubtitle,
     sendButton: t('sendButton'),
+    sendingButton: t('sendingButton'),
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
 

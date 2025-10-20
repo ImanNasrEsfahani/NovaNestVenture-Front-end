@@ -18,6 +18,7 @@ interface Translations {
   formTitle: string;
   formSubtitle: string;
   sendButton: string;
+  sendingButton: string;
   successMessage: string;
   failedMessage: string;
 
@@ -105,6 +106,7 @@ interface Props {
 }
 
 export default function MentorRegistrationFormClient({ lang, translations }: Props) {
+  const { send } = useSubmit();
 
   const {
     register,
@@ -367,7 +369,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
             <ButtonRefactor
               type="submit"
-              text={translations.sendButton}
+              text={send ? translations.sendingButton : translations.sendButton}
               disabled={errorsList[0] ? true : false}
             />
           </div>
