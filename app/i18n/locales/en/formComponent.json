@@ -382,6 +382,8 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "Join as a Trainee",
+    
+    "resumeQuestion": "Do you have an updated CV or resume?",
     "choseFile":"Choose File",
     "formTitle": "Trainee Registration Form",
     "formSubtitle": "Apply as a Trainee"

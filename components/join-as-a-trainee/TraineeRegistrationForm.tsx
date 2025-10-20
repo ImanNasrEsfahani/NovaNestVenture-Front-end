@@ -11,7 +11,7 @@ export default function TraineeRegistrationForm({lang}: {lang: string}) {
     formSubtitle: t('joinAsATrainee', { returnObjects: true }).formSubtitle,
 
     choseFile: t('joinAsATrainee', { returnObjects: true }).choseFile,
-    title: t('title'),
+    resumeQuestion: t('joinAsATrainee', { returnObjects: true }).resumeQuestion,
     yesLabel: t('yes'),
     noLabel: t('no'),
 

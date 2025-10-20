@@ -23,14 +23,14 @@ export default function TraineePage({
       <div className="hidden md:inline">
         <Banner
           image="/static/images/our-team/header.webp"
-          title={t('title')}
+          title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
       <div className="inline md:hidden">
         <Banner
           image="/static/images/our-team/header-mobile.webp"
-          title={t('title')}
+          title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>

@@ -81,7 +81,7 @@ interface Translations {
   FieldOfInterestOtherRequired: string;
   FieldOfInterestOtherPlaceholder: string;
 
-  title: string;
+  resumeQuestion: string;
   yesLabel: string;
   noLabel: string;
 
@@ -302,9 +302,9 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             />
           </div>
 
-          <div className="w-full flex flex-col p-3">
+          <div className="w-full flex flex-col p-3 pt-12">
             <YesOrNoQuestion
-              title={translations.title}
+              title={translations.resumeQuestion}
               yesLabel={translations.yesLabel}
               noLabel={translations.noLabel}
               value={fileCounterState}
@@ -323,48 +323,60 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 label={translations.choseFile}
                 onChange={onCvFileChange}
                 disabled={!fileCounterState}
-                file={cvFileState.cvFile} // <-- sync external value
+                file={cvFileState.cvFile}
               />
             </div>
           </div>
 
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-6">
-            <div className="col-span-1">
-              <Input
-                id="birthDate"
-                register={register}
-                errors={errors}
-                nameInput="birthDate"
-                type="date"
-                label={translations.birthDate}
-                required={translations.birthDateRequired}
-                patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
-                patternMessage={translations.birthDateErrorMessage}
-                placeholder={translations.birthDatePlaceholder}
-                className="input col-span-1 mb-1 w-full"
-                labelClass=""
-                validate={birthValidate}
-              />
-            </div>
+
+          <div
+            aria-hidden={fileCounterState}
+            className={`w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0
+              ${!fileCounterState ? 'max-h-[1200px] opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+          >
+            {/* disable native form controls while hidden to avoid focusable hidden elements */}
+            <fieldset disabled={fileCounterState} className="w-full">
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-6">
+                <div className="col-span-1">
+                  <Input
+                    id="birthDate"
+                    register={register}
+                    errors={errors}
+                    nameInput="birthDate"
+                    type="date"
+                    label={translations.birthDate}
+                    required={translations.birthDateRequired}
+                    patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
+                    patternMessage={translations.birthDateErrorMessage}
+                    placeholder={translations.birthDatePlaceholder}
+                    className="input col-span-1 mb-1 w-full"
+                    labelClass=""
+                    validate={birthValidate}
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col w-full">
+                <TextArea
+                  title={translations.TellUsAboutYourself}
+                  register={register}
+                  errors={errors}
+                  placeholder={translations.TellUsAboutYourselfPlaceholder}
+                  nameTextArea="TellUsAboutYourself"
+                  patternMessage=""
+                  patternValue=""
+                  // required={translations.TellUsAboutYourselfRequired}
+                  required=""
+                  rows={3}
+                  maxLength={1450}
+                  maxLengthMessage={translations.TellUsAboutYourselfErrorMessage}
+                  validate=""
+                />
+              </div>
+            </fieldset>
           </div>
 
-          <div className="flex flex-col w-full">
-            <TextArea
-              title={translations.TellUsAboutYourself}
-              register={register}
-              errors={errors}
-              placeholder={translations.TellUsAboutYourselfPlaceholder}
-              nameTextArea="TellUsAboutYourself"
-              patternMessage=""
-              patternValue=""
-              // required={translations.TellUsAboutYourselfRequired}
-              required=""
-              rows={3}
-              maxLength={1450}
-              maxLengthMessage={translations.TellUsAboutYourselfErrorMessage}
-              validate=""
-            />
-          </div>
+
           <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
             <ButtonRefactor
               type="submit"
