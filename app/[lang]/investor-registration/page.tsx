@@ -18,15 +18,25 @@ export default function InvestorRegistrationPage({
   const { t } = getServerTranslation(lang, "investorForm")
 
   return (
-    <div>
-      <Banner
-        image="/static/images/work-with-us/header.png"
-        title={t('banner')}
-        lang={lang}
-      />
+    <>
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/investor-registeration-form/header.png"
+          title={t('banner', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/investor-registeration-form/header-mobile.png"
+          title={t('banner', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
 
-
-        <InvestorRegistrationForm lang={lang}/>
-    </div>
+      <div className="max-w-responsive mx-auto">
+        <InvestorRegistrationForm lang={lang} />
+      </div>
+    </>
   );
 }

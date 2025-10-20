@@ -19,24 +19,25 @@ export default function TraineePage({
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div>
+    <>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/our-team/header.webp"
+          image="/static/images/join-as-a-trainee/header.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/our-team/header-mobile.webp"
+          image="/static/images/join-as-a-trainee/header-mobile.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
+      
       <div className="max-w-responsive mx-auto">
         <TraineeRegistrationForm lang={lang} />
       </div>
-    </div>
+    </>
   );
 }

@@ -17,15 +17,25 @@ export default function StartupValidationPage({
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div dir={t('dir')} className="relative overflow-hidden">
-      <Banner
-        image="/static/images/work-with-us/header.png"
-        title={t('startUp', { returnObjects: true }).banner}
-        lang={lang}
-      />
+    <>
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/startup-validation-form/header.png"
+          title={t('startUp', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/startup-validation-form/header-mobile.png"
+          title={t('startUp', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
+
       <div className="max-w-responsive mx-auto">
         <StartupFormForm lang={lang} />
       </div>
-    </div>
+    </>
   );
 }
