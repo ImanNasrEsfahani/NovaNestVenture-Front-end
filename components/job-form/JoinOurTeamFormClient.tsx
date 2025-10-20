@@ -367,7 +367,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               nameTextArea="workHistorySummary"
               patternMessage=""
               patternValue=""
-              required=""
+              required={translations.workHistorySummaryRequired}
               rows={8}
               maxLength={1450}
               maxLengthMessage={translations.workHistorySummaryErrorMessage}
