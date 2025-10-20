@@ -5,6 +5,7 @@ import {
   WorkWithUSFormData,
   JoinAsaPartnerFormData,
   JoinOurTeamFormData,
+  TraineeRegistrationFormData,
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
   Entrepreuneur,
@@ -95,7 +96,8 @@ const initialJoinOurTeamFormData: JoinOurTeamFormData = {
   cityOfResidence: '',
   TypeOfCollaboration: '',
   FieldOfExpert: '',
-  birthDate: '',
+  FieldOfExpertOther: '',
+  birthDate: new Date(),
   educationField: '',
   educationLevel: '',
   workHistorySummary: '',
@@ -133,6 +135,19 @@ const initialMentorRegistrationFormData: MentorRegistrationFormData = {
   instagram: '',
   ExpertiesAreas: '',
   howDidYouKnowUs: '',
+};
+
+const initialTraineeRegistrationFormData: TraineeRegistrationFormData = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phoneNumber: '',
+  countryOfResidence: '',
+  cityOfResidence: '',
+  birthDate: new Date(),
+  FieldOfExpert: '',
+  FieldOfExpertOther: '',
+  TellUsAboutYourself: ''
 };
 
 const initialWorkWithUSFormData: WorkWithUSFormData = {
@@ -218,6 +233,7 @@ export {
   initialJoinOurTeamFormData,
   initialInvestorRegistrationFormData,
   initialMentorRegistrationFormData,
+  initialTraineeRegistrationFormData,
   initialFormData,
   ContactFormData,
   StartupApplicantFormData,

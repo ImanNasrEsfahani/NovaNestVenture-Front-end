@@ -78,6 +78,49 @@
   "FieldOfExpertOther": "Please specify your field of expertise.",
   "FieldOfExpertOtherRequired": "Field of expertise is required.",
   "FieldOfExpertOtherPlaceholder": "Enter your field of expertise",
+  "FieldOfInterest": "Field of Interest ",
+  "FieldOfInterestRequired": "Field of Interest is Required",
+  "FieldOfInterestPlaceholder": "Select a Field of Interest",
+
+  "FieldOfInterestData": [
+    {
+      "value": 0,
+      "label": "Artificial Intelligence"
+    },
+    {
+      "value": 1,
+      "label": "Blockchain"
+    },
+    {
+      "value": 2,
+      "label": "Cybersecurity"
+    },
+    {
+      "value": 3,
+      "label": "E-commerce"
+    },
+    {
+      "value": 4,
+      "label": "Fintech"
+    },
+    {
+      "value": 5,
+      "label": "HealthTech"
+    },
+    {
+      "value": 6,
+      "label": "EdTech"
+    },
+    {
+      "value": 7,
+      "label": "Other"
+    }
+  ],
+
+  "FieldOfInterestOther": "Please specify your field of interest.",
+  "FieldOfInterestOtherRequired": "Field of interest is required.",
+  "FieldOfInterestOtherPlaceholder": "Enter your field of interest",
+
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
   "birthDateErrorMessage": "Please enter a valid Date of Birth(e.g., 2001/02/11)",
@@ -94,6 +137,11 @@
   "workHistorySummaryRequired": "Work History Summary is required.",
   "workHistorySummaryErrorMessage": "Work History Summary must be less than 1450 characters.",
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
+  "TellUsAboutYourself": "Tell Us About Yourself",
+  "TellUsAboutYourselfRequired": "This field is required.",
+  "TellUsAboutYourselfPlaceholder": "Describe your interests, goals, and what you hope to achieve through this collaboration.",
+  "TellUsAboutYourselfErrorMessage": "The message must be less than 1450 characters.",
+
   "EducationLevelsData": [
     {
       "value": 0,
@@ -329,6 +377,15 @@
     "positionPlaceholder": "Select Your Position",
     "contractType": "Type of Contract",
     "contractTypePlaceholder": "Select Your Type of Contract"
+  },
+  "joinAsATrainee": {
+    "lng": "en",
+    "dir": "ltr",
+    "banner": "Join as a Trainee",
+    "choseFile":"Choose File",
+    "formTitle": "Trainee Registration Form",
+    "formSubtitle": "Apply as a Trainee"
+
   },
   "startUp": {
     "lng": "en",

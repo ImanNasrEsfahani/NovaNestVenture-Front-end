@@ -64,6 +64,15 @@ interface Translations {
   FieldOfExpertOther: string;
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
+
+  FieldOfInterest: string;
+  FieldOfInterestRequired: string;
+  FieldOfInterestPlaceholder: string;
+  FieldOfInterestData: { value: string; label: string }[];
+
+  FieldOfInterestOther: string;
+  FieldOfInterestOtherRequired: string;
+  FieldOfInterestOtherPlaceholder: string;
 }
 
 interface Props {
@@ -167,7 +176,9 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
               countryOfResidence: 'countryOfResidence',
               provinceOfResidence: 'provinceOfResidence ',
               cityOfResidence: 'cityOfResidence',
-              TypeOfCollaboration: ''
+              TypeOfCollaboration: '',
+              FieldOfExpert: '',
+              FieldOfInterest: ''
             }}
             noLabel={false}
             translations={{
@@ -215,7 +226,16 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
 
               FieldOfExpertOther: translations.FieldOfExpertOther,
               FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
-              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder,
+
+              FieldOfInterest: translations.FieldOfInterest,
+              FieldOfInterestRequired: translations.FieldOfInterestRequired,
+              FieldOfInterestPlaceholder: translations.FieldOfInterestPlaceholder,
+              FieldOfInterestData: translations.FieldOfInterestData,
+
+              FieldOfInterestOther: translations.FieldOfInterestOther,
+              FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
+              FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder,
             }}
           />
         </div>

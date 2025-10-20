@@ -67,6 +67,15 @@ interface Translations {
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
 
+  FieldOfInterest: string;
+  FieldOfInterestRequired: string;
+  FieldOfInterestPlaceholder: string;
+  FieldOfInterestData: { value: string; label: string }[];
+
+  FieldOfInterestOther: string;
+  FieldOfInterestOtherRequired: string;
+  FieldOfInterestOtherPlaceholder: string;
+
   birthDate: string;
   birthDateRequired: string;
   birthDateErrorMessage: string;
@@ -221,7 +230,9 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 countryOfResidence: 'countryOfResidence',
                 provinceOfResidence: '',
                 cityOfResidence: 'cityOfResidence',
-                TypeOfCollaboration: ''
+                TypeOfCollaboration: '',
+                FieldOfExpert: '',
+                FieldOfInterest: ''
               }}
               noLabel={false}
               translations={{
@@ -269,7 +280,16 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
 
                 FieldOfExpertOther: translations.FieldOfExpertOther,
                 FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
-                FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
+                FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder,
+
+                FieldOfInterest: translations.FieldOfInterest,
+                FieldOfInterestRequired: translations.FieldOfInterestRequired,
+                FieldOfInterestPlaceholder: translations.FieldOfInterestPlaceholder,
+                FieldOfInterestData: translations.FieldOfInterestData,
+
+                FieldOfInterestOther: translations.FieldOfInterestOther,
+                FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
+                FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder
               }}
             />
             <Input

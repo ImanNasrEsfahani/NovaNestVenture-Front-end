@@ -79,7 +79,16 @@ export default function InvestorRegistrationForm({lang}: {lang: string}) {
     
     FieldOfExpertOther: t('FieldOfExpertOther', { returnObjects: true }),
     FieldOfExpertOtherRequired: t('FieldOfExpertOtherRequired', { returnObjects: true }),
-    FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true })
+    FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true }),
+
+    FieldOfInterest: t('FieldOfInterest', { returnObjects: true }),
+    FieldOfInterestRequired: t('FieldOfInterestRequired', { returnObjects: true }),
+    FieldOfInterestPlaceholder: t('FieldOfInterestPlaceholder', { returnObjects: true }),
+    FieldOfInterestData: t('FieldOfInterestData', { returnObjects: true }) || [],
+    
+    FieldOfInterestOther: t('FieldOfInterestOther', { returnObjects: true }),
+    FieldOfInterestOtherRequired: t('FieldOfInterestOtherRequired', { returnObjects: true }),
+    FieldOfInterestOtherPlaceholder: t('FieldOfInterestOtherPlaceholder', { returnObjects: true }),
   };
 
 

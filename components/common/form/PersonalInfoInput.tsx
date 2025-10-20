@@ -16,6 +16,8 @@ type Props = {
     provinceOfResidence: string;
     cityOfResidence: string;
     TypeOfCollaboration: string;
+    FieldOfExpert: string;
+    FieldOfInterest: string;
   };
   noLabel: boolean;
   translations: {
@@ -27,7 +29,7 @@ type Props = {
     lastName: string;
     lastNameRequired: string;
     lastNamePlaceholder: string;
-    
+
     email: string;
     emailRequired: string;
     emailErrorMessage: string;
@@ -64,6 +66,15 @@ type Props = {
     FieldOfExpertOther: string;
     FieldOfExpertOtherRequired: string;
     FieldOfExpertOtherPlaceholder: string;
+
+    FieldOfInterest: string;
+    FieldOfInterestRequired: string;
+    FieldOfInterestPlaceholder: string;
+    FieldOfInterestData: { value: string; label: string }[];
+
+    FieldOfInterestOther: string;
+    FieldOfInterestOtherRequired: string;
+    FieldOfInterestOtherPlaceholder: string;
   }
 };
 
@@ -77,13 +88,22 @@ export default function PersonalInfoInput({
 
   // track selection for FieldOfExpert to show "other" text input
   const [fieldOfExpertValue, setFieldOfExpertValue] = useState<string>('');
-  const [showFieldOther, setShowFieldOther] = useState<boolean>(false);
+  const [fieldOfInterestValue, setFieldOfInterestValue] = useState<string>('');
+  const [showFieldOfExpertOther, setShowFieldOfExpertOther] = useState<boolean>(false);
+  const [showFieldOfInterestOther, setShowFieldOfInterestOther] = useState<boolean>(false);
 
   const handleFieldOfExpertChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const val = String(e.target.value || '');
     setFieldOfExpertValue(val);
     // show when option equals "other" (case-insensitive) — adjust if your i18n value differs
-    setShowFieldOther(val.trim().toLowerCase() === 'other');
+    setShowFieldOfExpertOther(val.trim().toLowerCase() === 'other');
+  };
+
+  const handleFieldOfInterestChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const val = String(e.target.value || '');
+    setFieldOfInterestValue(val);
+    // show when option equals "other" (case-insensitive) — adjust if your i18n value differs
+    setShowFieldOfInterestOther(val.trim().toLowerCase() === 'other');
   };
 
   return (
@@ -198,7 +218,7 @@ export default function PersonalInfoInput({
         </div>
       )}
 
-      {nameInputs?.TypeOfCollaboration && (
+      {nameInputs?.FieldOfExpert && (
         <div className="col-span-1 w-full">
           <Select
             register={register}
@@ -217,7 +237,7 @@ export default function PersonalInfoInput({
       )}
 
       {/* When user selects "Other" show a text input to specify — register under "FieldOfExpertOther" */}
-      {showFieldOther && (
+      {showFieldOfExpertOther && (
         <div className="col-span-1 w-full">
           <Input
             id="field_of_expert_other"
@@ -230,6 +250,44 @@ export default function PersonalInfoInput({
             patternValue=""
             patternMessage=""
             placeholder={translations.FieldOfExpertOtherPlaceholder}
+            className="input col-span-1 mb-1 w-full"
+            labelClass=""
+          />
+        </div>
+      )}
+
+      {nameInputs?.FieldOfInterest && (
+        <div className="col-span-1 w-full">
+          <Select
+            register={register}
+            errors={errors}
+            nameInput="FieldOfInterest"
+            label={translations.FieldOfInterest}
+            required={translations.FieldOfInterestRequired}
+            labelClass=" "
+            className="input col-span-1 w-full"
+            placeholder={translations.FieldOfInterestPlaceholder}
+            options={translations.FieldOfInterestData}
+            handleChange={handleFieldOfExpertChange}
+            selected={fieldOfInterestValue}
+          />
+        </div>
+      )}
+
+      {/* When user selects "Other" show a text input to specify — register under "FieldOfExpertOther" */}
+      {showFieldOfInterestOther && (
+        <div className="col-span-1 w-full">
+          <Input
+            id="field_of_interest_other"
+            register={register}
+            errors={errors}
+            nameInput="FieldOfInterestOther"
+            type="text"
+            label={translations.FieldOfInterestOther}
+            required={translations.FieldOfInterestOtherRequired}
+            patternValue=""
+            patternMessage=""
+            placeholder={translations.FieldOfInterestOtherPlaceholder}
             className="input col-span-1 mb-1 w-full"
             labelClass=""
           />

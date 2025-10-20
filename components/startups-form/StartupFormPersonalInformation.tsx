@@ -53,7 +53,9 @@ export default function StartupFormPersonalInformation({
             countryOfResidence: 'countryOfResidence',
             provinceOfResidence: '',
             cityOfResidence: 'cityOfResidence',
-            TypeOfCollaboration: ''
+            TypeOfCollaboration: '',
+            FieldOfExpert: '',
+            FieldOfInterest: ''
           }}
           noLabel={false}
           translations={{
@@ -101,7 +103,16 @@ export default function StartupFormPersonalInformation({
 
             FieldOfExpertOther: t('FieldOfExpertOther', { returnObjects: true }),
             FieldOfExpertOtherRequired: t('FieldOfExpertOtherRequired', { returnObjects: true }),
-            FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true })
+            FieldOfExpertOtherPlaceholder: t('FieldOfExpertOtherPlaceholder', { returnObjects: true }),
+            FieldOfInterestData: t('FieldOfInterestData', { returnObjects: true }) || [],
+
+            FieldOfInterest: t('FieldOfInterest'),
+            FieldOfInterestRequired: t('FieldOfInterestRequired'),
+            FieldOfInterestPlaceholder: t('FieldOfInterestPlaceholder'),
+
+            FieldOfInterestOther: t('FieldOfInterestOther', { returnObjects: true }),
+            FieldOfInterestOtherRequired: t('FieldOfInterestOtherRequired', { returnObjects: true }),
+            FieldOfInterestOtherPlaceholder: t('FieldOfInterestOtherPlaceholder', { returnObjects: true }),
           }}
         />
       </div>

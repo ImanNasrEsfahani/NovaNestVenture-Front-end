@@ -1,61 +1,24 @@
 import { getServerTranslation } from 'app/i18n';
-import JoinAsaPartnerFormClient from '@/components/partner-membership/JoinAsaPartnerFormClient';
+import TraineeRegistrationFormClient from '@/components/join-as-a-trainee/TraineeRegistrationFormClient';
 
-export default function JoinAsaPartnerForm({lang}: {lang: string}) {
+export default function TraineeRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
-
+  
   // Pass translations as props to client component
   const translations = {
-    formTitle: t('partnerForm', { returnObjects: true }).formTitle,
-    formSubtitle: t('partnerForm', { returnObjects: true }).formSubtitle,
-    birthDate: t('birthDate'),
-    birthDateErrorMessage: t('birthDateErrorMessage'),
-    birthDatePlaceholder: t('birthDatePlaceholder'),
-    companyName: t('companyName'),
-    companyNameRequired: t('companyNameRequired'),
-    companyNamePlaceholder: t('companyNamePlaceholder'),
-    investmentCeiling: t('investmentCeiling'),
-    investmentCeilingRequired: t('investmentCeilingRequired'),
-    investmentCeilingPlaceholder: t('investmentCeilingPlaceholder'),
-    howDidYouKnowUs: t('howDidYouKnowUs'),
-    howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
-    howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
-    howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
+    formTitle: t('joinAsATrainee', { returnObjects: true }).formTitle,
+    formSubtitle: t('joinAsATrainee', { returnObjects: true }).formSubtitle,
+
+    choseFile: t('joinAsATrainee', { returnObjects: true }).choseFile,
+    title: t('title'),
+    yesLabel: t('yes'),
+    noLabel: t('no'),
+
     sendButton: t('sendButton'),
     sendingButton: t('sendingButton'),
-    
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
-
-    countries: tCountry('countries', { returnObjects: true }),
-
-    countryName: tCountry('countryName'),
-    countryNameRequired: tCountry('countryNameRequired'),
-    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
-
-    provinceOfResidence: tCountry('provinceOfResidence'),
-    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
-    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
-
-    cityOfResidence: tCountry('cityOfResidence'),
-    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
-    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
-
-    website: t('website'),
-    websiteRequired: t('websiteRequired'),
-    websitePlaceholder: t('websitePlaceholder'),
-    websiteErrorMessage: t('websiteErrorMessage'),
-
-    linkedin: t('linkedin'),
-    linkedinRequired: t('linkedinRequired'),
-    linkedinPlaceholder: t('linkedinPlaceholder'),
-    linkedinErrorMessage: t('linkedinErrorMessage'),
-
-    briefIntroduction: t('briefIntroduction'),
-    briefIntroductionRequired: t('briefIntroductionRequired'),
-    briefIntroductionPlaceholder: t('briefIntroductionPlaceholder'),
-    briefIntroductionErrorMessage: t('briefIntroductionErrorMessage'),
 
     firstName: t('firstName'),
     firstNameRequired: t('firstNameRequired'),
@@ -74,6 +37,26 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     phoneNumberRequired: t('phoneNumberRequired'),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
+
+    countries: tCountry('countries', { returnObjects: true }),
+    countryName: tCountry('countryName'),
+    countryNameRequired: tCountry('countryNameRequired'),
+    countryNamePlaceholder: tCountry('countryNamePlaceholder'),
+
+    provinceOfResidence: tCountry('provinceOfResidence'),
+    provinceOfResidenceRequired: tCountry('provinceOfResidenceRequired'),
+    provinceOfResidencePlaceholder: tCountry('provinceOfResidencePlaceholder'),
+
+    cityOfResidence: tCountry('cityOfResidence'),
+    cityOfResidenceRequired: tCountry('cityOfResidenceRequired'),
+    cityOfResidencePlaceholder: tCountry('cityOfResidencePlaceholder'),
+
+    birthDate: t('birthDate'),  
+    birthDateRequired: t('birthDateRequired'),
+    birthDateErrorMessage: t('birthDateErrorMessage'),
+    birthDateErrorMessageForFutureDate: t('birthDateErrorMessageForFutureDate'),
+    birthDateErrorMessageForAge: t('birthDateErrorMessageForAge'),
+    birthDatePlaceholder: t('birthDatePlaceholder'),
 
     TypeOfCollaboration: t('TypeOfCollaboration'),
     TypeOfCollaborationRequired: t('TypeOfCollaborationRequired'),
@@ -97,7 +80,17 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     FieldOfInterestOther: t('FieldOfInterestOther', { returnObjects: true }),
     FieldOfInterestOtherRequired: t('FieldOfInterestOtherRequired', { returnObjects: true }),
     FieldOfInterestOtherPlaceholder: t('FieldOfInterestOtherPlaceholder', { returnObjects: true }),
+
+    ExpertiesAreas: t('ExpertiesAreas'),
+    ExpertiesAreasPlaceholder: t('ExpertiesAreasPlaceholder'),
+    ExpertiesAreasRequired: t('ExpertiesAreasRequired'),
+    ExpertiesAreasErrorMessage: t('ExpertiesAreasErrorMessage'),
+    
+    TellUsAboutYourself: t('TellUsAboutYourself'),
+    TellUsAboutYourselfPlaceholder: t('TellUsAboutYourselfPlaceholder'),
+    TellUsAboutYourselfRequired: t('TellUsAboutYourselfRequired'),
+    TellUsAboutYourselfErrorMessage: t('TellUsAboutYourselfErrorMessage'),
   };
 
-  return <JoinAsaPartnerFormClient lang={lang} translations={translations} />;
+  return <TraineeRegistrationFormClient lang={lang} translations={translations} />;
 }

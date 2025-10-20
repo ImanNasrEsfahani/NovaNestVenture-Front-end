@@ -1,58 +1,31 @@
 'use client';
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
-import { InvestorRegistrationFormData } from '@/types/global';
+import { useFile } from 'stores/fileStore';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
-import { initialInvestorRegistrationFormData } from '../../initials/initObjects';
-import { submitInvestorRegistrationForm } from '../../pages/api/investor-registration';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
+
 import FormTitle from '@/components/common/form/FormTitle';
+import { TraineeRegistrationFormData } from '@/types/global';
+import { initialTraineeRegistrationFormData } from '../../initials/initObjects';
+import { submitTraineeRegistrationForm } from '../../pages/api/join-as-a-trainee';
+import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
+import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
+import FileUpload from '@/components/common/form/FileUpload';
 
 interface Translations {
   formTitle: string;
   formSubtitle: string;
-  formDescriptionStart: string;
-  formList: string[];
-  formDescriptionEnd: string;
 
-  birthDate: string;
-  birthDateErrorMessage: string;
-  birthDatePlaceholder: string;
-  companyName: string;
-  companyNameRequired: string;
-  companyNamePlaceholder: string;
-  maximumInvestment: string;
-  maximumInvestmentRequired: string;
-  maximumInvestmentPlaceholder: string;
-  preferredAreas: string;
-  preferredAreasPlaceholder: string;
-  preferredAreasRequired: string;
-  preferredAreasErrorMessage: string;
-  howDidYouKnowUs: string;
-  howDidYouKnowUsPlaceholder: string;
-  howDidYouKnowUsErrorMessage: string;
-  howDidYouKnowUsRequired: string;
   sendButton: string;
   sendingButton: string;
   successMessage: string;
   failedMessage: string;
-
-  countries: string[];
-  countryName: string;
-  countryNameRequired: string;
-  countryNamePlaceholder: string;
-
-  provinceOfResidence: string;
-  provinceOfResidenceRequired: string;
-  provinceOfResidencePlaceholder: string;
-
-  cityOfResidence: string;
-  cityOfResidenceRequired: string;
-  cityOfResidencePlaceholder: string;
+  choseFile: string;
 
   firstName: string;
   firstNameRequired: string;
@@ -72,6 +45,19 @@ interface Translations {
   phoneNumberErrorMessage: string;
   phoneNumberPlaceholder: string;
 
+  countries: string[];
+  countryName: string;
+  countryNameRequired: string;
+  countryNamePlaceholder: string;
+
+  provinceOfResidence: string;
+  provinceOfResidenceRequired: string;
+  provinceOfResidencePlaceholder: string;
+
+  cityOfResidence: string;
+  cityOfResidenceRequired: string;
+  cityOfResidencePlaceholder: string;
+
   TypeOfCollaboration: string;
   TypeOfCollaborationRequired: string;
   TypeOfCollaborationPlaceholder: string;
@@ -81,7 +67,7 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
-  
+
   FieldOfExpertOther: string;
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
@@ -90,10 +76,31 @@ interface Translations {
   FieldOfInterestRequired: string;
   FieldOfInterestPlaceholder: string;
   FieldOfInterestData: { value: string; label: string }[];
-  
+
   FieldOfInterestOther: string;
   FieldOfInterestOtherRequired: string;
   FieldOfInterestOtherPlaceholder: string;
+
+  title: string;
+  yesLabel: string;
+  noLabel: string;
+
+  birthDate: string;
+  birthDateRequired: string;
+  birthDateErrorMessage: string;
+  birthDateErrorMessageForFutureDate: string;
+  birthDateErrorMessageForAge: string;
+  birthDatePlaceholder: string;
+
+  ExpertiesAreas: string;
+  ExpertiesAreasPlaceholder: string;
+  ExpertiesAreasRequired: string;
+  ExpertiesAreasErrorMessage: string;
+
+  TellUsAboutYourself: string;
+  TellUsAboutYourselfPlaceholder: string;
+  TellUsAboutYourselfRequired: string;
+  TellUsAboutYourselfErrorMessage: string;
 }
 
 interface Props {
@@ -101,17 +108,19 @@ interface Props {
   translations: Translations;
 }
 
-export default function InvestorRegistrationFormClient({ lang, translations }: Props) {
+export default function MentorRegistrationFormClient({ lang, translations }: Props) {
   const { send } = useSubmit();
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
-  } = useForm<InvestorRegistrationFormData>({
+    reset,
+    clearErrors,
+    unregister
+  } = useForm<TraineeRegistrationFormData>({
     mode: 'onBlur',
-    defaultValues: initialInvestorRegistrationFormData
+    defaultValues: initialTraineeRegistrationFormData
   });
 
   const {
@@ -123,19 +132,48 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
     handleSuccessChange
   } = useSubmit((s) => s);
 
+  const { cvFileState, handleCvFileChange } = useFile();
+  const onCvFileChange = (file: File | null) => handleCvFileChange({ cvFile: file ?? '' });
+  const [fileCounterState, setFileCounter] = useState<boolean>(false);
+  // toggle upload mode — clear errors for the optional group when enabling upload
+  const setFileCounterAndClear = (v: boolean) => {
+    setFileCounter(v);
 
-  // useEffect(() => {
-  //   async function fetchCsrfToken() {
-  //     const token = await GetCsrfToken(
-  //       `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`
-  //     );
-  //     handleTokenChange(token);
-  //   }
+    const fields: (keyof TraineeRegistrationFormData)[] = ['birthDate', 'FieldOfInterest', 'FieldOfInterestOther', 'TellUsAboutYourself'];
 
-  //   fetchCsrfToken();
-  // }, []);
+    if (v) {
+      // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed
+      clearErrors(fields);
+      unregister(fields);
+      return;
+    }
 
-  const onSubmit = async (formData: InvestorRegistrationFormData) => {
+    clearErrors(fields);
+    // re-register with the same rules used by the inputs
+    register('FieldOfInterest', { required: translations.FieldOfInterestRequired || true });
+    register('FieldOfInterestOther', { required: translations.FieldOfInterestOtherRequired || true });
+    register('TellUsAboutYourself', { required: translations.TellUsAboutYourselfRequired || true });
+
+    // register birthDate using the shared validator
+    register('birthDate', { required: translations.birthDateRequired || true, validate: birthValidate });
+  };
+
+  const birthValidate = (value?: Date): string | true => {
+    if (fileCounterState) return true;
+
+    // convert Date to ISO yyyy-mm-dd string expected by the string-based validator
+    const valStr =
+      value instanceof Date ? value.toISOString().split('T')[0] : (typeof value === 'string' ? value : undefined);
+
+    return birthDateValidatorFactory(14, {
+      birthDateRequired: translations.birthDateRequired,
+      birthDateErrorMessage: translations.birthDateErrorMessage,
+      birthDateErrorMessageForFutureDate: translations.birthDateErrorMessageForFutureDate,
+      birthDateErrorMessageForAge: translations.birthDateErrorMessageForAge
+    })(valStr);
+  };
+
+  const onSubmit = async (formData: TraineeRegistrationFormData) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -151,12 +189,12 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
     });
 
     // Send the form data to the API.
-    submitInvestorRegistrationForm(sendFormData)
+    submitTraineeRegistrationForm(sendFormData)
       .then(() => {
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialInvestorRegistrationFormData); // Country does not reset
+        reset(initialTraineeRegistrationFormData); // Country does not reset
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -165,7 +203,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
         handleSuccessChange(true);
         handleNotifChange(false);
         handleSendChange(false);
-        reset(initialInvestorRegistrationFormData);
+        reset(initialTraineeRegistrationFormData);
 
         setTimeout(() => {
           handleNotifChange(false);
@@ -199,10 +237,10 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 phoneNumber: 'phoneNumber',
                 countryOfResidence: 'countryOfResidence',
                 provinceOfResidence: '',
-                cityOfResidence: '',
+                cityOfResidence: 'cityOfResidence',
                 TypeOfCollaboration: '',
                 FieldOfExpert: '',
-                FieldOfInterest: ''
+                FieldOfInterest: 'fieldOfInterest'
               }}
               noLabel={false}
               translations={{
@@ -256,59 +294,74 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
                 FieldOfInterestRequired: translations.FieldOfInterestRequired,
                 FieldOfInterestPlaceholder: translations.FieldOfInterestPlaceholder,
                 FieldOfInterestData: translations.FieldOfInterestData,
-                
+
                 FieldOfInterestOther: translations.FieldOfInterestOther,
                 FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
-                FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder
+                FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder,
               }}
-            />
-
-            <Input
-              id="birthDate"
-              register={register}
-              errors={errors}
-              nameInput="investmentCeiling"
-              type="text"
-              label={translations.maximumInvestment}
-              // required={translations.maximumInvestmentRequired}
-              required=""
-              placeholder={translations.maximumInvestmentPlaceholder}
-              className="input col-span-1 w-full"
-              labelClass=""
-              patternValue=""
-              patternMessage=""
             />
           </div>
 
-          <div className="flex flex-col gap-0">
-            <TextArea
-              title={translations.preferredAreas}
-              register={register}
-              errors={errors}
-              placeholder={translations.preferredAreasPlaceholder}
-              nameTextArea="preferredAreas"
-              patternMessage=""
-              patternValue=""
-              required={translations.preferredAreasRequired}
-              rows={3}
-              maxLength={1450}
-              maxLengthMessage={translations.preferredAreasErrorMessage}
-              validate=""
+          <div className="w-full flex flex-col p-3">
+            <YesOrNoQuestion
+              title={translations.title}
+              yesLabel={translations.yesLabel}
+              noLabel={translations.noLabel}
+              value={fileCounterState}
+              onChange={setFileCounterAndClear}
+              name="fileCounter"
             />
+            <div
+              aria-hidden={!fileCounterState}
+              className={`w-full md:max-w-lg 2xl:max-w-xl mt-2 mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-900 ease-out origin-top min-h-0
+                          ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
+            >
+              <FileUpload
+                nameInput="cvFile"
+                required={fileCounterState ? true : false}
+                errors={errors}
+                label={translations.choseFile}
+                onChange={onCvFileChange}
+                disabled={!fileCounterState}
+                file={cvFileState.cvFile} // <-- sync external value
+              />
+            </div>
+          </div>
 
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-6">
+            <div className="col-span-1">
+              <Input
+                id="birthDate"
+                register={register}
+                errors={errors}
+                nameInput="birthDate"
+                type="date"
+                label={translations.birthDate}
+                required={translations.birthDateRequired}
+                patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
+                patternMessage={translations.birthDateErrorMessage}
+                placeholder={translations.birthDatePlaceholder}
+                className="input col-span-1 mb-1 w-full"
+                labelClass=""
+                validate={birthValidate}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col w-full">
             <TextArea
-              title={translations.howDidYouKnowUs}
+              title={translations.TellUsAboutYourself}
               register={register}
               errors={errors}
-              placeholder={translations.howDidYouKnowUsPlaceholder}
-              nameTextArea="howDidYouKnowUs"
+              placeholder={translations.TellUsAboutYourselfPlaceholder}
+              nameTextArea="TellUsAboutYourself"
               patternMessage=""
               patternValue=""
-              // required={translations.howDidYouKnowUsRequired}
+              // required={translations.TellUsAboutYourselfRequired}
               required=""
               rows={3}
               maxLength={1450}
-              maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+              maxLengthMessage={translations.TellUsAboutYourselfErrorMessage}
               validate=""
             />
           </div>

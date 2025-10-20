@@ -75,6 +75,15 @@ interface Translations {
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
 
+  FieldOfInterest: string;
+  FieldOfInterestRequired: string;
+  FieldOfInterestPlaceholder: string;
+  FieldOfInterestData: { value: string; label: string }[];
+
+  FieldOfInterestOther: string;
+  FieldOfInterestOtherRequired: string;
+  FieldOfInterestOtherPlaceholder: string;
+
   title: string;
   yesLabel: string;
   noLabel: string;
@@ -195,14 +204,19 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     register('birthDate', { required: translations.birthDateRequired || true, validate: birthValidate });
   };
 
-  const birthValidate = (value?: string) => {
+  const birthValidate = (value?: Date): string | true => {
     if (fileCounterState) return true;
+
+    // convert Date to ISO yyyy-mm-dd string expected by the string-based validator
+    const valStr =
+      value instanceof Date ? value.toISOString().split('T')[0] : (typeof value === 'string' ? value : undefined);
+
     return birthDateValidatorFactory(14, {
       birthDateRequired: translations.birthDateRequired,
       birthDateErrorMessage: translations.birthDateErrorMessage,
       birthDateErrorMessageForFutureDate: translations.birthDateErrorMessageForFutureDate,
       birthDateErrorMessageForAge: translations.birthDateErrorMessageForAge
-    })(value);
+    })(valStr);
   };
 
   return (
@@ -222,7 +236,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               countryOfResidence: 'countryOfResidence',
               provinceOfResidence: '',
               cityOfResidence: 'cityOfResidence',
-              TypeOfCollaboration: 'TypeOfCollaboration'
+              TypeOfCollaboration: 'TypeOfCollaboration',
+              FieldOfExpert: 'FieldOfExpert',
+              FieldOfInterest: ''
             }}
             noLabel={false}
             translations={{
@@ -269,7 +285,16 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
               FieldOfExpertOther: translations.FieldOfExpertOther,
               FieldOfExpertOtherRequired: translations.FieldOfExpertOtherRequired,
-              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder
+              FieldOfExpertOtherPlaceholder: translations.FieldOfExpertOtherPlaceholder,
+
+              FieldOfInterest: translations.FieldOfInterest,
+              FieldOfInterestRequired: translations.FieldOfInterestRequired,
+              FieldOfInterestPlaceholder: translations.FieldOfInterestPlaceholder,
+              FieldOfInterestData: translations.FieldOfInterestData,
+              
+              FieldOfInterestOther: translations.FieldOfInterestOther,
+              FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
+              FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder,
             }}
           />
         </div>

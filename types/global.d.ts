@@ -92,7 +92,6 @@ interface MentorRegistrationFormData {
   phoneNumber: string;
   countryOfResidence: string;
   cityOfResidence: string;
-  birthDate: Date;
   website: string;
   linkedin: string;
   instagram: string;
@@ -140,10 +139,26 @@ interface JoinOurTeamFormData {
   cityOfResidence: string;
   TypeOfCollaboration: string;
   FieldOfExpert: string;
-  birthDate?: string;
+  FieldOfExpertOther: string;
+  birthDate?: Date;
   educationField?: string;
   educationLevel?: string;
   workHistorySummary?: string;
+  cvFile?: File | '' | undefined;
+}
+
+// Define an interface for job application form data
+interface TraineeRegistrationFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  countryOfResidence: string;
+  cityOfResidence: string;
+  birthDate: Date;
+  FieldOfInterest: string;
+  FieldOfInterestOther: string;
+  TellUsAboutYourself: string;
   cvFile?: File | '' | undefined;
 }
 
@@ -432,6 +447,7 @@ export {
   InvestorRegistrationFormData,
   MentorRegistrationFormData,
   JoinOurTeamFormData,
+  TraineeRegistrationFormData,
   Entrepreuneur,
   LoginFormData,
   DecodedToken,
