@@ -90,6 +90,7 @@ interface MentorRegistrationFormData {
   lastName: string;
   email: string;
   phoneNumber: string;
+  birthDate?: Date;
   countryOfResidence: string;
   cityOfResidence: string;
   website: string;

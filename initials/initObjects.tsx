@@ -145,8 +145,8 @@ const initialTraineeRegistrationFormData: TraineeRegistrationFormData = {
   countryOfResidence: '',
   cityOfResidence: '',
   birthDate: new Date(),
-  FieldOfExpert: '',
-  FieldOfExpertOther: '',
+  FieldOfInterest: '',
+  FieldOfInterestOther: '',
   TellUsAboutYourself: ''
 };
 
