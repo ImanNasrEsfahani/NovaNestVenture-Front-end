@@ -23,6 +23,8 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
     howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
     sendButton: t('sendButton'),
+    sendingButton: t('sendingButton'),
+    
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
 

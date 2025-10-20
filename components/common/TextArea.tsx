@@ -47,14 +47,16 @@ export default function TextArea({
     <div className='w-full flex flex-col py-4'>
       {/* Label for the textarea */}
       <label htmlFor={nameTextArea} className="w-full px-2">
-        {title}
-        {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
+        <span className="pl-1">
+          {title}
+          {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
+        </span>
         <textarea
           id={nameTextArea}
           rows={rows}
           cols={cols}
           className={
-            'textarea w-full mt-2 get-shadow-sm focus:outline-none border border-gray-400 placeholder:text-darkgray placeholder:text-base text-sm' +
+            'textarea w-full get-shadow-sm focus:outline-none border border-gray-400 placeholder:text-darkgray placeholder:text-base text-sm' +
             (errors[nameTextArea] ? ' border-red-500' : '')
           }
           {...register(nameTextArea, registerOptions)}
@@ -62,7 +64,7 @@ export default function TextArea({
         />
       </label>
       {errors[nameTextArea] && (
-        <span className="px-2 text-sm text-red-500">
+        <span className="pl-4 text-xs text-red-500">
           {errors[nameTextArea].message}
         </span>
       )}

@@ -193,7 +193,7 @@ export default function PersonalInfoInput({
             label={translations.TypeOfCollaboration}
             required={translations.TypeOfCollaborationRequired}
             labelClass=" "
-            className="input col-span-1 mb-1 w-full"
+            className="input col-span-1 w-full"
             placeholder={translations.TypeOfCollaborationPlaceholder}
             options={translations.TypeOfCollaborationData}
           />
@@ -209,7 +209,7 @@ export default function PersonalInfoInput({
             label={translations.FieldOfExpert}
             required={translations.FieldOfExpertRequired}
             labelClass=" "
-            className="input col-span-1 mb-1 w-full"
+            className="input col-span-1 w-full"
             placeholder={translations.FieldOfExpertPlaceholder}
             options={translations.FieldOfExpertData}
             handleChange={handleFieldOfExpertChange}

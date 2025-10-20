@@ -24,6 +24,7 @@ interface Translations {
   FirstSale: string;
   SaleDevelopment: string;
   sendButton: string;
+  sendingButton: string;
   successMessage: string;
   failedMessage: string;
 
@@ -47,7 +48,7 @@ interface Translations {
   acceleratorsRequired: string;
   acceleratorsPlaceholder: string;
   acceleratorsErrorMessage: string;
-  
+
   howDidYouKnowUs: string;
   howDidYouKnowUsRequired: string;
   howDidYouKnowUsPlaceholder: string;
@@ -80,7 +81,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
     handleSendChange,
     handleNotifChange,
     handleSuccessChange,
-    startupFormType, 
+    startupFormType,
     setStartUpFormType,
     filesCounter,
     handleFileCounterChange,
@@ -98,17 +99,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
     handleFinancialModelFileChange
   } = useFile((s) => s)
 
-
-  // useEffect(() => {
-  //   async function fetchCsrfToken() {
-  //     const token = await GetCsrfToken(
-  //       `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`
-  //     );
-  //     handleTokenChange(token);
-  //   }
-
-  //   fetchCsrfToken();
-  // }, []);
+  const { send } = useSubmit();
 
   const onSubmit = async (formData: StartupsFormData) => {
     // Set loading and sending states.
@@ -183,14 +174,14 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
   return (
     <div className="max-w-responsive mx-auto py-20">
       <div className='mb-12'>
-        <FormTitle  
+        <FormTitle
           formTitle={translations.formTitle}
           formSubtitle={translations.formSubtitle}
         />
       </div>
       <div className="container mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className='pb-8'>         
+          <div className='pb-8'>
             <StartupFormPersonalInformation
               countries={translations.countries}
               countryName={translations.countryName}
@@ -215,7 +206,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
             </p>
             <hr className=" mb-5 mt-0" />
           </div>
-          
+
           <div className='w-full h-auto px-4'>
             <div className='h-auto w-full flex flex-col gap-2'>
               <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
@@ -226,9 +217,8 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                   return (
                     <div className="col-span-1" key={key}>
                       <div
-                        className={`w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4 rounded-lg transition-shadow cursor-pointer ${
-                          isSelected ? 'ring-2 ring-primary/60' : ''
-                        }`}
+                        className={`w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4 rounded-lg transition-shadow cursor-pointer ${isSelected ? 'ring-2 ring-primary/60' : ''
+                          }`}
                         onClick={() => {
                           const syntheticEvent = {
                             target: { value: label, name: 'startupType' }
@@ -240,9 +230,8 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
                         <div className="flex flex-row items-center gap-3">
                           <div className={`border-2 rounded-full p-1 transition-colors ${isSelected ? 'border-primary' : 'border-gray-300'}`}>
                             <div
-                              className={`relative size-4 rounded-full transition-all ${
-                                isSelected ? 'bg-primary' : 'bg-whiteGold'
-                              } ${errors.startupType ? 'border-2 border-red-500' : '' }`}
+                              className={`relative size-4 rounded-full transition-all ${isSelected ? 'bg-primary' : 'bg-whiteGold'
+                                } ${errors.startupType ? 'border-2 border-red-500' : ''}`}
                             >
                               <input
                                 type="radio"
@@ -379,9 +368,10 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
               validate=""
             />
           </div>
-          
+
           <div className="flex justify-center w-1/3 md:w-1/4 lg:w-1/6 mx-auto mt-6">
-            <ButtonRefactor type="submit" text={translations.sendButton} disabled={errorsList[0] ? true : false}/>
+            <ButtonRefactor type="submit" text={send ? translations.sendingButton : translations.sendButton}
+              disabled={errorsList[0] ? true : false} />
           </div>
           <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
         </form>

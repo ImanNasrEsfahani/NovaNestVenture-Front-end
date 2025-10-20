@@ -81,7 +81,7 @@ export default function CountryInput({
             label={countryName}
             required={countryNameRequired}
             options={countriesData}
-            className="input col-span-1 mb-1 w-full"
+            className="input col-span-1 w-full"
             labelClass="text-gray"
             placeholder={countryNamePlaceholder}
             handleChange={handleCountryChange}

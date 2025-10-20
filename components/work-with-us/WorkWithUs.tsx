@@ -25,6 +25,7 @@ export default function WorkWithUs({ lang }: { lang: string }) {
     phoneNumberPlaceholder: t('phoneNumberPlaceholder'),
     phoneNumberErrorMessage: t('phoneNumberErrorMessage'),
     sendButton: t('sendButton'),
+    sendingButton: t('sendingButton'),
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage')
   };

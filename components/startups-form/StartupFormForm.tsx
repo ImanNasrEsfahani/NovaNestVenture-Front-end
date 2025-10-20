@@ -12,6 +12,7 @@ export default function StartupFormForm({lang}: {lang: string}) {
     FirstSale: t('FirstSale'),
     SaleDevelopment: t('SaleDevelopment'),
     sendButton: t('sendButton'),
+    sendingButton: t('sendingButton'),
     successMessage: t('successMessage'),
     failedMessage: t('failedMessage'),
     

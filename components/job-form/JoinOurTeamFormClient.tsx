@@ -24,6 +24,8 @@ interface Translations {
   formSubtitle: string;
   resumeFile: string;
   sendButton: string;
+  sendingButton: string;
+
   successMessage: string;
   failedMessage: string;
   choseFile: string;
@@ -108,6 +110,7 @@ interface Props {
 }
 
 export default function JoinOurTeamFormClient({ lang, translations }: Props) {
+  const { send } = useSubmit();
 
   const {
     register,
@@ -285,17 +288,15 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
             className={`w-full md:max-w-lg 2xl:max-w-xl mt-2 mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-900 ease-out origin-top min-h-0
               ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
           >
-            <div className="px-4">
-              <FileUpload
-                nameInput="cvFile"
-                required={fileCounterState ? true : false}
-                errors={errors}
-                label={translations.choseFile}
-                onChange={onCvFileChange}
-                disabled={!fileCounterState}
-                file={cvFileState.cvFile} // <-- sync external value
-              />
-            </div>
+            <FileUpload
+              nameInput="cvFile"
+              required={fileCounterState ? true : false}
+              errors={errors}
+              label={translations.choseFile}
+              onChange={onCvFileChange}
+              disabled={!fileCounterState}
+              file={cvFileState.cvFile} // <-- sync external value
+            />
           </div>
         </div>
 
@@ -378,11 +379,10 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         </div>
 
         <div className="pt-16 pb-4 md:mx-auto text-center">
-          {/* <ButtonRefactor type="submit" text="Submit" /> */}
           <Button
             type="submit"
             bgColor="Primary"
-            text={translations.sendButton}
+            text={send ? translations.sendingButton : translations.sendButton}
             disabled={Object.keys(errors).length > 0}
           />
         </div>

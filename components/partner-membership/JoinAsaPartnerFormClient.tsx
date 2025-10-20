@@ -30,6 +30,8 @@ interface Translations {
   howDidYouKnowUsRequired: string;
   howDidYouKnowUsErrorMessage: string;
   sendButton: string;
+  sendingButton: string;
+
   successMessage: string;
   failedMessage: string;
 
@@ -110,6 +112,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
     defaultValues: initialJoinAsaPartnerFormData
   });
 
+  const { send } = useSubmit();
 
   const {
     // csrfToken,
@@ -341,7 +344,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
           <ButtonRefactor
             type="submit"
-            text={translations.sendButton}
+            text={send ? translations.sendingButton : translations.sendButton}
             disabled={errorsList[0] ? true : false}
           />
         </div>

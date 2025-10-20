@@ -10,9 +10,73 @@ import { useSubmit } from 'stores/dataStore';
 import Button from '@/components/common/Button';
 import { useFile } from 'stores/fileStore';
 import Image from 'next/image';
-import { WorkWithUsClientProps } from '@/types/global';
 import PersonalInfoSection from '@/components/work-with-us/sections/PersonalInfoSection';
 import AcademicInfoSection from '@/components/work-with-us/sections/AcademicInfoSection';
+
+interface Translations {
+  
+  workWithUS: {
+    Professor: string;
+    student: string;
+    hiring: string;
+    Internship: string;
+    UniversityInternship: string;
+    professionalConsultation: string;
+    formTitle: string;
+    PositionPlaceholder: string;
+    contractPlaceholder: string;
+    cvFileRequired: string;
+    
+    formSubtitleTop: string;
+    formSubtitleBottom: string;
+
+    email: string;
+    emailRequired: string;
+    emailPlaceholder: string;
+
+    StudyField: string;
+    StudyFieldRequired: string;
+    StudyFieldPlaceholder: string;
+    StudySubField: string;
+    StudySubFieldRequired: string;
+    StudySubFieldPlaceholder: string;
+
+    cvFile: string;
+  };
+  
+  universities: {
+    unis: Record<string, string>;
+    placeholder: string;
+  };
+  
+  langLevel: {
+    levels: Record<string, string>;
+    placeholder: string;
+  };
+  
+  firstName: string;
+  firstNameRequired: string;
+  firstNamePlaceholder: string;
+  
+  lastName: string;
+  lastNameRequired: string;
+  lastNamePlaceholder: string;
+  
+  phoneNumber: string;
+  phoneNumberRequired: string;
+  phoneNumberPlaceholder: string;
+  phoneNumberErrorMessage: string;
+
+  sendButton: string;
+  sendingButton: string;
+  successMessage: string;
+  failedMessage: string;
+}
+
+interface WorkWithUsClientProps {
+  translations: Translations;
+  lang: string;
+}
 
 export default function WorkWithUsClient({ translations, lang }: WorkWithUsClientProps) {
   const {
@@ -26,6 +90,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
   });
 
   const { workWithUS, universities, langLevel } = translations;
+  const { send } = useSubmit();
 
   const Positions = {
     Professor: workWithUS.Professor,
@@ -90,7 +155,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
   const TypeOfUnis = unisList.map(
     (type: any) => ({
       value: type,
-      label:type
+      label: type
     })
   )
 
@@ -208,10 +273,10 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
       <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20 flex flex-col items-center">
         <div className='flex flex-col md:flex-row gap-6'>
           <div className='flex justify-center relative size-[200px] mt-6'>
-            <Image src="/static/images/work-with-us/forough-logo.png" alt="Work with us" layout='fill'className='object-cover' />
+            <Image src="/static/images/work-with-us/forough-logo.png" alt="Work with us" layout='fill' className='object-cover' />
           </div>
           <div className='flex justify-center relative w-[200px] h-[210px]'>
-            <Image src="/static/images/work-with-us/farazaman-logo.png" alt="Work with us" layout='fill'className='object-cover' />
+            <Image src="/static/images/work-with-us/farazaman-logo.png" alt="Work with us" layout='fill' className='object-cover' />
           </div>
         </div>
         <div className="py-10">
@@ -220,24 +285,24 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
           </h3>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
-            <PersonalInfoSection
-              register={register}
-              errors={errors}
-              workWithUS={workWithUS}
-              translations={translations}
-              unis={unis}
-              PositionsData={PositionsData}
-              TypeOfContractWithStudentData={TypeOfContractWithStudentData}
-              TypeOfContractWithProfessorData={TypeOfContractWithProfessorData}
-              TypeOfUnis={TypeOfUnis}
-              selectPosition={selectPosition}
-              selectStudentContract={selectStudentContract}
-              selectProfessorContract={selectProfessorContract}
-              selectUni={selectUni}
-              handleItemChange={handleItemChange}
-              handleContractWithStudentItemChange={handleContractWithStudentItemChange}
-              handleContractWithProfessorItemChange={handleContractWithProfessorItemChange}
-              handleUniChange={handleUniChange}
+          <PersonalInfoSection
+            register={register}
+            errors={errors}
+            workWithUS={workWithUS}
+            translations={translations}
+            unis={unis}
+            PositionsData={PositionsData}
+            TypeOfContractWithStudentData={TypeOfContractWithStudentData}
+            TypeOfContractWithProfessorData={TypeOfContractWithProfessorData}
+            TypeOfUnis={TypeOfUnis}
+            selectPosition={selectPosition}
+            selectStudentContract={selectStudentContract}
+            selectProfessorContract={selectProfessorContract}
+            selectUni={selectUni}
+            handleItemChange={handleItemChange}
+            handleContractWithStudentItemChange={handleContractWithStudentItemChange}
+            handleContractWithProfessorItemChange={handleContractWithProfessorItemChange}
+            handleUniChange={handleUniChange}
           />
           {/* next line */}
           <div className="border-b-2 border-black bg-whiteGold">
@@ -256,10 +321,12 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
             handleUniChange={handleUniChange}
           />
           <div className="mx-auto w-full pb-4 md:w-auto">
-            <Button type="submit" bgColor="Primary" />
+            <Button
+              text={send ? translations.sendingButton : translations.sendButton}
+              type="submit" bgColor="Primary" />
           </div>
         </form>
-      <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </div>
     </>
   );

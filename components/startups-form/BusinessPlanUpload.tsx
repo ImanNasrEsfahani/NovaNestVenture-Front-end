@@ -35,18 +35,15 @@ export default function BusinessPlanUpload({ title, yesLabel, noLabel, chooseFil
           transition-[max-height,opacity,transform,padding] duration-700 ease-out min-h-0
           ${fileCounterState ? 'max-h-auto opacity-100 translate-y-0 py-4 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
       >
-        <div className="px-4">
-          <FileUpload
-            nameInput="businessPlanFile"
-            required={fileCounterState ? true : false}
-            errors={errors}
-            label={chooseFile}
-            onChange={onFileChange}
-            disabled={!fileCounterState}
-            file=""
-            
-          />
-        </div>
+        <FileUpload
+          nameInput="businessPlanFile"
+          required={fileCounterState ? true : false}
+          errors={errors}
+          label={chooseFile}
+          onChange={onFileChange}
+          disabled={!fileCounterState}
+          file=""
+        />
       </div>
     </div>
   );

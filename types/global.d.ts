@@ -403,63 +403,7 @@ interface ProfileData {
   thumbnail: string;
 }
 
-// Define interfaces for work-with-us client side props
-interface Translations {
-    workWithUS: {
-    Professor: string;
-    student: string;
-    hiring: string;
-    Internship: string;
-    UniversityInternship: string;
-    professionalConsultation: string;
-    formTitle: string;
-    PositionPlaceholder: string;
-    contractPlaceholder: string;
-    cvFileRequired: string;
-    formSubtitleTop: string;
-    formSubtitleBottom: string;
-    email: string;
-    emailRequired: string;
-    emailPlaceholder: string;
-    StudyField: string;
-    StudyFieldRequired: string;
-    StudyFieldPlaceholder: string;
-    StudySubField: string;
-    StudySubFieldRequired: string;
-    StudySubFieldPlaceholder: string;
-    cvFile: string;
-  };
-  universities: {
-    unis: Record<string, string>;
-    placeholder: string;
-  };
-  langLevel: {
-    levels: Record<string, string>;
-    placeholder: string;
-  };
-  firstName: string;
-  firstNameRequired: string;
-  firstNamePlaceholder: string;
-  lastName: string;
-  lastNameRequired: string;
-  lastNamePlaceholder: string;
-  phoneNumber: string;
-  phoneNumberRequired: string;
-  phoneNumberPlaceholder: string;
-  phoneNumberErrorMessage: string;
-  sendButton: string;
-  successMessage: string;
-  failedMessage: string;
-}
-
-interface WorkWithUsClientProps {
-  translations: Translations;
-  lang: string;
-}
-
-
 export {
-  WorkWithUsClientProps,
   ContactUSFormData,
   StartupApplicantFormDataType,
   AccelerationApplicantFormDataType,

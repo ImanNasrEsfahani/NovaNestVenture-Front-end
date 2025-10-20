@@ -32,7 +32,7 @@ export default function Input({
   inputValue?: string;
   validate?: any;
 }) {
-  
+
   const value = patternValue ? new RegExp(patternValue) : undefined;
 
   // treat empty string / undefined / false as NOT required
@@ -49,26 +49,33 @@ export default function Input({
   if (validate) registerOptions.validate = validate;
 
   console.log("errors: ", errors);
-  
+
   return (
     <div className={`flex flex-col items-start ${containerClass ?? ''}`}>
       <label htmlFor={id} className={`w-full px-2 text-gray ${labelClass ?? ''}`}>
-        {label}
-        {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
+        <span className="pl-1">
+          {label}
+          {isRequired ? <span className="text-red-500 ml-1">*</span> : null}
+        </span>
         <input
           id={id}
           type={type}
-          {...register(nameInput, registerOptions)}
           placeholder={placeholder}
-          required={isRequired}
-          aria-required={isRequired}
-          className={`w-full !rounded-sm get-shadow-sm focus:outline-none border border-gray-400 bg-transparent placeholder:text-[#939393B2] ${
-            (className ?? '') + (errors?.[nameInput] ? ' border-red-500' : '')
-          }`}
+          className={`w-full rounded border border-gray-400 px-4 py-2 text-sm placeholder:text-[#939393B2] focus:outline-none focus:ring-1 focus:ring-primary ${className} ${errors[nameInput] ? 'border-red-500' : ''}`}
+          {...register(nameInput, {
+            required,
+            pattern: patternValue
+              ? {
+                value: new RegExp(patternValue),
+                message: patternMessage
+              }
+              : undefined,
+            validate // <-- forward custom validators (e.g. birthValidate)
+          })}
         />
       </label>
       {errors[nameInput] && (
-        <span className="px-2 text-sm text-red-500">
+        <span className="pl-4 text-xs text-red-500">
           {errors[nameInput].message}
         </span>
       )}

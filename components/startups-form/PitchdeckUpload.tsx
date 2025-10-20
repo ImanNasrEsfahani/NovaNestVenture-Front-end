@@ -311,10 +311,9 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
         name="fileCounter"
       />
 
-      <div className="relative">
+      <div className="relative mt-6">
         {fileCounterState ? (
           <div className="w-full md:max-w-lg 2xl:max-w-xl mx-auto bg-whiteGold drop-shadow-md overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 pointer-events-auto">
-            <div className="px-4 py-6">
               <FileUpload
                 nameInput="pitchDeckFile"
                 required={required ? true : undefined}
@@ -324,7 +323,6 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
                 disabled={false}
                 file=""
               />
-            </div>
           </div>
         ) : (
           <div className="w-full transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 pointer-events-auto">
@@ -342,6 +340,7 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
               label={productName}
               labelClass=""
             />
+            <br />
             <Input
               id={`${prefix}_site_address`}
               register={register}
@@ -357,7 +356,7 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
               labelClass=""
             />
 
-            <div className="space-y-4">
+            <div className="space-y-4 mt-6">
               <PanelsRenderer panels={panels} openPanel={openPanel} togglePanel={togglePanel} errors={errors} />
             </div>
           </div>

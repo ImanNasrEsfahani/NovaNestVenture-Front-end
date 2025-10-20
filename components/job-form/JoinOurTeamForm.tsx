@@ -14,6 +14,7 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     choseFile: t('join-our-team', { returnObjects: true }).choseFile,
     
     sendButton: t('sendButton', { returnObjects: true }),
+    sendingButton: t('sendingButton', { returnObjects: true }),
     successMessage: t('successMessage', { returnObjects: true }),
     failedMessage: t('failedMessage', { returnObjects: true }),
     

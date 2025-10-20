@@ -41,10 +41,10 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
   const showInvalid = !!errors?.[nameInput] || (required && !fileName && hasAnyErrors);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="flex flex-col items-center justify-center w-full lg:max-w-md">
       <label
         className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition
-          ${ showInvalid ? ' border-2 border-red-500 ring-1 ring-red-200' : '' }`}
+          ${ showInvalid ? 'border-2 border-red-500 ring-1 ring-red-200' : '' }`}
       >
         <p className="font-base mb-2">{label}</p>
         <input
@@ -59,16 +59,6 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
           onChange={(e) => handleChange(e.target.files?.[0] || null)}
           disabled={disabled}
         />
-        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg" href="http://www.w3.org/1999/xlink">
-          <rect x="0.5" width="27" height="27" fill="url(#pattern0_138_5516)" fillOpacity="0.6"/>
-          <defs>
-              <pattern id="pattern0_138_5516" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use href="#image0_138_5516" transform="scale(0.0078125)"/>
-              </pattern>
-              <image id="image0_138_5516" width="128" height="128" preserveAspectRatio="none" href="data:image/png;base64,iVBORw0K..."/>
-          </defs>
-        </svg>
-
         {/* show filename if a file is selected */}
         {fileName ? (
           <div className="mt-3 flex items-center gap-3 w-full justify-center">

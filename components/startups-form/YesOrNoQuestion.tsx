@@ -31,7 +31,7 @@ export default function YesOrNoQuestion({
       <div
         role="radiogroup"
         aria-label={title ?? name}
-        className="w-full flex items-center justify-around bg-whiteGold drop-shadow-md px-3 rounded-lg"
+        className="w-full flex items-center justify-around bg-whiteGold drop-shadow-md rounded-lg"
       >
         {options.map((opt) => (
           <button
@@ -40,8 +40,8 @@ export default function YesOrNoQuestion({
             role="radio"
             aria-checked={value === opt.value}
             onClick={() => onChange(opt.value)}
-            className={`w-full flex items-center gap-3 p-2 rounded focus:outline-none transform transition-all duration-700 ease-out
-              ${value === opt.value ? 'bg-white ring-2 ring-primary/70 shadow-md' : 'bg-gold hover:bg-gray-200'}`}
+            className={`w-full flex items-center gap-3 py-2 pl-6 rounded focus:outline-none transform transition-all duration-700 ease-out
+              ${value === opt.value ? 'ring-2 ring-primary/70 shadow-md' : 'bg-gold hover:bg-gray-200'}`}
           >
             <span className="border-2 rounded-full border-primary p-1 flex items-center justify-center transition-colors duration-700 ease-out">
               <span className={`size-2 rounded-full transition-transform duration-700 ease-out ${value === opt.value ? 'bg-primary' : 'bg-white'}`} />

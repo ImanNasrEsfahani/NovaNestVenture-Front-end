@@ -28,7 +28,7 @@ export default function Select({
         htmlFor={nameInput}
         className={`flex flex-col px-2 ${labelClass}`}
       >
-        <span className="flex text-gray">
+        <span className="pl-1">
           {label}
           {required ? <span className="text-red-500 ml-1">*</span> : null}
         </span>
@@ -39,7 +39,7 @@ export default function Select({
             {...register(nameInput, {
               required: required
             })}
-            className={`w-full !rounded-sm border border-gray-400 get-shadow-sm appearance-none bg-transparent placeholder:text-[#939393B2] pr-10 ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
+            className={`w-full !rounded-sm border border-gray-400 appearance-none bg-transparent placeholder:text-[#939393B2] pr-10 ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
             onChange={handleChange}
             defaultValue=""
           >
@@ -62,7 +62,7 @@ export default function Select({
       </label>
 
       {errors[nameInput] && (
-        <span className="mt-2 inline text-sm text-red-500">
+        <span className="pl-4 text-xs text-red-500 -m-t-2">
           {errors[nameInput].message}
         </span>
       )}
