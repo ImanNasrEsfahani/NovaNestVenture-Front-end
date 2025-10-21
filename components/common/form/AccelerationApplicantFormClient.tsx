@@ -14,7 +14,6 @@ import FormTitle from '@/components/common/form/FormTitle';
 interface Translations {
   formTitle: string;
   formSubtitle: string;
-  formDescription: string[];
 
   sendingButton: string;
   ReserveButton: string;
@@ -165,13 +164,6 @@ export default function AccelerationApplicantFormClient({ lang, translations }: 
   return (
     <div className="max-w-responsive mx-auto">
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
-
-      {/* CTA */}
-      <section className="pt-12 pb-4 max-w-5xl mx-auto lg:px-4 text-center">
-        {translations.formDescription.map((text, index) => (
-          <p className="text-xl" key={index}>{text}</p>
-        ))}
-      </section>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-6 grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3">

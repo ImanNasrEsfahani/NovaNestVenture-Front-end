@@ -7,6 +7,7 @@ import Intro from '@/components/acceleration/Intro';
 import Why from '@/components/acceleration/Why';
 import Process from '@/components/acceleration/Process';
 import Impact from '@/components/acceleration/Impact';
+import CallToAction from '@/components/acceleration/CallToAction';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -44,6 +45,8 @@ export default function Page({
       <Why lang={lang} />
       <Process lang={lang} />
       <Impact lang={lang} />
+
+      <CallToAction lang={lang} />
 
       <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mb-36">
          <AccelerationApplicantForm lang={lang} />

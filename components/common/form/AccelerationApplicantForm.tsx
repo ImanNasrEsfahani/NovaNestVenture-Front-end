@@ -9,7 +9,6 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
   const translations = {
     formTitle: t("AccelerationApplicantForm", { returnObjects: true }).formTitle,
     formSubtitle: t("AccelerationApplicantForm", { returnObjects: true }).formSubtitle,
-    formDescription: t("AccelerationApplicantForm", { returnObjects: true }).formDescription,
 
     sendingButton: t("sendingButton"),
     ReserveButton: t("ReserveButton"),
