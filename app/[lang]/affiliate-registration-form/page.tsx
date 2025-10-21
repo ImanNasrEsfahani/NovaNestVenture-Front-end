@@ -17,15 +17,25 @@ export default async function AffiliateFormPage({
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div>
-      <Banner
-        image="/static/images/work-with-us/header.png"
-        title={t('partnerForm', { returnObjects: true }).banner}
-        lang={lang}
-      />
-      <div className="max-w-responsive mx-auto">
-        <JoinAsaPartnerForm lang={lang}/>
+    <>
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/affiliate-registeration-form/header.png"
+          title={t('partnerForm', { returnObjects: true }).banner}
+          lang={lang}
+        />
       </div>
-    </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/affiliate-registeration-form/header-mobile.png"
+          title={t('partnerForm', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
+     
+      <div className="max-w-responsive mx-auto">
+        <JoinAsaPartnerForm lang={lang} />
+      </div>
+    </>
   );
 }
