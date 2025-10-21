@@ -1,4 +1,6 @@
 import React from 'react';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+
 import { getServerTranslation } from 'app/i18n';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
@@ -26,10 +28,11 @@ export default function InvestmentSection({ lang }: {
                                 <p className="mb-6">{section.p1}</p>
                                 <p>{section.p2}</p>
                             </div>
-                            <div className="text-center mt-12">
-                                <a href={`${base}${section.href}`} className="btn btn-neutral text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
+                            <div className="max-w-xs mx-auto text-center mt-12">
+                                {/* <a href={`${base}${section.href}`} className="btn btn-dark text-white btn-lg normal-case font-light transition duration-150 ease-in-out hover:bg-primary">
                                     {section.button}
-                                </a>
+                                </a> */}
+                                <ButtonRefactor text={section.button} type="link" href={`${base}${section.href}`} />
                             </div>
                         </div>
                     ))}

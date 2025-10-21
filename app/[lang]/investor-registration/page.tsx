@@ -24,6 +24,8 @@ export default function InvestorRegistrationPage({
           image="/static/images/investor-registeration-form/header.png"
           title={t('banner', { returnObjects: true }).banner}
           lang={lang}
+          backgroundPosition='top'
+          backgroundSize='cover'
         />
       </div>
       <div className="inline md:hidden">
@@ -31,6 +33,8 @@ export default function InvestorRegistrationPage({
           image="/static/images/investor-registeration-form/header-mobile.png"
           title={t('banner', { returnObjects: true }).banner}
           lang={lang}
+          backgroundPosition='center'
+          backgroundSize='cover'
         />
       </div>
 
