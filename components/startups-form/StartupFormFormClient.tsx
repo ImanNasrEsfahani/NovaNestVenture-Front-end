@@ -177,7 +177,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
         />
       </div>
       <div className="container mx-auto">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full">
           <div className='pb-8'>
             <StartupFormPersonalInformation
               countries={translations.countries}

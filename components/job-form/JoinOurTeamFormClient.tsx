@@ -124,7 +124,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
 
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col">
         <div className="mt-4 mb-6 grid grid-cols-1 gap-6 gap-y-4 p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}

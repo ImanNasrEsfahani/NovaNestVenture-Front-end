@@ -225,7 +225,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             formSubtitle={translations.formSubtitle}
           />
         </div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full">
           <div className="grid grid-cols-1 gap-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
               register={register}

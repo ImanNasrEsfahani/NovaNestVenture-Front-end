@@ -174,8 +174,8 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
     <div className="flex h-full flex-col items-center justify-between md:items-start">
       <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
 
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <PersonalInfoInput
             register={register}
             errors={errors}
@@ -263,7 +263,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
           placeholder={translations.subjectPlaceholder}
           className="input"
           label={translations.subject}
-          labelClass=""
+          labelClass="mt-2"
           containerClass=""
         />
 
