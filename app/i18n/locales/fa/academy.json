@@ -7,12 +7,17 @@
       "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas.",
       "By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields."
   ],
-  "features": [
-      "Hands-on projects with international mentors",
-      "Workshops and skill-building sessions",
-      "Mentorship, feedback and career guidance",
-      "Opportunities to showcase your ideas"
-  ],
+  "features": {
+      "text": [
+        "By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields."
+      ],
+      "list": [
+        "Hands-on projects with international mentors",
+        "Workshops and skill-building sessions",
+        "Mentorship, feedback and career guidance",
+        "Opportunities to showcase your ideas"
+      ]
+  },
   "callToAction": "If you are a teenager or young adult interested in joining the NovaNest Academy, working alongside international mentors on real projects, and gaining valuable hands-on experience, you can submit your application through the link below."
 
 }

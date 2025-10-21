@@ -1,25 +1,42 @@
 {
   "menuItems": [
-    { 
-      "label": "Investment",
-      "href": "en/investment"
-    },
-    { 
-      "label": "Acceleration", 
-      "href": "en/acceleration"
-    },
     {
-      "label": "Startup Visa",
-      "href": "en/startup"
-    },
-    { 
-      "label": "Entrepreneurship", 
-      "href": "en/pnp"
+      "label": "Services",
+      "type": "dropdown",
+      "href": "#",
+      "submenuItems": [
+        {
+          "label": "Investment",
+          "href": "en/investment"
+        },
+        {
+          "label": "Acceleration",
+          "href": "en/acceleration"
+        },
+        {
+          "label": "Startup Visa",
+          "href": "en/startup"
+        },
+        {
+          "label": "Entrepreneurship",
+          "href": "en/pnp"
+        }
+      ]
     },
     {
       "label": "About us",
+      "type": "link",
       "href": "en/about-us"
+    },
+    {
+      "label": "Our Team",
+      "type": "link",
+      "href": "en/our-team"
+    },
+    {
+      "label": "Academy",
+      "type": "link",
+      "href": "en/academy"
     }
-  ],
-  "submenuItems": []
+  ]
 }

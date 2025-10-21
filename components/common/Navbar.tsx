@@ -6,7 +6,7 @@ import LanguageSwitch from "@/components/common/LanguageSwitch";
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || '';
 
-type MenuEntry = { label: string; href: string };
+type MenuEntry = { label: string; href: string; type?: 'dropdown' | 'link'; submenuItems?: MenuEntry[] };
 
 export default function Navbar({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'layout');
@@ -39,30 +39,30 @@ export default function Navbar({ lang }: { lang: string }) {
               tabIndex={0}
               className="menu menu-lg dropdown-content mt-3 z-[1] w-72 space-y-2 rounded-box bg-[rgba(255,255,255,0.9)] p-3 shadow"
             >
-              {submenuItems.length > 0 && (
-                <li>
-                  <details>
-                    <summary className="font-medium text-base-content hover:text-primary">{servicesLabel}</summary>
-                    <ul className="space-y-1 p-2">
-                      {submenuItems.map(({ label, href }) => (
-                        <li key={label}>
-                          <Link href={`${base}${href}`} className="whitespace-nowrap text-base-content hover:text-primary">
-                            {label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </details>
-                </li>
+              {menuItems.map((item) =>
+                item.type === 'dropdown' ? (
+                  <li key={item.label}>
+                    <details>
+                      <summary className="font-medium text-base-content hover:text-primary">{item.label}</summary>
+                      <ul className="space-y-1 p-2">
+                        {(item.submenuItems ?? []).map(({ label, href }) => (
+                          <li key={label}>
+                            <Link href={`${base}${href}`} className="whitespace-nowrap text-base-content hover:text-primary">
+                              {label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
+                ) : (
+                  <li key={item.label}>
+                    <Link href={`${base}${item.href}`} className="whitespace-nowrap text-base-content hover:text-primary">
+                      {item.label}
+                    </Link>
+                  </li>
+                )
               )}
-
-              {menuItems.map(({ label, href }) => (
-                <li key={label}>
-                  <Link href={`${base}${href}`} className="whitespace-nowrap text-base-content hover:text-primary">
-                    {label}
-                  </Link>
-                </li>
-              ))}
               <li className="mt-12">
                 {/* <LanguageSwitch /> */}
               </li>
@@ -83,43 +83,46 @@ export default function Navbar({ lang }: { lang: string }) {
 
         <div className="navbar-center hidden lg:flex flex-grow justify-center h-full">
           <ul className="menu menu-horizontal gap-6 p-0 m-0 h-full text-lg">
-            {submenuItems.length > 0 && (
-              <li className="dropdown dropdown-bottom dropdown-hover">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="flex items-center gap-1 px-3 py-2 font-medium hover:text-primary"
-                  aria-haspopup="true"
-                >
-                  {servicesLabel}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+            {menuItems.map((item) =>
+              item.type === 'dropdown' ? (
+                // use DaisyUI's dropdown-hover pattern with a label (not a div/group)
+                <li key={item.label} className="dropdown dropdown-bottom dropdown-hover">
+                  <label
+                    tabIndex={0}
+                    className="flex items-center gap-1 px-3 py-2 font-medium hover:text-primary cursor-pointer"
+                    aria-haspopup="true"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
-                  </svg>
-                </div>
-                <ul className="menu menu-lg dropdown-content mt-0 translate-y-1 w-80 space-y-1 rounded-box bg-[rgba(0,0,0,0.6)] shadow">
-                  {submenuItems.map(({ label, href }) => (
-                    <li key={label}>
-                      <Link href={`${base}${href}`} className="px-2 py-3 text-white hover:text-primary hover:font-bold">
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+                    {item.label}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+                    </svg>
+                  </label>
+
+                  {/* DaisyUI shows dropdown-content on hover when using dropdown-hover */}
+                  <ul tabIndex={0} className="menu menu-lg dropdown-content mt-0 translate-y-1 w-80 space-y-1 rounded-box bg-[rgba(0,0,0,0.6)] shadow">
+                    {(item.submenuItems ?? []).map(({ label, href }) => (
+                      <li key={label}>
+                        <Link href={`${base}${href}`} className="px-2 py-3 text-white hover:text-primary hover:font-bold">
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li key={item.label}>
+                  <Link href={`${base}${item.href}`} className="px-3 py-2 font-medium text-white hover:text-primary hover:font-bold">
+                    {item.label}
+                  </Link>
+                </li>
+              )
             )}
-            {menuItems.map(({ label, href }) => (
-              <li key={label}>
-                <Link href={`${base}${href}`} className="px-3 py-2 font-medium text-white hover:text-primary hover:font-bold">
-                  {label}
-                </Link>
-              </li>
-            ))}
           </ul>
         </div>
 

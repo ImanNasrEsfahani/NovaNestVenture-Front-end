@@ -1,25 +1,42 @@
 {
   "menuItems": [
     {
-      "label": "سرمایه گذاران",
-      "href": "fa/investment"
-    },
-    {
-      "label": "کارآفرینان",
-      "href": "fa/acceleration"
-    },
-    {
-      "label": "ویزای استارت آپ",
-      "href": "fa/startup"
-    },
-    {
-      "label": "برنامه های کارآفرینی",
-      "href": "fa/pnp"
+      "label": "خدمات",
+      "type": "dropdown",
+      "href": "#",
+      "submenuItems": [
+        {
+          "label": "سرمایه‌گذاری",
+          "href": "en/investment"
+        },
+        {
+          "label": "شتابدهی",
+          "href": "en/acceleration"
+        },
+        {
+          "label": "ویزای استارت آپ",
+          "href": "en/startup"
+        },
+        {
+          "label": "کارآفرینی",
+          "href": "en/pnp"
+        }
+      ]
     },
     {
       "label": "درباره ما",
-      "href": "fa/about-us"
+      "type": "link",
+      "href": "en/about-us"
+    },
+    {
+      "label": "تیم ما",
+      "type": "link",
+      "href": "en/our-team"
+    },
+    {
+      "label": "آکادمی",
+      "type": "link",
+      "href": "en/academy"
     }
-  ],
-  "submenuItems": [  ]
+  ]
 }

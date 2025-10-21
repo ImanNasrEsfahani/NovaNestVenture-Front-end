@@ -26,6 +26,8 @@ export default function Page({
                     image="/static/images/acceleration/accleration-hero.jpg"
                     title={t('banner')}
                     lang={lang}
+                    backgroundPosition="top"
+                    backgroundSize="cover"
                 />
             </div>
             <div className="inline md:hidden">
@@ -33,12 +35,14 @@ export default function Page({
                     image="/static/images/acceleration/accleration-heromob.jpg"
                     title={t('banner')}
                     lang={lang}
+                    backgroundPosition="center"
+                    backgroundSize="cover"
                 />
             </div>
 
             <main className="max-w-responsive mx-auto mt-10 mb-6 px-6">
                 <section className="text-base">
-                    <div className="p-6 text-center">
+                    <div className="px-2 pt-9 pb-16 text-center">
                         <h1 className="text-3xl font-header md:text-5xl font-bold mb-2 text-gray-800">
                             {t('title')}
                         </h1>
@@ -54,11 +58,19 @@ export default function Page({
                     </div>
 
                     <div className="max-w-respoinsive mx-auto grid gap-8 md:grid-cols-2 items-center pb-16">
-                        <ul className="list-disc pl-5 md:pl-12 text-base space-y-2 mb-6">
-                            {t('features', { returnObjects: true }).map((feature: string, index: number) => (
-                                <li key={index}>{feature}</li>
+                        <div>
+                            {t('features', { returnObjects: true }).text.map((paragraph: string, index: number) => (
+                                <p key={index} className="text-slate-700 leading-relaxed mb-4">
+                                    {paragraph}
+                                </p>
                             ))}
-                        </ul>
+
+                            <ul className="list-disc pl-5 md:pl-12 text-base space-y-2 mb-6">
+                                {t('features', { returnObjects: true }).list.map((feature: string, index: number) => (
+                                    <li key={index}>{feature}</li>
+                                ))}
+                            </ul>
+                        </div>
 
 
                         <div className="flex items-center justify-center">

@@ -1,21 +1,24 @@
 export default async function Banner({
   image,
   title,
-  lang
+  lang,
+  backgroundPosition = 'center',
+  backgroundSize = 'cover'
 }: {
   image: string;
   title: string;
   lang: string;
+  backgroundPosition?: string;
+  backgroundSize?: string;
 }) {
   
   return (
     <div className="relative h-screen md:h-[550px]">
-      {/* Background Image with Blur and Overlay */}
       <div
         style={{
           backgroundImage: `url(${image})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover'
+          backgroundPosition: backgroundPosition,
+          backgroundSize: backgroundSize
         }}
         className="absolute inset-0 h-full flex items-center px-4 md:px-20"
       >
