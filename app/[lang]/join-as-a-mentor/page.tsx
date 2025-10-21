@@ -1,5 +1,7 @@
 import Banner from '@/components/common/Banner';
 import MentorRegistrationForm from '@/components/join-as-mentor/MentorRegistrationForm';
+import Accordions from '@/components/startup/Accordions';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 
@@ -31,6 +33,18 @@ export default function JoinAsMentorPage({
     items: string[];
   };
 
+  // Build accordion-friendly data
+  const accordionData = [
+    ...benefits.map((b) => ({
+      header: `${b.emoji} ${b.title}`,
+      content: b.items
+    })),
+    {
+      header: `${specialPerks.emoji} ${specialPerks.title}`,
+      content: specialPerks.items
+    }
+  ];
+
   return (
     <div>
       <Banner
@@ -55,26 +69,19 @@ export default function JoinAsMentorPage({
           <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-20'>
-          {benefits.map((b) => (
-            <div
-              key={b.id}
-              className='rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 py-8 px-6 border-t-4 border-primary'
-            >
-              <div className='flex items-center mb-6'>
-                <span className='text-4xl mr-4'>{b.emoji}</span>
-                <h2 className='text-2xl md:text-3xl font-header text-blue'>{b.title}</h2>
-              </div>
-
-              <ul className='space-y-4 list-disc marker:text-primary pl-12'>
-                {b.items.map((it, i) => (
-                  <li key={i} className='text-base text-grayDark'>
-                    {it}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="grid lg:grid-cols-2 py-12">
+          <div className="flex flex-col justify-center">
+            <Accordions data={accordionData} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/static/images/join-as-a-mentor/services.png"
+              alt="Services"
+              className="mx-auto w-auto max-w-sm rounded-lg"
+              width={1400}
+              height={900}
+            />
+          </div>
         </div>
 
         {/* Special Perks - Full Width (mapped) */}
@@ -95,7 +102,7 @@ export default function JoinAsMentorPage({
         </div>
 
         {/* Call to Action */}
-        <div className='text-center bg-blue text-white rounded-lg p-8 mb-24'>
+        <div className='text-center p-8 mb-12'>
           <p className='text-xl md:text-2xl font-header leading-relaxed'>{t('callToAction')}</p>
         </div>
 

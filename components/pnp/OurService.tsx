@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Accordion from '@/components/startup/OurServicesAccardions';
+import Accordion from '@/components/startup/Accordions';
 import { getServerTranslation } from 'app/i18n';
 
 export default function OurService({lang}: {lang: string}) {

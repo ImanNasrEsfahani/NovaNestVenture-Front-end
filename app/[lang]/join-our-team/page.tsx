@@ -1,5 +1,7 @@
 import Banner from '@/components/common/Banner';
 import JoinOurTeamForm from '@/components/job-form/JoinOurTeamForm';
+import Accordions from '@/components/startup/Accordions';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 
@@ -22,6 +24,31 @@ export default function ApplyFormPage({
     title: string;
     items: string[];
   };
+
+  const benefits = t('workWithUS', { returnObjects: true }).benefits as Array<{
+    id: string;
+    emoji: string;
+    title: string;
+    items: string[];
+  }>;
+
+  const specialPerks = t('workWithUS', { returnObjects: true }).specialPerks as {
+    id: string;
+    emoji: string;
+    title: string;
+    items: string[];
+  };
+
+  const accordionData = [
+    ...benefits.map((b) => ({
+      header: `${b.emoji} ${b.title}`,
+      content: b.items
+    })),
+    {
+      header: `${specialPerks.emoji} ${specialPerks.title}`,
+      content: specialPerks.items
+    }
+  ];
 
   return (
     <>
@@ -60,29 +87,19 @@ export default function ApplyFormPage({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {t("workWithUS", { returnObjects: true }).benefits.map((b: Benefit) => (
-            <article
-              key={b.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border-t-4 border-primary"
-              aria-labelledby={`benefit-${b.id}`}
-            >
-              <header className="flex items-center mb-4">
-                <span className="text-3xl md:text-4xl mr-4">{b.emoji}</span>
-                <h2 id={`benefit-${b.id}`} className="text-2xl md:text-3xl font-header text-blue">
-                  {b.title}
-                </h2>
-              </header>
-
-              <ul className="list-disc marker:text-primary pl-12 space-y-3 text-grayDark">
-                {b.items.map((it: string, idx: number) => (
-                  <li key={idx} className="text-base">
-                    {it}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
+        <div className="grid lg:grid-cols-2 py-12">
+          <div className="flex flex-col justify-center">
+            <Accordions data={accordionData} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/static/images/join-as-a-mentor/services.png"
+              alt="Services"
+              className="mx-auto w-auto max-w-sm rounded-lg"
+              width={1400}
+              height={900}
+            />
+          </div>
         </div>
 
         <div className="bg-gradient-to-r from-whiteGold to-darkGold rounded-lg shadow-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
@@ -100,7 +117,7 @@ export default function ApplyFormPage({
           </ul>
         </div>
 
-        <div className="text-center bg-blue text-white rounded-lg p-6">
+        <div className="text-center p-6">
           <p className="text-xl md:text-2xl font-header leading-relaxed">
             {t('workWithUS', { returnObjects: true }).callToAction}
           </p>

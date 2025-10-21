@@ -10,7 +10,7 @@ interface Props {
   data: AccordionItem[];
 }
 
-export default function OurServicesAccardions({ data }: Props) {
+export default function Accordions({ data }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

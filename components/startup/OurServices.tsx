@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from '@/components/startup/OurServicesAccardions';
+import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 
