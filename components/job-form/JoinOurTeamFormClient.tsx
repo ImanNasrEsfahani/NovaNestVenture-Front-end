@@ -7,7 +7,7 @@ import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialJoinOurTeamFormData } from '../../initials/initObjects';
 import { submitJoinOurTeamForm } from '../../pages/api/jobs';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
-import Button from '@/components/common/Button';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import FormTitle from '@/components/common/form/FormTitle';
@@ -120,6 +120,11 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     })(valStr);
   };
 
+  const errorsList = Object.entries(errors).map(([name, value]) => ({
+    name: name,
+    value: value
+  }));
+
   return (
     <div className="max-w-responsive mx-auto py-20">
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
@@ -192,7 +197,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               FieldOfInterestRequired: translations.FieldOfInterestRequired,
               FieldOfInterestPlaceholder: translations.FieldOfInterestPlaceholder,
               FieldOfInterestData: translations.FieldOfInterestData,
-              
+
               FieldOfInterestOther: translations.FieldOfInterestOther,
               FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
               FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder,
@@ -304,12 +309,11 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
         </div>
 
-        <div className="pt-16 pb-4 md:mx-auto text-center">
-          <Button
+          <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
+          <ButtonRefactor
             type="submit"
-            bgColor="Primary"
             text={send ? translations.sendingButton : translations.sendButton}
-            disabled={Object.keys(errors).length > 0}
+            disabled={errorsList[0] ? true : false}
           />
         </div>
       </form>
