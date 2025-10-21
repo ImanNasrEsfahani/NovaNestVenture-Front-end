@@ -28,10 +28,12 @@ export default function Footer({
   return (
     <div className="bg-[#F7F3EE] font-barlow">
       <div className="max-w-responsive mx-auto p-6  flex flex-wrap justify-between space-y-5">
-        <div className="mt-5 flex flex-col w-full lg:w-2/5">
-          <div className="text-justify text-xl font-medium text-primary pb-2">{t('about.title')}</div>
-          <div className="text-justify font-normal pb-2">{t('about.text')}</div>
-          <div className="mt-2 flex flex-row items-center gap-4">
+        <div className="mt-5 flex flex-col justify-between w-full lg:w-2/5">
+          <div>
+            <h4 className="text-justify text-xl font-medium text-primary pb-2">{t('about.title')}</h4>
+            <p className="text-justify font-normal pb-2">{t('about.text')}</p>
+          </div>
+          <div className="mt-2 pb-1 flex flex-row items-center gap-4">
             <Link aria-label="Instagram" href={'https://instagram.com/novanest.venture'} className="hover:text-primary" target="_blank">
               <Instagram />
             </Link>
@@ -57,7 +59,7 @@ export default function Footer({
             <Link
               key={index}
               href={`${base}${item.link}`}
-              className={`hover:text-primary ${ index > 0 ? 'pt-1' : ''}`}
+              className={`hover:text-primary ${index > 0 ? 'pt-1' : ''}`}
             >
               {item.title}
             </Link>
@@ -69,7 +71,7 @@ export default function Footer({
             <Link
               key={index}
               href={`${base}${item.link}`}
-              className={`hover:text-primary ${ index > 0 ? 'pt-1' : ''}`}
+              className={`hover:text-primary ${index > 0 ? 'pt-1' : ''}`}
             >
               {item.title}
             </Link>
