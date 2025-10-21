@@ -1,7 +1,99 @@
 {
-    "title":"Our Team",
-    "defaultRole": "All",
-    "persons": [
+  "title": "Our Team",
+  "description": [
+    "At NovaNest, we believe success isn’t just about great ideas — it’s about the synergy of people who bring energy, experience, and belief in the future together.",
+    "Our team is a blend of mentors, core members, and Trainees , united by a shared passion for growth, innovation, and impact.",
+    "We believe that when the knowledge, experience, and connections of mentors combine with the creativity, energy, and innovation of the new generation, the best results happen.",
+    "That’s the essence of our motto:",
+    "Synergy of Energy — the power of collaboration that shapes a better future.",
+    "Our vision is simple yet powerful:",
+    "Empowering young entrepreneurs to grow, innovate, and make an impact.",
+    "At NovaNest, we value diversity, learning, and teamwork. Every idea, every voice, and every effort contributes to the collective success that defines who we are."
+  ],
+  "roles": [
+    {
+      "title": "Mentors",
+      "people": [
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        }
+      ]
+    },
+    {
+      "title": "Trainees",
+      "people": [
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        },
+        {
+          "image": "/static/images/our-team/personnel/rasoul.webp",
+          "position": "COTB",
+          "name": "Rasoul Moradimehr",
+          "linkedIn": "https://www.linkedin.com/in/rasoul-moradi-mehr/",
+          "category": "managers"
+        }
+      ]
+    },
+    {
+      "title": "Core Team",
+      "people": [
         {
           "image": "/static/images/our-team/personnel/rasoul.webp",
           "position": "COTB",
@@ -16,9 +108,7 @@
           "linkedIn": "https://www.linkedin.com/in/mehrnoosh-heibati-62b117223/",
           "category": "managers"
         }
-    ],
-  "roles": [
-    "All",
-    "Managers"
+      ]
+    }
   ]
 }
