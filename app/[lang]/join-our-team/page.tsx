@@ -24,12 +24,21 @@ export default function ApplyFormPage({
   };
 
   return (
-    <div dir={t('dir')}>
-      <Banner
-        image="/static/images/work-with-us/header.png"
-        title={t('workWithUS', { returnObjects: true }).banner}
-        lang={lang}
-      />
+    <>
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/join-our-team-form/header.png"
+          title={t('workWithUS', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/join-our-team-form/header-mobile.png"
+          title={t('workWithUS', { returnObjects: true }).banner}
+          lang={lang}
+        />
+      </div>
 
       {/* Formal informational layout above the form */}
       <div className="max-w-responsive mx-auto px-4 pt-12 md:pt-16">
@@ -52,7 +61,7 @@ export default function ApplyFormPage({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {t("workWithUS", {returnObjects: true}).benefits.map((b: Benefit) => (
+          {t("workWithUS", { returnObjects: true }).benefits.map((b: Benefit) => (
             <article
               key={b.id}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border-t-4 border-primary"
@@ -101,6 +110,6 @@ export default function ApplyFormPage({
       <div className="max-w-responsive mx-auto">
         <JoinOurTeamForm lang={lang} />
       </div>
-    </div>
+    </>
   );
 }
