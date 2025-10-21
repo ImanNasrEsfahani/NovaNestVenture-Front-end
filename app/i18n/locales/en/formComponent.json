@@ -22,11 +22,11 @@
   "TypeOfCollaborationData": [
     {
       "value": 0,
-      "label": "Internship"
+      "label": "Part Time"
     },
     {
       "value": 1,
-      "label": "Employee"
+      "label": "Full Time"
     }
   ],
   "FieldOfExpert": "Field of Expert ",

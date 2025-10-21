@@ -22,11 +22,11 @@
   "TypeOfCollaborationData": [
     {
       "value": 0,
-      "label": "کارآموزی"
+      "label": "پاره وقت"
     },
     {
       "value": 1,
-      "label": "استخدام"
+      "label": "تمام وقت"
     }
   ],
   "FieldOfExpert": "زمینه تخصصی",
@@ -266,8 +266,6 @@
     "Professor": "استاد دانشگاه",
     "hiring": "استخدام",
     "professionalConsultation": "مشاوره تخصصی",
-    "Internship": "کارآموزی",
-    "UniversityInternship": "طرح پویش",
     "title": "Join the NovaNest Professional Team",
     "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
     "description": "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success.",
