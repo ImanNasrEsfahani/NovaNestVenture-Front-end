@@ -1,15 +1,13 @@
-// import Phone from '@/components/icons/IconPhone';
-// import Email from '@/components/icons/IconEmail';
-// import Location from '@/components/icons/IconLocation';
 import Link from 'next/link';
-//import IconLinkedinB from '@/components/icons/IconLinkedinB';
-//import IconEmailB from '@/components/icons/IconEmailB';
 import { getServerTranslation } from 'app/i18n';
-//import InstagramIconNew from '@/components/icons/socialMediaIcons/InstagramIconNew';
-//import WhatsappIconNew from '@/components/icons/socialMediaIcons/WhatsappIconNew';
-import Image from 'next/image';
 
-export default function ContactUsDescription({lang}: {lang: string}) {
+import Instagram from '@/components/icons/footer/Instagram';
+import Envelope from '@/components/icons/footer/Envelope';
+import Whatsapp from '@/components/icons/footer/Whatsapp';
+import LinkedIn from '@/components/icons/footer/LinkedIn';
+import Facebook from '@/components/icons/footer/Facebook';
+
+export default function ContactUsDescription({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'contact');
 
   return (
@@ -18,136 +16,29 @@ export default function ContactUsDescription({lang}: {lang: string}) {
         <h1 className="font-header text-4xl md:text-5xl mb-4">
           {t('NovaNestVenture')}
         </h1>
-        { t('text', { returnObjects: true }).map((p: string, i: number) => (
+        {t('text', { returnObjects: true }).map((p: string, i: number) => (
           <p key={i} className="text-justify font-normal mb-4">
             {p}
           </p>
         ))}
       </div>
-      {/* TODO: make code more modular with new components */}
-      {/* TODO: avoid hardcode links and urls */}
-      <div className="flex flex-row gap-7 pt-2">
-        <Link
-          href={'https://instagram.com/novanest.venture'}
-          target="_blank"
-        >
-          <Image
-            src="/static/images/icons/instagram_second.png"
-            alt="NovaNest Venture Key Differentiating"
-            width={30}
-            height={741}
-            loading="lazy"
-          />
+      <div className="mt-2 pb-1 flex flex-row items-center gap-4">
+        <Link aria-label="Instagram" href={'https://instagram.com/novanest.venture'} className="hover:text-primary" target="_blank">
+          <Instagram />
         </Link>
-        <Link href={'https://wa.me/+17789865432'} target="_blank">
-        <Image
-          src="/static/images/icons/whatsapp_second.png"
-          alt="NovaNest Venture Key Differentiating"
-          width={30}
-          height={741}
-          loading="lazy"
-        />
+        <Link aria-label="Email" href={'mailto:info@NovaNestVenture.com'} className="hover:text-primary">
+          <Envelope />
         </Link>
-        <Link href={'mailto:info@NovaNestVenture.com'}>
-          <Image
-            className=""
-            src="/static/images/icons/sms.png"
-            alt="NovaNest Venture Key Differentiating"
-            width={30}
-            height={741}
-            loading="lazy"
-          />
+        <Link aria-label="Whatsapp" href={'https://wa.me/+17789865432'} className="hover:text-primary" target="_blank">
+          <Whatsapp />
         </Link>
-        <Link
-          href={'https://www.linkedin.com/company/novanest'}
-          target="_blank"
-        >
-          <Image
-          src="/static/images/icons/linkedin.png"
-          alt="NovaNest Venture Key Differentiating"
-          width={26}
-          height={741}
-          loading="lazy"
-        />
+        <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
+          <LinkedIn />
         </Link>
-        <Link
-          href={'https://www.facebook.com/novanest'}
-          target="_blank"
-        >
-          <Image
-          src="/static/images/icons/facebook.png"
-          alt="NovaNest Venture Key Differentiating"
-          width={26}
-          height={741}
-          loading="lazy"
-        />
+        <Link aria-label="Facebook" href={'https://www.facebook.com/novanestventure'} className="hover:text-primary" target="_blank" rel="noopener noreferrer">
+          <Facebook />
         </Link>
       </div>
-      {/* TODO: use translation instead hardcode */}
-      <div className={`mt-10 flex flex-col gap-4`}>
-        <div className="flex gap-5">
-          {/* <Phone /> */}
-          {/* <div className="mb-5 flex flex-col ltr:text-left rtl:text-right">
-            <span className="font-semibold">{t('phone')}</span>
-            <ul className="space-y-4 gap-1"> */}
-          {/* TODO: create component for below icons */}
-          {/* <li> */}
-          {/* <Link href="tel:+14165577622"> */}
-          {/* <span>{lang === 'en' ? 'Toronto: ' : 'تورنتو: '}</span>
-                  <span dir="ltr" className="text-[#AA8453]">
-                    {t('addresses', { returnObjects: true }).cNumber}
-                  </span> */}
-          {/* </Link> */}
-          {/* </li> */}
-          {/* <li>
-                <Link href="tel:+14165577622">
-                  <span>{lang === 'en' ? 'Tehran: ' : 'تهران: '}</span>
-                  <span dir="ltr" className="text-[#AA8453]">
-                    {t('addresses', { returnObjects: true }).tNumber}
-                  </span>
-                </Link>
-              </li> */}
-          {/* <li> */}
-          {/* <Link href="tel:+14165577622">
-                  <span>{lang === 'en' ? 'Isfahan: ' : 'اصفهان: '}</span>
-                  <span dir="ltr" className="text-[#AA8453]">
-                    {t('addresses', { returnObjects: true }).iNumber}
-                  </span>
-                </Link> */}
-          {/* </li> */}
-          {/* </ul> */}
-        </div>
-      </div>
-      {/* TODO: Separate component for email information */}
-      {/* <div className="flex gap-5">
-          <Email />
-          <ul className="space-y-4">
-            <li className="font-semibold ltr:text-left rtl:text-right">
-              {t('email')}
-            </li>
-            <li>
-              <a
-                className="rtl-text-right text-[#AA8453] ltr:text-left"
-                href="mailto:info@NovaNestVenture.com"
-              >
-                info@NovaNestVenture.com
-              </a>
-            </li>
-          </ul>
-        </div> */}
-      {/* TODO: Separate component for location information */}
-      {/* <div className="flex gap-5">
-          <Location />
-          <div className="ml-2 flex flex-col ltr:text-left rtl:text-right">
-            <span className="font-semibold">{t('address')}</span>
-            <ul className="mx-4 list-disc space-y-3 text-[#AA8453]">
-              <li>{t('addresses', { returnObjects: true }).canada}</li>
-              <li>{t('addresses', { returnObjects: true }).tehran}</li>
-              <li>{t('addresses', { returnObjects: true }).isfahan}</li>
-            </ul>
-          </div>
-        </div> */}
     </div>
-    // </div>
   );
 }
