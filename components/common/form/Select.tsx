@@ -22,6 +22,10 @@ export default function Select({
   handleChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   selected?: string;
 }) {
+  // get register props and separate onChange so we can call both handlers
+  const regProps = register ? register(nameInput, { required: required }) : {};
+  const { onChange: regOnChange, ...restReg } = regProps as any;
+
   return (
     <>
       <label
@@ -36,11 +40,13 @@ export default function Select({
         <div className="relative">
           <select
             id={nameInput}
-            {...register(nameInput, {
-              required: required
-            })}
+            {...restReg}
+            onChange={(e) => {
+              // first let RHF handle the change (update value / clear error), then call custom handler
+              regOnChange?.(e);
+              handleChange?.(e);
+            }}
             className={`w-full !rounded-sm border border-gray-400 appearance-none bg-transparent placeholder:text-[#939393B2] pr-10 ${className} ${errors[nameInput] ? ' border-red-500' : ''}`}
-            onChange={handleChange}
             defaultValue=""
           >
             <option value="" disabled>

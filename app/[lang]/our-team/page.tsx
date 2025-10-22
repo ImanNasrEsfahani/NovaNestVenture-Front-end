@@ -6,6 +6,7 @@ import '../../[lang]/globals.css';
 import Intro from '@/components/our-team/Intro';
 // import PeopleCarousel from '@/components/our-team/PeopleCarousel';
 import TeamPersons from '@/components/our-team/TeamPersons';
+import PeopleCarousel from '@/components/our-team/PeopleCarousel';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Our Team',
@@ -21,11 +22,6 @@ type Person = {
   category: string;
 };
 
-type Role = {
-  title: string;
-  people: Person[];
-};
-
 export default function TeamPage({
   params: { lang }
 }: {
@@ -33,11 +29,17 @@ export default function TeamPage({
 }) {
   const { t } = getServerTranslation(lang, 'ourTeam');
 
-  const roles = (t('roles', { returnObjects: true }) as unknown as Role[]) || [];
-  console.log('Rendering Our Team page for roles:', roles);
-  
-  // console.log('Rendering Our Team page for roles:', t('roles', { returnObjects: true }));
-  // const roles = t('roles', { returnObjects: true })[0].people as Array<{ title: string; people: Person[] }>;
+  const roles = t('roles', { returnObjects: true });
+
+  const safeRoles = Array.isArray(roles) ? roles : [];
+
+  const mentors = safeRoles.find(r => String(r.title).toLowerCase().includes('mentor'))?.people ?? [];
+  const trainees = safeRoles.find(r => String(r.title).toLowerCase().includes('trainee'))?.people ?? [];
+  const coreTeams = safeRoles.find(r => String(r.title).toLowerCase().includes('core'))?.people ?? [];
+
+  // console.log('Mentors:', mentors);
+  // console.log('Trainees:', trainees);
+  // console.log('Core Teams:', coreTeams);
 
   return (
     <div>
@@ -58,14 +60,36 @@ export default function TeamPage({
 
       <div className="max-w-responsive mx-auto">
         <Intro lang={lang} />
-        {/* {roles?.map((role, idx) => (
+
+
+        <div className="max-w-responsive mx-auto px-6 mb-12">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
+            Mentors
+          </h2>
           <PeopleCarousel
-            key={idx}
-            people={role.people}
-            title={role.title}
+            people={mentors}
           />
-        ))} */}
-        <TeamPersons lang={lang} />
+        </div>
+
+        <div className="max-w-responsive mx-auto px-6 mb-12">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
+            Trainees
+          </h2>
+          <PeopleCarousel
+            people={mentors}
+          />
+        </div>
+
+        <div className="max-w-responsive mx-auto px-6 mb-12">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
+            Core Team
+          </h2>
+          <PeopleCarousel
+            people={mentors}
+          />
+        </div>
+
+        {/* <TeamPersons lang={lang} /> */}
       </div>
     </div>
   );

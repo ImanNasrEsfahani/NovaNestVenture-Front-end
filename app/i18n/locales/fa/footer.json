@@ -10,6 +10,10 @@
     "title": "Explore",
     "text": [
       {
+        "title": "درباره ما",
+        "link": "about-us"
+      },
+      {
         "title": "سرمایه گذاری",
         "link": "investment"
       },
@@ -28,10 +32,6 @@
       {
         "title": "آکادمی",
         "link": "academy"
-      },
-      {
-        "title": "درباره ما",
-        "link": "about-us"
       }
     ]
   },

@@ -367,7 +367,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           </div>
 
           <div className="flex justify-center w-1/3 md:w-1/4 lg:w-1/6 mx-auto mt-6">
-            <ButtonRefactor type="submit" text={send ? translations.sendingButton : translations.sendButton}
+            <ButtonRefactor
+              type="submit" 
+              text={send ? translations.sendingButton : translations.sendButton}
               disabled={errorsList[0] ? true : false} />
           </div>
           <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />

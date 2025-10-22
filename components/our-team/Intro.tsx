@@ -11,7 +11,7 @@ export default function Intro({lang}: {lang: string}) {
             </h1>
 
             {t('description', { returnObjects: true }).map((p: string, i: number) => (
-                <p key={i} className="max-w-5xl text-lg leading-loose mb-6">
+                <p key={i} className="max-w-5xl text-lg leading-loose mb-1">
                     {p}
                 </p>
             ))}

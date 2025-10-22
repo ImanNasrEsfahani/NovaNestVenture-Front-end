@@ -7,14 +7,14 @@ import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { useSubmit } from 'stores/dataStore';
-import Button from '@/components/common/Button';
 import { useFile } from 'stores/fileStore';
 import Image from 'next/image';
 import PersonalInfoSection from '@/components/work-with-us/sections/PersonalInfoSection';
 import AcademicInfoSection from '@/components/work-with-us/sections/AcademicInfoSection';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 interface Translations {
-  
+
   workWithUS: {
     Professor: string;
     student: string;
@@ -26,7 +26,7 @@ interface Translations {
     PositionPlaceholder: string;
     contractPlaceholder: string;
     cvFileRequired: string;
-    
+
     formSubtitleTop: string;
     formSubtitleBottom: string;
 
@@ -43,25 +43,25 @@ interface Translations {
 
     cvFile: string;
   };
-  
+
   universities: {
     unis: Record<string, string>;
     placeholder: string;
   };
-  
+
   langLevel: {
     levels: Record<string, string>;
     placeholder: string;
   };
-  
+
   firstName: string;
   firstNameRequired: string;
   firstNamePlaceholder: string;
-  
+
   lastName: string;
   lastNameRequired: string;
   lastNamePlaceholder: string;
-  
+
   phoneNumber: string;
   phoneNumberRequired: string;
   phoneNumberPlaceholder: string;
@@ -268,6 +268,11 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
       });
   };
 
+  const errorsList = Object.entries(errors).map(([name, value]) => ({
+    name: name,
+    value: value
+  }));
+
   return (
     <>
       <div className="container -m-4 mx-auto my-20 gap-y-0 px-5 font-barlow lg:p-20 flex flex-col items-center">
@@ -321,9 +326,11 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
             handleUniChange={handleUniChange}
           />
           <div className="mx-auto w-full pb-4 md:w-auto">
-            <Button
+            <ButtonRefactor
+              type='submit'
               text={send ? translations.sendingButton : translations.sendButton}
-              type="submit" bgColor="Primary" />
+              disabled={errorsList[0] ? true : false}
+            />
           </div>
         </form>
         <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
