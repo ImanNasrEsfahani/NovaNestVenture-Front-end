@@ -10,7 +10,7 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 
 import FormTitle from '@/components/common/form/FormTitle';
-import { TraineeRegistrationFormData } from '@/types/global';
+import { TraineeRegistrationFormDataType } from '@/types/global';
 import { initialTraineeRegistrationFormData } from '../../initials/initObjects';
 import { submitTraineeRegistrationForm } from '../../pages/api/join-as-a-trainee';
 import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
@@ -118,7 +118,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     reset,
     clearErrors,
     unregister
-  } = useForm<TraineeRegistrationFormData>({
+  } = useForm<TraineeRegistrationFormDataType>({
     mode: 'onBlur',
     defaultValues: initialTraineeRegistrationFormData
   });
@@ -139,7 +139,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
   const setFileCounterAndClear = (v: boolean) => {
     setFileCounter(v);
 
-    const fields: (keyof TraineeRegistrationFormData)[] = ['birthDate', 'FieldOfInterest', 'FieldOfInterestOther', 'TellUsAboutYourself'];
+    const fields: (keyof TraineeRegistrationFormDataType)[] = ['birthDate', 'FieldOfInterest', 'FieldOfInterestOther', 'TellUsAboutYourself'];
 
     if (v) {
       // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed
@@ -173,7 +173,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     })(valStr);
   };
 
-  const onSubmit = async (formData: TraineeRegistrationFormData) => {
+  const onSubmit = async (formData: TraineeRegistrationFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

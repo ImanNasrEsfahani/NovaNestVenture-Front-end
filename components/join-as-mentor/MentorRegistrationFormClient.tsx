@@ -9,7 +9,7 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 
 import FormTitle from '@/components/common/form/FormTitle';
-import { MentorRegistrationFormData } from '@/types/global';
+import { MentorRegistrationFormDataType } from '@/types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
 import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
@@ -122,7 +122,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<MentorRegistrationFormData>({
+  } = useForm<MentorRegistrationFormDataType>({
     mode: 'onBlur',
     defaultValues: initialMentorRegistrationFormData
   });
@@ -165,7 +165,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     ]
   );
 
-  const onSubmit = async (formData: MentorRegistrationFormData) => {
+  const onSubmit = async (formData: MentorRegistrationFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

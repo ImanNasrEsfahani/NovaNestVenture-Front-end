@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import TextArea from '@/components/common/TextArea'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
-import { StartupsFormData } from '@/types/global'
+import { StartupsFormDataType } from '@/types/global'
 
 type translations = {
   solutionsUniqueValue: string;
@@ -13,11 +13,11 @@ type translations = {
 };
 
 type Props = {
-  register: UseFormRegister<StartupsFormData>
-  errors: FieldErrors<StartupsFormData>
+  register: UseFormRegister<StartupsFormDataType>
+  errors: FieldErrors<StartupsFormDataType>
   solutionsLevel: number
   handleSolutionsLevelChange: (index: number) => void
-  setValue: UseFormSetValue<StartupsFormData>
+  setValue: UseFormSetValue<StartupsFormDataType>
   translations: translations
 }
 

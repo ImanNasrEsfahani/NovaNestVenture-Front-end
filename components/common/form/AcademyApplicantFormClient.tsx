@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { AcademyApplicantFormDataType } from '@/types/global';
 // import GetCsrfToken from '@/utils/get-csrf-token';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { AcademyApplicantFormData } from '../../../initials/initObjects';
+import { initialAcademyApplicantFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
@@ -89,7 +89,7 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
     reset
   } = useForm<AcademyApplicantFormDataType>({
     mode: 'onBlur',
-    defaultValues: AcademyApplicantFormData
+    defaultValues: initialAcademyApplicantFormData
   });
 
   const {
@@ -137,7 +137,7 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(AcademyApplicantFormData); // Reset the form after successful submission
+        reset(initialAcademyApplicantFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -146,7 +146,7 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(AcademyApplicantFormData);
+        reset(initialAcademyApplicantFormData);
 
         setTimeout(() => {
           handleNotifChange(false);

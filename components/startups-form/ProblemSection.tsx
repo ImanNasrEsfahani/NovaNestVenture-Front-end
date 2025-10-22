@@ -1,6 +1,6 @@
 import React from 'react';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import TextArea from '@/components/common/TextArea';
 
 type Props = {
@@ -8,8 +8,8 @@ type Props = {
   textAreaRequired: string;
   textAreaPlaceholder: string;
   textAreaErrorMessage: string;
-  register: UseFormRegister<StartupsFormData>;
-  errors: FieldErrors<StartupsFormData>;
+  register: UseFormRegister<StartupsFormDataType>;
+  errors: FieldErrors<StartupsFormDataType>;
   nameTextArea?: string;
 };
 

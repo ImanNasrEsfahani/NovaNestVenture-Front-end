@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Input from '@/components/common/form/Input';
 import FileUpload from '@/components/common/form/FileUpload';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 
 import YesOrNoQuestion from '@/components/startups-form/YesOrNoQuestion';
 import PanelsRenderer from '@/components/startups-form/PanelsRenderer';
@@ -26,8 +26,8 @@ interface PitchdeckUploadProps {
   fileCounter: boolean;
   // onFileCounterChange: (value: boolean) => void;
   onFileChange: (file: any) => void;
-  register: UseFormRegister<StartupsFormData>;
-  errors: FieldErrors<StartupsFormData>;
+  register: UseFormRegister<StartupsFormDataType>;
+  errors: FieldErrors<StartupsFormDataType>;
 
   // Additional props for nested components
   handleSolutionsLevelChange: (value: any) => void;
@@ -184,10 +184,10 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
   // helper: find first panel id that has a validation error
   const findFirstErrorPanelId = () => {
     const errored = panels
-      .map(p => ({ id: p.id, fields: p.fields ?? [], hasError: p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])) ?? false }))
+      .map(p => ({ id: p.id, fields: p.fields ?? [], hasError: p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormDataType])) ?? false }))
       .filter(p => p.hasError);
     const id =
-      panels.find(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormData])))?.id
+      panels.find(p => p.fields?.some(f => Boolean(errors?.[f as keyof StartupsFormDataType])))?.id
       // if none with errors, prefer the first visible panel, else fallback to first panel
       ?? panels.find(p => p.show)?.id
       ?? panels[0]?.id
@@ -214,7 +214,7 @@ export default function PitchdeckUpload(props: PitchdeckUploadProps) {
   const updateOpenPanelOnErrors = () => {
     const visiblePanels = panels.filter(p => p.show);
     const erroredIds = visiblePanels
-      .filter(p => (p.fields ?? []).some(f => Boolean(errors?.[f as keyof StartupsFormData])))
+      .filter(p => (p.fields ?? []).some(f => Boolean(errors?.[f as keyof StartupsFormDataType])))
       .map(p => p.id);
 
     // initial mount: open first errored (if any) and mark mounted

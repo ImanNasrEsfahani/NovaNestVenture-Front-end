@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import { UseFormRegister, FieldErrors } from 'react-hook-form';
-import { WorkWithUSFormData } from '@/types/global';
+import { WorkWithUSFormDataType } from '@/types/global';
 import Input from '@/components/common/form/Input';
 import Select from '@/components/common/form/Select';
 import UploadInput from '@/components/common/UploadInput';
 
 interface AcademicInfoSectionProps {
-  register: UseFormRegister<WorkWithUSFormData>;
-  errors: FieldErrors<WorkWithUSFormData>;
+  register: UseFormRegister<WorkWithUSFormDataType>;
+  errors: FieldErrors<WorkWithUSFormDataType>;
   workWithUS: any;
   langLevelData: any;
   TypeOfSkillLevels: { value: string; label: string }[];

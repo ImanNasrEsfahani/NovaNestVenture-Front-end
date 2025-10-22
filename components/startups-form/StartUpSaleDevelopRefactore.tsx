@@ -1,5 +1,5 @@
 import React from 'react'
-import { StartupsFormData } from '@/types/global'
+import { StartupsFormDataType } from '@/types/global'
 import { UseFormRegister, FieldErrors, UseFormSetValue } from 'react-hook-form'
 import { getServerTranslation } from 'app/i18n'
 
@@ -18,11 +18,11 @@ type Props = {
         business: boolean;
         financial: boolean;
     }
-    register: UseFormRegister<StartupsFormData>
-    errors: FieldErrors<StartupsFormData>
+    register: UseFormRegister<StartupsFormDataType>
+    errors: FieldErrors<StartupsFormDataType>
     handleSolutionsLevelChange: (index: number) => void
     solutionsLevel: number
-    setValue: UseFormSetValue<StartupsFormData>
+    setValue: UseFormSetValue<StartupsFormDataType>
     handleFinancialModelFileChange: (file: any) => void
     required: boolean
     submitCount: number

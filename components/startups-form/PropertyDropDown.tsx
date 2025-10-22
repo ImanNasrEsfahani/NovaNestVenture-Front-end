@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import TextArea from '@/components/common/TextArea';
-import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
 type PropertyTranslations = {
@@ -29,8 +28,8 @@ type PropertyTranslations = {
 }
 
 type Props = {
-  register: UseFormRegister<StartupsFormData>
-  errors: FieldErrors<StartupsFormData>
+  register: UseFormRegister<StartupsFormDataType>
+  errors: FieldErrors<StartupsFormDataType>
   translations: PropertyTranslations
 }
 

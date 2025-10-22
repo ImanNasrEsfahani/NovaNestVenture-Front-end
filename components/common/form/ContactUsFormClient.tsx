@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { ContactUSFormData } from '@/types/global';
+import { ContactFormDataType } from '@/types/global';
 // import GetCsrfToken from '@/utils/get-csrf-token';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { ContactFormData } from '../../../initials/initObjects';
+import { initialContactFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import Input from '@/components/common/form/Input';
@@ -98,9 +98,9 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<ContactUSFormData>({
+  } = useForm<ContactFormDataType>({
     mode: 'onBlur',
-    defaultValues: ContactFormData
+    defaultValues: initialContactFormData
   });
 
   const {
@@ -125,7 +125,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: ContactUSFormData) => {
+  const onSubmit = async (formData: ContactFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -148,7 +148,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(ContactFormData); // Reset the form after successful submission
+        reset(initialContactFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -157,7 +157,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(ContactFormData);
+        reset(initialContactFormData);
 
         setTimeout(() => {
           handleNotifChange(false);

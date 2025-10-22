@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { WorkWithUSFormData } from '@/types/global';
+import { WorkWithUSFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialWorkWithUSFormData } from '../../initials/initObjects';
@@ -84,7 +84,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<WorkWithUSFormData>({
+  } = useForm<WorkWithUSFormDataType>({
     mode: 'onBlur',
     defaultValues: initialWorkWithUSFormData
   });
@@ -219,7 +219,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
     fetchCsrfToken();
   }, [handleTokenChange]);
 
-  const onSubmit = async (formData: WorkWithUSFormData) => {
+  const onSubmit = async (formData: WorkWithUSFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

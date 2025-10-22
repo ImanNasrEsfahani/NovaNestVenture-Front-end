@@ -1,138 +1,55 @@
 import React from 'react';
-import Instagram from '@/components/icons/footer/Instagram';
-import Envelope from '@/components/icons/footer/Envelope';
-import Whatsapp from '@/components/icons/footer/Whatsapp';
-import LinkedIn from '@/components/icons/footer/LinkedIn';
-import Facebook from '@/components/icons/footer/Facebook';
+import { getServerTranslation } from 'app/i18n';
+import Profile from '@/components/profile/Profile';
+import { Person } from '@/types/global';
+import { notFound } from 'next/navigation';
+import Banner from '@/components/common/Banner';
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { ProfileData } from '@/types/global';
 
 export default async function Page({
-  params: { slug }
+  params: { slug, lang }
 }: {
-  params: { slug: string };
+  params: { slug: string; lang: string };
 }) {
-  const empty: ProfileData = {
-    first_name: '',
-    last_name: '',
-    websites: [],
-    job_title: '',
-    instagram: '',
-    email: '',
-    linkedin: '',
-    whatsapp: '',
-    thumbnail: ''
-  };
 
-  let data: ProfileData = empty;
+  const base = process.env.NEXT_PUBLIC_BASE_URL || '';
+  const { t } = getServerTranslation(lang, 'ourTeam');
 
-  try {
-    const host = process.env.NEXT_PUBLIC_DJANGO_HOST_URL;
-    if (host) {
-      const res = await fetch(
-        `${host}user/profile/${encodeURIComponent(slug)}?format=json`,
-        { cache: 'no-store' } // or: next: { revalidate: 300 }
-      );
-      if (res.ok) {
-        data = await res.json();
-      }
-    }
-  } catch (e) {
-    // swallow error (minimal change)
+  // get roles from translations (returns array of { title, people })
+  const roles = (t('roles', { returnObjects: true }) as unknown) as Array<{ title: string; people?: Person[] }> | undefined;
+
+  // flatten all people from every role into a single array
+  const allPeople: Person[] = roles?.flatMap((r) => r.people ?? []) ?? [];
+
+  const peopleBySlug = new Map<string, Person>();
+  for (const p of allPeople) {
+    if (p?.slug) peopleBySlug.set(p.slug, p);
+  }
+  const uniquePeople = Array.from(peopleBySlug.values());
+  const person = uniquePeople[0];
+
+  if (!person) {
+    notFound();
   }
 
   return (
-    <div className="max-w-responsive mx-auto flex h-screen justify-center w-full py-24 md:px-40">
-      <section className="flex flex-col items-center justify-between w-full px-4 md:w-3/5">
-        {/* top */}
-        <div className="flex flex-col items-center">
-          <div className="px-3 flex items-center justify-center rounded-full">
-            <Image
-              src={data.thumbnail || '/static/images/our-team/header.webp'}
-              width={200}
-              height={200}
-              alt="thumbnail"
-            />
-          </div>
-          <p className="my-3 text-xl">
-            {data.first_name} {data.last_name}
-          </p>
-          <p className="text-gray-500">{data.job_title}</p>
-        </div>
-        {/* top */}
-        {/* middle */}
-        <div className="w-full">
-          <ul className="w-full space-y-4">
-            {data.websites?.map((website: any, index: number) => (
-              <Link
-                key={index}
-                href={website.url || 'https://landaholding.com'}
-                className="hover:text-primary"
-                target="_blank"
-              >
-                <li className="mt-3 flex justify-between items-center px-2 py-3 shadow-lg">
-                  <div className="size-10 flex items-center justify-center">
-                    {website.logo && (
-                      <Image
-                        src={website.logo}
-                        width={100}
-                        height={100}
-                        alt="logo"
-                      />
-                    )}
-                  </div>
-                  <div className="flex">
-                    <p className="m-auto text-lg">{website.title}</p>
-                  </div>
-                  <div className="w-10" />
-                </li>
-              </Link>
-            ))}
-          </ul>
-        </div>
-        {/* middle */}
-        {/* down */}
-        <div>
-          {/* TODO: change default address */}
-          <div className="mt-2 flex h-[22px] w-[200px] flex-row items-center justify-between">
-            <Link
-              aria-label="Instagram"
-              href={data.instagram || 'https://instagram.com'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <Instagram />
-            </Link>
-            <Link
-              aria-label="Email"
-              href={data.email ? `mailto:${data.email}` : '#'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <Envelope />
-            </Link>
-            <Link
-              aria-label="Whatsapp"
-              href={data.whatsapp || 'https://whatsapp.com'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <Whatsapp />
-            </Link>
-            <Link
-              aria-label="Linkedin"
-              href={data.linkedin || 'https://linkedin.com'}
-              className="hover:text-primary"
-              target="_blank"
-            >
-              <LinkedIn />
-            </Link>
-          </div>
-        </div>
-        {/* down */}
-      </section>
-    </div>
+    <>
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/our-team/header.webp"
+          title={t('title')}
+          lang={lang}
+        />
+      </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/our-team/header-mobile.webp"
+          title={t('title')}
+          lang={lang}
+        />
+      </div>
+
+      <Profile person={person} lang={lang} />
+    </>
   );
 }

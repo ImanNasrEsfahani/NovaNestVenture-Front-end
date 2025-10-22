@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import { initialStartupsFormData } from '../../initials/initObjects';
 import StartupFormPersonalInformation from '@/components/startups-form/StartupFormPersonalInformation';
 // import StartupFormIdea from '@/components/startups-form/StartupFormIdea';
@@ -68,7 +68,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
     formState: { errors, submitCount },
     reset,
     setValue
-  } = useForm<StartupsFormData>({
+  } = useForm<StartupsFormDataType>({
     mode: 'onBlur',
     defaultValues: initialStartupsFormData
   });
@@ -101,7 +101,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
 
   const { send } = useSubmit();
 
-  const onSubmit = async (formData: StartupsFormData) => {
+  const onSubmit = async (formData: StartupsFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

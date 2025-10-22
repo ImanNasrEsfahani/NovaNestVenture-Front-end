@@ -4,7 +4,7 @@ import SolutionLevel from './SolutionLevel';
 import BussinessModelDropDown from './BussinessModelDropDown';
 import TargetMarketDropDown from './TargetMarketDropDown';
 import PropertyDropDown from './PropertyDropDown';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import type { UseFormRegister } from 'react-hook-form';
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
   businessModel: boolean;
   targetMarket: boolean;
   property: boolean;
-  register: UseFormRegister<StartupsFormData>;
+  register: UseFormRegister<StartupsFormDataType>;
   errors: any;
   handleSolutionsLevelChange: (v: any) => void;
   solutionsLevel: any;

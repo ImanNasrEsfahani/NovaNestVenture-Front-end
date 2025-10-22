@@ -4,6 +4,32 @@ export enum Type {
   SaleDevelopment = 'SaleDevelopment'
 }
 
+interface Person {
+  image: string;
+  position: string;
+  name: string;
+  linkedIn: string;
+  text: string;
+  slug: string;
+  first_name: string;
+  last_name: string;
+  websites: any[];
+  job_title: string;
+  instagram: string;
+  email: string;
+  linkedin: string;
+  whatsapp: string;
+  thumbnail: string;
+  location: string;
+  skills: string[];
+  interests: string[];
+  education: string;
+  company: string;
+  stage: string;
+  gender: string;
+  about: string[];
+};
+
 // Define an interface for business partnership form data
 interface BusinessPartnerShipFormData {
   fullName: string;
@@ -22,8 +48,18 @@ interface BusinessPartnerShipFormData {
   wayKnowUs: string; // Typo: Should be "wayToKnowUs"
 }
 
+// Define an interface for contact form in each profile page
+interface ContactProfileFormDataType {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  subject: string;
+  message: string;
+}
+
 // Define an interface for contact form data
-interface ContactUSFormData {
+interface ContactFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -64,16 +100,8 @@ interface PNPApplicantFormDataType {
   number: string;
 }
 
-// Define an interface for contact form data
-interface HandicraftForm {
-  first_name: string;
-  last_name: string;
-  email: string;
-  organization: string;
-}
-
 // Define an interface for investor registration form data
-interface InvestorRegistrationFormData {
+interface InvestorRegistrationFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -85,7 +113,7 @@ interface InvestorRegistrationFormData {
 }
 
 // Define an interface for mentor registration form data
-interface MentorRegistrationFormData {
+interface MentorRegistrationFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -100,7 +128,7 @@ interface MentorRegistrationFormData {
   howDidYouKnowUs: string;
 }
 
-interface WorkWithUSFormData {
+interface WorkWithUSFormDataType {
   firstName: string;
   lastName: string;
   phoneNumber: string;
@@ -116,7 +144,7 @@ interface WorkWithUSFormData {
 }
 
 // Define an interface for partner membership form data
-interface JoinAsaPartnerFormData {
+interface JoinAsaPartnerFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -131,7 +159,7 @@ interface JoinAsaPartnerFormData {
 }
 
 // Define an interface for job application form data
-interface JoinOurTeamFormData {
+interface JoinOurTeamFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -149,7 +177,7 @@ interface JoinOurTeamFormData {
 }
 
 // Define an interface for job application form data
-interface TraineeRegistrationFormData {
+interface TraineeRegistrationFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -163,15 +191,8 @@ interface TraineeRegistrationFormData {
   cvFile?: File | '' | undefined;
 }
 
-interface LandaGeneFormData {
-  full_name: string;
-  phone_number: string;
-  email: string;
-  company_name: string;
-}
-
 // Define an interface for startups form data
-interface StartupsFormData {
+interface StartupsFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -221,7 +242,7 @@ interface StartupsFormData {
   howDidYouKnowUs: string;
 }
 
-interface Entrepreuneur {
+interface EntrepreuneurFormDataType {
   firstName: string;
   lastName: string;
   email: string;
@@ -273,11 +294,6 @@ interface MagazineData {
   slug: string;
   date: string;
   file: string;
-}
-
-interface FormData {
-  email: string;
-  password: string;
 }
 
 interface imageList {
@@ -407,25 +423,14 @@ interface translationCard {
   addedClass: string;
 }
 
-interface ProfileData {
-  first_name: string;
-  last_name: string;
-  websites: string[];
-  job_title: string;
-  instagram: string;
-  email: string;
-  linkedin: string;
-  whatsapp: string;
-  thumbnail: string;
-}
-
 export {
-  ContactUSFormData,
+  Person,
+  ContactProfileFormDataType,
+  ContactFormDataType,
   StartupApplicantFormDataType,
   AccelerationApplicantFormDataType,
   AcademyApplicantFormDataType,
   PNPApplicantFormDataType,
-  FormData,
   personArrayInterface,
   CompaniesArrayInterface,
   CompanySectionsInterface,
@@ -434,7 +439,6 @@ export {
   AboutUsCardProps,
   ImagesInterface,
   WorkFieldsInterface,
-  LandaGeneFormData,
   SportsInterface,
   AboutUsDataInterface,
   StartUpsInterface,
@@ -443,19 +447,17 @@ export {
   PreparationListInterface,
   HomeCardsLeftInterface,
   BusinessPartnerShipFormData,
-  StartupsFormData,
-  JoinAsaPartnerFormData,
-  InvestorRegistrationFormData,
-  MentorRegistrationFormData,
-  JoinOurTeamFormData,
-  TraineeRegistrationFormData,
-  Entrepreuneur,
+  StartupsFormDataType,
+  JoinAsaPartnerFormDataType,
+  InvestorRegistrationFormDataType,
+  MentorRegistrationFormDataType,
+  JoinOurTeamFormDataType,
+  TraineeRegistrationFormDataType,
+  EntrepreuneurFormDataType,
   LoginFormData,
   DecodedToken,
   TableData,
   MagazineData,
   translationCard,
-  HandicraftForm,
-  ProfileData,
-  WorkWithUSFormData,
+  WorkWithUSFormDataType,
 };

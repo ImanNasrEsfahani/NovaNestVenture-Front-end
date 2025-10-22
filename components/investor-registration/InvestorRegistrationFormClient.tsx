@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { InvestorRegistrationFormData } from '@/types/global';
+import { InvestorRegistrationFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
 import { initialInvestorRegistrationFormData } from '../../initials/initObjects';
@@ -109,7 +109,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<InvestorRegistrationFormData>({
+  } = useForm<InvestorRegistrationFormDataType>({
     mode: 'onBlur',
     defaultValues: initialInvestorRegistrationFormData
   });
@@ -135,7 +135,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: InvestorRegistrationFormData) => {
+  const onSubmit = async (formData: InvestorRegistrationFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

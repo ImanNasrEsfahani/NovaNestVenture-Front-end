@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { JoinAsaPartnerFormData } from '@/types/global';
+import { JoinAsaPartnerFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import TextArea from '@/components/common/TextArea';
 // import GetCsrfToken from '@/utils/get-csrf-token';
@@ -116,7 +116,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<JoinAsaPartnerFormData>({
+  } = useForm<JoinAsaPartnerFormDataType>({
     mode: 'onBlur',
     defaultValues: initialJoinAsaPartnerFormData
   });
@@ -143,7 +143,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: JoinAsaPartnerFormData) => {
+  const onSubmit = async (formData: JoinAsaPartnerFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FieldErrors } from 'react-hook-form';
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import CollapsibleHeader from '@/components/startups-form/CollapsibleHeader';
 
 type Panel = {
@@ -15,14 +15,14 @@ type Props = {
   panels: Panel[];
   openPanel: string | null;
   togglePanel: (id: string) => void;
-  errors: FieldErrors<StartupsFormData>;
+  errors: FieldErrors<StartupsFormDataType>;
 };
 
 export default function PanelsRenderer({ panels, openPanel, togglePanel, errors }: Props) {
   return (
     <div className="space-y-4">
       {panels.filter((p) => p.show).map((p) => {
-        const hasError = p.fields?.some((field) => !!errors[field as keyof StartupsFormData]);
+        const hasError = p.fields?.some((field) => !!errors[field as keyof StartupsFormDataType]);
         console.log(`panel=${p.id} hasError=${hasError}`);
         console.log(`openPanel=${openPanel}`);
 

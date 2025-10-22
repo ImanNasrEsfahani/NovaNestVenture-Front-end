@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
-import { JoinOurTeamFormData } from '@/types/global';
+import { JoinOurTeamFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
 import { initialJoinOurTeamFormData } from '../../initials/initObjects';
@@ -29,7 +29,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     reset,
     clearErrors,
     unregister, // <-- add this
-  } = useForm<JoinOurTeamFormData>({
+  } = useForm<JoinOurTeamFormDataType>({
     mode: 'onBlur',
     defaultValues: initialJoinOurTeamFormData
   });
@@ -46,7 +46,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     return () => { cancelled = true; };
   }, [handleTokenChange]);
 
-  const onSubmit = async (formData: JoinOurTeamFormData) => {
+  const onSubmit = async (formData: JoinOurTeamFormDataType) => {
     handleSubmitingChange(true);
     handleSendChange(true);
 
@@ -86,7 +86,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
   const setFileCounterAndClear = (v: boolean) => {
     setFileCounter(v);
 
-    const fields: (keyof JoinOurTeamFormData)[] = ['birthDate', 'educationLevel', 'educationField', 'workHistorySummary'];
+    const fields: (keyof JoinOurTeamFormDataType)[] = ['birthDate', 'educationLevel', 'educationField', 'workHistorySummary'];
 
     if (v) {
       // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed

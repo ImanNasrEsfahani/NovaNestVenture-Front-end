@@ -14,14 +14,6 @@ export const metadata: Metadata = {
     'Meet the dedicated and talented individuals who make up the NovaNest Venture team. Learn about their expertise, passion, and commitment to excellence. Get to know the driving force behind our success.'
 };
 
-type Person = {
-  image: string;
-  position: string;
-  name: string;
-  linkedIn: string;
-  category: string;
-};
-
 export default function TeamPage({
   params: { lang }
 }: {

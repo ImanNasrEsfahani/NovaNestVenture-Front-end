@@ -1,20 +1,18 @@
 import {
-  HandicraftForm as HandicraftFormDataType,
-  StartupsFormData,
+  StartupsFormDataType,
   AccelerationApplicantFormDataType,
-  WorkWithUSFormData,
-  JoinAsaPartnerFormData,
-  JoinOurTeamFormData,
-  TraineeRegistrationFormData,
-  InvestorRegistrationFormData,
-  MentorRegistrationFormData,
-  Entrepreuneur,
-  ContactUSFormData,
+  WorkWithUSFormDataType,
+  JoinAsaPartnerFormDataType,
+  JoinOurTeamFormDataType,
+  TraineeRegistrationFormDataType,
+  InvestorRegistrationFormDataType,
+  MentorRegistrationFormDataType,
+  EntrepreuneurFormDataType,
+  ContactProfileFormDataType,
+  ContactFormDataType,
   StartupApplicantFormDataType,
   AcademyApplicantFormDataType,
   PNPApplicantFormDataType,
-  FormData,
-  LandaGeneFormData
 } from '@/types/global';
 
 enum Type {
@@ -23,7 +21,7 @@ enum Type {
   SaleDevelopment = 'SaleDevelopment'
 }
 
-const initialStartupsFormData: StartupsFormData = {
+const initialStartupsFormData: StartupsFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -73,7 +71,7 @@ const initialStartupsFormData: StartupsFormData = {
   howDidYouKnowUs: ''
 };
 
-const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
+const initialJoinAsaPartnerFormData: JoinAsaPartnerFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -87,7 +85,7 @@ const initialJoinAsaPartnerFormData: JoinAsaPartnerFormData = {
   howDidYouKnowUs: '',
 };
 
-const initialJoinOurTeamFormData: JoinOurTeamFormData = {
+const initialJoinOurTeamFormData: JoinOurTeamFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -104,14 +102,7 @@ const initialJoinOurTeamFormData: JoinOurTeamFormData = {
   cvFile: '' as File | ''
 };
 
-const initialApplicationFormData: LandaGeneFormData = {
-  full_name: '',
-  phone_number: '',
-  email: '',
-  company_name: ''
-};
-
-const initialInvestorRegistrationFormData: InvestorRegistrationFormData = {
+const initialInvestorRegistrationFormData: InvestorRegistrationFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -122,7 +113,7 @@ const initialInvestorRegistrationFormData: InvestorRegistrationFormData = {
   howDidYouKnowUs: '',
 };
 
-const initialMentorRegistrationFormData: MentorRegistrationFormData = {
+const initialMentorRegistrationFormData: MentorRegistrationFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -137,7 +128,7 @@ const initialMentorRegistrationFormData: MentorRegistrationFormData = {
   howDidYouKnowUs: '',
 };
 
-const initialTraineeRegistrationFormData: TraineeRegistrationFormData = {
+const initialTraineeRegistrationFormData: TraineeRegistrationFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -150,7 +141,7 @@ const initialTraineeRegistrationFormData: TraineeRegistrationFormData = {
   TellUsAboutYourself: ''
 };
 
-const initialWorkWithUSFormData: WorkWithUSFormData = {
+const initialWorkWithUSFormData: WorkWithUSFormDataType = {
   firstName: '',
   lastName: '',
   phoneNumber: '',
@@ -165,7 +156,7 @@ const initialWorkWithUSFormData: WorkWithUSFormData = {
   langLevel: ''
 };
 
-const initialFormData: Entrepreuneur = {
+const initialFormData: EntrepreuneurFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -178,7 +169,7 @@ const initialFormData: Entrepreuneur = {
   howDidYouKnowUs: ''
 };
 
-const ContactFormData: ContactUSFormData = {
+const initialContactProfileFormData: ContactProfileFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
@@ -187,44 +178,41 @@ const ContactFormData: ContactUSFormData = {
   message: ''
 };
 
-const StartupApplicantFormData: StartupApplicantFormDataType = {
+const initialContactFormData: ContactFormDataType = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phoneNumber: '',
+  subject: '',
+  message: ''
+};
+
+const initialStartupApplicantFormData: StartupApplicantFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
   number: '',
 };
 
-const AccelerationApplicantFormData: AccelerationApplicantFormDataType = {
+const initialAccelerationApplicantFormData: AccelerationApplicantFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
   number: '',
 };
 
-const AcademyApplicantFormData: AcademyApplicantFormDataType = {
+const initialAcademyApplicantFormData: AcademyApplicantFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
   number: '',
 };
 
-const PNPApplicantFormData: PNPApplicantFormDataType = {
+const initialPNPApplicantFormData: PNPApplicantFormDataType = {
   firstName: '',
   lastName: '',
   email: '',
   number: '',
-};
-
-const HandicraftFormData: HandicraftFormDataType = {
-  first_name: '',
-  last_name: '',
-  email: '',
-  organization: ''
-};
-
-const RegisterationFormData: FormData = {
-  email: '',
-  password: ''
 };
 
 export {
@@ -235,13 +223,11 @@ export {
   initialMentorRegistrationFormData,
   initialTraineeRegistrationFormData,
   initialFormData,
-  ContactFormData,
-  StartupApplicantFormData,
-  AccelerationApplicantFormData,
-  AcademyApplicantFormData,
-  PNPApplicantFormData,
-  RegisterationFormData,
-  initialApplicationFormData,
-  HandicraftFormData,
+  initialContactProfileFormData,
+  initialContactFormData,
+  initialStartupApplicantFormData,
+  initialAccelerationApplicantFormData,
+  initialAcademyApplicantFormData,
+  initialPNPApplicantFormData,
   initialWorkWithUSFormData
 };

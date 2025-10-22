@@ -1,6 +1,6 @@
 import React from 'react'
 import { FieldErrors, UseFormRegister, UseFormSetValue } from 'react-hook-form'
-import { StartupsFormData } from '@/types/global'
+import { StartupsFormDataType } from '@/types/global'
 import { getServerTranslation } from 'app/i18n'
 
 import PitchdeckUpload from '@/components/startups-form/PitchdeckUpload'
@@ -18,11 +18,11 @@ type Props = {
       business: boolean;
       financial: boolean;
   }
-  register: UseFormRegister<StartupsFormData>
-  errors: FieldErrors<StartupsFormData>
+  register: UseFormRegister<StartupsFormDataType>
+  errors: FieldErrors<StartupsFormDataType>
   handleSolutionsLevelChange: (index: number) => void
   solutionsLevel: number
-  setValue: UseFormSetValue<StartupsFormData>
+  setValue: UseFormSetValue<StartupsFormDataType>
   handleFinancialModelFileChange: (file: any) => void
   required: boolean
   submitCount: number

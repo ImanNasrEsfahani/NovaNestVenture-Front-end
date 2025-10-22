@@ -1,22 +1,25 @@
 'use client';
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { PNPApplicantFormDataType } from '@/types/global';
-// import GetCsrfToken from '@/utils/get-csrf-token';
-import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { initialPNPApplicantFormData } from '../../../initials/initObjects';
-import { submitContactForm } from '../../../pages/api/contact-us';
-import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
-import ButtonRefactor from '@/components/common/ButtonRefactor';
+
+import TextArea from '@/components/common/TextArea';
+import { ContactProfileForm } from '../../pages/api/profile/index';
+
 import FormTitle from '@/components/common/form/FormTitle';
+import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import NotificationSendForm from '@/components/common/form/NotificationSendForm';
+import { ContactProfileFormDataType } from '@/types/global';
+import { initialContactProfileFormData } from '../../initials/initObjects';
 
 interface Translations {
   formTitle: string;
   formSubtitle: string;
-  sendingButton: string;
-  ReserveButton: string;
+
   sendButton: string;
+  sendingButton: string;
   successMessage: string;
   failedMessage: string;
 
@@ -60,7 +63,7 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
-  
+
   FieldOfExpertOther: string;
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
@@ -73,6 +76,11 @@ interface Translations {
   FieldOfInterestOther: string;
   FieldOfInterestOtherRequired: string;
   FieldOfInterestOtherPlaceholder: string;
+
+  message: string;
+  messageRequired: string;
+  messagePlaceholder: string;
+  messagePlaceholderErrorMessage: string;
 }
 
 interface Props {
@@ -80,16 +88,15 @@ interface Props {
   translations: Translations;
 }
 
-export default function PNPApplicantFormClient({ lang, translations }: Props) {
-
+export default function ContactForm({ lang, translations }: Props) {
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<PNPApplicantFormDataType>({
+  } = useForm<ContactProfileFormDataType>({
     mode: 'onBlur',
-    defaultValues: initialPNPApplicantFormData
+    defaultValues: initialContactProfileFormData
   });
 
   const {
@@ -102,19 +109,8 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
   } = useSubmit((s) => s);
 
   const { send } = useSubmit();
-
-  // useEffect(() => {
-  //   async function fetchCsrfToken() {
-  //     const token = await GetCsrfToken(
-  //       `${process.env.NEXT_PUBLIC_DJANGO_HOST_URL}/get-csrf-token`
-  //     );
-  //     handleTokenChange(token);
-  //   }
-
-  //   fetchCsrfToken();
-  // }, []);
-
-  const onSubmit = async (formData: PNPApplicantFormDataType) => {
+  
+  const onSubmit = async (formData: ContactProfileFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -130,14 +126,14 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
     });
 
     // Send the form data to the API.
-    submitContactForm(sendFormData)
+    ContactProfileForm(sendFormData)
       .then((response) => {
         console.log(response);
 
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialPNPApplicantFormData); // Reset the form after successful submission
+        reset(initialContactProfileFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -146,7 +142,7 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(initialPNPApplicantFormData);
+        reset(initialContactProfileFormData);
 
         setTimeout(() => {
           handleNotifChange(false);
@@ -160,19 +156,19 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
   }));
 
   return (
-    <div id="pnp-application-form" className="max-w-responsive mx-auto mb-12">
+    <div className="flex h-full flex-col items-center justify-between md:items-start">
       <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
 
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-6 grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <PersonalInfoInput
             register={register}
             errors={errors}
             nameInputs={{
-              firstName: 'firstname',
-              lastName: 'lastname',
+              firstName: 'firstName',
+              lastName: 'lastName',
               email: 'email',
-              phoneNumber: 'number',
+              phoneNumber: 'phoneNumber',
               countryOfResidence: '',
               provinceOfResidence: '',
               cityOfResidence: '',
@@ -236,19 +232,35 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
               FieldOfInterestOther: translations.FieldOfInterestOther,
               FieldOfInterestOtherRequired: translations.FieldOfInterestOtherRequired,
               FieldOfInterestOtherPlaceholder: translations.FieldOfInterestOtherPlaceholder,
-
             }}
           />
         </div>
 
+
+        <TextArea
+          title={translations.message}
+          register={register}
+          errors={errors}
+          required={translations.messageRequired}
+          nameTextArea="message"
+          patternValue=""
+          patternMessage=""
+          placeholder={translations.messagePlaceholder}
+          rows={4}
+          cols={20}
+          maxLength={1450}
+          maxLengthMessage={translations.messagePlaceholderErrorMessage}
+          validate=""
+        />
+
+
         <div className="w-60 mx-auto mt-6">
           <ButtonRefactor
             type='submit'
-            text={send ? translations.sendingButton : translations.ReserveButton}
+            text={send ? translations.sendingButton : translations.sendButton}
             disabled={errorsList[0] ? true : false}
           />
         </div>
-
       </form>
 
       <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />

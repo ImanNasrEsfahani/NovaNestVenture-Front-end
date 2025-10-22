@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { StartupApplicantFormDataType } from '@/types/global';
 // import GetCsrfToken from '@/utils/get-csrf-token';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { StartupApplicantFormData } from '../../../initials/initObjects';
+import { initialStartupApplicantFormData } from '../../../initials/initObjects';
 import { submitContactForm } from '../../../pages/api/contact-us';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
@@ -88,7 +88,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
     reset
   } = useForm<StartupApplicantFormDataType>({
     mode: 'onBlur',
-    defaultValues: StartupApplicantFormData
+    defaultValues: initialStartupApplicantFormData
   });
 
   const {
@@ -136,7 +136,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(StartupApplicantFormData); // Reset the form after successful submission
+        reset(initialStartupApplicantFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -145,7 +145,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(StartupApplicantFormData);
+        reset(initialStartupApplicantFormData);
 
         setTimeout(() => {
           handleNotifChange(false);

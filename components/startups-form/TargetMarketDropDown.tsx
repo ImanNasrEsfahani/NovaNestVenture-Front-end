@@ -2,11 +2,11 @@
 import React from 'react'
 import TextArea from '@/components/common/TextArea'
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
-import { StartupsFormData } from '@/types/global'
+import { StartupsFormDataType } from '@/types/global'
 
 type Props = {
-  register: UseFormRegister<StartupsFormData>
-  errors: FieldErrors<StartupsFormData>
+  register: UseFormRegister<StartupsFormDataType>
+  errors: FieldErrors<StartupsFormDataType>
   translations: {
     targetMarket: string
     targetCharacteristics: string

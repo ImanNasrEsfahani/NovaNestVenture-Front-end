@@ -1,13 +1,13 @@
 'use client'
 
-import { StartupsFormData } from '@/types/global';
+import { StartupsFormDataType } from '@/types/global';
 import React, { useEffect, useState } from 'react'
 import { UseFormRegister } from 'react-hook-form';
 import { useSubmit } from '../../stores/dataStore';
 
 type Props = {
     name: string
-    register: UseFormRegister<StartupsFormData>
+    register: UseFormRegister<StartupsFormDataType>
 }
 
 export default function StartUpFormCheckbox(props: Props) {
