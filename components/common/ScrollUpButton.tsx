@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import FeatherArrowUp from '@/components/icons/common/FeatherArrowUp';
 
-const ScrollUpButton = () => {
+export default function ScrollUpButton () {
   const [showButton, setShowButton] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -52,5 +52,3 @@ const ScrollUpButton = () => {
     </button>
   );
 };
-
-export default ScrollUpButton;
