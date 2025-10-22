@@ -1,8 +1,10 @@
 import React from 'react';
-import EnvelopeMediaIconNew from '@/components/icons/socialMediaIcons/EnvelopeMediaIconNew';
-import InstagramIconNew from '@/components/icons/socialMediaIcons/InstagramIconNew';
-import LinkedinIconNew from '@/components/icons/socialMediaIcons/LinkedinIconNew';
-import WhatsappIconNew from '@/components/icons/socialMediaIcons/WhatsappIconNew';
+import Instagram from '@/components/icons/footer/Instagram';
+import Envelope from '@/components/icons/footer/Envelope';
+import Whatsapp from '@/components/icons/footer/Whatsapp';
+import LinkedIn from '@/components/icons/footer/LinkedIn';
+import Facebook from '@/components/icons/footer/Facebook';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ProfileData } from '@/types/global';
@@ -101,7 +103,7 @@ export default async function Page({
               className="hover:text-primary"
               target="_blank"
             >
-              <InstagramIconNew className="bi bi-instagram size-8" />
+              <Instagram />
             </Link>
             <Link
               aria-label="Email"
@@ -109,11 +111,7 @@ export default async function Page({
               className="hover:text-primary"
               target="_blank"
             >
-              <EnvelopeMediaIconNew
-                className="bi bi-envelope size-8"
-                width="16"
-                height="16"
-              />
+              <Envelope />
             </Link>
             <Link
               aria-label="Whatsapp"
@@ -121,11 +119,7 @@ export default async function Page({
               className="hover:text-primary"
               target="_blank"
             >
-              <WhatsappIconNew
-                width="16"
-                height="16"
-                className="bi bi-whatsapp size-8"
-              />
+              <Whatsapp />
             </Link>
             <Link
               aria-label="Linkedin"
@@ -133,11 +127,7 @@ export default async function Page({
               className="hover:text-primary"
               target="_blank"
             >
-              <LinkedinIconNew
-                width="16"
-                height="16"
-                className="bi bi-linkedin size-8"
-              />
+              <LinkedIn />
             </Link>
           </div>
         </div>
