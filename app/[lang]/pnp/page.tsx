@@ -43,7 +43,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Why lang={lang} />
 
-            <CallToAction text="Call To Action" />
+            <CallToAction text={t('callToAction', { returnObjects: true })} />
             <section className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <PNPApplicantForm
                     lang={lang}
