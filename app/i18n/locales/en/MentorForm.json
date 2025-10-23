@@ -66,15 +66,5 @@
       ]
     }
   ],
-  "specialPerks": {
-    "id": "specialPerks",
-    "title": "Special Perks",
-    "items": [
-      "Invitations to internal and international events",
-      "Access to NovaNest co-working space if needed",
-      "Receive official mentor certification and accredited membership",
-      "Priority collaboration with NovaNest startups"
-    ]
-  },
   "callToAction": "Join NovaNest mentors today and share your experience with the next generation of entrepreneurs."
 }

@@ -311,7 +311,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
         </div>
 
-          <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
+          <div className="mx-auto pb-4 mt-20">
           <ButtonRefactor
             type="submit"
             text={send ? translations.sendingButton : translations.sendButton}

@@ -169,212 +169,208 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
   }));
 
   return (
-    <div className="max-w-responsive mx-auto py-20">
+    <div className="max-w-responsive mx-auto pt-12 pb-20">
       <div className="h-[75px] md:h-[125px]">
         <FormTitle
           formTitle={translations.formTitle}
           formSubtitle={translations.formSubtitle}
         />
       </div>
-      <div className="container mx-auto">
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-          <div className='pb-8'>
-            <StartupFormPersonalInformation
-              countries={translations.countries}
-              countryName={translations.countryName}
-              countryNameRequired={translations.countryNameRequired}
-              countryNamePlaceholder={translations.countryNamePlaceholder}
-              provinceOfResidence={translations.provinceOfResidence}
-              provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
-              provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
-              cityOfResidence={translations.cityOfResidence}
-              cityOfResidenceRequired={translations.cityOfResidenceRequired}
-              cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto mt-9">
+        <StartupFormPersonalInformation
+          countries={translations.countries}
+          countryName={translations.countryName}
+          countryNameRequired={translations.countryNameRequired}
+          countryNamePlaceholder={translations.countryNamePlaceholder}
+          provinceOfResidence={translations.provinceOfResidence}
+          provinceOfResidenceRequired={translations.provinceOfResidenceRequired}
+          provinceOfResidencePlaceholder={translations.provinceOfResidencePlaceholder}
+          cityOfResidence={translations.cityOfResidence}
+          cityOfResidenceRequired={translations.cityOfResidenceRequired}
+          cityOfResidencePlaceholder={translations.cityOfResidencePlaceholder}
 
-              lang={lang}
-              register={register}
-              errors={errors}
-            />
-          </div>
+          lang={lang}
+          register={register}
+          errors={errors}
+        />
 
-          <div className="bg-[#222222CC]">
-            <p className="mb-3 border-b px-10 py-5 text-2xl text-white">
-              {translations.secondTitle}
-            </p>
-            <hr className=" mb-5 mt-0" />
-          </div>
+        <div className="bg-[#222222CC]">
+          <p className="mb-3 border-b px-10 py-5 text-2xl text-white">
+            {translations.secondTitle}
+          </p>
+          <hr className=" mb-5 mt-0" />
+        </div>
 
-          <div className='w-full h-auto px-4'>
-            <div className='h-auto w-full flex flex-col gap-2'>
-              <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
-                {['MVP', 'FirstSale', 'SaleDevelopment'].map((key) => {
-                  const label = (translations as any)[key];
-                  const isSelected = startupFormType === label;
+        <div className='w-full h-auto px-4'>
+          <div className='h-auto w-full flex flex-col gap-2'>
+            <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
+              {['MVP', 'FirstSale', 'SaleDevelopment'].map((key) => {
+                const label = (translations as any)[key];
+                const isSelected = startupFormType === label;
 
-                  return (
-                    <div className="col-span-1" key={key}>
-                      <div
-                        className={`w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4 rounded-lg transition-shadow cursor-pointer ${isSelected ? 'ring-2 ring-primary/60' : ''
-                          }`}
-                        onClick={() => {
-                          const syntheticEvent = {
-                            target: { value: label, name: 'startupType' }
-                          } as unknown as React.ChangeEvent<HTMLInputElement>;
-                          startupField.onChange?.(syntheticEvent);
-                          setStartUpFormType?.(label);
-                        }}
-                      >
-                        <div className="flex flex-row items-center gap-3">
-                          <div className={`border-2 rounded-full p-1 transition-colors ${isSelected ? 'border-primary' : 'border-gray-300'}`}>
-                            <div
-                              className={`relative size-4 rounded-full transition-all ${isSelected ? 'bg-primary' : 'bg-whiteGold'
-                                } ${errors.startupType ? 'border-2 border-red-500' : ''}`}
-                            >
-                              <input
-                                type="radio"
-                                className="absolute inset-0 size-full opacity-0 cursor-pointer"
-                                value={label}
-                                {...startupField}
-                                checked={isSelected}
-                                onChange={(e) => {
-                                  startupField.onChange?.(e);
-                                  setStartUpFormType?.(e.target.value);
-                                }}
-                                aria-invalid={!!errors.startupType}
-                              />
-                            </div>
+                return (
+                  <div className="col-span-1" key={key}>
+                    <div
+                      className={`w-full h-auto bg-whiteGold drop-shadow-md px-2 py-4 rounded-lg transition-shadow cursor-pointer ${isSelected ? 'ring-2 ring-primary/60' : ''
+                        }`}
+                      onClick={() => {
+                        const syntheticEvent = {
+                          target: { value: label, name: 'startupType' }
+                        } as unknown as React.ChangeEvent<HTMLInputElement>;
+                        startupField.onChange?.(syntheticEvent);
+                        setStartUpFormType?.(label);
+                      }}
+                    >
+                      <div className="flex flex-row items-center gap-3">
+                        <div className={`border-2 rounded-full p-1 transition-colors ${isSelected ? 'border-primary' : 'border-gray-300'}`}>
+                          <div
+                            className={`relative size-4 rounded-full transition-all ${isSelected ? 'bg-primary' : 'bg-whiteGold'
+                              } ${errors.startupType ? 'border-2 border-red-500' : ''}`}
+                          >
+                            <input
+                              type="radio"
+                              className="absolute inset-0 size-full opacity-0 cursor-pointer"
+                              value={label}
+                              {...startupField}
+                              checked={isSelected}
+                              onChange={(e) => {
+                                startupField.onChange?.(e);
+                                setStartUpFormType?.(e.target.value);
+                              }}
+                              aria-invalid={!!errors.startupType}
+                            />
                           </div>
-
-                          <span className="font-heading font-medium">
-                            {label}
-                          </span>
                         </div>
+
+                        <span className="font-heading font-medium">
+                          {label}
+                        </span>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
+                  </div>
+                );
+              })}
+            </div>
 
-              {/* show validation error for the radio group */}
-              {errors.startupType && (
-                <p className="mt-2 text-sm text-red-500" role="alert">
-                  {errors.startupType?.message ?? 'Please select one option'}
-                </p>
+            {/* show validation error for the radio group */}
+            {errors.startupType && (
+              <p className="mt-2 text-sm text-red-500" role="alert">
+                {errors.startupType?.message ?? 'Please select one option'}
+              </p>
+            )}
+
+            <div className='w-full'>
+              {/* MVP section - render only when selected */}
+              {startupFormType === translations.MVP && (
+                <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
+                  <StartUpMvpRefactore
+                    lang={lang}
+                    handleFileCounterChange={handleFileCounterChange}
+                    handlePitchFileChange={handlePitchFileChange}
+                    handleBusinessFileChange={handleBusinessFileChange}
+                    handleFinancialFileChange={handleFinancialFileChange}
+                    filesCounter={filesCounter}
+                    register={register}
+                    errors={errors}
+                    setValue={setValue}
+                    handleSolutionsLevelChange={handleSolutionsLevelChange}
+                    solutionsLevel={solutionsLevel}
+                    handleFinancialModelFileChange={handleFinancialModelFileChange}
+                    required={startupFormType === translations.MVP}
+                    submitCount={submitCount}
+                  />
+                </div>
               )}
 
-              <div className='w-full'>
-                {/* MVP section - render only when selected */}
-                {startupFormType === translations.MVP && (
-                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
-                    <StartUpMvpRefactore
-                      lang={lang}
-                      handleFileCounterChange={handleFileCounterChange}
-                      handlePitchFileChange={handlePitchFileChange}
-                      handleBusinessFileChange={handleBusinessFileChange}
-                      handleFinancialFileChange={handleFinancialFileChange}
-                      filesCounter={filesCounter}
-                      register={register}
-                      errors={errors}
-                      setValue={setValue}
-                      handleSolutionsLevelChange={handleSolutionsLevelChange}
-                      solutionsLevel={solutionsLevel}
-                      handleFinancialModelFileChange={handleFinancialModelFileChange}
-                      required={startupFormType === translations.MVP}
-                      submitCount={submitCount}
-                    />
-                  </div>
-                )}
+              {/* First Sale section */}
+              {startupFormType === translations.FirstSale && (
+                <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
+                  <StartUpFirstSaleRefactor
+                    lang={lang}
+                    handleFileCounterChange={handleFileCounterChange}
+                    handlePitchFileChange={handlePitchFileChange}
+                    handleBusinessFileChange={handleBusinessFileChange}
+                    handleFinancialFileChange={handleFinancialFileChange}
+                    filesCounter={filesCounter}
+                    register={register}
+                    errors={errors}
+                    setValue={setValue}
+                    handleSolutionsLevelChange={handleSolutionsLevelChange}
+                    solutionsLevel={solutionsLevel}
+                    handleFinancialModelFileChange={handleFinancialModelFileChange}
+                    required={startupFormType === translations.FirstSale}
+                    submitCount={submitCount}
+                  />
+                </div>
+              )}
 
-                {/* First Sale section */}
-                {startupFormType === translations.FirstSale && (
-                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
-                    <StartUpFirstSaleRefactor
-                      lang={lang}
-                      handleFileCounterChange={handleFileCounterChange}
-                      handlePitchFileChange={handlePitchFileChange}
-                      handleBusinessFileChange={handleBusinessFileChange}
-                      handleFinancialFileChange={handleFinancialFileChange}
-                      filesCounter={filesCounter}
-                      register={register}
-                      errors={errors}
-                      setValue={setValue}
-                      handleSolutionsLevelChange={handleSolutionsLevelChange}
-                      solutionsLevel={solutionsLevel}
-                      handleFinancialModelFileChange={handleFinancialModelFileChange}
-                      required={startupFormType === translations.FirstSale}
-                      submitCount={submitCount}
-                    />
-                  </div>
-                )}
-
-                {/* Sale Development section */}
-                {startupFormType === translations.SaleDevelopment && (
-                  <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
-                    <StartUpSaleDevelopRefactore
-                      lang={lang}
-                      handleFileCounterChange={handleFileCounterChange}
-                      handlePitchFileChange={handlePitchFileChange}
-                      handleBusinessFileChange={handleBusinessFileChange}
-                      handleFinancialFileChange={handleFinancialFileChange}
-                      filesCounter={filesCounter}
-                      register={register}
-                      errors={errors}
-                      setValue={setValue}
-                      handleSolutionsLevelChange={handleSolutionsLevelChange}
-                      solutionsLevel={solutionsLevel}
-                      handleFinancialModelFileChange={handleFinancialModelFileChange}
-                      required={startupFormType === translations.SaleDevelopment}
-                      submitCount={submitCount}
-                    />
-                  </div>
-                )}
-              </div>
+              {/* Sale Development section */}
+              {startupFormType === translations.SaleDevelopment && (
+                <div className="overflow-hidden transition-[max-height,opacity,transform,padding] duration-700 ease-out origin-top min-h-0 opacity-100 translate-y-0 py-6 pointer-events-auto">
+                  <StartUpSaleDevelopRefactore
+                    lang={lang}
+                    handleFileCounterChange={handleFileCounterChange}
+                    handlePitchFileChange={handlePitchFileChange}
+                    handleBusinessFileChange={handleBusinessFileChange}
+                    handleFinancialFileChange={handleFinancialFileChange}
+                    filesCounter={filesCounter}
+                    register={register}
+                    errors={errors}
+                    setValue={setValue}
+                    handleSolutionsLevelChange={handleSolutionsLevelChange}
+                    solutionsLevel={solutionsLevel}
+                    handleFinancialModelFileChange={handleFinancialModelFileChange}
+                    required={startupFormType === translations.SaleDevelopment}
+                    submitCount={submitCount}
+                  />
+                </div>
+              )}
             </div>
           </div>
+        </div>
 
-          <br />
-          <hr className=" my-5 mt-0" />
+        <br />
+        <hr className=" my-5 mt-0" />
 
-          <div className="w-10/12 mx-auto">
-            <TextArea
-              title={translations.accelerators}
-              register={register}
-              errors={errors}
-              required={translations.acceleratorsRequired}
-              nameTextArea={'cooperatedWithInvestors'}
-              patternValue={''}
-              patternMessage={''}
-              placeholder={translations.acceleratorsPlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.acceleratorsErrorMessage}
-              validate=""
-            />
-          </div>
-          <div className="w-10/12 mx-auto">
-            <TextArea
-              title={translations.howDidYouKnowUs}
-              register={register}
-              errors={errors}
-              required={translations.howDidYouKnowUsRequired}
-              nameTextArea={'howDidYouKnowUs'}
-              patternValue={''}
-              patternMessage={''}
-              placeholder={translations.howDidYouKnowUsPlaceholder}
-              maxLength={1450}
-              maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
-              validate=""
-            />
-          </div>
+        <div className="w-10/12 mx-auto">
+          <TextArea
+            title={translations.accelerators}
+            register={register}
+            errors={errors}
+            required={translations.acceleratorsRequired}
+            nameTextArea={'cooperatedWithInvestors'}
+            patternValue={''}
+            patternMessage={''}
+            placeholder={translations.acceleratorsPlaceholder}
+            maxLength={1450}
+            maxLengthMessage={translations.acceleratorsErrorMessage}
+            validate=""
+          />
+        </div>
+        <div className="w-10/12 mx-auto">
+          <TextArea
+            title={translations.howDidYouKnowUs}
+            register={register}
+            errors={errors}
+            required={translations.howDidYouKnowUsRequired}
+            nameTextArea={'howDidYouKnowUs'}
+            patternValue={''}
+            patternMessage={''}
+            placeholder={translations.howDidYouKnowUsPlaceholder}
+            maxLength={1450}
+            maxLengthMessage={translations.howDidYouKnowUsErrorMessage}
+            validate=""
+          />
+        </div>
 
-          <div className="flex justify-center w-1/3 md:w-1/4 lg:w-1/6 mx-auto mt-6">
-            <ButtonRefactor
-              type="submit" 
-              text={send ? translations.sendingButton : translations.sendButton}
-              disabled={errorsList[0] ? true : false} />
-          </div>
-          <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
-        </form>
-      </div>
-    </div>
+        <div className="mx-auto pb-4 mt-20">
+          <ButtonRefactor
+            type="submit"
+            text={send ? translations.sendingButton : translations.sendButton}
+            disabled={errorsList[0] ? true : false} />
+        </div>
+        <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
+      </form>
+    </div >
   );
 }

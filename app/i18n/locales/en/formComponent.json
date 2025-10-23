@@ -227,12 +227,20 @@
     "messagePlaceholder": "Message",
     "messagePlaceholderErrorMessage": "The message must be less than 1450 characters."
   },
-  "partnerForm": {
+  "affiliateForm": {
     "lng": "en",
     "dir": "ltr",
     "banner": "Affiliate Registration",
     "formTitle": "Affiliate Registration Form",
-    "formSubtitle": "Personal Information"
+    "formSubtitle": "Personal Information",
+    
+    "title": "Join as a Business Partner (Affiliate)",
+    "subtitle": "Collaborate with NovaNest to Empower Entrepreneurs Worldwide",
+    "description": [
+      "Become part of NovaNest’s trusted network of partners. By joining as an affiliate, you’ll collaborate with us to connect high-potential entrepreneurs, startups, and investors with our global programs and services.",
+      "We value long-term, transparent, and growth-oriented partnerships — built on trust, shared goals, and mutual success."
+    ],
+    "callToAction": "Please complete the form below to tell us more about you and your organization. Our team will review your submission and contact you shortly."
   },
   "join-our-team": {
     "lng": "en",
@@ -336,16 +344,6 @@
         ]
       }
     ],
-    "specialPerks": {
-      "id": "perks",
-      "title": "Exclusive Perks",
-      "items": [
-        "Invitations to internal and international events",
-        "Access to NovaNest co-working space if needed",
-        "Receive official certification and accredited membership",
-        "Priority collaboration with NovaNest startups"
-      ]
-    },
     "callToAction": "Join the NovaNest Professional Team today and bring your experience, expertise, and creativity to help shape the next generation of startups."
   },
   "investorForm": {
@@ -388,8 +386,25 @@
     "resumeQuestion": "Do you have an updated CV or resume?",
     "choseFile":"Choose File",
     "formTitle": "Trainee Registration Form",
-    "formSubtitle": "Apply as a Trainee"
+    "formSubtitle": "Apply as a Trainee",
 
+    "title": "Join as a Trainee",
+    "subTitle": "Practical mentorship and hands-on startup experience to accelerate your entrepreneurial journey",
+    "description": [
+      "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader."
+    ],
+    "features": [
+      "Real-world learning alongside mentors and startup teams",
+      "Hands-on experience with innovative projects",
+      "Practical training in entrepreneurship and business development",
+      "Personal growth and skill-building opportunities",
+      "Mentorship and guidance from experienced professionals",
+      "Certificate of completion and potential career pathways within NovaNest",
+      "Access to exclusive events and resources"
+    ],
+    "callToAction": [
+      "Join our team — work on innovative projects and build your career path."
+    ]
   },
   "startUp": {
     "lng": "en",
@@ -406,9 +421,9 @@
     "formHeader": "Startup Investment Application",
     "formContent": [
       "Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.",
-      "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation.",
-      "Completing this form is the first step toward a potential partnership and investment with us. We look forward to learning more about your startup and exploring how we can support your growth."
+      "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation."
     ],
+    "callToAction": "Completing this form is the first step toward a potential partnership and investment with us. We look forward to learning more about your startup and exploring how we can support your growth.",
     "MVP": {
       "description": "MVP is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development. This way, you are able to create the tangible product that provides the best and most appealing user experience for the most economical cost, an that can challenge and validate assumptions about a product's requirements.",
       "pitchDeck": "Do you currently have a Pitchdeck in place? ",
@@ -656,11 +671,7 @@
   },
   "AccelerationApplicantForm": {
     "formTitle": "Apply for Acceleration Program",
-    "formSubtitle": "Let’s Talk About Your Journey",
-    "formDescription": [
-      "If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success.",
-      "Book your free consultation today and let’s start this path together."
-    ]
+    "formSubtitle": "Let’s Talk About Your Journey"
   },
   "AcademyApplicantForm": {
     "formTitle": "Apply for Academy Program",

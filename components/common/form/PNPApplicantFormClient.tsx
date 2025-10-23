@@ -243,7 +243,7 @@ export default function PNPApplicantFormClient({ lang, translations }: Props) {
           />
         </div>
 
-        <div className="w-60 mx-auto mt-6">
+        <div className="mx-auto pb-4 mt-20">
           <ButtonRefactor
             type='submit'
             text={send ? translations.sendingButton : translations.ReserveButton}

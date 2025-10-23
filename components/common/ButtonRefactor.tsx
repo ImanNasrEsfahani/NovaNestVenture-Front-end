@@ -4,6 +4,7 @@ import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 
 type ButtonProps = {
+  lang?: string;
   text: string;
   type?: 'simple-link' | 'button' | 'reset' | 'submit' | 'link';
   href?: string;
@@ -12,6 +13,7 @@ type ButtonProps = {
 };
 
 export default function ButtonRefactor({
+  lang = "en",
   text,
   type = 'button',
   href,
@@ -71,11 +73,14 @@ export default function ButtonRefactor({
 
   // button / submit / reset
   return (
-    <div className="group relative w-full overflow-hidden">
+    <div className="group relative w-full flex flex-col justify-center items-center overflow-hidden">
+      {disabled ? (
+        <p className="text-red-600 text-sm mb-2">{lang === 'en' ? 'Please complete the form before submitting.' : 'لطفا قبل از ارسال فرم، تمامی فیلدهای ضروری را پر کنید.'}</p>
+      ) : null}
       <button
         type={type}
         disabled={disabled}
-        className={`${bgClass} ${baseClasses} ${disabledClasses} p-2`}
+        className={`${bgClass} ${baseClasses} ${disabledClasses} w-44 md:w-52 p-2`}
         aria-disabled={disabled}
       >
         <div className="z-10 flex flex-row rtl:flex-row-reverse items-center gap-2">

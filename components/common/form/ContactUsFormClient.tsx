@@ -172,7 +172,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
 
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <div className="h-[75px] md:h-[125px]">
+      <div className="w-full h-[75px] md:h-[125px]">
         <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
       </div>
 
@@ -285,7 +285,7 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
           validate=""
         />
 
-        <div className="w-60 mx-auto mt-6">
+        <div className="mx-auto pb-4 mt-20">
           <ButtonRefactor
             type='submit'
             text={send ? translations.sendingButton : translations.sendButton}

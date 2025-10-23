@@ -43,18 +43,5 @@ export default function StartupFormForm({lang}: {lang: string}) {
     howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage', { returnObjects: true }),
   };
 
-  return (
-    <div className="max-w-responsive mx-auto py-20">
-        <h1 className="font-header text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 mt-12">
-          {t('startUp', { returnObjects: true }).formHeader}
-        </h1>
-        {(t('startUp', { returnObjects: true }).formContent || []).map((paragraph: string, index: number) => (
-          <p key={index} className="text-lg mb-4 leading-relaxed">
-            {paragraph}
-          </p>
-        ))}
-
-      <StartupFormFormClient lang={lang} translations={translations} />
-    </div>
-  );
+  return <StartupFormFormClient lang={lang} translations={translations} />
 }

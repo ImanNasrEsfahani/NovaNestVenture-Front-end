@@ -4,6 +4,7 @@ import Accordions from '@/components/startup/Accordions';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
+import CallToAction from '@/components/common/CallToAction';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Join as Mentor',
@@ -82,26 +83,8 @@ export default function JoinAsMentorPage({
           </div>
         </div>
 
-        {/* Special Perks - Full Width (mapped) */}
-        <div className='bg-gradient-to-r from-whiteGold to-darkGold rounded-lg shadow-lg p-8 mb-16 border-l-4 border-primary'>
-          <div className='flex items-center mb-6'>
-            <h2 className='text-2xl md:text-3xl font-header text-blue'>{specialPerks.title}</h2>
-          </div>
-
-          {/* replaced grid of divs with semantic unordered list using circle bullets */}
-          <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 list-disc marker:text-primary pl-12'>
-            {specialPerks.items.map((it, i) => (
-              <li key={i} className='text-base text-grayDark'>
-                {it}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Call to Action */}
-        <div className='text-center p-8 mb-12'>
-          <p className='text-xl md:text-2xl font-header leading-relaxed'>{t('callToAction')}</p>
-        </div>
+        
+        <CallToAction text={t('callToAction')} />
 
       </div>
 

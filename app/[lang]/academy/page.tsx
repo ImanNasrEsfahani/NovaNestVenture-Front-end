@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import AcademyApplicantForm from '@/components/common/form/AcademyApplicantForm';
+import CallToAction from '@/components/common/CallToAction';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -87,9 +88,7 @@ export default function Page({
                         </div>
                     </div>
 
-                    <p className="text-lg text-center leading-loose md:w-3/4 mx-auto mb-4 lg:mb-4">
-                        {t('callToAction')}
-                    </p>
+                    <CallToAction text={t("callToAction")} />
                 </section>
 
 

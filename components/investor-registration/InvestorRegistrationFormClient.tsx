@@ -188,7 +188,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-          <div className="grid grid-cols-1 gap-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
               register={register}
               errors={errors}
@@ -312,7 +312,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               validate=""
             />
           </div>
-          <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
+          <div className="mx-auto pb-4 mt-20">
             <ButtonRefactor
               type="submit"
               text={send ? translations.sendingButton : translations.sendButton}

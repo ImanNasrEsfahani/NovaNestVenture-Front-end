@@ -200,7 +200,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
   }));
 
   return (
-    <div className="max-w-responsive mx-auto py-20">
+    <div className="max-w-responsive mx-auto pt-12 pb-20">
       <div className="h-[75px] md:h-[125px]">
         <FormTitle
           formTitle={translations.formTitle}
@@ -208,7 +208,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
         />
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-        <div className="grid grid-cols-1 gap-6 mt-20  md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-9  md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
             errors={errors}
@@ -361,7 +361,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             validate=""
           />
         </div>
-        <div className="mx-auto w-44 pb-4 md:w-52 mt-20">
+        <div className="mx-auto pb-4 mt-20">
           <ButtonRefactor
             type="submit"
             text={send ? translations.sendingButton : translations.sendButton}

@@ -7,8 +7,8 @@ export default function JoinAsaPartnerForm({lang}: {lang: string}) {
 
   // Pass translations as props to client component
   const translations = {
-    formTitle: t('partnerForm', { returnObjects: true }).formTitle,
-    formSubtitle: t('partnerForm', { returnObjects: true }).formSubtitle,
+    formTitle: t('affiliateForm', { returnObjects: true }).formTitle,
+    formSubtitle: t('affiliateForm', { returnObjects: true }).formSubtitle,
     birthDate: t('birthDate'),
     birthDateErrorMessage: t('birthDateErrorMessage'),
     birthDatePlaceholder: t('birthDatePlaceholder'),

@@ -6,11 +6,11 @@ import WhyStartBusiness from "@/components/pnp/WhyStartBusiness";
 import Requirement from '@/components/pnp/Requirement';
 import OurService from '@/components/pnp/OurService';
 import Why from '@/components/pnp/Why';
+import CallToAction from '@/components/common/CallToAction';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
 
     const { t } = getServerTranslation(lang, 'pnp');
-    const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
     return (
         <>
@@ -39,6 +39,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Why lang={lang} />
 
+            <CallToAction text="Call To Action" />
             <section className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <PNPApplicantForm
                     lang={lang}
