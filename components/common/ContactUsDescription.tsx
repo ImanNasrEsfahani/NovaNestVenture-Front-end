@@ -35,7 +35,7 @@ export default function ContactUsDescription({ lang }: { lang: string }) {
         <Link aria-label="Linkedin" href={'https://www.linkedin.com/company/novanestventure/'} className="hover:text-primary" target="_blank">
           <LinkedIn />
         </Link>
-        <Link aria-label="Facebook" href={'https://www.facebook.com/novanestventure'} className="hover:text-primary" target="_blank" rel="noopener noreferrer">
+        <Link aria-label="Facebook" href={'https://www.facebook.com/people/NovaNest-Venture/pfbid02MEtyGfDFbdWqRF4mTkxieN1iwrtYwTG48x13C72J89gBFDxjpbSKJNpxQLchGa59l/'} className="hover:text-primary" target="_blank" rel="noopener noreferrer">
           <Facebook />
         </Link>
       </div>
