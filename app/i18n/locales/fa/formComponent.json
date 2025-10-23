@@ -366,6 +366,34 @@
     "contractType": "نوع قرارداد",
     "contractTypePlaceholder": "نوع قرارداد خود را انتخاب کنید"
   },
+  "joinAsATrainee": {
+    "lng": "en",
+    "dir": "ltr",
+    "banner": "Join as a Trainee",
+    
+    "resumeQuestion": "Do you have an updated CV or resume?",
+    "choseFile":"Choose File",
+    "formTitle": "Trainee Registration Form",
+    "formSubtitle": "Apply as a Trainee",
+
+    "title": "Join as a Trainee",
+    "subTitle": "Practical mentorship and hands-on startup experience to accelerate your entrepreneurial journey",
+    "description": [
+      "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader."
+    ],
+    "features": [
+      "Real-world learning alongside mentors and startup teams",
+      "Hands-on experience with innovative projects",
+      "Practical training in entrepreneurship and business development",
+      "Personal growth and skill-building opportunities",
+      "Mentorship and guidance from experienced professionals",
+      "Certificate of completion and potential career pathways within NovaNest",
+      "Access to exclusive events and resources"
+    ],
+    "callToAction": [
+      "Join our team — work on innovative projects and build your career path."
+    ]
+  },
   "startUp": {
     "lng": "fa",
     "dir": "rtl",
