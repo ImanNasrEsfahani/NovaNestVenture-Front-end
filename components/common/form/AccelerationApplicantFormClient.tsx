@@ -163,7 +163,9 @@ export default function AccelerationApplicantFormClient({ lang, translations }: 
 
   return (
     <div className="max-w-responsive mx-auto">
-      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      <div className="h-[75px] md:h-[125px]">
+        <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-6 grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3">

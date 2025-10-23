@@ -161,7 +161,9 @@ export default function AcademyApplicantFormClient({ lang, translations }: Props
 
   return (
     <div className="max-w-responsive mx-auto mt-24">
-      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      <div className="h-[75px] md:h-[125px]">
+        <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2 xl:grid-cols-3">

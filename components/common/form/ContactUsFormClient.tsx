@@ -172,7 +172,9 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
 
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
+      <div className="h-[75px] md:h-[125px]">
+        <FormTitle formTitle={translations.title} formSubtitle={translations.subTitle} />
+      </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

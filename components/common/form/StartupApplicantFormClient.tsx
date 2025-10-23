@@ -60,7 +60,7 @@ interface Translations {
   FieldOfExpertRequired: string;
   FieldOfExpertPlaceholder: string;
   FieldOfExpertData: { value: string; label: string }[];
-  
+
   FieldOfExpertOther: string;
   FieldOfExpertOtherRequired: string;
   FieldOfExpertOtherPlaceholder: string;
@@ -160,7 +160,9 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
 
   return (
     <div id="startup-application-form" className="max-w-responsive mx-auto">
-      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      <div className="h-[75px] md:h-[125px]">
+        <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      </div>
 
       {/* CTA */}
       <div className="pb-4 max-w-responsive mx-auto text-center">

@@ -219,7 +219,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
   return (
     <>
       <div className="max-w-responsive mx-auto py-20">
-        <div className='mb-12'>
+        <div className="h-[75px] md:h-[125px]">
           <FormTitle
             formTitle={translations.formTitle}
             formSubtitle={translations.formSubtitle}

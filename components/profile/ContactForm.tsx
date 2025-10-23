@@ -109,7 +109,7 @@ export default function ContactForm({ lang, translations }: Props) {
   } = useSubmit((s) => s);
 
   const { send } = useSubmit();
-  
+
   const onSubmit = async (formData: ContactProfileFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
@@ -157,7 +157,9 @@ export default function ContactForm({ lang, translations }: Props) {
 
   return (
     <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      <div className="h-[75px] md:h-[125px]">
+        <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
+      </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -264,6 +266,6 @@ export default function ContactForm({ lang, translations }: Props) {
       </form>
 
       <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
-    </div>
+    </div >
   );
 }
