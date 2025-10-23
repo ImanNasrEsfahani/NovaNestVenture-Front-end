@@ -280,7 +280,6 @@
     "benefits": [
       {
         "id": "financial",
-        "emoji": "💰",
         "title": "Financial Benefits",
         "items": [
           "Hands-on experience and collaboration with early-stage startups",
@@ -290,7 +289,6 @@
       },
       {
         "id": "recognition",
-        "emoji": "🌟",
         "title": "Recognition and Prestige",
         "items": [
           "Official introduction on NovaNest website and social media",
@@ -300,7 +298,6 @@
       },
       {
         "id": "growth",
-        "emoji": "📚",
         "title": "Professional Growth & Learning",
         "items": [
           "Learning and collaborating with mentors and international teams",
@@ -309,7 +306,6 @@
       },
       {
         "id": "networking",
-        "emoji": "🤝",
         "title": "Networking Expansion",
         "items": [
           "Membership in NovaNest’s professional network in Iran and Canada",
@@ -319,7 +315,6 @@
       },
       {
         "id": "branding",
-        "emoji": "🌐",
         "title": "Personal Brand Development",
         "items": [
           "Showcase your skills and expertise in projects and educational programs",
@@ -329,7 +324,6 @@
       },
       {
         "id": "impact",
-        "emoji": "🌍",
         "title": "Real and Social Impact",
         "items": [
           "Contribute to the growth of talented startups and teams",
