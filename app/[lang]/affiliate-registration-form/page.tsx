@@ -3,6 +3,7 @@ import JoinAsaPartnerForm from '@/components/partner-membership/JoinAsaPartnerFo
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import CallToAction from '@/components/common/CallToAction';
+import Intro from '@/components/common/Intro';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Affiliate',
@@ -34,20 +35,11 @@ export default async function AffiliateFormPage({
         />
       </div>
 
-      <div className="flex justify-center items-center pt-32 pb-16">
-        <div className="max-w-[75%] mx-auto text-center">
-          <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800">
-            {t("affiliateForm", { returnObjects: true }).title}
-          </h2>
-          <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
-            {t("affiliateForm", { returnObjects: true }).subtitle}
-          </h3>
-          
-          {t("affiliateForm", { returnObjects: true }).description.map((paragraph: string, index: number) => (
-            <p key={index} className="text-lg leading-loose text-gray-700 mb-1">{paragraph}</p>
-          ))}
-        </div>
-      </div>
+      <Intro
+        title={t("affiliateForm", { returnObjects: true }).title}
+        subtitle={t("affiliateForm", { returnObjects: true }).subtitle}
+        description={t("affiliateForm", { returnObjects: true }).description}
+      />
 
       <CallToAction text={t('affiliateForm', { returnObjects: true }).callToAction} />
 

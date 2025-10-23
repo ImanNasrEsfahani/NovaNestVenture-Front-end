@@ -3,7 +3,7 @@ import { getServerTranslation } from 'app/i18n';
 // import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import Banner from '@/components/common/Banner';
 import AccelerationApplicantForm from '@/components/common/form/AccelerationApplicantForm';
-import Intro from '@/components/acceleration/Intro';
+import Intro from '@/components/common/Intro';
 import Why from '@/components/acceleration/Why';
 import Process from '@/components/acceleration/Process';
 import Impact from '@/components/acceleration/Impact';
@@ -41,7 +41,12 @@ export default function Page({
         />
       </div>
 
-      <Intro lang={lang} />
+      <Intro
+        title={t("Intro", { returnObjects: true }).title}
+        subtitle={t("Intro", { returnObjects: true }).subtitle}
+        description={t("Intro", { returnObjects: true }).description}
+      />
+      
       <Why lang={lang} />
       <Process lang={lang} />
       <Impact lang={lang} />
@@ -49,7 +54,7 @@ export default function Page({
       <CallToAction text={t("callToAction", { returnObjects: true })} />
 
       <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mb-36">
-         <AccelerationApplicantForm lang={lang} />
+        <AccelerationApplicantForm lang={lang} />
       </div>
     </div>
   );

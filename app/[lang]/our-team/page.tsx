@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import '../../[lang]/globals.css';
 
-import Intro from '@/components/our-team/Intro';
+import Intro from '@/components/common/Intro';
 // import PeopleCarousel from '@/components/our-team/PeopleCarousel';
 import TeamPersons from '@/components/our-team/TeamPersons';
 import PeopleCarousel from '@/components/our-team/PeopleCarousel';
@@ -51,7 +51,11 @@ export default function TeamPage({
       </div>
 
       <div className="max-w-responsive mx-auto">
-        <Intro lang={lang} />
+        <Intro
+          title={t('title', { returnObjects: true })}
+          subtitle={t('subtitle', { returnObjects: true })}
+          description={t('description', { returnObjects: true })}
+        />
 
 
         <div className="max-w-responsive mx-auto px-6 mb-12">

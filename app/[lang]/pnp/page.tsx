@@ -1,7 +1,7 @@
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import PNPApplicantForm from '@/components/common/form/PNPApplicantForm';
-import Intro from "@/components/pnp/Intro";
+import Intro from "@/components/common/Intro";
 import WhyStartBusiness from "@/components/pnp/WhyStartBusiness";
 import Requirement from '@/components/pnp/Requirement';
 import OurService from '@/components/pnp/OurService';
@@ -29,7 +29,11 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                 />
             </div>
 
-            <Intro lang={lang} />
+            <Intro
+                title={t('Intro', { returnObjects: true }).title}
+                subtitle={t('intro', { returnObjects: true }).subtitle}
+                description={t('intro', { returnObjects: true }).description}
+            />
 
             <WhyStartBusiness lang={lang} />
 

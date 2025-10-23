@@ -3,7 +3,7 @@ import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
 import StartupApplicantForm from '@/components/common/form/StartupApplicantForm';
-import WhatIsStartupVisa from '@/components/startup/WhatIsStartupVisa';
+import Intro from '@/components/common/Intro';
 import WhoCanApply from '@/components/startup/WhoCanApply';
 import OurServices from '@/components/startup/OurServices';
 import Why from '@/components/startup/Why';
@@ -30,14 +30,18 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         />
       </div>
 
-      <WhatIsStartupVisa lang={lang} />
+      <Intro
+        title={t('whatIsStartupVisa.title')}
+        subtitle={t('whatIsStartupVisa.subtitle')}
+        description={t('whatIsStartupVisa.description')}
+      />
 
       <WhoCanApply lang={lang} />
 
       <OurServices lang={lang} />
 
       <Why lang={lang} />
-      
+
       <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
         <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("StartupVisaRoadmap")}</h3>
         <Image
@@ -51,7 +55,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       {/* Latest Startups */}
       <section className='max-w-responsive mx-auto pt-12 px-4 w-100 lg:px-16 space-y-16 mb-16'>
-        <h2 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("LatestStartups", {returnObjects: true})}</h2>
+        <h2 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("LatestStartups", { returnObjects: true })}</h2>
         {t('latest-startups', { returnObjects: true }).map(
           (startup: {
             title: string;

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
-import InvestmentIntro from '@/components/investment/InvestmentIntro';
+import Intro from '@/components/common/Intro';
 import InvestmentSection from '@/components/investment/InvestmentSection';
 import WhyChoose from '@/components/investment/WhyChoose';
 import NovaNestPriority from '@/components/home/Priority';
@@ -38,7 +38,12 @@ export default function Page({
         />
       </div>
 
-      <InvestmentIntro lang={lang} />
+      <Intro
+        title={t('intro', { returnObjects: true }).title}
+        subtitle={t('intro', { returnObjects: true }).subtitle}
+        description={t('intro', { returnObjects: true }).description}
+      />
+
       <InvestmentSection lang={lang} />
       <WhyChoose lang={lang} />
       <NovaNestPriority lang={lang} />

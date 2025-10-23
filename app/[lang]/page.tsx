@@ -13,9 +13,8 @@ import { getServerTranslation } from 'app/i18n';
 
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-import WhatIsStartupVisa from '@/components/startup/WhatIsStartupVisa';
 import OurServices from '@/components/startup/OurServices';
-import Intro from "@/components/pnp/Intro";
+import Intro from "@/components/common/Intro";
 import OurService from '@/components/pnp/OurService';
 
 export const metadata: Metadata = {
@@ -26,6 +25,9 @@ export const metadata: Metadata = {
 
 export default function Page({ params }: { params: { lang: string } }) {
   const { t } = getServerTranslation(params.lang, 'mainPage');
+  const { t: tPNP } = getServerTranslation(params.lang, 'pnp');
+  const { t: tStartup } = getServerTranslation(params.lang, 'startUp');
+
   const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
@@ -41,13 +43,23 @@ export default function Page({ params }: { params: { lang: string } }) {
         <HomeCardsContainer lang={params.lang} />
         <SpecialFeatures lang={params.lang} />
 
-        <WhatIsStartupVisa lang={params.lang} />
+        <Intro
+          title={tStartup('whatIsStartupVisa.title')}
+          subtitle={tStartup('whatIsStartupVisa.subtitle')}
+          description={tStartup('whatIsStartupVisa.description')}
+        />
+
         <OurServices lang={params.lang} />
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/startup/#startup-application-form`} />
         </div>
 
-        <Intro lang={params.lang} />
+        <Intro
+          title={tPNP('Intro', { returnObjects: true }).title}
+          subtitle={tPNP('intro', { returnObjects: true }).subtitle}
+          description={tPNP('intro', { returnObjects: true }).description}
+        />
+
         <OurService lang={params.lang} />
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/pnp/#pnp-application-form`} />

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import CallToAction from '@/components/common/CallToAction';
+import Intro from '@/components/common/Intro';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Join as Mentor',
@@ -54,14 +55,11 @@ export default function JoinAsMentorPage({
 
       {/* Mentor Benefits Section */}
       <div className='max-w-responsive mx-auto px-4 pt-12 md:pt-16'>
-        {/* Main Title */}
-        <div className='text-center mb-16'>
-          <h1 className='text-3xl font-header md:text-5xl font-bold mb-2 text-gray-800'>{t('title')}</h1>
-          <h2 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
-            {t('subtitle', { returnObjects: true })}
-          </h2>
-          <p className='text-lg md:text-xl text-grayDark max-w-container-3xl mx-auto leading-relaxed'>{t('description')}</p>
-        </div>
+        <Intro
+          title={t('title', { returnObjects: true })}
+          subtitle={t('subtitle', { returnObjects: true })}
+          description={t('description', { returnObjects: true })}
+        />
 
         {/* Introduction Text */}
         <div className='bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
@@ -83,7 +81,7 @@ export default function JoinAsMentorPage({
           </div>
         </div>
 
-        
+
         <CallToAction text={t('callToAction')} />
 
       </div>

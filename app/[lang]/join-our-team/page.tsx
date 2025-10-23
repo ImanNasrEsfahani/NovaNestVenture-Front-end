@@ -5,6 +5,7 @@ import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
 import JoinOurTeamForm from '@/components/job-form/JoinOurTeamForm';
 import CallToAction from '@/components/common/CallToAction';
+import Intro from "@/components/common/Intro";
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Jobs',
@@ -55,19 +56,12 @@ export default function ApplyFormPage({
         />
       </div>
 
-      {/* Formal informational layout above the form */}
-      <div className="max-w-responsive mx-auto px-4 pt-12 md:pt-16">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl font-header md:text-5xl font-bold mb-2 text-gray-800">
-            {t('workWithUS', { returnObjects: true }).title}
-          </h1>
-          <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
-            {t('workWithUS', { returnObjects: true }).subtitle}
-          </h3>
-          <p className="text-lg md:text-xl text-grayDark max-w-container-3xl mx-auto leading-relaxed">
-            {t('workWithUS', { returnObjects: true }).description}
-          </p>
-        </div>
+      <div className="max-w-responsive mx-auto px-4 pt-12 md:pt-16 text-center mb-12">
+        <Intro
+          title={t('workWithUS', { returnObjects: true }).title}
+          subtitle={t('workWithUS', { returnObjects: true }).subtitle}
+          description={t('workWithUS', { returnObjects: true }).description}
+        />
 
         <div className="bg-whiteGold rounded-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
           <p className="text-lg text-grayDark leading-relaxed">

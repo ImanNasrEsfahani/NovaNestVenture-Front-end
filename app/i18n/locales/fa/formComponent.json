@@ -406,8 +406,9 @@
     "secondTitle": "رشد و توسعه فردی",
     "subTitle": "درباره پروژه شما",
     "formSubtitle": "درباره پروژه شما",
-    "formHeader": "Startup Investment Application",
-    "formContent": [
+    "title": "Startup Investment Application",
+    "subtitle": "Apply for investment and mentorship — tell us about your startup, traction, and growth plans.",
+    "description": [
       "Thank you for your interest in seeking investment from NovaNest. This form is designed to help us understand your startup, its potential, and your vision as an entrepreneur. By providing detailed and accurate information, you enable our team to evaluate your business efficiently and fairly.",
       "Please take your time to answer all questions thoughtfully. The information you provide will remain confidential and will only be used for the purpose of investment evaluation."
     ],
