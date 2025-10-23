@@ -34,7 +34,7 @@ export default async function Page({
 
   return (
     <>
-      <div className="hidden md:inline">
+      {/* <div className="hidden md:inline">
         <Banner
           image="/static/images/our-team/header.webp"
           title={t('title')}
@@ -47,8 +47,10 @@ export default async function Page({
           title={t('title')}
           lang={lang}
         />
-      </div>
-
+      </div> */}
+      <br />
+      <br />
+      <br />
       <Profile person={person} lang={lang} />
     </>
   );

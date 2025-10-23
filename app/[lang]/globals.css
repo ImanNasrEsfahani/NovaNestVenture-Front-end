@@ -174,3 +174,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   /* Chrome, Safari, Opera */
 }
+
+/* h-[75] {
+  height: 75px;
+}
+
+@media (min-width: 768px) {
+  .md:h-[150] {
+    height: 150px;
+  }
+} */

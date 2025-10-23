@@ -21,14 +21,12 @@ export default function JoinAsMentorPage({
 
   const benefits = t('benefits', { returnObjects: true }) as Array<{
     id: string;
-    emoji: string;
     title: string;
     items: string[];
   }>;
 
   const specialPerks = t('specialPerks', { returnObjects: true }) as {
     id: string;
-    emoji: string;
     title: string;
     items: string[];
   };
@@ -36,11 +34,11 @@ export default function JoinAsMentorPage({
   // Build accordion-friendly data
   const accordionData = [
     ...benefits.map((b) => ({
-      header: `${b.emoji} ${b.title}`,
+      header: `${b.title}`,
       content: b.items
     })),
     {
-      header: `${specialPerks.emoji} ${specialPerks.title}`,
+      header: `${specialPerks.title}`,
       content: specialPerks.items
     }
   ];
@@ -87,7 +85,6 @@ export default function JoinAsMentorPage({
         {/* Special Perks - Full Width (mapped) */}
         <div className='bg-gradient-to-r from-whiteGold to-darkGold rounded-lg shadow-lg p-8 mb-16 border-l-4 border-primary'>
           <div className='flex items-center mb-6'>
-            <span className='text-4xl mr-4'>{specialPerks.emoji}</span>
             <h2 className='text-2xl md:text-3xl font-header text-blue'>{specialPerks.title}</h2>
           </div>
 

@@ -20,32 +20,29 @@ export default function ApplyFormPage({
 
   type Benefit = {
     id: string;
-    emoji: string;
     title: string;
     items: string[];
   };
 
   const benefits = t('workWithUS', { returnObjects: true }).benefits as Array<{
     id: string;
-    emoji: string;
     title: string;
     items: string[];
   }>;
 
   const specialPerks = t('workWithUS', { returnObjects: true }).specialPerks as {
     id: string;
-    emoji: string;
     title: string;
     items: string[];
   };
 
   const accordionData = [
     ...benefits.map((b) => ({
-      header: `${b.emoji} ${b.title}`,
+      header: `${b.title}`,
       content: b.items
     })),
     {
-      header: `${specialPerks.emoji} ${specialPerks.title}`,
+      header: `${specialPerks.title}`,
       content: specialPerks.items
     }
   ];
@@ -93,7 +90,7 @@ export default function ApplyFormPage({
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/static/images/join-as-a-mentor/services.png"
+              src="/static/images/join-our-team-form/services.png"
               alt="Services"
               className="mx-auto w-auto max-w-sm rounded-lg"
               width={1400}

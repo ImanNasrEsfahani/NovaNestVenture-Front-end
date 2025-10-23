@@ -24,9 +24,6 @@ interface Person {
   skills: string[];
   interests: string[];
   education: string;
-  company: string;
-  stage: string;
-  gender: string;
   about: string[];
 };
 

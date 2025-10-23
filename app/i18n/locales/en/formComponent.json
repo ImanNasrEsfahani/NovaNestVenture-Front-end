@@ -5,17 +5,21 @@
   "firstName": "First Name ",
   "firstNameRequired": "First Name is Required.",
   "firstNamePlaceholder": "Your First Name",
+
   "lastName": "Last Name ",
   "lastNameRequired": "Last Name is Required.",
   "lastNamePlaceholder": "Your Last Name",
+
   "email": "Email ",
   "emailRequired": "Email is Required.",
   "emailErrorMessage": "Enter a Valid Email Address.",
   "emailPlaceholder": "Your E-mail address like someone@gmail.com",
+
   "phoneNumber": "Phone Number ",
   "phoneNumberRequired": "Phone Number is Required.",
   "phoneNumberErrorMessage": "Enter a Valid Phone Number",
   "phoneNumberPlaceholder": "Your Phone Number",
+
   "TypeOfCollaboration": "Type of Collaboration ",
   "TypeOfCollaborationRequired": "Type of Collaboration is Required",
   "TypeOfCollaborationErrorMassage": "Select a Type",
@@ -30,6 +34,7 @@
       "label": "Full Time"
     }
   ],
+
   "FieldOfExpert": "Field of Expert ",
   "FieldOfExpertRequired": "Field of Expert is Required",
   "FieldOfExpertErrorMassage": "Select a Field of Expert",
@@ -76,13 +81,14 @@
       "label": "Other"
     }
   ],
+
   "FieldOfExpertOther": "Please specify your field of expertise.",
   "FieldOfExpertOtherRequired": "Field of expertise is required.",
   "FieldOfExpertOtherPlaceholder": "Enter your field of expertise",
+
   "FieldOfInterest": "Field of Interest ",
   "FieldOfInterestRequired": "Field of Interest is Required",
   "FieldOfInterestPlaceholder": "Select a Field of Interest",
-
   "FieldOfInterestData": [
     {
       "value": 0,
@@ -121,6 +127,8 @@
   "FieldOfInterestOther": "Please specify your field of interest.",
   "FieldOfInterestOtherRequired": "Field of interest is required.",
   "FieldOfInterestOtherPlaceholder": "Enter your field of interest",
+
+
 
   "birthDate": "Date of Birth",
   "birthDateRequired": "Date of Birth is Required.",
@@ -276,7 +284,6 @@
     "benefits": [
       {
         "id": "financial",
-        "emoji": "💰",
         "title": "Financial Benefits",
         "items": [
           "Hands-on experience and collaboration with early-stage startups",
@@ -286,7 +293,6 @@
       },
       {
         "id": "recognition",
-        "emoji": "🌟",
         "title": "Recognition and Prestige",
         "items": [
           "Official introduction on NovaNest website and social media",
@@ -296,7 +302,6 @@
       },
       {
         "id": "growth",
-        "emoji": "📚",
         "title": "Professional Growth & Learning",
         "items": [
           "Learning and collaborating with mentors and international teams",
@@ -305,7 +310,6 @@
       },
       {
         "id": "networking",
-        "emoji": "🤝",
         "title": "Networking Expansion",
         "items": [
           "Membership in NovaNest’s professional network in Iran and Canada",
@@ -315,7 +319,6 @@
       },
       {
         "id": "branding",
-        "emoji": "🌐",
         "title": "Personal Brand Development",
         "items": [
           "Showcase your skills and expertise in projects and educational programs",
@@ -325,7 +328,6 @@
       },
       {
         "id": "impact",
-        "emoji": "🌍",
         "title": "Real and Social Impact",
         "items": [
           "Contribute to the growth of talented startups and teams",
@@ -336,7 +338,6 @@
     ],
     "specialPerks": {
       "id": "perks",
-      "emoji": "🎁",
       "title": "Exclusive Perks",
       "items": [
         "Invitations to internal and international events",
@@ -694,6 +695,10 @@
       "good": "Good",
       "expert": "Expert"
     }
+  },
+  "ContactProfileForm": {
+    "formTitle": "Contact Profile Form",
+    "formSubtitle": "Personal Information"
   },
   "MVP": "Minimum Viable Product ( MVP )",
   "FirstSale": "Early Traction",

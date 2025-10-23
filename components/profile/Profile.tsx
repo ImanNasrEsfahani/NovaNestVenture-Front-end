@@ -21,8 +21,8 @@ export default function Profile({ person, lang }: { person: Person, lang: string
 
     // Pass translations as props to client component
     const translations = {
-        formTitle: t("formTitle"),
-        formSubtitle: t("formSubtitle"),
+        formTitle: t("ContactProfileForm", { returnObjects: true }).formTitle,
+        formSubtitle: t("ContactProfileForm", { returnObjects: true }).formSubtitle,
 
         sendButton: t('sendButton'),
         sendingButton: t('sendingButton'),
@@ -94,13 +94,13 @@ export default function Profile({ person, lang }: { person: Person, lang: string
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Left Column - 1/3 */}
                 <aside className="w-full lg:w-1/3 bg-white rounded-xl shadow p-6 flex flex-col items-center gap-6">
-                    <div className="w-40 h-40 relative rounded-full overflow-hidden border-4 border-white shadow-md">
+                    <div className="w-60 h-60 relative rounded-full overflow-hidden border-4 border-white shadow-md">
                         <Image
                             src={person.thumbnail || '/static/images/our-team/header.webp'}
                             alt={`${fullName} thumbnail`}
                             fill
                             className="object-cover"
-                            sizes="160px"
+                            sizes="250px"
                         />
                     </div>
 
@@ -109,7 +109,7 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                         <p className="text-sm text-gray-500 mt-1">{person.job_title || '—'}</p>
                     </div>
 
-                    <div className="w-full space-y-3 text-sm text-gray-700">
+                    <div className="w-full space-y-6 mt-3 text-sm text-gray-700">
                         <div>
                             <h4 className="text-xs text-gray-400 uppercase mb-1">Skills</h4>
                             <div className="flex flex-wrap gap-2">
@@ -132,33 +132,29 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-2 text-sm">
+                        <div className="grid grid-cols-1 space-y-6 gap-2 text-sm">
                             <div>
                                 <h4 className="text-xs text-gray-400 uppercase">Location</h4>
-                                <p className="mt-1">{person.location || '—'}</p>
+                                <p className="mt-1 pl-2">{person.location || '—'}</p>
                             </div>
                             <div>
                                 <h4 className="text-xs text-gray-400 uppercase">Education</h4>
-                                <p className="mt-1">{person.education || '—'}</p>
+                                <p className="mt-1 pl-2">{person.education || '—'}</p>
                             </div>
                             <div>
-                                <h4 className="text-xs text-gray-400 uppercase">Company</h4>
-                                <p className="mt-1">{person.company || '—'}</p>
-                            </div>
-                            <div>
-                                <h4 className="text-xs text-gray-400 uppercase">Age / Gender</h4>
-                                <p className="mt-1">{(person.stage || '—') + (person.gender ? ` / ${person.gender}` : '')}</p>
+                                <h4 className="text-xs text-gray-400 uppercase">Email</h4>
+                                <p className="mt-1 pl-2">Rasoul@NovaNestVenture.com</p>
                             </div>
                         </div>
 
                         <div>
                             <h4 className="text-xs text-gray-400 uppercase mb-2">Preferred Contact</h4>
                             <div className="flex items-center gap-3 justify-center">
-                                {person.email ? (
+                                {/* {person.email ? (
                                     <Link href={`mailto:${person.email}`} target="_blank" className="text-gray-600 hover:text-primary">
                                         <Envelope />
                                     </Link>
-                                ) : null}
+                                ) : null} */}
                                 {person.whatsapp ? (
                                     <Link href={person.whatsapp} target="_blank" className="text-gray-600 hover:text-primary">
                                         <Whatsapp />
@@ -182,7 +178,7 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                 {/* Right Column - 2/3 */}
                 <main className="w-full lg:w-2/3">
                     <div className="bg-white rounded-xl shadow p-6">
-                        <h2 className="text-xl font-semibold mb-4">About Me</h2>
+                        <h2 className="text-xl font-semibold mb-4">About</h2>
                         <div className="prose max-w-none text-gray-700">
                             <p>
                                 {person.about ||
@@ -197,35 +193,6 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                     </div>
 
                     <div className="mt-6 bg-white rounded-xl shadow p-6">
-                        <h3 className="text-lg font-medium mb-4">Links & Projects</h3>
-                        <ul className="space-y-3">
-                            {person.websites?.length ? (
-                                person.websites.map((w: any, i: number) => (
-                                    <li key={i} className="flex items-center justify-between p-3 rounded-md border">
-                                        <div className="flex items-center gap-3">
-                                            {w.logo ? (
-                                                <div className="w-12 h-12 rounded-md overflow-hidden bg-gray-50">
-                                                    <Image src={w.logo} width={48} height={48} alt={w.title || 'logo'} className="object-cover" />
-                                                </div>
-                                            ) : null}
-                                            <div>
-                                                <div className="font-medium">{w.title || w.url}</div>
-                                                <div className="text-xs text-gray-500">{w.description || w.url}</div>
-                                            </div>
-                                        </div>
-                                        <Link href={w.url || '#'} target="_blank" className="text-sm text-blue-600 hover:underline">
-                                            Visit
-                                        </Link>
-                                    </li>
-                                ))
-                            ) : (
-                                <li className="text-sm text-gray-500">No public links</li>
-                            )}
-                        </ul>
-                    </div>
-
-                    <div className="mt-6 bg-white rounded-xl shadow p-6">
-                        <h3 className="text-lg font-medium mb-4">Contact {person.first_name || ''}</h3>
                         <ContactForm translations={translations} lang={lang} />
                     </div>
                 </main>
