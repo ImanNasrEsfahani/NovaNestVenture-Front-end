@@ -1,23 +1,125 @@
 {
   "lng": "fa",
   "banner": "آکادمی",
-
   "title": "NovaNest Academy",
+  "subtitle": "Learn, Experience, and Grow with Real Startup Teams",
   "description": [
-      "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas.",
-      "By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields."
+    "At NovaNest Academy, we believe real learning happens through practical experience. Teenagers and young adults work in a professional, dynamic environment — developing practical skills through real projects alongside experienced local and international mentors. Our mission is to discover talent, develop skills, and prepare young professionals for successful careers."
   ],
   "features": {
-      "text": [
-        "By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields."
-      ],
-      "list": [
-        "Hands-on projects with international mentors",
-        "Workshops and skill-building sessions",
-        "Mentorship, feedback and career guidance",
-        "Opportunities to showcase your ideas"
-      ]
+    "text": [
+      "By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields."
+    ],
+    "list": [
+      "Hands-on projects with international mentors",
+      "Workshops and skill-building sessions",
+      "Mentorship, feedback and career guidance",
+      "Opportunities to showcase your ideas"
+    ]
   },
-  "callToAction": "If you are a teenager or young adult interested in joining the NovaNest Academy, working alongside international mentors on real projects, and gaining valuable hands-on experience, you can submit your application through the link below."
-
+  "why": {
+    "title": "Why Join NovaNest Academy?",
+    "description": "Learning goes beyond the classroom — it happens through hands-on experience.",
+    "list": [
+      "Work in a dynamic, innovative, and youthful environment",
+      "Develop practical business skills",
+      "Opportunities for growth in an international team",
+      "Collaborate with successful entrepreneurs and investors",
+      "Participate for free in crash courses organized by the academy",
+      "Learn to use professional tools like Trello, Google Workspace, and Microsoft Office",
+      "Gain mentorship from experienced local and international professionals",
+      "Work on international projects and gain global experience",
+      "Receive an official certificate of internship completion and potential placement in NovaNest’s core team"
+    ]
+  },
+  "process": {
+    "title": "Recruitment and Progression Process",
+    "steps": [
+      {
+        "title": "Phase 1: Trial Period (Up to 3 Months)",
+        "list": [
+          "Introduces candidates to the work environment, team values, and responsibilities",
+          "Performance evaluated to determine suitability for next stage",
+          "Evaluation based on performance, teamwork, and commitment",
+          "Working hours are flexible; choose weekly hours and days"
+        ]
+      },
+      {
+        "title": "Phase 2: Internship Period (Up to 6 Months)",
+        "list": [
+          "Develop essential skills while working on real projects",
+          "Internship does not guarantee employment",
+          "Upon completion, participants receive an official certificate"
+        ]
+      },
+      {
+        "title": "Phase 3: Official Employment",
+        "list": [
+          "Top performers may join NovaNest’s core team",
+          "Employment includes salary, benefits, and growth opportunities",
+          "Work on international projects as part of the professional team"
+        ]
+      }
+    ]
+  },
+  "opportunities": {
+    "title": "Learning Opportunities",
+    "list": [
+      "Software development and programming",
+      "Graphic design and UI/UX",
+      "Digital marketing and sales",
+      "Content creation and media management",
+      "Project management",
+      "Finance, accounting, and data analysis"
+    ]
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "",
+    "accordion": [
+      {
+        "header": "Who can apply?",
+        "content": [
+          "Any motivated teenager or young adult interested in learning and working in a dynamic startup environment. No restrictions on field of study or prior experience."
+        ]
+      },
+      {
+        "header": "Is prior experience required?",
+        "content": [
+          "No. Motivation and willingness to learn are more important. Experience is a plus."
+        ]
+      },
+      {
+        "header": "Is this opportunity only for residents of Canada?",
+        "content": [
+          "No. Applicants worldwide are welcome. Some positions may require physical presence in Canada."
+        ]
+      },
+      {
+        "header": "Is the trial period mandatory?",
+        "content": [
+          "Yes. All applicants must complete the trial to get familiar with the team and workflow."
+        ]
+      },
+      {
+        "header": "Are internships paid?",
+        "content": [
+          "Internship is typically unpaid but provides professional training and real project experience."
+        ]
+      },
+      {
+        "header": "How to increase chances of official employment?",
+        "content": [
+          "Demonstrate commitment, continuous learning, and strong performance in projects."
+        ]
+      }
+    ],
+    "image": {
+      "src": "/static/images/academy/academy-illustration.jpeg",
+      "alt": "FAQ Illustration",
+      "width": 600,
+      "height": 400
+    }
+  },
+  "callToAction": "Take your first step into the real world of startups! Complete the form below to join NovaNest Academy as a trainee and start your hands-on learning journey."
 }
