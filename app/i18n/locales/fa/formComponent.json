@@ -281,6 +281,51 @@
       "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
       "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
     ],
+    "accordion": [
+      {
+        "header": "Financial Benefits",
+        "content": [
+          "Free participation in specialized crash courses offered by the organization",
+          "Opportunity for bonuses or joining NavaNest’s core team after successful completion of the program"
+        ]
+      },
+      {
+        "header": "Recognition and Prestige",
+        "content": [
+          "Official certificate upon completion of the internship program",
+          "Chance to be introduced to an international network of entrepreneurs and investors"
+        ]
+      },
+      {
+        "header": "Professional Growth & Learning",
+        "content": [
+          "Learning practical business skills",
+          "Exposure to and training on professional tools such as Trello, Google Workspace, and Microsoft Office",
+          "Mentorship from experienced internal and external mentors"
+        ]
+      },
+      {
+        "header": "Networking Expansion",
+        "content": [
+          "Collaboration with successful entrepreneurs and investors",
+          "Working on international projects and gaining global-level experience"
+        ]
+      },
+      {
+        "header": "Personal Brand Development",
+        "content": [
+          "Opportunity to grow and advance within an international team",
+          "Experience in a dynamic, young, and innovative environment that adds value to the personal brand and resume"
+        ]
+      },
+      {
+        "header": "Real and Social Impact",
+        "content": [
+          "Participation in real international projects with tangible outcomes",
+          "Opportunity to create a positive impact and understand your role in a team’s and society’s success"
+        ]
+      }
+    ],
     "benefits": [
       {
         "id": "financial",
