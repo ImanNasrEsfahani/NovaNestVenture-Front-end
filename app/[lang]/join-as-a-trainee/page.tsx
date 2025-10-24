@@ -2,7 +2,9 @@ import Banner from '@/components/common/Banner';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import CallToAction from '@/components/common/CallToAction';
-import Intro from '@/components/common/Intro'
+import Intro from '@/components/common/Intro';
+import Accordion from '@/components/startup/Accordions';
+import Image from 'next/image';
 import '../../[lang]/globals.css';
 
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
@@ -50,24 +52,25 @@ export default function TraineePage({
         <p className='text-lg text-grayDark leading-relaxed'>{t('joinAsATrainee.intro')}</p>
       </div>
 
-{/* 
-      <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 gap-12 py-12 items-stretch">
-        <div className="flex flex-col justify-center">
-          <Accordions data={accordionData} />
-        </div>
+      <section className="py-16 max-w-responsive mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 pt-12 items-stretch">
+          <div className="flex flex-col justify-center">
+            <Accordion data={t('joinAsATrainee.accordion', { returnObjects: true })} />
+          </div>
 
-        <div className="flex items-center justify-center">
-          <div className="w-full rounded-lg overflow-hidden h-full relative">
-            <Image
-              src="/static/images/join-our-team-form/services.png"
-              alt="Services"
-              fill
-              className="object-contain rounded-lg"
-              sizes="(min-width: 1024px) 400px, 100vw"
-            />
+          <div className="flex items-center justify-center">
+            <div className="w-full rounded-lg overflow-hidden h-full relative">
+              <Image
+                src="/static/images/join-our-team-form/services.png"
+                alt="Services"
+                fill
+                className="object-contain rounded-lg"
+                sizes="(min-width: 1024px) 400px, 100vw"
+              />
+            </div>
           </div>
         </div>
-      </div> */}
+      </section>
 
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 
