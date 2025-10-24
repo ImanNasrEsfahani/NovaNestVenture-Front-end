@@ -69,18 +69,21 @@ export default function ApplyFormPage({
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 space-x-12 py-12">
+        <div className="grid lg:grid-cols-2 gap-12 py-12 items-stretch">
           <div className="flex flex-col justify-center">
             <Accordions data={accordionData} />
           </div>
+
           <div className="flex items-center justify-center">
-            <Image
-              src="/static/images/join-our-team-form/services.png"
-              alt="Services"
-              className="mx-auto w-auto rounded-lg"
-              width={1400}
-              height={900}
-            />
+            <div className="w-full rounded-lg overflow-hidden h-full relative">
+              <Image
+                src="/static/images/join-our-team-form/services.png"
+                alt="Services"
+                fill
+                className="object-contain rounded-lg"
+                sizes="(min-width: 1024px) 400px, 100vw"
+              />
+            </div>
           </div>
         </div>
 

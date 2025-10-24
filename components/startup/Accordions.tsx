@@ -27,7 +27,7 @@ export default function Accordions({ data }: Props) {
           {openIndex === idx && (
             <ul className="px-8 py-4 space-y-2 text-gray-800 text-sm">
               {item.content.map((c, i) => (
-                <li key={i} className="list-disc ml-4">{c}</li>
+                <li key={i} className="list-disc text-left ml-4">{c}</li>
               ))}
             </ul>
           )}
