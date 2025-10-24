@@ -90,6 +90,8 @@ export interface Translations {
   workHistorySummaryPlaceholder: string;
 
   EducationLevelsData: { value: string; label: string }[];
+
+  formDescription: string[];
 }
 
 export interface Props {

@@ -58,7 +58,7 @@ export default function JoinAsMentorPage({
         <Intro
           title={t('title', { returnObjects: true })}
           subtitle={t('subtitle', { returnObjects: true })}
-          description={t('description', { returnObjects: true })}
+          description=""
         />
 
         {/* Introduction Text */}

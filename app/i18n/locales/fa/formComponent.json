@@ -276,7 +276,11 @@
     "professionalConsultation": "مشاوره تخصصی",
     "title": "Join the NovaNest Professional Team",
     "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
-    "description": "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success.",
+    "formDescription": [
+      "Our team will review your submission and contact you if an initial conversation is appropriate.",
+      "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
+      "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities."
+    ],
     "benefits": [
       {
         "id": "financial",

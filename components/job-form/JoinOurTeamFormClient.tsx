@@ -307,11 +307,17 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               validate=""
             />
           </div>
-
-
         </div>
 
-          <div className="mx-auto pb-4 mt-20">
+        <div className="w-full max-w-responsive mx-auto px-2 md:px-9 pt-6 pb-6">
+          {translations.formDescription.map((paragraph, index) => (
+            <p key={index} className="text-sm font-normal text-gray-800 font-header">
+              * {paragraph}
+            </p>
+          ))};
+        </div>
+
+        <div className="mx-auto pb-4">
           <ButtonRefactor
             type="submit"
             text={send ? translations.sendingButton : translations.sendButton}

@@ -4,6 +4,7 @@ import MentorRegistrationFormClient from '@/components/join-as-mentor/MentorRegi
 export default function MentorRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
+  const { t: tMentor } = getServerTranslation(lang, 'MentorForm');
   
   // Pass translations as props to client component
   const translations = {
@@ -99,6 +100,8 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     howDidYouKnowUsPlaceholder: t('howDidYouKnowUsPlaceholder'),
     howDidYouKnowUsRequired: t('howDidYouKnowUsRequired'),
     howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
+
+    formDescription: tMentor('formDescription', { returnObjects: true }) as string[] || [],
   };
 
   return <MentorRegistrationFormClient lang={lang} translations={translations} />;

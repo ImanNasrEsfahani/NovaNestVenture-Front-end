@@ -57,11 +57,11 @@ export default function Page({
 
             {/* Why Join */}
             <section className="w-full max-w-responsive mx-auto mt-9 mb-20">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                    <div className="flex flex-col justify-center">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-4">{t('why.title')}</h2>
-                        <p className="text-gray-700 pl-4 mb-2">{t('why.description')}</p>
+                <h3 className="text-center text-3xl font-semibold text-gray-800 mb-2">{t('why.title')}</h3>
+                <p className="text-center text-gray-700 pl-4 mb-12">{t('why.description')}</p>
 
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="flex items-center justify-center">
                         <ul className="grid gap-1 text-gray-700 list-inside pl-4">
                             {(t('why.list', { returnObjects: true }) || []).map((text: string, idx: number) => (
                                 <li key={idx} className="flex">
@@ -72,7 +72,7 @@ export default function Page({
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <div className="w-full max-w-md rounded-lg overflow-hidden shadow">
+                        <div className="w-full rounded-lg overflow-hidden shadow">
                             <Image
                                 src="/static/images/academy/academy-illustration.jpeg"
                                 alt="NovaNest Academy illustration"

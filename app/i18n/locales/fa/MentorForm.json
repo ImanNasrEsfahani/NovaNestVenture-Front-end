@@ -4,15 +4,18 @@
   "NovaNestVenture": "نوانست ونچر",
   "formTitle": "مرکز مشاوره",
   "formSubtitle": "اطلاعات شخصی",
-    
-  "title": "Join the NovaNest Mentor Team",
-  "subtitle": "Become a guiding light for innovative startups",
-  "description": "Are you an experienced mentor passionate about supporting innovative startups? NovaNest invites you to join our network of professional mentors and help guide startups on their journey to growth and success.",
+
+  "title": "Become a Mentor for the Next Generation of Entrepreneurs",
+  "subtitle": "This form is an opportunity to share your skills, experience, and interest in mentoring the next generation of entrepreneurs with the NovaNest team.",
+  "formDescription": [
+    "Our team will review your submission and contact you if an initial conversation is appropriate.",
+    "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
+    "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
+  ],
   "intro": "By joining the NovaNest Mentor Team, you will gain unique opportunities:",
   "benefits": [
     {
       "id": "financial",
-      "emoji": "💰",
       "title": "Financial Benefits",
       "items": [
         "Compensation for mentoring and advisory sessions",
@@ -23,7 +26,6 @@
     },
     {
       "id": "recognition",
-      "emoji": "🌟",
       "title": "Recognition and Prestige",
       "items": [
         "Official introduction on NovaNest website and social media",
@@ -34,7 +36,6 @@
     },
     {
       "id": "professionalGrowth",
-      "emoji": "📚",
       "title": "Professional Growth & Learning",
       "items": [
         "Free or discounted access to NovaNest webinars, classes, and bootcamps",
@@ -43,7 +44,6 @@
     },
     {
       "id": "networking",
-      "emoji": "🤝",
       "title": "Networking Opportunities",
       "items": [
         "Membership in NovaNest's specialized mentor network (Iran & Canada)",
@@ -53,7 +53,6 @@
     },
     {
       "id": "personalBranding",
-      "emoji": "🌐",
       "title": "Personal Branding",
       "items": [
         "Conduct exclusive courses with your personal brand on NovaNest platform",
@@ -63,7 +62,6 @@
     },
     {
       "id": "realImpact",
-      "emoji": "🌍",
       "title": "Real Impact & Social Contribution",
       "items": [
         "Contribute to the growth of talented startups and teams",

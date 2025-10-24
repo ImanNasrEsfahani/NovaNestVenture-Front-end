@@ -48,14 +48,6 @@ export default function TraineePage({
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 
       <TraineeRegistrationForm lang={lang} />
-
-      <div className="w-full max-w-responsive mx-auto pt-6 pb-9">
-        {(t('joinAsATrainee.formDescription', { returnObjects: true }) as string[] || []).map((paragraph, index) => (
-          <p key={index} className="text-sm font-normal text-gray-800 font-header">
-            * {paragraph}
-          </p>
-        ))};
-      </div>
     </>
   );
 }
