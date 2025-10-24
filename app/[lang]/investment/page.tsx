@@ -47,6 +47,8 @@ export default function Page({
       <InvestmentSection lang={lang} />
       <WhyChoose lang={lang} />
       <NovaNestPriority lang={lang} />
+
+      <iframe src='https://outlook.office.com/book/NovaNestConsulting@landatrip.com/?ismsaljsauthenabled' width='100%' height='100%' scrolling='yes'></iframe>
     </>
   );
 }
