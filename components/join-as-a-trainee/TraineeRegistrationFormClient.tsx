@@ -383,7 +383,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
               <p key={index} className="text-sm font-normal text-gray-800 font-header">
                 * {paragraph}
               </p>
-            ))};
+            ))}
           </div>
 
           <div className="mx-auto pb-4">
