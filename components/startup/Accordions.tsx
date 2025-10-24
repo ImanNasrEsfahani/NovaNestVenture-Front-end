@@ -12,7 +12,7 @@ interface Props {
 
 export default function Accordions({ data }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
+  
   return (
     <div className="w-full">
       {data.map((item, idx) => (

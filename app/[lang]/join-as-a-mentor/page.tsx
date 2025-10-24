@@ -66,7 +66,7 @@ export default function JoinAsMentorPage({
           <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 py-12">
+        <div className="grid lg:grid-cols-2 space-x-12py-12">
           <div className="flex flex-col justify-center">
             <Accordions data={accordionData} />
           </div>
@@ -74,7 +74,7 @@ export default function JoinAsMentorPage({
             <Image
               src="/static/images/join-as-a-mentor/services.png"
               alt="Services"
-              className="mx-auto w-auto max-w-sm rounded-lg"
+              className="mx-auto w-auto rounded-lg"
               width={1400}
               height={900}
             />

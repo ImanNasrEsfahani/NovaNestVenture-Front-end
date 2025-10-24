@@ -69,7 +69,7 @@ export default function ApplyFormPage({
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 py-12">
+        <div className="grid lg:grid-cols-2 space-x-12 py-12">
           <div className="flex flex-col justify-center">
             <Accordions data={accordionData} />
           </div>
@@ -77,7 +77,7 @@ export default function ApplyFormPage({
             <Image
               src="/static/images/join-our-team-form/services.png"
               alt="Services"
-              className="mx-auto w-auto max-w-sm rounded-lg"
+              className="mx-auto w-auto rounded-lg"
               width={1400}
               height={900}
             />
