@@ -17,7 +17,7 @@ export default function Intro({
                 <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800">
                     {title}
                 </h2>
-                <h3 className="text-lg md:text-2xl font-semibold mb-8 text-gray-500">
+                <h3 className="text-lg font-semibold mb-8 text-gray-500">
                     {subtitle}
                 </h3>
                 {isArray ? (

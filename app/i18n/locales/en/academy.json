@@ -80,37 +80,112 @@
       {
         "header": "Who can apply?",
         "content": [
-          "Any motivated teenager or young adult interested in learning and working in a dynamic startup environment. No restrictions on field of study or prior experience."
+          "Any motivated teenager or young adult interested in learning and working in a dynamic startup environment, with no restrictions on field of study or prior experience."
         ]
       },
       {
         "header": "Is prior experience required?",
         "content": [
-          "No. Motivation and willingness to learn are more important. Experience is a plus."
+          "No, motivation and willingness to learn are more important. Experience in a specific field is a plus."
         ]
       },
       {
         "header": "Is this opportunity only for residents of Canada?",
         "content": [
-          "No. Applicants worldwide are welcome. Some positions may require physical presence in Canada."
+          "No, applicants from around the world are welcome. Some positions may require physical presence in Canada."
         ]
       },
       {
-        "header": "Is the trial period mandatory?",
+        "header": "Is this period mandatory?",
         "content": [
-          "Yes. All applicants must complete the trial to get familiar with the team and workflow."
+          "Yes, all applicants must complete the trial to get familiar with the team and work environment."
         ]
       },
       {
-        "header": "Are internships paid?",
+        "header": "Will I have real tasks?",
         "content": [
-          "Internship is typically unpaid but provides professional training and real project experience."
+          "Yes, simple tasks help you understand the team workflow and tools."
         ]
       },
       {
-        "header": "How to increase chances of official employment?",
+        "header": "Can I choose my working hours?",
+        "content": [
+          "Yes, you decide how many hours per week and which days to work."
+        ]
+      },
+      {
+        "header": "Is this paid?",
+        "content": [
+          "No, but it provides professional training and experience on real projects."
+        ]
+      },
+      {
+        "header": "Does it guarantee employment?",
+        "content": [
+          "No, but good performance increases the chance of joining the core team."
+        ]
+      },
+      {
+        "header": "What skills will I gain?",
+        "content": [
+          "Project management using Trello",
+          "Working with digital tools like Google Workspace and Microsoft Office",
+          "Teamwork and real project execution",
+          "Understanding business models and startup growth strategies"
+        ]
+      },
+      {
+        "header": "Can I leave the internship if it’s not suitable?",
+        "content": [
+          "Yes, but we recommend consulting with your mentors before making a decision."
+        ]
+      },
+      {
+        "header": "How can I increase my chances of joining the core team?",
         "content": [
           "Demonstrate commitment, continuous learning, and strong performance in projects."
+        ]
+      },
+      {
+        "header": "What are the benefits of official employment?",
+        "content": [
+          "Salary, benefits, professional growth opportunities, international projects, and collaboration with a high-performing team"
+        ]
+      },
+      {
+        "header": "Is remote work possible?",
+        "content": [
+          "Yes, many positions are remote, though some may require physical presence."
+        ]
+      },
+      {
+        "header": "Can I change departments or roles later?",
+        "content": [
+          "Yes, if you have the required skills, you can move to other teams."
+        ]
+      },
+      {
+        "header": "Do I receive an official certificate?",
+        "content": [
+          "Yes, at the end of the internship, an official certificate is provided."
+        ]
+      },
+      {
+        "header": "How can I apply?",
+        "content": [
+          "Complete the online registration form below to submit your application."
+        ]
+      },
+      {
+        "header": "How long does it take to get a response?",
+        "content": [
+          "Usually 7–10 business days."
+        ]
+      },
+      {
+        "header": "Who can I contact for more questions?",
+        "content": [
+          "You can reach out via email for further inquiries."
         ]
       }
     ],
