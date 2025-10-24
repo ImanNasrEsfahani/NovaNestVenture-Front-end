@@ -12,7 +12,7 @@ export default function Intro({
     const isArray = Array.isArray(description);
 
     return (
-        <div className="flex justify-center items-center pt-32 pb-16">
+        <div className="w-full max-w-responsive mx-auto flex justify-center items-center pt-32 pb-16">
             <div className="max-w-[75%] mx-auto text-center">
                 <h2 className="text-3xl font-header md:text-5xl font-bold mb-6 text-gray-800">
                     {title}

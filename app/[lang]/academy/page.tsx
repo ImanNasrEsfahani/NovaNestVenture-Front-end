@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
-import AcademyApplicantForm from '@/components/common/form/AcademyApplicantForm';
 import CallToAction from '@/components/common/CallToAction';
 import Accordion from '@/components/startup/Accordions';
 import Intro from '@/components/common/Intro';
+import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -43,7 +43,6 @@ export default function Page({
                 />
             </div>
 
-            <main className="max-w-responsive mx-auto px-6 lg:px-8 py-9">
                 <Intro
                     title={t('title')}
                     subtitle={t('subtitle')}
@@ -52,9 +51,9 @@ export default function Page({
 
 
                 {/* Why Join */}
-                <section className="mb-20">
+                <section className="w-full max-w-responsive mx-auto mt-9 mb-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                        <div className="w-full flex flex-col justify-center">
+                        <div className="flex flex-col justify-center">
                             <h2 className="text-2xl font-semibold text-gray-800 mb-4">{t('why.title')}</h2>
                             <p className="text-gray-700 pl-4 mb-2">{t('why.description')}</p>
 
@@ -82,7 +81,7 @@ export default function Page({
                 </section>
 
                 {/* Recruitment & Progression */}
-                <section className="mb-16">
+                <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
                     <h3 className="text-2xl font-semibold text-gray-800 font-header text-center mb-6">{t("process.title")}</h3>
                     <div className="grid gap-6 md:grid-cols-3">
                         {(t("process.steps", { returnObjects: true }) || []).map((step: any, index: number) => (
@@ -100,7 +99,7 @@ export default function Page({
 
 
                 {/* Learning Opportunities */}
-                <section className="mb-16">
+                <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
                     <h3 className="text-2xl font-semibold text-gray-800 mb-4">{t('opportunities.title', { returnObjects: true })}</h3>
                     <div className="grid gap-4 md:grid-cols-3">
                         {(t('opportunities.list', { returnObjects: true }) || []).map((area: string, i: number) => (
@@ -112,7 +111,7 @@ export default function Page({
                 </section>
 
                 {/* FAQ */}
-                <section className="py-16 max-w-responsive mx-auto">
+                <section className="w-full max-w-responsive mx-auto pt-9 py-16">
                     <h3 className="text-4xl font-header leading-loose text-center font-bold">{t('FAQ', { returnObjects: true }).title}</h3>
                     <p className="text-gray-600 text-base text-center mb-4 max-w-5xl mx-auto">{t('FAQ', { returnObjects: true }).description}</p>
 
@@ -134,12 +133,9 @@ export default function Page({
 
                 <CallToAction text={t("callToAction")} />
 
-                <section className='max-w-responsive mx-auto pb-24 lg:px-4 w-100'>
-                    <AcademyApplicantForm
-                        lang={lang}
-                    />
+                <section className='max-w-responsive mx-auto lg:px-4 w-100'>
+                    <TraineeRegistrationForm lang={lang} />
                 </section>
-            </main>
         </>
     );
 }

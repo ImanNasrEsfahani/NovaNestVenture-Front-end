@@ -5,7 +5,7 @@ export default function Priority({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
-    <section className="py-16 lg:py-24 w-full max-w-responsive mx-auto text-center">
+    <section className="w-full max-w-responsive mx-auto py-16 lg:py-24 text-center">
       <h3 className="text-4xl font-header font-bold mb-20 text-gray-800">
         {t('Priorities')}
       </h3>

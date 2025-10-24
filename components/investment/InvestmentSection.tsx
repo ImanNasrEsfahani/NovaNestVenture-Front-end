@@ -12,7 +12,7 @@ export default function InvestmentSection({ lang }: {
 
     return (
         <>
-            <div className="max-w-responsive mx-auto py-24">
+            <div className="w-full max-w-responsive mx-auto py-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {(t('forFounders', { returnObjects: true }) || []).map((section: any, idx: number) => (
                         <div

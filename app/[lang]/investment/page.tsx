@@ -1,12 +1,13 @@
 import React from 'react';
 import { Metadata } from 'next';
-
 import { getServerTranslation } from 'app/i18n';
+
 import Banner from '@/components/common/Banner';
 import Intro from '@/components/common/Intro';
 import InvestmentSection from '@/components/investment/InvestmentSection';
 import WhyChoose from '@/components/investment/WhyChoose';
 import NovaNestPriority from '@/components/home/Priority';
+import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Investment',
@@ -48,7 +49,8 @@ export default function Page({
       <WhyChoose lang={lang} />
       <NovaNestPriority lang={lang} />
 
-      <iframe src='https://outlook.office.com/book/NovaNestConsulting@landatrip.com/?ismsaljsauthenabled' width='100%' height='100%' scrolling='yes'></iframe>
+      {/* <iframe src='https://outlook.office.com/book/NovaNestConsulting@landatrip.com/?ismsaljsauthenabled' width='100%' height='2000px%' scrolling='yes'></iframe> */}
+      <InvestorRegistrationForm lang={lang} />
     </>
   );
 }
