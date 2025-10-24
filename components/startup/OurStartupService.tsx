@@ -13,18 +13,21 @@ export default function OurStartupService({ lang }: { lang: string }) {
             </h3>
             <p className="text-gray-600 text-base text-center mb-4 max-w-5xl mx-auto" dangerouslySetInnerHTML={{ __html: t('services.description') }} />
 
-            <div className="grid lg:grid-cols-2 space-x-12 pt-12">
+            <div className="grid lg:grid-cols-2 gap-12 pt-12 items-stretch">
                 <div className="flex flex-col justify-center">
                     <Accordion data={t('services', { returnObjects: true }).serviceDetails} />
                 </div>
+
                 <div className="flex items-center justify-center">
-                    <Image
-                        src={t('services.image.src')}
-                        alt={t('services.image.alt')}
-                        className="mx-auto w-auto rounded-lg"
-                        width={t('services', { returnObjects: true }).image.width}
-                        height={t('services', { returnObjects: true }).image.height}
-                    />
+                    <div className="w-full rounded-lg overflow-hidden h-full relative">
+                        <Image
+                            src={t('services.image.src')}
+                            alt={t('services.image.alt')}
+                            fill
+                            className="object-contain rounded-lg"
+                            sizes="(min-width: 1024px) 400px, 100vw"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
