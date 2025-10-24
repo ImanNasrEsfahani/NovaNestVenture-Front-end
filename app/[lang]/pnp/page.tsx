@@ -1,12 +1,12 @@
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
-import PNPApplicantForm from '@/components/common/form/PNPApplicantForm';
 import Intro from "@/components/common/Intro";
 import WhyStartBusiness from "@/components/pnp/WhyStartBusiness";
 import Requirement from '@/components/pnp/Requirement';
 import OurPNPService from '@/components/pnp/OurPNPService';
 import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
+import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -45,8 +45,9 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <CallToAction text={t('callToAction', { returnObjects: true })} />
             <section className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
-                <PNPApplicantForm
+                <SmallReservationForm
                     lang={lang}
+                    subject='entrepreneur-pnp'
                 />
             </section>
         </>

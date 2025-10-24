@@ -216,6 +216,10 @@
   "investmentCeiling": "Investment Ceiling",
   "investmentCeilingRequired": "Investment Ceiling is required",
   "investmentCeilingPlaceholder": "ex. 100,000$",
+  "SmallReservationForm": {
+    "formTitle": "Free Consulting Reservation Form",
+    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below. Our team will get back to you shortly to schedule your session."
+  },
   "contactForm": {
     "title": "Contact us",
     "subTitle": "We'd love to hear from you",

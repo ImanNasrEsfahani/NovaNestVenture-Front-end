@@ -10,9 +10,7 @@ import {
   EntrepreuneurFormDataType,
   ContactProfileFormDataType,
   ContactFormDataType,
-  StartupApplicantFormDataType,
-  AcademyApplicantFormDataType,
-  PNPApplicantFormDataType,
+  SmallReservationFormDataType,
 } from '@/types/global';
 
 enum Type {
@@ -187,30 +185,8 @@ const initialContactFormData: ContactFormDataType = {
   message: ''
 };
 
-const initialStartupApplicantFormData: StartupApplicantFormDataType = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  number: '',
-};
-
-const initialAccelerationApplicantFormData: AccelerationApplicantFormDataType = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  number: '',
-};
-
-const initialAcademyApplicantFormData: AcademyApplicantFormDataType = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  number: '',
-};
-
-const initialPNPApplicantFormData: PNPApplicantFormDataType = {
-  firstName: '',
-  lastName: '',
+const initialSmallReservationFormData: SmallReservationFormDataType = {
+  name: '',
   email: '',
   number: '',
 };
@@ -225,9 +201,6 @@ export {
   initialFormData,
   initialContactProfileFormData,
   initialContactFormData,
-  initialStartupApplicantFormData,
-  initialAccelerationApplicantFormData,
-  initialAcademyApplicantFormData,
-  initialPNPApplicantFormData,
+  initialSmallReservationFormData,
   initialWorkWithUSFormData
 };

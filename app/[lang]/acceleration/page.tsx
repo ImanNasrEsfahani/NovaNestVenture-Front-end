@@ -2,12 +2,12 @@ import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 // import AccelerationCard from '@/components/acceleration/AccelerationCard';
 import Banner from '@/components/common/Banner';
-import AccelerationApplicantForm from '@/components/common/form/AccelerationApplicantForm';
 import Intro from '@/components/common/Intro';
 import Why from '@/components/acceleration/Why';
 import Process from '@/components/acceleration/Process';
 import Impact from '@/components/acceleration/Impact';
 import CallToAction from '@/components/common/CallToAction';
+import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -46,7 +46,7 @@ export default function Page({
         subtitle={t("Intro", { returnObjects: true }).subtitle}
         description={t("Intro", { returnObjects: true }).description}
       />
-      
+
       <Why lang={lang} />
       <Process lang={lang} />
       <Impact lang={lang} />
@@ -54,7 +54,10 @@ export default function Page({
       <CallToAction text={t("callToAction", { returnObjects: true })} />
 
       <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mb-36">
-        <AccelerationApplicantForm lang={lang} />
+        <SmallReservationForm
+          lang={lang}
+          subject='acceleration'
+        />
       </div>
     </div>
   );

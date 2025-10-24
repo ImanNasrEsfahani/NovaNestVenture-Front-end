@@ -2,11 +2,11 @@ import Banner from '@/components/common/Banner';
 import { getServerTranslation } from 'app/i18n';
 import Image from 'next/image';
 import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
-import StartupApplicantForm from '@/components/common/form/StartupApplicantForm';
 import Intro from '@/components/common/Intro';
 import WhoCanApply from '@/components/startup/WhoCanApply';
 import OurStartupService from '@/components/startup/OurStartupService';
 import Why from '@/components/startup/Why';
+import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
@@ -85,8 +85,9 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </section>
 
       <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100'>
-        <StartupApplicantForm
+        <SmallReservationForm
           lang={lang}
+          subject='startup'
         />
       </section>
 

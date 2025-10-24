@@ -1,14 +1,14 @@
 import { getServerTranslation } from 'app/i18n';
-import AccelerationApplicantFormClient from './AccelerationApplicantFormClient';
+import SmallReservationFormClient from './SmallReservationFormClient';
 
-export default function AcademyApplicantForm({lang}: {lang: string}) {
+export default function SmallReservationForm({lang, subject}: {lang: string, subject: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
   
   // Pass translations as props to client component
   const translations = {
-    formTitle: t("AccelerationApplicantForm", { returnObjects: true }).formTitle,
-    formSubtitle: t("AccelerationApplicantForm", { returnObjects: true }).formSubtitle,
+    formTitle: t("SmallReservationForm.formTitle", { returnObjects: true }),
+    formSubtitle: t("SmallReservationForm.formSubtitle", { returnObjects: true }),
 
     sendingButton: t("sendingButton"),
     ReserveButton: t("ReserveButton"),
@@ -71,6 +71,6 @@ export default function AcademyApplicantForm({lang}: {lang: string}) {
     FieldOfInterestOtherRequired: t('FieldOfInterestOtherRequired', { returnObjects: true }),
     FieldOfInterestOtherPlaceholder: t('FieldOfInterestOtherPlaceholder', { returnObjects: true }),
   };
-  
-  return <AccelerationApplicantFormClient lang={lang} translations={translations} />;
+
+  return <SmallReservationFormClient lang={lang} translations={translations} subject={subject} />;
 }

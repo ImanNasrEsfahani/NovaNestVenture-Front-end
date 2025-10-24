@@ -78,10 +78,9 @@
   "FieldOfExpertOther": "Please specify your field of expertise.",
   "FieldOfExpertOtherRequired": "Field of expertise is required.",
   "FieldOfExpertOtherPlaceholder": "Enter your field of expertise",
-    "FieldOfInterest": "Field of Interest ",
+  "FieldOfInterest": "Field of Interest ",
   "FieldOfInterestRequired": "Field of Interest is Required",
   "FieldOfInterestPlaceholder": "Select a Field of Interest",
-
   "FieldOfInterestData": [
     {
       "value": 0,
@@ -116,11 +115,9 @@
       "label": "Other"
     }
   ],
-
   "FieldOfInterestOther": "Please specify your field of interest.",
   "FieldOfInterestOtherRequired": "Field of interest is required.",
   "FieldOfInterestOtherPlaceholder": "Enter your field of interest",
-  
   "birthDate": "تاریخ تولد",
   "birthDateRequired": "تاریخ تولد الزامی است.",
   "birthDateErrorMessage": "(لطفا تاریخ تولد خود را به درستی وارد کنید(به شکل ۲۰۰۱/۰۲/۱۱",
@@ -206,6 +203,10 @@
   "investmentCeiling": "سقف سرمایه گذاری",
   "investmentCeilingRequired": "این بخش الزامی است.",
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
+  "SmallReservationForm": {
+    "formTitle": "Free Consulting Reservation Form",
+    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below. Our team will get back to you shortly to schedule your session."
+  },
   "contactForm": {
     "title": "با ما تماس بگیرید",
     "subTitle": "We'd love to hear from you",
@@ -223,7 +224,6 @@
     "banner": "شرکای تجاری",
     "formTitle": "فرم شریک تجاری",
     "formSubtitle": "اطلااعات شخصی",
-    
     "title": "Join as a Business Partner (Affiliate)",
     "subtitle": "Collaborate with NovaNest to Empower Entrepreneurs Worldwide",
     "description": [
@@ -370,12 +370,10 @@
     "lng": "en",
     "dir": "ltr",
     "banner": "Join as a Trainee",
-    
     "resumeQuestion": "Do you have an updated CV or resume?",
-    "choseFile":"Choose File",
+    "choseFile": "Choose File",
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Apply as a Trainee",
-
     "title": "Join as a Trainee",
     "subTitle": "Practical mentorship and hands-on startup experience to accelerate your entrepreneurial journey",
     "description": [

@@ -65,14 +65,6 @@ interface ContactFormDataType {
   message: string;
 }
 
-// Define an interface for StartupApplicantFormData form data
-interface StartupApplicantFormDataType {
-  firstName: string;
-  lastName: string;
-  email: string;
-  number: string;
-}
-
 // Define an interface for AccelerationApplicantFormData form data
 interface AccelerationApplicantFormDataType {
   firstName: string;
@@ -81,18 +73,9 @@ interface AccelerationApplicantFormDataType {
   number: string;
 }
 
-// Define an interface for AcademyApplicantFormDataType form data
-interface AcademyApplicantFormDataType {
-  firstName: string;
-  lastName: string;
-  email: string;
-  number: string;
-}
-
-// Define an interface for PNPApplicantFormData form data
-interface PNPApplicantFormDataType {
-  firstName: string;
-  lastName: string;
+// Define an interface for SmallReservationForm form data
+interface SmallReservationFormDataType {
+  name: string;
   email: string;
   number: string;
 }
@@ -424,10 +407,8 @@ export {
   Person,
   ContactProfileFormDataType,
   ContactFormDataType,
-  StartupApplicantFormDataType,
   AccelerationApplicantFormDataType,
-  AcademyApplicantFormDataType,
-  PNPApplicantFormDataType,
+  SmallReservationFormDataType,
   personArrayInterface,
   CompaniesArrayInterface,
   CompanySectionsInterface,

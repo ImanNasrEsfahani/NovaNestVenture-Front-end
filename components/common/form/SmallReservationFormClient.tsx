@@ -1,22 +1,24 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { StartupApplicantFormDataType } from '@/types/global';
-// import GetCsrfToken from '@/utils/get-csrf-token';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
-import { initialStartupApplicantFormData } from '../../../initials/initObjects';
-import { submitContactForm } from '../../../pages/api/contact-us';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 import { useSubmit } from 'stores/dataStore';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import FormTitle from '@/components/common/form/FormTitle';
 
+import { SmallReservationFormDataType } from '@/types/global';
+import { initialSmallReservationFormData } from '../../../initials/initObjects';
+import { SubmitSmallReservationForm } from '../../../pages/api/small-reservation';
+
 interface Translations {
   formTitle: string;
   formSubtitle: string;
+
   sendingButton: string;
   ReserveButton: string;
   sendButton: string;
+
   successMessage: string;
   failedMessage: string;
 
@@ -78,17 +80,19 @@ interface Translations {
 interface Props {
   lang: string;
   translations: Translations;
+  subject: string;
 }
 
-export default function StartupApplicantFormClient({ lang, translations }: Props) {
+export default function SmallReservationFormClient({ lang, translations, subject }: Props) {
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<StartupApplicantFormDataType>({
+  } = useForm<SmallReservationFormDataType>({
     mode: 'onBlur',
-    defaultValues: initialStartupApplicantFormData
+    defaultValues: initialSmallReservationFormData
   });
 
   const {
@@ -113,7 +117,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
   //   fetchCsrfToken();
   // }, []);
 
-  const onSubmit = async (formData: StartupApplicantFormDataType) => {
+  const onSubmit = async (formData: SmallReservationFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -129,14 +133,14 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
     });
 
     // Send the form data to the API.
-    submitContactForm(sendFormData)
+    SubmitSmallReservationForm(sendFormData)
       .then((response) => {
         console.log(response);
 
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialStartupApplicantFormData); // Reset the form after successful submission
+        reset(initialSmallReservationFormData); // Reset the form after successful submission
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -145,7 +149,7 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
         handleNotifChange(true);
         handleSendChange(false);
         handleSuccessChange(false);
-        reset(initialStartupApplicantFormData);
+        reset(initialSmallReservationFormData);
 
         setTimeout(() => {
           handleNotifChange(false);
@@ -159,14 +163,9 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
   }));
 
   return (
-    <div id="startup-application-form" className="max-w-responsive mx-auto">
+    <div className="max-w-responsive mx-auto">
       <div className="h-[75px] md:h-[125px]">
         <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
-      </div>
-
-      {/* CTA */}
-      <div className="pb-4 max-w-responsive mx-auto text-center">
-        <h3 className="text-xl"></h3>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -188,7 +187,6 @@ export default function StartupApplicantFormClient({ lang, translations }: Props
             }}
             noLabel={false}
             translations={{
-
               firstName: translations.firstName,
               firstNameRequired: translations.firstNameRequired,
               firstNamePlaceholder: translations.firstNamePlaceholder,
