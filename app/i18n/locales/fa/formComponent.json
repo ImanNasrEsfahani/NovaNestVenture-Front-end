@@ -420,17 +420,63 @@
     "dir": "ltr",
     "banner": "Join as a Trainee",
     "resumeQuestion": "Do you have an updated CV or resume?",
-    "choseFile": "Choose File",
+    "choseFile":"Choose File",
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Apply as a Trainee",
-    "title": "Join as a Trainee",
+
+    "title": "Join NovaNest as a Trainee",
     "subTitle": "Apply to gain hands-on experience and learn from experienced mentors in the NovaNest team.",
     "formDescription": [
       "Our team will review your application and contact you if your profile aligns with available opportunities.",
       "Trainees will have the chance to learn, contribute, and grow within a dynamic startup environment.",
       "Completing this form does not guarantee placement; it's an opportunity to get acquainted and explore growth opportunities."
     ],
-    "intro": "By Joining NovaNest as a Trainee, you will gain unique Opportunities",
+    "accordion": [
+      {
+        "header": "Financial Benefits",
+        "content": [
+          "Free participation in specialized crash courses offered by the organization",
+          "Opportunity for bonuses or joining NavaNest’s core team after successful completion of the program"
+        ]
+      },
+      {
+        "header": "Recognition and Prestige",
+        "content": [
+          "Official certificate upon completion of the internship program",
+          "Chance to be introduced to an international network of entrepreneurs and investors"
+        ]
+      },
+      {
+        "header": "Professional Growth & Learning",
+        "content": [
+          "Learning practical business skills",
+          "Exposure to and training on professional tools such as Trello, Google Workspace, and Microsoft Office",
+          "Mentorship from experienced internal and external mentors"
+        ]
+      },
+      {
+        "header": "Networking Expansion",
+        "content": [
+          "Collaboration with successful entrepreneurs and investors",
+          "Working on international projects and gaining global-level experience"
+        ]
+      },
+      {
+        "header": "Personal Brand Development",
+        "content": [
+          "Opportunity to grow and advance within an international team",
+          "Experience in a dynamic, young, and innovative environment that adds value to the personal brand and resume"
+        ]
+      },
+      {
+        "header": "Real and Social Impact",
+        "content": [
+          "Participation in real international projects with tangible outcomes",
+          "Opportunity to create a positive impact and understand your role in a team’s and society’s success"
+        ]
+      }
+    ],
+    "intro": "By Joing NovaNest as a Trainee, you will gain unique Opportunities",
     "features": [
       "Real-world learning alongside mentors and startup teams",
       "Hands-on experience with innovative projects",
