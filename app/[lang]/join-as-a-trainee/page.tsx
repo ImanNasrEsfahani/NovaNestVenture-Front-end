@@ -42,12 +42,20 @@ export default function TraineePage({
       <Intro
         title={t("joinAsATrainee.title", { returnObjects: true })}
         subtitle={t("joinAsATrainee.subTitle", { returnObjects: true })}
-        description={(t('joinAsATrainee.description', { returnObjects: true }) as string[] || [])}
+        description=""
       />
 
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 
       <TraineeRegistrationForm lang={lang} />
+
+      <div className="w-full max-w-responsive mx-auto pt-6 pb-9">
+        {(t('joinAsATrainee.formDescription', { returnObjects: true }) as string[] || []).map((paragraph, index) => (
+          <p key={index} className="text-sm font-normal text-gray-800 font-header">
+            * {paragraph}
+          </p>
+        ))};
+      </div>
     </>
   );
 }

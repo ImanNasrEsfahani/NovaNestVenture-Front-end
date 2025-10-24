@@ -90,6 +90,8 @@ export default function TraineeRegistrationForm({lang}: {lang: string}) {
     TellUsAboutYourselfPlaceholder: t('TellUsAboutYourselfPlaceholder'),
     TellUsAboutYourselfRequired: t('TellUsAboutYourselfRequired'),
     TellUsAboutYourselfErrorMessage: t('TellUsAboutYourselfErrorMessage'),
+
+    formDescription: t('joinAsATrainee.formDescription', { returnObjects: true }) as string[] || [],
   };
 
   return <TraineeRegistrationFormClient lang={lang} translations={translations} />;

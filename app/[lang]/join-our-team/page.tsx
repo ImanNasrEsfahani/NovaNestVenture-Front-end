@@ -62,13 +62,13 @@ export default function ApplyFormPage({
         description={t('workWithUS', { returnObjects: true }).description}
       />
 
-      <div className="bg-whiteGold rounded-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
+      <div className="w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
         <p className="text-lg text-grayDark text-left leading-relaxed">
           By joining the NovaNest Professional Team, you will gain unique opportunities:
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-12 py-12 items-stretch">
+      <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 gap-12 py-12 items-stretch">
         <div className="flex flex-col justify-center">
           <Accordions data={accordionData} />
         </div>

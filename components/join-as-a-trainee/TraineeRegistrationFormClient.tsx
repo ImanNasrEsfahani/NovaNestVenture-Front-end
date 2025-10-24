@@ -101,6 +101,8 @@ interface Translations {
   TellUsAboutYourselfPlaceholder: string;
   TellUsAboutYourselfRequired: string;
   TellUsAboutYourselfErrorMessage: string;
+
+  formDescription: string[];
 }
 
 interface Props {
@@ -218,7 +220,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
 
   return (
     <>
-      <div className="max-w-responsive mx-auto pt-16">
+      <div className="max-w-responsive mx-auto pt-9">
         <div className="h-[75px] md:h-[125px]">
           <FormTitle
             formTitle={translations.formTitle}
@@ -226,7 +228,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-          <div className="grid grid-cols-1 gap-6 mt-20 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 mt-9 md:grid-cols-2 xl:grid-cols-3">
             <PersonalInfoInput
               register={register}
               errors={errors}
@@ -376,8 +378,15 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             </fieldset>
           </div>
 
+          <div className="w-full max-w-responsive mx-auto px-2 md:px-9 pt-6 pb-6">
+            {translations.formDescription.map((paragraph, index) => (
+              <p key={index} className="text-sm font-normal text-gray-800 font-header">
+                * {paragraph}
+              </p>
+            ))};
+          </div>
 
-          <div className="mx-auto pb-4 mt-20">
+          <div className="mx-auto pb-4">
             <ButtonRefactor
               type="submit"
               text={send ? translations.sendingButton : translations.sendButton}
