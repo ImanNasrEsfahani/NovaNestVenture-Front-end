@@ -4,6 +4,15 @@ export enum Type {
   SaleDevelopment = 'SaleDevelopment'
 }
 
+interface MagazineData {
+  title: string;
+  description: string | TrustedHTML;
+  thumbnail: string;
+  slug: string;
+  date: string;
+  file: string;
+}
+
 interface Person {
   image: string;
   position: string;
@@ -251,6 +260,7 @@ interface LinksInterface {
 
 export {
   Person,
+  MagazineData,
   ContactProfileFormDataType,
   ContactFormDataType,
   SmallReservationFormDataType,
