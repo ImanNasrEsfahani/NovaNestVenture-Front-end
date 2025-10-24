@@ -6,7 +6,7 @@
   "formSubtitle": "اطلاعات شخصی",
 
   "title": "Join NovaNest as a Mentor",
-  "subtitle": "This form is an opportunity to share your skills, experience, and interest in mentoring the next generation of entrepreneurs with the NovaNest team.",
+  "subtitle": "Share your skills, experience, and interest in mentoring the next generation of entrepreneurs",
   "formDescription": [
     "Our team will review your submission and contact you if an initial conversation is appropriate.",
     "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
@@ -70,5 +70,5 @@
       ]
     }
   ],
-  "callToAction": "Join NovaNest mentors today and share your experience with the next generation of entrepreneurs."
+  "callToAction": "Share your expertise and guide others by filling out the form below."
 }

@@ -291,7 +291,7 @@
     "Internship": "Internship",
     "UniversityInternship": "UniversityInternship",
     "title": "Join NovaNest Professional Team",
-    "subtitle": "Together with you and a network of entrepreneurs and investors, we build a successful future for startups and businesses.",
+    "subtitle": "Together with you and a network of entrepreneurs, we build a successful future for startups and businesses.",
     "formDescription": [
       "Our team will review your submission and contact you if an initial conversation is appropriate.",
       "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
@@ -352,7 +352,7 @@
         ]
       }
     ],
-    "callToAction": "Join the NovaNest Professional Team today and bring your experience, expertise, and creativity to help shape the next generation of startups."
+    "callToAction": "Become a part of our innovative team by completing the form below."
   },
   "investorForm": {
     "lng": "en",
@@ -403,6 +403,9 @@
       "Trainees will have the chance to learn, contribute, and grow within a dynamic startup environment.",
       "Completing this form does not guarantee placement; it's an opportunity to get acquainted and explore growth opportunities."
     ],
+    "joinAsATrainee": [
+
+    ],
     "intro": "By Joing NovaNest as a Trainee, you will gain unique Opportunities",
     "features": [
       "Real-world learning alongside mentors and startup teams",
@@ -413,9 +416,7 @@
       "Certificate of completion and potential career pathways within NovaNest",
       "Access to exclusive events and resources"
     ],
-    "callToAction": [
-      "Join our team — work on innovative projects and build your career path."
-    ]
+    "callToAction": "Start your learning journey with us by submitting the form below."
   },
   "startUp": {
     "lng": "en",

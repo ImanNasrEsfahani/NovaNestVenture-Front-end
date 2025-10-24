@@ -46,9 +46,28 @@ export default function TraineePage({
       />
 
       {/* Introduction Text */}
-      <div className='bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
-        <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
+      <div className='w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
+        <p className='text-lg text-grayDark leading-relaxed'>{t('joinAsATrainee.intro')}</p>
       </div>
+
+{/* 
+      <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 gap-12 py-12 items-stretch">
+        <div className="flex flex-col justify-center">
+          <Accordions data={accordionData} />
+        </div>
+
+        <div className="flex items-center justify-center">
+          <div className="w-full rounded-lg overflow-hidden h-full relative">
+            <Image
+              src="/static/images/join-our-team-form/services.png"
+              alt="Services"
+              fill
+              className="object-contain rounded-lg"
+              sizes="(min-width: 1024px) 400px, 100vw"
+            />
+          </div>
+        </div>
+      </div> */}
 
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 

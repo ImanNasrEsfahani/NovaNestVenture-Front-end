@@ -62,10 +62,9 @@ export default function ApplyFormPage({
         description=""
       />
 
-      <div className="w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
-        <p className="text-lg text-grayDark text-left leading-relaxed">
-          By joining the NovaNest Professional Team, you will gain unique opportunities:
-        </p>
+      {/* Introduction Text */}
+      <div className='w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
+        <p className='text-lg text-grayDark leading-relaxed'>By joining the NovaNest Professional Team, you will gain unique opportunities:</p>
       </div>
 
       <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 gap-12 py-12 items-stretch">

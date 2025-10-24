@@ -15,7 +15,7 @@ export default function Intro({
         <div className="w-full max-w-responsive mx-auto flex justify-center items-center pt-16 pb-9">
             <div className="max-w-[75%] mx-auto text-center">
                 {title && (
-                    <h1 className="text-3xl font-header md:text-4xl font-bold mb-6 text-gray-800">
+                    <h1 className="text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">
                         {title}
                     </h1>
                 )}

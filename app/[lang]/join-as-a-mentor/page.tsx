@@ -47,44 +47,49 @@ export default function JoinAsMentorPage({
 
   return (
     <div>
-      <Banner
-        image="/static/images/work-with-us/header.png"
-        title={t('banner')}
-        lang={lang}
+      <div className="hidden md:inline">
+        <Banner
+          image="/static/images/work-with-us/header.png"
+          title={t('banner')}
+          lang={lang}
+        />
+      </div>
+      <div className="inline md:hidden">
+        <Banner
+          image="/static/images/work-with-us/header.png"
+          title={t('banner')}
+          lang={lang}
+        />
+      </div>
+
+      <Intro
+        title={t('title', { returnObjects: true })}
+        subtitle={t('subtitle', { returnObjects: true })}
+        description=""
       />
 
-      {/* Mentor Benefits Section */}
-      <div className='max-w-responsive mx-auto px-4 pt-12 md:pt-16'>
-        <Intro
-          title={t('title', { returnObjects: true })}
-          subtitle={t('subtitle', { returnObjects: true })}
-          description=""
-        />
-
-        {/* Introduction Text */}
-        <div className='bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
-          <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 space-x-12py-12">
-          <div className="flex flex-col justify-center">
-            <Accordions data={accordionData} />
-          </div>
-          <div className="flex items-center justify-center">
-            <Image
-              src="/static/images/join-as-a-mentor/services.png"
-              alt="Services"
-              className="mx-auto w-auto rounded-lg"
-              width={1400}
-              height={900}
-            />
-          </div>
-        </div>
-
-
-        <CallToAction text={t('callToAction')} />
-
+      {/* Introduction Text */}
+      <div className='w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
+        <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
       </div>
+
+      <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 space-x-12py-12">
+        <div className="flex flex-col justify-center">
+          <Accordions data={accordionData} />
+        </div>
+        <div className="flex items-center justify-center">
+          <Image
+            src="/static/images/join-as-a-mentor/services.png"
+            alt="Services"
+            className="mx-auto w-auto rounded-lg"
+            width={1400}
+            height={900}
+          />
+        </div>
+      </div>
+
+
+      <CallToAction text={t('callToAction')} />
 
       {/* Form Section */}
       <div className='max-w-responsive mx-auto'>
