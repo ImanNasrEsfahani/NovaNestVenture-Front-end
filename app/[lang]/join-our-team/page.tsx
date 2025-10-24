@@ -59,7 +59,8 @@ export default function ApplyFormPage({
       <Intro
         title={t('workWithUS', { returnObjects: true }).title}
         subtitle={t('workWithUS', { returnObjects: true }).subtitle}
-        description={t('workWithUS', { returnObjects: true }).description}
+        // description={t('workWithUS', { returnObjects: true }).description}
+        description=""
       />
 
       <div className="w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-6 md:p-8 mb-10 border-l-4 border-primary">
