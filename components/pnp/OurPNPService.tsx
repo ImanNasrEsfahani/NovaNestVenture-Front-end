@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Accordion from '@/components/startup/Accordions';
 import { getServerTranslation } from 'app/i18n';
 
-export default function OurService({lang}: {lang: string}) {
+export default function OurPNPService({lang}: {lang: string}) {
     const { t } = getServerTranslation(lang, 'pnp');
 
 

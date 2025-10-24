@@ -5,7 +5,7 @@ import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
 import StartupApplicantForm from '@/components/common/form/StartupApplicantForm';
 import Intro from '@/components/common/Intro';
 import WhoCanApply from '@/components/startup/WhoCanApply';
-import OurServices from '@/components/startup/OurServices';
+import OurStartupService from '@/components/startup/OurStartupService';
 import Why from '@/components/startup/Why';
 
 
@@ -38,7 +38,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       <WhoCanApply lang={lang} />
 
-      <OurServices lang={lang} />
+      <OurStartupService lang={lang} />
 
       <Why lang={lang} />
 

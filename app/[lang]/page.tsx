@@ -13,9 +13,9 @@ import { getServerTranslation } from 'app/i18n';
 
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-import OurServices from '@/components/startup/OurServices';
+import OurStartupService from '@/components/startup/OurStartupService';
 import Intro from "@/components/common/Intro";
-import OurService from '@/components/pnp/OurService';
+import OurPNPService from '@/components/pnp/OurPNPService';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture',
@@ -49,7 +49,7 @@ export default function Page({ params }: { params: { lang: string } }) {
           description={tStartup('whatIsStartupVisa.description')}
         />
 
-        <OurServices lang={params.lang} />
+        <OurStartupService lang={params.lang} />
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/startup/#startup-application-form`} />
         </div>
@@ -60,7 +60,7 @@ export default function Page({ params }: { params: { lang: string } }) {
           description={tPNP('intro', { returnObjects: true }).description}
         />
 
-        <OurService lang={params.lang} />
+        <OurPNPService lang={params.lang} />
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/pnp/#pnp-application-form`} />
         </div>

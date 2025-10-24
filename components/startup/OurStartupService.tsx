@@ -3,7 +3,7 @@ import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import { getServerTranslation } from 'app/i18n';
 
-export default function OurServices({ lang }: { lang: string }) {
+export default function OurStartupService({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'startUp');
 
     return (

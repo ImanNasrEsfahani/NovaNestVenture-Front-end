@@ -4,7 +4,7 @@ import PNPApplicantForm from '@/components/common/form/PNPApplicantForm';
 import Intro from "@/components/common/Intro";
 import WhyStartBusiness from "@/components/pnp/WhyStartBusiness";
 import Requirement from '@/components/pnp/Requirement';
-import OurService from '@/components/pnp/OurService';
+import OurPNPService from '@/components/pnp/OurPNPService';
 import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
 
@@ -39,7 +39,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Requirement lang={lang} />
 
-            <OurService lang={lang} />
+            <OurPNPService lang={lang} />
 
             <Why lang={lang} />
 
