@@ -27,24 +27,6 @@ interface Person {
   about: string[];
 };
 
-// Define an interface for business partnership form data
-interface BusinessPartnerShipFormData {
-  fullName: string;
-  email: string;
-  streetAddress: string;
-  companyName: string;
-  phoneNumber: string;
-  countryOfResidence: string; // Typo: Should be "countryOfResidence"
-  streetAddressLine2: string;
-  investmentCeiling: string;
-  birthTime: Date; // Typo: Should be "birthDate"
-  provinceOfResidence: string;
-  zipCode: number;
-  yourPositionInTeam: string;
-  preferredInvestment: string;
-  wayKnowUs: string; // Typo: Should be "wayToKnowUs"
-}
-
 // Define an interface for contact form in each profile page
 interface ContactProfileFormDataType {
   firstName: string;
@@ -63,14 +45,6 @@ interface ContactFormDataType {
   phoneNumber: string;
   subject: string;
   message: string;
-}
-
-// Define an interface for AccelerationApplicantFormData form data
-interface AccelerationApplicantFormDataType {
-  firstName: string;
-  lastName: string;
-  email: string;
-  number: string;
 }
 
 // Define an interface for SmallReservationForm form data
@@ -222,27 +196,6 @@ interface StartupsFormDataType {
   howDidYouKnowUs: string;
 }
 
-interface EntrepreuneurFormDataType {
-  firstName: string;
-  lastName: string;
-  email: string;
-  birthDate: Date | undefined;
-  countryOfResidence: string;
-  provinceOfResidence: string;
-  companyName: string;
-  investmentCeiling: string;
-  preferredAreas: string;
-  howDidYouKnowUs: string;
-  // phone: string;
-  // website: string;
-  // fieldOfProfessional: string;
-}
-
-interface LoginFormData {
-  email: string;
-  password: string;
-}
-
 interface DecodedToken {
   exp: number;
   iat: number;
@@ -254,45 +207,9 @@ interface DecodedToken {
   jwt: string;
 }
 
-interface TableData {
-  first_name: string;
-  last_name: string;
-  start_time: string;
-  end_time: string;
-  status: string;
-  employerName: string;
-  employeeName: string;
-  typeOfLeave: string;
-  date: string;
-  time: string;
-}
-
-interface MagazineData {
-  title: string;
-  description: string | TrustedHTML;
-  thumbnail: string;
-  slug: string;
-  date: string;
-  file: string;
-}
-
 interface imageList {
   src: string;
   alt: string;
-}
-
-interface personArrayInterface {
-  image: string;
-  position: string;
-  name: string;
-  linkedIn: string;
-  category: string;
-}
-
-interface CompaniesArrayInterface {
-  name: string;
-  logo: string;
-  link: string;
 }
 
 interface CompanySectionsInterface {
@@ -308,17 +225,6 @@ interface CompanySectionsInterface {
   buttonText: string;
 }
 
-interface WorkFieldsInterface {
-  titleEN: string;
-  titleFA: string;
-  image: string;
-}
-
-interface ServicesInterface {
-  title: string;
-  image: string;
-}
-
 interface SportsInterface {
   title: string;
   image: string;
@@ -326,37 +232,13 @@ interface SportsInterface {
   date: string;
 }
 
-interface StartUpsInterface {
-  image: string;
-  titleEN: string;
-  titleFA: string;
-  descriptionEN: string;
-  descriptionFA: string;
-  link: string;
-}
-
 interface LogosInterface {
   number: number;
   alt: string;
 }
 
-interface HomeCardsLeftInterface {
-  titles: string;
-  text: string;
-  addedClass?: string;
-  link: string;
-  buttonText: string;
-}
-
 interface ImagesInterface {
   src: string;
-}
-
-interface CoursesInterface {
-  title: string;
-  image: string;
-  date: string;
-  active: boolean;
 }
 
 interface LinksInterface {
@@ -367,75 +249,21 @@ interface LinksInterface {
   instagram: string;
 }
 
-interface AboutUsDataInterface {
-  image: string;
-  name: string;
-  position: string;
-  links: LinksInterface;
-}
-
-interface AboutUsCardProps {
-  title: string;
-  text: string;
-  image: string;
-  reverse: boolean;
-  description: string;
-  link: string;
-}
-
-interface PreparationListInterface {
-  value: string;
-  label: string;
-}
-
-interface CountriesDataInterface {
-  value: string;
-  text: string;
-}
-
-interface translationCard {
-  title: 'Investment';
-  text: string;
-  reverse: boolean;
-  show: boolean;
-  index: number;
-  link: string;
-  addedClass: string;
-}
-
 export {
   Person,
   ContactProfileFormDataType,
   ContactFormDataType,
-  AccelerationApplicantFormDataType,
   SmallReservationFormDataType,
-  personArrayInterface,
-  CompaniesArrayInterface,
   CompanySectionsInterface,
-  CountriesDataInterface,
-  ServicesInterface,
-  AboutUsCardProps,
   ImagesInterface,
-  WorkFieldsInterface,
   SportsInterface,
-  AboutUsDataInterface,
-  StartUpsInterface,
-  CoursesInterface,
   LogosInterface,
-  PreparationListInterface,
-  HomeCardsLeftInterface,
-  BusinessPartnerShipFormData,
   StartupsFormDataType,
   JoinAsaPartnerFormDataType,
   InvestorRegistrationFormDataType,
   MentorRegistrationFormDataType,
   JoinOurTeamFormDataType,
   TraineeRegistrationFormDataType,
-  EntrepreuneurFormDataType,
-  LoginFormData,
   DecodedToken,
-  TableData,
-  MagazineData,
-  translationCard,
   WorkWithUSFormDataType,
 };

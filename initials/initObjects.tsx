@@ -1,13 +1,11 @@
 import {
   StartupsFormDataType,
-  AccelerationApplicantFormDataType,
   WorkWithUSFormDataType,
   JoinAsaPartnerFormDataType,
   JoinOurTeamFormDataType,
   TraineeRegistrationFormDataType,
   InvestorRegistrationFormDataType,
   MentorRegistrationFormDataType,
-  EntrepreuneurFormDataType,
   ContactProfileFormDataType,
   ContactFormDataType,
   SmallReservationFormDataType,
@@ -154,19 +152,6 @@ const initialWorkWithUSFormData: WorkWithUSFormDataType = {
   langLevel: ''
 };
 
-const initialFormData: EntrepreuneurFormDataType = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  companyName: '',
-  birthDate: undefined,
-  countryOfResidence: '',
-  provinceOfResidence: '',
-  investmentCeiling: '',
-  preferredAreas: '',
-  howDidYouKnowUs: ''
-};
-
 const initialContactProfileFormData: ContactProfileFormDataType = {
   firstName: '',
   lastName: '',
@@ -198,9 +183,8 @@ export {
   initialInvestorRegistrationFormData,
   initialMentorRegistrationFormData,
   initialTraineeRegistrationFormData,
-  initialFormData,
+  initialWorkWithUSFormData,
   initialContactProfileFormData,
   initialContactFormData,
-  initialSmallReservationFormData,
-  initialWorkWithUSFormData
+  initialSmallReservationFormData
 };
