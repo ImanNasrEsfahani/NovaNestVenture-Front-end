@@ -123,29 +123,11 @@ export default function Page({
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12">
                     <div className="space-y-4">
-                        {left.map((item: any, idx: number) => (
-                            <details key={idx} className="bg-white rounded-lg p-4 border shadow-sm">
-                                <summary className="font-medium cursor-pointer">{item.header}</summary>
-                                <div className="mt-3 text-gray-700 space-y-2">
-                                    {(Array.isArray(item.content) ? item.content : [String(item.content)]).map((c: string, i2: number) => (
-                                        <p key={i2} className="text-sm leading-relaxed">{c}</p>
-                                    ))}
-                                </div>
-                            </details>
-                        ))}
+                        <Accordion data={left} />
                     </div>
 
                     <div className="space-y-4">
-                        {right.map((item: any, idx: number) => (
-                            <details key={idx} className="bg-white rounded-lg p-4 border shadow-sm">
-                                <summary className="font-medium cursor-pointer">{item.header}</summary>
-                                <div className="mt-3 text-gray-700 space-y-2">
-                                    {(Array.isArray(item.content) ? item.content : [String(item.content)]).map((c: string, i2: number) => (
-                                        <p key={i2} className="text-sm leading-relaxed">{c}</p>
-                                    ))}
-                                </div>
-                            </details>
-                        ))}
+                        <Accordion data={right} />
                     </div>
                 </div>
             </section>
