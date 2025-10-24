@@ -286,9 +286,13 @@
     "professionalConsultation": "professional Consultation",
     "Internship": "Internship",
     "UniversityInternship": "UniversityInternship",
-    "title": "Join the NovaNest Professional Team",
-    "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
-    "description": "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success.",
+    "title": "Become a Mentor for the Next Generation of Entrepreneurs",
+    "subtitle": "This form is an opportunity to share your skills, experience, and interest in mentoring the next generation of entrepreneurs with the NovaNest team.",
+    "description": [
+      "Our team will review your submission and contact you if an initial conversation is appropriate.",
+      "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
+      "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
+    ],
     "benefits": [
       {
         "id": "financial",
@@ -388,10 +392,12 @@
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Apply as a Trainee",
 
-    "title": "Join as a Trainee",
-    "subTitle": "Practical mentorship and hands-on startup experience to accelerate your entrepreneurial journey",
+    "title": "Join NovaNest as a Trainee",
+    "subTitle": "Apply to gain hands-on experience and learn from experienced mentors in the NovaNest team. This program helps you develop practical skills in startup growth and entrepreneurship. Detailed Information:",
     "description": [
-      "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader."
+      "•\tOur team will review your application and contact you if your profile aligns with available opportunities.",
+      "•\tTrainees will have the chance to learn, contribute, and grow within a dynamic startup environment.",
+      "•\tCompleting this form does not guarantee placement; it's an opportunity to get acquainted and explore growth opportunities."
     ],
     "features": [
       "Real-world learning alongside mentors and startup teams",
