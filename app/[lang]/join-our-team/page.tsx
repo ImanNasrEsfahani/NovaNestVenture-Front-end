@@ -8,7 +8,7 @@ import CallToAction from '@/components/common/CallToAction';
 import Intro from "@/components/common/Intro";
 
 export const metadata: Metadata = {
-  title: 'NovaNest Venture | Jobs',
+  title: 'NovaNest Venture | Join as a Team Member',
   description:
     'Explore the NovaNest Venture Apply Form and take the first step towards exciting opportunities. Share your qualifications and interests with us as you apply for roles within our organization. Join us in shaping a brighter future together.'
 };
