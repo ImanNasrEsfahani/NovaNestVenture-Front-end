@@ -274,7 +274,7 @@
     "Professor": "استاد دانشگاه",
     "hiring": "استخدام",
     "professionalConsultation": "مشاوره تخصصی",
-    "title": "Join the NovaNest Professional Team",
+    "title": "Join NovaNest Professional Team",
     "subtitle": "Become a valued member of our expert network and contribute to the success of innovative startups.",
     "formDescription": [
       "Our team will review your submission and contact you if an initial conversation is appropriate.",
@@ -379,9 +379,11 @@
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Apply as a Trainee",
     "title": "Join as a Trainee",
-    "subTitle": "Practical mentorship and hands-on startup experience to accelerate your entrepreneurial journey",
+    "subTitle": "Apply to gain hands-on experience and learn from experienced mentors in the NovaNest team.",
     "formDescription": [
-      "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader."
+      "Our team will review your application and contact you if your profile aligns with available opportunities.",
+      "Trainees will have the chance to learn, contribute, and grow within a dynamic startup environment.",
+      "Completing this form does not guarantee placement; it's an opportunity to get acquainted and explore growth opportunities."
     ],
     "features": [
       "Real-world learning alongside mentors and startup teams",
