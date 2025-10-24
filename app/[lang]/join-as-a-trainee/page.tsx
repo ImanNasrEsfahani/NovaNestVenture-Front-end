@@ -45,6 +45,11 @@ export default function TraineePage({
         description=""
       />
 
+      {/* Introduction Text */}
+      <div className='bg-whiteGold rounded-lg p-8 mb-12 border-l-4 border-primary'>
+        <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
+      </div>
+
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 
       <TraineeRegistrationForm lang={lang} />
