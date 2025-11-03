@@ -21,6 +21,11 @@ export default function Footer({
 
   const { t } = getServerTranslation(lang, "footer")
 
+  const exploreItems = (t('explore', { returnObjects: true })?.text ?? []) as Array<{ title: string; link: string }>;
+  const formItems = (t('forms', { returnObjects: true })?.text ?? []) as Array<{ title: string; link: string }>;
+  const contactItems = (t('contact', { returnObjects: true })?.text ?? []) as Array<{ type: 'text' | 'link'; title: string; link?: string }>;
+
+
   function GetYear() {
     const currentYear = new Date().getFullYear();
     return currentYear;
@@ -55,7 +60,7 @@ export default function Footer({
           <div className="text-xl font-medium text-primary pb-2">
             {t('explore.title')}
           </div>
-          {(t('explore', { returnObjects: true }).text as Array<{ title: string; link: string }>).map((item, index) => (
+          {exploreItems.map((item, index) => (
             <Link
               key={index}
               href={`${base}${item.link}`}
@@ -67,7 +72,7 @@ export default function Footer({
         </div>
         <div className="mt-5 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
           <div className="text-xl font-medium text-primary pb-2">{t('forms', { returnObjects: true }).title}</div>
-          {(t('forms', { returnObjects: true }).text as Array<{ title: string; link: string }>).map((item, index) => (
+          {formItems.map((item, index) => (
             <Link
               key={index}
               href={`${base}${item.link}`}
@@ -82,21 +87,20 @@ export default function Footer({
             {t('contact', { returnObjects: true }).title}
           </div>
 
-          {(t('contact', { returnObjects: true }).text as Array<{ type: 'text' | 'link'; title: string; link?: string }>).map(
-            (item, index) =>
-              item.type === 'link' && item.link ? (
-                <Link
-                  key={item.title}
-                  href={item.link}
-                  className={`hover:text-primary ${index > 0 ? 'pt-1' : ''} `}
-                >
-                  {item.title}
-                </Link>
-              ) : (
-                <div key={item.title} className={`${index > 0 ? 'pt-1' : ''}`}>
-                  {item.title}
-                </div>
-              )
+          {contactItems.map((item, index) =>
+            item.type === 'link' && item.link ? (
+              <Link
+                key={item.title}
+                href={item.link}
+                className={`hover:text-primary ${index > 0 ? 'pt-1' : ''} `}
+              >
+                {item.title}
+              </Link>
+            ) : (
+              <div key={item.title} className={`${index > 0 ? 'pt-1' : ''}`}>
+                {item.title}
+              </div>
+            )
           )}
         </div>
       </div>
