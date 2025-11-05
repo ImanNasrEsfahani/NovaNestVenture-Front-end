@@ -248,11 +248,16 @@
         "زامبیا",
         "جزایر آلند"
     ],
-    "countryName":"یک کشور را انتخاب کنید:",
-    "countryNameRequired":"کشور شما الزامی است",
-    "countryNamePlaceholder":"یک کشور را انتخاب کنید:",
-
-    "provinceOfResidence":"شهر محل سکونت",
-    "provinceOfResidenceRequired":"شهر محل سکونت الزامی است",
-    "provinceOfResidencePlaceholder":"شهر محل سکونت خود را وارد کنید"
+    "countryName": "یک کشور را انتخاب کنید:",
+    "countryNameRequired": "کشور شما الزامی است",
+    "countryNamePlaceholder": "یک کشور را انتخاب کنید:",
+    "provinceOfResidence": "شهر محل سکونت",
+    "provinceOfResidenceRequired": "شهر محل سکونت الزامی است",
+    "provinceOfResidencePlaceholder": "شهر محل سکونت خود را وارد کنید",
+    "countryOfResidence": "Country of Residence",
+    "countryOfResidencePlaceholder": "Iran",
+    "countryOfResidenceRequired": "Country of Residence is required",
+    "cityOfResidence": "City of Residence",
+    "cityOfResidencePlaceholder": "Vancouver",
+    "cityOfResidenceRequired": "City Of Residence is required"
 }

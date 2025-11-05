@@ -274,6 +274,8 @@
     "Professor": "استاد دانشگاه",
     "hiring": "استخدام",
     "professionalConsultation": "مشاوره تخصصی",
+    "Internship": "Internship",
+    "UniversityInternship": "UniversityInternship",
     "title": "Join NovaNest Professional Team",
     "subtitle": "Together with you and a network of entrepreneurs, we build a successful future for startups and businesses.",
     "formDescription": [
@@ -420,10 +422,9 @@
     "dir": "ltr",
     "banner": "Join as a Trainee",
     "resumeQuestion": "Do you have an updated CV or resume?",
-    "choseFile":"Choose File",
+    "choseFile": "Choose File",
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Apply as a Trainee",
-
     "title": "Join NovaNest as a Trainee",
     "subTitle": "Apply to gain hands-on experience and learn from experienced mentors in the NovaNest team.",
     "formDescription": [
@@ -754,11 +755,7 @@
   },
   "AccelerationApplicantForm": {
     "formTitle": "Apply for Acceleration Program",
-    "formSubtitle": "Let’s Talk About Your Journey",
-    "formDescription": [
-      "If you are an entrepreneur, a business owner, or have an innovative startup idea and want to accelerate your growth, we are here to support you on your journey toward global success.",
-      "Book your free consultation today and let’s start this path together."
-    ]
+    "formSubtitle": "Let’s Talk About Your Journey"
   },
   "AcademyApplicantForm": {
     "formTitle": "Apply for Academy Program",
@@ -793,6 +790,10 @@
       "good": "حوب",
       "expert": "عالی"
     }
+  },
+  "ContactProfileForm": {
+    "formTitle": "Contact Profile Form",
+    "formSubtitle": "Personal Information"
   },
   "MVP": "MVP",
   "FirstSale": "فروش اولیه",

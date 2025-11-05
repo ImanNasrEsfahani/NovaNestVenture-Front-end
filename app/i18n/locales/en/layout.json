@@ -26,17 +26,20 @@
     {
       "label": "About us",
       "type": "link",
-      "href": "en/about-us"
+      "href": "en/about-us",
+      "submenuItems": []
     },
     {
       "label": "Our team",
       "type": "link",
-      "href": "en/our-team"
+      "href": "en/our-team",
+      "submenuItems": []
     },
     {
       "label": "Academy",
       "type": "link",
-      "href": "en/academy"
+      "href": "en/academy",
+      "submenuItems": []
     }
   ]
 }

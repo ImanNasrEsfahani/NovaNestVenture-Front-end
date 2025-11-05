@@ -26,17 +26,20 @@
     {
       "label": "درباره ما",
       "type": "link",
-      "href": "en/about-us"
+      "href": "en/about-us",
+      "submenuItems": []
     },
     {
       "label": "تیم ما",
       "type": "link",
-      "href": "en/our-team"
+      "href": "en/our-team",
+      "submenuItems": []
     },
     {
       "label": "آکادمی",
       "type": "link",
-      "href": "en/academy"
+      "href": "en/academy",
+      "submenuItems": []
     }
   ]
 }

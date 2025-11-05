@@ -1,21 +1,24 @@
 {
-  "lng": "fa",
-  "ReadMore": "بیشتر بدانید",
+  "lng": "en",
+  "ReadMore": "Read More",
+  "ReserveMyFreeConsultation": "Reserve my free consultation",
   "specialFeatures": {
-    "title": "خدمات ویژه",
-    "learnMore": "بیشتر بدانید",
+    "title": "Special Features",
+    "learnMore": "Learn More",
     "features": [
       {
         "id": "startup-suv",
-        "title": "Startup – SUV",
-        "description": "برنامه استارتاپ ویزای کانادا فرصتی منحصربه‌فرد برای کارآفرینان خلاق از سراسر دنیاست تا ایده‌های نوآورانه خود را در یکی از پیشرفته‌ترین بازارهای جهانی راه‌اندازی کنند. در کنار شما خواهیم بود تا از دریافت حمایت‌های لازم تا راه‌اندازی و گسترش کسب‌وکار در کانادا همراهی‌تان کنیم؛ مسیری که در نهایت به دریافت اقامت دائم کانادا منتهی خواهد شد.",
-        "image": "/static/images/home/features/startup-visa.png"
+        "title": "Canada Startup Visa – SUV",
+        "description": "The Canadian Startup Visa program is a unique opportunity for creative entrepreneurs worldwide to launch their innovative ideas in one of the world's most advanced markets. We will be by your side from receiving necessary support to launching and expanding your business in Canada; a path that will ultimately lead to obtaining permanent residence in Canada.",
+        "image": "/static/images/home/features/startup-visa.png",
+        "link": "/startup"
       },
       {
         "id": "entrepreneur",
-        "title": "Entrepreneur",
-        "description": "برنامه‌های نامزدی استانی (PNP) در کانادا مسیر مناسبی برای کارآفرینان جهت سرمایه‌گذاری و راه‌اندازی کسب‌وکار هستند. هر استان شرایط خاص خود را دارد و ما با تخصص خود، در انتخاب برنامه مناسب، آماده‌سازی مدارک و طی مراحل، شما را همراهی می‌کنیم تا به کسب‌وکار موفق و اقامت دائم برسید.",
-        "image": "/static/images/home/features/entrepreneur.png"
+        "title": "Entrepreneurship PNP",
+        "description": "PNPs in Canada offer a great path for entrepreneurs to invest and start a business. Each province has unique criteria, and with our expertise, we help you choose the right program, prepare documents, and complete the process—leading to a successful business and permanent residency.",
+        "image": "/static/images/home/features/entrepreneur.png",
+        "link": "/pnp"
       }
     ]
   },
@@ -23,15 +26,15 @@
     {
       "image": {
         "src": "/static/images/home/hero/image1.jpg",
-        "alt": "اسلاید ۱"
+        "alt": "Slide 1"
       },
       "content": [
         {
-          "label": "سرمایه گذاری",
+          "label": "Investment",
           "href": "/investment"
         },
         {
-          "label": "شتابدهی",
+          "label": "Acceleration",
           "href": "/acceleration"
         }
       ]
@@ -39,15 +42,15 @@
     {
       "image": {
         "src": "/static/images/home/hero/image2.jpg",
-        "alt": "اسلاید ۲"
+        "alt": "Slide 2"
       },
       "content": [
         {
-          "label": "استارت آپ",
+          "label": "Startup",
           "href": "/startup"
         },
         {
-          "label": "پی ان پی",
+          "label": "PNP",
           "href": "/pnp"
         }
       ]
@@ -55,53 +58,56 @@
     {
       "image": {
         "src": "/static/images/home/hero/image3.jpg",
-        "alt": "اسلاید ۳"
+        "alt": "Slide 3"
       },
       "content": [
         {
-          "label": "برنامه ها",
+          "label": "Programs",
           "href": "/programs"
         },
         {
-          "label": "منتورشیپ",
+          "label": "Mentorship",
           "href": "/mentorship"
         }
       ]
     }
   ],
-  "Acceleration": "شتابدهی",
-  "Academy" : "آکادمی",
-  "AccelerationCenter": "شتابدهنده",
-  "investment": "سرمایه گذاری",
-  "StartUp": "استارت آپ",
-  "HeroSubtitle": "آینده را احساس کن",
-  "NovaNestVenture": "نوانست ونچر",
-  "Home": "خانه",
-  "ContactUs": "تماس با ما",
-  "OurTeam": "تیم ما",
-  "ourTeamText": "تیم کارشناسان ما متشکل از متخصصانی است که به کار خود علاقه‌مند هستند و سابقه درخشانی در زمینه‌های مختلف دارند.",
-  "Forms": "فرم ها",
-  "BusinessPartners": "شرکای تجاری",
-  "StartupsValidation": "اعتبار سنجی استارت آپ ها",
-  "SeeMore": "بیشتر",
-  "ApplyJob": "درخواست شغل",
-  "NovaNest": "نوانست",
-  "PartnersTitle": "به شرکای تجاری ما ملحق شوید",
-  "PartnersDescription": "در نوانست ما از وابستگی استراتژیک با شرکت های بین المللی و تأثیرگذاران واجد شرایط به طور یکسان استقبال می کنیم. به عنوان یک شرکت وابسته تایید شده، پشتیبانی با نام تجاری مشترک و نمایندگی های آینده دریافت خواهید کرد که تأثیر قابل توجهی در چشم انداز کسب و کار دارند. برای تبدیل شدن به یک شرکت وابسته، لطفا پرسشنامه رایگان ما را برای بررسی محرمانه ما تکمیل کنید",
-  "LatestStartups": "استارت آپ های اخیر",
-  "Priorities": "اولویت های سرمایه گذاری",
-  "businessTeamText": "آنچه اعضای مجموعه ما می گویند",
-  "visit": "بازدید کنید",
-  "Register": "ثبت نام",
+  "Acceleration": "Acceleration",
+  "Academy" : " Academy",
+  "AccelerationCenter": "Entrepreneurship CENTER",
+  "investment": "Investment",
+  "StartUp": "StartUp",
+  "StartUp Visa": "Startup-Visa",
+  "Entrepreneurship - PNP": "Entrepreneurship-PNP",
 
-  "AboutUs": "درباره ما",
-  "AboutUsContent": "ما شبکه ای از سرمایه گذاران بین المللی و کارآفرینان سریالی و متخصصین ماهر هستیم که به استارت آپ ها و کسب و کارها کمک می کنیم تا ایده های استارت آپی و کسب و کاری خودشون رو به واقعیت تبدیل کنند و یا استارت آپ و کسب و کار فعلی خودشون رو گسترش بدهند. Scale UP تا بتوانند محصولات و یا خدمات خود را در سطح جهانی ارائه دهند.",
+  "HeroSubtitle": "Feel The Future",
+  "NovaNestVenture": "NovaNest Venture",
+  "Home": "Home",
+  "ContactUs": "CONTACT US",
+  "OurTeam": "Our Team",
+  "ourTeamText": "Our team of experts is comprised of professionals who are passionate about their work, and have an extensive background in a wide variety of applications, and are willing to help at any time",
+  "Forms": "FORMS",
+  "BusinessPartners": "BUSINESS PARTNERS",
+  "Startups Validation": "STARTUPS VALIDATION",
+  "SeeMore": "SEE MORE",
+  "ApplyJob": "APPLY JOB",
+  "NovaNest": "NovaNest",
+  "PartnersTitle": "Join Our Business Partners",
+  "PartnersDescription": "At NovaNest Venture, we welcome strategic affiliations with international firms and qualified influencers alike. As an approved affiliate, you will receive co-branded support and future representations that wield substantial influence within the business landscape. To become an affiliate, please complete our free questionnaire for our confidential review.",
+  "LatestStartups": "Latest Starups",
+  "Priorities": "Investment Priorities",
+  "businessTeamText": "What Our Cooperation Members Say",
+  "visit": "Visit Now",
+  "Register": "Register",
+  
+  "AboutUs": "ABOUT US",
+  "AboutUsContent": "We are a network of international investors, serial entrepreneurs, and skilled professionals who support startups and businesses in transforming their ideas into reality or scaling their existing ventures. Our goal is to help them scale up so they can offer their products or services on a global level",
 
   "cards": [
     {
-      "smallTitle": "نوانست",
-      "title": "سرمایه‌گذاری",
-      "text": "در مرکز سرمایه‌گذاری نوانست، تمرکز ما بر سرمایه‌گذاری در استارتاپ‌های نوآور و مقیاس‌پذیر با پتانسیل بازارهای بین‌المللی و ارزش‌گذاری کمتر از ۵ میلیون دلار است. ما به عنوان شبکه‌ای از سرمایه‌گذاران فرشته با تجربه، علاوه بر تأمین سرمایه اولیه، در جذب سرمایه و ایجاد ارتباط با شبکه‌ای جهانی از سرمایه‌گذاران همراه شما خواهیم بود. هدف ما شتاب‌دهی به رشد کسب‌وکار شما، تقویت حضور در بازارهای بین‌المللی و افزایش ارزش کلی استارتاپ شماست.",
+      "smallTitle" : "NovaNest",
+      "title": "Investment",
+      "text": "At NovaNest Venture Investment Center, we focus on investing in innovative and scalable startups with international market potential and a valuation of $5 million or less. As a network of experienced angel investors, we provide not only initial funding but also strategic support in capital raising and connections to a global network of investors. Our goal is to accelerate your growth, strengthen your presence in international markets, and enhance the overall value of your business.",
       "reverse": false,
       "show": true,
       "index": 1,
@@ -117,12 +123,12 @@
           "alt": ""
         }
       ],
-      "buttonText": "مشاهده کنید"
+      "buttonText": "Visit Now"
     },
     {
-      "smallTitle": "نوانست",
-      "title": "شتابدهی",
-      "text": "در نوانست، ما استارتاپ‌های نوآور را از مرحله ایده تا موفقیت در سطح جهانی همراهی می‌کنیم. شتابدهنده ما با ارائه منتورینگ، آموزش، شبکه‌سازی و دسترسی به سرمایه‌گذاران، به کارآفرینان کمک می‌کند محصولات خود را توسعه دهند، وارد بازارهای جدید شوند و رشد سریع داشته باشند. تمرکز ما بر حوزه‌هایی مانند هوش مصنوعی، گردشگری و آموزش است تا استارتاپ‌ها بتوانند تأثیری ماندگار در مقیاس جهانی ایجاد کنند.",
+      "smallTitle" : "NovaNest",
+      "title": "Acceleration",
+      "text": "At NovaNest, we empower innovative startups to grow from idea to global success. Our accelerator provides mentorship, training, networking, and access to investors, helping entrepreneurs develop products, enter new markets, and achieve rapid growth. We focus on sectors such as Artificial Intelligence, Tourism, and Education, supporting startups in creating lasting impact on a global scale.",
       "reverse": true,
       "show": false,
       "index": 3,
@@ -138,12 +144,12 @@
           "alt": ""
         }
       ],
-      "buttonText": "مشاهده کنید"
+      "buttonText": "Visit Now"
     }
   ],
 
-  "NovaNestAcademy": "آکادمی نوانست",
-  "NovaNestAcademyInfo": "در آکادمی نوانست ما یک مکان پرورشی برای افراد فراهم می کنیم تا علایق و مهارت های خود را به طور موثر کشف کرده و رشد دهند. آکادمی ما به عنوان مکانی پویا عمل می کند که پتانسیل افراد با استعداد، به ویژه جوانان را شناسایی و ارزیابی می کند و در توسعه و ایده های خلاقانه آنها سرمایه گذاری می کند. آکادمی نوانست با ارائه برنامه ها و منابع جامع و از طریق ترکیبی از مربیگری، کارگاه های مهارت آموزی و قرار گرفتن در معرض فرصت های مختلف، شرکت کنندگان را با ابزارها و دانش لازم برای پیشرفت و موفقیت در زمینه های انتخابی خود مجهز می کند.",
+  "NovaNestAcademy": "NovaNest Academy",
+  "NovaNestAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   
   "specialFeatureCards": [
     {
@@ -160,21 +166,22 @@
         "Meaningful impact on startups and society",
         "Exclusive access to events and resources"
       ],
-      "href": "join-as-mentor",
+      "href": "join-as-a-mentor",
       "buttonText": "Register"
     },
     {
       "id": "trainee",
       "title": "Trainee",
-      "subtitle": "Join Our Team",
-      "text": "If you are talented, creative, and professional, join NovaNest and work alongside experienced mentors to help our innovative startups succeed. Share your skills, collaborate with expert teams, and make a real impact on the growth and development of emerging businesses.",
+      "subtitle": "Join as a Trainee",
+      "text": "Start your journey with NovaNest as a trainee and learn directly from mentors and startup teams. Gain hands-on experience, explore entrepreneurship, and build the skills you need to grow into a future founder or professional leader.",
       "benefits": [
-        "Hands-on experience with early-stage startups",
-        "Professional growth and learning from mentors teams",
-        "Expanded network with experts",
-        "Strengthening your personal brand and professional portfolio",
-        "Participation in innovative and socially impactful projects",
-        "Access to exclusive NovaNest events and resources"
+        "Real-world learning alongside mentors and startup teams",
+        "Hands-on experience with innovative projects",
+        "Practical training in entrepreneurship and business development",
+        "Personal growth and skill-building opportunities",
+        "Mentorship and guidance from experienced professionals",
+        "Completion Certificate & career paths at NovaNest",
+        "Access to exclusive events and resources"
       ],
       "href": "join-our-team",
       "buttonText": "Register"
@@ -182,37 +189,37 @@
   ],
 
   "partners": {
-    "title": "شرکای تجاری نوانست",
+    "title": "Our Business Affiliates",
     "logos": [
       {
-        "number": 98,
-        "title": "دانشگاه آزاد اسلامی اصفهان(خوراسگان)",
-        "description": "شروع همکاری ما با با دانشگاه آزاد اصفهان، از سال ۱۳۹۶ همزمان با تاسیس شرکت فرازمان، در زمینه سرمایه‌گذاری و شتابدهی دانشجویان بوده است.",
-        "alt": "دانشگاه آزاد اسلامی اصفهان(خوراسگان)"
+        "number": 102,
+        "title": "Islamic Azad University of Isfahan(Khorasgan)",
+        "description": "Since 1396, at the same time as Farazman was established, we have been working with Isfahan Azad University in the field of student investment and acceleration.",
+        "alt": "Islamic Azad University of Isfahan(Khorasgan)"
+      },
+      {
+        "number": 104,
+        "title": "Dr. Nekui Educational Holding",
+        "description":"We are proud to cooperate with the educational holding of Dr. Nekui Academy of Business and Investment in the field of youth startups and we are moving forward for a bright future of youth startups and ideas.",
+        "alt": "Dr. Nekui Educational Holding"
       },
       {
         "number": 44,
-        "title": "هلدینگ آموزشی دکتر نکوئی",
-        "description": "با افتخار برای آینده‌ای روشن استارت‌آپ‌ها و ایده‌های جوانان، با هلدینگ آموزشی، بازرگانی و سرمایه‌گذاری دکتر نکویی همکاری داریم.",
-        "alt": "هلدینگ آموزشی دکتر نکوئی"
+        "title": "University of Kashan",
+        "description": "Since 1399, we started cooperating with Kashan University in the field of acceleration center",
+        "alt": "University of Kashan"
       },
       {
-        "number": 3,
-        "title": "دانشگاه کاشان",
-        "description": " همکاری مرکز نوآوری و تجاری‌سازی دانشگاه کاشان و نوانست با هدف تسهیل فرآیند نوآوری و انتقال فناوری به بازارهای تجاری، به‌عنوان یک گام مهم  بین بخش‌های دانشگاهی و صنعتی صورت گرفته است .",
-        "alt": "دانشگاه کاشان"
-      },
-      {
-        "number": 77,
-        "title": "آسیاتک",
-        "description": "نوانست ونچر از سال ۱۳۹۷ با شرکت فناوری‌های پیشرفته آسیاهایتک در زمینه سرمایه‌گذاری روی استارت‌آپ‌ها همکاری داشته است.",
+        "number": 101,
+        "title": "ASIAHITECH",
+        "description": "Since 1397, we are proud to cooperate with the advanced technologies of Asia in the field of investing in startups.",
         "alt": "ASIAHITECH"
       },
       {
         "number": 8,
-        "title": "اتاق بازرگانی، صنایع، معادن و کشاورزی",
-        "description": "نوانست ونچر در زمینه سرمایه‌گذاری روی استارت‌آپ‌ها با اتاق بازرگانی اصفهان همکاری دارد.",
-        "alt": "اتاق بازرگانی، صنایع، معادن و کشاورزی"
+        "title": "Chamber of Commerce, Industries, Mines and Agriculture",
+        "description": "We have been cooperating with the Isfahan Chamber of Commerce for 4 months in the field of startup investment.",
+        "alt": "Chamber of Commerce, Industries, Mines and Agriculture"
       }
     ]
   },
@@ -220,20 +227,20 @@
   "commentsData": [
     {
       "name": "Jane Doe",
-      "roleInCompany": "مدیر محصول",
-      "role": "رهبر محصول",
+      "roleInCompany": "Product Manager",
+      "role": "Product Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "برای من، زمانی که با NovaNest Venture با این گروه بسیار ماهر کار می کردم، تجربه ای بود که هرگز فراموش نمی کنم.",
+      "commentDescription": "For me, my time spent working with NovaNest Venture with this extremely competent staff was an experience that I will never forget.",
       "linkedinLink": "https://www.linkedin.com/in/janedoe",
       "personalWebsite": "https://www.janedoe.com",
       "email": "jane.doe@example.com"
     },
     {
       "name": "Bob Smith",
-      "roleInCompany": "طراح UX",
-      "role": "رهبر طراحی",
+      "roleInCompany": "UX Designer",
+      "role": "Design Lead",
       "profileImage": "b669e3cb2e3c18d8ff0ec2b8216c00c1.jpg",
-      "commentDescription": "NovaNest Venture دارای یک نیروی کار جوان و مبتکر است که از همه کارهایی که انجام می دهند مشتاق است.",
+      "commentDescription": "NovaNest Venture is home to a youthful and inventive workforce that is brimming with enthusiasm for all they do.",
       "linkedinLink": "https://www.linkedin.com/in/bobsmith",
       "personalWebsite": "https://www.bobsmith.com",
       "email": "bob.smith@example.com"
@@ -241,74 +248,74 @@
   ],
   "cardData1": [
     {
-      "title": "گردشگری",
+      "title": "Tourism\nServices",
       "image": "/static/images/home/priority/tourism-services.png"
     },
     {
-      "title": "آموزش",
+      "title": "Practical Education",
       "image": "/static/images/home/priority/education-systems.png"
     },
     {
-      "title": "هوش مصنوعی",
-      "image": "/static/images/home/priority/artificial-intelligence.png"
+      "title": "AI (Artificial Inteligent)",
+      "image": "/static/images/home/priority/services-for-teenagers.png"
     },
     {
-      "title": "کودک و نوجوان",
-      "image": "/static/images/home/priority/services-for-teenagers.png"
+      "title": "Services for Teenagers",
+      "image": "/static/images/home/priority/artificial-intelligence.png"
     }
   ],
   "LatestStartupsList": [
     {
       "image": "/static/images/home/startups/landa-trip.png",
-      "title": "لاندا تریپ",
-      "description": "لاندا تریپ استارت‌آپی نوآورانه است که با استفاده از یک تیم متخصص و هوش مصنوعی پلتفرمی را جهت شرکت در دوره‌های آموزشی مختلف در سراسر جهان برایتان مهیا می‌کند.",
+      "title": "LANDA TRIP",
+      "description": "Landa trip is an innovative start-up company that creates, promotes, and runs useful educational courses for all interested people and businesses.",
       "link": "https://landatrip.ca"
     },
     {
       "image": "/static/images/home/startups/diaco-center.png",
-      "title": "دیاکو سنتر",
-      "description": "دیاکو سنتر پلتفرمی برپایه هوش مصنوعی است که نقش واسط میان جویندگان و ارائه‌دهندگان فناوری را ایفا کرده و با ایجاد پلی میان آنها، نیازهای موجود در صنعت را رفع می‌کند.",
+      "title": "DIACO",
+      "description": "Diaco is an open innovation platform which acts as an intermediary between technology seekers and providers to fulfill their technological demands.",
       "link": "https://diacocenter.com"
     },
     {
       "image": "/static/images/home/startups/vision-raft.png",
-      "title": "ویژن رفت",
-      "description": "Vision Raft پلتفرمی است بر پایه واقعیت مجازی (VR) با تمرکز روی آموزش و سرگرمی نوجوانان جهت افزایش کیفیت یادگیری آنها.",
+      "title": "VISION RAFT",
+      "description": "This is Vision Raft, a VR platform focused on education and entertainment of the young ones which acts to enhance their learning quality.",
       "link": "https://invigorated-drop-231359.framer.app"
     }
   ],
-  "register": "ثبت نام",
+  "register": "Register",
   "upcomingStartups": {
-    "NovaNestVenture": "نوانست ونچر",
-    "title": "استارت آپ های پیش رو",
+    "NovaNestVenture": "NovaNest Venture",
+    "title": "Upcoming Startups",
     "cards": [
       {
         "image": "/static/images/home/upcomming-startup/handicraft.png",
-        "subTitle": "هندی کرفت",
-        "text": "لاندا کرفت با استفاده از هوش مصنوعی و تکنولوژی‌های واقعیت افزوده و NFT، در کنار بهره‌گیری از متخصصان باتجربه، قصد دارد یک پل ارتباطی امن برای خریداران و دوست‌داران صنایع دستی ایجاد کند. با پیوستن به تیم این استارت‌آپ درکنار بهره‌مندی از مزایای آن، ۱۰ درصد لانداکرفت را نیز دریافت خواهید کرد.",
+        "subTitle": "HANDI CRAFT",
+        "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build a safe communication bridge between makers and purchasers.",
         "goto": "https://craft.landaholding.com/",
-        "buttonText": "پیوستن به استارتاپ",
+        "buttonText" : "Register",
         "gene": false
       },
       {
         "image": "/static/images/home/upcomming-startup/autilab.png",
-        "subTitle": "اوتی‌لب",
-        "text": "اوتیسم یک جنبش هنری است که زیبایی طبیعت و فرم انسانی را از طریق اشکال ارگانیک، رنگ‌های زمینی و خطوط روان به نمایش می‌گذارد. این جنبش که در قرن بیست و یکم پدید آمده، احساس آرامش و ارتباط را القا می‌کند و بینندگان را دعوت می‌کند تا درباره پیوندشان با محیط زیست تأمل کنند.",
+        "subTitle": "AUTILAB",
+        "text": "Otism is an art movement that highlights nature’s beauty and the human form through organic shapes, earthy tones, and fluid lines. Emerging in the 21st century, it evokes tranquility and connection, inviting viewers to reflect on their bond with the environment.",
         "goto": "#",
-        "buttonText": "پیوستن به استارتاپ",
+        "buttonText" : "Register",
         "gene": true
       },
       {
         "image": "/static/images/home/upcomming-startup/landa-gene.png",
-        "subTitle": "پریونتی ژن",
-        "text": "لاندا ژن به کمک برجسته‌ترین متخصصان حوزه ژنتیک و البته هوش مصنوعی با انجام آزمایش ژنتیک به بررسی دقیق رفتار ژن‌ها و ارائه برنامه سلامتی شخصی می‌پردازد. هدف لاندا ژن پیشگیری از بیماری‌های احتمالی مثل سرطان در افراد جامعه است. با پیوستن به تیم این استارت‌آپ درکنار بهره‌مندی از مزایای آن، ۱۰ درصد سهام لاندا ژان را نیز دریافت خواهید کرد.",
+        "subTitle": "PREVENTI GENE",
+        "text": "Using Artificial Intelligence, Augmented Reality, and NFT, Landa Handicrafts aims to build asafe communication bridge between makers and purchasers.",
         "goto": "http://preventigene.com/",
-        "buttonText": "پیوستن به استارتاپ",
+        "buttonText" : "Register",
         "gene": true
       }
     ]
   },
   "upcomingEvents": {
-    "title": "رویداد های پیش رو"
+    "title": "UPCOMING EVENTS"
   }
 }
