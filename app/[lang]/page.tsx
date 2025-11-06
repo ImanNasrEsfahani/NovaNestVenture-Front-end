@@ -39,7 +39,16 @@ export default function Page({ params }: { params: { lang: string } }) {
       />
 
       <section className='w-full max-w-responsive mx-auto w-100'>
-        <AboutUs lang={params.lang} />
+        <AboutUs 
+          lang={params.lang} 
+          translations={{
+              AboutUs: t('AboutUs'),
+              AboutUsContent: t('AboutUsContent'),
+              ReadMore: t('ReadMore'),
+          }} 
+          href={`${base}/about-us`} 
+        />
+
         <HomeCardsContainer lang={params.lang} />
         <SpecialFeatures lang={params.lang} />
 

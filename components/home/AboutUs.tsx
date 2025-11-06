@@ -1,24 +1,34 @@
 import React from 'react';
-import { getServerTranslation } from 'app/i18n';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+interface AboutUsProps {
+    lang: string;
+    translations: {
+        AboutUs: string;
+        AboutUsContent: string | string[];
+        ReadMore: string;
+    };
+    href: string;
+}
 
-export default function AboutUs({ lang }: { lang: string }) {
-    const { t } = getServerTranslation(lang, 'mainPage');
-
+export default function AboutUs({ lang, translations, href }: AboutUsProps) {
     return (
         <section className="w-full max-w-responsive mx-auto text-center pt-20 pb-10">
             <h2 className="text-3xl md:text-4xl font-header font-bold mb-8 text-gray-800 relative">
-                <span className="relative inline-block">{t('AboutUs')}</span>
+                <span className="relative inline-block">{translations.AboutUs}</span>
             </h2>
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed tracking-wide mb-8 px-6">
-                {t('AboutUsContent')} and ...
+                {Array.isArray(translations.AboutUsContent)
+                    ? translations.AboutUsContent.map((content, index) => (
+                          <span key={index}>
+                              {content}
+                              {index < translations.AboutUsContent.length - 1 && <br />} {/* Add line break between items */}
+                          </span>
+                      ))
+                    : translations.AboutUsContent}
             </p>
-            {/* <a href="/about" className="btn btn-neutral normal-case text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary hover:border-primary transition-all duration-300">
-            Read more</a> */}
             <div className="max-w-xs lg:w-[200px] mx-auto">
-                <ButtonRefactor text={t('ReadMore')} type="link" href={`${base}/about-us`} />
+                <ButtonRefactor text={translations.ReadMore} type="link" href={href} />
             </div>
         </section>
     );

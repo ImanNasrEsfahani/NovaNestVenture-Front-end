@@ -6,6 +6,7 @@ import Intro from '@/components/common/Intro';
 import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import '../../[lang]/globals.css';
+import AboutUs from '@/components/home/AboutUs';
 
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 
@@ -20,7 +21,10 @@ export default function TraineePage({
 }: {
   params: { lang: string };
 }) {
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+
   const { t } = getServerTranslation(lang, 'formComponent');
+  // const { tMainPage } = getServerTranslation(lang, 'mainPage');
 
   return (
     <>
@@ -40,6 +44,16 @@ export default function TraineePage({
           lang={lang}
         />
       </div>
+
+      <AboutUs
+        lang={lang}
+        translations={{
+          AboutUs: t('joinAsATrainee.aboutUS.AboutUs'),
+          AboutUsContent: t('joinAsATrainee.aboutUS.AboutUsContent'),
+          ReadMore: t('joinAsATrainee.aboutUS.ReadMore'),
+        }}
+        href={`${base}/about-us`}
+      />
 
       <Intro
         title={t("joinAsATrainee.title", { returnObjects: true })}

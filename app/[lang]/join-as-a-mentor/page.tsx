@@ -6,6 +6,8 @@ import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import CallToAction from '@/components/common/CallToAction';
 import Intro from '@/components/common/Intro';
+import AboutUs from '@/components/home/AboutUs';
+import TwoColumnsRole from '@/components/common/TwoColumnsRole';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Join as a Mentor',
@@ -18,7 +20,7 @@ export default function JoinAsMentorPage({
 }: {
   params: { lang: string };
 }) {
-
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
   const { t } = getServerTranslation(lang, "MentorForm");
 
   const benefits = t('benefits', { returnObjects: true }) as Array<{
@@ -62,10 +64,27 @@ export default function JoinAsMentorPage({
         />
       </div>
 
+      <AboutUs
+        lang={lang}
+        translations={{
+          AboutUs: t('aboutUS.AboutUs', { returnObjects: true }),
+          AboutUsContent: t('aboutUS.AboutUsContent', { returnObjects: true }),
+          ReadMore: t('aboutUS.ReadMore', { returnObjects: true }),
+        }}
+        href={`${base}/about-us`}
+      />
+
       <Intro
         title={t('title', { returnObjects: true })}
         subtitle={t('subtitle', { returnObjects: true })}
         description=""
+      />
+
+
+      <TwoColumnsRole
+        imageSrc={t('role.imageSrc')}
+        imageAlt={t('role.imageAlt')}
+        text={t('role.description')}
       />
 
       {/* Introduction Text */}
