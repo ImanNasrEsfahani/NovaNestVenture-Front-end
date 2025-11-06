@@ -102,6 +102,12 @@ export default function MentorRegistrationForm({lang}: {lang: string}) {
     howDidYouKnowUsErrorMessage: t('howDidYouKnowUsErrorMessage'),
 
     formDescription: tMentor('formDescription', { returnObjects: true }) as string[] || [],
+
+    submitionMessage: tMentor('submitionMessage', { returnObjects: true }) as {
+      title: string;
+      description: string[];
+      buttonText: string;
+    } || { title: '', description: [], buttonText: '' },
   };
 
   return <MentorRegistrationFormClient lang={lang} translations={translations} />;

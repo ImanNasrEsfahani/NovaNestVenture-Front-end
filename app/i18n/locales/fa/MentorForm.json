@@ -86,5 +86,13 @@
         "Participate as a mentor in NovaNest social responsibility programs"
       ]
     }
-  ]
+  ],
+  "submitionMessage": {
+    "title": "Your application has been successfully submitted.",
+    "description": [
+      "Our team will review your information and contact you if your profile is selected for the next steps.",
+      "You will be redirected to the homepage shortly…"
+    ],
+    "buttonText": "Back to Home"
+  }
 }
