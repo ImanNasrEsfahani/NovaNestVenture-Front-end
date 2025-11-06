@@ -44,7 +44,7 @@ export default function TraineePage({
       <Intro
         title={t("joinAsATrainee.title", { returnObjects: true })}
         subtitle={t("joinAsATrainee.subTitle", { returnObjects: true })}
-        description=""
+        description={t("joinAsATrainee.description", { returnObjects: true })}
       />
 
       {/* Introduction Text */}
