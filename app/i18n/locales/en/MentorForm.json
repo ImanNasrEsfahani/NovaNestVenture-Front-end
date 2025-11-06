@@ -9,9 +9,16 @@
     "ReadMore": "More About Us"
   },
   "role": {
+    "imageSrc": "/static/images/join-as-a-mentor/mentor-role.png",
+    "imageAlt": "Mentor guiding a young entrepreneur",
     "description": "At NovaNest, mentors play a vital role in guiding and inspiring the next generation of entrepreneurs. They share their experience, knowledge, and valuable connections with teenagers and young adults who are just beginning their entrepreneurial journey. Mentors also support startups and emerging businesses that are either launching or seeking to grow, helping them navigate challenges and accelerate their success within the NovaNest ecosystem.",
-    "imageSrc": "/images/join-as-a-mentor/mentor-role.jpg",
-    "imageAlt": "Mentor guiding a young entrepreneur"
+    "activities": [
+      "Providing consulting and mentoring sessions to startups and businesses",
+      "Participating in the design and delivery of educational programs and workshops",
+      "Introducing promising projects and startups to NovaNest",
+      "Supporting networking and connections with investors and business partners",
+      "Contributing to the evaluation and selection of startups for the acceleration program"
+    ]
   },
   "NovaNestVenture": "NovaNest Venture",
   "formTitle": "Join as a Mentor Form",
@@ -23,7 +30,6 @@
     "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
     "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
   ],
-  "intro": "By joining the NovaNest Mentor Team, you will gain unique opportunities:",
   "benefits": [
     {
       "id": "financial",
@@ -80,6 +86,5 @@
         "Participate as a mentor in NovaNest social responsibility programs"
       ]
     }
-  ],
-  "callToAction": "Share your expertise and guide others by filling out the form below."
+  ]
 }

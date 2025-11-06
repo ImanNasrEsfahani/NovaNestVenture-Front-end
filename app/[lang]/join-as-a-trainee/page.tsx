@@ -45,7 +45,7 @@ export default function TraineePage({
         />
       </div>
 
-      <AboutUs
+      {/* <AboutUs
         lang={lang}
         translations={{
           AboutUs: t('joinAsATrainee.aboutUS.AboutUs'),
@@ -53,7 +53,7 @@ export default function TraineePage({
           ReadMore: t('joinAsATrainee.aboutUS.ReadMore'),
         }}
         href={`${base}/about-us`}
-      />
+      /> */}
 
       <Intro
         title={t("joinAsATrainee.title", { returnObjects: true })}

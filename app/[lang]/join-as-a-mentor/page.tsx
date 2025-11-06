@@ -29,22 +29,12 @@ export default function JoinAsMentorPage({
     items: string[];
   }>;
 
-  const specialPerks = t('specialPerks', { returnObjects: true }) as {
-    id: string;
-    title: string;
-    items: string[];
-  };
-
   // Build accordion-friendly data
   const accordionData = [
     ...benefits.map((b) => ({
       header: `${b.title}`,
       content: b.items
-    })),
-    {
-      header: `${specialPerks.title}`,
-      content: specialPerks.items
-    }
+    }))
   ];
 
   return (
@@ -82,33 +72,34 @@ export default function JoinAsMentorPage({
 
 
       <TwoColumnsRole
-        imageSrc={t('role.imageSrc')}
-        imageAlt={t('role.imageAlt')}
-        text={t('role.description')}
+        imageSrc={t('role.imageSrc', { returnObjects: true })}
+        imageAlt={t('role.imageAlt', { returnObjects: true })}
+        text={t('role.description', { returnObjects: true })}
+        activities={t('role.activities', { returnObjects: true })}
       />
 
-      {/* Introduction Text */}
-      <div className='w-full max-w-responsive mx-auto bg-whiteGold rounded-lg p-8 mb-6 border-l-4 border-primary'>
-        <p className='text-lg text-grayDark leading-relaxed'>{t('intro')}</p>
-      </div>
 
-      <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-2 space-x-12py-12">
-        <div className="flex flex-col justify-center">
-          <Accordions data={accordionData} />
+      <section className="w-full max-w-responsive mx-auto pt-32" >
+        <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">Unique opportunities for Mentors</h2>
+
+        <div className="w-full max-w-responsive mx-auto pt-9 grid lg:grid-cols-3 gap-20 py-12 items-start">
+          <div className="col-span-2 flex flex-col justify-center">
+            <Accordions data={accordionData} />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="w-full h-auto max-h-full">
+              <Image
+                src="/static/images/join-as-a-mentor/services.png"
+                alt="Services"
+                className="w-full h-full object-cover rounded-lg shadow-md"
+                width={1400}
+                height={900}
+              />
+            </div>
+          </div>
         </div>
-        <div className="flex items-center justify-center">
-          <Image
-            src="/static/images/join-as-a-mentor/services.png"
-            alt="Services"
-            className="mx-auto w-auto rounded-lg"
-            width={1400}
-            height={900}
-          />
-        </div>
-      </div>
-
-
-      <CallToAction text={t('callToAction')} />
+      </section>
 
       {/* Form Section */}
       <div className='max-w-responsive mx-auto'>

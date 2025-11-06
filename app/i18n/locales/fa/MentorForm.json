@@ -1,10 +1,28 @@
 {
   "lng": "fa",
   "banner": "مرکز مشاوره",
+  "aboutUS": {
+    "AboutUs": "About Us",
+    "AboutUsContent": [
+      "Since 2017, NovaNest has been on a mission to accelerate innovation. Over the years, the growth and success of our startups have always relied on the invaluable support of mentors who share their experience, knowledge, and vision with emerging teams. Our acceleration process has been built upon mentorship, and this collaboration has been the foundation of all our achievements to date. Today, after our successful journey in Iran, our path has expanded to Toronto and now to Vancouver, Canada. We continue to believe that the future of entrepreneurship is built through the guidance, inspiration, and dedication of mentors who are passionate about empowering the next generation of entrepreneurs."
+    ],
+    "ReadMore": "More About Us"
+  },
+  "role": {
+    "imageSrc": "/static/images/join-as-a-mentor/mentor-role.png",
+    "imageAlt": "Mentor guiding a young entrepreneur",
+    "description": "At NovaNest, mentors play a vital role in guiding and inspiring the next generation of entrepreneurs. They share their experience, knowledge, and valuable connections with teenagers and young adults who are just beginning their entrepreneurial journey. Mentors also support startups and emerging businesses that are either launching or seeking to grow, helping them navigate challenges and accelerate their success within the NovaNest ecosystem.",
+    "activities": [
+      "Providing consulting and mentoring sessions to startups and businesses",
+      "Participating in the design and delivery of educational programs and workshops",
+      "Introducing promising projects and startups to NovaNest",
+      "Supporting networking and connections with investors and business partners",
+      "Contributing to the evaluation and selection of startups for the acceleration program"
+    ]
+  },
   "NovaNestVenture": "نوانست ونچر",
   "formTitle": "مرکز مشاوره",
   "formSubtitle": "اطلاعات شخصی",
-
   "title": "Join NovaNest as a Mentor",
   "subtitle": "Share your skills, experience, and interest in mentoring the next generation of entrepreneurs",
   "formDescription": [
@@ -12,7 +30,6 @@
     "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
     "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
   ],
-  "intro": "By joining the NovaNest Mentor Team, you will gain unique opportunities:",
   "benefits": [
     {
       "id": "financial",
@@ -69,6 +86,5 @@
         "Participate as a mentor in NovaNest social responsibility programs"
       ]
     }
-  ],
-  "callToAction": "Share your expertise and guide others by filling out the form below."
+  ]
 }
