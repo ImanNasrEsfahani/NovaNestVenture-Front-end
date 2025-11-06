@@ -42,6 +42,7 @@
 
 /* Smooth scroll behavior for HTML */
 html {
+  width: 8px;
   scroll-behavior: smooth;
 }
 
@@ -52,7 +53,7 @@ img {
 
 /* Customize scrollbar styles */
 ::-webkit-scrollbar {
-  width: 0;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
