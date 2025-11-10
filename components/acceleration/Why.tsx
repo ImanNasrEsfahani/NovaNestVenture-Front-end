@@ -25,7 +25,7 @@ export default function Why({ lang }: { lang: string }) {
           <div key={i} className="card bg-base-100 shadow-lg border border-gray-200 hover:shadow-xl transition">
             <div className="card-body p-6 text-center flex flex-col items-center justify-center">
               <div
-                className="w-12 h-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center shrink-0 my-4"
+                className="size-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center shrink-0 my-4"
                 dangerouslySetInnerHTML={toHtml(item.icon)}
                 aria-hidden="true"
               />

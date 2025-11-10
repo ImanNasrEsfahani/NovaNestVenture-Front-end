@@ -6,7 +6,6 @@ import Intro from '@/components/common/Intro';
 import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import '../../[lang]/globals.css';
-import AboutUs from '@/components/home/AboutUs';
 
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 
@@ -21,7 +20,7 @@ export default function TraineePage({
 }: {
   params: { lang: string };
 }) {
-  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+  // const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   const { t } = getServerTranslation(lang, 'formComponent');
   // const { tMainPage } = getServerTranslation(lang, 'mainPage');

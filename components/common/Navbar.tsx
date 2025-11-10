@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { getServerTranslation } from 'app/i18n';
-import LanguageSwitch from "@/components/common/LanguageSwitch";
+// import LanguageSwitch from "@/components/common/LanguageSwitch";
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || '';
 
@@ -11,8 +11,6 @@ type MenuEntry = { label: string; href: string; type?: 'dropdown' | 'link'; subm
 export default function Navbar({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'layout');
   const menuItems = (t('menuItems', { returnObjects: true }) as MenuEntry[]) ?? [];
-  const submenuItems = (t('submenuItems', { returnObjects: true }) as MenuEntry[]) ?? [];
-  const servicesLabel = lang === 'en' ? 'Services' : 'خدمات';
 
   return (
     <nav className="navbar fixed inset-x-0 top-0 z-40 bg-[rgba(0,0,0,0.6)] backdrop-blur-sm text-white shadow-lg">

@@ -83,7 +83,7 @@ interface Props {
   subject: string;
 }
 
-export default function SmallReservationFormClient({ lang, translations, subject }: Props) {
+export default function SmallReservationFormClient({ lang, translations }: Props) {
 
   const {
     register,

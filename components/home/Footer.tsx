@@ -6,11 +6,6 @@ import LinkedIn from '@/components/icons/footer/LinkedIn';
 import Facebook from '@/components/icons/footer/Facebook';
 import { getServerTranslation } from 'app/i18n';
 
-interface FooterItem {
-  text: string;
-  link: string;
-}
-
 const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function Footer({

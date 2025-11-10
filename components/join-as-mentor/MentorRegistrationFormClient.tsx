@@ -9,117 +9,14 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 import Input from '@/components/common/form/Input';
 
 import FormTitle from '@/components/common/form/FormTitle';
-import { MentorRegistrationFormDataType } from '@/types/global';
+import { MentorRegistrationFormDataType, MentorRegistrationFormClientTranslations } from '@/types/global';
 import { initialMentorRegistrationFormData } from '../../initials/initObjects';
 import { submitMentorRegistrationForm } from '../../pages/api/join-as-mentor';
 import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
 
-interface Translations {
-  formTitle: string;
-  formSubtitle: string;
-  sendButton: string;
-  sendingButton: string;
-  successMessage: string;
-  failedMessage: string;
-
-  firstName: string;
-  firstNameRequired: string;
-  firstNamePlaceholder: string;
-
-  lastName: string;
-  lastNameRequired: string;
-  lastNamePlaceholder: string;
-
-  email: string;
-  emailRequired: string;
-  emailErrorMessage: string;
-  emailPlaceholder: string;
-
-  phoneNumber: string;
-  phoneNumberRequired: string;
-  phoneNumberErrorMessage: string;
-  phoneNumberPlaceholder: string;
-
-  countries: string[];
-  countryName: string;
-  countryNameRequired: string;
-  countryNamePlaceholder: string;
-
-  provinceOfResidence: string;
-  provinceOfResidenceRequired: string;
-  provinceOfResidencePlaceholder: string;
-
-  cityOfResidence: string;
-  cityOfResidenceRequired: string;
-  cityOfResidencePlaceholder: string;
-
-  TypeOfCollaboration: string;
-  TypeOfCollaborationRequired: string;
-  TypeOfCollaborationPlaceholder: string;
-  TypeOfCollaborationData: { value: string; label: string }[];
-
-  FieldOfExpert: string;
-  FieldOfExpertRequired: string;
-  FieldOfExpertPlaceholder: string;
-  FieldOfExpertData: { value: string; label: string }[];
-
-  FieldOfExpertOther: string;
-  FieldOfExpertOtherRequired: string;
-  FieldOfExpertOtherPlaceholder: string;
-
-  FieldOfInterest: string;
-  FieldOfInterestRequired: string;
-  FieldOfInterestPlaceholder: string;
-  FieldOfInterestData: { value: string; label: string }[];
-
-  FieldOfInterestOther: string;
-  FieldOfInterestOtherRequired: string;
-  FieldOfInterestOtherPlaceholder: string;
-
-  birthDate: string;
-  birthDateRequired: string;
-  birthDateErrorMessage: string;
-  birthDateErrorMessageForFutureDate: string;
-  birthDateErrorMessageForAge: string;
-  birthDatePlaceholder: string;
-
-  website: string;
-  websiteRequired: string;
-  websitePlaceholder: string;
-  websiteErrorMessage: string;
-
-  linkedin: string;
-  linkedinRequired: string;
-  linkedinPlaceholder: string;
-  linkedinErrorMessage: string;
-
-  instagram: string;
-  instagramRequired: string;
-  instagramPlaceholder: string;
-  instagramErrorMessage: string;
-
-  ExpertiesAreas: string;
-  ExpertiesAreasPlaceholder: string;
-  ExpertiesAreasRequired: string;
-  ExpertiesAreasErrorMessage: string;
-
-  howDidYouKnowUs: string;
-  howDidYouKnowUsPlaceholder: string;
-  howDidYouKnowUsRequired: string;
-  howDidYouKnowUsErrorMessage: string;
-
-  formDescription: string[];
-
-  submitionMessage: {
-    title: string;
-    description: string[];
-    buttonText: string;
-  };
-}
-
 interface Props {
   lang: string;
-  translations: Translations;
+  translations: MentorRegistrationFormClientTranslations;
 }
 
 export default function MentorRegistrationFormClient({ lang, translations }: Props) {

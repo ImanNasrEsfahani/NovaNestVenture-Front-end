@@ -4,8 +4,6 @@ import { getServerTranslation } from 'app/i18n';
 import '../../[lang]/globals.css';
 
 import Intro from '@/components/common/Intro';
-// import PeopleCarousel from '@/components/our-team/PeopleCarousel';
-import TeamPersons from '@/components/our-team/TeamPersons';
 import PeopleCarousel from '@/components/our-team/PeopleCarousel';
 
 export const metadata: Metadata = {
@@ -26,12 +24,6 @@ export default function TeamPage({
   const safeRoles = Array.isArray(roles) ? roles : [];
 
   const mentors = safeRoles.find(r => String(r.title).toLowerCase().includes('mentor'))?.people ?? [];
-  const trainees = safeRoles.find(r => String(r.title).toLowerCase().includes('trainee'))?.people ?? [];
-  const coreTeams = safeRoles.find(r => String(r.title).toLowerCase().includes('core'))?.people ?? [];
-
-  // console.log('Mentors:', mentors);
-  // console.log('Trainees:', trainees);
-  // console.log('Core Teams:', coreTeams);
 
   return (
     <div>

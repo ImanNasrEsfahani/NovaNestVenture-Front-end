@@ -11,7 +11,7 @@ interface AboutUsProps {
     href: string;
 }
 
-export default function AboutUs({ lang, translations, href }: AboutUsProps) {
+export default function AboutUs({ translations, href }: AboutUsProps) {
     return (
         <section className="w-full max-w-responsive mx-auto text-center pt-20 pb-10">
             <h2 className="text-3xl md:text-4xl font-header font-bold mb-8 text-gray-800 relative">

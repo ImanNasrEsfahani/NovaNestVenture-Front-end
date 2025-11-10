@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface TwoColumnLayoutProps {
   imageSrc: string;
@@ -23,10 +24,10 @@ export default function TwoColumnsRole({ imageSrc, imageAlt, text, activities }:
       </div>
 
       <div className="col-span-2 relative w-full lg:h-auto">
-        <img
+        <Image
           src={imageSrc}
           alt={imageAlt}
-          className="w-full h-full object-cover rounded-lg shadow-md"
+          className="size-full object-cover rounded-lg shadow-md"
         />
       </div>
     </div>

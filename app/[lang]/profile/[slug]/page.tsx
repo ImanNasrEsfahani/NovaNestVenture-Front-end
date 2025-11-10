@@ -3,7 +3,6 @@ import { getServerTranslation } from 'app/i18n';
 import Profile from '@/components/profile/Profile';
 import { Person } from '@/types/global';
 import { notFound } from 'next/navigation';
-import Banner from '@/components/common/Banner';
 
 
 export default async function Page({
@@ -12,7 +11,6 @@ export default async function Page({
   params: { slug: string; lang: string };
 }) {
 
-  const base = process.env.NEXT_PUBLIC_BASE_URL || '';
   const { t } = getServerTranslation(lang, 'ourTeam');
 
   // get roles from translations (returns array of { title, people })

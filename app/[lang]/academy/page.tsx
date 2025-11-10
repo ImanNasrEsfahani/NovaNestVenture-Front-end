@@ -7,7 +7,7 @@ import Accordion from '@/components/startup/Accordions';
 import Intro from '@/components/common/Intro';
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 
-const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+// const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export const metadata: Metadata = {
     title: 'NovaNest Venture | Academy',

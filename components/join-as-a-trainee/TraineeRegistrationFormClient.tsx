@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useFile } from 'stores/fileStore';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
@@ -378,7 +378,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
             </fieldset>
           </div>
 
-          <div className="w-full max-w-responsive mx-auto px-2 md:px-9 pt-6 pb-6">
+          <div className="w-full max-w-responsive mx-auto px-2 md:px-9 py-6">
             {translations.formDescription.map((paragraph, index) => (
               <p key={index} className="text-sm font-normal text-gray-800 font-header">
                 * {paragraph}

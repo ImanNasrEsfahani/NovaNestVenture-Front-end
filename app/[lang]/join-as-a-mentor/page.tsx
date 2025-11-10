@@ -4,7 +4,6 @@ import Accordions from '@/components/startup/Accordions';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import CallToAction from '@/components/common/CallToAction';
 import Intro from '@/components/common/Intro';
 import AboutUs from '@/components/home/AboutUs';
 import TwoColumnsRole from '@/components/common/TwoColumnsRole';
@@ -92,7 +91,7 @@ export default function JoinAsMentorPage({
               <Image
                 src="/static/images/join-as-a-mentor/services.png"
                 alt="Services"
-                className="w-full h-full object-cover rounded-lg shadow-md"
+                className="size-full object-cover rounded-lg shadow-md"
                 width={1400}
                 height={900}
               />

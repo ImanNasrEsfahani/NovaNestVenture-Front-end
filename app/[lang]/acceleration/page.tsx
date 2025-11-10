@@ -9,7 +9,7 @@ import Impact from '@/components/acceleration/Impact';
 import CallToAction from '@/components/common/CallToAction';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 
-const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+// const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Acceleration',

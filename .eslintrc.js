@@ -33,7 +33,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     'react-hooks/exhaustive-deps': 'warn',
-    'tailwindcss/classnames-order': 'off', // این خط اضافه شده
+    'tailwindcss/classnames-order': 'off',
+    'tailwindcss/enforces-shorthand': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'max-lines': ['error', { max: 350, skipComments: true, skipBlankLines: true }],
     'components/icons/*': ['off'],

@@ -19,7 +19,6 @@ export default function HomeCardsContainer ({lang}: {lang: string}) {
           reverse,
           index,
           link,
-          addedClass,
           images,
           buttonText
         }) => (
