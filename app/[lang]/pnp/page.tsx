@@ -8,7 +8,6 @@ import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
-import Image from 'next/image';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
     const { t } = getServerTranslation(lang, 'pnp');

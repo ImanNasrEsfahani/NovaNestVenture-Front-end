@@ -194,5 +194,108 @@
         ]
     },
     "StartupVisaRoadmap": "Startup Visa Roadmap",
-    "LatestStartups": "Latest Startups"
+    "LatestStartups": "Latest Startups",
+    "faq": [
+        {
+            "title": "What is the difference between the Startup Visa and other immigration programs?",
+            "items": [
+                "Unlike Express Entry, Study Permits, or PNP programs, the focus of the Startup Visa is on your business idea and entrepreneurial team, not solely on work experience or academic qualifications. The main advantage is the possibility of obtaining permanent residency (PR) directly from the start."
+            ]
+        },
+        {
+            "title": "Is a language certificate required?",
+            "items": [
+                "Yes, a minimum English or French language proficiency of CLB 5 (approximately IELTS 5) is required."
+            ]
+        },
+        {
+            "title": "Is personal investment mandatory?",
+            "items": [
+                "High personal capital is not required. However, you must demonstrate that you can cover the living expenses for yourself and your family during the first year in Canada."
+            ]
+        },
+        {
+            "title": "What types of business ideas are eligible?",
+            "items": [
+                "The idea must be innovative, scalable, and capable of creating jobs in Canada. Ideas in technology, digital services, education, healthcare, or online platforms are generally preferred."
+            ]
+        },
+        {
+            "title": "Does the business have to be established in Canada?",
+            "items": [
+                "Yes, your business must be registered in Canada and at least part of its operations should take place within the country."
+            ]
+        },
+        {
+            "title": "Which organizations are authorized to support startups?",
+            "items": [
+                "Three types of approved organizations exist:",
+                "- Business Incubators",
+                "- Angel Investors",
+                "- Venture Capital Funds (VC Funds)"
+            ]
+        },
+        {
+            "title": "What is the difference between an incubator, an angel investor, and a VC?",
+            "items": [
+                "- Incubator: Provides educational programs and business acceleration.",
+                "- Angel Investor: Individual private investors.",
+                "- VC Fund: Funds that provide larger capital investments for business growth."
+            ]
+        },
+        {
+            "title": "How long does it take to obtain permanent residency?",
+            "items": [
+                "Processing times vary depending on the application and are updated weekly on the official Canadian government website."
+            ]
+        },
+        {
+            "title": "Do I need to register a company in Canada before submitting my application?",
+            "items": [
+                "In most cases, company registration occurs after receiving the Letter of Support, but having a detailed business plan from the beginning is essential."
+            ]
+        },
+        {
+            "title": "Do I have to continue working in the startup after receiving permanent residency?",
+            "items": [
+                "It is recommended to continue in the same path, but after obtaining PR, there are no strict restrictions."
+            ]
+        },
+        {
+            "title": "Can I live in any province of Canada?",
+            "items": [
+                "Yes, the Startup Visa is a federal program and is not restricted to any specific province."
+            ]
+        },
+        {
+            "title": "What factors may lead to my application being refused?",
+            "items": [
+                "Weak business plans, lack of official support, low language scores, or incomplete financial documentation may result in rejection."
+            ]
+        },
+        {
+            "title": "Is a university degree required?",
+            "items": [
+                "No, a degree is not mandatory, but having management experience or relevant business expertise is an advantage."
+            ]
+        },
+        {
+            "title": "Is obtaining permanent residency guaranteed in this program?",
+            "items": [
+                "No immigration program offers a 100% guarantee. Success depends on the quality of your startup, support from approved organizations, and other factors. By providing real startups with revenue and local employees, we significantly increase your chances of approval and the ability to defend your case in federal courts."
+            ]
+        },
+        {
+            "title": "Can my children study for free in Canada?",
+            "items": [
+                "Yes, your children can attend public schools in Canada free of charge."
+            ]
+        },
+        {
+            "title": "Is it possible to pay the investment cost in installments?",
+            "items": [
+                "Yes, the startup investment can be made gradually over a period of up to 2 years."
+            ]
+        }
+    ]
 }
