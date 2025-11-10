@@ -7,10 +7,25 @@ import OurPNPService from '@/components/pnp/OurPNPService';
 import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
+import Accordions from '@/components/startup/Accordions';
+import Image from 'next/image';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
-
     const { t } = getServerTranslation(lang, 'pnp');
+
+    const benefits = t('faq', { returnObjects: true }) as Array<{
+        id: string;
+        title: string;
+        items: string[];
+    }>;
+
+    // Build accordion-friendly data
+    const accordionData = [
+        ...benefits.map((b) => ({
+            header: `${b.title}`,
+            content: b.items
+        }))
+    ];
 
     return (
         <>
@@ -49,6 +64,14 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                     lang={lang}
                     subject='entrepreneur-pnp'
                 />
+            </section>
+
+            <section className="w-full max-w-responsive mx-auto pt-32" >
+                <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">FAQ (Frequently Asked Question)</h2>
+
+                <div className="w-full max-w-4xl mx-auto pt-9 py-12">
+                    <Accordions data={accordionData} />
+                </div>
             </section>
         </>
     )

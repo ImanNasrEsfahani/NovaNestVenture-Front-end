@@ -107,5 +107,88 @@
             "✔ Transparent, results-driven, tailored to your success"
         ]
     },
-    "callToAction": "Request a Free Consultation for the Provincial Nominee Program (PNP), Our experts are ready to carefully review your profile and recommend the most suitable provincial options for you."
+    "callToAction": "Request a Free Consultation for the Provincial Nominee Program (PNP), Our experts are ready to carefully review your profile and recommend the most suitable provincial options for you.",
+    "faq": [
+        {
+            "title": "Can I participate in the Provincial Entrepreneur Program by starting a business, or is it only for buying a business?",
+            "items": [
+                "The program allows international entrepreneurs to obtain permanent residency in Canada by either starting a new business or buying an existing one in a selected province."
+            ]
+        },
+        {
+            "title": "What is the difference between provincial and federal programs?",
+            "items": [
+                "Provincial programs are designed to meet the economic needs and employment opportunities of each province. The requirements and minimum investment may differ from federal programs."
+            ]
+        },
+        {
+            "title": "Which provinces are currently popular for starting a business?",
+            "items": [
+                "Popular provinces include: - British Columbia (Vancouver) - Ontario (Toronto) - New Brunswick"
+            ]
+        },
+        {
+            "title": "What are the eligibility requirements?",
+            "items": [
+                "Applicants usually need to: - Have managerial experience or business ownership - Be able to invest in the selected province - Meet minimum English or French language requirements (around IELTS 4)"
+            ]
+        },
+        {
+            "title": "What is the minimum investment required?",
+            "items": [
+                "The amount varies by province, typically between CAD 100,000 and 300,000 for starting or buying a business."
+            ]
+        },
+        {
+            "title": "Is a language certificate required?",
+            "items": [
+                "Yes, a minimum English or French proficiency of CLB 4 is required."
+            ]
+        },
+        {
+            "title": "Can my family come with me?",
+            "items": [
+                "Yes, your spouse can accompany you with an Open Work Permit, and your children can study free of charge."
+            ]
+        },
+        {
+            "title": "What types of businesses are accepted in different provinces?",
+            "items": [
+                "Each province has specific economic needs. Typically, businesses that create jobs and economic growth are preferred, such as: - Local services - Retail stores and restaurants - Technology and digital businesses"
+            ]
+        },
+        {
+            "title": "Is it mandatory to continue working in the same business after obtaining permanent residency?",
+            "items": [
+                "Until you receive your Nomination and PR, the business must remain active. After receiving PR, there are no strict restrictions."
+            ]
+        },
+        {
+            "title": "How long does it take to receive permanent residency after starting a business?",
+            "items": [
+                "Typically, it takes 6 to 20 months, depending on the province and processing times."
+            ]
+        },
+        {
+            "title": "Is it possible to pay the investment in installments?",
+            "items": [
+                "Yes, most provinces allow gradual investment payments or staged entrepreneurial support."
+            ]
+        },
+        {
+            "title": "What factors may lead to an application being refused?",
+            "items": [
+                "- Insufficient financial documentation",
+                "- Lack of managerial or business experience",
+                "- Failure to meet investment and employment requirements",
+                "- Incomplete language documentation"
+            ]
+        },
+        {
+            "title": "Can my children study for free in Canada?",
+            "items": [
+                "Yes, your children can attend public schools and universities in Canada free of charge."
+            ]
+        }
+    ]
 }
