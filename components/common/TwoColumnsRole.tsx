@@ -28,6 +28,8 @@ export default function TwoColumnsRole({ imageSrc, imageAlt, text, activities }:
           src={imageSrc}
           alt={imageAlt}
           className="size-full object-cover rounded-lg shadow-md"
+          width={600}
+          height={600}
         />
       </div>
     </div>
