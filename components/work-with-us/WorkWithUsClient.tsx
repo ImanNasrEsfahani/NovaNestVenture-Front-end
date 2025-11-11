@@ -142,14 +142,12 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
   const unisList: any[] = []
   const skillLevels: any[] = []
 
-  Object.entries(unis.unis).forEach(([name, value]) => {
+  Object.entries(unis.unis).forEach(([value]) => {
     unisList.push(value);
-    console.log(name);
   })
 
-  Object.entries(langLevelData.levels).forEach(([name, value]) => {
+  Object.entries(langLevelData.levels).forEach(([value]) => {
     skillLevels.push(value);
-    console.log(name);
   })
 
   const TypeOfUnis = unisList.map(
@@ -247,7 +245,6 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
     // Send the form data to the API.
     submitWorkWithUsForm(sendFormData, csrfToken)
       .then(() => {
-        console.log(sendFormData)
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);

@@ -101,10 +101,10 @@ export default function TraineePage({
 
           {/* Steps Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            {tAcademy("process.steps", { returnObjects: true }).map((step: any, index: number) => (
+            {(tAcademy("process.steps", { returnObjects: true }) || []).map((step: any, index: number) => (
               <div key={step.number} className="relative">
                 {/* Mobile connecting line */}
-                {index < tAcademy("process.steps", { returnObjects: true }).length - 1 && (
+                {index < (tAcademy("process.steps", { returnObjects: true }) || []).length - 1 && (
                   <div className="md:hidden absolute left-12 top-24 w-0.5 h-16 bg-gradient-to-b from-blue-200 to-purple-200" />
                 )}
 

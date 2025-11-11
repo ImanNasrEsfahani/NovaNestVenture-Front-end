@@ -5,36 +5,25 @@ import { getServerTranslation } from 'app/i18n';
 import PersonalInfoInput from '@/components/common/form/PersonalInfoInput';
 
 export default function StartupFormPersonalInformation({
-  lang,
-  register,
-  errors,
+    lang,
+    register,
+    errors
+  }: {
+    lang: string;
+    register: any;
+    errors: any;
 
-  countries,
-  countryName,
-  countryNameRequired,
-  countryNamePlaceholder,
-  provinceOfResidence,
-  provinceOfResidenceRequired,
-  provinceOfResidencePlaceholder,
-  cityOfResidence,
-  cityOfResidenceRequired,
-  cityOfResidencePlaceholder
-}: {
-  lang: string;
-  register: any;
-  errors: any;
-
-  countries: any;
-  countryName: string;
-  countryNameRequired: string;
-  countryNamePlaceholder: string;
-  provinceOfResidence: string;
-  provinceOfResidenceRequired: string;
-  provinceOfResidencePlaceholder: string;
-  cityOfResidence: string;
-  cityOfResidenceRequired: string;
-  cityOfResidencePlaceholder: string;
-}) {
+    countries: any;
+    countryName: string;
+    countryNameRequired: string;
+    countryNamePlaceholder: string;
+    provinceOfResidence: string;
+    provinceOfResidenceRequired: string;
+    provinceOfResidencePlaceholder: string;
+    cityOfResidence: string;
+    cityOfResidenceRequired: string;
+    cityOfResidencePlaceholder: string;
+  }) {
 
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
