@@ -22,7 +22,7 @@ export default function Page({
     params: { lang: string };
 }) {
     const { t } = getServerTranslation(lang, 'academy');
-    const raw = t('FAQ.accordion', { returnObjects: true });
+    const raw = t('FAQ.accordion', { returnObjects: true }) || [];
     const items = Array.isArray(raw) ? raw : [];
     const mid = Math.ceil(items.length / 2);
     const left = items.slice(0, mid);
@@ -187,14 +187,14 @@ export default function Page({
 
             {/* Learning Opportunities */}
             <Priority
-                Priorities={t('opportunities.title', { returnObjects: true })}
+                Priorities={t('opportunities.title', { returnObjects: true }) || {}}
                 cardData={(t('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
             />
 
             {/* FAQ */}
             <section className="w-full max-w-responsive mx-auto pt-9 py-16">
                 <h3 className="text-4xl font-header leading-loose text-center font-bold">
-                    {t('FAQ', { returnObjects: true }).title}
+                    {t('FAQ.title')}
                 </h3>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12">
