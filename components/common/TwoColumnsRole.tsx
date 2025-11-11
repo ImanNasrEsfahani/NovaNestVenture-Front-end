@@ -5,15 +5,17 @@ interface TwoColumnLayoutProps {
   imageSrc: string;
   imageAlt: string;
   text: string;
+  title: string;
   activities: string[];
 }
 
-export default function TwoColumnsRole({ imageSrc, imageAlt, text, activities }: TwoColumnLayoutProps) {
+export default function TwoColumnsRole({ imageSrc, imageAlt, text, title, activities }: TwoColumnLayoutProps) {
   return (
     <div className="w-full max-w-responsive mx-auto grid lg:grid-cols-5 gap-8 items-center">
 
-      <div className="col-span-3 flex flex-col justify-center items-center px-6">
+      <div className="lg:col-span-3 flex flex-col justify-center px-6">
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify mb-4">{text}</p>
+        {title? <h3 className="text-2xl font-semibold mt-8 mb-4">{title}</h3> : null}
         <ul className="w-full ml-6">
           {activities.map((activity, index) => (
             <li key={index} className="mt-2 text-lg list-disc list-inside">
@@ -23,7 +25,7 @@ export default function TwoColumnsRole({ imageSrc, imageAlt, text, activities }:
         </ul>
       </div>
 
-      <div className="col-span-2 relative w-full lg:h-auto">
+      <div className="lg:col-span-2 relative w-full lg:h-auto">
         <Image
           src={imageSrc}
           alt={imageAlt}

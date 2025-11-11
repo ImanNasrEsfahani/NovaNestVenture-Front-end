@@ -102,7 +102,6 @@ export default function Page({
                 </div>
             </section>
 
-
             {/* Learning Opportunities */}
             <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">{t('opportunities.title', { returnObjects: true })}</h3>

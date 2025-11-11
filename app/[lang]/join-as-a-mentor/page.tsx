@@ -74,7 +74,8 @@ export default function JoinAsMentorPage({
         imageSrc={t('role.imageSrc', { returnObjects: true })}
         imageAlt={t('role.imageAlt', { returnObjects: true })}
         text={t('role.description', { returnObjects: true })}
-        activities={t('role.activities', { returnObjects: true })}
+        title={t('role.activities.title', { returnObjects: true })}
+        activities={t('role.activities.items', { returnObjects: true })}
       />
 
 
@@ -82,11 +83,11 @@ export default function JoinAsMentorPage({
         <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">Unique opportunities for Mentors</h2>
 
         <div className="w-full max-w-responsive mx-auto pt-9 grid lg:grid-cols-3 gap-20 py-12 items-start">
-          <div className="col-span-2 flex flex-col justify-center">
+          <div className="lg:col-span-2 flex flex-col justify-center">
             <Accordions data={accordionData} />
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="w-full flex items-center justify-center">
             <div className="w-full h-auto max-h-full">
               <Image
                 src="/static/images/join-as-a-mentor/services.png"
