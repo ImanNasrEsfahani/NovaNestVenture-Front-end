@@ -36,7 +36,7 @@ export default function TraineePage({
     <>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/acceleration/accleration-hero.jpg"
+          image="/static/images/acceleration/accleration-hero.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
           backgroundPosition='top'
@@ -45,7 +45,7 @@ export default function TraineePage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/acceleration/accleration-heromob.jpg"
+          image="/static/images/acceleration/accleration-heromob.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />

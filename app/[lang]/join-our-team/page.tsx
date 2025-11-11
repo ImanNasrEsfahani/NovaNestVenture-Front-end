@@ -6,6 +6,7 @@ import Banner from '@/components/common/Banner';
 import JoinOurTeamForm from '@/components/job-form/JoinOurTeamForm';
 import CallToAction from '@/components/common/CallToAction';
 import Intro from "@/components/common/Intro";
+import AboutUs from '@/components/home/AboutUs';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Join as a Team Member',
@@ -19,6 +20,7 @@ export default function ApplyFormPage({
   params: { lang: string };
 }) {
   const { t } = getServerTranslation(lang, 'formComponent');
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   type Benefit = {
     id: string;
@@ -56,6 +58,16 @@ export default function ApplyFormPage({
         />
       </div>
 
+      <AboutUs
+        lang={lang}
+        translations={{
+          AboutUs: t('joinAsATrainee.aboutUS.aboutUs', { returnObjects: true }),
+          AboutUsContent: t('joinAsATrainee.aboutUS.aboutUsContent', { returnObjects: true }),
+          ReadMore: t('joinAsATrainee.aboutUS.readMore', { returnObjects: true }),
+        }}
+        href={`${base}/about-us`}
+      />
+      
       <Intro
         title={t('workWithUS', { returnObjects: true }).title}
         subtitle={t('workWithUS', { returnObjects: true }).subtitle}
