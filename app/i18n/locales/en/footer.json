@@ -28,10 +28,6 @@
       {
         "title": "Entrepreneurship",
         "link": "pnp"
-      },
-      {
-        "title": "Academy",
-        "link": "academy"
       }
     ]
   },
@@ -73,11 +69,11 @@
       },
       {
         "type": "text",
-        "title": "Burnaby, Metro Vancouver,"
+        "title": "Vancouver, British Columbia,"
       },
       {
         "type": "text",
-        "title": "BC, Canada"
+        "title": "Canada, V3J 0M2"
       },
       {
         "type": "link",
