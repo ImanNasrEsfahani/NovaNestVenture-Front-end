@@ -490,7 +490,16 @@
       "Certificate of completion and potential career pathways within NovaNest",
       "Access to exclusive events and resources"
     ],
-    "callToAction": "Start your learning journey with us by submitting the form below."
+    "callToAction": "Start your learning journey with us by submitting the form below.",
+    "aboutUS": {
+      "aboutUs": "About us",
+      "aboutUsContent": [
+        "Since 2017, NovaNest has been on a mission to accelerate innovation. A significant part of our team has always been composed of teenagers and young adults, whose drive for learning and growth has been essential to our organization.",
+        "The NovaNest Business Academy is designed specifically for trainees, focused on developing professional skills and expertise. Many of our core team members began their journey here, progressing from trainees to skilled professionals.",
+        "Trainees grow alongside experienced mentors and by working on real, international projects, gaining the skills and experience needed to step into professional roles."
+      ],
+      "readMore": "Read More"
+    }
   },
   "startUp": {
     "lng": "fa",
