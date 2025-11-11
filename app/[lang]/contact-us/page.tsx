@@ -8,6 +8,7 @@ import SubsidiaryCompanies from '@/components/about/SubsidiaryCompanies';
 import StoryOfLanda from '@/components/about/StoryOfUs';
 import KeyDifferentiating from '@/components/contact-us/KeyDifferentiating';
 import AboutUsProfile from '@/components/about/Profile';
+import AboutUs from '@/components/about/AboutUs';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Contact',
@@ -21,6 +22,7 @@ export default function ContactUsPage({
   params: { lang: string };
 }) {
   const { t } = getServerTranslation(lang, 'contact');
+  const { t: tAcademy } = getServerTranslation(lang, 'academy');
 
   // Renamed the component for better naming
   return (
@@ -52,7 +54,13 @@ export default function ContactUsPage({
       
 
       <div className='px-8 md:px-24 max-w-responsive mx-auto'>
-        <AboutUsNovaNest lang={lang} />
+        <AboutUs
+          lang={lang}
+          translations={{
+              AboutUs: tAcademy('AboutUsNovaNest.title'),
+              AboutUsContent: tAcademy('AboutUsNovaNest.text')
+          }} 
+        />
         <SubsidiaryCompanies lang={lang}/>
         <StoryOfLanda lang={lang}/>
         <KeyDifferentiating lang={lang} />
