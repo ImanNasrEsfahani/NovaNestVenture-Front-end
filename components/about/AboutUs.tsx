@@ -1,20 +1,38 @@
-import { getServerTranslation } from 'app/i18n';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-export default function AboutUs({lang}: {lang: string}) {
-  const { t } = getServerTranslation(lang, 'aboutUs');
-  const aboutItems = t('AboutUsNovaNest', { returnObjects: true }) as any[];
+interface AboutUsProps {
+  lang: string;
+  translations: {
+    AboutUs: string;
+    AboutUsContent: string[];
+    ReadMore: string;
+  };
+  href: string;
+}
+
+export default function AboutUs({ lang, translations, href }: AboutUsProps) {
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-24 mb-36">
+    <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center mt-24 mb-36">
       <h1 className="text-2xl md:text-4xl font-header font-bold mb-6">
-        {aboutItems?.[0]?.title}
+        {translations.AboutUs}
       </h1>
 
-      {aboutItems.map((item, i) => (
+      {translations.AboutUsContent.map((item, i) => (
         <p key={i} className="text-lg text-center mb-2">
-          {item.text}
+          {item}
         </p>
       ))}
+
+      <div className="max-w-container-xxs mt-9">
+        <ButtonRefactor 
+          text={translations.ReadMore}
+          type="link"
+          href={`${base}${href}`}
+          bgColor="black"
+        />
+      </div>
     </div>
   );
 }

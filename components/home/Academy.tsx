@@ -20,7 +20,7 @@ export default function Academy({ lang }: { lang: string }) {
           <ButtonRefactor
             text={t('visit')}
             type="link"
-            href={`${process.env.NEXT_PUBLIC_BASE_URL}/academy`}
+            href={`${process.env.NEXT_PUBLIC_BASE_URL}/join-as-a-trainee`}
             bgColor="black"
           />
         </div>

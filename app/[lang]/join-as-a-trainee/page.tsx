@@ -6,7 +6,7 @@ import Intro from '@/components/common/Intro';
 import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import '../../[lang]/globals.css';
-
+import AboutUs from '@/components/about/AboutUs';
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function TraineePage({
 }: {
   params: { lang: string };
 }) {
-  // const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   const { t } = getServerTranslation(lang, 'formComponent');
   // const { tMainPage } = getServerTranslation(lang, 'mainPage');
@@ -29,7 +29,7 @@ export default function TraineePage({
     <>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/join-as-a-trainee/header.png"
+          image="/static/images/acceleration/accleration-hero.jpg"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
           backgroundPosition='top'
@@ -38,26 +38,26 @@ export default function TraineePage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/join-as-a-trainee/header-mobile.png"
+          image="/static/images/acceleration/accleration-heromob.jpg"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
 
-      {/* <AboutUs
+      <AboutUs
         lang={lang}
         translations={{
-          AboutUs: t('joinAsATrainee.aboutUS.AboutUs'),
-          AboutUsContent: t('joinAsATrainee.aboutUS.AboutUsContent'),
-          ReadMore: t('joinAsATrainee.aboutUS.ReadMore'),
+          AboutUs: t('joinAsATrainee.aboutUS.aboutUs', { returnObjects: true }),
+          AboutUsContent: t('joinAsATrainee.aboutUS.aboutUsContent', { returnObjects: true }),
+          ReadMore: t('joinAsATrainee.aboutUS.readMore', { returnObjects: true }),
         }}
         href={`${base}/about-us`}
-      /> */}
+      />
 
       <Intro
         title={t("joinAsATrainee.title", { returnObjects: true })}
         subtitle={t("joinAsATrainee.subTitle", { returnObjects: true })}
-        description={t("joinAsATrainee.description", { returnObjects: true })}
+        description={t("joinAsATrainee.Description", { returnObjects: true })}
       />
 
       {/* Introduction Text */}
@@ -72,9 +72,9 @@ export default function TraineePage({
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="w-full rounded-lg overflow-hidden h-full relative">
+            <div className="size-full relative">
               <Image
-                src="/static/images/join-our-team-form/services.png"
+                src="/static/images/academy/academy-illustration.jpeg"
                 alt="Services"
                 fill
                 className="object-contain rounded-lg"
