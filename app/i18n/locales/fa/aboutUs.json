@@ -7,22 +7,18 @@
   "focusText": "اطلاعات موجود در گواهی ثبت شرکتها برای ارائه به عموم مردم تنظیم شده است. این گواهی، شامل اطلاعات آدرس دفتر NovaNest Venture در کشور کانادا و اطلاعات مدیران شرکت می‌شود. اطلاعات شخصی مربوط به مدیران باید در اختیار عموم قرار گیرد؛ چرا که این عمل مسئولیت پذیری شرکت را نشان می دهد.",
   "readMore": "بیشتر بخوانید",
   "readLess": "کمتر بخوانید",
-  "AboutUsNovaNest": [
-    {
-      "title": "درباره نوانست ونچر",
-      "text": "نوانست ونچر در کشورهای کانادا و ایران با دفاتر فعال می باشد. ماموریت ما، سرمایه‌گذاری روی کارآفرینان خلاق و حمایت آنها از مرحله ایده‌پردازی تا راه‌اندازی یک استارت‌آپ بین‌المللی است. آنچه باعث وجه تمایز نوانست شده، دید فرامرزی ما و در نتیجه ایجاد فرصت جذب منابع از سرمایه‌گذاران بین‌المللی برای کسب‌وکار شما است. ",
+  "AboutUsNovaNest": {
+      "title": "About NovaNest Venture",
+      "text": [
+        "NovaNest is the result of years of experience in investment, acceleration, and entrepreneurial education.",
+        "Our journey began in 2017 with a focus on youth education and skill development. Over the years, through the establishment of companies and accelerators, investments in startups, and collaborations with universities and technology parks, we have gained valuable experience in business growth and development.",
+        "Today, after this extensive journey, our activities continue in Vancouver, Canada, under the name NovaNest. Building on our knowledge and expertise, we provide professional services and strategic guidance to entrepreneurs and startups around the world."
+      ],
       "reverse": true,
       "show": true,
       "index": 2,
       "addedClass": ""
-    },
-    {
-      "text": "Our journey began in 2017 with a focus on youth education and skill development. Over the years, through the establishment of companies and accelerators, investments in startups, and collaborations with universities and technology parks, we have gained valuable experience in business growth and development."
-    },
-    {
-      "text": "Today, after this extensive journey, our activities continue in Vancouver, Canada, under the name NovaNest. Building on our knowledge and expertise, we provide professional services and strategic guidance to entrepreneurs and startups around the world."
-    }
-  ],
+  },
   "TheStoryOfLanda": [
     {
       "title": "تاریخچه نوانست",

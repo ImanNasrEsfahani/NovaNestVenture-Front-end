@@ -14,13 +14,16 @@
     "imageSrc": "/static/images/join-as-a-mentor/mentor-role.png",
     "imageAlt": "Mentor guiding a young entrepreneur",
     "description": "At NovaNest, mentors play a vital role in guiding and inspiring the next generation of entrepreneurs. They share their experience, knowledge, and valuable connections with teenagers and young adults who are just beginning their entrepreneurial journey. Mentors also support startups and emerging businesses that are either launching or seeking to grow, helping them navigate challenges and accelerate their success within the NovaNest ecosystem.",
-    "activities": [
-      "Providing consulting and mentoring sessions to startups and businesses",
-      "Participating in the design and delivery of educational programs and workshops",
-      "Introducing promising projects and startups to NovaNest",
-      "Supporting networking and connections with investors and business partners",
-      "Contributing to the evaluation and selection of startups for the acceleration program"
-    ]
+    "activities": {
+      "title": "Mentors' Activities",
+      "items": [
+        "Providing consulting and mentoring sessions to startups and businesses",
+        "Participating in the design and delivery of educational programs and workshops",
+        "Introducing promising projects and startups to NovaNest",
+        "Supporting networking and connections with investors and business partners",
+        "Contributing to the selection of startups for the acceleration program"
+      ]
+    }
   },
   "NovaNestVenture": "نوانست ونچر",
   "formTitle": "مرکز مشاوره",
