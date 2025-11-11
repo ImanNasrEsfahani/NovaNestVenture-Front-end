@@ -34,12 +34,6 @@
       "type": "link",
       "href": "en/our-team",
       "submenuItems": []
-    },
-    {
-      "label": "Academy",
-      "type": "link",
-      "href": "en/academy",
-      "submenuItems": []
     }
   ]
 }
