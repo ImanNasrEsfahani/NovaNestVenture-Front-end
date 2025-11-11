@@ -5,9 +5,9 @@ interface AboutUsProps {
   translations: {
     AboutUs: string;
     AboutUsContent: string[];
-    ReadMore ?: string;
+    ReadMore?: string;
   };
-  href ?: string;
+  href?: string;
 }
 
 export default function AboutUs({ lang, translations, href }: AboutUsProps) {
@@ -25,14 +25,16 @@ export default function AboutUs({ lang, translations, href }: AboutUsProps) {
         </p>
       ))}
 
-      <div className="max-w-container-xxs mt-9">
-        <ButtonRefactor 
-          text={translations.ReadMore}
-          type="link"
-          href={`${base}${href}`}
-          bgColor="black"
-        />
-      </div>
+      {translations.ReadMore && href && (
+        <div className="max-w-container-xxs mt-9">
+          <ButtonRefactor
+            text={translations.ReadMore}
+            type="link"
+            href={`${base}${href}`}
+            bgColor="black"
+          />
+        </div>
+      )}
     </div>
   );
 }
