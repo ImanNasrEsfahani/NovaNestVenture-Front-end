@@ -79,7 +79,10 @@ export default function Page({ params }: { params: { lang: string } }) {
         <LatestStartups lang={params.lang} />
         <Differentiators lang={params.lang} />
 
-        <Priority lang={params.lang} />
+        <Priority
+          Priorities={t('Priorities', { returnObjects: true })}
+          cardData={(t('cardData1', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+         />
       </section>
     </>
   );

@@ -65,12 +65,34 @@
   "opportunities": {
     "title": "Learning Opportunities",
     "list": [
-      "Software development and programming",
-      "Graphic design and UI/UX",
-      "Digital marketing and sales",
-      "Content creation and media management",
-      "Project management",
-      "Finance, accounting, and data analysis"
+      {
+        "title": "Software development and programming",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Software development and programming",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Graphic design and UI/UX",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Digital marketing and sales",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Content creation and media management",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Project management",
+        "image": "/static/images/home/priority/tourism-services.png"
+      },
+      {
+        "title": "Finance, accounting, and data analysis",
+        "image": "/static/images/home/priority/tourism-services.png"
+      }
     ]
   },
   "FAQ": {

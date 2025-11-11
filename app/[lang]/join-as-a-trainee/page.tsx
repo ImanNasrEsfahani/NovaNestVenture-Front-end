@@ -8,6 +8,7 @@ import Image from 'next/image';
 import '../../[lang]/globals.css';
 import AboutUs from '@/components/about/AboutUs';
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
+import Priority from '@/components/home/Priority';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Join as a Trainee',
@@ -106,16 +107,10 @@ export default function TraineePage({
       </section>
 
       {/* Learning Opportunities */}
-      <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-4">{tAcademy('opportunities.title', { returnObjects: true })}</h3>
-        <div className="grid gap-4 md:grid-cols-3">
-          {(tAcademy('opportunities.list', { returnObjects: true }) || []).map((area: string, i: number) => (
-            <div key={i} className="p-4 bg-gray-50 rounded-lg border">
-              <p className="text-gray-800 font-medium">{area}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Priority
+        Priorities={tAcademy('opportunities.title', { returnObjects: true })}
+        cardData={(tAcademy('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+      />
 
       <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
 
