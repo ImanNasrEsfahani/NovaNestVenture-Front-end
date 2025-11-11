@@ -32,6 +32,10 @@ export default function TraineePage({
   const left = items.slice(0, mid);
   const right = items.slice(mid);
 
+  // Add safety check for process steps
+  const processStepsRaw = tAcademy("process.steps", { returnObjects: true });
+  const processSteps = Array.isArray(processStepsRaw) ? processStepsRaw : [];
+
   return (
     <>
       <div className="hidden md:inline">
@@ -48,6 +52,8 @@ export default function TraineePage({
           image="/static/images/acceleration/accleration-heromob.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
+          backgroundPosition='center'
+          backgroundSize='cover'
         />
       </div>
 
@@ -72,7 +78,7 @@ export default function TraineePage({
 
         <div className="grid lg:grid-cols-2 gap-12 pt-12 items-stretch">
           <div className="flex flex-col justify-center">
-            <Accordion data={t('joinAsATrainee.accordion', { returnObjects: true })} />
+            <Accordion data={t('joinAsATrainee.accordion', { returnObjects: true }) || []} />
           </div>
 
           <div className="flex items-center justify-center">
