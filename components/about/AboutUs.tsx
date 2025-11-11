@@ -5,9 +5,9 @@ interface AboutUsProps {
   translations: {
     AboutUs: string;
     AboutUsContent: string[];
-    ReadMore: string;
+    ReadMore ?: string;
   };
-  href: string;
+  href ?: string;
 }
 
 export default function AboutUs({ lang, translations, href }: AboutUsProps) {

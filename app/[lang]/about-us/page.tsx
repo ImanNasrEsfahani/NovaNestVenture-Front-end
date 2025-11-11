@@ -40,7 +40,14 @@ export default function Page({
       </div>
 
       <div className='w-full max-w-responsive mx-auto'>
-        <AboutUs lang={lang} />
+        
+        <AboutUs
+          lang={lang} 
+          translations={{
+              AboutUs: t('AboutUsNovaNest.title'),
+              AboutUsContent: t('AboutUsNovaNest.text')
+          }}
+        />
 
         <StoryLine lang={lang} />
 
