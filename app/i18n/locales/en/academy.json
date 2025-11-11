@@ -36,26 +36,29 @@
     "title": "Recruitment and Progression Process",
     "steps": [
       {
+        "number": 1,
         "title": "Phase 1: Trial Period (Up to 3 Months)",
-        "list": [
-          "Introduces candidates to the work environment, team values, and responsibilities",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-full h-full'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z'/></svg>",
+        "details": [
           "Performance evaluated to determine suitability for next stage",
           "Evaluation based on performance, teamwork, and commitment",
           "Working hours are flexible; choose weekly hours and days"
         ]
       },
       {
+        "number": 2,
         "title": "Phase 2: Internship Period (Up to 6 Months)",
-        "list": [
-          "Develop essential skills while working on real projects",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='w-full h-full'><path d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/><path d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/></svg>",
+        "details": [
           "Internship does not guarantee employment",
           "Upon completion, participants receive an official certificate"
         ]
       },
       {
+        "number": 3,
         "title": "Phase 3: Official Employment",
-        "list": [
-          "Top performers may join NovaNest’s core team",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='w-full h-full'><rect x='2' y='7' width='20' height='14' rx='2' ry='2'/><path d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'/></svg>",
+        "details": [
           "Employment includes salary, benefits, and growth opportunities",
           "Work on international projects as part of the professional team"
         ]
