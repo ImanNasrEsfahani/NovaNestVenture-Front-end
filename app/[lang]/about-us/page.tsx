@@ -45,7 +45,7 @@ export default function Page({
           lang={lang} 
           translations={{
               AboutUs: t('AboutUsNovaNest.title'),
-              AboutUsContent: t('AboutUsNovaNest.text')
+              AboutUsContent: t('AboutUsNovaNest.text', { returnObjects: true })
           }}
         />
 
