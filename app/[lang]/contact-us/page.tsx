@@ -22,7 +22,6 @@ export default function ContactUsPage({
   params: { lang: string };
 }) {
   const { t } = getServerTranslation(lang, 'contact');
-  const { t: tAcademy } = getServerTranslation(lang, 'academy');
   const { t: tAboutus } = getServerTranslation(lang, 'aboutUs');
 
   // Renamed the component for better naming
@@ -59,7 +58,7 @@ export default function ContactUsPage({
           lang={lang}
           translations={{
               AboutUs: tAboutus('AboutUsNovaNest.title'),
-              AboutUsContent: tAboutus('AboutUsNovaNest.text')
+              AboutUsContent: tAboutus('AboutUsNovaNest.text', { returnObjects: true })
           }} 
         />
         <SubsidiaryCompanies lang={lang}/>
