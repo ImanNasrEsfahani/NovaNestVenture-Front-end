@@ -6,6 +6,7 @@ import CallToAction from '@/components/common/CallToAction';
 import Accordion from '@/components/startup/Accordions';
 import Intro from '@/components/common/Intro';
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
+import Priority from '@/components/home/Priority';
 
 // const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
@@ -103,16 +104,10 @@ export default function Page({
             </section>
 
             {/* Learning Opportunities */}
-            <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">{t('opportunities.title', { returnObjects: true })}</h3>
-                <div className="grid gap-4 md:grid-cols-3">
-                    {(t('opportunities.list', { returnObjects: true }) || []).map((area: string, i: number) => (
-                        <div key={i} className="p-4 bg-gray-50 rounded-lg border">
-                            <p className="text-gray-800 font-medium">{area}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+            <Priority
+                Priorities={t('opportunities.title', { returnObjects: true })}
+                cardData={(t('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+            />
 
             {/* FAQ */}
             <section className="w-full max-w-responsive mx-auto pt-9 py-16">
