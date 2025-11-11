@@ -1,7 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  safelist: process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : [],
+  safelist: [
+    // Development: allow all patterns
+    ...(process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : []),
+    // Production: specific color classes
+    'bg-green-50', 'bg-blue-50', 'bg-orange-50',
+    'bg-green-500', 'bg-blue-500', 'bg-orange-500',
+    'border-green-200', 'border-blue-200', 'border-orange-200',
+    'text-green-600', 'text-blue-600', 'text-orange-600',
+    'bg-gradient-to-br', 'from-green-500', 'to-green-600',
+    'from-blue-500', 'to-blue-600',
+    'from-orange-500', 'to-orange-600',
+  ],
   theme: {
     extend: {
       fontSize: {

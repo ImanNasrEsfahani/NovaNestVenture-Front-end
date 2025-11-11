@@ -89,18 +89,100 @@ export default function Page({
             {/* Recruitment & Progression */}
             <section className="w-full max-w-responsive mx-auto mt-9 mb-16">
                 <h3 className="text-2xl font-semibold text-gray-800 font-header text-center mb-6">{t("process.title")}</h3>
-                <div className="grid gap-6 md:grid-cols-3">
+
+                {/* Timeline Stages */}
+                <div className="space-y-6 lg:space-y-8">
+                    {(t("process.steps", { returnObjects: true }) || []).map((stage: any, index: number) => (
+                        <div key={stage.id} className="relative">
+                            {/* Timeline connector */}
+                            {index < (t("process.steps", { returnObjects: true }) || []).length - 1 && (
+                                <div
+                                    className={`absolute left-8 top-20 bottom-0 w-0.5 ${stage.id === 1 ? 'bg-green-300' : stage.id === 2 ? 'bg-blue-300' : 'bg-orange-300'
+                                        } hidden lg:block translate-y-8`}
+                                    style={{ height: 'calc(100% + 2rem)' }}
+                                />
+                            )}
+
+                            {/* Stage Card */}
+                            <div className={`border-2 ${stage.borderColor} ${stage.bgColor} rounded-2xl p-6 lg:p-8 relative`}>
+                                <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                                    {/* Left Content */}
+                                    <div className="flex-1">
+                                        <div className="flex items-start gap-4 mb-4">
+                                            {/* Icon */}
+                                            <div className={`${stage.iconBgColor} rounded-full text-white p-3 w-16 h-16 flex-shrink-0`}>
+                                                <div dangerouslySetInnerHTML={{ __html: stage.icon }} />
+                                            </div>
+
+                                            {/* Title Section */}
+                                            <div className="flex-1">
+                                                <div className={`${stage.number === 1 ? 'text-green-600' :
+                                                        stage.number === 2 ? 'text-blue-600' :
+                                                            'text-orange-600'
+                                                    } text-6xl font-bold mb-4`}>
+                                                    Stage {stage.number}
+                                                </div>
+                                                <h2 className="text-2xl font-bold mb-1">{stage.title}</h2>
+                                                <h3 className="text-lg text-gray-700 font-bold mb-2">{stage.subtitle}</h3>
+                                                <p className="text-gray-700 text-lg mb-2">{stage.duration}</p>
+                                            </div>
+                                        </div>
+
+                                        {/* Description */}
+                                        {stage.text.map((feature: string, index: number) => (
+                                            <p key={`feat-p-${index}`} className="text-base text-gray-900 ml-16">{feature}</p>
+                                        ))}
+
+                                        {/* Achivement */}
+                                        <div className="ml-16 mt-6">
+                                            <p className="text-lg font-bold mb-2">{stage.achivementTitle}</p>
+                                            <ul className="list-disc list-inside space-y-1 pl-2">
+                                                {stage.achivement.map((highlight: string, i: number) => (
+                                                    <li key={i} className="text-base text-gray-900">{highlight}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {/* Right Image */}
+                                    <div className="lg:w-64 flex-shrink-0">
+                                        <div className="size-full relative overflow-hidden rounded-xl">
+                                            <Image
+                                                src={stage.imageUrl}
+                                                alt={stage.title}
+                                                className="w-full h-full object-cover"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 256px"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
+                {/* <div className="grid gap-6 md:grid-cols-3">
                     {(t("process.steps", { returnObjects: true }) || []).map((step: any, index: number) => (
                         <article key={index} className="p-5 bg-white rounded-lg shadow-sm border">
                             <h4 className="font-semibold text-lg mb-4">{step.title}</h4>
+                            <h6 className="font-semibold text-base text-gray-900 mb-4">{step.subtitle}</h6>
                             <ul className="text-gray-700 list-inside text-sm pl-2 space-y-2">
-                                {step.list.map((feature: string, index: number) => (
+                                {step.text.map((feature: string, index: number) => (
+                                    <li key={`feat-l-${index}`}>{feature}</li>
+                                ))}
+                            </ul>
+
+                            <div className="text-lg mt-4">{step.achivementTitle}</div>
+                            <ul className="text-gray-700 list-inside text-sm pl-2 space-y-2">
+                                {step.achivement.map((feature: string, index: number) => (
                                     <li key={`feat-l-${index}`}>{feature}</li>
                                 ))}
                             </ul>
                         </article>
                     ))}
-                </div>
+                </div> */}
             </section>
 
             {/* Learning Opportunities */}
