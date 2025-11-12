@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PersonCard from './PersonCard';
 import { Person } from '@/types/global';
+import styles from './PeopleCarousel.module.css';
 
 type Props = {
   people: Person[];
@@ -111,12 +112,11 @@ export default function PeopleCarousel({ people }: Props) {
     <section className="relative w-full overflow-hidden bg-gradient-to-r from-whiteGold via-white to-whiteGold">
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white to-transparent z-20 pointer-events-none" />
-        {/* <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white to-transparent z-20 pointer-events-none" /> */}
 
         {/* scrollable wrapper */}
         <div
           ref={containerRef}
-          className="flex gap-6 md:gap-8 py-4 px-6 overflow-x-auto scroll-smooth no-scrollbar"
+          className={`${styles.scrollContainer} flex gap-6 md:gap-8 py-4 px-6 overflow-x-auto scroll-smooth`}
           style={{
             // prevent native touch-action from interfering with our pointer drag
             touchAction: 'pan-y'
@@ -128,7 +128,6 @@ export default function PeopleCarousel({ people }: Props) {
             <div
               key={`${person.name}-${index}`}
               className="flex-shrink-0 w-64 md:w-72"
-              // visual hover state still allowed per-card
             >
               <PersonCard person={person} />
             </div>
