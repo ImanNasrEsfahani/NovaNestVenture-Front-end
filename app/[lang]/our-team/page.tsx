@@ -21,9 +21,9 @@ export default function TeamPage({
 
   const roles = t('roles', { returnObjects: true });
 
-  const safeRoles = Array.isArray(roles) ? roles : [];
-
-  const mentors = safeRoles.find(r => String(r.title).toLowerCase().includes('mentor'))?.people ?? [];
+  const mentors = roles.Mentors ?? [];
+  const trainees = roles.Trainees ?? [];
+  const coreTeam = roles["Core Team"] ?? [];
 
   return (
     <div>
@@ -50,30 +50,30 @@ export default function TeamPage({
         />
 
 
-        <div className="max-w-responsive mx-auto px-6 mb-12">
-          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
-            Mentors
+        <div className="max-w-responsive mx-auto px-6 my-16">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
+            {mentors.title}
           </h2>
           <PeopleCarousel
-            people={mentors}
+            people={mentors.people}
           />
         </div>
 
-        <div className="max-w-responsive mx-auto px-6 mb-12">
-          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
-            Trainees
+        <div className="max-w-responsive mx-auto px-6 my-16">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
+            {trainees.title}
           </h2>
           <PeopleCarousel
-            people={mentors}
+            people={trainees.people}
           />
         </div>
 
-        <div className="max-w-responsive mx-auto px-6 mb-12">
-          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center">
-            Core Team
+        <div className="max-w-responsive mx-auto px-6 my-16">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
+            {coreTeam.title}
           </h2>
           <PeopleCarousel
-            people={mentors}
+            people={coreTeam.people}
           />
         </div>
 

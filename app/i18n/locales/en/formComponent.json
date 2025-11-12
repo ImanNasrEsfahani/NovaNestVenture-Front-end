@@ -210,12 +210,9 @@
   "contactForm": {
     "title": "Contact us",
     "subTitle": "We'd love to hear from you",
-    "subject": "Subject",
-    "subjectRequired": "Your Subject is Required",
-    "subjectPlaceholder": "Subject",
     "message": "Message",
     "messageRequired": "Your Message is Required",
-    "messagePlaceholder": "Message",
+    "messagePlaceholder": "Write your message here...",
     "messagePlaceholderErrorMessage": "The message must be less than 1450 characters."
   },
   "affiliateForm": {

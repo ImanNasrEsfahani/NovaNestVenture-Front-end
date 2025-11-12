@@ -108,7 +108,7 @@ export default function PeopleCarousel({ people }: Props) {
   }, [people.length]);
 
   return (
-    <section className="relative w-full py-12 overflow-hidden bg-gradient-to-r from-whiteGold via-white to-whiteGold">
+    <section className="relative w-full overflow-hidden bg-gradient-to-r from-whiteGold via-white to-whiteGold">
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white to-transparent z-20 pointer-events-none" />
         {/* <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white to-transparent z-20 pointer-events-none" /> */}

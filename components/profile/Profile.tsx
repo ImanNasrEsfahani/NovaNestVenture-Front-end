@@ -18,6 +18,7 @@ export default function Profile({ person, lang }: { person: Person, lang: string
 
     const { t } = getServerTranslation(lang, 'formComponent');
     const { t: tCountry } = getServerTranslation(lang, 'countryInput');
+    const { t: tOurTeam } = getServerTranslation(lang, 'ourTeam');
 
     // Pass translations as props to client component
     const translations = {
@@ -83,10 +84,10 @@ export default function Profile({ person, lang }: { person: Person, lang: string
         FieldOfInterestOtherRequired: t('FieldOfInterestOtherRequired', { returnObjects: true }),
         FieldOfInterestOtherPlaceholder: t('FieldOfInterestOtherPlaceholder', { returnObjects: true }),
 
-        message: t('message'),
-        messageRequired: t('messageRequired'),
-        messagePlaceholder: t('messagePlaceholder'),
-        messagePlaceholderErrorMessage: t('messagePlaceholderErrorMessage'),
+        message: t('contactForm.message'),
+        messageRequired: t('contactForm.messageRequired'),
+        messagePlaceholder: t('contactForm.messagePlaceholder'),
+        messagePlaceholderErrorMessage: t('contactForm.messagePlaceholderErrorMessage'),
     }
 
     return (
@@ -104,51 +105,51 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                         />
                     </div>
 
-                    <div className="text-center">
-                        <h1 className="text-2xl font-semibold">{fullName}</h1>
-                        <p className="text-sm text-gray-500 mt-1">{person.job_title || '—'}</p>
+                    <div className="text-center mt-1">
+                        <h1 className="text-4xl font-semibold">{fullName}</h1>
+                        <p className="text-lg text-gray-600 mt-1">{person.job_title || '—'}</p>
                     </div>
 
-                    <div className="w-full space-y-6 mt-3 text-sm text-gray-700">
-                        <div>
-                            <h4 className="text-xs text-gray-400 uppercase mb-1">Skills</h4>
+                    <div className="w-full space-y-6 mt-3 text-gray-700">
+                        <div className="mt-4">
+                            <h4 className="text-md text-gray-600 uppercase mb-1">{tOurTeam('profile.Skills')}</h4>
                             <div className="flex flex-wrap gap-2">
-                                {(person.skills?.length ? person.skills : ['Not specified']).map((s, i) => (
-                                    <span key={i} className="text-xs bg-gray-100 px-3 py-1 rounded-full">
+                                {(person.skills?.length ? person.skills : [tOurTeam('profile.NotSpecified')]).map((s, i) => (
+                                    <span key={i} className="text-md bg-gray-100 px-3 py-1 rounded-full">
                                         {s}
                                     </span>
                                 ))}
                             </div>
                         </div>
 
-                        <div>
-                            <h4 className="text-xs text-gray-400 uppercase mb-1">Interests</h4>
+                        <div className="mt-4">
+                            <h4 className="text-md text-gray-600 uppercase mb-1">{tOurTeam('profile.Interests')}</h4>
                             <div className="flex flex-wrap gap-2">
                                 {(person.interests?.length ? person.interests : ['—']).map((s, i) => (
-                                    <span key={i} className="text-xs bg-gray-100 px-3 py-1 rounded-full">
+                                    <span key={i} className="text-md bg-gray-100 px-3 py-1 rounded-full">
                                         {s}
                                     </span>
                                 ))}
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 space-y-6 gap-2 text-sm">
+                        <div className="grid grid-cols-1 space-y-6 gap-2 mt-4">
                             <div>
-                                <h4 className="text-xs text-gray-400 uppercase">Location</h4>
+                                <h4 className="text-md text-gray-600 uppercase">{tOurTeam('profile.Location')}</h4>
                                 <p className="mt-1 pl-2">{person.location || '—'}</p>
                             </div>
                             <div>
-                                <h4 className="text-xs text-gray-400 uppercase">Education</h4>
+                                <h4 className="text-md text-gray-600 uppercase">{tOurTeam('profile.Education')}</h4>
                                 <p className="mt-1 pl-2">{person.education || '—'}</p>
                             </div>
                             <div>
-                                <h4 className="text-xs text-gray-400 uppercase">Email</h4>
-                                <p className="mt-1 pl-2">Rasoul@NovaNestVenture.com</p>
+                                <h4 className="text-md text-gray-600 uppercase">{tOurTeam('profile.Email')}</h4>
+                                <p className="mt-1 pl-2">{person.email || '—'}</p>
                             </div>
                         </div>
 
-                        <div>
-                            <h4 className="text-xs text-gray-400 uppercase mb-2">Preferred Contact</h4>
+                        <div className="mt-4">
+                            <h4 className="text-md text-gray-600 uppercase mb-2">{tOurTeam('profile.PreferredContact')}</h4>
                             <div className="flex items-center gap-3 justify-center">
                                 {/* {person.email ? (
                                     <Link href={`mailto:${person.email}`} target="_blank" className="text-gray-600 hover:text-primary">
@@ -178,16 +179,15 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                 {/* Right Column - 2/3 */}
                 <main className="w-full lg:w-2/3">
                     <div className="bg-white rounded-xl shadow p-6">
-                        <h2 className="text-xl font-semibold mb-4">About</h2>
-                        <div className="prose max-w-none text-gray-700">
+                        <h2 className="text-xl font-semibold mb-4">{tOurTeam('profile.About')}</h2>
+                        <div className="prose max-w-none text-base text-gray-700">
                             <p>
-                                {person.about ||
-                                    `Hi, I'm ${fullName}. ${person.job_title ? `I work as ${person.job_title}` : 'I am a professional'} — passionate about building products, mentoring startups and collaborating across teams.`}
+                                {person.about || tOurTeam('profile.fallback.aboutme', { name: fullName, jobText: person.job_title ?? "-" })}
                             </p>
                             <p>
                                 {person.skills?.length
-                                    ? `My strengths include ${person.skills.slice(0, 5).join(', ')}. I value continuous learning, collaboration, and delivering real impact.`
-                                    : `I focus on learning, collaboration and creating measurable impact.`}
+                                    ? tOurTeam('profile.fallback.strengths', { skills: person.skills.slice(0, 5).join(', ') })
+                                    : tOurTeam('profile.fallback.strenghtsWithoutSkills')}
                             </p>
                         </div>
                     </div>

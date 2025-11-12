@@ -156,8 +156,8 @@ export default function ContactForm({ lang, translations }: Props) {
   }));
 
   return (
-    <div className="flex h-full flex-col items-center justify-between md:items-start">
-      <div className="h-[75px] md:h-[125px]">
+    <div className="w-full flex h-full flex-col items-center justify-between md:items-start">
+      <div className="w-full h-[75px] md:h-[125px]">
         <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
       </div>
 

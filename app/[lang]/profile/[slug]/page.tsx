@@ -13,11 +13,13 @@ export default async function Page({
 
   const { t } = getServerTranslation(lang, 'ourTeam');
 
-  // get roles from translations (returns array of { title, people })
-  const roles = (t('roles', { returnObjects: true }) as unknown) as Array<{ title: string; people?: Person[] }> | undefined;
+  const roles = t('roles', { returnObjects: true });
+  const mentors = roles.Mentors ?? [];
+  const trainees = roles.Trainees ?? [];
+  const coreTeam = roles["Core Team"] ?? [];
 
-  // flatten all people from every role into a single array
-  const allPeople: Person[] = roles?.flatMap((r) => r.people ?? []) ?? [];
+  // concat the three arrays into one (and dedupe by slug)
+  const allPeople: Person[] = [...mentors.people, ...trainees.people, ...coreTeam.people];
 
   const peopleBySlug = new Map<string, Person>();
   for (const p of allPeople) {
