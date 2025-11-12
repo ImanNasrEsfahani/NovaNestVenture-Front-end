@@ -15,9 +15,6 @@ import FormTitle from '@/components/common/form/FormTitle';
 interface Translations {
   formTitle: string;
   formSubtitle: string;
-  formDescriptionStart: string;
-  formList: string[];
-  formDescriptionEnd: string;
 
   birthDate: string;
   birthDateErrorMessage: string;

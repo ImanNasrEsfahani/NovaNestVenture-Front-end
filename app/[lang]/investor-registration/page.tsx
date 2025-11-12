@@ -46,7 +46,7 @@ export default function InvestorRegistrationPage({
         description={t('description', { returnObjects: true }) as string | string[]}
       />
 
-      <CallToAction text={t("callToAction", { returnObject: true })} />
+      {/* <CallToAction text={t("callToAction", { returnObject: true })} /> */}
 
       <InvestorRegistrationForm lang={lang} />
     </>

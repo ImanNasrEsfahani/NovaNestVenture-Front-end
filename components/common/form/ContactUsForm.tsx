@@ -10,10 +10,6 @@ export default function ContactUsFormWrapper({lang}: {lang: string}) {
     title: t('contactForm', { returnObjects: true }).title,
     subTitle: t('contactForm', { returnObjects: true }).subTitle,
 
-    subject: t('contactForm', { returnObjects: true }).subject,
-    subjectRequired: t('contactForm', { returnObjects: true }).subjectRequired,
-    subjectPlaceholder: t('contactForm', { returnObjects: true }).subjectPlaceholder,
-
     message: t('contactForm', { returnObjects: true }).message,
     messageRequired: t('contactForm', { returnObjects: true }).messageRequired,
     messagePlaceholder: t('contactForm', { returnObjects: true }).messagePlaceholder,

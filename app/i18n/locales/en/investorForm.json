@@ -3,17 +3,17 @@
   "banner": "Investor Registeration",
   "NovaNestVenture": "NovaNest Venture",
   "formTitle": "Investor Registeration",
-  "formSubtitle": "Personal Information",
+  "formSubtitle": "Let’s Talk About your interests",
 
   "title": "Become a NovaNest Venture Investor",
-  "subtitle": "Would you like to access unique investment opportunities? By joining the NovaNest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:",
+  "subtitle": "Your Capital, Our Expertise, Shared Success",
   "description": [
-    "Early access to high-potential startups and projects",
-    "In-depth market analyses and exclusive reports",
-    "A diverse portfolio of opportunities with varying risk and return levels",
-    "Direct interaction with founders and access to a professional network",
-    "Full transparency in the investment process and returns"
-  ],
-
+      "Would you like to access unique investment opportunities? By joining the NovaNest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:",
+      "Early access to high-potential startups and projects",
+      "In-depth market analyses and exclusive reports",
+      "A diverse portfolio of opportunities with varying risk and return levels",
+      "Direct interaction with founders and access to a professional network",
+      "Full transparency in the investment process and returns"
+    ],
   "callToAction": "To take advantage of these opportunities, please complete the form below. Our team will contact you shortly."
 }

@@ -166,7 +166,6 @@ const initialContactFormData: ContactFormDataType = {
   lastName: '',
   email: '',
   phoneNumber: '',
-  subject: '',
   message: ''
 };
 

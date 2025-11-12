@@ -2,7 +2,7 @@ import Banner from '@/components/common/Banner';
 import JoinAsaPartnerForm from '@/components/partner-membership/JoinAsaPartnerForm';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import CallToAction from '@/components/common/CallToAction';
+// import CallToAction from '@/components/common/CallToAction';
 import Intro from '@/components/common/Intro';
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default async function AffiliateFormPage({
         description={t("affiliateForm", { returnObjects: true }).description}
       />
 
-      <CallToAction text={t('affiliateForm', { returnObjects: true }).callToAction} />
+      {/* <CallToAction text={t('affiliateForm', { returnObjects: true }).callToAction} /> */}
 
       <JoinAsaPartnerForm lang={lang} />
     </>

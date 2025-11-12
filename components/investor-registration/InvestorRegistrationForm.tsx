@@ -4,16 +4,13 @@ import InvestorRegistrationFormClient from '@/components/investor-registration/I
 export default function InvestorRegistrationForm({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'formComponent');
   const { t: tCountry } = getServerTranslation(lang, 'countryInput');
-  // const { t: tInvestment } = getServerTranslation(lang, 'investment');
+  const { t: tInvestorForm } = getServerTranslation(lang, 'investorForm');
 
   // Pass translations as props to client component
   const translations = {
-    formTitle: t('investorForm', { returnObjects: true }).formTitle,
-    formDescriptionStart: t('investorForm', { returnObjects: true }).formDescriptionStart,
-    formList: t('investorForm', { returnObjects: true }).formList,
-    formDescriptionEnd: t('investorForm', { returnObjects: true }).formDescriptionEnd,
+    formTitle: tInvestorForm('formTitle', { returnObjects: true }),
+    formSubtitle: tInvestorForm('formSubtitle', { returnObjects: true }),
     
-    formSubtitle: t('investorForm', { returnObjects: true }).formSubtitle,
     birthDate: t('birthDate'),
     birthDateErrorMessage: t('birthDateErrorMessage'),
     birthDatePlaceholder: t('birthDatePlaceholder'),

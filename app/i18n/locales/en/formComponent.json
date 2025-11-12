@@ -220,14 +220,14 @@
     "dir": "ltr",
     "banner": "Affiliate Registration",
     "formTitle": "Affiliate Registration Form",
-    "formSubtitle": "Personal Information",
+    "formSubtitle": "Let’s Talk About How We Can Grow Together",
     "title": "Join as a Business Partner (Affiliate)",
     "subtitle": "Collaborate with NovaNest to Empower Entrepreneurs Worldwide",
     "description": [
       "Become part of NovaNest’s trusted network of partners. By joining as an affiliate, you’ll collaborate with us to connect high-potential entrepreneurs, startups, and investors with our global programs and services.",
-      "We value long-term, transparent, and growth-oriented partnerships — built on trust, shared goals, and mutual success."
+      "We value long-term, transparent, and growth-oriented partnerships, built on trust, shared goals, and mutual success."
     ],
-    "callToAction": "Please complete the form below to tell us more about you and your organization. Our team will review your submission and contact you shortly."
+    "callToAction": "Please complete the form below to tell us more about you and your organization."
   },
   "join-our-team": {
     "lng": "en",
@@ -247,7 +247,7 @@
     "banner": "Join Our Team",
     "BannerTitle": "Work With us",
     "formTitle": "Join Our Team Form",
-    "formSubtitleTop": "Personal Information",
+    "formSubtitleTop": "Join the vision, Build the future",
     "formSubtitleBottom": "Academic / Professional Information",
     "resumeFile": "CV File:",
     "NationalIDNumber": "Your National ID Number",
@@ -385,26 +385,6 @@
     ],
     "callToAction": "Become a part of our innovative team by completing the form below."
   },
-  "investorForm": {
-    "lng": "en",
-    "dir": "ltr",
-    "banner": "Investor Registration",
-    "NovaNestVenture": "NovaNest Venture",
-    "formTitle": "Investor Registration Form",
-    "formDescriptionStart": "Would you like to access unique investment opportunities? By joining the NovaNest Venture Investor Network, you will not only gain early access to innovative projects but also enjoy exclusive benefits, including:",
-    "formList": [
-      "Early access to high-potential startups and projects",
-      "In-depth market analyses and exclusive reports",
-      "A diverse portfolio of opportunities with varying risk and return levels",
-      "Direct interaction with founders and access to a professional network",
-      "Full transparency in the investment process and returns"
-    ],
-    "formDescriptionEnd": "To take advantage of these opportunities, please complete the form below. Our team will contact you shortly.",
-    "formSubtitle": "Personal Information",
-    "interests": "Intrests",
-    "interestsRequired": "Intrests is Required.",
-    "interestsPlaceholder": "Enter your Intrests."
-  },
   "joinUsForm": {
     "lng": "en",
     "dir": "ltr",
@@ -424,7 +404,7 @@
     "resumeQuestion": "Do you have an updated CV or resume?",
     "choseFile": "Choose File",
     "formTitle": "Join as a Trainee Form",
-    "formSubtitle": "Apply as a Trainee",
+    "formSubtitle": "Start your journey with us by submitting the form below.",
     "title": "Join NovaNest as a Trainee",
     "subTitle": "Learning goes beyond the classroom — it happens through hands-on experience.",
     "Description": [
@@ -490,7 +470,7 @@
       "Certificate of completion and potential career pathways within NovaNest",
       "Access to exclusive events and resources"
     ],
-    "callToAction": "Start your learning journey with us by submitting the form below.",
+    "callToAction": "Start your journey with us by submitting the form below.",
     "aboutUS": {
       "aboutUs": "About us",
       "aboutUsContent": [

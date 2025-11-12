@@ -153,6 +153,12 @@
     "description": "",
     "accordion": [
       {
+        "header": "What are the benefits of official employment?",
+        "content": [
+          "Salary, benefits, professional growth opportunities, international projects, and collaboration with a high-performing team"
+        ]
+      },
+      {
         "header": "Who can apply?",
         "content": [
           "Any motivated teenager or young adult interested in learning and working in a dynamic startup environment, with no restrictions on field of study or prior experience."
@@ -162,12 +168,6 @@
         "header": "Is prior experience required?",
         "content": [
           "No, motivation and willingness to learn are more important. Experience in a specific field is a plus."
-        ]
-      },
-      {
-        "header": "Is this period mandatory?",
-        "content": [
-          "Yes, all applicants must complete the trial to get familiar with the team and work environment."
         ]
       },
       {
@@ -222,12 +222,6 @@
         ]
       },
       {
-        "header": "What are the benefits of official employment?",
-        "content": [
-          "Salary, benefits, professional growth opportunities, international projects, and collaboration with a high-performing team"
-        ]
-      },
-      {
         "header": "Is remote work possible?",
         "content": [
           "Yes, many positions are remote, though some may require physical presence."
@@ -243,6 +237,12 @@
         "header": "Do I receive an official certificate?",
         "content": [
           "Yes, at the end of the internship, an official certificate is provided."
+        ]
+      },
+      {
+        "header": "Is this period mandatory?",
+        "content": [
+          "Yes, all applicants must complete the trial to get familiar with the team and work environment."
         ]
       },
       {

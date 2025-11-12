@@ -1,7 +1,7 @@
 import Banner from '@/components/common/Banner';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import CallToAction from '@/components/common/CallToAction';
+// import CallToAction from '@/components/common/CallToAction';
 import Intro from '@/components/common/Intro';
 import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
@@ -101,7 +101,7 @@ export default function TraineePage({
         cardData={(tAcademy('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
       />
 
-      <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} />
+      {/* <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} /> */}
 
       <TraineeRegistrationForm lang={lang} />
 

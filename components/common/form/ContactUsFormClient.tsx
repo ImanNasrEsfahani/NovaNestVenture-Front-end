@@ -17,10 +17,6 @@ interface Translations {
   title: string;
   subTitle: string;
 
-  subject: string;
-  subjectRequired: string;
-  subjectPlaceholder: string;
-
   message: string;
   messageRequired: string;
   messagePlaceholder: string;
@@ -252,22 +248,6 @@ export default function ContactUsFormClient({ lang, translations }: Props) {
             }}
           />
         </div>
-
-        <Input
-          id="subject"
-          register={register}
-          errors={errors}
-          nameInput="subject"
-          type="text"
-          required={translations.subjectRequired}
-          patternValue=""
-          patternMessage={translations.subjectRequired}
-          placeholder={translations.subjectPlaceholder}
-          className="input"
-          label={translations.subject}
-          labelClass="mt-2"
-          containerClass=""
-        />
 
         <TextArea
           title={translations.message}

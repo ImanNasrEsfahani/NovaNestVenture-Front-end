@@ -223,14 +223,14 @@
     "dir": "rtl",
     "banner": "شرکای تجاری",
     "formTitle": "فرم شریک تجاری",
-    "formSubtitle": "اطلااعات شخصی",
+    "formSubtitle": "اطلاعات شخصی",
     "title": "Join as a Business Partner (Affiliate)",
     "subtitle": "Collaborate with NovaNest to Empower Entrepreneurs Worldwide",
     "description": [
       "Become part of NovaNest’s trusted network of partners. By joining as an affiliate, you’ll collaborate with us to connect high-potential entrepreneurs, startups, and investors with our global programs and services.",
-      "We value long-term, transparent, and growth-oriented partnerships — built on trust, shared goals, and mutual success."
+      "We value long-term, transparent, and growth-oriented partnerships, built on trust, shared goals, and mutual success."
     ],
-    "callToAction": "Please complete the form below to tell us more about you and your organization. Our team will review your submission and contact you shortly."
+    "callToAction": "Please complete the form below to tell us more about you and your organization."
   },
   "join-our-team": {
     "lng": "en",
@@ -424,7 +424,7 @@
     "resumeQuestion": "Do you have an updated CV or resume?",
     "choseFile": "Choose File",
     "formTitle": "Join as a Trainee Form",
-    "formSubtitle": "Apply as a Trainee",
+    "formSubtitle": "Start your journey with us by submitting the form below.",
     "title": "Join NovaNest as a Trainee",
     "subTitle": "Apply to gain hands-on experience and learn from experienced mentors in the NovaNest team.",
     "Description": [
@@ -490,7 +490,7 @@
       "Certificate of completion and potential career pathways within NovaNest",
       "Access to exclusive events and resources"
     ],
-    "callToAction": "Start your learning journey with us by submitting the form below.",
+    "callToAction": "Start your journey with us by submitting the form below.",
     "aboutUS": {
       "aboutUs": "About us",
       "aboutUsContent": [
