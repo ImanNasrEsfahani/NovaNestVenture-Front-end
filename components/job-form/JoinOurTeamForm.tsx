@@ -99,7 +99,7 @@ export default function JoinOurTeamForm({lang}: {lang: string}) {
     workHistorySummaryErrorMessage: t('workHistorySummaryErrorMessage', { returnObjects: true }),
     workHistorySummaryPlaceholder: t('workHistorySummaryPlaceholder', { returnObjects: true }),
 
-    formDescription: t('workWithUS', { returnObjects: true }).formDescription || [],
+    formDescription: t('join-our-team', { returnObjects: true }).formDescription || [],
   };
 
   return <JoinOurTeamFormClient lang={lang} translations={translations} />;

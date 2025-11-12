@@ -1,8 +1,7 @@
 import {
   StartupsFormDataType,
-  WorkWithUSFormDataType,
-  JoinAsaPartnerFormDataType,
   JoinOurTeamFormDataType,
+  JoinAsaPartnerFormDataType,
   TraineeRegistrationFormDataType,
   InvestorRegistrationFormDataType,
   MentorRegistrationFormDataType,
@@ -92,8 +91,8 @@ const initialJoinOurTeamFormData: JoinOurTeamFormDataType = {
   FieldOfExpert: '',
   FieldOfExpertOther: '',
   birthDate: new Date(),
-  educationField: '',
   educationLevel: '',
+  educationField: '',
   workHistorySummary: '',
   cvFile: '' as File | ''
 };
@@ -137,21 +136,6 @@ const initialTraineeRegistrationFormData: TraineeRegistrationFormDataType = {
   TellUsAboutYourself: ''
 };
 
-const initialWorkWithUSFormData: WorkWithUSFormDataType = {
-  firstName: '',
-  lastName: '',
-  phoneNumber: '',
-  position: '',
-  contract: '',
-  FieldStudy: '',
-  email: '',
-  cvFile: '' as File | '',
-  Subfield: '',
-  CreditsPassedNumber: '',
-  uni: '',
-  langLevel: ''
-};
-
 const initialContactProfileFormData: ContactProfileFormDataType = {
   firstName: '',
   lastName: '',
@@ -178,11 +162,10 @@ const initialSmallReservationFormData: SmallReservationFormDataType = {
 export {
   initialStartupsFormData,
   initialJoinAsaPartnerFormData,
-  initialJoinOurTeamFormData,
   initialInvestorRegistrationFormData,
   initialMentorRegistrationFormData,
   initialTraineeRegistrationFormData,
-  initialWorkWithUSFormData,
+  initialJoinOurTeamFormData,
   initialContactProfileFormData,
   initialContactFormData,
   initialSmallReservationFormData

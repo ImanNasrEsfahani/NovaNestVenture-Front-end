@@ -1,21 +1,21 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { WorkWithUSFormDataType } from '@/types/global';
+import { JoinOurTeamFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
 import GetCsrfToken from '@/utils/get-csrf-token';
-import { initialWorkWithUSFormData } from '../../initials/initObjects';
+import { initialJoinOurTeamFormData } from '../../initials/initObjects';
 import { submitWorkWithUsForm } from 'pages/api/work-with-us';
 import { useSubmit } from 'stores/dataStore';
 import { useFile } from 'stores/fileStore';
 import Image from 'next/image';
-import PersonalInfoSection from '@/components/work-with-us/sections/PersonalInfoSection';
-import AcademicInfoSection from '@/components/work-with-us/sections/AcademicInfoSection';
+import PersonalInfoSection from '@/components/join-our-team/sections/PersonalInfoSection';
+import AcademicInfoSection from '@/components/join-our-team/sections/AcademicInfoSection';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 interface Translations {
 
-  workWithUS: {
+  joinOurTeam: {
     Professor: string;
     student: string;
     hiring: string;
@@ -73,28 +73,28 @@ interface Translations {
   failedMessage: string;
 }
 
-interface WorkWithUsClientProps {
+interface JoinOurTeamClientProps {
   translations: Translations;
   lang: string;
 }
 
-export default function WorkWithUsClient({ translations, lang }: WorkWithUsClientProps) {
+export default function JoinOurTeamClient({ translations, lang }: JoinOurTeamClientProps) {
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<WorkWithUSFormDataType>({
+  } = useForm<JoinOurTeamFormDataType>({
     mode: 'onBlur',
-    defaultValues: initialWorkWithUSFormData
+    defaultValues: initialJoinOurTeamFormData
   });
 
-  const { workWithUS, universities, langLevel } = translations;
+  const { joinOurTeam, universities, langLevel } = translations;
   const { send } = useSubmit();
 
   const Positions = {
-    Professor: workWithUS.Professor,
-    Student: workWithUS.student
+    Professor: joinOurTeam.Professor,
+    Student: joinOurTeam.student
   } as const;
 
   const { cvFileState, handleCvFileChange } = useFile((s) => s);
@@ -118,7 +118,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
   const handleItemChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectPosition(event.target.value);
     if (event.target.value == 'Professor') {
-      setCvFileRequired(workWithUS.cvFileRequired);
+      setCvFileRequired(joinOurTeam.cvFileRequired);
     }
   };
 
@@ -127,13 +127,13 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
   };
 
   const TypeOfContractWithStudent = {
-    Hiring: workWithUS.hiring,
-    Internship: workWithUS.Internship,
-    UniversityInternship: workWithUS.UniversityInternship
+    Hiring: joinOurTeam.hiring,
+    Internship: joinOurTeam.Internship,
+    UniversityInternship: joinOurTeam.UniversityInternship
   } as const;
 
   const TypeOfContractWithProfessor = {
-    Consultation: workWithUS.professionalConsultation
+    Consultation: joinOurTeam.professionalConsultation
   } as const;
 
   const unis = universities;
@@ -217,7 +217,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
     fetchCsrfToken();
   }, [handleTokenChange]);
 
-  const onSubmit = async (formData: WorkWithUSFormDataType) => {
+  const onSubmit = async (formData: JoinOurTeamFormDataType) => {
     // Set loading and sending states.
     handleSubmitingChange(true);
     handleSendChange(true);
@@ -248,7 +248,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
         handleSuccessChange(true);
         handleNotifChange(true);
         handleSendChange(false);
-        reset(initialWorkWithUSFormData); // Country does not reset
+        reset(initialJoinOurTeamFormData); // Country does not reset
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -257,7 +257,7 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
         handleSuccessChange(true);
         handleNotifChange(false);
         handleSendChange(false);
-        reset(initialWorkWithUSFormData);
+        reset(initialJoinOurTeamFormData);
 
         setTimeout(() => {
           handleNotifChange(false);
@@ -283,14 +283,14 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
         </div>
         <div className="py-10">
           <h3 className="text-center text-2xl md:text-3xl">
-            {workWithUS.formTitle}
+            {joinOurTeam.formTitle}
           </h3>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
           <PersonalInfoSection
             register={register}
             errors={errors}
-            workWithUS={workWithUS}
+            joinOurTeam={joinOurTeam}
             translations={translations}
             unis={unis}
             PositionsData={PositionsData}
@@ -309,13 +309,13 @@ export default function WorkWithUsClient({ translations, lang }: WorkWithUsClien
           {/* next line */}
           <div className="border-b-2 border-black bg-whiteGold">
             <p className="px-5 py-3 text-2xl md:text-3xl">
-              {workWithUS.formSubtitleBottom}
+              {joinOurTeam.formSubtitleBottom}
             </p>
           </div>
           <AcademicInfoSection
             register={register}
             errors={errors}
-            workWithUS={workWithUS}
+            workWithUS={joinOurTeam}
             langLevelData={langLevelData}
             TypeOfSkillLevels={TypeOfSkillLevels}
             cvFileRequired={cvFileRequired}

@@ -44,9 +44,9 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             </div>
 
             <Intro
-                title={t('Intro', { returnObjects: true }).title}
-                subtitle={t('intro', { returnObjects: true }).subtitle}
-                description={t('intro', { returnObjects: true }).description}
+                title={t('Intro.title', { returnObjects: true })}
+                subtitle={t('Intro.subtitle', { returnObjects: true })}
+                description={t('Intro.description', { returnObjects: true })}
             />
 
             <WhyStartBusiness lang={lang} />
@@ -57,7 +57,8 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Why lang={lang} />
 
-            <CallToAction text={t('callToAction', { returnObjects: true })} />
+            {/* <CallToAction text={t('callToAction', { returnObjects: true })} /> */}
+            
             <section className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <SmallReservationForm
                     lang={lang}

@@ -22,13 +22,7 @@ export default function ApplyFormPage({
   const { t } = getServerTranslation(lang, 'formComponent');
   const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-  type Benefit = {
-    id: string;
-    title: string;
-    items: string[];
-  };
-
-  const benefits = t('workWithUS', { returnObjects: true }).benefits as Array<{
+  const benefits = t('join-our-team', { returnObjects: true }).benefits as Array<{
     id: string;
     title: string;
     items: string[];
@@ -46,14 +40,14 @@ export default function ApplyFormPage({
       <div className="hidden md:inline">
         <Banner
           image="/static/images/join-our-team-form/header.png"
-          title={t('workWithUS', { returnObjects: true }).banner}
+          title={t('join-our-team', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
       <div className="inline md:hidden">
         <Banner
           image="/static/images/join-our-team-form/header-mobile.png"
-          title={t('workWithUS', { returnObjects: true }).banner}
+          title={t('join-our-team', { returnObjects: true }).banner}
           lang={lang}
         />
       </div>
@@ -69,9 +63,9 @@ export default function ApplyFormPage({
       />
       
       <Intro
-        title={t('workWithUS.title', { returnObjects: true })}
-        subtitle={t('workWithUS.subtitle', { returnObjects: true })}
-        description={t('workWithUS.description', { returnObjects: true })}
+        title={t('join-our-team.title', { returnObjects: true })}
+        subtitle={t('join-our-team.subtitle', { returnObjects: true })}
+        description={t('join-our-team.description', { returnObjects: true })}
       />
 
       {/* Introduction Text */}
@@ -97,7 +91,7 @@ export default function ApplyFormPage({
         </div>
       </div>
 
-      <CallToAction text={t('workWithUS', { returnObjects: true }).callToAction} /> */}
+      <CallToAction text={t('join-our-team', { returnObjects: true }).callToAction} /> */}
 
       <div className="w-full max-w-responsive mx-auto">
         <JoinOurTeamForm lang={lang} />

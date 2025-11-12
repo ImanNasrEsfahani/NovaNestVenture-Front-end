@@ -193,19 +193,21 @@ interface MentorRegistrationFormDataType {
   howDidYouKnowUs: string;
 }
 
-interface WorkWithUSFormDataType {
+interface JoinOurTeamFormDataType {
   firstName: string;
   lastName: string;
-  phoneNumber: string;
-  position: string;
-  contract: string;
-  FieldStudy: string;
-  Subfield: string;
   email: string;
+  phoneNumber: string;
+  countryOfResidence: string,
+  cityOfResidence: string,
+  TypeOfCollaboration: string,
+  FieldOfExpert: string,
+  FieldOfExpertOther: string,
+  birthDate: Date,
+  educationLevel: string,
+  educationField: string,
+  workHistorySummary: string,
   cvFile?: File | '' | undefined;
-  CreditsPassedNumber: string;
-  uni: string;
-  langLevel: string;
 }
 
 // Define an interface for partner membership form data
@@ -378,5 +380,5 @@ export {
   JoinOurTeamFormDataType,
   TraineeRegistrationFormDataType,
   DecodedToken,
-  WorkWithUSFormDataType,
+  JoinOurTeamFormDataType,
 };

@@ -64,9 +64,9 @@ export default function Page({ params }: { params: { lang: string } }) {
         </div>
 
         <Intro
-          title={tPNP('Intro', { returnObjects: true }).title}
-          subtitle={tPNP('intro', { returnObjects: true }).subtitle}
-          description={tPNP('intro', { returnObjects: true }).description}
+          title={tPNP('Intro.title', { returnObjects: true })}
+          subtitle={tPNP('Intro.subtitle', { returnObjects: true })}
+          description={tPNP('Intro.description', { returnObjects: true })}
         />
 
         <OurPNPService lang={params.lang} />

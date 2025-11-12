@@ -161,7 +161,7 @@
     }
   ],
   "sendButton": "Send",
-  "ReserveButton": "Reserve my free consultation",
+  "ReserveButton": "Reserve Free Consultation",
   "sendingButton": "Submitting ....",
   "visitButton": "Visit Now",
   "successMessage": "Form Submitted Successfully.",
@@ -205,7 +205,7 @@
   "investmentCeilingPlaceholder": "ex. 100,000$",
   "SmallReservationForm": {
     "formTitle": "Free Consulting Reservation Form",
-    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below. Our team will get back to you shortly to schedule your session."
+    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below."
   },
   "contactForm": {
     "title": "Contact us",
@@ -234,19 +234,13 @@
     "dir": "ltr",
     "NovaNestVenture": "NovaNest Venture",
     "banner": "Join Our Team",
-    "formTitle": "Join Our Team Form",
-    "formSubtitle": "Personal Information",
-    "resumeFile": "CV File:",
-    "choseFile": "Choose File",
-    "resumeQuestion": "Do you have an updated CV or resume?"
-  },
-  "workWithUS": {
-    "lng": "en",
-    "dir": "ltr",
-    "NovaNestVenture": "NovaNest Venture",
-    "banner": "Join Our Team",
     "BannerTitle": "Work With us",
+
+    "choseFile": "Choose File",
+    "resumeQuestion": "Do you have an updated CV or resume?",
+    
     "formTitle": "Join Our Team Form",
+    "formSubtitle": "Join the vision",
     "formSubtitleTop": "Join the vision, Build the future",
     "formSubtitleBottom": "Academic / Professional Information",
     "resumeFile": "CV File:",

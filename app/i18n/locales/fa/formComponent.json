@@ -205,14 +205,11 @@
   "investmentCeilingPlaceholder": "لطفا سقف سرمایه گذاری خود را وارد کنید.",
   "SmallReservationForm": {
     "formTitle": "Free Consulting Reservation Form",
-    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below. Our team will get back to you shortly to schedule your session."
+    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below."
   },
   "contactForm": {
     "title": "با ما تماس بگیرید",
     "subTitle": "We'd love to hear from you",
-    "subject": "موضوع",
-    "subjectRequired": "موضوع شما الزامی است",
-    "subjectPlaceholder": "موضوع شما",
     "message": "پیام شما",
     "messageRequired": "پیام شما الزامی است",
     "messagePlaceholder": "پیام شما",
@@ -233,23 +230,17 @@
     "callToAction": "Please complete the form below to tell us more about you and your organization."
   },
   "join-our-team": {
-    "lng": "en",
-    "dir": "ltr",
-    "NovaNestVenture": "NovaNest Venture",
-    "banner": "Join Our Team",
-    "formTitle": "Join Our Team ",
-    "formSubtitle": "Personal Information",
-    "resumeFile": "CV File:",
-    "choseFile": "Choose File",
-    "resumeQuestion": "Do you have an updated CV or resume?"
-  },
-  "workWithUS": {
     "lng": "fa",
     "dir": "rtl",
     "NovaNestVenture": "نوانست ونچر",
     "banner": "درخواست کار",
     "BannerTitle": "همکار ی با ما",
+
+    "choseFile": "Choose File",
+    "resumeQuestion": "Do you have an updated CV or resume?",
+
     "formTitle": "شرکت فروغ روشن پاسارگاد و آفرینندگان آشکار هدف در راستای تکمیل کادر فنی نوانست ونچر پذیرای افراد با استعداد می‌باشد",
+    "formSubtitle": "Join the vision",
     "formSubtitleTop": "اطلاعات شخصی",
     "formSubtitleBottom": "اطلاعات آکادمیک / حرفه ای",
     "resumeFile": "فایل رزومه:",
@@ -278,6 +269,9 @@
     "UniversityInternship": "UniversityInternship",
     "title": "Join NovaNest Professional Team",
     "subtitle": "Together with you and a network of entrepreneurs, we build a successful future for startups and businesses.",
+    "description": [
+      "Are you talented, creative, and professional, and eager to contribute to the growth of innovative startups? NovaNest invites you to join our professional team and work alongside experienced mentors, sharing your skills and expertise to help startups achieve success."
+    ], 
     "formDescription": [
       "Our team will review your submission and contact you if an initial conversation is appropriate.",
       "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",

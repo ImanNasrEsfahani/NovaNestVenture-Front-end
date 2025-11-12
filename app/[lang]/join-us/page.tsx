@@ -1,7 +1,7 @@
 import Banner from '@/components/common/Banner';
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
-import WorkWithUs from '@/components/work-with-us/WorkWithUs';
+import JoinOurTeam from '@/components/join-our-team/JoinOurTeam';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Work With Us',
@@ -20,11 +20,11 @@ export default function ApplyFormPage({
     <div dir={t('dir')}>
       <Banner
         image="/static/images/work-with-us/header.png"
-        title={t('workWithUS', { returnObjects: true })['BannerTitle']}
+        title={t('join-our-team', { returnObjects: true })['BannerTitle']}
         lang={lang}
       />
       <div className="max-w-responsive mx-auto">
-        <WorkWithUs lang={lang} />
+        <JoinOurTeam lang={lang} />
       </div>
     </div>
   );

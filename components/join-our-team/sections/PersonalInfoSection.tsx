@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import { UseFormRegister, FieldErrors } from 'react-hook-form';
-import { WorkWithUSFormDataType } from '@/types/global';
+import { JoinOurTeamFormDataType } from '@/types/global';
 import Select from '@/components/common/form/Select';
 import Input from '@/components/common/form/Input';
 
 interface PersonalInfoSectionProps {
-  register: UseFormRegister<WorkWithUSFormDataType>;
-  errors: FieldErrors<WorkWithUSFormDataType>;
-  workWithUS: any;
+  register: UseFormRegister<JoinOurTeamFormDataType>;
+  errors: FieldErrors<JoinOurTeamFormDataType>;
+  joinOurTeam: any;
   translations: any;
   unis: any;
   PositionsData: { value: string; label: string }[];
@@ -28,7 +28,7 @@ interface PersonalInfoSectionProps {
 export default function PersonalInfoSection({
   register,
   errors,
-  workWithUS,
+  joinOurTeam,
   translations,
   unis,
   PositionsData,
@@ -52,25 +52,25 @@ export default function PersonalInfoSection({
           register={register} 
           errors={errors} 
           nameInput="your_position" 
-          label={workWithUS.PositionPlaceholder} 
+          label={joinOurTeam.PositionPlaceholder} 
           required="" 
           className="select select-bordered mt-4 w-full max-w-xs px-8 " 
-          placeholder={workWithUS.PositionPlaceholder} 
+          placeholder={joinOurTeam.PositionPlaceholder} 
           options={PositionsData} 
           handleChange={handleItemChange} 
           selected={selectPosition}
         />
 
-        {selectPosition !== workWithUS.Professor ? (
+        {selectPosition !== joinOurTeam.Professor ? (
           <Select 
             labelClass='' 
             register={register} 
             errors={errors} 
             nameInput="type_of_contract" 
-            label={workWithUS.contractPlaceholder} 
+            label={joinOurTeam.contractPlaceholder} 
             required="" 
             className="select select-bordered mt-4 w-full max-w-xs px-8 " 
-            placeholder={workWithUS.contractPlaceholder} 
+            placeholder={joinOurTeam.contractPlaceholder} 
             options={TypeOfContractWithStudentData} 
             handleChange={handleContractWithStudentItemChange} 
             selected={selectStudentContract}
@@ -81,10 +81,10 @@ export default function PersonalInfoSection({
             register={register} 
             errors={errors} 
             nameInput="type_of_contract" 
-            label={workWithUS.contractPlaceholder} 
+            label={joinOurTeam.contractPlaceholder} 
             required="" 
             className="select select-bordered mt-4 w-full max-w-xs px-8 " 
-            placeholder={workWithUS.contractPlaceholder} 
+            placeholder={joinOurTeam.contractPlaceholder} 
             options={TypeOfContractWithProfessorData} 
             handleChange={handleContractWithProfessorItemChange} 
             selected={selectProfessorContract}
@@ -108,7 +108,7 @@ export default function PersonalInfoSection({
       {/* next line */}
       <div className="border-b-2 border-black bg-whiteGold">
         <p className="px-5 py-3 text-2xl md:text-3xl">
-          {workWithUS.formSubtitleTop}
+          {joinOurTeam.formSubtitleTop}
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 bg-whiteGold p-4 md:grid-cols-2 lg:grid-cols-3">
@@ -151,11 +151,11 @@ export default function PersonalInfoSection({
             errors={errors}
             nameInput="email"
             type="text"
-            label={workWithUS.email}
-            required={workWithUS.emailRequired}
+            label={joinOurTeam.email}
+            required={joinOurTeam.emailRequired}
             patternValue=""
             patternMessage=""
-            placeholder={workWithUS.emailPlaceholder}
+            placeholder={joinOurTeam.emailPlaceholder}
             className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md"
           />
         </div>

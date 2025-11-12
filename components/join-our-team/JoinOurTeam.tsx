@@ -1,13 +1,13 @@
 import { getServerTranslation } from 'app/i18n';
-import WorkWithUsClient from 'components/work-with-us/WorkWithUsClient';
+import JoinOurTeamClient from 'components/join-our-team/JoinOurTeamClient';
 
-export default function WorkWithUs({ lang }: { lang: string }) {
+export default function JoinOurTeam({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'formComponent');
 
   // Prepare all translations that the client component needs
   const translations = {
     // Work with US specific translations
-    workWithUS: t('workWithUS', { returnObjects: true }),
+    joinOurTeam: t('join-our-team', { returnObjects: true }),
     
     // Universities and language levels
     universities: t("universities", { returnObjects: true }),
@@ -30,5 +30,5 @@ export default function WorkWithUs({ lang }: { lang: string }) {
     failedMessage: t('failedMessage')
   };
 
-  return <WorkWithUsClient translations={translations} lang={lang} />;
+  return <JoinOurTeamClient translations={translations} lang={lang} />;
 }
