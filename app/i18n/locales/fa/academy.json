@@ -43,6 +43,8 @@
         "bgColor": "bg-green-50",
         "iconBgColor": "bg-green-500",
         "borderColor": "border-green-200",
+        "connectorColor": "bg-green-300",
+        "stageNumberColor": "text-green-600",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-full h-full'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z'/></svg>",
         "text": [
           "At this stage, you’ll enter NovaNest’s work environment and become familiar with our values, team structure, and type of activities.",
@@ -66,6 +68,8 @@
         "bgColor": "bg-blue-50",
         "iconBgColor": "bg-blue-500",
         "borderColor": "border-blue-200",
+        "connectorColor": "bg-blue-300",
+        "stageNumberColor": "text-blue-600",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='w-full h-full'><path d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/><path d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/></svg>",
         "text": [
           "After completing the trial stage, you’ll enter the internship phase. During this stage (up to six months), you’ll work alongside professional mentors on real NovaNest and portfolio startup projects.",
@@ -88,6 +92,8 @@
         "bgColor": "bg-orange-50",
         "iconBgColor": "bg-orange-500",
         "borderColor": "border-orange-200",
+        "connectorColor": "bg-orange-300",
+        "stageNumberColor": "text-orange-600",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='w-full h-full'><rect x='2' y='7' width='20' height='14' rx='2' ry='2'/><path d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'/></svg>",
         "text": [
           "At this stage, you’ll become part of NovaNest’s core professional team and get the opportunity to collaborate on internal and international projects.",

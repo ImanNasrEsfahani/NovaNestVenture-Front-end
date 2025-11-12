@@ -93,7 +93,7 @@ export default function TraineePage({
       </section>
 
       {/* Recruitment & Progression (Procedure component) */}
-      <Procedure title={t("process.title")} steps={t("process.steps", { returnObjects: true })} />
+      <Procedure title={tAcademy("process.title", { returnObjects: true })} steps={tAcademy("process.steps", { returnObjects: true })} />
 
       {/* Learning Opportunities */}
       <Priority

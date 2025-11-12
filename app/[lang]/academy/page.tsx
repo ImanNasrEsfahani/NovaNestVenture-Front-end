@@ -22,8 +22,8 @@ export default function Page({
 }: {
     params: { lang: string };
 }) {
-    const { t } = getServerTranslation(lang, 'academy');
-    const raw = t('FAQ.accordion', { returnObjects: true }) || [];
+    const { t: tAcademy } = getServerTranslation(lang, 'academy');
+    const raw = tAcademy('FAQ.accordion', { returnObjects: true }) || [];
     const items = Array.isArray(raw) ? raw : [];
     const mid = Math.ceil(items.length / 2);
     const left = items.slice(0, mid);
@@ -34,7 +34,7 @@ export default function Page({
             <div className="hidden md:inline">
                 <Banner
                     image="/static/images/acceleration/accleration-hero.png"
-                    title={t('banner')}
+                    title={tAcademy('banner')}
                     lang={lang}
                     backgroundPosition="top"
                     backgroundSize="cover"
@@ -43,7 +43,7 @@ export default function Page({
             <div className="inline md:hidden">
                 <Banner
                     image="/static/images/acceleration/accleration-heromob.png"
-                    title={t('banner')}
+                    title={tAcademy('banner')}
                     lang={lang}
                     backgroundPosition="center"
                     backgroundSize="cover"
@@ -51,21 +51,21 @@ export default function Page({
             </div>
 
             <Intro
-                title={t('title')}
-                subtitle={t('subtitle')}
-                description={t('description', { returnObjects: true })}
+                title={tAcademy('title')}
+                subtitle={tAcademy('subtitle')}
+                description={tAcademy('description', { returnObjects: true })}
             />
 
 
             {/* Why Join */}
             <section className="w-full max-w-responsive mx-auto mt-9 mb-20">
-                <h3 className="text-center text-3xl font-semibold text-gray-800 mb-2">{t('why.title')}</h3>
-                <p className="text-center text-gray-700 pl-4 mb-12">{t('why.description')}</p>
+                <h3 className="text-center text-3xl font-semibold text-gray-800 mb-2">{tAcademy('why.title')}</h3>
+                <p className="text-center text-gray-700 pl-4 mb-12">{tAcademy('why.description')}</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     <div className="flex items-center justify-center">
                         <ul className="grid gap-1 text-gray-700 list-inside pl-4">
-                            {(t('why.list', { returnObjects: true }) || []).map((text: string, idx: number) => (
+                            {(tAcademy('why.list', { returnObjects: true }) || []).map((text: string, idx: number) => (
                                 <li key={idx} className="flex">
                                     • {text}
                                 </li>
@@ -88,19 +88,19 @@ export default function Page({
             </section>
 
             {/* Recruitment & Progression (Procedure component) */}
-            <Procedure title={t("process.title")} steps={t("process.steps", { returnObjects: true })} />
+            <Procedure title={tAcademy("process.title")} steps={tAcademy("process.steps", { returnObjects: true })} />
 
 
             {/* Learning Opportunities */}
             <Priority
-                Priorities={t('opportunities.title', { returnObjects: true }) || {}}
-                cardData={(t('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+                Priorities={tAcademy('opportunities.title', { returnObjects: true }) || {}}
+                cardData={(tAcademy('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
             />
 
             {/* FAQ */}
             <section className="w-full max-w-responsive mx-auto pt-9 py-16">
                 <h3 className="text-4xl font-header leading-loose text-center font-bold">
-                    {t('FAQ.title')}
+                    {tAcademy('FAQ.title')}
                 </h3>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12">
@@ -114,7 +114,7 @@ export default function Page({
                 </div>
             </section>
 
-            <CallToAction text={t("callToAction")} />
+            <CallToAction text={tAcademy("callToAction")} />
 
             <section className='max-w-responsive mx-auto lg:px-4 w-100'>
                 <TraineeRegistrationForm lang={lang} />
