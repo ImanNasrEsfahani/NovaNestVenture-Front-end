@@ -61,7 +61,7 @@ export default function TraineePage({
           AboutUsContent: t('joinAsATrainee.aboutUS.aboutUsContent', { returnObjects: true }),
           ReadMore: t('joinAsATrainee.aboutUS.readMore', { returnObjects: true }),
         }}
-        href={`${base}/about-us`}
+        href="/about-us"
       />
 
       <Intro

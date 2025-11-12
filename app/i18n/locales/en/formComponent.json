@@ -136,7 +136,7 @@
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
   "TellUsAboutYourself": "Tell Us About Yourself",
   "TellUsAboutYourselfRequired": "This field is required.",
-  "TellUsAboutYourselfPlaceholder": "Describe your interests, goals, and what you hope to achieve through this collaboration.",
+  "TellUsAboutYourselfPlaceholder": "Describe your interests and what you hope to achieve through this collaboration.",
   "TellUsAboutYourselfErrorMessage": "The message must be less than 1450 characters.",
   "EducationLevelsData": [
     {
@@ -498,7 +498,7 @@
         "The NovaNest Business Academy is designed specifically for trainees, focused on developing professional skills and expertise. Many of our core team members began their journey here, progressing from trainees to skilled professionals.",
         "Trainees grow alongside experienced mentors and by working on real, international projects, gaining the skills and experience needed to step into professional roles."
       ],
-      "readMore": "Read More"
+      "readMore": "More About us"
     }
   },
   "startUp": {

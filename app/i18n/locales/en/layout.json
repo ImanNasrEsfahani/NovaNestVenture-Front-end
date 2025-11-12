@@ -12,14 +12,6 @@
         {
           "label": "Acceleration",
           "href": "en/acceleration"
-        },
-        {
-          "label": "Startup Visa",
-          "href": "en/startup"
-        },
-        {
-          "label": "Entrepreneurship",
-          "href": "en/pnp"
         }
       ]
     },
@@ -33,6 +25,18 @@
       "label": "Our team",
       "type": "link",
       "href": "en/our-team",
+      "submenuItems": []
+    },
+    {
+      "label": "Startup Visa",
+      "type": "link",
+      "href": "en/startup",
+      "submenuItems": []
+    },
+    {
+      "label": "Entrepreneurship",
+      "type": "link",
+      "href": "en/pnp",
       "submenuItems": []
     }
   ]

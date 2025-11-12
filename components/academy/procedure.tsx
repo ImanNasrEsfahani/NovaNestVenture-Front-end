@@ -35,28 +35,26 @@ export default function Procedure({ title, steps }: ProcedureProps) {
 
                     return (
                         <div key={index} className="relative">
-                            {index < steps.length - 1 && (
-                                <div
-                                    className={`absolute left-8 top-20 bottom-0 w-0.5 ${stage.connectorColor ?? 'bg-gray-200'} hidden lg:block translate-y-8`}
-                                    style={{ height: "calc(100% + 2rem)" }}
-                                />
-                            )}
 
                             <div className={`border-2 ${stage.borderColor} ${stage.bgColor} rounded-2xl p-6 lg:p-8 relative`}>
                                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
                                     <div className="flex-1">
                                         <div className="flex items-start gap-4 mb-4">
-                                            <div className={`${stage.iconBgColor} rounded-full text-white p-3 w-16 h-16 flex-shrink-0`}>
+                                            <div className={`${stage.iconBgColor} rounded-full text-white p-3 w-14 h-14 flex-shrink-0`}>
                                                 <div dangerouslySetInnerHTML={{ __html: stage.icon ?? "" }} />
                                             </div>
 
-                                            <div className="flex-1">
-                                                <div className={`${stage.stageNumberColor ?? 'text-gray-600'} text-6xl font-bold mb-4`} >
-                                                    Stage {stage.number}
+                                            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+                                                <div>
+                                                    <div className={`${stage.stageNumberColor ?? 'text-gray-600'} text-5xl mt-1 font-bold mb-4`}>
+                                                        Stage {stage.number}
+                                                    </div>
                                                 </div>
-                                                <h2 className="text-2xl font-bold mb-1">{stage.title}</h2>
-                                                <h3 className="text-lg text-gray-700 font-bold mb-2">{stage.subtitle}</h3>
-                                                {stage.duration && <p className="text-gray-700 text-lg mb-2">{stage.duration}</p>}
+                                                <div>
+                                                    <h2 className="text-2xl font-bold mb-1">{stage.title}</h2>
+                                                    <h3 className="text-lg text-gray-700 font-bold mb-2">{stage.subtitle}</h3>
+                                                    {stage.duration && <p className="text-gray-700 text-lg mb-2">{stage.duration}</p>}
+                                                </div>
                                             </div>
                                         </div>
 

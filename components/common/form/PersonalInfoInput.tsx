@@ -268,7 +268,7 @@ export default function PersonalInfoInput({
             className="input col-span-1 w-full"
             placeholder={translations.FieldOfInterestPlaceholder}
             options={translations.FieldOfInterestData}
-            handleChange={handleFieldOfExpertChange}
+            handleChange={handleFieldOfInterestChange}
             selected={fieldOfInterestValue}
           />
         </div>

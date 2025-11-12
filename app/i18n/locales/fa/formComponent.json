@@ -136,7 +136,7 @@
   "workHistorySummaryPlaceholder": "Provide a brief summary of your work history, including key roles and responsibilities.",
   "TellUsAboutYourself": "Tell Us About Yourself",
   "TellUsAboutYourselfRequired": "This field is required.",
-  "TellUsAboutYourselfPlaceholder": "Describe your interests, goals, and what you hope to achieve through this collaboration.",
+  "TellUsAboutYourselfPlaceholder": "Describe your interests and what you hope to achieve through this collaboration.",
   "TellUsAboutYourselfErrorMessage": "The message must be less than 1450 characters.",
   "EducationLevelsData": [
     {
