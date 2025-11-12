@@ -69,9 +69,9 @@ export default function ApplyFormPage({
       />
       
       <Intro
-        title={t('workWithUS', { returnObjects: true }).title}
-        subtitle={t('workWithUS', { returnObjects: true }).subtitle}
-        description=""
+        title={t('workWithUS.title', { returnObjects: true })}
+        subtitle={t('workWithUS.subtitle', { returnObjects: true })}
+        description={t('workWithUS.description', { returnObjects: true })}
       />
 
       {/* Introduction Text */}
