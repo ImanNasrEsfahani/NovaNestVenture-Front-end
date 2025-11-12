@@ -119,10 +119,6 @@
         "image": "/static/images/home/priority/tourism-services.png"
       },
       {
-        "title": "Software development and programming",
-        "image": "/static/images/home/priority/tourism-services.png"
-      },
-      {
         "title": "Graphic design and UI/UX",
         "image": "/static/images/home/priority/tourism-services.png"
       },
@@ -158,12 +154,6 @@
         "header": "Is prior experience required?",
         "content": [
           "No, motivation and willingness to learn are more important. Experience in a specific field is a plus."
-        ]
-      },
-      {
-        "header": "Is this opportunity only for residents of Canada?",
-        "content": [
-          "No, applicants from around the world are welcome. Some positions may require physical presence in Canada."
         ]
       },
       {
@@ -209,6 +199,12 @@
         "header": "Can I leave the internship if it’s not suitable?",
         "content": [
           "Yes, but we recommend consulting with your mentors before making a decision."
+        ]
+      },
+      {
+        "header": "Is this opportunity only for residents of Canada?",
+        "content": [
+          "No, applicants from around the world are welcome. Some positions may require physical presence in Canada."
         ]
       },
       {

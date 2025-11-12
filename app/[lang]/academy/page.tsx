@@ -97,7 +97,13 @@ export default function Page({
                 cardData={(tAcademy('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
             />
 
-            {/* FAQ */}
+            <CallToAction text={tAcademy("callToAction")} />
+
+            <section className='max-w-responsive mx-auto lg:px-4 w-100'>
+                <TraineeRegistrationForm lang={lang} />
+            </section>
+
+                        {/* FAQ */}
             <section className="w-full max-w-responsive mx-auto pt-9 py-16">
                 <h3 className="text-4xl font-header leading-loose text-center font-bold">
                     {tAcademy('FAQ.title')}
@@ -112,12 +118,6 @@ export default function Page({
                         <Accordion data={right} />
                     </div>
                 </div>
-            </section>
-
-            <CallToAction text={tAcademy("callToAction")} />
-
-            <section className='max-w-responsive mx-auto lg:px-4 w-100'>
-                <TraineeRegistrationForm lang={lang} />
             </section>
         </>
     );
