@@ -205,7 +205,7 @@
   "investmentCeilingPlaceholder": "ex. 100,000$",
   "SmallReservationForm": {
     "formTitle": "Free Consulting Reservation Form",
-    "formSubtitle": "Reserve your free consultation with our experts by filling out the form below."
+    "formSubtitle": "Reserve your free consultation with our experts"
   },
   "contactForm": {
     "title": "Contact us",
@@ -399,7 +399,7 @@
     "choseFile": "Choose File",
     "formTitle": "Join as a Trainee Form",
     "formSubtitle": "Start your journey with us by submitting the form below.",
-    "title": "Join NovaNest as a Trainee",
+    "title": "Join NovaNest Academy as a Trainee",
     "subTitle": "Learning goes beyond the classroom — it happens through hands-on experience.",
     "Description": [
       "At Novanest, we believe in the power of young minds. This is where you can discover your potential, learn from real experiences, and grow within a supportive and professional environment. If you’re looking for an opportunity to truly develop and create a successful future, Novanest is your place."
@@ -454,7 +454,7 @@
         ]
       }
     ],
-    "intro": "By Joing NovaNest as a Trainee, you will gain unique Opportunities",
+    "intro": "Unique Opportunities for Trainees",
     "features": [
       "Real-world learning alongside mentors and startup teams",
       "Hands-on experience with innovative projects",

@@ -17,7 +17,7 @@ export default function HalvesCards({lang}: {lang: string}) {
       {specialFeatureCards.map((card: any) => (
       <article
         key={card.id}
-        className="bg-whiteGold border-4 border-darkGold z-10 flex flex-col mb-10 px-4 py-6 xl:px-12 gap-5 rtl:mr-1 rounded-xl xl:w-1/2 max-w-[40rem] md:h-auto md:mb-0"
+        className="bg-whiteGold border-4 border-darkGold bg-opacity-20 z-10 flex flex-col mb-10 px-4 py-6 xl:px-12 gap-5 rtl:mr-1 rounded-xl xl:w-1/2 max-w-[40rem] md:h-auto md:mb-0"
       >
         <h3 className="pt-8 pb-1 text-center font-header text-4xl font-bold text-black">
         {card.subtitle}

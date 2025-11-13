@@ -7,7 +7,8 @@ import Intro from '@/components/common/Intro';
 import InvestmentSection from '@/components/investment/InvestmentSection';
 import WhyChoose from '@/components/investment/WhyChoose';
 import Priority from '@/components/home/Priority';
-import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
+// import InvestorRegistrationForm from '@/components/investor-registration/InvestorRegistrationForm';
+import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture | Investment',
@@ -56,7 +57,13 @@ export default function Page({
       />
 
       {/* <iframe src='https://outlook.office.com/book/NovaNestConsulting@landatrip.com/?ismsaljsauthenabled' width='100%' height='2000px%' scrolling='yes'></iframe> */}
-      <InvestorRegistrationForm lang={lang} />
+      {/* <InvestorRegistrationForm lang={lang} /> */}
+      <div className="max-w-responsive mx-auto lg:px-4 mb-36">
+        <SmallReservationForm
+          lang={lang}
+          subject='investment'
+        />
+      </div>
     </>
   );
 }

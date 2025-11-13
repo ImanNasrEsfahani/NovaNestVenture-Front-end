@@ -8,6 +8,7 @@ import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
+import DownloadGuidePanel from '@/components/DownloadGuidePanel';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
     const { t } = getServerTranslation(lang, 'pnp');
@@ -58,7 +59,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             <Why lang={lang} />
 
             {/* <CallToAction text={t('callToAction', { returnObjects: true })} /> */}
-            
+
             <section id="pnp-application-form" className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <SmallReservationForm
                     lang={lang}
@@ -73,6 +74,14 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                     <Accordions data={accordionData} />
                 </div>
             </section>
+
+
+            <DownloadGuidePanel
+                href="/pdfs/pnp-canada-catalogue-novanest-venture-en.pdf"
+                buttonLabel="Download Catalogue (PDF)"
+                fileName="PNP Entrepreneur Guide"
+                fileSize="1.8 MB"
+            />
         </>
     )
 }

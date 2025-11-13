@@ -14,7 +14,7 @@ export default function Academy({ lang }: { lang: string }) {
           <h2 className="mt-2 font-header text-4xl lg:text-5xl font-bold">{t('Academy')}</h2>
         </div>
 
-        <p className='leading-loose mt-6'>{t('NovaNestAcademyInfo')}</p>
+        <p className='leading-loose mt-6 text-base'>{t('NovaNestAcademyInfo')}</p>
 
         <div className="max-w-container-xxs mt-9">
           <ButtonRefactor

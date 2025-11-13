@@ -9,6 +9,8 @@ import Why from '@/components/startup/Why';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
 import Priority from '@/components/home/Priority';
+import ButtonRefactor from '@/components/common/ButtonRefactor';
+import DownloadGuidePanel from '@/components/DownloadGuidePanel';
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -152,6 +154,14 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           <Accordions data={accordionData} />
         </div>
       </section>
+
+
+      <DownloadGuidePanel
+        href="/pdfs/startup-visa-canada-catalogue-novanest-venture-en.pdf"
+        buttonLabel="Download Catalogue (PDF)"
+        fileName="Startup Visa Guide"
+        fileSize="2.4 MB"
+      />
     </>
   )
 }

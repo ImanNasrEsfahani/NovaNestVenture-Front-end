@@ -48,12 +48,13 @@ export default function Page({
       />
 
       <Why lang={lang} />
-      <Process lang={lang} />
       <Impact lang={lang} />
+      <Process lang={lang} />
+      
 
       <CallToAction text={t("callToAction", { returnObjects: true })} />
 
-      <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mb-36">
+      <div id="acceleration-form" className="max-w-responsive mx-auto lg:px-4 mt-9 mb-36">
         <SmallReservationForm
           lang={lang}
           subject='acceleration'

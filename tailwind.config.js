@@ -50,7 +50,7 @@ module.exports = {
         whiteGold: '#F8F5F0',
         darkGold: '#e8decd',
         tableHeader: '#DDCEBA',
-        blue: '#35427D',
+        customBlue: '#35427D',
         grayCheckBox: '#939393',
         grayLabel: "#636260",
         grayDark: "#222222B2"
