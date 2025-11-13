@@ -8,23 +8,24 @@ import OurStartupService from '@/components/startup/OurStartupService';
 import Why from '@/components/startup/Why';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
+import Priority from '@/components/home/Priority';
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
-  const { t } = getServerTranslation(lang, 'startUp');
+  const { t: tStartup } = getServerTranslation(lang, 'startUp');
 
-  const benefits = t('faq', { returnObjects: true }) as Array<{
-      id: string;
-      title: string;
-      items: string[];
+  const benefits = tStartup('faq', { returnObjects: true }) as Array<{
+    id: string;
+    title: string;
+    items: string[];
   }>;
 
   // Build accordion-friendly data
   const accordionData = [
-      ...benefits.map((b) => ({
-          header: `${b.title}`,
-          content: b.items
-      }))
+    ...benefits.map((b) => ({
+      header: `${b.title}`,
+      content: b.items
+    }))
   ];
 
   return (
@@ -32,32 +33,71 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       <div className='hidden md:inline'>
         <Banner
           image="/static/images/startup/startup-banner.webp"
-          title={t('banner')}
+          title={tStartup('banner')}
           lang={lang}
         />
       </div>
       <div className='inline md:hidden'>
         <Banner
           image="/static/images/startup/startup-banner.webp"
-          title={t('banner')}
+          title={tStartup('banner')}
           lang={lang}
         />
       </div>
 
       <Intro
-        title={t('whatIsStartupVisa.title')}
-        subtitle={t('whatIsStartupVisa.subtitle')}
-        description={t('whatIsStartupVisa.description')}
+        title={tStartup('whatIsStartupVisa.title')}
+        subtitle={tStartup('whatIsStartupVisa.subtitle')}
+        description={tStartup('whatIsStartupVisa.description')}
       />
 
       <WhoCanApply lang={lang} />
 
+      <section className="max-w-7xl mx-auto mt-12 mb-16">
+        <h3 className="text-center text-3xl font-header font-bold mb-9 text-gray-800">
+          {tStartup('Requirements.title', { returnObjects: true })}
+        </h3>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-5xl mx-auto">
+          {tStartup('Requirements.list', { returnObjects: true }).map((requirement: string, index: number) => {
+            return (
+              <div
+                key={index}
+                className="group relative rounded-lg p-6 border-l-4 border-emerald-500 bg-green-50 bg-opacity-20 shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 mt-1">
+                    <Image
+                      loading="lazy"
+                      src="/static/images/startup/circle-check.svg"
+                      alt=""
+                      width={500}
+                      height={500}
+                      className="w-7 h-7 text-emerald-500 fill-emerald-50"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-slate-900 mb-2">{requirement}</h3>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+
       <OurStartupService lang={lang} />
+
+      <Priority
+        Priorities={tStartup('benefits.title', { returnObjects: true })}
+        cardData={(tStartup('benefits.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+      />
 
       <Why lang={lang} />
 
       <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
-        <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("StartupVisaRoadmap")}</h3>
+        <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{tStartup("StartupVisaRoadmap")}</h3>
         <Image
           src="/static/images/startup/startup-visa-canada-roadmap.png"
           alt="SUV startup roadmap"
@@ -69,8 +109,8 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       {/* Latest Startups */}
       <section className='max-w-responsive mx-auto pt-12 px-4 w-100 lg:px-16 space-y-16 mb-16'>
-        <h2 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t("LatestStartups", { returnObjects: true })}</h2>
-        {t('latest-startups', { returnObjects: true }).map(
+        <h2 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{tStartup("LatestStartups", { returnObjects: true })}</h2>
+        {tStartup('latest-startups', { returnObjects: true }).map(
           (startup: {
             title: string;
             description: string;
@@ -104,14 +144,14 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           subject='startup'
         />
       </section>
-      
-      <section className="w-full max-w-responsive mx-auto pt-32" >
-          <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">FAQ (Frequently Asked Question)</h2>
 
-          <div className="w-full max-w-4xl mx-auto pt-9 py-12">
-              <Accordions data={accordionData} />
-          </div>
-    </section>
+      <section className="w-full max-w-responsive mx-auto pt-32" >
+        <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">FAQ (Frequently Asked Question)</h2>
+
+        <div className="w-full max-w-4xl mx-auto pt-9 py-12">
+          <Accordions data={accordionData} />
+        </div>
+      </section>
     </>
   )
 }

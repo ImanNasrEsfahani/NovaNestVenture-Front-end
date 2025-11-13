@@ -130,6 +130,19 @@
             }
         ]
     },
+    "Requirements": {
+        "title": "Applicant Requirements",
+        "list": [
+            "Present a new and innovative startup idea",
+            "Obtain a Letter of Support from a designated organization",
+            "Language proficiency: English CLB 5 or French NCLC 5",
+            "Proof of financial sufficiency for yourself and dependents",
+            "Police clearance certificate from the country of origin",
+            "Educational documents",
+            "Work experience documents",
+            "Medical examination documents for yourself and family"
+        ]
+    },
     "services": {
         "title": "Our Services for Canada Startup Visa",
         "description": "At Novanest, we work closely with <a href=\"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa/designated-organizations.html\" target=\"_blank\" rel=\"noopener noreferrer\">Canadian Designated Organizations</a> to provide comprehensive and specialized services for Startup Visa applicants. Our goal is to ensure a smooth, efficient, and reliable journey from concept development to permanent residency and business establishment in Canada.",
@@ -183,6 +196,43 @@
             "width": 400,
             "height": 300
         }
+    },
+    "benefits": {
+        "title": "Program Benefits",
+        "list": [
+            {
+                "title": "Direct pathway to permanent residency",
+                "image": "/static/images/startup/icons/award.svg"
+            },
+            {
+                "title": "Ownership and operation of a startup",
+                "image": "/static/images/startup/icons/building-2.svg"
+            },
+            {
+                "title": "No age or educational degree restrictions",
+                "image": "/static/images/startup/icons/users.svg"
+            },
+            {
+                "title": "No requirement for advanced language proficiency",
+                "image": "/static/images/startup/icons/graduation-cap.svg"
+            },
+            {
+                "title": "Access to Canadian and international business network",
+                "image": "/static/images/startup/icons/globe.svg"
+            },
+            {
+                "title": "Support and mentoring from accelerators and investors",
+                "image": "/static/images/startup/icons/handshake.svg"
+            },
+            {
+                "title": "Opportunity to attract investment and grow the business",
+                "image": "/static/images/startup/icons/trending-up.svg"
+            },
+            {
+                "title": "Access to government and business resources in Canada",
+                "image": "/static/images/startup/icons/file-text.svg"
+            }
+        ]
     },
     "whyChooseUs": {
         "title": "Why Choose NovaNest?",
