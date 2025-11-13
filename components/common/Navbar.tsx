@@ -13,10 +13,10 @@ export default function Navbar({ lang }: { lang: string }) {
   const menuItems = (t('menuItems', { returnObjects: true }) as MenuEntry[]) ?? [];
 
   return (
-    <nav className="navbar fixed inset-x-0 top-0 z-40 bg-[rgba(0,0,0,0.6)] backdrop-blur-sm text-white shadow-lg">
+    <nav className="navbar fixed inset-x-0 top-0 z-50 h-20 min-h-20 bg-[rgba(0,0,0,0.6)] backdrop-blur-sm text-white shadow-lg">
       <div className="max-w-responsive w-full mx-auto" >
         <div className="navbar-start gap-2 flex flex-grow lg:flex-none lg:!w-auto">
-          <div className="dropdown items-center">
+          <div className="relative z-[100] dropdown items-center">
             <div
               tabIndex={0}
               role="button"
@@ -67,7 +67,7 @@ export default function Navbar({ lang }: { lang: string }) {
             </ul>
           </div>
 
-          <Link href="/" className="btn btn-ghost h-16 min-h-16 px-2 normal-case flex flex-grow lg:flex-none lg:!w-auto">
+          <Link href="/" className="absolute top-0 left-0 size-full z-[10] lg:relative btn btn-ghost px-2 normal-case flex flex-grow lg:flex-none lg:!w-auto">
             <Image
               src="/static/images/nova-nest-venture-logo.svg"
               alt="Logo"
