@@ -138,7 +138,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         )}
       </section>
 
-      <section className='max-w-responsive mx-auto py-12 lg:px-4 w-100'>
+      <section id="startup-application-form" className='max-w-responsive mx-auto py-12 lg:px-4 w-100'>
         <SmallReservationForm
           lang={lang}
           subject='startup'

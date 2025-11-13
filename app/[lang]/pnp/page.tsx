@@ -59,7 +59,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             {/* <CallToAction text={t('callToAction', { returnObjects: true })} /> */}
             
-            <section className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
+            <section id="pnp-application-form" className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <SmallReservationForm
                     lang={lang}
                     subject='entrepreneur-pnp'
