@@ -28,7 +28,6 @@ export default function Academy({ lang }: { lang: string }) {
 
       <div className="flex justify-center size-full order-first md:order-2">
         <a
-          key={index}
           href={`${base}/join-as-a-trainee`}
           className="w-full"
           aria-label="nova-nest-venture-academy"

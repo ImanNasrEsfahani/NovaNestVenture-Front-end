@@ -27,8 +27,11 @@ export default function Footer({
   }
   return (
     <div className="bg-[#F7F3EE] font-barlow">
-      <div className="max-w-responsive mx-auto p-6  flex flex-wrap justify-between space-y-5">
-        <div className="mt-5 flex flex-col justify-between w-full lg:w-2/5">
+
+      <div className="w-full max-w-responsive mx-auto p-6 grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-12">
+
+        {/* About - spans more columns on large screens */}
+        <div className="col-span-2 lg:col-span-5 flex flex-col justify-between">
           <div>
             <h4 className="text-justify text-xl font-medium text-primary pb-2">{t('about.title')}</h4>
             <p className="text-justify font-normal pb-2">{t('about.text')}</p>
@@ -51,60 +54,77 @@ export default function Footer({
             </Link>
           </div>
         </div>
-        <div className="mt-5 flex flex-col w-full lg:w-1/3 xl:w-1/5 xl:text-center">
+
+        {/* Explore */}
+        <div className="col-span-1">
           <div className="text-xl font-medium text-primary pb-2">
             {t('explore.title')}
           </div>
-          {exploreItems.map((item, index) => (
-            <Link
-              key={index}
-              href={`${base}${item.link}`}
-              className={`hover:text-primary ${index > 0 ? 'pt-1' : ''}`}
-            >
-              {item.title}
-            </Link>
-          ))}
+          <div className="flex flex-col">
+            {exploreItems.map((item, index) => (
+              <Link
+                key={index}
+                href={`${base}${item.link}`}
+                className={`hover:text-primary ${index > 0 ? 'pt-2' : ''}`}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="mt-5 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
+
+
+
+        {/* Forms */}
+        <div className="col-span-1">
           <div className="text-xl font-medium text-primary pb-2">{t('forms', { returnObjects: true }).title}</div>
-          {formItems.map((item, index) => (
-            <Link
-              key={index}
-              href={`${base}${item.link}`}
-              className={`hover:text-primary ${index > 0 ? 'pt-1' : ''}`}
-            >
-              {item.title}
-            </Link>
-          ))}
+          <div className="flex flex-col">
+            {formItems.map((item, index) => (
+              <Link
+                key={index}
+                href={`${base}${item.link}`}
+                className={`hover:text-primary ${index > 0 ? 'pt-2' : ''}`}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="mt-5 flex flex-col w-full md:w-1/3 xl:w-1/5 xl:text-center">
+
+        {/* Contact */}
+        <div className="col-span-1">
           <div className="text-xl font-medium text-primary pb-2">
             {t('contact', { returnObjects: true }).title}
           </div>
 
-          {contactItems.map((item, index) =>
-            item.type === 'link' && item.link ? (
-              <Link
-                key={item.title}
-                href={item.link}
-                className={`hover:text-primary ${index > 0 ? 'pt-1' : ''} `}
-              >
-                {item.title}
-              </Link>
-            ) : (
-              <div key={item.title} className={`${index > 0 ? 'pt-1' : ''}`}>
-                {item.title}
-              </div>
-            )
-          )}
+          <div className="flex flex-col">
+            {contactItems.map((item, index) =>
+              item.type === 'link' && item.link ? (
+                <Link
+                  key={item.title}
+                  href={item.link}
+                  className={`hover:text-primary ${index > 0 ? 'pt-2' : ''} `}
+                >
+                  {item.title}
+                </Link>
+              ) : (
+                <div key={item.title} className={`${index > 0 ? 'pt-2' : ''}`}>
+                  {item.title}
+                </div>
+              )
+            )}
+          </div>
         </div>
       </div>
+
+
       <div className="max-w-responsive mx-auto p-4 border-t border-tableHeader text-center text-tableHeader">
         © Copyright {GetYear()} by{' '}
         <Link href={`${base}`} className="text-tableHeader">
           NovaNestVenture
         </Link>
       </div>
+
     </div>
   );
 }
