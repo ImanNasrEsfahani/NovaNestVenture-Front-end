@@ -21,7 +21,7 @@ export default function ServicesSection({
 }: Props) {
 
   return (
-    <section className={`pt-12 pb-4 md:py-16 max-w-responsive mx-auto ${className}`}>
+    <section className={`w-full max-w-responsive mx-auto pt-12 pb-4 md:py-16 ${className}`}>
       <h3 className="text-3xl lg:text-4xl font-header leading-relaxed text-center font-bold">{title}</h3>
 
       {descriptionIsHtml ? (

@@ -5,7 +5,7 @@ export default function Why({lang}: {lang: string}) {
     const { t } = getServerTranslation(lang, 'startUp');
 
     return (
-        <section className="bg-gradient-to-r from-grayDark via-gray-800 to-blue py-16 my-24">
+        <section className="w-full bg-gradient-to-r from-grayDark to-gray-800 py-16 my-24">
             <div className="max-w-responsive mx-auto text-white text-center">
                 <h2 className="text-3xl font-header font-bold mb-4">
                     {t('whyChooseUs.title')}

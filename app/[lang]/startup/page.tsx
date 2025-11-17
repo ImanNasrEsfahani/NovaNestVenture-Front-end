@@ -44,6 +44,8 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           image="/static/images/startup/startup-banner.webp"
           title={tStartup('banner')}
           lang={lang}
+          backgroundPosition="left"
+          backgroundSize="cover"
         />
       </div>
 
@@ -55,7 +57,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       <WhoCanApply lang={lang} />
 
-      <section className="max-w-7xl mx-auto mt-12 mb-16">
+      <section className="w-full max-w-7xl mx-auto mt-12 mb-16 px-4 lg:px-2">
         <h3 className="text-center text-3xl font-header font-bold mb-9 text-gray-800">
           {tStartup('Requirements.title', { returnObjects: true })}
         </h3>
@@ -65,17 +67,17 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
             return (
               <div
                 key={index}
-                className="group relative rounded-lg p-6 border-l-4 border-emerald-500 bg-green-50 bg-opacity-20 shadow-md hover:shadow-lg transition-all duration-300"
+                className="group relative rounded-lg p-6 border-l-4 border-darkGold shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-1">
+                  <div className="flex-shrink-0 mt-1 text-darkGold">
                     <Image
                       loading="lazy"
                       src="/static/images/startup/circle-check.svg"
                       alt=""
                       width={500}
                       height={500}
-                      className="w-7 h-7 text-emerald-500 fill-emerald-50"
+                      className="w-7 h-7 text-darkGold"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -103,12 +105,12 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       <Why lang={lang} />
 
-      <section className='max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
+      <section className='w-full max-w-responsive mx-auto py-24 px-4 w-100 lg:px-16'>
         <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{tStartup("StartupVisaRoadmap")}</h3>
         <Image
           src="/static/images/startup/startup-visa-canada-roadmap.png"
           alt="SUV startup roadmap"
-          className="mx-auto w-auto max-w-4xl rounded-lg"
+          className="mx-auto w-full max-w-full rounded-lg"
           width={1800}
           height={2400}
         />
