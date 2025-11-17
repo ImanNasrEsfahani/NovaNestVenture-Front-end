@@ -72,7 +72,7 @@ export default function SolutionLevel(props: Props) {
               />
 
               {/* visual control; reacts to peer-checked */}
-              <span className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-primary transition-colors
+              <span className="size-5 aspect-square flex items-center justify-center rounded-full border-2 border-primary transition-colors
                                       peer-checked:bg-primary peer-checked:border-primary">
                 <span className={`w-2.5 h-2.5 rounded-full transition-colors ${solutionsLevel === index ? 'bg-white' : 'bg-transparent'}`} />
               </span>

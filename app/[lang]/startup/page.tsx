@@ -11,11 +11,11 @@ import Priority from '@/components/home/Priority';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import DownloadGuidePanel from '@/components/DownloadGuidePanel';
 import ServicesSection from '@/components/common/ServicesSection';
+import GoldenListCards from '@/components/common/GoldenListCards';
+
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
-
   const { t: tStartup } = getServerTranslation(lang, 'startUp');
-
   const benefits = tStartup('faq', { returnObjects: true }) as Array<{
     id: string;
     title: string;
@@ -57,38 +57,11 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       <WhoCanApply lang={lang} />
 
-      <section className="w-full max-w-7xl mx-auto mt-12 mb-16 px-4 lg:px-2">
-        <h3 className="text-center text-3xl font-header font-bold mb-9 text-gray-800">
-          {tStartup('Requirements.title', { returnObjects: true })}
-        </h3>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-5xl mx-auto">
-          {tStartup('Requirements.list', { returnObjects: true }).map((requirement: string, index: number) => {
-            return (
-              <div
-                key={index}
-                className="group relative rounded-lg p-6 border-l-4 border-darkGold shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-1 text-darkGold">
-                    <Image
-                      loading="lazy"
-                      src="/static/images/startup/circle-check.svg"
-                      alt=""
-                      width={500}
-                      height={500}
-                      className="w-7 h-7 text-darkGold"
-                    />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-slate-900 mb-2">{requirement}</h3>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <GoldenListCards
+        title={tStartup('Requirements.title', { returnObjects: true })}
+        items={tStartup('Requirements.list', { returnObjects: true })}
+        iconSrc="/static/images/startup/circle-check.svg"
+      />
 
       <ServicesSection
         title={tStartup('services.title')}

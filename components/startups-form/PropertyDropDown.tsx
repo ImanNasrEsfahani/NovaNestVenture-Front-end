@@ -36,7 +36,7 @@ type Props = {
 export default function PropertyDropDown({ register, errors, translations }: Props) {
 
   return (
-    <div className='w-full p-6'>
+    <div className='w-full p-2 lg:p-6'>
       <TextArea
         title={translations.propertyRevenue}
         register={register}

@@ -43,7 +43,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
   return (
     <div className="flex flex-col items-center justify-center w-full">
       <label
-        className={`w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition
+        className={`relative w-full p-4 flex flex-col items-center justify-center cursor-pointer rounded bg-whiteGold hover:bg-gray-200 transition
           ${ showInvalid ? 'border-2 border-red-500 ring-1 ring-red-200' : '' }`}
       >
         <p className="font-base mb-2">{label}</p>
@@ -52,7 +52,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
           id={nameInput}
           type="file"
           name={nameInput}
-          className="opacity-0"
+          className="absolute opacity-0"
           required={required}
           aria-required={required}
           aria-invalid={showInvalid}
@@ -60,7 +60,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
           disabled={disabled}
         />
         {/* show filename if a file is selected */}
-        {fileName ? (
+        {fileName?.trim() ? (
           <div className="mt-3 flex items-center gap-3 w-full justify-center">
             <span className="text-sm text-ellipsis overflow-hidden whitespace-nowrap max-w-[70%]">{fileName}</span>
             <button
@@ -72,9 +72,7 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
               Remove
             </button>
           </div>
-        ) : (
-          <p className="text-sm mt-2 text-gray-600">Click to upload</p>
-        )}
+        ) : null}
       </label>
 
       {showInvalid && (
