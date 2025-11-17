@@ -11,7 +11,7 @@ export default function ContactUsDescription({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'contact');
 
   return (
-    <div className="h-full">
+    <div className="h-full hidden lg:block">
       <div className="mb-5 mt-10 flex flex-col items-center md:my-0 md:w-[494px] md:items-start">
         <h1 className="font-header text-4xl md:text-5xl mb-4">
           {t('NovaNestVenture')}

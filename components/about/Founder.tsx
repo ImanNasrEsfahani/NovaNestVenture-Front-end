@@ -35,7 +35,7 @@ export default function Founder({ lang }: { lang: string }) {
               ))}
             </div>
 
-            <div className="w-full ml-auto md:w-[224px] p-2">
+            <div className="ml-auto w-[224px] p-2">
               <ButtonRefactor
                 text="Read more"
                 type="link"
