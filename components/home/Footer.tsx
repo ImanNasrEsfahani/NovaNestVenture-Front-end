@@ -97,20 +97,20 @@ export default function Footer({
             {t('contact', { returnObjects: true }).title}
           </div>
 
-          <div className="flex flex-col">
+          <div className="">
             {contactItems.map((item, index) =>
               item.type === 'link' && item.link ? (
                 <Link
                   key={item.title}
                   href={item.link}
-                  className={`hover:text-primary ${index > 0 ? 'pt-2' : ''} `}
+                  className={`block w-full hover:text-primary ${index > 0 ? 'pt-2' : ''} `}
                 >
                   {item.title}
                 </Link>
               ) : (
-                <div key={item.title} className={`${index > 0 ? 'pt-2' : ''}`}>
+                <span key={item.title} className={`inline lg:block ${index > 0 ? 'pt-2' : ''}`}>
                   {item.title}
-                </div>
+                </span>
               )
             )}
           </div>
