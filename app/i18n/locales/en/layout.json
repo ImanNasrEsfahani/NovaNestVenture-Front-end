@@ -12,6 +12,45 @@
         {
           "label": "Acceleration",
           "href": "en/acceleration"
+        },
+        {
+          "label": "Startup Visa",
+          "href": "en/startup"
+        },
+        {
+          "label": "Entrepreneurship",
+          "href": "en/pnp"
+        }
+      ]
+    },
+    {
+      "label": "Forms",
+      "type": "dropdown",
+      "href": "#",
+      "submenuItems": [
+        {
+          "label": "Startup Validation",
+          "href": "en/startups-validation"
+        },
+        {
+          "label": "Investor Registration",
+          "href": "en/investor-registration"
+        },
+        {
+          "label": "Affiliate Registration",
+          "href": "en/affiliate-registration-form"
+        },
+        {
+          "label": "Join Our Team",
+          "href": "en/join-our-team"
+        },
+        {
+          "label": "Join as a Mentor",
+          "href": "en/join-as-a-mentor"
+        },
+        {
+          "label": "Join as a Trainee",
+          "href": "en/join-as-a-trainee"
         }
       ]
     },
@@ -25,18 +64,6 @@
       "label": "Our team",
       "type": "link",
       "href": "en/our-team",
-      "submenuItems": []
-    },
-    {
-      "label": "Startup Visa",
-      "type": "link",
-      "href": "en/startup",
-      "submenuItems": []
-    },
-    {
-      "label": "Entrepreneurship",
-      "type": "link",
-      "href": "en/pnp",
       "submenuItems": []
     }
   ]
