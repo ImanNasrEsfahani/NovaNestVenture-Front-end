@@ -164,7 +164,7 @@ export default function SmallReservationFormClient({ lang, translations }: Props
 
   return (
     <div className="max-w-responsive mx-auto">
-      <div className="h-[75px] md:h-[125px]">
+      <div className="h-[100px] md:h-[125px]">
         <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
       </div>
 
