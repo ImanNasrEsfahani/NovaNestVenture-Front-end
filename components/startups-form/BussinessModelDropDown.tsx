@@ -29,7 +29,7 @@ export default function BussinessModelDropDown(props: Props) {
   const { register, errors, translations } = props;
 
   return (
-    <div className='w-full p-6'>
+    <div className='w-full p-2 lg:p-6'>
       <TextArea
         title={translations.monetization}
         register={register}

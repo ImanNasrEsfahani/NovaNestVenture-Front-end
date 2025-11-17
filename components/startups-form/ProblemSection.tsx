@@ -25,7 +25,7 @@ export default function ProblemsSection({
 
   return (
     <>
-      <div className="w-full p-6">
+      <div className="w-full p-2 lg:p-6">
         <TextArea
           title={textAreaTitle}
           register={register}

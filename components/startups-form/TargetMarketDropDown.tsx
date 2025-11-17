@@ -38,7 +38,7 @@ export default function TargetMarketDropDown({
 }: Props) {
 
   return (
-    <div className='w-full p-6'>
+    <div className='w-full p-2 lg:p-6'>
       <TextArea
         title={translations.targetCharacteristics}
         register={register}

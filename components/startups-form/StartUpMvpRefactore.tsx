@@ -49,7 +49,7 @@ export default function StartUpMvpRefactore({
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div className='w-10/12 mx-auto flex flex-col mt-6'>
+    <div className='mx-auto lg:px-4 flex flex-col mt-6'>
       <p className='text-base leading-loose mt-4 mb-12'>{t('startUp',{ returnObjects: true }).MVP.description}</p>
       <PitchdeckUpload
         problem={true}

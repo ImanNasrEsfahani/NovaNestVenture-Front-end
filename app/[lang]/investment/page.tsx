@@ -58,7 +58,7 @@ export default function Page({
 
       {/* <iframe src='https://outlook.office.com/book/NovaNestConsulting@landatrip.com/?ismsaljsauthenabled' width='100%' height='2000px%' scrolling='yes'></iframe> */}
       {/* <InvestorRegistrationForm lang={lang} /> */}
-      <div className="max-w-responsive mx-auto lg:px-4 mb-36">
+      <div className="max-w-responsive mx-auto lg:px-4 mb-16 lg:mb-24">
         <SmallReservationForm
           lang={lang}
           subject='investment'

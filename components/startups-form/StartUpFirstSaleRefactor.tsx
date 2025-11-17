@@ -48,7 +48,7 @@ export default function StartUpFirstSaleRefactor({
   const { t } = getServerTranslation(lang, 'formComponent');
 
   return (
-    <div className='w-10/12 mx-auto flex flex-col'>
+    <div className='mx-auto lg:px-4 flex flex-col'>
       <p className='text-base leading-loose mt-4 mb-12'>{t('startUp',{ returnObjects: true }).FirstSale.description}</p>
       <PitchdeckUpload
         problem={true}

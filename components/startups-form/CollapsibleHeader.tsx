@@ -14,7 +14,7 @@ export default function CollapsibleHeader({ title, isOpen, onToggle, hasError }:
       type="button"
       onClick={onToggle}
       aria-expanded={isOpen}
-      className={`w-full flex items-center justify-between gap-4 p-3
+      className={`w-full flex items-center justify-between gap-4 p-2 lg:p-3
         bg-primary 
         rounded-sm
         hover:bg-[#222222CC]
@@ -28,7 +28,7 @@ export default function CollapsibleHeader({ title, isOpen, onToggle, hasError }:
           <ChevDown/>
         </div>
         <span className="text-left">
-          <p className="text-lg text-white">{title}</p>
+          <p className="text-base md:text-lg text-white">{title}</p>
         </span>
       </div>
     </button>

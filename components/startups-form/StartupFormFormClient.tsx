@@ -198,10 +198,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           <p className="mb-3 border-b px-10 py-5 text-2xl text-white">
             {translations.secondTitle}
           </p>
-          <hr className=" mb-5 mt-0" />
         </div>
 
-        <div className='w-full h-auto px-4'>
+        <div className='w-full h-auto px-0 md:px-4'>
           <div className='h-auto w-full flex flex-col gap-2'>
             <div className="h-auto w-full grid gap-6 grid-cols-1 lg:grid-cols-3">
               {['MVP', 'FirstSale', 'SaleDevelopment'].map((key) => {
@@ -332,7 +331,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
         <br />
         <hr className=" my-5 mt-0" />
 
-        <div className="w-10/12 mx-auto">
+        <div className="mx-auto lg:px-4">
           <TextArea
             title={translations.accelerators}
             register={register}
@@ -347,7 +346,7 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
             validate=""
           />
         </div>
-        <div className="w-10/12 mx-auto">
+        <div className="mx-auto lg:px-4">
           <TextArea
             title={translations.howDidYouKnowUs}
             register={register}

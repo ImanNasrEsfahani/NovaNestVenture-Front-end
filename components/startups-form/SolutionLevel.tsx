@@ -37,7 +37,7 @@ export default function SolutionLevel(props: Props) {
   }, [register]);
 
   return (
-    <div className='w-full p-6'>
+    <div className='w-full p-2 lg:p-6'>
       <TextArea
         title={translations.solutionsUniqueValue}
         register={register}
