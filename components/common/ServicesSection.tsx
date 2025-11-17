@@ -22,7 +22,7 @@ export default function ServicesSection({
 
   return (
     <section className={`pt-12 pb-4 md:py-16 max-w-responsive mx-auto ${className}`}>
-      <h3 className="text-4xl font-header leading-loose text-center font-bold">{title}</h3>
+      <h3 className="text-4xl font-header leading-relaxed text-center font-bold">{title}</h3>
 
       {descriptionIsHtml ? (
         <p
