@@ -141,7 +141,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
               imageLogoSrc={startup.imageLogoSrc}
               imageLogoAlt={startup.imageLogoAlt}
               reverse={idx % 2 === 1}
-              className={idx !== 0 ? "pt-32" : ""}
+              className={idx !== 0 ? "pt-12 lg:pt-32" : ""}
             />
           )
         )}
@@ -154,7 +154,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         />
       </section>
 
-      <section className="w-full max-w-responsive mx-auto pt-32" >
+      <section className="w-full max-w-responsive mx-auto pt-12 lg:pt-32" >
         <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">FAQ (Frequently Asked Question)</h2>
 
         <div className="w-full max-w-4xl mx-auto pt-9 py-12">
