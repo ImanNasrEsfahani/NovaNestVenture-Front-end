@@ -45,19 +45,21 @@ export default function HomeCardsSection({
         className={`flex ${reverse ? 'md:justify-start' : 'md:justify-end'} space-x-4 rtl:space-x-reverse items-center order-1 ${reverse ? 'md:order-1' : 'md:order-2'} md:pb-0`}
       >
         {images.map((image, index) => (
-          <div
-            className={`relative h-72 md:h-[26.5rem] w-full max-w-xs`}
-            key={index}
-          >
-            <Image
-              loading="lazy"
-              className="rounded-lg object-cover"
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
-            />
-          </div>
+          <a key={index} href={`${base}${link}`} className="w-full" aria-label={image.alt || `image-${index}`}>
+            <div
+              className={`relative h-72 md:h-[26.5rem] w-full max-w-xs`}
+              key={index}
+            >
+              <Image
+                loading="lazy"
+                className="rounded-lg object-cover"
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 768px) 110vw, (max-width: 1200px) 100vw, 33vw"
+              />
+            </div>
+          </a>
         ))}
       </div>
     </div>
