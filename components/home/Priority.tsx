@@ -13,7 +13,7 @@ export default function Priority({ Priorities, cardData }: PriorityProps) {
         {Priorities}
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
         {cardData.map(({ title, image }, index) => (
           <PriorityCard key={index} title={title} image={image} />
         ))}

@@ -21,7 +21,7 @@ export default function SpecialFeaturesClient({
 }) {
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <motion.a
           key={feature.id}
@@ -41,16 +41,16 @@ export default function SpecialFeaturesClient({
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           </div>
 
-          <div className="p-6 flex-1 flex flex-col justify-between">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+          <div className="w-full p-6 flex-1 flex flex-col justify-between">
+            <h3 className="text-center md:text-start text-2xl font-bold text-gray-800 mb-4">
               {feature.title}
             </h3>
 
-            <p className="text-gray-600 mb-6">
+            <p className="text-justify text-base text-gray-700 mb-6">
               {feature.description}
             </p>
 
-            <div className={`mt-auto ${lang === 'fa' ? 'text-left' : 'text-right'}`}>
+            <div className={`font-bold text-lg mt-auto ${lang === 'fa' ? 'text-left' : 'text-right'}`}>
               {learnMore}
               <span className={`inline-block ml-2 transform ${lang === 'fa' ? 'rotate-180' : ''}`}>→</span>
             </div>

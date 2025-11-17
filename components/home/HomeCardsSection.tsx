@@ -23,23 +23,26 @@ export default function HomeCardsSection({
 }) {
 
   return (
-    <div
-      className={`flex flex-col-reverse ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-x-10 items-center justify-between`}
-    >
-      <div className="flex flex-col h-full items-start justify-between gap-16 md:w-1/2">
-        <div className="flex flex-col items-start gap-4">
-          <span className="font-header text-lg">{smallTitle}</span>
-          <span className="font-header text-5xl font-bold">{titles}</span>
+    <div className={`grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10`}>
+      {/* Text column */}
+      <div
+        className={`flex flex-col size-full items-center justify-center md:items-start order-2 ${reverse ? 'md:order-2' : 'md:order-1'}`}
+      >
+        <div className="w-full text-center md:text-start">
+          <p className="font-header text-lg mb-1">{smallTitle}</p>
+          <h2 className="font-header text-5xl font-bold mb-4">{titles}</h2>
         </div>
-        <p className="text-justify text-base first:mb-0 md:w-full ">
+        <p className="text-justify text-base md:w-full mb-6">
           {text}
         </p>
         <div className="max-w-container-xxs">
           <ButtonRefactor text={buttonText} type="link" href={`${base}${link}`} />
         </div>
       </div>
+
+      {/* Images column */}
       <div
-        className={`${reverse ? 'md:justify-start' : 'md:justify-end'} space-x-4 rtl:space-x-reverse flex size-full md:w-1/2 md:pb-0`}
+        className={`flex ${reverse ? 'md:justify-start' : 'md:justify-end'} space-x-4 rtl:space-x-reverse items-center order-1 ${reverse ? 'md:order-1' : 'md:order-2'} md:pb-0`}
       >
         {images.map((image, index) => (
           <div

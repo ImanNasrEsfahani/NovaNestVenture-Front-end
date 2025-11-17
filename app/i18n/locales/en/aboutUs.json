@@ -218,10 +218,22 @@
   "differentiators": {
     "title": "NovaNest Key Differentiators",
     "items": [
-      "Extensive International Experience: Years of experience in investment, acceleration, and entrepreneurship education in Iran and Canada, with a focus on developing innovative and sustainable businesses.",
-      "Comprehensive Support for Startups and Entrepreneurs: Professional services including Startup Visa, Provincial Entrepreneurship programs, advisory, acceleration, and connections to a network of investors and mentors.",
-      "Business Academy for Youth: Hands-on training and real-world experience for teenagers and the next generation of entrepreneurs, through real projects and specialized mentoring.",
-      "Dynamic and Committed Team: A combination of experienced mentors and talented, energetic young professionals creating a collaborative and inspiring environment for the growth of ideas and businesses."
+      {
+        "title": "Extensive International Experience:",
+        "description": "Years of experience in investment, acceleration, and entrepreneurship education in Iran and Canada, with a focus on developing innovative and sustainable businesses."
+      },
+      {
+        "title": "Comprehensive Support for Startups and Entrepreneurs: ",
+        "description": "Professional services including Startup Visa, Provincial Entrepreneurship programs, advisory, acceleration, and connections to a network of investors and mentors."
+      },
+      {
+        "title": "Business Academy for Youth:",
+        "description": "Hands-on training and real-world experience for teenagers and the next generation of entrepreneurs, through real projects and specialized mentoring."
+      },
+      {
+        "title": "Dynamic and Committed Team:",
+        "description": "A combination of experienced mentors and talented, energetic young professionals creating a collaborative and inspiring environment for the growth of ideas and businesses."
+      }
     ]
   },
   "founder": {

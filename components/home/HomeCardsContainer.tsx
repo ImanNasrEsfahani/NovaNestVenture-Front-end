@@ -9,7 +9,7 @@ export default function HomeCardsContainer ({lang}: {lang: string}) {
   return (
     <div
       id="NovaNestVenture"
-      className="relative my-20 w-full h-auto flex flex-col gap-8 mb-20"
+      className="relative w-full h-auto flex flex-col gap-8 my-20 md:my-32"
     >
       {cardData.map(
         ({
@@ -22,7 +22,7 @@ export default function HomeCardsContainer ({lang}: {lang: string}) {
           images,
           buttonText
         }) => (
-          <div key={index} className="mb-40">
+          <div key={index} className="mb-12 md:mb-40">
               <HomeCardsSection smallTitle={smallTitle} text={text} images={images} reverse={reverse} link={link} titles={title} buttonText={buttonText}/>
           </div>
         )

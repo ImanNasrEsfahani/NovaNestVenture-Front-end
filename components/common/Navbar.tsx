@@ -16,12 +16,12 @@ export default function Navbar({ lang }: { lang: string }) {
     <nav className="navbar fixed inset-x-0 top-0 z-50 h-20 min-h-20 bg-[rgba(0,0,0,0.6)] backdrop-blur-sm text-white shadow-lg">
       <div className="max-w-responsive w-full mx-auto" >
         <div className="navbar-start gap-2 flex flex-grow lg:flex-none lg:!w-auto">
-          <div className="relative z-[100] dropdown items-center">
+          <div className="relative z-[100] dropdown lg:hidden">
             <div
               tabIndex={0}
               role="button"
               aria-label={t('menuToggle', { defaultValue: 'Toggle navigation' })}
-              className="btn btn-ghost btn-circle h-full lg:hidden"
+              className="btn btn-ghost btn-circle h-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,9 +33,10 @@ export default function Navbar({ lang }: { lang: string }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </div>
+            
             <ul
               tabIndex={0}
-              className="menu menu-lg dropdown-content mt-3 z-[1] w-72 space-y-2 rounded-box bg-[rgba(255,255,255,0.9)] p-3 shadow"
+              className="menu menu-lg dropdown-content mt-3 z-50 w-72 space-y-2 rounded-box bg-[rgba(255,255,255,0.9)] p-3 shadow"
             >
               {menuItems.map((item) =>
                 item.type === 'dropdown' ? (

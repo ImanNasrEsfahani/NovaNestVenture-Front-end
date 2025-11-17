@@ -4,13 +4,13 @@ import Image from 'next/image';
 import TwoColumnShowcase from '@/components/startup/TwoColumnShowcase';
 import Intro from '@/components/common/Intro';
 import WhoCanApply from '@/components/startup/WhoCanApply';
-import OurStartupService from '@/components/startup/OurStartupService';
 import Why from '@/components/startup/Why';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
 import Priority from '@/components/home/Priority';
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 import DownloadGuidePanel from '@/components/DownloadGuidePanel';
+import ServicesSection from '@/components/common/ServicesSection';
 
 export default function StartUp({ params: { lang } }: { params: { lang: string } }) {
 
@@ -88,8 +88,13 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
         </div>
       </section>
 
-
-      <OurStartupService lang={lang} />
+      <ServicesSection
+        title={tStartup('services.title')}
+        description={tStartup('services.description')}
+        serviceDetails={tStartup('services.serviceDetails', { returnObjects: true })}
+        image={{ src: tStartup('services.image.src'), alt: tStartup('services.image.alt') }}
+        descriptionIsHtml={true}
+      />
 
       <Priority
         Priorities={tStartup('benefits.title', { returnObjects: true })}

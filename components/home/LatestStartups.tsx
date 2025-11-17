@@ -5,7 +5,7 @@ export default function LatestStartups({lang}: {lang: string}) {
   const { t } = getServerTranslation(lang, 'mainPage');
 
   return (
-    <section className="py-16 md:pt-36 md:pb-24 flex flex-col">
+    <section className="px-6 md:px-0 py-16 md:pt-36 md:pb-24 flex flex-col">
       <div className="flex flex-col items-center mb-6">
         <p className="font-header">{t('NovaNestVenture')}</p>
         <h2 className="font-header text-4xl font-bold text-black md:mt-3 ltr:tracking-[3.5px]">

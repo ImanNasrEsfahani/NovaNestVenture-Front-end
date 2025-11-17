@@ -8,14 +8,13 @@ import HalvesCards from '@/components/home/HalvesCards';
 import HomeCardsContainer from '@/components/home/HomeCardsContainer';
 import Academy from '@/components/home/Academy';
 import AboutUs from '@/components/home/AboutUs';
+import ServicesSection from '@/components/common/ServicesSection';
 
 import { getServerTranslation } from 'app/i18n';
 
 import ButtonRefactor from '@/components/common/ButtonRefactor';
 
-import OurStartupService from '@/components/startup/OurStartupService';
 import Intro from "@/components/common/Intro";
-import OurPNPService from '@/components/pnp/OurPNPService';
 
 export const metadata: Metadata = {
   title: 'NovaNest Venture',
@@ -58,7 +57,14 @@ export default function Page({ params }: { params: { lang: string } }) {
           description={tStartup('whatIsStartupVisa.description')}
         />
 
-        <OurStartupService lang={params.lang} />
+        <ServicesSection
+          title={tStartup('services.title')}
+          description={tStartup('services.description')}
+          serviceDetails={tStartup('services.serviceDetails', { returnObjects: true })}
+          image={{ src: tStartup('services.image.src'), alt: tStartup('services.image.alt') }}
+          descriptionIsHtml={true}
+        />
+
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/startup/#startup-application-form`} />
         </div>
@@ -69,8 +75,16 @@ export default function Page({ params }: { params: { lang: string } }) {
           description={tPNP('Intro.description', { returnObjects: true })}
         />
 
-        <OurPNPService lang={params.lang} />
-        <div className="max-w-xs mx-auto mb-24">
+
+        <ServicesSection
+          title={tPNP('services.title')}
+          description={tPNP('services.description')}
+          serviceDetails={tPNP('services.serviceDetails', { returnObjects: true })}
+          image={{ src: tPNP('services.image.src'), alt: tStartup('services.image.alt') }}
+          descriptionIsHtml={true}
+        />
+
+        <div className="max-w-xs mx-auto mb-16 md:mb:24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/pnp/#pnp-application-form`} />
         </div>
 

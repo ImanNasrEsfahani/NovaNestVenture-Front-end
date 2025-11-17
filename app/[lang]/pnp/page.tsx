@@ -3,12 +3,12 @@ import Banner from '@/components/common/Banner';
 import Intro from "@/components/common/Intro";
 import WhyStartBusiness from "@/components/pnp/WhyStartBusiness";
 import Requirement from '@/components/pnp/Requirement';
-import OurPNPService from '@/components/pnp/OurPNPService';
 import Why from '@/components/pnp/Why';
 import CallToAction from '@/components/common/CallToAction';
 import SmallReservationForm from '@/components/common/form/SmallReservationForm';
 import Accordions from '@/components/startup/Accordions';
 import DownloadGuidePanel from '@/components/DownloadGuidePanel';
+import ServicesSection from '@/components/common/ServicesSection';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
     const { t } = getServerTranslation(lang, 'pnp');
@@ -54,7 +54,13 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Requirement lang={lang} />
 
-            <OurPNPService lang={lang} />
+            <ServicesSection
+                title={t('services.title')}
+                description={t('services.description')}
+                serviceDetails={t('services.serviceDetails', { returnObjects: true })}
+                image={{ src: t('services.image.src'), alt: t('services.image.alt') }}
+                descriptionIsHtml={true}
+            />
 
             <Why lang={lang} />
 

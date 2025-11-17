@@ -5,28 +5,28 @@ import ButtonRefactor from '@/components/common/ButtonRefactor';
 
 export default function Academy({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'mainPage');
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
   return (
     <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-16 md:py-36">
-      <div className="size-full flex flex-col justify-between">
-        <div>
+      <div className="size-full flex flex-col items-center justify-center md:items-start order-last md:order-1">
+        <div className="w-full text-center md:text-start">
           <span className="font-header">{t('NovaNest')}</span>
-          <h2 className="mt-2 font-header text-4xl lg:text-5xl font-bold">{t('Academy')}</h2>
+          <h2 className="mt-2 font-header text-5xl font-bold">{t('Academy')}</h2>
         </div>
 
-        <p className='leading-loose mt-6 text-base'>{t('NovaNestAcademyInfo')}</p>
+        <p className='leading-loose my-6 text-base'>{t('NovaNestAcademyInfo')}</p>
 
-        <div className="max-w-container-xxs mt-9">
+        <div className="max-w-container-xxs">
           <ButtonRefactor
             text={t('visit')}
             type="link"
-            href={`${process.env.NEXT_PUBLIC_BASE_URL}/join-as-a-trainee`}
-            bgColor="black"
+            href={`${base}/join-as-a-trainee`}
           />
         </div>
       </div>
 
-      <div className="flex justify-center size-full">
+      <div className="flex justify-center size-full order-first md:order-2">
           <Image
             loading="lazy"
             className="rounded-lg object-cover"

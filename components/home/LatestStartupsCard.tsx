@@ -33,7 +33,7 @@ export default function LatestStartupsCard({
 
         {/* Title */}
 
-        <div className="pt-3 pl-3 pr-3 font-header text-2xl font-bold text-neutral-800">
+        <div className="pt-3 pl-3 pr-3 font-header text-2xl font-bold text-center md:text-start text-neutral-800">
         {/* <div className={`absolute font-header text-2xl font-normal text-neutral-800 ${lang === "en" ? "left-4 top-[130px] md:top-[250px]" : "right-5 top-[125px] md:top-[255px]"}`}> */}
           {title}
         </div>
@@ -42,7 +42,7 @@ export default function LatestStartupsCard({
         <div className={`border border-neutral-800`}></div>
 
         {/* Description */}
-        <div className={`font-barlow text-base font-normal p-3 mb-12 leading-relaxed text-justify text-neutral-800 `}>
+        <div className={`font-barlow text-base font-normal p-3 mb-6 leading-relaxed text-justify text-neutral-800 `}>
           {description}
         </div>
 
