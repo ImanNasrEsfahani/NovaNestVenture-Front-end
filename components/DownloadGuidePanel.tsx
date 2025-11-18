@@ -13,19 +13,16 @@ type Props = {
 };
 
 export default function DownloadGuidePanel({
-  tagLabel = 'Free Download',
-  heading = 'Download Our Complete Guide',
-  description = 'Get detailed information about the Canada Startup Visa program, including step-by-step application process, success stories and roadmap.',
-  bullets = [
-    'Complete program overview',
-    'Detailed requirements checklist',
-    'Program benefits',
-    'Frequently asked questions (FAQ)'
-  ],
+  tagLabel,
+  heading,
+  description,
+  bullets,
   href,
-  buttonLabel = 'Download Catalogue (PDF)',
-  fileName = 'Startup Visa Guide',
-  fileSize = '2.4 MB',
+  buttonLabel,
+  fileName,
+  fileSize,
+  iconSrc,
+  iconAlt = '',
   className = ''
 }: Props) {
   return (

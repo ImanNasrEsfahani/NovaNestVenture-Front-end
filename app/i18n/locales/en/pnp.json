@@ -233,5 +233,20 @@
                 "Yes, your children can attend public schools and universities in Canada free of charge."
             ]
         }
-    ]
+    ],
+    "download": {
+        "tagLabel": "Free Download",
+        "heading": "Download Our Complete Guide",
+        "description": "Get detailed information about the Canada Startup Visa program, including step-by-step application process, success stories and roadmap.",
+        "bullets": [
+            "Complete program overview",
+            "Detailed requirements checklist",
+            "Program benefits",
+            "Frequently asked questions (FAQ)"
+        ],
+        "href": "",
+        "buttonLabel": "Download Catalogue (PDF)",
+        "fileName": "Startup Visa Guide",
+        "fileSize": "2.4 MB"
+    }
 }
