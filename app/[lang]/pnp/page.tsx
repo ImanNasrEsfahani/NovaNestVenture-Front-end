@@ -9,6 +9,7 @@ import SmallReservationForm from '@/components/common/form/SmallReservationForm'
 import Accordions from '@/components/startup/Accordions';
 import DownloadGuidePanel from '@/components/DownloadGuidePanel';
 import ServicesSection from '@/components/common/ServicesSection';
+import Image from 'next/image';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
     const { t } = getServerTranslation(lang, 'pnp');
