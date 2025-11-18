@@ -5,7 +5,7 @@ export default function Process({ lang }: { lang: string }) {
     const { t } = getServerTranslation(lang, 'acceleration');
 
     return (
-        <section className="w-full bg-gray-50 pt-12 pb-24 px-6">
+        <section className="w-full pt-12 pb-24 px-6">
             <div className="max-w-responsive mx-auto">
                 <h2 className="text-3xl font-header font-bold text-center mb-12">
                     {t("process", { returnObjects: true }).title}

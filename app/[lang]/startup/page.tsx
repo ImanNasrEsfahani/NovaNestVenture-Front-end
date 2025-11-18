@@ -74,6 +74,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       <Priority
         Priorities={tStartup('benefits.title', { returnObjects: true })}
         cardData={(tStartup('benefits.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+        mobileCol={1}
       />
 
       <Why lang={lang} />
