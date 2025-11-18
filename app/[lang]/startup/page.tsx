@@ -144,6 +144,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           bullets={tStartup('download.bullets', { returnObjects: true })}
           href={tStartup('download.href', { returnObjects: true })}
           buttonLabel={tStartup('download.buttonLabel', { returnObjects: true })}
+          thumbnail={tStartup('download.thumbnail', { returnObjects: true })}
           fileName={tStartup('download.fileName', { returnObjects: true })}
           fileSize={tStartup('download.fileSize', { returnObjects: true })}
       />

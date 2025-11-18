@@ -106,6 +106,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                 bullets={t('download.bullets', { returnObjects: true })}
                 href={t('download.href', { returnObjects: true })}
                 buttonLabel={t('download.buttonLabel', { returnObjects: true })}
+                thumbnail={t('download.thumbnail', { returnObjects: true })}
                 fileName={t('download.fileName', { returnObjects: true })}
                 fileSize={t('download.fileSize', { returnObjects: true })}
             />

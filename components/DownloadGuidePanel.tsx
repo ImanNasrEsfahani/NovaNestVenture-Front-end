@@ -1,12 +1,14 @@
 import React from 'react';
+import Image from 'next/image';
 
 type Props = {
   tagLabel?: string;
   heading?: string;
   description?: string;
-  bullets?: string[];
+  bullets: string[];
   href: string;
   buttonLabel?: string;
+  thumbnail: string;
   fileName?: string;
   fileSize?: string;
   className?: string;
@@ -19,6 +21,7 @@ export default function DownloadGuidePanel({
   bullets,
   href,
   buttonLabel,
+  thumbnail,
   fileName,
   fileSize,
   className = ''
@@ -79,13 +82,25 @@ export default function DownloadGuidePanel({
             <div className="h-full w-auto absolute inset-0 bg-gray-400 rounded-2xl transform rotate-6 opacity-20" />
             <div className="h-full bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
               <div className="h-full flex flex-col bg-white rounded-xl p-6 shadow-2xl">
-                <div className="flex flex-col flex-1 justify-around">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" preserveAspectRatio="xMidYMid meet" className="w-full h-full max-w-[160px] max-h-[160px] text-slate-400 mx-auto" aria-hidden="true">
-                    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                    <path d="M12 18v-6" />
-                    <path d="m9 15 3 3 3-3" />
-                  </svg>
+                <div className="flex flex-col flex-1 justify-around items-center">
+                  {thumbnail ? (
+                    <div className="relative w-full max-w-[200px] h-40 mx-auto">
+                      <Image
+                        src={thumbnail}
+                        alt={fileName ?? 'thumbnail'}
+                        fill
+                        className="object-contain rounded-md"
+                        sizes="(min-width: 1024px) 200px, 100vw"
+                      />
+                    </div>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-full h-full max-w-[160px] max-h-[160px] text-slate-400 mx-auto" aria-hidden="true">
+                      <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                      <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                      <path d="M12 18v-6" />
+                      <path d="m9 15 3 3 3-3" />
+                    </svg>
+                  )}
 
                   <div className="h-3 bg-slate-200 rounded w-full mt-2" />
                   <div className="h-3 bg-slate-200 rounded w-5/6" />
