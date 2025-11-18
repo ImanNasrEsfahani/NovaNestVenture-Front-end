@@ -21,8 +21,6 @@ export default function DownloadGuidePanel({
   buttonLabel,
   fileName,
   fileSize,
-  iconSrc,
-  iconAlt = '',
   className = ''
 }: Props) {
   return (
