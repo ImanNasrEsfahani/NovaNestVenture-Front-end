@@ -64,7 +64,16 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Why lang={lang} />
 
-            {/* <CallToAction text={t('callToAction', { returnObjects: true })} /> */}
+            <section className='w-full max-w-7xl mx-auto py-24 px-4 w-100 lg:px-16'>
+                <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">PNP Roadmap</h3>
+                <Image
+                    src="/static/images/pnp/roadmap.png"
+                    alt="SUV startup roadmap"
+                    className="mx-auto w-full max-w-full rounded-lg"
+                    width={1800}
+                    height={2400}
+                />
+            </section>
 
             <section id="pnp-application-form" className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <SmallReservationForm

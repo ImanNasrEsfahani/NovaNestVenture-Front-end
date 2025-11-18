@@ -6,9 +6,10 @@ interface PriorityProps {
   mobileCol?: number;
 }
 
-export default function Priority({ Priorities, cardData, mobileCol = 2 }: PriorityProps) {
-  const props = (arguments as any)[0] || {};
-  const colClass = { 1: 'grid-cols-1', 2: 'grid-cols-2', 3: 'grid-cols-3', 4: 'grid-cols-4' }[mobileCol] || 'grid-cols-2';
+export default function Priority({ Priorities, cardData, mobileCol = 1 }: PriorityProps) {
+  const colClass =
+    { 1: 'grid-cols-1', 2: 'grid-cols-2', 3: 'grid-cols-3', 4: 'grid-cols-4' }[mobileCol] ||
+    'grid-cols-1';
 
   return (
     <section className="w-full max-w-responsive mx-auto py-16 lg:py-24 text-center">
