@@ -80,7 +80,7 @@ export default function DownloadGuidePanel({
 
           <div className="h-full relative">
             <div className="max-h-auto w-auto absolute inset-0 bg-gray-400 rounded-2xl transform rotate-6 opacity-20" />
-            <div className="h-full min-h-96 bg-white/10 backdrop-blur-md rounded-2xl p-8 border rounded-lg border-white/20">
+            <div className="h-full min-h-96 bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                 {thumbnail ? (
                   <Image
                     src={thumbnail}
