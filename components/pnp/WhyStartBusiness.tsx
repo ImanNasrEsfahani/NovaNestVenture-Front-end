@@ -7,8 +7,8 @@ export default function WhyStartBusiness({lang}: {lang: string}) {
 
     return (
         <section className="py-16 px-6 max-w-responsive mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-                <h2 className="text-3xl font-header font-bold mb-6">
+            <div className="order-2 lg:order-1">
+                <h2 className="text-3xl text-center lg:text-left font-header font-bold mb-6">
                     {t('whyStartBusiness', { returnObjects: true }).title}
                 </h2>
                 <ul className="space-y-3 text-gray-700 pl-6 list-disc text-gray-700 text-base">

@@ -78,14 +78,14 @@ export default function TraineePage({
             <Accordion data={t('joinAsATrainee.accordion', { returnObjects: true }) || []} />
           </div>
 
-          <div className="flex items-center justify-center">
-            <div className="size-full relative">
+          <div className="flex items-center justify-center order-1 lg:order-2">
+            <div className="w-full relative">
               <Image
-                src="/static/images/academy/academy-illustration.jpeg"
-                alt="Services"
-                fill
-                className="object-contain rounded-lg"
-                sizes="(min-width: 1024px) 400px, 100vw"
+              src="/static/images/academy/academy-illustration.jpeg"
+              alt="Services"
+              fill
+              className="object-contain rounded-lg"
+              sizes="(min-width: 1024px) 400px, 100vw"
               />
             </div>
           </div>
@@ -99,6 +99,7 @@ export default function TraineePage({
       <Priority
         Priorities={tAcademy('opportunities.title', { returnObjects: true })}
         cardData={(tAcademy('opportunities.list', { returnObjects: true }) || []) as Array<{ title: string; image: string }>}
+        mobileCol={2}
       />
 
       {/* <CallToAction text={t("joinAsATrainee.callToAction", { returnObjects: true })} /> */}

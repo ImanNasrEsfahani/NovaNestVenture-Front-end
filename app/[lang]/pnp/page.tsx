@@ -39,9 +39,11 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             </div>
             <div className='inline md:hidden'>
                 <Banner
-                    image="/static/images/pnp/pnp-banner.png"
+                    image="/static/images/pnp/pnp-banner-mobile.png"
                     title={t('banner')}
                     lang={lang}
+                    backgroundPosition='right'
+                    backgroundSize='cover'
                 />
             </div>
 
@@ -65,7 +67,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
 
             <Why lang={lang} />
 
-            <section className='w-full max-w-7xl mx-auto py-24 px-4 w-100 lg:px-16'>
+            <section className='w-full max-w-7xl mx-auto py-12 lg:py-24 px-1 lg:px-4'>
                 <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">PNP Roadmap</h3>
                 <Image
                     src="/static/images/pnp/roadmap.png"
@@ -83,7 +85,7 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                 />
             </section>
 
-            <section className="w-full max-w-responsive mx-auto pt-32" >
+            <section className="w-full max-w-responsive mx-auto pt-12 lg:pt-32" >
                 <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">FAQ (Frequently Asked Question)</h2>
 
                 <div className="w-full max-w-4xl mx-auto pt-9 py-12">

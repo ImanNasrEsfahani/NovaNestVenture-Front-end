@@ -12,7 +12,7 @@ export default function Priority({ Priorities, cardData, mobileCol = 1 }: Priori
     'grid-cols-1';
 
   return (
-    <section className="w-full max-w-responsive mx-auto py-16 lg:py-24 text-center">
+    <section className="w-full max-w-responsive mx-auto py-12 lg:py-24 text-center">
       <h3 className="text-4xl font-header font-bold mb-20 text-gray-800">
         {Priorities}
       </h3>

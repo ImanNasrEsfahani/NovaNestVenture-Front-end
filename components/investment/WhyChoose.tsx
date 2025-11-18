@@ -10,7 +10,7 @@ export default function WhyChoose({ lang }: { lang: string }) {
     const items = (t('why', { returnObjects: true }).items as string[]) || [];
 
     return (
-        <div className="w-full max-w-responsive mx-auto py-24">
+        <div className="w-full max-w-responsive mx-auto py-12 lg:py-24">
             <h3 className="text-center text-3xl font-header font-bold mb-3 text-gray-800">
             {title}
             </h3>

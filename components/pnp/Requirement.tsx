@@ -10,7 +10,7 @@ export default function Requirement({lang}: {lang: string}) {
                 <h2 className="text-3xl font-header font-bold mb-6 text-gray-800">
                     {t('requirements', { returnObjects: true }).title}
                 </h2>
-                <p className="text-lg font-semibold mb-8 text-gray-500">
+                <p className="text-lg italic font-header font-semibold mb-4 text-gray-600 leading-relaxed">
                     {t('requirements', { returnObjects: true }).subtitle}
                 </p>
                 <div className="w-full grid md:grid-cols-2 gap-6 text-left">
