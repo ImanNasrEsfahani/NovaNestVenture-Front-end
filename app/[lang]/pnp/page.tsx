@@ -9,6 +9,7 @@ import SmallReservationForm from '@/components/common/form/SmallReservationForm'
 import Accordions from '@/components/startup/Accordions';
 import DownloadGuidePanel from '@/components/DownloadGuidePanel';
 import ServicesSection from '@/components/common/ServicesSection';
+import Businesses from '@/components/pnp/Businesses';
 import Image from 'next/image';
 
 export default function pnp({ params: { lang } }: { params: { lang: string } }) {
@@ -68,15 +69,20 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
             <Why lang={lang} />
 
             <section className='w-full max-w-7xl mx-auto py-12 lg:py-24 px-1 lg:px-4'>
-                <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">PNP Roadmap</h3>
+                <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{t('roadmap.title')}</h3>
                 <Image
-                    src="/static/images/pnp/roadmap.png"
+                    src={t('roadmap.image')}
                     alt="SUV startup roadmap"
                     className="mx-auto w-full max-w-full rounded-lg"
                     width={1800}
                     height={2400}
                 />
             </section>
+
+            <Businesses 
+                items={t('businesses', { returnObjects: true })}
+                className="pt-12 lg:pt-24"
+            />
 
             <section id="pnp-application-form" className='max-w-responsive mx-auto pt-6 pb-12 w-100'>
                 <SmallReservationForm
