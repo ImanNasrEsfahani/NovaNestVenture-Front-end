@@ -138,10 +138,14 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
 
       <DownloadGuidePanel
-        href="/pdfs/startup-visa-canada-catalogue-novanest-venture-en.pdf"
-        buttonLabel="Download Catalogue (PDF)"
-        fileName="Startup Visa Guide"
-        fileSize="2.4 MB"
+          tagLabel={tStartup('download.tagLabel', { returnObjects: true })}
+          heading={tStartup('download.heading', { returnObjects: true })}
+          description={tStartup('download.description', { returnObjects: true })}
+          bullets={tStartup('download.bullets', { returnObjects: true })}
+          href={tStartup('download.href', { returnObjects: true })}
+          buttonLabel={tStartup('download.buttonLabel', { returnObjects: true })}
+          fileName={tStartup('download.fileName', { returnObjects: true })}
+          fileSize={tStartup('download.fileSize', { returnObjects: true })}
       />
     </>
   )

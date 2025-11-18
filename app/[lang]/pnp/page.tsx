@@ -99,12 +99,15 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                 </div>
             </section>
 
-
             <DownloadGuidePanel
-                href="/pdfs/pnp-canada-catalogue-novanest-venture-en.pdf"
-                buttonLabel="Download Catalogue (PDF)"
-                fileName="PNP Entrepreneur Guide"
-                fileSize="1.8 MB"
+                tagLabel={t('download.tagLabel', { returnObjects: true })}
+                heading={t('download.heading', { returnObjects: true })}
+                description={t('download.description', { returnObjects: true })}
+                bullets={t('download.bullets', { returnObjects: true })}
+                href={t('download.href', { returnObjects: true })}
+                buttonLabel={t('download.buttonLabel', { returnObjects: true })}
+                fileName={t('download.fileName', { returnObjects: true })}
+                fileSize={t('download.fileSize', { returnObjects: true })}
             />
         </>
     )

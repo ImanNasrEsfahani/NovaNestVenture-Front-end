@@ -347,5 +347,20 @@
         "Yes, the startup investment can be made gradually over a period of up to 2 years."
       ]
     }
-  ]
+  ],
+  "download": {
+    "tagLabel": "Free Download",
+    "heading": "Download Our Complete Guide",
+    "description": "Get detailed information about the Canada Startup Visa program, including step-by-step application process, success stories and roadmap.",
+    "bullets": [
+      "Complete program overview",
+      "Detailed requirements checklist",
+      "Program benefits",
+      "Frequently asked questions (FAQ)"
+    ],
+    "href": "/pdfs/pnp-canada-catalogue-novanest-venture-en.pdf",
+    "buttonLabel": "Download Catalogue (PDF)",
+    "fileName": "Startup Visa Guide",
+    "fileSize": "2.4 MB"
+  }
 }
