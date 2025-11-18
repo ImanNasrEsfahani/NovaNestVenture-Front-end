@@ -79,8 +79,9 @@ export default function pnp({ params: { lang } }: { params: { lang: string } }) 
                 />
             </section>
 
-            <Businesses 
-                items={t('businesses', { returnObjects: true })}
+            <Businesses
+                heading={t('businesses.heading', { returnObjects: true })}
+                items={t('businesses.list', { returnObjects: true })}
                 className="pt-12 lg:pt-24"
             />
 

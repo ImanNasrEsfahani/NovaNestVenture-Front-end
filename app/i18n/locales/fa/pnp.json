@@ -111,46 +111,47 @@
     "roadmap": {
         "title": "PNP Roadmap",
         "image": "/static/images/pnp/roadmap.png"
-    },    
-"businesses": [
-        {
-            "title": "Supermarket",
-            "image": "/static/images/pnp/businesses/supermarket.png",
-            "href": "/en/pnp"
-        },
-        {
-            "title": "Auto Repair Shop",
-            "image": "/static/images/pnp/businesses/auto-repair.png"
-        },
-        {
-            "title": "Carpentry Workshop",
-            "image": "/static/images/pnp/businesses/carpentry.png"
-        },
-        {
-            "title": "Food Beverage Store",
-            "image": "/static/images/pnp/businesses/food-beverage.png"
-        },
-        {
-            "title": "Tourism Hospitality",
-            "image": "/static/images/pnp/businesses/tourism-hospitality.png"
-        },
-        {
-            "title": "Childcare center",
-            "image": "/static/images/pnp/businesses/childcare-center.png"
-        },
-        {
-            "title": "Jewelry Store",
-            "image": "/static/images/pnp/businesses/jewelry-store.png"
-        },
-        {
-            "title": "Beauty Salon",
-            "image": "/static/images/pnp/businesses/beauty-salon.png"
-        },
-        {
-            "title": "Polymer and resin workshop",
-            "image": "/static/images/pnp/businesses/polymer-and-resin-workshop.png"
-        }
-    ],
+    },
+    "businesses": {
+        "heading": "Recently established Businesses",
+        "list": [
+            {
+                "title": "Jewelry Store",
+                "image": "/static/images/pnp/businesses/jewelry-store.png",
+                "backgroundPosition": "buttom",
+                "backgroundSize": "cover"
+            },
+            {
+                "title": "Beauty Salon",
+                "image": "/static/images/pnp/businesses/beauty-salon.png"
+            },
+            {
+                "title": "Supermarket",
+                "image": "/static/images/pnp/businesses/supermarket.png",
+                "href": "/en/pnp"
+            },
+            {
+                "title": "Auto Repair Shop",
+                "image": "/static/images/pnp/businesses/auto-repair.png"
+            },
+            {
+                "title": "Carpentry Workshop",
+                "image": "/static/images/pnp/businesses/carpentry.png"
+            },
+            {
+                "title": "Food Beverage Store",
+                "image": "/static/images/pnp/businesses/food-beverage.png"
+            },
+            {
+                "title": "Tourism Hospitality",
+                "image": "/static/images/pnp/businesses/tourism-hospitality.png"
+            },
+            {
+                "title": "Childcare center",
+                "image": "/static/images/pnp/businesses/childcare-center.png"
+            }
+        ]
+    },
     "faq": [
         {
             "title": "Can I participate in the Provincial Entrepreneur Program by starting a business, or is it only for buying a business?",
