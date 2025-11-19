@@ -39,7 +39,7 @@ export default function AcademicInfoSection({
           label={workWithUS.StudyField}
           required={workWithUS.StudyFieldRequired}
           placeholder={workWithUS.StudyFieldPlaceholder}
-          className="input  col-span-1 mb-1 mt-3 w-full"
+          className="input"
           labelClass=" "
           patternValue=""
           patternMessage=""
@@ -56,7 +56,7 @@ export default function AcademicInfoSection({
           label={workWithUS.StudySubField}
           required={workWithUS.StudySubFieldRequired}
           placeholder={workWithUS.StudySubFieldPlaceholder}
-          className="input  col-span-1 mb-1 mt-3 w-full"
+          className="input"
           labelClass=" "
           patternValue=""
           patternMessage=""

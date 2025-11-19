@@ -292,7 +292,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             label={translations.companyName}
             required=""
             placeholder={translations.companyNamePlaceholder}
-            className="input col-span-1 mb-1 w-full"
+            className="input"
             labelClass=""
             patternValue=""
             patternMessage=""
@@ -307,7 +307,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             label={translations.website}
             required=""
             placeholder={translations.websitePlaceholder}
-            className="input col-span-1 mb-1 w-full"
+            className="input"
             labelClass=""
             patternValue="^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$"
             patternMessage={translations.websiteErrorMessage}
@@ -322,7 +322,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             label={translations.linkedin}
             required=""
             placeholder={translations.linkedinPlaceholder}
-            className="input col-span-1 mb-1 w-full"
+            className="input"
             labelClass=""
             patternValue="^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$"
             patternMessage={translations.linkedinErrorMessage}

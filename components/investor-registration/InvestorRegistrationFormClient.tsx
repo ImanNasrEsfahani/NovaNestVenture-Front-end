@@ -270,7 +270,7 @@ export default function InvestorRegistrationFormClient({ lang, translations }: P
               // required={translations.maximumInvestmentRequired}
               required=""
               placeholder={translations.maximumInvestmentPlaceholder}
-              className="input col-span-1 w-full"
+              className="input"
               labelClass=""
               patternValue=""
               patternMessage=""

@@ -122,7 +122,7 @@ export default function PersonalInfoSection({
             label={translations.firstName}
             required={translations.firstNameRequired}
             placeholder={translations.firstNamePlaceholder}
-            className="input  col-span-1 mb-1 mt-3 w-full"
+            className="input"
             labelClass=" "
             patternValue=""
             patternMessage=""
@@ -138,7 +138,7 @@ export default function PersonalInfoSection({
             label={translations.lastName}
             required={translations.lastNameRequired}
             placeholder={translations.lastNamePlaceholder}
-            className="input  col-span-1 mb-1 mt-3 w-full"
+            className="input"
             labelClass=" "
             patternValue=""
             patternMessage=""
@@ -156,7 +156,7 @@ export default function PersonalInfoSection({
             patternValue=""
             patternMessage=""
             placeholder={joinOurTeam.emailPlaceholder}
-            className="input  col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md"
+            className="input"
           />
         </div>
         <div className="col-span-1">
@@ -171,7 +171,7 @@ export default function PersonalInfoSection({
             patternValue="^[0-9]{11}$"
             patternMessage={translations.phoneNumberErrorMessage}
             placeholder={translations.phoneNumberPlaceholder}
-            className="input col-span-1 mb-1 mt-3 w-full placeholder-[#b2b1b0] drop-shadow-md"
+            className="input"
           />
         </div>
       </div>
