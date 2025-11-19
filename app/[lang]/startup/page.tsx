@@ -37,6 +37,8 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           image="/static/images/startup/header.png"
           title={tStartup('banner')}
           lang={lang}
+          backgroundPosition="top center"
+          backgroundSize="cover"
         />
       </div>
       <div className='inline md:hidden'>
@@ -44,7 +46,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           image="/static/images/startup/header-mobile.png"
           title={tStartup('banner')}
           lang={lang}
-          backgroundPosition="center bottom"
+          backgroundPosition="top center"
           backgroundSize="cover"
         />
       </div>

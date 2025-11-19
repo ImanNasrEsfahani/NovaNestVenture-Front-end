@@ -115,28 +115,36 @@
     "title": "Learning Opportunities",
     "list": [
       {
-        "title": "Software development and programming",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "title": "Software development",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/software-development.png"
       },
       {
-        "title": "Graphic design and UI/UX",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "title": "Web design and UI/UX",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/web-design-ui-ux.png"
       },
       {
         "title": "Digital marketing and sales",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/digital-marketing-sales.png"
       },
       {
-        "title": "Content creation and media management",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "title": "Content creation",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/content-creation.png"
       },
       {
         "title": "Project management",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/project-management.png"
       },
       {
-        "title": "Finance, accounting, and data analysis",
-        "image": "/static/images/home/priority/tourism-services.png"
+        "title": "Finance and accounting",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/finance-accounting.png"
+      },
+      {
+        "title": "Graphic Design",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/graphic-design.png"
+      },
+      {
+        "title": "Video Production and Edition",
+        "image": "/static/images/join-as-a-trainee/learning-opportunities/video-production-edition.png"
       }
     ]
   },

@@ -13,7 +13,7 @@ export default async function Banner({
 }) {
   
   return (
-    <div className="relative h-screen md:h-[550px]">
+    <div className="relative h-screen md:h-[80vh]">
       <div
         style={{
           backgroundImage: `url(${image})`,
