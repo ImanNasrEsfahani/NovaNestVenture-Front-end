@@ -87,7 +87,7 @@ export default function JoinAsMentorPage({
             <Accordions data={accordionData} />
           </div>
 
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex items-center justify-center order-first lg:order-last">
             <div className="w-full h-auto max-h-full">
               <Image
                 src="/static/images/join-as-a-mentor/services.png"
