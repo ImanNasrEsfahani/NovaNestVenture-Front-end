@@ -19,7 +19,10 @@ export default function Accordions({ data }: Props) {
         <div key={idx} className="mb-4 border rounded-lg overflow-hidden">
           <button
             className="w-full text-left px-4 py-4 bg-gray-200 font-semibold text-base focus:outline-none flex justify-between items-center"
-            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            onClick={() => {
+              if (openIndex === idx) return;
+              setOpenIndex(idx);
+            }}
           >
             {item.header}
             <span className="ml-2">{openIndex === idx ? "−" : "+"}</span>

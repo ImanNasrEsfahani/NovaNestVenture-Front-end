@@ -41,7 +41,13 @@ export default function Procedure({ title, steps }: ProcedureProps) {
                                     <div className="flex-1">
                                         <div className="flex items-start gap-4 mb-4">
                                             <div className={`${stage.iconBgColor} rounded-full text-white p-3 w-14 h-14 flex-shrink-0`}>
-                                                <div dangerouslySetInnerHTML={{ __html: stage.icon ?? "" }} />
+                                                <Image
+                                                    src={stage.icon}
+                                                    alt={stage.title ? `${stage.title} icon` : 'stage icon'}
+                                                    width={40}
+                                                    height={40}
+                                                    className="w-8 h-8"
+                                                />
                                             </div>
 
                                             <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
@@ -59,12 +65,12 @@ export default function Procedure({ title, steps }: ProcedureProps) {
                                         </div>
 
                                         {stage.text.map((feature: string, index: number) => (
-                                            <p key={`feat-p-${index}`} className="text-base text-gray-900 ml-16">
+                                            <p key={`feat-p-${index}`} className="text-base text-gray-900 lg:ml-16">
                                                 {feature}
                                             </p>
                                         ))}
 
-                                        <div className="ml-16 mt-6">
+                                        <div className="lg:ml-16 mt-6">
                                             {stage.achivementTitle && <p className="text-lg font-bold mb-2">{stage.achivementTitle}</p>}
                                             <ul className="list-disc list-inside space-y-1 pl-2">
                                                 {stage.achivement.map((highlight: string, i: number) => (

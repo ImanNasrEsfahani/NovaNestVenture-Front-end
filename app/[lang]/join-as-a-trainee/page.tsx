@@ -79,7 +79,7 @@ export default function TraineePage({
           </div>
 
           <div className="flex items-center justify-center order-1 lg:order-2">
-            <div className="w-full relative">
+            <div className="w-full h-full relative">
               <Image
               src="/static/images/academy/academy-illustration.jpeg"
               alt="Services"

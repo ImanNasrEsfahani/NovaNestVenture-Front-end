@@ -277,106 +277,6 @@
       "Our goal is to guide and support experienced and inspiring individuals in facilitating the growth of startups and entrepreneurial communities.",
       "Completing this form does not imply a commitment or guaranteed participation; it is simply an opportunity to get acquainted and explore possible avenues for collaboration."
     ],
-    "accordion": [
-      {
-        "header": "Financial Benefits",
-        "content": [
-          "Free participation in specialized crash courses offered by the organization",
-          "Opportunity for bonuses or joining NavaNest’s core team after successful completion of the program"
-        ]
-      },
-      {
-        "header": "Recognition and Prestige",
-        "content": [
-          "Official certificate upon completion of the internship program",
-          "Chance to be introduced to an international network of entrepreneurs and investors"
-        ]
-      },
-      {
-        "header": "Professional Growth & Learning",
-        "content": [
-          "Learning practical business skills",
-          "Exposure to and training on professional tools such as Trello, Google Workspace, and Microsoft Office",
-          "Mentorship from experienced internal and external mentors"
-        ]
-      },
-      {
-        "header": "Networking Expansion",
-        "content": [
-          "Collaboration with successful entrepreneurs and investors",
-          "Working on international projects and gaining global-level experience"
-        ]
-      },
-      {
-        "header": "Personal Brand Development",
-        "content": [
-          "Opportunity to grow and advance within an international team",
-          "Experience in a dynamic, young, and innovative environment that adds value to the personal brand and resume"
-        ]
-      },
-      {
-        "header": "Real and Social Impact",
-        "content": [
-          "Participation in real international projects with tangible outcomes",
-          "Opportunity to create a positive impact and understand your role in a team’s and society’s success"
-        ]
-      }
-    ],
-    "benefits": [
-      {
-        "id": "financial",
-        "title": "Financial Benefits",
-        "items": [
-          "Hands-on experience and collaboration with early-stage startups",
-          "Compensation for your projects and contributions",
-          "Opportunity to participate in successful projects and benefit financially"
-        ]
-      },
-      {
-        "id": "recognition",
-        "title": "Recognition and Prestige",
-        "items": [
-          "Official introduction on NovaNest website and social media",
-          "Participation in workshops, events, and projects as a specialist",
-          "Features in specialized media and newsletters"
-        ]
-      },
-      {
-        "id": "growth",
-        "title": "Professional Growth & Learning",
-        "items": [
-          "Learning and collaborating with mentors and international teams",
-          "Access to NovaNest webinars, classes, and bootcamps"
-        ]
-      },
-      {
-        "id": "networking",
-        "title": "Networking Expansion",
-        "items": [
-          "Membership in NovaNest’s professional network in Iran and Canada",
-          "Direct connections with founders, investors, and VCs",
-          "Participation in private gatherings and exclusive events"
-        ]
-      },
-      {
-        "id": "branding",
-        "title": "Personal Brand Development",
-        "items": [
-          "Showcase your skills and expertise in projects and educational programs",
-          "Co-create specialized content with NovaNest (videos, podcasts, articles)",
-          "Highlight your experience in your dedicated NovaNest Professional profile"
-        ]
-      },
-      {
-        "id": "impact",
-        "title": "Real and Social Impact",
-        "items": [
-          "Contribute to the growth of talented startups and teams",
-          "Collaborate on innovative projects with social impact",
-          "Opportunities to participate in NovaNest social responsibility programs"
-        ]
-      }
-    ],
     "callToAction": "Become a part of our innovative team by completing the form below."
   },
   "investorForm": {
@@ -448,15 +348,14 @@
         "header": "Professional Growth & Learning",
         "content": [
           "Learning practical business skills",
-          "Exposure to and training on professional tools such as Trello, Google Workspace, and Microsoft Office",
-          "Mentorship from experienced internal and external mentors"
+          "Exposure to and training on professional tools such as Trello, Google Workspace, and Microsoft Office"
         ]
       },
       {
         "header": "Networking Expansion",
         "content": [
           "Collaboration with successful entrepreneurs and investors",
-          "Working on international projects and gaining global-level experience"
+          "Working on international projects and gaining global-level experience and expanding your professional network"
         ]
       },
       {
