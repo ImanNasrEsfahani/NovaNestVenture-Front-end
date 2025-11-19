@@ -54,7 +54,7 @@
           ]
         },
         {
-          "image": "/static/images/our-team/mentors/majid-soltanzadeh.jpg",
+          "image": "/static/images/our-team/mentors/majid-soltanzadeh.png",
           "position": "Personal and Business Coach",
           "name": "Majid Soltanzadeh",
           "linkedIn": "https://www.linkedin.com/in/majid-soltanzadeh/",
@@ -68,7 +68,7 @@
           "email": "majid@NovaNestVenture.com",
           "linkedin": "https://www.linkedin.com/in/majid-soltanzadeh/",
           "whatsapp": "https://wa.me/17789865432",
-          "thumbnail": "/static/images/our-team/mentors/majid-soltanzadeh.jpg",
+          "thumbnail": "/static/images/our-team/mentors/majid-soltanzadeh.png",
           "location": "Vancouver, Canada",
           "skills": [
             "Business Coaching",
@@ -100,7 +100,7 @@
           ]
         },
         {
-          "image": "/static/images/our-team/mentors/arvin-radan.jpg",
+          "image": "/static/images/our-team/mentors/arvin-radan.png",
           "position": "Business Developer and Strategist",
           "name": "Arvin Radan",
           "linkedIn": "https://www.linkedin.com/in/arvin-radan/",
@@ -114,7 +114,7 @@
           "email": "arvin@NovaNestVenture.com",
           "linkedin": "https://www.linkedin.com/in/arvin-radan/",
           "whatsapp": "https://wa.me/17789865432",
-          "thumbnail": "/static/images/our-team/mentors/arvin-radan.jpg",
+          "thumbnail": "/static/images/our-team/mentors/arvin-radan.png",
           "location": "Vancouver, Canada",
           "skills": [
             "Business Development",
