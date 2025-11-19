@@ -28,7 +28,7 @@ export default function AboutUs({ translations, href }: AboutUsProps) {
 
             {href && (
               <div className="max-w-xs lg:w-[200px] mx-auto">
-                <ButtonRefactor text={translations.ReadMore} type="link" href={href} />
+                <ButtonRefactor text={translations.ReadMore || ""} type="link" href={href} />
               </div>
             )}
         </section>
