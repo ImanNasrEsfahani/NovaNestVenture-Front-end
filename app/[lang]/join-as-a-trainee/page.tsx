@@ -6,7 +6,7 @@ import Intro from '@/components/common/Intro';
 import Accordion from '@/components/startup/Accordions';
 import Image from 'next/image';
 import '../../[lang]/globals.css';
-import AboutUs from '@/components/about/AboutUs';
+import AboutUs from '@/components/home/AboutUs';
 import TraineeRegistrationForm from '@/components/join-as-a-trainee/TraineeRegistrationForm';
 import Priority from '@/components/home/Priority';
 import Procedure from '@/components/academy/procedure';

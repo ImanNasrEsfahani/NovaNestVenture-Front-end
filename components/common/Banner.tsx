@@ -20,7 +20,7 @@ export default async function Banner({
           backgroundPosition: backgroundPosition,
           backgroundSize: backgroundSize
         }}
-        className="absolute inset-0 h-full flex items-center px-4 md:px-20"
+        className="absolute inset-0 h-full flex items-center pb-24 lg:pb-0 px-4 md:px-20"
       >
         <div className="h-auto w-full">
           <div className="h-auto w-full flex flex-col items-start gap-4">

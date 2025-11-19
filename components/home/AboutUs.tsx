@@ -8,7 +8,7 @@ interface AboutUsProps {
         AboutUsContent: string | string[];
         ReadMore: string;
     };
-    href: string;
+    href?: string;
 }
 
 export default function AboutUs({ translations, href }: AboutUsProps) {
@@ -25,9 +25,12 @@ export default function AboutUs({ translations, href }: AboutUsProps) {
                       ))
                     : translations.AboutUsContent}
             </p>
-            <div className="max-w-xs lg:w-[200px] mx-auto">
+
+            {href && (
+              <div className="max-w-xs lg:w-[200px] mx-auto">
                 <ButtonRefactor text={translations.ReadMore} type="link" href={href} />
-            </div>
+              </div>
+            )}
         </section>
     );
 };

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getServerTranslation } from 'app/i18n';
 import Banner from '@/components/common/Banner';
-import AboutUs from '@/components/about/AboutUs';
+import AboutUs from '@/components/home/AboutUs';
 import StoryLine from '@/components/about/StoryLine';
 import VisionMission from '@/components/about/VisionMission';
 import Differentiators from '@/components/about/Differentiators';
