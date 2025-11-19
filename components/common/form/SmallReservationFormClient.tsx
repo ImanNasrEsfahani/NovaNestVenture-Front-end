@@ -163,12 +163,12 @@ export default function SmallReservationFormClient({ lang, translations }: Props
   }));
 
   return (
-    <div className="max-w-responsive mx-auto">
+    <div className="w-full max-w-responsive mx-auto">
       <div className="h-[100px] md:h-[125px]">
         <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full">
         <div className="mb-6 grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}

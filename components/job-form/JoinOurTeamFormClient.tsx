@@ -131,7 +131,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         <FormTitle formTitle={translations.formTitle} formSubtitle={translations.formSubtitle} />
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full">
         <div className="mt-4 mb-6 grid grid-cols-1 gap-6 gap-y-4 p-3 md:grid-cols-2 xl:grid-cols-3">
           <PersonalInfoInput
             register={register}
@@ -291,7 +291,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
             </div>
           </fieldset>
 
-          <div className="flex flex-col w-full">
+          <div className="w-full">
             <TextArea
               title={translations.workHistorySummary}
               register={register}

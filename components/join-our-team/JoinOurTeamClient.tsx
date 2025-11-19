@@ -286,7 +286,7 @@ export default function JoinOurTeamClient({ translations, lang }: JoinOurTeamCli
             {joinOurTeam.formTitle}
           </h3>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full">
           <PersonalInfoSection
             register={register}
             errors={errors}
