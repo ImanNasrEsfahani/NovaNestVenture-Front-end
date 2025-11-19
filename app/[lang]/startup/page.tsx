@@ -44,7 +44,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
           image="/static/images/startup/header-mobile.png"
           title={tStartup('banner')}
           lang={lang}
-          backgroundPosition="left"
+          backgroundPosition="center bottom"
           backgroundSize="cover"
         />
       </div>

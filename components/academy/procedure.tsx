@@ -26,7 +26,7 @@ type ProcedureProps = {
 export default function Procedure({ title, steps }: ProcedureProps) {
 
     return (
-        <section className="w-full max-w-responsive mx-auto my-16">
+        <section className="w-full max-w-responsive mx-auto my-9 lg:my-16">
             {title && <h3 className="text-4xl font-semibold leading-loose text-gray-800 font-header text-center mb-6">{title}</h3>}
 
             <div className="space-y-6 lg:space-y-8">
