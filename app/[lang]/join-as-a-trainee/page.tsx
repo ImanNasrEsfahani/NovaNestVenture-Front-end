@@ -37,7 +37,7 @@ export default function TraineePage({
     <>
       <div className="hidden md:inline">
         <Banner
-          image="/static/images/acceleration/accleration-hero.png"
+          image="/static/images/join-as-a-trainee/header.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
           backgroundPosition='top'
@@ -46,7 +46,7 @@ export default function TraineePage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/acceleration/accleration-heromob.png"
+          image="/static/images/join-as-a-trainee/header-mobile.png"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
           backgroundPosition='center'
@@ -71,14 +71,14 @@ export default function TraineePage({
       />
 
       <section className="w-full max-w-responsive mx-auto pt-9 pb-16">
-        <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-4 text-gray-800">{t('joinAsATrainee.intro')}</h2>
+        <h2 className="text-center text-3xl font-header md:text-4xl font-bold mb-1 lg:mb-4 text-gray-800">{t('joinAsATrainee.intro')}</h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 pt-12 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-9 lg:gap-12 items-stretch">
           <div className="flex flex-col justify-center">
             <Accordion data={t('joinAsATrainee.accordion', { returnObjects: true }) || []} />
           </div>
 
-          <div className="min-h-[100vw] flex items-center justify-center order-1 lg:order-2">
+          <div className="min-h-[100vw] lg:min-h-[10vw] flex items-center justify-center order-first lg:order-last">
             <div className="w-full h-full relative">
               <Image
               src="/static/images/academy/academy-illustration.jpeg"
