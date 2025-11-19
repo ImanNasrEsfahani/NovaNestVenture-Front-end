@@ -6,7 +6,7 @@ interface AboutUsProps {
     translations: {
         AboutUs: string;
         AboutUsContent: string | string[];
-        ReadMore: string;
+        ReadMore?: string;
     };
     href?: string;
 }

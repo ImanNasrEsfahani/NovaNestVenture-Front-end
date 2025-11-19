@@ -41,7 +41,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
       </div>
       <div className='inline md:hidden'>
         <Banner
-          image="/static/images/startup/startup-banner.webp"
+          image="/static/images/startup/header-mobile.png"
           title={tStartup('banner')}
           lang={lang}
           backgroundPosition="left"
@@ -79,7 +79,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
 
       <Why lang={lang} />
 
-      <section className='w-full max-w-7xl mx-auto py-24 px-4 w-100 lg:px-16'>
+      <section className='w-full max-w-5xl mx-auto py-24 px-4 w-100 lg:px-16'>
         <h3 className="text-3xl font-header font-bold text-gray-800 text-center mb-12">{tStartup("StartupVisaRoadmap")}</h3>
         <Image
           src="/static/images/startup/startup-visa-canada-roadmap.png"
