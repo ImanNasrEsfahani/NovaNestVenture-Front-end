@@ -22,19 +22,6 @@ export default function ApplyFormPage({
   const { t } = getServerTranslation(lang, 'formComponent');
   const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
-  const benefits = t('join-our-team', { returnObjects: true }).benefits as Array<{
-    id: string;
-    title: string;
-    items: string[];
-  }>;
-
-  const accordionData = [
-    ...benefits.map((b) => ({
-      header: `${b.title}`,
-      content: b.items
-    }))
-  ];
-
   return (
     <>
       <div className="hidden md:inline">
