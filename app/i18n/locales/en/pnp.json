@@ -245,7 +245,7 @@
             "Program benefits",
             "Frequently asked questions (FAQ)"
         ],
-        "href": "/pdfs/pnp-canada-catalogue-novanest-venture-en.pdf",
+        "href": "/static/pdfs/pnp-canada-catalogue-novanest-venture-en.pdf",
         "buttonLabel": "Download Catalogue (PDF)",
         "thumbnail": "/static/images/pnp/catalogue-cover.png",
         "fileName": "Startup Visa Guide",
