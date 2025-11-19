@@ -59,16 +59,16 @@ export default function TeamPage({
           />
         </div>
 
-        <div className="max-w-responsive mx-auto px-6 my-16">
+        {/* <div className="max-w-responsive mx-auto px-6 my-16">
           <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
             {trainees.title}
           </h2>
           <PeopleCarousel
             people={trainees.people}
           />
-        </div>
+        </div> */}
 
-        <div className="max-w-responsive mx-auto px-6 my-16">
+        <div className="w-full mx-auto overflow-x-hidden px-6 my-16">
           <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
             {coreTeam.title}
           </h2>

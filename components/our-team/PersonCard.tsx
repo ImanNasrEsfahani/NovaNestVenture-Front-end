@@ -61,10 +61,10 @@ export default function PersonCard({ person }: { person: Person }) {
       {/* Content */}
       <div className="p-6 flex-grow flex flex-col justify-between">
         <div>
-          <h3 className="text-xl font-header font-bold text-blue mb-2">
+          <h3 className="text-2xl font-header font-bold text-blue mb-2">
             {person.name}
           </h3>
-          <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-primary/10 text-primary text-md font-semibold px-3 py-1 rounded-full mb-3">
             {person.position}
           </span>
         </div>

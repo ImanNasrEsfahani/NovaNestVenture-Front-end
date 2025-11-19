@@ -14,9 +14,6 @@ export default function PeopleCarousel({ people }: Props) {
   const [isHovered, setIsHovered] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
 
-  // duplicate items for seamless infinite scroll
-  const duplicatedPeople = [...people, ...people];
-
   // animation speed in pixels per frame (adjust to taste)
   const SPEED_PX_PER_FRAME = 0.2;
 
@@ -109,9 +106,8 @@ export default function PeopleCarousel({ people }: Props) {
   }, [people.length]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-r from-whiteGold via-white to-whiteGold">
-      <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white to-transparent z-20 pointer-events-none" />
+    <section className="w-full relative">
+        <div className="absolute left-0 top-0 bottom-0 pointer-events-none" />
 
         {/* scrollable wrapper */}
         <div
@@ -124,7 +120,7 @@ export default function PeopleCarousel({ people }: Props) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {duplicatedPeople.map((person, index) => (
+          {people.map((person, index) => (
             <div
               key={`${person.name}-${index}`}
               className="flex-shrink-0 w-64 md:w-72"
@@ -133,7 +129,6 @@ export default function PeopleCarousel({ people }: Props) {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 }

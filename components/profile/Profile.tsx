@@ -180,16 +180,20 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                 <main className="w-full lg:w-2/3">
                     <div className="bg-white rounded-xl shadow p-6">
                         <h2 className="text-xl font-semibold mb-4">{tOurTeam('profile.About')}</h2>
-                        <div className="prose max-w-none text-base text-gray-700">
-                            <p>
-                                {person.about || tOurTeam('profile.fallback.aboutme', { name: fullName, jobText: person.job_title ?? "-" })}
-                            </p>
-                            <p>
-                                {person.skills?.length
-                                    ? tOurTeam('profile.fallback.strengths', { skills: person.skills.slice(0, 5).join(', ') })
-                                    : tOurTeam('profile.fallback.strenghtsWithoutSkills')}
-                            </p>
-                        </div>
+                        <div className="prose max-w-none text-base text-justify text-gray-700">
+                            {Array.isArray(person.about) ? (
+                                person.about.map((paragraph, i) => (
+                                    <p className="mb-3" key={i}>{paragraph}</p>
+                                ))
+                            ) : (
+                                <p className="mb-3">{person.about || tOurTeam('profile.fallback.aboutme', { name: fullName, jobText: person.job_title ?? "-" })}</p>
+                            )}
+                             <p>
+                                 {person.skills?.length
+                                     ? tOurTeam('profile.fallback.strengths', { skills: person.skills.slice(0, 5).join(', ') })
+                                     : tOurTeam('profile.fallback.strenghtsWithoutSkills')}
+                             </p>
+                         </div>
                     </div>
 
                     <div className="mt-6 bg-white rounded-xl shadow p-6">

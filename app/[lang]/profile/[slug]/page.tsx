@@ -18,15 +18,11 @@ export default async function Page({
   const trainees = roles.Trainees ?? [];
   const coreTeam = roles["Core Team"] ?? [];
 
-  // concat the three arrays into one (and dedupe by slug)
+  // concat the three arrays into one
   const allPeople: Person[] = [...mentors.people, ...trainees.people, ...coreTeam.people];
 
-  const peopleBySlug = new Map<string, Person>();
-  for (const p of allPeople) {
-    if (p?.slug) peopleBySlug.set(p.slug, p);
-  }
-  const uniquePeople = Array.from(peopleBySlug.values());
-  const person = uniquePeople[0];
+  // find the person that matches the slug from the URL
+  const person = allPeople.find((p) => p?.slug === slug);
 
   if (!person) {
     notFound();
@@ -34,20 +30,7 @@ export default async function Page({
 
   return (
     <>
-      {/* <div className="hidden md:inline">
-        <Banner
-          image="/static/images/our-team/header.webp"
-          title={t('title')}
-          lang={lang}
-        />
-      </div>
-      <div className="inline md:hidden">
-        <Banner
-          image="/static/images/our-team/header-mobile.webp"
-          title={t('title')}
-          lang={lang}
-        />
-      </div> */}
+      <br />
       <br />
       <br />
       <br />
