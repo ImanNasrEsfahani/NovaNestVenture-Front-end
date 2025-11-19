@@ -34,7 +34,7 @@ export default function StartUp({ params: { lang } }: { params: { lang: string }
     <>
       <div className='hidden md:inline'>
         <Banner
-          image="/static/images/startup/startup-banner.webp"
+          image="/static/images/startup/header.png"
           title={tStartup('banner')}
           lang={lang}
         />

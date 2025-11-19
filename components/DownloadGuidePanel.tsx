@@ -80,7 +80,14 @@ export default function DownloadGuidePanel({
 
           <div className="h-full relative order-first lg:order-last">
             <div className="max-h-auto w-auto absolute inset-0 bg-gray-400 rounded-2xl transform rotate-6 opacity-20" />
-            <div className="h-full min-h-96 bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={buttonLabel ?? heading ?? fileName}
+              className="block h-full"
+            >
+              <div className="h-full min-h-96 bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                 {thumbnail ? (
                   <Image
                     src={thumbnail}
@@ -103,18 +110,18 @@ export default function DownloadGuidePanel({
                   </div>
                 )}
 
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-6 bg-white bg-opacity-50 w-full border-t border-slate-200">
-                <div className="flex items-center justify-between text-lg font-semibold text-center">
-                  <span>{fileName}</span>
-                  <span>{fileSize}</span>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-6 bg-white bg-opacity-50 w-full border-t border-slate-200">
+                  <div className="flex items-center justify-between text-lg font-semibold text-center">
+                    <span>{fileName}</span>
+                    <span>{fileSize}</span>
+                  </div>
                 </div>
-              </div>
-
-            </div>
           </div>
-
+            </a>
         </div>
+
       </div>
-    </section>
+    </div>
+    </section >
   );
 }
