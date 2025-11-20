@@ -17,9 +17,9 @@ export default function InvestmentSection({ lang }: {
                     {(t('forFounders', { returnObjects: true }) || []).map((section: any, idx: number) => (
                         <div
                             key={section?.id ?? section?.title ?? idx}
-                            className="bg-whiteGold border-4 border-darkGold bg-opacity-20 flex flex-col get-shadow-g px-4 py-6 xl:px-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1"
+                            className="bg-whiteGold border-4 border-darkGold bg-opacity-20 flex flex-col get-shadow-g px-2 lg:px-4 py-6 xl:px-12 pt-20 rounded-xl transition-all duration-300 transform hover:-translate-y-1"
                         >
-                            <div className="flex flex-col items-center mb-6">
+                            <div className="flex flex-col items-center text-center mb-6">
                                 <h3 className="font-header text-3xl font-bold text-gray-800">
                                     {section.title}
                                 </h3>
