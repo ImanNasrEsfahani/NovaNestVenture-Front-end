@@ -91,11 +91,11 @@ export default function Profile({ person, lang }: { person: Person, lang: string
     }
 
     return (
-        <div className="max-w-responsive mx-auto w-full py-12 px-4 lg:px-8" >
+        <div className="max-w-responsive mx-auto w-full py-12 px-2 md:px-4 lg:px-8" >
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Left Column - 1/3 */}
-                <aside className="w-full lg:w-1/3 bg-white rounded-xl shadow p-6 flex flex-col items-center gap-6">
-                    <div className="w-60 h-60 relative rounded-full overflow-hidden border-4 border-white shadow-md">
+                <aside className="w-full lg:w-1/3 bg-white rounded-xl shadow px-4 lg:px-6 py-6 flex flex-col items-center gap-6">
+                    <div className="w-80 h-80 aspect-square relative rounded-full overflow-hidden border-4 border-white shadow-md">
                         <Image
                             src={person.thumbnail || '/static/images/our-team/header.webp'}
                             alt={`${fullName} thumbnail`}
@@ -191,7 +191,7 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                          </div>
                     </div>
 
-                    <div className="mt-6 bg-white rounded-xl shadow p-6">
+                    <div className="mt-6 bg-white rounded-xl shadow p-2 md:p-6">
                         <ContactForm translations={translations} lang={lang} />
                     </div>
                 </main>

@@ -3,17 +3,19 @@ export default async function Banner({
   title,
   lang,
   backgroundPosition = 'center',
-  backgroundSize = 'cover'
+  backgroundSize = 'cover',
+  className = 'h-full'
 }: {
   image: string;
   title: string;
   lang: string;
   backgroundPosition?: string;
   backgroundSize?: string;
+  className?: string;
 }) {
   
   return (
-    <div className="relative h-[80vh]">
+    <div className={`relative ${className} lg:h-[80vh]`}>
       <div
         style={{
           backgroundImage: `url(${image})`,

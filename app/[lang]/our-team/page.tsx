@@ -39,6 +39,7 @@ export default function TeamPage({
           image="/static/images/our-team/header-mobile.png"
           title={t('title')}
           lang={lang}
+          className="h-60"
         />
       </div>
 
