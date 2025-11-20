@@ -8,8 +8,6 @@ import type { MenuEntry } from './menuTypes';
 
 const base = process.env.NEXT_PUBLIC_BASE_URL || '';
 
-type MenuEntry = { label: string; href: string; type?: 'dropdown' | 'link'; submenuItems?: MenuEntry[] };
-
 export default function Navbar({ lang }: { lang: string }) {
   const { t } = getServerTranslation(lang, 'layout');
   const menuItems = (t('menuItems', { returnObjects: true }) as MenuEntry[]) ?? [];
