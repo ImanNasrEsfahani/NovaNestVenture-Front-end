@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import type { MenuEntry } from './menuTypes';
 
-type MenuEntry = { label: string; href: string; type?: 'dropdown' | 'link'; submenuItems?: MenuEntry[] };
+// type MenuEntry = { label: string; href: string; type?: 'dropdown' | 'link'; submenuItems?: MenuEntry[] };
 
 interface MobileMenuProps {
   menuItems: MenuEntry[];
