@@ -52,7 +52,7 @@ export default function DesktopMenu({ menuItems, base }: DesktopMenuProps) {
               }`}
             >
               {(item.submenuItems ?? []).map(({ label, href }) => (
-                <li key={label}>
+                <li className="w-full" key={label}>
                   <Link href={`${base}${href}`} className="px-2 py-3 text-white hover:text-primary hover:font-bold" onClick={closeDropdown}>
                     {label}
                   </Link>
