@@ -31,12 +31,12 @@ export default function PersonCard({ person }: { person: Person }) {
       className="group/card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-[#E9DED1] h-full flex flex-col transform hover:scale-105 hover:-translate-y-2 cursor-pointer"
     >
       {/* Image Container */}
-      <div className="relative h-80 overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5">
+      <div className="relative h-80 aspect-[2/1] overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5">
         <Image
           src={person.image}
           alt={person.name}
           fill
-          className="object-cover group-hover/card:scale-110 transition-transform duration-500"
+          className="object-top object-cover group-hover/card:scale-110 transition-transform duration-500"
           sizes="(max-width: 768px) 256px, 288px"
         />
 
