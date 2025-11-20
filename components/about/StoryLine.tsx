@@ -10,7 +10,7 @@ export default function StoryLine({lang}: {lang: string}) {
             {t("storyLine", { returnObjects: true }).map((item: any, index: number) => (
                 <div
                     key={index}
-                    className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-24'
+                    className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 my-9 lg:my-16'
                 >
                     <div className={`col-span-1 flex justify-center items-center ${index % 2 === 0 ? "lg:order-last order-first" : ""}`}>
                         <Image
