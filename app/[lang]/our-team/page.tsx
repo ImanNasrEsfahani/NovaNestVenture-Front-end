@@ -50,6 +50,15 @@ export default function TeamPage({
           description={t('description', { returnObjects: true })}
         />
 
+        <div className="w-full mx-auto overflow-x-hidden px-6 my-16">
+          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
+            {coreTeam.title}
+          </h2>
+          <PeopleCarousel
+            people={coreTeam.people}
+          />
+        </div>
+
 
         <div className="max-w-responsive mx-auto px-6 my-16">
           <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
@@ -68,15 +77,6 @@ export default function TeamPage({
             people={trainees.people}
           />
         </div> */}
-
-        <div className="w-full mx-auto overflow-x-hidden px-6 my-16">
-          <h2 className="text-3xl md:text-4xl font-header font-bold text-blue text-center mb-4">
-            {coreTeam.title}
-          </h2>
-          <PeopleCarousel
-            people={coreTeam.people}
-          />
-        </div>
 
         {/* <TeamPersons lang={lang} /> */}
       </div>
