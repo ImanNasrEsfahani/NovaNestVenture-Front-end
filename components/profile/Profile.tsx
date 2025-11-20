@@ -188,11 +188,6 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                             ) : (
                                 <p className="mb-3">{person.about || tOurTeam('profile.fallback.aboutme', { name: fullName, jobText: person.job_title ?? "-" })}</p>
                             )}
-                             <p>
-                                 {person.skills?.length
-                                     ? tOurTeam('profile.fallback.strengths', { skills: person.skills.slice(0, 5).join(', ') })
-                                     : tOurTeam('profile.fallback.strenghtsWithoutSkills')}
-                             </p>
                          </div>
                     </div>
 
