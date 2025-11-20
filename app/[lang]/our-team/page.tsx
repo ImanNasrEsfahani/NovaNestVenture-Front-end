@@ -36,7 +36,7 @@ export default function TeamPage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/our-team/header-mobile.webp"
+          image="/static/images/our-team/header-mobile.png"
           title={t('title')}
           lang={lang}
         />

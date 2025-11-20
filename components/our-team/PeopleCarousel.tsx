@@ -14,6 +14,20 @@ export default function PeopleCarousel({ people }: Props) {
   const [isHovered, setIsHovered] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
 
+  // new: detect mobile (matches Tailwind md breakpoint)
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    if (mq.addEventListener) mq.addEventListener('change', update);
+    else mq.addListener(update);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', update);
+      else mq.removeListener(update);
+    };
+  }, []);
+
   // animation speed in pixels per frame (adjust to taste)
   const SPEED_PX_PER_FRAME = 0.2;
 
@@ -24,8 +38,9 @@ export default function PeopleCarousel({ people }: Props) {
     pointerId: 0
   });
 
-  // RAF loop for auto-scrolling
+  // RAF loop for auto-scrolling (only for non-mobile horizontal carousel)
   useEffect(() => {
+    if (isMobile) return;
     const el = containerRef.current;
     if (!el || people.length === 0) return;
 
@@ -46,10 +61,11 @@ export default function PeopleCarousel({ people }: Props) {
 
     rafId = requestAnimationFrame(step);
     return () => cancelAnimationFrame(rafId);
-  }, [isHovered, isDragging, people.length]);
+  }, [isHovered, isDragging, people.length, isMobile]);
 
-  // pointer handlers for drag-to-scroll
+  // pointer handlers for drag-to-scroll (only for non-mobile)
   useEffect(() => {
+    if (isMobile) return;
     const el = containerRef.current;
     if (!el) return;
 
@@ -90,26 +106,36 @@ export default function PeopleCarousel({ people }: Props) {
       window.removeEventListener('pointerup', endDrag);
       window.removeEventListener('pointercancel', endDrag);
     };
-  }, [isDragging]);
+  }, [isDragging, isMobile]);
 
-  // initialize scroll position so duplication starts seamlessly
+  // initialize scroll position so duplication starts seamlessly (only for non-mobile)
   useEffect(() => {
+    if (isMobile) return;
     const el = containerRef.current;
     if (!el) return;
     // small delay to ensure layout measured
     requestAnimationFrame(() => {
-      // If container is at 0, set to 0 (start). We rely on duplicating content and RAF loop.
       if (el.scrollLeft === 0) {
         el.scrollLeft = 0;
       }
     });
-  }, [people.length]);
+  }, [people.length, isMobile]);
 
   return (
     <section className="w-full relative">
-        <div className="absolute left-0 top-0 bottom-0 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 pointer-events-none" />
 
-        {/* scrollable wrapper */}
+      {isMobile ? (
+        // mobile: vertical list (no auto-scroll, stacked cards)
+        <div className="flex flex-col gap-6 py-4 px-4">
+          {people.map((person, index) => (
+            <div key={`${person.name}-${index}`} className="w-full">
+              <PersonCard person={person} />
+            </div>
+          ))}
+        </div>
+      ) : (
+        // desktop/tablet: horizontal auto-scrolling carousel (existing behavior)
         <div
           ref={containerRef}
           className={`${styles.scrollContainer} flex gap-6 md:gap-8 py-4 px-6 overflow-x-auto scroll-smooth`}
@@ -120,15 +146,17 @@ export default function PeopleCarousel({ people }: Props) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
+          {/*
+            Keep original horizontal items. If you want infinite seamless effect,
+            you can duplicate items here (people.concat(people)), but that was not changed.
+          */}
           {people.map((person, index) => (
-            <div
-              key={`${person.name}-${index}`}
-              className="flex-shrink-0 w-64 md:w-72"
-            >
+            <div key={`${person.name}-${index}`} className="flex-shrink-0 w-64 md:w-72">
               <PersonCard person={person} />
             </div>
           ))}
         </div>
+      )}
     </section>
   );
 }
