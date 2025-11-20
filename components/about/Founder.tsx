@@ -39,7 +39,7 @@ export default function Founder({ lang }: { lang: string }) {
               <ButtonRefactor
                 text="Read more"
                 type="link"
-                href={`${base}/en/profile/rasoul-moradimehr`}
+                href={`${base}profile/rasoul-moradimehr`}
                 bgColor="black"
               />
             </div>
