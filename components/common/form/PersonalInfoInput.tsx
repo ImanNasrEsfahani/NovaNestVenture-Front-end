@@ -223,7 +223,7 @@ export default function PersonalInfoInput({
           <Select
             register={register}
             errors={errors}
-            nameInput="FieldOfExpert"
+            nameInput="fieldOfExpert"
             label={translations.FieldOfExpert}
             required={translations.FieldOfExpertRequired}
             labelClass=" "
@@ -243,7 +243,7 @@ export default function PersonalInfoInput({
             id="field_of_expert_other"
             register={register}
             errors={errors}
-            nameInput="FieldOfExpertOther"
+            nameInput="fieldOfExpertOther"
             type="text"
             label={translations.FieldOfExpertOther}
             required={translations.FieldOfExpertOtherRequired}
@@ -261,7 +261,7 @@ export default function PersonalInfoInput({
           <Select
             register={register}
             errors={errors}
-            nameInput="FieldOfInterest"
+            nameInput="fieldOfInterest"
             label={translations.FieldOfInterest}
             required={translations.FieldOfInterestRequired}
             labelClass=" "
@@ -281,7 +281,7 @@ export default function PersonalInfoInput({
             id="field_of_interest_other"
             register={register}
             errors={errors}
-            nameInput="FieldOfInterestOther"
+            nameInput="fieldOfInterestOther"
             type="text"
             label={translations.FieldOfInterestOther}
             required={translations.FieldOfInterestOtherRequired}
