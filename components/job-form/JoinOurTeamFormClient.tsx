@@ -144,8 +144,8 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               countryOfResidence: 'countryOfResidence',
               provinceOfResidence: '',
               cityOfResidence: 'cityOfResidence',
-              TypeOfCollaboration: 'TypeOfCollaboration',
-              FieldOfExpert: 'FieldOfExpert',
+              TypeOfCollaboration: 'typeOfCollaboration',
+              FieldOfExpert: 'fieldOfExpert',
               FieldOfInterest: ''
             }}
             noLabel={false}

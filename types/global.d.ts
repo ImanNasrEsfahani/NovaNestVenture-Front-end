@@ -200,9 +200,9 @@ interface JoinOurTeamFormDataType {
   phoneNumber: string;
   countryOfResidence: string,
   cityOfResidence: string,
-  TypeOfCollaboration: string,
-  FieldOfExpert: string,
-  FieldOfExpertOther: string,
+  typeOfCollaboration: string,
+  fieldOfExpert: string,
+  fieldOfExpertOther: string,
   birthDate: Date,
   educationLevel: string,
   educationField: string,
@@ -233,9 +233,9 @@ interface JoinOurTeamFormDataType {
   phoneNumber: string;
   countryOfResidence: string;
   cityOfResidence: string;
-  TypeOfCollaboration: string;
-  FieldOfExpert: string;
-  FieldOfExpertOther: string;
+  typeOfCollaboration: string;
+  fieldOfExpert: string;
+  fieldOfExpertOther: string;
   birthDate?: Date;
   educationField?: string;
   educationLevel?: string;
