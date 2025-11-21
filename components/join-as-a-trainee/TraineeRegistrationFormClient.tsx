@@ -141,7 +141,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
   const setFileCounterAndClear = (v: boolean) => {
     setFileCounter(v);
 
-    const fields: (keyof TraineeRegistrationFormDataType)[] = ['birthDate', 'fieldOfExpert', 'fieldOfExpertOther', 'TellUsAboutYourself'];
+    const fields: (keyof TraineeRegistrationFormDataType)[] = ['birthDate', 'fieldOfExpert', 'fieldOfExpertOther', 'tellUsAboutYourself'];
 
     if (v) {
       // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed
@@ -154,7 +154,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     // re-register with the same rules used by the inputs
     register('fieldOfExpert', { required: translations.FieldOfExpertRequired || true });
     register('fieldOfExpertOther', { required: translations.FieldOfExpertOtherRequired || true });
-    register('TellUsAboutYourself', { required: translations.TellUsAboutYourselfRequired || true });
+    register('tellUsAboutYourself', { required: translations.TellUsAboutYourselfRequired || true });
 
     // register birthDate using the shared validator
     register('birthDate', { required: translations.birthDateRequired || true, validate: birthValidate });
@@ -366,7 +366,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                   register={register}
                   errors={errors}
                   placeholder={translations.TellUsAboutYourselfPlaceholder}
-                  nameTextArea="TellUsAboutYourself"
+                  nameTextArea="tellUsAboutYourself"
                   patternMessage=""
                   patternValue=""
                   // required={translations.TellUsAboutYourselfRequired}
