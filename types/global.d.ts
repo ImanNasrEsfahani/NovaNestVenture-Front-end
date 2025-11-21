@@ -252,9 +252,9 @@ interface TraineeRegistrationFormDataType {
   countryOfResidence: string;
   cityOfResidence: string;
   birthDate: Date;
-  FieldOfInterest: string;
-  FieldOfInterestOther: string;
-  TellUsAboutYourself: string;
+  fieldOfExpert: string;
+  fieldOfExpertOther: string;
+  tellUsAboutYourself: string;
   cvFile?: File | '' | undefined;
 }
 

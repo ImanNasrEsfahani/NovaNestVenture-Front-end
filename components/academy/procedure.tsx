@@ -31,11 +31,8 @@ export default function Procedure({ title, steps }: ProcedureProps) {
 
             <div className="space-y-6 lg:space-y-8">
                 {steps.map((stage: Stage, index: number) => {
-                    console.log('stage', index, stage);
-
                     return (
                         <div key={index} className="relative">
-
                             <div className={`border-2 ${stage.borderColor} ${stage.bgColor} rounded-2xl p-6 lg:p-8 relative`}>
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
                                     <div className="lg:col-span-2">

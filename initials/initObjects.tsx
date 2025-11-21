@@ -131,9 +131,9 @@ const initialTraineeRegistrationFormData: TraineeRegistrationFormDataType = {
   countryOfResidence: '',
   cityOfResidence: '',
   birthDate: new Date(),
-  FieldOfInterest: '',
-  FieldOfInterestOther: '',
-  TellUsAboutYourself: ''
+  fieldOfExpert: '',
+  fieldOfExpertOther: '',
+  tellUsAboutYourself: ''
 };
 
 const initialContactProfileFormData: ContactProfileFormDataType = {

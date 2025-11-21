@@ -217,6 +217,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
     name: name,
     value: value
   }));
+  console.log('TraineeRegistrationFormClient error list render', { errorsList });
 
   return (
     <>
@@ -241,8 +242,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                 provinceOfResidence: '',
                 cityOfResidence: 'cityOfResidence',
                 TypeOfCollaboration: '',
-                FieldOfExpert: '',
-                FieldOfInterest: 'fieldOfInterest'
+                FieldOfExpert: 'fieldOfExpert',
+                FieldOfInterest: ''
               }}
               noLabel={false}
               translations={{
@@ -347,7 +348,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                     nameInput="birthDate"
                     type="date"
                     label={translations.birthDate}
-                    required={translations.birthDateRequired}
+                    // required={translations.birthDateRequired}
+                    required=""
                     patternValue="(?:\d{1,2}[-/\s]\d{1,2}[-/\s]'?\d{2,4})|(?:\d{2,4}[-/\s]\d{1,2}[-/\s]\d{1,2})|(?:(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)[\s-/,]*?\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*[-/,]?(?:\s)*'?\d{2,4})|(?:\d{1,2}(?:\s)*(?:rd|th|st)?(?:\s)*(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)(?:\s)*?[-/,]?(?:\s)*'?\d{2,4})"
                     patternMessage={translations.birthDateErrorMessage}
                     placeholder={translations.birthDatePlaceholder}
