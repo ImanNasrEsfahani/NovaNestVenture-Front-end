@@ -127,7 +127,7 @@ export default function PeopleCarousel({ people }: Props) {
 
       {isMobile ? (
         // mobile: vertical list (no auto-scroll, stacked cards)
-        <div className="flex flex-col gap-6 py-4 px-4">
+        <div className="flex flex-col gap-16 py-4 px-4">
           {people.map((person, index) => (
             <div key={`${person.name}-${index}`} className="w-full">
               <PersonCard person={person} />
