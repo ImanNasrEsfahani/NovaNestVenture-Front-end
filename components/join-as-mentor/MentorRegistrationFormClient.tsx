@@ -22,7 +22,7 @@ interface Props {
 export default function MentorRegistrationFormClient({ lang, translations }: Props) {
   const { send } = useSubmit();
   const [formSubmitted, setFormSubmitted] = useState(false); // State to track form submission
-  const [redirectCountdown, setRedirectCountdown] = useState(5); // Countdown for redirection
+  const [redirectCountdown, setRedirectCountdown] = useState(15); // Countdown for redirection
 
   const {
     register,
@@ -220,7 +220,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                   register={register}
                   errors={errors}
                   nameInput="website"
-                  type="text"
+                  type="url"
                   label={translations.website}
                   required=""
                   placeholder={translations.websitePlaceholder}
@@ -235,7 +235,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                   register={register}
                   errors={errors}
                   nameInput="linkedin"
-                  type="text"
+                  type="url"
                   label={translations.linkedin}
                   required=""
                   placeholder={translations.linkedinPlaceholder}
@@ -250,7 +250,7 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
                   register={register}
                   errors={errors}
                   nameInput="instagram"
-                  type="text"
+                  type="url"
                   label={translations.instagram}
                   required=""
                   placeholder={translations.instagramPlaceholder}

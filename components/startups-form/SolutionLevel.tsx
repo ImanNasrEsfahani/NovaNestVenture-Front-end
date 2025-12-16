@@ -32,9 +32,7 @@ export default function SolutionLevel(props: Props) {
   } = props;
 
   // ensure RHF knows about the radio field so it's included on submit/validation
-  useEffect(() => {
-    register('technologyReadinessLevel', { required: true });
-  }, [register]);
+  const technologyReadinessLevelRadio = register('technologyReadinessLevel', { required: 'Please select one option' });
 
   return (
     <div className='w-full p-2 lg:p-6'>
@@ -51,8 +49,8 @@ export default function SolutionLevel(props: Props) {
         maxLengthMessage={translations.solutionsUniqueValueErrorMessage}
         validate=""
       />
-      <div className='w-full mt-4'>
-        <p className='mb-2'>{translations.solutionsLevel}</p>
+      <fieldset className='w-full mt-4'>
+        <legend className='mb-2'>{translations.solutionsLevel}</legend>
         <div className="w-full flex flex-col gap-1 px-4" role="radiogroup" aria-label="Solution level">
           {translations.solutionsLevelList.map((item: string, index: number) => (
             <label
@@ -61,13 +59,15 @@ export default function SolutionLevel(props: Props) {
             >
               <input
                 type="radio"
-                name="technologyReadinessLevel"
                 className="peer sr-only"
+                aria-invalid={errors.technologyReadinessLevel ? "true" : "false"}
+                value={item}
+                {...technologyReadinessLevelRadio}
                 checked={solutionsLevel === index}
                 onChange={() => {
                   handleSolutionsLevelChange(index);
                   // update RHF value so it's submitted
-                  setValue('technologyReadinessLevel', item, { shouldDirty: true, shouldTouch: true });
+                  setValue('technologyReadinessLevel', item, { shouldDirty: true, shouldTouch: true, shouldValidate: true });
                 }}
               />
 
@@ -82,7 +82,7 @@ export default function SolutionLevel(props: Props) {
             </label>
           ))}
         </div>
-      </div>
+      </fieldset>
     </div>
   )
 }

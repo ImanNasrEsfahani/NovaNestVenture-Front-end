@@ -207,7 +207,7 @@ export default function PersonalInfoInput({
           <Select
             register={register}
             errors={errors}
-            nameInput="TypeOfCollaboration"
+            nameInput={nameInputs.TypeOfCollaboration}
             label={translations.TypeOfCollaboration}
             required={translations.TypeOfCollaborationRequired}
             labelClass=" "
@@ -223,7 +223,7 @@ export default function PersonalInfoInput({
           <Select
             register={register}
             errors={errors}
-            nameInput="fieldOfExpert"
+            nameInput={nameInputs.FieldOfExpert}
             label={translations.FieldOfExpert}
             required={translations.FieldOfExpertRequired}
             labelClass=" "
@@ -261,7 +261,7 @@ export default function PersonalInfoInput({
           <Select
             register={register}
             errors={errors}
-            nameInput="fieldOfInterest"
+            nameInput={nameInputs.FieldOfInterest}
             label={translations.FieldOfInterest}
             required={translations.FieldOfInterestRequired}
             labelClass=" "

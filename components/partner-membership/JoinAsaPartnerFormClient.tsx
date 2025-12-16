@@ -183,15 +183,6 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
       });
-
-    // Cleanup timeout if component unmounts
-    React.useEffect(() => {
-      return () => {
-        if (notifTimeout) {
-          clearTimeout(notifTimeout);
-        }
-      };
-    }, []);
   };
 
   const errorsList = Object.entries(errors).map(([name, value]) => ({
@@ -303,7 +294,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             register={register}
             errors={errors}
             nameInput="website"
-            type="text"
+            type="url"
             label={translations.website}
             required=""
             placeholder={translations.websitePlaceholder}
@@ -318,7 +309,7 @@ export default function JoinAsaPartnerFormClient({ lang, translations }: Props) 
             register={register}
             errors={errors}
             nameInput="linkedin"
-            type="text"
+            type="url"
             label={translations.linkedin}
             required=""
             placeholder={translations.linkedinPlaceholder}

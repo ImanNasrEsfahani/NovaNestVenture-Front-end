@@ -168,6 +168,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
     value: value
   }));
 
+  console.log("iman : ", errorsList);
+  console.log("iman : ", FormData);
+
   return (
     <div className="max-w-responsive mx-auto pt-12 pb-20">
       <div className="h-[75px] md:h-[125px]">
@@ -366,7 +369,9 @@ export default function StartupFormFormClient({ lang, translations }: Props) {
           <ButtonRefactor
             type="submit"
             text={send ? translations.sendingButton : translations.sendButton}
-            disabled={errorsList[0] ? true : false} />
+            disabled={Array.isArray(errorsList) && errorsList.length > 0}
+            errorList={Array.isArray(errorsList) && errorsList.length > 0 ? errorsList.map((e) => e.name) : []}
+          />
         </div>
         <NotificationSendForm lang={lang} successMessage={translations.successMessage} failedMessage={translations.failedMessage} />
       </form>

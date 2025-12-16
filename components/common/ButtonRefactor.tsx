@@ -9,6 +9,7 @@ type ButtonProps = {
   type?: 'simple-link' | 'button' | 'reset' | 'submit' | 'link';
   href?: string;
   disabled?: boolean;
+  errorList?: string[];
   bgColor?: 'primary' | 'secondary' | 'white' | 'black' | 'transparent';
 };
 
@@ -18,6 +19,7 @@ export default function ButtonRefactor({
   type = 'button',
   href,
   disabled = false,
+  errorList,
   bgColor = 'black'
 }: ButtonProps) {
   const baseClasses = `delay-50 flex h-[50px] w-full flex-wrap place-content-center rounded-xl text-white transition duration-150 ease-in-out py-4`;
@@ -75,7 +77,16 @@ export default function ButtonRefactor({
   return (
     <div className="group relative w-full flex flex-col justify-center items-center overflow-hidden">
       {disabled ? (
-        <p className="text-red-600 text-sm mb-2">{lang === 'en' ? 'Please complete the form before submitting.' : 'لطفا قبل از ارسال فرم، تمامی فیلدهای ضروری را پر کنید.'}</p>
+        <>
+          <p className="text-red-600 text-sm mb-2">{lang === 'en' ? 'Please complete the form before submitting.' : 'لطفا قبل از ارسال فرم، تمامی فیلدهای ضروری را پر کنید.'}</p>
+          {errorList && errorList.length > 0 ? (
+            <ul className="text-red-600 text-sm mb-2">
+              {errorList.map((error, index) => (
+                <li key={index}>{error}</li>
+              ))}
+            </ul>
+          ) : null}
+        </>
       ) : null}
       <button
         type={type}

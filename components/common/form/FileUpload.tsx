@@ -1,16 +1,20 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react'
 
 type FileUploadProps = {
   nameInput: string;
   label: string;
   onChange: (file: File | null) => void;
   disabled: boolean;
-  required: boolean | undefined;
+  required?: string | boolean;
   errors: any;
-  file: File | string;
+  file: File | string | null;
 }
 
-export default function FileUpload({ nameInput, label, onChange, disabled, required, errors, file }: FileUploadProps) {
+interface FileUploadRef {
+  clearFile: () => void;
+}
+
+const FileUpload = forwardRef<FileUploadRef, FileUploadProps>(({ nameInput, label, onChange, disabled, required, errors, file }, ref) => {
   const [fileName, setFileName] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -35,6 +39,10 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
     onChange(null);
   };
 
+  useImperativeHandle(ref, () => ({
+    clearFile,
+  }));
+
   // show invalid state if RHF reports an error for this field
   // or when the field is required but no file selected and the form has validation errors (submit attempted)
   const hasAnyErrors = errors && Object.keys(errors).length > 0;
@@ -53,8 +61,8 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
           type="file"
           name={nameInput}
           className="absolute opacity-0"
-          required={required}
-          aria-required={required}
+          required={!!required}
+          aria-required={!!required}
           aria-invalid={showInvalid}
           onChange={(e) => handleChange(e.target.files?.[0] || null)}
           disabled={disabled}
@@ -82,4 +90,6 @@ export default function FileUpload({ nameInput, label, onChange, disabled, requi
       )}
     </div>
   );
-};
+});
+
+export default FileUpload;

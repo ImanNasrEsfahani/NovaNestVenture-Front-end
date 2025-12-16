@@ -207,7 +207,7 @@ interface JoinOurTeamFormDataType {
   educationLevel: string,
   educationField: string,
   workHistorySummary: string,
-  cvFile?: File | '' | undefined;
+  cvFile: File | string | null;
 }
 
 // Define an interface for partner membership form data
@@ -240,7 +240,7 @@ interface JoinOurTeamFormDataType {
   educationField?: string;
   educationLevel?: string;
   workHistorySummary?: string;
-  cvFile?: File | '' | undefined;
+  cvFile?: File | '' | null | undefined;
 }
 
 // Define an interface for job application form data
@@ -255,7 +255,7 @@ interface TraineeRegistrationFormDataType {
   fieldOfExpert: string;
   fieldOfExpertOther: string;
   tellUsAboutYourself: string;
-  cvFile?: File | '' | undefined;
+  cvFile?: File | '' | null | undefined;
 }
 
 // Define an interface for startups form data

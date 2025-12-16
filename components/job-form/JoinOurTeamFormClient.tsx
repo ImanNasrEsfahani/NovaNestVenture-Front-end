@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';  // Add useRef to imports
 import { useForm } from 'react-hook-form';
 import { JoinOurTeamFormDataType } from '@/types/global';
 import NotificationSendForm from '@/components/common/form/NotificationSendForm';
@@ -19,7 +19,12 @@ import TextArea from '@/components/common/TextArea';
 import { birthDateValidatorFactory } from '@/utils/birthDateValidatorFactory';
 import { Props } from './Props';
 
+interface FileUploadRef {
+  clearFile: () => void;
+}
+
 export default function JoinOurTeamFormClient({ lang, translations }: Props) {
+  const NOTIFICATION_DURATION = 15000;
   const { send } = useSubmit();
 
   const {
@@ -28,7 +33,8 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     formState: { errors },
     reset,
     clearErrors,
-    unregister, // <-- add this
+    unregister,
+    setValue
   } = useForm<JoinOurTeamFormDataType>({
     mode: 'onBlur',
     defaultValues: initialJoinOurTeamFormData
@@ -36,6 +42,8 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
   const { csrfToken, handleTokenChange, handleSubmitingChange, handleSendChange, handleNotifChange, handleSuccessChange } = useSubmit();
   const { cvFileState, handleCvFileChange } = useFile();
+
+  const fileUploadRef = useRef<FileUploadRef>(null);  // Create ref for FileUpload
 
   useEffect(() => {
     let cancelled = false;
@@ -65,20 +73,24 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
         handleNotifChange(true);
         handleSendChange(false);
         reset(initialJoinOurTeamFormData);
-        handleCvFileChange({ cvFile: '' });
-        setTimeout(() => handleNotifChange(false), 10000);
+        fileUploadRef.current?.clearFile();
+        handleCvFileChange({ cvFile: null });
+        setTimeout(() => handleNotifChange(false), NOTIFICATION_DURATION);
       })
       .catch((err) => {
         handleSuccessChange(false);
         handleNotifChange(true);
         handleSendChange(false);
-        handleCvFileChange({ cvFile: '' });
-        setTimeout(() => handleNotifChange(false), 10000);
+        handleCvFileChange({ cvFile: null });
+        setTimeout(() => handleNotifChange(false), NOTIFICATION_DURATION);
         console.error(err);
       });
   };
 
-  const onCvFileChange = (file: File | null) => handleCvFileChange({ cvFile: file ?? '' });
+  const onCvFileChange = (file: File | null) => {
+    handleCvFileChange({ cvFile: file ?? null });
+    setValue('cvFile', file ?? null);
+  };
 
   const [fileCounterState, setFileCounter] = useState<boolean>(false);
 
@@ -92,6 +104,9 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
       // when resume is uploaded we want these fields NOT validated also unregister them so validation rules are removed
       clearErrors(fields);
       unregister(fields);
+
+      // register cvFile as required
+      register('cvFile', { required: "You need to upload your CV" });
       return;
     }
 
@@ -100,9 +115,10 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
     register('educationLevel', { required: translations.EducationLevelsRequired || true });
     register('educationField', { required: translations.EducationFieldRequired || true });
     register('workHistorySummary', { required: translations.workHistorySummaryRequired || true });
-
-    // register birthDate using the shared validator
     register('birthDate', { required: translations.birthDateRequired || true, validate: birthValidate });
+
+    // unregister cvFile when not required
+    unregister('cvFile');
   };
 
   const birthValidate = (value?: Date): string | true => {
@@ -222,13 +238,14 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               ${fileCounterState ? 'opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-2 py-0 pointer-events-none'}`}
           >
             <FileUpload
+              ref={fileUploadRef}  // Attach ref here
               nameInput="cvFile"
-              required={fileCounterState ? true : false}
+              required={fileCounterState ? true : ""}
               errors={errors}
               label={translations.choseFile}
               onChange={onCvFileChange}
               disabled={!fileCounterState}
-              file={cvFileState.cvFile} // <-- sync external value
+              file={cvFileState.cvFile}
             />
           </div>
         </div>
@@ -300,7 +317,7 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
               nameTextArea="workHistorySummary"
               patternMessage=""
               patternValue=""
-              required={translations.workHistorySummaryRequired}
+              required={!fileCounterState ? translations.workHistorySummaryRequired : ''}
               rows={8}
               maxLength={1450}
               maxLengthMessage={translations.workHistorySummaryErrorMessage}
@@ -321,7 +338,8 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
           <ButtonRefactor
             type="submit"
             text={send ? translations.sendingButton : translations.sendButton}
-            disabled={errorsList[0] ? true : false}
+            disabled={Array.isArray(errorsList) && errorsList.length > 0}
+            errorList={Array.isArray(errorsList) && errorsList.length > 0 ? errorsList.map((e) => e.name) : []}
           />
         </div>
       </form>

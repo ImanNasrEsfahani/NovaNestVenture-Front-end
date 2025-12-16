@@ -94,7 +94,7 @@ const initialJoinOurTeamFormData: JoinOurTeamFormDataType = {
   educationLevel: '',
   educationField: '',
   workHistorySummary: '',
-  cvFile: '' as File | ''
+  cvFile: null
 };
 
 const initialInvestorRegistrationFormData: InvestorRegistrationFormDataType = {
