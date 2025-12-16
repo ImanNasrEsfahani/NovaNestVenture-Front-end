@@ -190,6 +190,11 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
       }
     });
 
+    // Append the CV file if it exists
+    if (cvFileState.cvFile && cvFileState.cvFile instanceof File) {
+      sendFormData.append('cvFile', cvFileState.cvFile);
+    }
+
     // Send the form data to the API.
     submitTraineeRegistrationForm(sendFormData)
       .then(() => {
@@ -197,6 +202,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
         handleNotifChange(true);
         handleSendChange(false);
         reset(initialTraineeRegistrationFormData); // Country does not reset
+        handleCvFileChange({ cvFile: '' }); // Reset the file state
+        setFileCounter(false); // Reset the file upload toggle
         setTimeout(() => {
           handleNotifChange(false);
         }, 10000); // 10 seconds in milliseconds
@@ -206,6 +213,8 @@ export default function MentorRegistrationFormClient({ lang, translations }: Pro
         handleNotifChange(false);
         handleSendChange(false);
         reset(initialTraineeRegistrationFormData);
+        handleCvFileChange({ cvFile: '' }); // Reset the file state
+        setFileCounter(false); // Reset the file upload toggle
 
         setTimeout(() => {
           handleNotifChange(false);
