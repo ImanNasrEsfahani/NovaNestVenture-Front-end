@@ -63,6 +63,13 @@ export default function JoinOurTeamFormClient({ lang, translations }: Props) {
 
     Object.entries(formData).forEach(([k, v]) => {
       if (v == null) return;
+      
+      // Format birthDate to YYYY-MM-DD string
+      if (k === 'birthDate' && v instanceof Date) {
+        sendFormData.append(k, v.toISOString().split('T')[0]);
+        return;
+      }
+      
       if (typeof v === 'object' && v[0]) sendFormData.append(k, v[0]);
       else sendFormData.append(k, String(v));
     });
