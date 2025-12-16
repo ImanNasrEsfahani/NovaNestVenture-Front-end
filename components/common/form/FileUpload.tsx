@@ -92,4 +92,6 @@ const FileUpload = forwardRef<FileUploadRef, FileUploadProps>(({ nameInput, labe
   );
 });
 
+FileUpload.displayName = 'FileUpload';
+
 export default FileUpload;
