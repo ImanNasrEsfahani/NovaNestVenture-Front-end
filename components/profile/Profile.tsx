@@ -156,11 +156,11 @@ export default function Profile({ person, lang }: { person: Person, lang: string
                                         <Envelope />
                                     </Link>
                                 ) : null} */}
-                                {person.whatsapp ? (
+                                {/* {person.whatsapp ? (
                                     <Link href={person.whatsapp} target="_blank" className="text-gray-600 hover:text-primary">
                                         <Whatsapp />
                                     </Link>
-                                ) : null}
+                                ) : null} */}
                                 {person.linkedin ? (
                                     <Link href={person.linkedin} target="_blank" className="text-gray-600 hover:text-primary">
                                         <LinkedIn />
