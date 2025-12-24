@@ -31,7 +31,7 @@ export default function SpecialFeaturesClient({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: index * 0.2 }}
-          className={`group h-full rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col ${lang === 'fa' ? 'rtl' : 'ltr'}`}
+          className={`max-w-2xl group h-full rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col ${lang === 'fa' ? 'rtl' : 'ltr'}`}
         >
           <div className="w-full aspect-video relative overflow-hidden flex-none">
             <div
