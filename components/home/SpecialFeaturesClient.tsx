@@ -21,7 +21,7 @@ export default function SpecialFeaturesClient({
 }) {
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+    <div className={`grid gap-8 max-w-7xl mx-auto ${features.length === 1 ? 'grid-cols-1 justify-items-center' : 'grid-cols-1 md:grid-cols-2'}`}>
       {features.map((feature, index) => (
         <motion.a
           key={feature.id}
