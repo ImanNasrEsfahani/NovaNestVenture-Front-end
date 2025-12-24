@@ -51,7 +51,7 @@ export default function Page({ params }: { params: { lang: string } }) {
         <HomeCardsContainer lang={params.lang} />
         <SpecialFeatures lang={params.lang} />
 
-        <Intro
+        {/* <Intro
           title={tStartup('whatIsStartupVisa.title')}
           subtitle={tStartup('whatIsStartupVisa.subtitle')}
           description={tStartup('whatIsStartupVisa.description')}
@@ -63,7 +63,7 @@ export default function Page({ params }: { params: { lang: string } }) {
           serviceDetails={tStartup('services.serviceDetails', { returnObjects: true })}
           image={{ src: tStartup('services.image.src'), alt: tStartup('services.image.alt') }}
           descriptionIsHtml={true}
-        />
+        /> */}
 
         <div className="max-w-xs mx-auto mb-24">
           <ButtonRefactor text={t('ReserveMyFreeConsultation')} type="simple-link" href={`${base}${params.lang}/startup/#startup-application-form`} />

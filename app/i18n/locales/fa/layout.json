@@ -14,12 +14,6 @@
           "href": "en/acceleration"
         },
         {
-          "label": "ویزای استارت آپ",
-          "type": "link",
-          "href": "en/startup",
-          "submenuItems": []
-        },
-        {
           "label": "کارآفرینی",
           "type": "link",
           "href": "en/pnp",
