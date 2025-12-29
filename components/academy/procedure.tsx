@@ -86,7 +86,7 @@ export default function Procedure({ title, steps }: ProcedureProps) {
                                                     src={stage.imageUrl}
                                                     alt={stage.title}
                                                     fill
-                                                    className="object-cover"
+                                                    className="object-cover object-top"
                                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 256px"
                                                 />
                                             )}
