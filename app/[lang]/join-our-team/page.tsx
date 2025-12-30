@@ -33,7 +33,7 @@ export default function ApplyFormPage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/join-our-team-form/header-mobile.png"
+          image="/static/images/join-our-team-form/header-mobile.jfif"
           title={t('join-our-team', { returnObjects: true }).banner}
           lang={lang}
         />

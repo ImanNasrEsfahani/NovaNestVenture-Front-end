@@ -46,7 +46,7 @@ export default function TraineePage({
       </div>
       <div className="inline md:hidden">
         <Banner
-          image="/static/images/join-as-a-trainee/header-mobile.png"
+          image="/static/images/join-as-a-trainee/header-mobile.jfif"
           title={t('joinAsATrainee', { returnObjects: true }).banner}
           lang={lang}
           backgroundPosition='center'
