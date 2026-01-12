@@ -74,7 +74,7 @@
   "Entrepreneurship - PNP": "Entrepreneurship-PNP",
 
   "HeroSubtitle": "Feel The Future",
-  "NovaNestVenture": "NovaNest Venture",
+  "NovaNestVenture": "NovaNest Academy",
   "Home": "Home",
   "ContactUs": "CONTACT US",
   "OurTeam": "Our Team",
@@ -100,7 +100,7 @@
     {
       "smallTitle" : "NovaNest",
       "title": "Investment",
-      "text": "At NovaNest Venture Investment Center, we focus on investing in innovative and scalable startups with international market potential and a valuation of $5 million or less. As a network of experienced angel investors, we provide not only initial funding but also strategic support in capital raising and connections to a global network of investors. Our goal is to accelerate your growth, strengthen your presence in international markets, and enhance the overall value of your business.",
+      "text": "At NovaNest Academy Investment Center, we focus on investing in innovative and scalable startups with international market potential and a valuation of $5 million or less. As a network of experienced angel investors, we provide not only initial funding but also strategic support in capital raising and connections to a global network of investors. Our goal is to accelerate your growth, strengthen your presence in international markets, and enhance the overall value of your business.",
       "reverse": false,
       "show": true,
       "index": 1,
@@ -121,7 +121,7 @@
     {
       "smallTitle" : "NovaNest",
       "title": "Acceleration",
-      "text": "At NovaNest Venture Acceleration Center, we empower innovative startups to grow from idea to global success. Our accelerator provides mentorship, training, networking, and access to investors, helping entrepreneurs develop products, enter new markets, and achieve rapid growth. We focus on sectors such as Artificial Intelligence, Tourism, and Education, supporting startups in creating lasting impact on a global scale.",
+      "text": "At NovaNest Academy Acceleration Center, we empower innovative startups to grow from idea to global success. Our accelerator provides mentorship, training, networking, and access to investors, helping entrepreneurs develop products, enter new markets, and achieve rapid growth. We focus on sectors such as Artificial Intelligence, Tourism, and Education, supporting startups in creating lasting impact on a global scale.",
       "reverse": true,
       "show": false,
       "index": 3,
@@ -142,7 +142,7 @@
   ],
 
   "NovaNestAcademy": "NovaNest Academy",
-  "NovaNestAcademyInfo": "At NovaNest Venture, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Venture equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
+  "NovaNestAcademyInfo": "At NovaNest Academy, we provide a nurturing place for individuals to discover and grow their interests and skills efficiently. Our academy operates as a dynamic environment that identifies and evaluates the potential of talented individuals, particularly the youth, and invests in their development and creative ideas. By providing comprehensive programs and resources, and through a combination of mentoring, skill-building workshops, and exposure to various opportunities, NovaNest Academy equips participants with the tools and knowledge necessary to thrive and succeed in their chosen fields.",
   
   "specialFeatureCards": [
     {
