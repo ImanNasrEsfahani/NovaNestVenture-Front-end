@@ -1,7 +1,7 @@
 {
   "lng": "en",
   "banner": "Investment Center",
-  "NovaNestVenture": "NovaNest Venture",
+  "NovaNestVenture": "NovaNest Academy",
   "subTitle": "",
   "NovaNestInvestment": "NovaNest INVESTMENT :",
   "question": "What is an investment holding company?",
@@ -15,9 +15,9 @@
   "visionTitle": "Our Vision and Mission",
   "visionText": "It is our vision to evaluate and identify the most promising and innovative startup plans in order to minimize the risks of failure for the investors who confide in our company, and our mission to to provide the clients with all the necessary tools and resources to pave the way to success and ensure significant returns and profits for both parties.",
   "certificate": "Certificate of Incorporation",
-  "focusText": "NovaNest Venture companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
-  "investmentstrategy":"Investment strategy in NovaNest Venture",
-  "objectiveText1": "At NovaNest Venture, we empower innovative startups and support trusted investors by minimizing risks and maximizing success. Through tailored resources, expert guidance, and collaborative meetings, we help entrepreneurs turn ideas into scalable ventures. Our focus on research and creativity ensures every startup gets the support it needs to thrive. Don’t wait for opportunity—create it. Join NovaNest Venture and experience the freedom to build a purpose-driven business, unlock your potential, and leave a lasting legacy.",
+  "focusText": "NovaNest Academy companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
+  "investmentstrategy":"Investment strategy in NovaNest Academy",
+  "objectiveText1": "At NovaNest Venture, we empower innovative startups and support trusted investors by minimizing risks and maximizing success. Through tailored resources, expert guidance, and collaborative meetings, we help entrepreneurs turn ideas into scalable ventures. Our focus on research and creativity ensures every startup gets the support it needs to thrive. Don’t wait for opportunity—create it. Join NovaNest Academy and experience the freedom to build a purpose-driven business, unlock your potential, and leave a lasting legacy.",
   "buttonTitle": "More info",
   "featureCards": [
     {
@@ -40,20 +40,20 @@
   "intro": {
     "title": "Startup Investment & Entrepreneurial Growth",
     "subtitle": "Empowering Scalable Startups. Supporting Founders. Building the Future.",
-    "description": "At NovaNest Venture, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you’re an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner."
+    "description": "At NovaNest Academy, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you’re an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner."
   },
 
   "forFounders": [
     {
       "title": "For Startup Investors",
       "p1": "Investing in startups is a powerful way to generate long-term returns and support innovation. At NovaNest, we minimize risks by carefully selecting scalable ventures and providing investors with access to a global network of experts, mentors, and co-investors.",
-      "p2": "Join NovaNest Venture&apos;s investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.",
+      "p2": "Join NovaNest Academy investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.",
       "href": "investor-registration",
       "button": "Investor Registration"
     },
     {
       "title": "For Startup Founders",
-      "p1": "Are you leading a startup with a validated MVP? At NovaNest Venture, we provide tailored support to help you scale and succeed. Our services include funding access, expert mentorship, and strategic guidance designed to accelerate growth.",
+      "p1": "Are you leading a startup with a validated MVP? At NovaNest Academy, we provide tailored support to help you scale and succeed. Our services include funding access, expert mentorship, and strategic guidance designed to accelerate growth.",
       "p2": "We focus on founder-led innovation and scalable business models, empowering your startup with the right resources and connections to reach investors and expand globally.",
       "href": "startups-validation",
       "button": "Startup Validation"
@@ -61,7 +61,7 @@
   ],
 
   "why": {
-    "title": "Why Choose NovaNest Venture?",
+    "title": "Why Choose NovaNest Academy?",
     "items": [
       "Expert-led startup selection and risk analysis",
       "Full-cycle support from ideation to global scaling",

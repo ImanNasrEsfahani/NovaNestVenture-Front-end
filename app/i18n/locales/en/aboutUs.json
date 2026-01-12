@@ -1,14 +1,14 @@
 {
   "lng": "en",
   "banner": "About Us",
-  "NovaNestVenture": "NovaNest Venture",
+  "NovaNestVenture": "NovaNest Academy",
   "certificate": "Certificate of Incorporation",
   "buttonTitle": "Federal Canada Corporation Information",
-  "focusText": "NovaNest Venture companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
+  "focusText": "NovaNest Academy companies are primarily focused on ownership control and do not engage in manufacturing, sales of products or services, or any other operational activities. Their main purpose is to possess majority stock or membership interests in other companies, giving rise to the term &apos;pure holding company.&apos; In contrast, some holding companies not only hold ownership stakes in subsidiaries but also conduct their own business operations. These are known as &apos;mixed holding companies. Additionally, there are other categories of holding companies, such as immediate and intermediate holding companies. These types of holding companies are themselves owned by other holding companies or larger businesses.",
   "readMore": "Read More",
   "readLess": "Read Less",
   "AboutUsNovaNest": {
-      "title": "About NovaNest Venture",
+      "title": "About NovaNest Academy",
       "text": [
         "NovaNest is the result of years of experience in investment, acceleration, and entrepreneurial education.",
         "Our journey began in 2017 with a focus on youth education and skill development. Over the years, through the establishment of companies and accelerators, investments in startups, and collaborations with universities and technology parks, we have gained valuable experience in business growth and development.",
@@ -194,7 +194,7 @@
       "year": "2025",
       "title": "Official Establishment of NovaNest in Canada",
       "description": [
-        "The year 2025 marked the beginning of a new chapter in our journey, where all our experiences, learnings, and achievements from previous years came together under a unified and global brand: NovaNest Venture. Today, NovaNest stands as the result of seven years of continuous work in education, entrepreneurship, acceleration, and investment a brand that sees its mission beyond borders.",
+        "The year 2025 marked the beginning of a new chapter in our journey, where all our experiences, learnings, and achievements from previous years came together under a unified and global brand: NovaNest Academy. Today, NovaNest stands as the result of seven years of continuous work in education, entrepreneurship, acceleration, and investment a brand that sees its mission beyond borders.",
         "At this stage, our focus is on international expansion and building bridges between talents, startups, and investors around the world. Our goal is to create a global network of entrepreneurs, creative youth, and innovative startups a community where learning, growth, and investment opportunities come together."
       ],
       "image": {
@@ -244,7 +244,7 @@
       "alt": "Founder of NovaNest Venture - Rasoul Moradimehr"
     },
     "paragraphs": [
-      "Rasoul is an entrepreneur, investor, and startup mentor with over a decade of experience in business development, investment, and guiding startups. He began his professional journey in Iran, founding and managing several successful ventures, gaining valuable expertise in entrepreneurship and innovation — including Landa Investment Holding, Landa Teen Business Academy, and the knowledge-based accelerator Forough.",
+      "Rasoul is an entrepreneur, investor, and startup mentor with over a decade of experience in business development, investment, and guiding startups. He began his professional journey in Iran, founding and managing several successful Academy, gaining valuable expertise in entrepreneurship and innovation — including Landa Investment Holding, Landa Teen Business Academy, and the knowledge-based accelerator Forough.",
       "He has played a key role in bridging the gap between academia and industry. He is also recognized as the founder of the travel-based learning approach in Iran through the launch of the Landa Trip startup. Throughout his career, he has collaborated with multiple successful international startups, bringing extensive experience in supporting the growth and development of businesses on a global scale."
     ]
   }

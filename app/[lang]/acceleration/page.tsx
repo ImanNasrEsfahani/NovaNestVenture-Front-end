@@ -12,9 +12,9 @@ import SmallReservationForm from '@/components/common/form/SmallReservationForm'
 // const base = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export const metadata: Metadata = {
-  title: 'NovaNest Venture | Acceleration',
+  title: 'NovaNest Academy | Acceleration',
   description:
-    'Welcome to NovaNest Venture, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
+    'Welcome to NovaNest Academy, where innovation meets excellence. Explore our diverse portfolio, discover our commitment to sustainable growth, and join us on a journey towards a brighter future.'
 };
 
 export default function Page({

@@ -40,20 +40,20 @@
   "intro": {
     "title": "Startup Investment & Entrepreneurial Growth",
     "subtitle": "Empowering Scalable Startups. Supporting Founders. Building the Future.",
-    "description": "At NovaNest Venture, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you&apos;re an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner."
+    "description": "At NovaNest Academy, we specialize in startup investment, entrepreneurial support, and scalable business growth, creating a thriving ecosystem where innovation meets strategic capital. Whether you&apos;re an investor seeking high-potential opportunities or an entrepreneur ready to scale your startup, NovaNest is your trusted partner."
   },
 
   "forFounders": [
     {
       "title": "For Startup Investors",
       "p1": "Investing in startups is a powerful way to generate long-term returns and support innovation. At NovaNest, we minimize risks by carefully selecting scalable ventures and providing investors with access to a global network of experts, mentors, and co-investors.",
-      "p2": "Join NovaNest Venture&apos;s investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.",
+      "p2": "Join NovaNest Academy investment network to discover vetted startup opportunities, receive strategic insights, and contribute to the growth of purpose-driven businesses.",
       "href": "investor-registration",
       "button": "Investor Registration"
     },
     {
       "title": "For Entrepreneurs & Startup Founders",
-      "p1": "Are you leading a startup with a validated MVP? At NovaNest Venture, we provide tailored support to help you scale and succeed. Our services include funding access, expert mentorship, and strategic guidance designed to accelerate growth.",
+      "p1": "Are you leading a startup with a validated MVP? At NovaNest Academy, we provide tailored support to help you scale and succeed. Our services include funding access, expert mentorship, and strategic guidance designed to accelerate growth.",
       "p2": "We focus on founder-led innovation and scalable business models, empowering your startup with the right resources and connections to reach investors and expand globally.",
       "href": "startups-form",
       "button": "Startup Validation"
@@ -61,7 +61,7 @@
   ],
 
   "why": {
-    "title": "Why Choose NovaNest Venture?",
+    "title": "Why Choose NovaNest Academy?",
     "items": [
       "Expert-led startup selection and risk analysis",
       "Full-cycle support from ideation to global scaling",
