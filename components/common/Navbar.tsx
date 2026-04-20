@@ -22,7 +22,7 @@ export default function Navbar({ lang }: { lang: string }) {
             className="absolute top-0 left-0 size-full z-[10] lg:relative btn btn-ghost px-2 normal-case flex flex-grow lg:flex-none lg:!w-auto"
           >
             <Image
-              src="/static/images/nova-nest-venture-logo.svg"
+              src="/static/images/nova-nest-academy.svg"
               alt="Logo"
               width={150}
               height={64}
