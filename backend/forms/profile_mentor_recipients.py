@@ -18,6 +18,7 @@ _PROFILE_MENTOR_RECIPIENTS = {
     'avesta-narimani': ('Dr. Avesta Narimani', 'Rasnarim@gmail.com'),
     'alireza-mobini': ('Dr. Alireza Mobini', 'ar_mobini2009@yahoo.com'),
     'pouya-azadeh': ('Dr. Pouya Azadeh', 'Pouyaazadeh36@gmail.com'),
+    'mojtaba-fadaei': ('Dr. Mojtaba Fadaei', 'info@asiahitech.com'),
 }
 
 

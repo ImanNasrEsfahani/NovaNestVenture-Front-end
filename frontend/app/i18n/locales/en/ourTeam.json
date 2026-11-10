@@ -257,6 +257,67 @@
             "• Fundraising Readiness",
             "• SME and Industrial Estate Consulting"
           ]
+        },
+        {
+          "image": "/static/images/our-team/mentors/mojtaba-fadaei.webp",
+          "position": "Entrepreneur | Business Developer | Management Consultant",
+          "name": "Dr. Mojtaba Fadaei",
+          "linkedIn": "https://www.linkedin.com/in/mojtabafadaei",
+          "text": "mentor",
+          "slug": "mojtaba-fadaei",
+          "first_name": "Mojtaba",
+          "last_name": "Fadaei",
+          "websites": [
+            "https://www.mojtabafadaei.com"
+          ],
+          "instagram": "",
+          "email": "",
+          "linkedin": "https://www.linkedin.com/in/mojtabafadaei",
+          "whatsapp": "",
+          "thumbnail": "/static/images/our-team/mentors/mojtaba-fadaei.webp",
+          "contactLinks": [
+            {
+              "type": "linkedin",
+              "value": "https://www.linkedin.com/in/mojtabafadaei",
+              "label": "LinkedIn"
+            },
+            {
+              "type": "website",
+              "value": "https://www.mojtabafadaei.com",
+              "label": "Personal website"
+            }
+          ],
+          "job_title": "Founder & Chairman of BARĀMAD Holding; Founder & CEO of ASIAHITECH",
+          "location": "Isfahan, Iran",
+          "skills": [
+            "Business Development",
+            "Industrial Consulting",
+            "Technology Development",
+            "Strategic Management",
+            "Marketing & Market Research"
+          ],
+          "interests": [
+            "Entrepreneurship",
+            "Industrial Innovation",
+            "Technology Transfer",
+            "Business Strategy",
+            "Innovation Ecosystems"
+          ],
+          "education": "PhD in Business Administration (Business Management)",
+          "about": [
+            "Dr. Mojtaba Fadaei holds a PhD in Business Administration, specializing in Business Management, and brings over 16 years of management experience across industrial and technology-based companies. He is the Founder and Chairman of BARĀMAD Holding and the Founder and CEO of ASIAHITECH.",
+            "His professional focus spans entrepreneurship, business development, management consulting, industrial innovation, technology development, marketing, and market research.",
+            "Professional engagements, credentials, and memberships (information provided by Dr. Fadaei on November 8, 2026):",
+            "• Successfully delivered 540+ industrial consulting engagements in technology development, business diagnostics, marketing, and market research.",
+            "• Official Business and Technology Development Consultant and Evaluator for Iran Small Industries and Industrial Parks Organization.",
+            "• Consultant to Isfahan Science and Technology Town, Iran Nanotechnology Innovation Council, and Iran National Technology Transfer Network (TechMart).",
+            "• Licensed Business Consultant by Iran's Ministry of Industry, Mine and Trade.",
+            "• Member of the World Economic Forum (WEF).",
+            "• Full Member of the Iranian Strategic Management Society.",
+            "• Full Member of the Iranian Technology Management Association.",
+            "• Full Member of the Iranian Marketing Association.",
+            "• Member of the Iran Chamber of Commerce, Industries, Mines and Agriculture."
+          ]
         }
       ]
     },
